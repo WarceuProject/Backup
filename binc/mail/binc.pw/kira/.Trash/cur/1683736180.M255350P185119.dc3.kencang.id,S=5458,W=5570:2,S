@@ -1,0 +1,112 @@
+Return-Path: <u668036643@srv664.main-hosting.eu>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id IEr6DnTGW2Qf0wIAMUeTPA
+	(envelope-from <u668036643@srv664.main-hosting.eu>)
+	for <kira@binc.pw>; Wed, 10 May 2023 23:29:40 +0700
+Return-path: <u668036643@srv664.main-hosting.eu>
+Envelope-to: kira@binc.pw
+Delivery-date: Wed, 10 May 2023 23:29:40 +0700
+Received: from dog.elm.relay.mailchannels.net ([23.83.212.48]:2958)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <u668036643@srv664.main-hosting.eu>)
+	id 1pwmh8-000lys-1j
+	for kira@binc.pw;
+	Wed, 10 May 2023 23:29:40 +0700
+X-Sender-Id: hostingershared|x-authuser|u668036643@srv664.main-hosting.eu
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 2584F64187F
+	for <kira@binc.pw>; Wed, 10 May 2023 16:28:55 +0000 (UTC)
+Received: from srv664.main-hosting.eu (unknown [127.0.0.6])
+	(Authenticated sender: hostingershared)
+	by relay.mailchannels.net (Postfix) with ESMTPA id CADB86415A9
+	for <kira@binc.pw>; Wed, 10 May 2023 16:28:53 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1683736134; a=rsa-sha256;
+	cv=none;
+	b=KzYU0qYv3vvlGRzxA20+JltJk5IonhE1eJnZa74DtCTm9AepzIurdPxOJHIRXb7oc7BWRg
+	qz8a+iVHFMB2LLGOOqSqC/MrbxBu5y4I6CZ9YyLwITsRwfs2FNZ+o+TrkFsIWQCWFFZQfo
+	qQXb/cuDn0CTVJCrQDZsiM+QoOekFwHsVu70+u4RMiLMV5WDl1FhFKzKkljldKH380sWQ3
+	mxkqM2loLbMgdJ889PcOxHu7bRSbR/q5qW7coWZ6HlEox4pG135yco7+kZBdARw8QxD6kV
+	/pzFF31ZNIVFXZqaXsPDzbaSx7S1oqYEjnAm+XPU/e1rI+x3KugXIRNFEv/Kbg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1683736134;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type; bh=8Bw/aO58+LRz2CG0qOiAwfnnFooIW5llWyiuNqETzKc=;
+	b=CnUqAvXvVx5Z+/poDTIKPaBSMnxoNTaNFA0sQGSXB27R0ttkn1P22X6u4pY5YNhjH0BCTj
+	A6r6J2LF3LwE6n4FsnfHZnUkFErNfmPgOSt3CdYkLSf06S5HTX4+BQUScCDSaYj0boUg0g
+	NecB1gEMcqaVNzuFqKwxblv4VV/4qEdKQumKIBy1xTU8n4hROldkdCnMv8Q2gevkTGX5U6
+	kim63aNH39n2kyZbaRrIZmR3Dt8Ub6+Gnu+yYJJ6Bu5SBo/eySz/0hSy+YQROYOkjKvap5
+	S0xGIdmylOBih3DrK2mqM5ceQzSxtJhvxoZlIXC19uIy3zh/ifUfmijS4+wnWg==
+ARC-Authentication-Results: i=1;
+	rspamd-5cdf8fd7d9-wq9xf;
+	auth=pass smtp.auth=hostingershared
+ smtp.mailfrom=u668036643@srv664.main-hosting.eu
+X-Sender-Id: hostingershared|x-authuser|u668036643@srv664.main-hosting.eu
+X-MC-Relay: Neutral
+X-MailChannels-SenderId:
+ hostingershared|x-authuser|u668036643@srv664.main-hosting.eu
+X-MailChannels-Auth-Id: hostingershared
+X-Power-Decisive: 44a0d6cb4dd46346_1683736134892_2740233069
+X-MC-Loop-Signature: 1683736134892:1690722547
+X-MC-Ingress-Time: 1683736134892
+Received: from srv664.main-hosting.eu ([UNAVAILABLE]. [217.21.87.103])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384)
+	by 100.127.59.49 (trex/6.8.1);
+	Wed, 10 May 2023 16:28:54 +0000
+Received: from u668036643 by srv664.main-hosting.eu with local (Exim 4.96)
+	(envelope-from <u668036643@srv664.main-hosting.eu>)
+	id 1pwmgP-0008cT-0e
+	for kira@binc.pw;
+	Wed, 10 May 2023 16:28:53 +0000
+To: kira@binc.pw
+Subject: [Gtech Enterprises] Login Details
+X-PHP-Script: v2.gtechenterprises.in/wp-admin/user-new.php for 118.96.251.3
+X-PHP-Filename: /home/u668036643/domains/gtechenterprises.in/public_html/v2/wp-admin/user-new.php REMOTE_ADDR: 118.96.251.3
+X-PHP-Originating-Script: 668036643:PHPMailer.php
+Date: Wed, 10 May 2023 16:28:53 +0000
+From: WordPress <wordpress@v2.gtechenterprises.in>
+Message-ID: <yAnMfkQFuWQjWiZFamRCCKkiOMaPn1r9fjE4Pf8Zg@v2.gtechenterprises.in>
+X-Mailer: PHPMailer 6.6.5 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <u668036643@srv664.main-hosting.eu>
+X-AuthUser: u668036643@srv664.main-hosting.eu
+X-Spam-Status: No, score=2.8
+X-Spam-Score: 28
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Username: kira To set your password, visit the following address:
+    https://v2.gtechenterprises.in/wp-login.php?action=rp&key=FdYqv5tWfyGKTQHzKsRM&login=kira
+    
+ Content analysis details:   (2.8 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: gtechenterprises.in]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  2.5 PHP_SCRIPT             Sent by PHP script
+X-Spam-Flag: NO
+
+Username: kira
+
+To set your password, visit the following address:
+
+https://v2.gtechenterprises.in/wp-login.php?action=rp&key=FdYqv5tWfyGKTQHzKsRM&login=kira
+
+https://v2.gtechenterprises.in/wp-login.php
+

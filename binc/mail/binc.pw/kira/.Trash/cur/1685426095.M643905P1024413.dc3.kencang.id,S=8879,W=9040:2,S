@@ -1,0 +1,161 @@
+Return-Path: <ingeocon@webhosting2033.is.cc>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id EPN3Ja+PdWSdoQ8AMUeTPA
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	for <kira@binc.pw>; Tue, 30 May 2023 12:54:55 +0700
+Return-path: <ingeocon@webhosting2033.is.cc>
+Envelope-to: kira@binc.pw
+Delivery-date: Tue, 30 May 2023 12:54:55 +0700
+Received: from antelope.elm.relay.mailchannels.net ([23.83.212.4]:19207)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q3sJj-004KX6-2p
+	for kira@binc.pw;
+	Tue, 30 May 2023 12:54:55 +0700
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id B5C12642154
+	for <kira@binc.pw>; Tue, 30 May 2023 05:54:04 +0000 (UTC)
+Received: from la-relay0-fwd-b.mailbaby.net (unknown [127.0.0.6])
+	(Authenticated sender: interserver)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 2821B6420B5
+	for <kira@binc.pw>; Tue, 30 May 2023 05:54:04 +0000 (UTC)
+ARC-Seal: i=2; s=arc-2022; d=mailchannels.net; t=1685426044; a=rsa-sha256;
+	cv=pass;
+	b=4ln+GgAeqSYCpGhzJ3y7chw/cM8fwcR6cA/92bYq5hoY8DJNqmf+2rQ1sPX1w7XatG5RkZ
+	hdKghx/mC/1GY2+zWWbsalWRRaWHxrqYs3RN1v7R8u9BYhociDVzGrwQLzwhrvjmclvHJH
+	8LNJLSostX88IfSq9Dcf4rEgyQETBTFhjglxhGnlVOGoCOttNYqnPY38PxaaGibSO6aJsy
+	k/pgvZwV1yAXOE2EHATf5bbXldxcvSmfPsTB6EgD6eNTm+ScL7ln7zZj2oAGuIwX2ZSXqe
+	0XhNC2/ZlF6jeQo17GV+3iv3nkmkRIU9jMJtOUdhDnk9u3wbPdE3jvl8Qmkx1A==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1685426044;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=wTPO4K5AQA2+e3Ovj7iAGsPQ76OT85/cVZjbcAVKKoM=;
+	b=1rVVXfrL/cEGB9BsluHrwlUKEU6M7TsOMRADbn//qRbz7SIBDNzfr8cjMpFj0NF7IH+Pa9
+	VYfP42OTNxkzLqJHLxyuDw/kPT25vXhcs83H3xblC+p6j2ZIg3YwzoH3ZERfSLQZCXRkfx
+	tvB3PSWgXICIVGYONN5UGni3yFOjbKMUyndTyKkeap9OvwFFq46C0oYfP8ZXuX4Lq18mKo
+	nYHoHrTVK+gNo0GlxEHrTMeafh19AXcNNQV5CxlyP7DEGpJxt0+GTDqe287ANKpaiaY6a4
+	OGk6+PX4sB1Xz09mdD9GYASY9gzECDX/ARVOndoxhCiLlGqFuR5A4GdQcUeXpg==
+ARC-Authentication-Results: i=2;
+	rspamd-7d4b855556-tfsf6;
+	arc=pass ("mailbaby.net:s=detka:i=1");
+	auth=pass smtp.auth=interserver smtp.mailfrom=ingeocon@webhosting2033.is.cc
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MC-Relay: Neutral
+X-MailChannels-SenderId: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MailChannels-Auth-Id: interserver
+X-Spot-Oafish: 215f71233bcac09d_1685426044465_910354135
+X-MC-Loop-Signature: 1685426044464:2118417910
+X-MC-Ingress-Time: 1685426044464
+Received: from la-relay0-fwd-b.mailbaby.net (la-relay0-fwd-b.mailbaby.net
+ [162.220.160.10])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.104.24.165 (trex/6.8.1);
+	Tue, 30 May 2023 05:54:04 +0000
+Received: from webhosting2033.is.cc ([68.168.213.91] webhosting2033.is.cc)
+ (Authenticated sender: webhosting2033)
+ by la-relay0-fwd-b.mailbaby.net (InterServerMTA) with ESMTPSA id 1886b38686e0000c55.001
+ for <kira@binc.pw>
+ (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256);
+ Tue, 30 May 2023 05:53:58 +0000
+X-Zone-Loop: 220f7b5298158f64c1c7f92488c916dca6a16415dddf
+ARC-Authentication-Results: i=1;	la-relay0.mailbaby.net;	auth=pass
+ smtp.auth=webhosting2033 smtp.mailfrom=ingeocon@webhosting2033.is.cc
+ARC-Seal: i=1; s=detka; d=mailbaby.net; t=1685426039; a=rsa-sha256;
+	cv=none;
+	b=il1F4t6ZjlqEMpQ0krrFYvgLtxN19iOzc5klXrp6ByfD5btczWMJj6KB2blPHKvfhwj7ak
+	6xG4+pRDSfqdfG18dFOm8B+bSXNOfwDKSDsj8xGmdEglurdjh3xKq1i+ZL6HoUdx3+X6iO
+	BiOceHeugY2Jfbqq1UBnsCjGxkbTx6oKyB3V5EkrcE7/5VHn6JLqwTBgMHIbX5ST+oFuK1
+	4NxXvW15FmFEOww5QbSDJBCvgJqvRwFF/CKXv3aw7EUB7BEf9SZmo28eJKRPJ2KhAbsa0e
+	cOMcW2sIgHCrkMnBggFkYmRMz9WBHw5kASb85FOuhsEyduC6yoeuFBHyqcOYTg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailbaby.net;	s=detka; t=1685426039;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=wTPO4K5AQA2+e3Ovj7iAGsPQ76OT85/cVZjbcAVKKoM=;
+	b=BK+OuAGg/r0/vHHBEn8Tid+IsSWfGPTTrRW+HJmULU4zcoyUAh/yMpgdx0wdM+GRexuvk5
+	ea7/pwFCBpgZ9cKZQjt55zfNiFVDMArZQhVM9bRUnnhC6Dsm0YluGwQCAtr3YGxbEficRM
+	xJGRwhnhwGYw0PZDwG9olyLcFDYEK43S7nGY6WdW1c1ZB8py1UrqjOhrsIC6RKwV/G/9ap
+	idhCd7CpwjM6jsG0Crp7xSrMIUVSVZYatHAYsGmmzu/ObhwR1uvVwizsqXwCBgEyRYi/zn
+	T/ORKhO1qIO78GME+LoIAH8f9rxsHEugLtfLh1i+jF+WexoLnUv5WJEZjjQw8Q==
+X-SPF: pass
+X-Originating-IP: [68.168.213.91]
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=webhosting2033.is.cc; s=default; h=Sender:Content-Type:MIME-Version:
+	Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=wTPO4K5AQA2+e3Ovj7iAGsPQ76OT85/cVZjbcAVKKoM=; b=gm2+PvjZrbjhxYYg1gk8EaLtbe
+	Scp/bpvvxaCzkGC9NPgsfCrwn+bs3P9rqzaKsHbbNkf30NTHsBtQoZyXUSJSFhgjRfLIAA7FGeNrn
+	Re2P9nv17ezmXK0dEz6vtMYP0L32kYOh5QAMd6snL+JJAB3JzgpI2JGenmQzRSgnOED8Oi6jloAhN
+	whYlY+fwE9CUzQHDBeJq08sTV8WKl0y3SgDTnRbgoZDRS75q6pRQsjFWQMgy/sxozyI8cNA6mMNiV
+	+x5mTO6fo+F2GniCOBm6YzIlJyBRLH0Dz50KVvcgf+LthkReldLz0cCX7hU/9FkxICRYu67Xxn5Iv
+	Rh+w2J7Q==;
+Received: from ingeocon by webhosting2033.is.cc with local (Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q3sIu-002fgZ-0Q
+	for kira@binc.pw;
+	Tue, 30 May 2023 01:53:57 -0400
+To: kira@binc.pw
+Subject: [InGEO consulting] Please moderate: "Top 10 Best Females Environment Reporters into the 2022"
+X-PHP-Script: ingeoconsulting.com/wp-comments-post.php for 218.21.88.11
+X-PHP-Originating-Script: 1159:class-phpmailer.php
+Date: Tue, 30 May 2023 05:53:56 +0000
+From: WordPress <wordpress@ingeoconsulting.com>
+Message-ID: <1da1f9c71e425f28c80ad61c4e1fb893@ingeoconsulting.com>
+X-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <ingeocon@webhosting2033.is.cc>
+X-AuthUser: ingeocon@webhosting2033.is.cc
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "Top 10 Best Females Environment
+    Reporters into the 2022" is waiting for your approval https://ingeoconsulting.com/2022/12/28/top-10-best-females-environment-reporters-into-t
+    [...] 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: gate.io]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+X-Spam-Flag: NO
+
+A new comment on the post "Top 10 Best Females Environment Reporters into the 2022" is waiting for your approval
+https://ingeoconsulting.com/2022/12/28/top-10-best-females-environment-reporters-into-the/
+
+Author: gateio (IP address: 218.21.88.11, 218.21.88.11)
+Email: 18265727@outlook.com
+URL: https://www.gate.io/tr/signup/XwNAU
+Comment: 
+I have read your article carefully and I agree with you very much. This has provided a great help for my thesis writing, and I will seriously improve it. However, I don't know much about a certain place. Can you help me? https://www.gate.io/tr/signup/XwNAU
+
+Approve it: https://ingeoconsulting.com/wp-admin/comment.php?action=approve&c=139#wpbody-content
+Trash it: https://ingeoconsulting.com/wp-admin/comment.php?action=trash&c=139#wpbody-content
+Spam it: https://ingeoconsulting.com/wp-admin/comment.php?action=spam&c=139#wpbody-content
+Currently 34 comments are waiting for approval. Please visit the moderation panel:
+https://ingeoconsulting.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

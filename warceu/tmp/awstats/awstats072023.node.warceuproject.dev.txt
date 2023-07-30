@@ -1,0 +1,357 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202307 will be lost/reset.
+# Last config file used to build this data file was /home/warceu/tmp/awstats/awstats.node.warceuproject.dev.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2017                
+POS_TIME 2698                
+POS_VISITOR 3389                
+POS_DAY 6664                
+POS_DOMAIN 6834                
+POS_LOGIN 7087                
+POS_ROBOT 7242                
+POS_WORMS 7403                
+POS_EMAILSENDER 7534                
+POS_EMAILRECEIVER 7677                
+POS_SESSION 7753                
+POS_SIDER 7931                
+POS_FILETYPES 8090                
+POS_DOWNLOADS 8205                
+POS_OS 11710               
+POS_BROWSER 11816               
+POS_SCREENSIZE 11929               
+POS_UNKNOWNREFERER 12003               
+POS_UNKNOWNREFERERBROWSER 12116               
+POS_ORIGIN 12224               
+POS_SEREFERRALS 12360               
+POS_PAGEREFS 12504               
+POS_SEARCHWORDS 12652               
+POS_KEYWORDS 12804               
+POS_MISC 2362                
+POS_ERRORS 12863               
+POS_CLUSTER 6943                
+POS_SIDER_404 12948               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20230729100540 285 55737 5796321627096
+FirstTime 20230728132738
+LastTime 20230729100017
+LastUpdate 20230729121655 285 0 285 0 0
+TotalVisits 64                  
+TotalUnique 60                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 65                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavascriptDisabled 0 0 0
+JavaEnabled 0 0 0
+PDFSupport 0 0 0
+RealPlayerSupport 0 0 0
+FlashSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 0 0 0
+1 0 0 0 0 0 0
+2 0 0 0 0 0 0
+3 0 0 0 0 0 0
+4 0 0 0 0 0 0
+5 0 0 0 0 0 0
+6 5 5 150 1 2 30
+7 5 7 291 2 2 0
+8 44 44 210 20 20 390
+9 112 114 171 1 1 0
+10 2 2 0 18 18 0
+11 0 0 0 0 0 0
+12 0 0 0 0 0 0
+13 4 8 402 1 3 30
+14 0 0 0 0 0 0
+15 2 4 201 0 1 0
+16 0 2 141 0 0 0
+17 3 25 1641 0 1 0
+18 0 10 705 2 2 60
+19 2 2 60 0 1 0
+20 6 6 180 0 1 0
+21 0 0 0 0 0 0
+22 0 4 282 0 0 0
+23 0 0 0 0 0 0
+END_TIME
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 65
+162.158.171.28 14 14 30 20230729091200 20230729090701 /api/system
+172.70.92.185 12 12 0 20230729100017 20230729095703 /api/system
+162.158.171.27 11 11 0 20230729091245 20230729090712 /api/system
+36.72.212.119 11 11 330 20230728190209
+172.70.92.228 8 8 0 20230729091516 20230729091321 /api/system
+162.158.106.60 7 7 0 20230729092516 20230729092223 /api/system
+162.158.189.168 6 6 0 20230729085118
+162.158.189.212 6 6 0 20230729093016 20230729092836 /api/system
+172.70.92.184 6 6 0 20230729095932 20230729095752 /api/system
+172.70.92.229 5 5 0 20230729091403 20230729091251 /api/system
+162.158.189.213 5 5 0 20230729093001 20230729091816 /api/system
+162.158.107.48 5 5 0 20230729085747
+172.70.143.12 4 4 0 20230729091953 20230729091905 /api/system
+172.70.189.60 4 4 0 20230729084916
+162.158.170.173 4 4 120 20230729062740
+162.158.107.47 4 4 0 20230729085723
+172.70.189.59 4 4 0 20230729084847
+162.158.106.61 4 4 0 20230729092432 20230729092212 /api/system
+108.162.226.86 3 3 0 20230729085256
+162.158.106.3 3 3 0 20230729092443 20230729092234 /api/system
+172.70.143.11 3 3 0 20230729092014 20230729091919 /api/system
+162.158.170.162 3 3 0 20230729091138 20230729090659 /api/system
+162.158.170.76 3 3 90 20230728201311
+162.158.170.34 3 3 90 20230729071639
+162.158.170.253 3 3 0 20230729085319
+162.158.106.102 1 1 0 20230729090608 20230729090608 /api/system
+172.70.147.155 1 1 0 20230729091716 20230729091716 /api/system
+172.71.161.137 0 2 141 
+162.158.106.130 1 1 0 20230729092716 20230729092716 /api/system
+108.162.227.60 1 1 30 20230729070136
+172.70.92.155 1 1 0 20230729091447 20230729091447 /api/system
+172.70.143.68 1 1 0 20230729092115 20230729092115 /api/system
+162.158.106.2 1 1 0 20230729092410 20230729092410 /api/system
+172.71.161.147 0 1 77 
+162.158.170.22 1 1 0 20230729085329
+108.162.227.148 1 1 0 20230729084743
+162.158.106.131 2 2 0 20230729093116 20230729092202 /api/system
+172.71.161.138 0 1 77 
+162.158.106.109 1 1 0 20230729095020 20230729095020 /api/system
+162.158.162.47 1 1 0 20230729095209 20230729095209 /api/system
+172.70.142.189 1 1 0 20230729091616 20230729091616 /api/system
+162.158.170.182 1 1 30 20230729062725
+162.158.170.163 1 1 0 20230729090723 20230729090723 /api/system
+172.70.143.19 1 1 0 20230729091909 20230729091909 /api/system
+162.158.106.228 2 2 0 20230729092816 20230729092616 /api/system
+172.70.92.244 2 2 0 20230729095953 20230729095943 /api/system
+162.158.170.42 1 1 30 20230728201222
+172.70.189.19 1 1 30 20230729090213
+162.158.106.229 1 1 0 20230729093153 20230729093153 /api/system
+162.158.170.35 1 1 30 20230729072120
+162.158.106.103 2 2 0 20230729090618 20230729090558 /api/system
+172.71.161.136 0 2 128 
+162.158.170.145 2 2 60 20230729085142
+108.162.227.147 1 1 0 20230729085537
+162.158.189.169 2 2 0 20230729085056
+172.70.92.245 1 1 0 20230729095741 20230729095741 /api/system
+108.162.226.125 1 1 30 20230728201218
+172.70.188.94 1 1 0 20230729093204 20230729093204 /api/system
+108.162.226.161 1 1 30 20230729084224
+108.162.226.87 1 1 0 20230729085216
+103.219.251.189 0 42 2961 
+162.158.106.29 1 1 0 20230729095116 20230729095116 /api/system
+108.162.226.160 3 3 90 20230729084114
+162.158.107.16 2 2 0 20230729085650
+108.162.226.134 1 1 30 20230729084226
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 2
+20230728 17 61 3612 8
+20230729 168 172 822 56
+END_DAY
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 3
+us 174 180 1143
+id 11 11 330
+in 0 42 2961
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 1
+curl 17 510 20230729085937 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Session range - Number of visits
+BEGIN_SESSION 4
+0s-30s 22
+30s-2mn 6
+2mn-5mn 1
+5mn-15mn 2
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 2
+/api/system 150 0 46 13
+/ 35 1050 18 18
+END_SIDER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 3
+html 35 1050 0 0
+Unknown 150 0 0 0
+txt 48 3384 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 48
+/.well-known/pki-validation/8EE21535316A00A1589A6874765D7844.txt 1 0 77
+/.well-known/pki-validation/1406BC76D901D751B2FC25B5755BA89D.txt 1 0 77
+/.well-known/pki-validation/5760DB26774647644E626D1CFB6A6C32.txt 1 0 77
+/.well-known/pki-validation/3FA6BC01E4EFB26A0CEAF0FB29E2F0B6.txt 1 0 77
+/.well-known/pki-validation/AE0E79CD4A1D3C229C75F8880EB670EB.txt 1 0 64
+/.well-known/pki-validation/EB4C2C547E39B3408865B4D29175E0AF.txt 1 0 64
+/.well-known/pki-validation/41D519F3885A6911E8241C23E43C389C.txt 1 0 77
+/.well-known/pki-validation/DD93CF7C5FEED1CCFDF3E28F0A35868B.txt 1 0 77
+/.well-known/pki-validation/D1BD8D3971982D69A0604E8E4E3301D7.txt 1 0 77
+/.well-known/pki-validation/EF32EA6622EBB522A537298DF070BA94.txt 1 0 64
+/.well-known/pki-validation/B660251AE5613FD8D544E10B62A4BBCB.txt 1 0 64
+/.well-known/pki-validation/45606F814A7B5BC864092612B960083F.txt 1 0 77
+/.well-known/pki-validation/081519DC56F729E9E9E391CB253E9ADD.txt 1 0 64
+/.well-known/pki-validation/93B2D4F66F312728A2EA28B83FF96A99.txt 1 0 77
+/.well-known/pki-validation/C1E213F4A7311DD410B57510BFA09823.txt 1 0 64
+/.well-known/pki-validation/4684807562962C155021DA4C07A5DD97.txt 1 0 77
+/.well-known/pki-validation/23563DFDCBD210013B9ADEC22AB44479.txt 1 0 64
+/.well-known/pki-validation/E7FCB5E608326391C6AB4AD953433775.txt 1 0 64
+/.well-known/pki-validation/2232C89E8F256F5DD4294408EA7ACD16.txt 1 0 64
+/.well-known/pki-validation/EDE8ADE9645608A0C05D403859475497.txt 1 0 77
+/.well-known/pki-validation/ECD4A9CDD742B279C609AF656F23D9FA.txt 1 0 64
+/.well-known/pki-validation/B1E27227A70F726E2BF2108A5B1DC03A.txt 1 0 64
+/.well-known/pki-validation/B2D11B861084D5555265BD573E79D08A.txt 1 0 77
+/.well-known/pki-validation/D7407DD2776472D6BB1407793090D09F.txt 1 0 77
+/.well-known/pki-validation/841B4EA9E61EFA5181D6F41EF62AFABD.txt 1 0 77
+/.well-known/pki-validation/3E238AE105C6487D40C55AD74D0931D1.txt 1 0 77
+/.well-known/pki-validation/8BC5469EB3AA3B6149B96F843A8B56F5.txt 1 0 64
+/.well-known/pki-validation/A87EB0E56553FDF3B9E150356FB73CB8.txt 1 0 77
+/.well-known/pki-validation/F7D06F473C8675E66E944A39E7B20BF8.txt 1 0 64
+/.well-known/pki-validation/C7E2181FA27D32CEBEB5FD2A78FA085B.txt 1 0 64
+/.well-known/pki-validation/5C43E1EC03CF502978A4AD271623C971.txt 1 0 64
+/.well-known/pki-validation/29A7668782C5B16A6713065843F270A7.txt 1 0 77
+/.well-known/pki-validation/C1D1DC0BAC66AB4E0985338A1E0F5612.txt 1 0 64
+/.well-known/pki-validation/E377D6F00E6E85F106013FD418370977.txt 1 0 77
+/.well-known/pki-validation/393F23A4B4FA178BFC95A6B2AD748F1C.txt 1 0 64
+/.well-known/pki-validation/399F02C93EBF8731F80D0085D3576FC0.txt 1 0 64
+/.well-known/pki-validation/64CCB6D976055CECD0B420D20F32B827.txt 1 0 64
+/.well-known/pki-validation/55FD23E39BF52868E255B61D83FAEA78.txt 1 0 64
+/.well-known/pki-validation/C02CF6B79BD2A2FDB85DA7ABA7CB994A.txt 1 0 64
+/.well-known/pki-validation/244450EC43CC13E70E8B57D9E346BFB7.txt 1 0 77
+/.well-known/pki-validation/C16D3C0DE94C8D2B43F8D01526D2C158.txt 1 0 64
+/.well-known/pki-validation/629BF89638C2C63B7D93609C469989D2.txt 1 0 64
+/.well-known/pki-validation/6ED40203F0B4EDC591131C0EF8297360.txt 1 0 64
+/.well-known/pki-validation/E29DC2240841ABAF18D6A9918FA94540.txt 1 0 77
+/.well-known/pki-validation/FE8A56DFB44E7A386E9FDAF02547D47C.txt 1 0 77
+/.well-known/pki-validation/6F54BAB66250FA4C23155A5165B83429.txt 1 0 77
+/.well-known/pki-validation/2EFE8FA305A26298E1B42CB3DBCE5586.txt 1 0 77
+/.well-known/pki-validation/FB4E898D8691223AA98FE2E46818F5C7.txt 1 0 77
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 3
+Unknown 48 0
+android 32 32
+win10 153 153
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 3
+Unknown 48 0
+chrome92.0.4515.131 32 32
+chrome115.0.0.0 153 153
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 1
+COMODO_DCV 20230729094252
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+COMODO_DCV 20230729094252
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 35 83
+From1 0 0
+From2 0 0
+From3 0 0
+From4 150 150
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 1
+404 28 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 3
+/api/system 22 -
+/auth/login 3 -
+/api/update 3 -
+END_SIDER_404

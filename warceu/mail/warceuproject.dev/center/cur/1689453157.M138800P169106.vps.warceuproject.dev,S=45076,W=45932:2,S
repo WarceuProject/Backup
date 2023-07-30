@@ -1,0 +1,856 @@
+Return-Path: <bounce+46414c.f956-center=warceuproject.dev@mail.hellosign.com>
+Delivered-To: center@warceuproject.dev
+Received: from vps.warceuproject.dev
+	by vps.warceuproject.dev with LMTP
+	id eUmcBmUCs2SSlAIA0wEIKA
+	(envelope-from <bounce+46414c.f956-center=warceuproject.dev@mail.hellosign.com>)
+	for <center@warceuproject.dev>; Sat, 15 Jul 2023 22:32:37 +0200
+Return-path: <bounce+46414c.f956-center=warceuproject.dev@mail.hellosign.com>
+Envelope-to: center@warceuproject.dev
+Delivery-date: Sat, 15 Jul 2023 22:32:37 +0200
+Received: from 231.static.mail.hellosign.com ([161.38.193.231]:24897)
+	by vps.warceuproject.dev with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <bounce+46414c.f956-center=warceuproject.dev@mail.hellosign.com>)
+	id 1qKlwO-000hxm-30
+	for center@warceuproject.dev;
+	Sat, 15 Jul 2023 22:32:36 +0200
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mail.hellosign.com;
+ q=dns/txt; s=mx; t=1689453086; x=1689460286; h=Message-Id: Reply-To: To: To:
+ From: From: Subject: Subject: Content-Type: Mime-Version: Date: Sender:
+ Sender; bh=PDxIKjSVI3NyLqZEuCZ0IuQ/7S4xSlsDDdgvOkM8t+w=;
+ b=SKtlex4RWphGvJXjyEmi54hAlkAh5RR0m5m6nMgLAzHCexJ/w2SwdqgEeMeUY02juEN6oAxyu21t25pJzb8Oj4hatKwmIUMpT7YaP6mo0nHKj5zYONh1/YIIV34vxSkWqLuW+8D4SCWayAdW/kjoc159SAGqE7DbxHpeITftNKo=
+X-Mailgun-Sending-Ip: 161.38.193.231
+X-Mailgun-Sid: WyI5OGJiMiIsImNlbnRlckB3YXJjZXVwcm9qZWN0LmRldiIsImY5NTYiXQ==
+Received: from <unknown> (<unknown> []) by d28e1d863a7c with HTTP id
+ 64b3021eed40046c5796f380; Sat, 15 Jul 2023 20:31:26 GMT
+Sender: noreply@mail.hellosign.com
+Date: Sat, 15 Jul 2023 20:31:26 +0000
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="2b8815bda8eedd02e0c4338aeb37e56d4ddfe313c15266bdfcd34e248abf"
+Subject: Please confirm your Dropbox Sign account
+From: Dropbox Sign <noreply@mail.hellosign.com>
+To: center@warceuproject.dev
+X-Mailgun-Tag: AccountActivationMessage
+X-Mailgun-Track: false
+Reply-To: Dropbox Sign <noreply@hellosign.com>
+X-Mailgun-Variables: {"campaign_code": "account_onboarding_hs", "variation": "original"}
+Message-Id: <20230715203126.977ee3f3a98432ad@mail.hellosign.com>
+X-Spam-Status: No, score=0.0
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "vps.warceuproject.dev",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Welcome! Please confirm your email address to start using
+   Dropbox Sign. Confirm email: https://app.hellosign.com/t/c8592653fc0c7cb91365057eee92a180afca2b4c
+    
+ Content analysis details:   (0.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: hellosign.com]
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: hellosign.com]
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query
+                              to zen.spamhaus.org was blocked due to
+                             usage of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [161.38.193.231 listed in zen.spamhaus.org]
+  0.0 URIBL_ZEN_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: hellosign.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_MOSTLY       BODY: Multipart message mostly text/html MIME
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
+                             Colors in HTML
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+  0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay
+                             lines
+ -0.0 DKIMWL_WL_HIGH         DKIMwl.org - High trust sender
+X-Spam-Flag: NO
+
+--2b8815bda8eedd02e0c4338aeb37e56d4ddfe313c15266bdfcd34e248abf
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset=ascii
+
+Welcome!
+
+Please confirm your email address to start using Dropbox Sign.
+
+Confirm email:
+https://app.hellosign.com/t/c8592653fc0c7cb91365057eee92a180afca2b4c
+
+
+
+
+
+--
+
+Thanks for going paperless!
+
+The Dropbox Sign Team
+--2b8815bda8eedd02e0c4338aeb37e56d4ddfe313c15266bdfcd34e248abf
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml" lang=3D"en" xml:lang=3D"en" st=
+yle=3D"background: #ffffff !important">
+
+<head>
+
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+" />
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width" />
+    <title></title>
+    <!--[if mso]>
+    <style type=3D=E2=80=9Dtext/css=E2=80=9D>
+    .fallback-font {
+        font-family: Atlas Grotesk, Arial, sans-serif;
+    }
+    </style>
+    <![endif]-->
+    <style>
+        @font-face {
+            font-family: 'Atlas Grotesk';
+            font-weight: 400;
+            src: url('https://cdn.hellosign.com/1.150.0/fonts/AtlasGrotesk-=
+Regular-Web.woff2') format('woff2'),
+                url('https://cdn.hellosign.com/1.150.0/fonts/AtlasGrotesk-R=
+egular-Web.woff') format('woff'),
+                url('https://cdn.hellosign.com/1.150.0/fonts/AtlasGrotesk-R=
+egular-Web.ttf') format('truetype');
+        }        @font-face {
+            font-family: 'Atlas Grotesk';
+            font-weight: 500;
+            src: url('https://cdn.hellosign.com/1.150.0/fonts/AtlasGrotesk-=
+Medium-Web.woff2') format('woff2'),
+                url('https://cdn.hellosign.com/1.150.0/fonts/AtlasGrotesk-M=
+edium-Web.woff') format('woff'),
+                url('https://cdn.hellosign.com/1.150.0/fonts/AtlasGrotesk-M=
+edium-Web.ttf') format('truetype');
+        }
+        b, strong {
+            font-weight: 500;
+        }
+
+        @media only screen {
+            html {
+                min-height: 100%;
+                background: #ececec;
+            }
+
+            a {
+                color: #0061FE !important;
+            }
+        }
+        @media only screen and (max-width: 736px) {
+            .small-float-center {
+                margin: 0 auto !important;
+                float: none !important;
+                text-align: center !important;
+            }
+        }
+        @media only screen and (max-width: 736px) {
+            table.body img {
+                width: auto;
+                height: auto;
+            }
+            table.body center {
+                min-width: 0 !important;
+            }
+            table.body .container {
+                width: 95% !important;
+            }
+            table.body .columns {
+                height: auto !important;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                padding-left: 16px !important;
+                padding-right: 16px !important;
+            }
+            table.body .columns .columns {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+            table.body .collapse .columns {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+            th.small-2 {
+                display: inline-block !important;
+                width: 16.66667% !important;
+            }
+            th.small-6 {
+                display: inline-block !important;
+                width: 50% !important;
+            }
+            th.small-10 {
+                display: inline-block !important;
+                width: 83.33333% !important;
+            }
+            th.small-12 {
+                display: inline-block !important;
+                width: 100% !important;
+            }
+            .columns th.small-12 {
+                display: block !important;
+                width: 100% !important;
+            }
+            table.menu {
+                width: 100% !important;
+            }
+            table.menu td,
+            table.menu th {
+                width: auto !important;
+                display: inline-block !important;
+            }
+            table.menu.vertical td,
+            table.menu.vertical th {
+                display: block !important;
+            }
+            table.menu[align=3D"center"] {
+                width: auto !important;
+            }
+            table.button.small-expanded.rebrand-button {
+                width: 45% !important;
+            }
+            table.button.small-expanded {
+                width: 100% !important;
+            }
+            table.button.small-expanded table {
+                width: 100%;
+            }
+            table.button.small-expanded table a {
+                text-align: center !important;
+                width: 100% !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+        }
+        @media only screen and (min-width: 736px) {
+            .padder {
+                width: 60px !important;
+            }
+        }
+        @media only screen and (min-width: 736px) {
+            .header__top-spacer {
+                height: 80px !important;
+            }
+        }
+        @media only screen and (min-width: 736px) {
+            .header__bottom-spacer {
+                height: 45px !important;
+            }
+        }
+        @media only screen and (min-width: 736px) {
+            .action-item .icon {
+                height: 50px !important;
+            }
+        }
+        @media only screen and (min-width: 736px) {
+            .action-item .action-item--action {
+                font-size: 20px;
+            }
+        }
+        @media only screen and (min-width: 736px) {
+            .notification .notification__spacer-top {
+                height: 40px !important;
+            }
+        }
+        @media only screen and (min-width: 736px) {
+            .custom-tagline-spacer {
+                height: 20px !important;
+            }
+        }
+        @media only screen and (min-width: 736px) {
+            .custom-tagline-copy {
+                font-size: 15px !important;
+            }
+        }
+    </style>
+</head>
+
+<body class=3D'fallback-font' style=3D"-moz-box-sizing: border-box; -ms-tex=
+t-size-adjust: 100%; -webkit-box-sizing: border-box; -webkit-text-size-adju=
+st: 100%; Margin: 0; background: #ffffff !important; box-sizing: border-box=
+; color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-serif; font-size:=
+ 16px; font-weight: normal; line-height: 24px; margin: 0; min-width: 100%; =
+padding: 0; text-align: left; width: 100% !important">
+    <span class=3D"preheader" style=3D"color: #ececec; display: none !impor=
+tant; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; ms=
+o-hide: all !important; opacity: 0; overflow: hidden; visibility: hidden"><=
+/span>
+    <table class=3D'spacer' style=3D'border-collapse: collapse; border-spac=
+ing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%'>
+            <tbody>
+                <tr style=3D'padding: 0; text-align: left; vertical-align: =
+top'>
+                    <td height=3D'24px' style=3D'-moz-hyphens: auto; -webki=
+t-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #1=
+a1a1a; font-family: Arial, sans-serif; font-size: 24px; font-weight: normal=
+; hyphens: auto; line-height: 24px; margin: 0; mso-line-height-rule: exactl=
+y; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word=
+'>&#xA0;</td>
+                </tr>
+            </tbody>
+        </table>    <table class=3D"body" style=3D"Margin: 0; background: #=
+ffffff !important; border-collapse: collapse; border-spacing: 0; color: #1a=
+1a1a; font-family: Atlas Grotesk, Arial, sans-serif; font-size: 16px; font-=
+weight: normal; height: 100%; line-height: 24px; margin: 0; padding: 0; tex=
+t-align: left; vertical-align: top; width: 100%">
+        <tr style=3D"padding: 0; text-align: left; vertical-align: top">
+            <td class=3D"center" align=3D"center" valign=3D"top" style=3D"-=
+moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: colla=
+pse !important; color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-ser=
+if; font-size: 16px; font-weight: normal; hyphens: auto; line-height: 24px;=
+ margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: b=
+reak-word">
+                <center data-parsed=3D"" style=3D"min-width: 590px; width: =
+100%">
+                    <!-- HEADER -->
+                    <table align=3D"center" class=3D"container float-center=
+" style=3D"Margin: 0 auto; background: #fefefe; border-collapse: collapse; =
+border-spacing: 0; float: none; margin: 0 auto; padding: 0; text-align: cen=
+ter; vertical-align: top; width: 590px">
+                        <tbody>
+                            <tr style=3D"padding: 0; text-align: left; vert=
+ical-align: top">
+                                <td style=3D"-moz-hyphens: auto; -webkit-hy=
+phens: auto; Margin: 0; border-collapse: collapse !important; color: #1a1a1=
+a; font-family: Atlas Grotesk, Arial, sans-serif; font-size: 16px; font-wei=
+ght: normal; hyphens: auto; line-height: 24px; margin: 0; padding: 0; text-=
+align: left; vertical-align: top; word-wrap: break-word">
+                                    <table class=3D'spacer' style=3D'border=
+-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; verti=
+cal-align: top; width: 100%'>
+            <tbody>
+                <tr style=3D'padding: 0; text-align: left; vertical-align: =
+top'>
+                    <td height=3D'4px' style=3D'-moz-hyphens: auto; -webkit=
+-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #1a=
+1a1a; font-family: Arial, sans-serif; font-size: 4px; font-weight: normal; =
+hyphens: auto; line-height: 4px; margin: 0; mso-line-height-rule: exactly; =
+padding: 0; text-align: left; vertical-align: top; word-wrap: break-word'>&=
+#xA0;</td>
+                </tr>
+            </tbody>
+        </table>                                    <table class=3D"row" st=
+yle=3D"border-collapse: collapse; border-spacing: 0; display: table; paddin=
+g: 0; position: relative; text-align: left; vertical-align: top; width: 100=
+%">
+                                        <tbody>
+                                            <tr style=3D"padding: 0; text-a=
+lign: left; vertical-align: top">
+                                                <th class=3D"columns first =
+last large-12 small-12" style=3D"Margin: 0 auto; color: #1a1a1a; font-famil=
+y: Atlas Grotesk, Arial, sans-serif; font-size: 16px; font-weight: normal; =
+line-height: 24px; margin: 0 auto; padding: 0; padding-bottom: 16px; paddin=
+g-left: 16px; padding-right: 16px; text-align: left; width: 574px">
+                                                    <table style=3D"border-=
+collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertic=
+al-align: top; width: 100%">
+                                                        <tr style=3D"paddin=
+g: 0; text-align: left; vertical-align: top">
+                                                            <th style=3D"co=
+lor: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-serif; font-size: 16p=
+x; font-weight: normal; line-height: 24px; margin: 0; padding: 0; text-alig=
+n: left">
+                                                                <center dat=
+a-parsed=3D"" style=3D"min-width: 542px; width: 100%">
+                                                                    <span a=
+lign=3D"center" class=3D"float-center" style=3D"Margin: 0; color: #1EA2D5; =
+font-family: Atlas Grotesk, Arial, sans-serif; font-weight: normal; line-he=
+ight: 24px; margin: 0; padding: 0; text-align: left; text-decoration: none"=
+>
+                                                                           =
+                                                                         <a=
+ href=3D"https://app.hellosign.com/?utm_campaign=3Dunspecified&utm_source=
+=3Ddefault&utm_channel=3Dproduct_promo&utm_medium=3Demail">
+                                                                           =
+                                                                           =
+  <img src=3D"https://cdn.hellosign.com/1.150.0/images/dropbox-sign-wordmar=
+k-128.png"  class=3D"logo text-center" aria-hidden=3D"true" style=3D"-ms-in=
+terpolation-mode: bicubic; Margin: 0 auto; border: none; clear: both; displ=
+ay: inline; float: none; margin: 0 auto; max-width: 150px; outline: none; t=
+ext-align: center; text-decoration: none; width: auto; height: auto"/>     =
+                                                                           =
+                                                                    </a>
+                                                                           =
+                                                                 </span>
+                                                                           =
+                                                         </center>
+                                                            </th>
+                                                            <th class=3D"ex=
+pander" style=3D"color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-se=
+rif; font-size: 16px; font-weight: normal; line-height: 24px; margin: 0; pa=
+dding: 0 !important; text-align: left; visibility: hidden; width: 0"></th>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class=3D'spacer' style=3D'border=
+-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; verti=
+cal-align: top; width: 100%'>
+            <tbody>
+                <tr style=3D'padding: 0; text-align: left; vertical-align: =
+top'>
+                    <td height=3D'24px' style=3D'-moz-hyphens: auto; -webki=
+t-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #1=
+a1a1a; font-family: Arial, sans-serif; font-size: 24px; font-weight: normal=
+; hyphens: auto; line-height: 24px; margin: 0; mso-line-height-rule: exactl=
+y; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word=
+'>&#xA0;</td>
+                </tr>
+            </tbody>
+        </table>                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- /HEADER -->
+
+                    <table align=3D"center" class=3D"container float-center=
+" style=3D"Margin: 0 auto; background: #fefefe; border-collapse: collapse; =
+border-spacing: 0; float: none; margin: 0 auto; padding: 0; text-align: cen=
+ter; vertical-align: top; width: 590px">
+                        <tbody>
+                            <tr style=3D"padding: 0; text-align: left; vert=
+ical-align: top">
+                                <td style=3D"-moz-hyphens: auto; -webkit-hy=
+phens: auto; Margin: 0; border-collapse: collapse !important; color: #1a1a1=
+a; font-family: Atlas Grotesk, Arial, sans-serif; font-size: 16px; font-wei=
+ght: normal; hyphens: auto; line-height: 24px; margin: 0; padding: 0; text-=
+align: left; vertical-align: top; word-wrap: break-word">
+                                    <table class=3D"row" style=3D"border-co=
+llapse: collapse; border-spacing: 0; display: table; padding: 0; position: =
+relative; text-align: left; vertical-align: top; width: 100%">
+                                        <tbody>
+                                            <tr style=3D"padding: 0; text-a=
+lign: left; vertical-align: top">
+                                                <th class=3D"columns first =
+last large-12 small-12" style=3D"Margin: 0 auto; color: #1a1a1a; font-famil=
+y: Atlas Grotesk, Arial, sans-serif; font-size: 16px; font-weight: normal; =
+line-height: 24px; margin: 0 auto; padding: 0; padding-bottom: 16px; paddin=
+g-left: 16px; padding-right: 16px; text-align: left; width: 574px">
+                                                    <table style=3D"border-=
+collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertic=
+al-align: top; width: 100%">
+                                                        <tr style=3D"paddin=
+g: 0; text-align: left; vertical-align: top">
+                                                            <th class=3D"ma=
+in-content" style=3D"Margin: 0; border: 1px solid #E6E6E6; border-radius: 3=
+px; color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-serif; font-siz=
+e: 16px; font-weight: normal; line-height: 24px; margin: 0; padding: 0; tex=
+t-align: left">
+                                                                <!-- CAMPAI=
+GN CONTENT -->
+
+                                                                    <!-- AC=
+TION NOTIFICATION -->
+                                                                    <table =
+bgcolor=3D"#F7F5F2" class=3D"wrapper" align=3D"center" style=3D"border-coll=
+apse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-a=
+lign: top; width: 100%"><tr style=3D"padding: 0; text-align: left; vertical=
+-align: top"><td class=3D"wrapper-inner" style=3D"-moz-hyphens: auto; -webk=
+it-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #=
+1a1a1a; font-family: Atlas Grotesk, Arial, sans-serif; font-size: 16px; fon=
+t-weight: normal; hyphens: auto; line-height: 24px; margin: 0; padding: 0; =
+text-align: left; vertical-align: top; word-wrap: break-word">
+                                                                        <ta=
+ble class=3D"spacer" style=3D"border-collapse: collapse; border-spacing: 0;=
+ padding: 0; text-align: left; vertical-align: top; width: 100%"><tbody><tr=
+ style=3D"padding: 0; text-align: left; vertical-align: top"><td height=3D"=
+10px" style=3D"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border=
+-collapse: collapse !important; color: #1a1a1a; font-family: Atlas Grotesk,=
+ Arial, sans-serif; font-size: 10px; font-weight: normal; hyphens: auto; li=
+ne-height: 10px; margin: 0; mso-line-height-rule: exactly; padding: 0; text=
+-align: left; vertical-align: top; word-wrap: break-word">&#xA0;</td></tr><=
+/tbody></table>
+
+                                                                        <!-=
+- Row -->
+                                                                        <ta=
+ble class=3D"row collapse action-item" style=3D"border-collapse: collapse; =
+border-spacing: 0; display: table; padding: 0; position: relative; text-ali=
+gn: left; vertical-align: top; width: 100%"><tbody><tr style=3D"padding: 0;=
+ text-align: left; vertical-align: top">
+
+                                                                           =
+ <!-- Column -->
+                                                                           =
+ <th class=3D"columns first large-10 small-10" style=3D"color: #1a1a1a; fon=
+t-family: Atlas Grotesk, Arial, sans-serif; font-size: 16px; font-weight: n=
+ormal; line-height: 24px; margin: 0 auto; padding: 0; padding-bottom: 12px;=
+ padding-left: 0 !important; padding-right: 0 !important; text-align: left;=
+"><table style=3D"border-collapse: collapse; border-spacing: 0; padding: 0;=
+ text-align: left; vertical-align: top; width: 100%"><tr style=3D"padding: =
+0; text-align: left; vertical-align: top"><th style=3D"color: #1a1a1a; font=
+-family: Atlas Grotesk, Arial, sans-serif; font-size: 16px; font-weight: no=
+rmal; line-height: 24px; margin: 0; padding: 0; text-align: left">
+                                                                           =
+     <table style=3D"border-collapse: collapse; border-spacing: 0; padding:=
+ 0; text-align: left; vertical-align: top; width: 100%"><tr style=3D"paddin=
+g: 0; text-align: left; vertical-align: top"><th width=3D"35" class=3D"padd=
+er" style=3D"color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-serif;=
+ font-size: 16px; font-weight: normal; line-height: 24px; margin: 0; paddin=
+g: 0; text-align: left; width: 35px !important">
+                                                                           =
+     <img src=3D"https://cdn.hellosign.com/1.150.0/css/images/2016_email/1x=
+1.png"  style=3D"-ms-interpolation-mode: bicubic; clear: both; display: blo=
+ck; max-width: 100%; outline: none; text-decoration: none; width: auto"/></=
+th>
+
+
+                                                                    <th cla=
+ss=3D"action-item--subheader" style=3D"color: rgba(82, 74, 62, 0.82); displ=
+ay: block; font-family: Atlas Grotesk, Arial, sans-serif; font-size: 12px; =
+font-weight: 500; line-height: 24px; margin: 0; padding: 0; text-align: lef=
+t">
+                                                                           =
+         <p class=3D'fallback-font' style=3D"font-family: Atlas Grotesk, Ar=
+ial, sans-serif; font-size: 12px; line-height: 12px; font-weight: 500; lett=
+er-spacing: 0.3px; margin-top: 14px; margin-bottom: 12px;">ACTION REQUESTED=
+</p>
+                                                                           =
+     </th></tr></table>
+                                                                           =
+     <table style=3D"border-collapse: collapse; border-spacing: 0; padding:=
+ 0; text-align: left; vertical-align: top; width: 100%"><tr style=3D"paddin=
+g: 0; text-align: left; vertical-align: top"><th class=3D"padder" width=3D"=
+35" style=3D"color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-serif;=
+ font-size: 16px; font-weight: normal; line-height: 24px; margin: 0; paddin=
+g: 0; text-align: left; width: 35px !important">
+                                                                           =
+         <img src=3D"https://cdn.hellosign.com/1.150.0/css/images/2016_emai=
+l/1x1.png"  style=3D"-ms-interpolation-mode: bicubic; clear: both; display:=
+ block; max-width: 100%; outline: none; text-decoration: none; width: auto"=
+/></th><th class=3D"action-item--action fallback-font" style=3D"color: #1E1=
+919; font-size: 20px; font-weight: 500; line-height: 30px; margin: 0; paddi=
+ng: 0; text-align: left">
+                                                                           =
+         Welcome!                                                          =
+                      </th></tr></table>
+                                                                           =
+                                                                           =
+          <table style=3D"border-collapse: collapse; border-spacing: 0; pad=
+ding: 0; text-align: left; vertical-align: top; width: 100%; margin-bottom:=
+ 8px;"><tr style=3D"padding: 0; text-align: left; vertical-align: top"><th =
+class=3D"padder" width=3D"35" style=3D"color: #1a1a1a; font-family: Atlas G=
+rotesk, Arial, sans-serif; font-size: 16px; font-weight: normal; line-heigh=
+t: 24px; margin: 0; padding: 0; text-align: left; width: 35px !important">
+                                                                           =
+         <img src=3D"https://cdn.hellosign.com/1.150.0/css/images/2016_emai=
+l/1x1.png"  style=3D"-ms-interpolation-mode: bicubic; clear: both; display:=
+ block; max-width: 100%; outline: none; text-decoration: none; width: auto"=
+/></th><th class=3D"action-item--action fallback-font" style=3D"color: #1E1=
+919; font-family: Atlas Grotesk, Arial, sans-serif; font-size: 16px; font-w=
+eight: normal; line-height: 24px; margin: 0; padding: 12px 0 0; text-align:=
+ left">
+                                                                           =
+         Please confirm your email address to start using Dropbox Sign.    =
+                                                                           =
+                                                                           =
+          </th></tr></table>
+                                                                           =
+                                                                           =
+      </th><th class=3D"expander" style=3D"color: #1a1a1a; font-family: Atl=
+as Grotesk, Arial, sans-serif; font-size: 16px; font-weight: normal; line-h=
+eight: 24px; margin: 0; padding: 0 !important; text-align: left; visibility=
+: hidden; width: 0"></th></tr></table></th>
+                                                                           =
+ <!-- /Column -->
+                                                                        </t=
+r></tbody></table>
+
+                                                                        <ta=
+ble class=3D'spacer' style=3D'border-collapse: collapse; border-spacing: 0;=
+ padding: 0; text-align: left; vertical-align: top; width: 100%'>
+            <tbody>
+                <tr style=3D'padding: 0; text-align: left; vertical-align: =
+top'>
+                    <td height=3D'4px' style=3D'-moz-hyphens: auto; -webkit=
+-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #1a=
+1a1a; font-family: Arial, sans-serif; font-size: 4px; font-weight: normal; =
+hyphens: auto; line-height: 4px; margin: 0; mso-line-height-rule: exactly; =
+padding: 0; text-align: left; vertical-align: top; word-wrap: break-word'>&=
+#xA0;</td>
+                </tr>
+            </tbody>
+        </table>
+                                                                        <!-=
+- Row -->
+                                                                        <ta=
+ble class=3D"row" style=3D"border-collapse: collapse; border-spacing: 0; di=
+splay: table; padding: 0; position: relative; text-align: left; vertical-al=
+ign: top; width: 100%"><tbody><tr style=3D"padding: 0; text-align: left; ve=
+rtical-align: top">
+                                                                           =
+ <th class=3D"columns first last large-2 small-10" style=3D"Margin: 0 auto;=
+ color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-serif; font-size: =
+16px; font-weight: normal; line-height: 24px; margin: 0 auto; padding: 0; p=
+adding-bottom: 16px; padding-left: 0 !important; padding-right: 0 !importan=
+t; text-align: left; width: 16.66667%"><table style=3D"border-collapse: col=
+lapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top=
+; width: 100%"><tr style=3D"padding: 0; text-align: left; vertical-align: t=
+op"><th style=3D"color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-se=
+rif; font-size: 16px; font-weight: normal; line-height: 24px; margin: 0; pa=
+dding: 0; text-align: left">
+                                                                           =
+ <table style=3D"border-collapse: collapse; border-spacing: 0; padding: 0; =
+text-align: left; vertical-align: top; width: 100%"><tr style=3D"padding: 0=
+; text-align: left; vertical-align: top"><th width=3D"35" class=3D"padder" =
+style=3D"color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-serif; fon=
+t-size: 16px; font-weight: normal; line-height: 24px; margin: 0; padding: 0=
+; text-align: left; width: 35px !important">
+                                                                           =
+     <img src=3D"https://cdn.hellosign.com/1.150.0/css/images/2016_email/1x=
+1.png"  style=3D"-ms-interpolation-mode: bicubic; clear: both; display: blo=
+ck; max-width: 100%; outline: none; text-decoration: none; width: auto"/></=
+th>
+
+                                                                    <th sty=
+le=3D"color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-serif; font-s=
+ize: 16px; font-weight: normal; line-height: 24px; margin: 0; padding: 0; t=
+ext-align: left">
+
+                                                                    <table =
+class=3D'button radius small-expanded' style=3D'margin: 0 0 16px 0; border-=
+collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertic=
+al-align: top;margin-bottom: 12px rebrand-button'>
+            <tr style=3D'padding: 0; text-align: left; vertical-align: top'=
+>
+                <td style=3D'-moz-hyphens: auto; -webkit-hyphens: auto; Mar=
+gin: 0; border-collapse: collapse !important; color: #1a1a1a; font-family: =
+Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; lin=
+e-height: 24px; margin: 0; padding: 0; text-align: left; vertical-align: to=
+p; word-wrap: break-word'>
+                    <table style=3D'border-collapse: collapse; border-spaci=
+ng: 0; padding: 0; text-align: left; vertical-align: top; width: 100%'>
+                        <tr style=3D'padding: 0; text-align: left; vertical=
+-align: top; '>
+                            <td style=3D'-moz-hyphens: auto; -webkit-hyphen=
+s: auto; Margin: 0; background: #0061FE; border: none; border-collapse: col=
+lapse !important; color: #ffffff !important; font-family: Arial, sans-serif=
+; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 24px; m=
+argin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: bre=
+ak-word; ; '>
+                                <a href=3D'https://app.hellosign.com/t/c859=
+2653fc0c7cb91365057eee92a180afca2b4c' style=3D'margin: 0; border: 0 solid #=
+1eb4e4; background: #0061FE; border-radius: 3px; color: #ffffff !important;=
+ display: inline-block; font-family: Atlas Grotesk, Arial, sans-serif; font=
+-weight: 500; font-size: 14px; line-height: 24px; margin: 0; padding: 12px =
+30px 12px 30px; text-align: left; text-decoration: none; text-transform: up=
+percase; text-transform: none; color: #F7F5F2 !important'>
+                                    Confirm email
+                                </a>
+                            </td>
+                            <td></td>
+                           =20
+                        </tr
+                    ></table>
+                </td>
+            </tr>
+        </table>                                                           =
+                     </th></tr></table>
+                                                                           =
+         <tr>
+                                                                           =
+             <th style=3D"color: #1a1a1a; font-family: Atlas Grotesk, Arial=
+, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px; marg=
+in: 0; padding: 0; text-align: left">
+                                                                           =
+                                                                           =
+                              </th>
+                                                                           =
+         </tr>
+                                                                           =
+ </th><th class=3D"expander" style=3D"color: #1a1a1a; font-family: Atlas Gr=
+otesk, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height=
+: 24px; margin: 0; padding: 0 !important; text-align: left; visibility: hid=
+den; width: 0"></th></tr></table></th>
+                                                                        </t=
+r></tbody></table>
+                                                                    </td></=
+tr>
+                                                                    </table=
+>
+                                                                    <!-- /A=
+CTION NOTIFICATION -->
+
+                                                                           =
+                                                     <!-- CAMPAIGN BODY -->
+                                                                           =
+                                                     <!-- /CAMPAIGN BODY --=
+>
+                                                                <table clas=
+s=3D'spacer' style=3D'border-collapse: collapse; border-spacing: 0; padding=
+: 0; text-align: left; vertical-align: top; width: 100%'>
+            <tbody>
+                <tr style=3D'padding: 0; text-align: left; vertical-align: =
+top'>
+                    <td height=3D'40px' style=3D'-moz-hyphens: auto; -webki=
+t-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #1=
+a1a1a; font-family: Arial, sans-serif; font-size: 40px; font-weight: normal=
+; hyphens: auto; line-height: 40px; margin: 0; mso-line-height-rule: exactl=
+y; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word=
+'>&#xA0;</td>
+                </tr>
+            </tbody>
+        </table>                                                           =
+     <!-- HORIZONTAL LINE -->
+                                                                <table clas=
+s=3D"row" style=3D"border-collapse: collapse; border-spacing: 0; display: t=
+able; padding: 0; position: relative; text-align: left; vertical-align: top=
+; width: 100%"><tbody><tr style=3D"padding: 0; text-align: left; vertical-a=
+lign: top">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <th=
+ width=3D"35" class=3D"padder" style=3D"color: #1a1a1a; font-family: Atlas =
+Grotesk, Arial, sans-serif; font-size: 16px; font-weight: normal; line-heig=
+ht: 24px; margin: 0; padding: 0; text-align: left; width: 35px !important">=
+<img src=3D"https://cdn.hellosign.com/1.150.0/css/images/2016_email/1x1.png=
+"  style=3D"-ms-interpolation-mode: bicubic; clear: both; display: block; m=
+ax-width: 100%; outline: none; text-decoration: none; width: auto"/></th>
+                                                                        <th=
+ style=3D"color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-serif; fo=
+nt-size: 16px; font-weight: normal; line-height: 24px; margin: 0; padding: =
+0; text-align: left"><hr style=3D"background: #E6E6E6; border: none; height=
+: 1px; margin: 0; outline: none"></th>
+                                                                        <th=
+ width=3D"35" class=3D"padder" style=3D"color: #1a1a1a; font-family: Atlas =
+Grotesk, Arial, sans-serif; font-size: 16px; font-weight: normal; line-heig=
+ht: 24px; margin: 0; padding: 0; text-align: left; width: 35px !important">=
+<img src=3D"https://cdn.hellosign.com/1.150.0/css/images/2016_email/1x1.png=
+"  style=3D"-ms-interpolation-mode: bicubic; clear: both; display: block; m=
+ax-width: 100%; outline: none; text-decoration: none; width: auto"/></th>
+                                                                    </tr>
+                                                                    </tbody=
+>
+                                                                </table>
+                                                                <!-- HORIZO=
+NTAL LINE -->
+                                                                           =
+                                                     <table class=3D'spacer=
+' style=3D'border-collapse: collapse; border-spacing: 0; padding: 0; text-a=
+lign: left; vertical-align: top; width: 100%'>
+            <tbody>
+                <tr style=3D'padding: 0; text-align: left; vertical-align: =
+top'>
+                    <td height=3D'16px' style=3D'-moz-hyphens: auto; -webki=
+t-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #1=
+a1a1a; font-family: Arial, sans-serif; font-size: 16px; font-weight: normal=
+; hyphens: auto; line-height: 16px; margin: 0; mso-line-height-rule: exactl=
+y; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word=
+'>&#xA0;</td>
+                </tr>
+            </tbody>
+        </table>                                                           =
+     <table style=3D"border-collapse: collapse; border-spacing: 0; padding:=
+ 0; text-align: left; vertical-align: top; width: 100%">
+                                                                    <tbody>
+                                                                        <tr=
+ style=3D"padding: 0; text-align: left; vertical-align: top">
+                                                                           =
+ <th width=3D"35" class=3D"padder" style=3D"color: #1a1a1a; font-family: At=
+las Grotesk, Arial, sans-serif; font-size: 16px; font-weight: normal; line-=
+height: 24px; margin: 0; padding: 0; text-align: left; width: 35px !importa=
+nt">
+                                                                           =
+     <img src=3D"https://cdn.hellosign.com/1.150.0/css/images/2016_email/1x=
+1.png"  style=3D"-ms-interpolation-mode: bicubic; clear: both; display: blo=
+ck; max-width: 100%; outline: none; text-decoration: none; width: auto"/>  =
+                                                                          <=
+/th>
+                                                                           =
+ <th style=3D"color: #1E1919; font-family: Atlas Grotesk, Arial, sans-serif=
+; font-size: 12px; font-weight: 400; line-height: 16px; margin: 0; padding:=
+ 0; text-align: left">
+                                                                           =
+     Thanks, </br> The Dropbox Sign team                                   =
+                                         </th>
+                                                                           =
+ <th style=3D"color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-serif=
+; font-size: 16px; font-weight: normal; line-height: 24px; margin: 0; paddi=
+ng: 0; text-align: left">
+                                                                           =
+ </th>
+                                                                        </t=
+r>
+                                                                    </tbody=
+>
+                                                                </table>
+                                                                           =
+                                                     <table class=3D'spacer=
+' style=3D'border-collapse: collapse; border-spacing: 0; padding: 0; text-a=
+lign: left; vertical-align: top; width: 100%'>
+            <tbody>
+                <tr style=3D'padding: 0; text-align: left; vertical-align: =
+top'>
+                    <td height=3D'24px' style=3D'-moz-hyphens: auto; -webki=
+t-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #1=
+a1a1a; font-family: Arial, sans-serif; font-size: 24px; font-weight: normal=
+; hyphens: auto; line-height: 24px; margin: 0; mso-line-height-rule: exactl=
+y; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word=
+'>&#xA0;</td>
+                </tr>
+            </tbody>
+        </table>                                                           =
+ </th>
+                                                            <th class=3D"ex=
+pander" style=3D"color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-se=
+rif; font-size: 16px; font-weight: normal; line-height: 24px; margin: 0; pa=
+dding: 0 !important; text-align: left; visibility: hidden; width: 0"></th>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- WARNING -->
+                                        <!-- /WARNING -->
+
+                    <!-- FOOTER -->
+                                    </center>
+            </td>
+        </tr>
+    </table>
+    <!-- prevent Gmail on iOS font size manipulation -->
+    <div style=3D"display:none; white-space:nowrap; font:15px courier; line=
+-height:0"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </d=
+iv>
+</body>
+
+</html>
+
+--2b8815bda8eedd02e0c4338aeb37e56d4ddfe313c15266bdfcd34e248abf--

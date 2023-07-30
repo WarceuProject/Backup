@@ -1,0 +1,151 @@
+Return-Path: <ingeocon@webhosting2033.is.cc>
+Delivered-To: kira+spam@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id CCqhCU92OWRJmiYAMUeTPA
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	for <kira+spam@binc.pw>; Fri, 14 Apr 2023 22:50:39 +0700
+Return-path: <ingeocon@webhosting2033.is.cc>
+Envelope-to: kira@binc.pw
+Delivery-date: Fri, 14 Apr 2023 22:50:39 +0700
+Received: from crab.oak.relay.mailchannels.net ([23.83.215.42]:59733)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1pnLhA-00Abr6-1n
+	for kira@binc.pw;
+	Fri, 14 Apr 2023 22:50:39 +0700
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id EF3038C11EE
+	for <kira@binc.pw>; Fri, 14 Apr 2023 15:49:54 +0000 (UTC)
+Received: from rspamd3.mailbaby.net (unknown [127.0.0.6])
+	(Authenticated sender: interserver)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 718088C09A4
+	for <kira@binc.pw>; Fri, 14 Apr 2023 15:49:54 +0000 (UTC)
+ARC-Seal: i=2; s=arc-2022; d=mailchannels.net; t=1681487394; a=rsa-sha256;
+	cv=pass;
+	b=gbrRBrGtfwsOr83JR2Ao2Il/+iQRLijqOQYV2H2pKcnQ80RFyhpDtoYgj83UNbiCzJyfTG
+	yBNJUwhD9CR2gU6skG/cemXjH8PrcCQrsLRbpYfFjPaUxUO0ue0wY7N063CjJBp81lB0SQ
+	4w3Wj7X8JDXNeLk+1BjFG6emzaRHE//KdFHitO/s0/PvEDMWZT0d5QDHf6oaRH27pA9YkK
+	XyqPQu2jIAvwz40z2cGQIMuyOkICgYUaTA7c3V4JrZuos8co60B/AOVWof8fAhIWAekw+t
+	fy9AMjXuObr6Jf9znMpNqKaq1Xg328CkVxbSb855HFiwNg4eDhmg8j3RhgQ/7A==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1681487394;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=s9dcHT3+xuRtdRxqrS3g/hCP1RgQ0ulTIDPMYHMPVwQ=;
+	b=h1afvVdx976W2v/cbzcQSS3ixQ3KgFEv1kXPKXELfMWM99unL3olvq19nLQe4jB2c9mrRi
+	EKw3+U7dP2uj7tOQzpKp3T4LUeV8BiiGrT7FbpEw7tZFfNU3kSoXPO3oQBmz+cXZlqT3VT
+	h3hXej23Gswan7+qpnS7xLuVGWIOBeXiQFY/12BAZjAgMIZGWwc3ekKax20e7Qqi4atOYS
+	QC7qGuwxbvtmOvLMC1LcahPgn4yFKImCKGn9n9x7k89Cs9HeYX5/J70biF1c73yYcRgg/N
+	d2QeWmTaXV2dM3cl+IWc2D5rSBKc9N0aYrzTJ/H+gBtYVP0sjJrLD6jFi3v5Ng==
+ARC-Authentication-Results: i=2;
+	rspamd-548d6c8f77-8pt2r;
+	arc=pass ("mailbaby.net:s=detka:i=1");
+	auth=pass smtp.auth=interserver smtp.mailfrom=ingeocon@webhosting2033.is.cc
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MC-Relay: Bad
+X-MailChannels-SenderId: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MailChannels-Auth-Id: interserver
+X-Keen-Rock: 4d4d45910956ea80_1681487394759_4230472920
+X-MC-Loop-Signature: 1681487394759:7674259
+X-MC-Ingress-Time: 1681487394759
+Received: from rspamd3.mailbaby.net (rspamd3.mailbaby.net [209.159.148.234])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.107.49.209 (trex/6.7.2);
+	Fri, 14 Apr 2023 15:49:54 +0000
+Received: from webhosting2033.is.cc ([68.168.213.91] webhosting2033.is.cc)
+ (Authenticated sender: webhosting2033)
+ by rspamd3.mailbaby.net (InterServerMTA) with ESMTPSA id 18780756202000fe6e.001
+ for <kira@binc.pw>
+ (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256);
+ Fri, 14 Apr 2023 15:49:49 +0000
+X-Zone-Loop: ebcde67372b6980ed4a01262ac90eceeec2e1cb32431
+ARC-Authentication-Results: i=1;	relay0.mailbaby.net;	auth=pass
+ smtp.auth=webhosting2033 smtp.mailfrom=ingeocon@webhosting2033.is.cc
+ARC-Seal: i=1; s=detka; d=mailbaby.net; t=1681487389; a=rsa-sha256;
+	cv=none;
+	b=FeQ6n50A3L4Hgdi34DrPr9V1jb5z4WZGQtErFQS/RDEQTKsKt5C+VGnrEgacNlkiu2DGAE
+	r73/cg3jh829AT8f26/NA8P06fhUGyhnMR+9gKkPqc8leNBJ+jWPwEnfZxtSiDUGoGXleW
+	936oYDBfdA+dEMeJ2nIV1MVdnfAejxzP7wxY/KKMDQuPJkaxDsZpXM0hLiGFmlbGruznYk
+	0h9ZLD/ig0SXoSLCnq6U9BI6PezqupI1BAkem0zd+pMpWP+WNGlr9JDwzC2Mpkg09NEm9Q
+	rVDVbBMo2gND3XFzhbdX4DgbB+a1372ZoQgkDM79c1FrRXyVStCtft2igvoOcA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailbaby.net;	s=detka; t=1681487389;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=s9dcHT3+xuRtdRxqrS3g/hCP1RgQ0ulTIDPMYHMPVwQ=;
+	b=RLMBjkoGBhzmPvtY+2VIXqqLx/jRWfs475wktfp3/riuVEHaRwShaahxt1rR58RN+uSHlE
+	IPEnJ9wlIERBXO7D2tkFHtrWYOfVlrr+aZDVEC71XscpcSn1syrGnHYzjV0L83xnZr9+jh
+	+CTzbeRaVAaiHQaaNajsA7n8pLNR4GcjmnWYSYqtwaqjnU9nPydfZayjv/YSQoCRiHmBoc
+	m4PAkBsErq8FixrY/mXjb8TVyEpYVzH/pdueKh1Y1KUkqanF3FhdnhxQAaSQ41Bwkybgb9
+	zZQDIgQn0tCYwPRCYxJxqjDugLVIV3EzdvEpQQsLHDQQdsPPKYpzG/hGqyA7Qw==
+X-SPF: pass
+X-Originating-IP: [68.168.213.91]
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=webhosting2033.is.cc; s=default; h=Sender:Content-Type:MIME-Version:
+	Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=s9dcHT3+xuRtdRxqrS3g/hCP1RgQ0ulTIDPMYHMPVwQ=; b=4/Q9PppJa5gsWGXTl3E6wHhVNq
+	qLfSkf8o4Ez0n0YO4nE1QG/GCXd0MPQkc/8GytyZaxV4eCHWFLLzK83r6CLJ+kkYoPfzK1Ygt71fC
+	bffr96OTLkCe0pN9XXKykHEQOBfSrgppRJ5ggYWnGS6ThKKS3bQmADyOok2E6gkCMJYoNpmvSPJKF
+	O/IXeNO/0uFNOXg0Mu5pkb8sg/cOB+2li6Vx3UX1IhSm9lrhJjTSYEHyv5zM7MmzFI0hnnwpfyhjL
+	HgKAaIn/KL0o34eS4boJmTfBjsPC3q77Haqqp/Xs4Mb0YLlg76nJbTfRSBS4dhCNU8HN+JbI/8OS/
+	h2Di+CMA==;
+Received: from ingeocon by webhosting2033.is.cc with local (Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1pnLgK-0013W0-00
+	for kira@binc.pw;
+	Fri, 14 Apr 2023 11:49:48 -0400
+To: kira@binc.pw
+X-PHP-Script: ingeoconsulting.com/wp-admin/user-new.php for 36.78.74.205
+X-PHP-Originating-Script: 1159:class-phpmailer.php
+Date: Fri, 14 Apr 2023 15:49:47 +0000
+From: WordPress <wordpress@ingeoconsulting.com>
+Message-ID: <9de817f62cd293389203a4b950c7caf2@ingeoconsulting.com>
+X-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <ingeocon@webhosting2033.is.cc>
+X-AuthUser: ingeocon@webhosting2033.is.cc
+X-Spam-Status: Yes, score=5.2
+X-Spam-Score: 52
+X-Spam-Bar: +++++
+X-Spam-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  New user registration on your site InGEO consulting: Username:
+    kira Email: kira@binc.pw 
+ Content analysis details:   (5.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: is.cc]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  5.0 KAM_SOMETLD_ARE_BAD_TLD .stream, .trade, .pw, .top, .press,
+                             .guru, .casa & .date TLD Abuse
+X-Spam-Flag: YES
+Subject:  ***SPAM***  [InGEO consulting] New User Registration
+
+New user registration on your site InGEO consulting:
+
+Username: kira
+
+Email: kira@binc.pw
+

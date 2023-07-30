@@ -1,0 +1,100 @@
+Return-Path: <bjorkanism19@gmail.com>
+Delivered-To: pay@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id OHDmJdSiX2RcTw4AMUeTPA
+	(envelope-from <bjorkanism19@gmail.com>)
+	for <pay@binc.pw>; Sat, 13 May 2023 21:46:44 +0700
+Return-path: <bjorkanism19@gmail.com>
+Envelope-to: pay@binc.pw
+Delivery-date: Sat, 13 May 2023 21:46:44 +0700
+Received: from mail-oi1-f173.google.com ([209.85.167.173]:57573)
+	by dc3.kencang.id with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <bjorkanism19@gmail.com>)
+	id 1pxqWD-004AUQ-11
+	for pay@binc.pw;
+	Sat, 13 May 2023 21:46:44 +0700
+Received: by mail-oi1-f173.google.com with SMTP id 5614622812f47-38ea3f8e413so5570225b6e.2
+        for <pay@binc.pw>; Sat, 13 May 2023 07:46:23 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1683989161; x=1686581161;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=ywGrpDLDsJPBpHdWiV8vuSCq/24by3Ln1IensUgypMs=;
+        b=rR5Qr1TsE4DdCNGQqtLcpFMrr9lRC8tJ5HplwnD19jmzNQE7nU0G8GEWzvjRM57qD/
+         Ihn71ULBO4XJNEfeN10B4Px1k6iBUgPDaoRPNmrrmn4dcI/VoW0k8vN5bowcHqa4Gu5z
+         L1VXp+T3Qgem92EHefdhqaH6Ng2+kOgeamwTOGJzVrXtPIiyRqzI3CJioRs5ZWhnFHL/
+         ykbLcb2zt+GPmJXOWmPzivFSHwYawWyAq436T+3f+tQD2/e9He2T5pAkvoXXztBruNq4
+         XbgslfCci/8HNN9L1Jh6k7hpbfnNl4myiA6AK7gTchXJtugrqJoM0BZNnd8vmqoAnxJ0
+         YQXw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1683989161; x=1686581161;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=ywGrpDLDsJPBpHdWiV8vuSCq/24by3Ln1IensUgypMs=;
+        b=c9Ridk5R+bOfvHp+ezlHl+qOfoQSvhkwLGTUZhRXD3dTg3ac88OvhEoe/gUQexpxHa
+         3dJHGcPNFezq6WHYhxBM2ROxFEKOUgd5C8T+JRdyqStoFLSvVuigRtK/nfBFQAKOHttQ
+         VB0IXFtzBTw+QEu/LEQUO9Atl5bK9+w85JxjGuRRO+8pVqO0hxV5L4T9DFnoK/CyJ6IK
+         GpD6KUCnSaDSMHNQ+t7ogwbWb7b2RxXWGDLuRU85H/OxbtZK590SC5WqA82ccPKRhAx8
+         ZTLiYAQZ+AJkf/kvkwAKLWNWOQYILHIrqX9uiN3KBOmzahfNcqxI7CcDtxznMZMgHfx4
+         Db4A==
+X-Gm-Message-State: AC+VfDwrOLq0q3oqYXn0My7jliEqzL+PsBxb14seXDOh5CdsL7r2+HSw
+	Kx4yQ6UxLV/F8UJs7Svwv5XkyfAkjXQSPWZWuLcVu4UK
+X-Google-Smtp-Source: ACHHUZ7JYmLjtoGI0uNA/hGwbinqW1Ofxsn5mHGVCPzs1q1BcZ7aCb6iP6y1P8t+IndD9/IJPOzWE+ozD89c25Ge8vQ=
+X-Received: by 2002:a05:6808:492:b0:394:1c4e:b543 with SMTP id
+ z18-20020a056808049200b003941c4eb543mr7312806oid.11.1683989161126; Sat, 13
+ May 2023 07:46:01 -0700 (PDT)
+MIME-Version: 1.0
+From: Bjorkanism 0 <bjorkanism19@gmail.com>
+Date: Sat, 13 May 2023 22:45:49 +0800
+Message-ID: <CAM3fPaA+_RKf46nsir51VF-FrtJMQOHnNkqX6GOceX_bG_dipA@mail.gmail.com>
+Subject: For account upgrades
+To: pay@binc.pw
+Content-Type: multipart/alternative; boundary="000000000000c1312e05fb94477a"
+X-Spam-Status: No, score=0.1
+X-Spam-Score: 1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  How do I upgrade my account, in this new forum. Is the forum
+    like the former Breachforum forum. What has been closed is this true this
+    is the newest forum How do I upgrade my account, in this new forum. Is the
+    forum like the former Breachforum forum. What has been closed is this true
+    this is the newest forum 
+ Content analysis details:   (0.1 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
+                             in digit
+                             [bjorkanism19[at]gmail.com]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [bjorkanism19[at]gmail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+X-Spam-Flag: NO
+
+--000000000000c1312e05fb94477a
+Content-Type: text/plain; charset="UTF-8"
+
+How do I upgrade my account, in this new forum. Is the forum like the
+former Breachforum forum. What has been closed is this true this is the
+newest forum
+
+--000000000000c1312e05fb94477a
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto">How do I upgrade my account, in this new forum. Is the forum like the former Breachforum forum. What has been closed is this true this is the newest forum</div>
+
+--000000000000c1312e05fb94477a--

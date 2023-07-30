@@ -1,0 +1,113 @@
+Return-Path: <u431674835@srv736.main-hosting.eu>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id SCdMJpA/gmRdHAAAMUeTPA
+	(envelope-from <u431674835@srv736.main-hosting.eu>)
+	for <kira@binc.pw>; Fri, 09 Jun 2023 03:52:32 +0700
+Return-path: <u431674835@srv736.main-hosting.eu>
+Envelope-to: kira@binc.pw
+Delivery-date: Fri, 09 Jun 2023 03:52:32 +0700
+Received: from purple.birch.relay.mailchannels.net ([23.83.209.150]:13210)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <u431674835@srv736.main-hosting.eu>)
+	id 1q7McO-000djb-1S
+	for kira@binc.pw;
+	Fri, 09 Jun 2023 03:52:32 +0700
+X-Sender-Id: hostingershared|x-authuser|u431674835@srv736.main-hosting.eu
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 3945F501C46;
+	Thu,  8 Jun 2023 17:14:38 +0000 (UTC)
+Received: from srv736.main-hosting.eu (unknown [127.0.0.6])
+	(Authenticated sender: hostingershared)
+	by relay.mailchannels.net (Postfix) with ESMTPA id D56C6501721
+	for <kira@binc.pw>; Thu,  8 Jun 2023 17:14:37 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1686244477; a=rsa-sha256;
+	cv=none;
+	b=BCAG6hhOXv4pz6MXLbvextNAE6LoDCHwkEsc66+xjdmuLS04hHIrkp7XsPnrybB2WJUX+i
+	zh7p7DO9J0u2OvKBINws2R4hGWi8+uYb0VrlitE3zrHfuEhOedKNIW84I5+FtlaWY+5lGE
+	jSGRhE65Btiv2k6ZVAR+EuqJCNK2BE7ou3eghhOeNCfavqY714urs3StTHsIvc9GJE0BFR
+	5TmZVdQy+0wDlnTURE6AmaeK8TCQUHZmGqIsl0CzBrq667cJZsS/29943JHoKN0gUtEYTi
+	eKOImrj67cxchzw0JvMjbhuEa5aTGqo3Q91Z6SXpO4TbElIyNLsekVG1+m+KHA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1686244477;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type; bh=1ebxkB25cQfZGexk6IC/obAygmsNQ1Jqv0J3QiqiMvQ=;
+	b=nhkPMEpFxHAIshXsC8AbfoiNLc5j3HcRkAkBJmJN5d2UD3FfP4Mwsi+qxaUU1Elr7fQRXU
+	v3TSjVaIqmTlq/t+wAWntjjJqu6uBWSIZ2+cSflTT1TMcRfzqw9LsPVaeS3S8U56vhaeG7
+	gkSSzT0uQleNxBWs+TQP6Ge4Zrp5y/LdGCPvQCFv2KaZ8my6OueNNPG5M1K55tz1P3zx1o
+	1XkFzw1RWJ2YW/S1ZsNqtMtKEuI9se9jMToUzX0z5fP9g32xoEOjTYH82xG7KwM5A5HF6n
+	tqO1+2qk/BFtQXCJi3O6xtzWQPtJgdlo66kvFujaKHUOy8DeBbIhoYOEbwVTmw==
+ARC-Authentication-Results: i=1;
+	rspamd-fcb9f4dcf-xljrf;
+	auth=pass smtp.auth=hostingershared
+ smtp.mailfrom=u431674835@srv736.main-hosting.eu
+X-Sender-Id: hostingershared|x-authuser|u431674835@srv736.main-hosting.eu
+X-MC-Relay: Neutral
+X-MC-Copy: stored-urls
+X-MailChannels-SenderId:
+ hostingershared|x-authuser|u431674835@srv736.main-hosting.eu
+X-MailChannels-Auth-Id: hostingershared
+X-Occur-Cooperative: 129e9bf86d2b3039_1686244478000_3362270875
+X-MC-Loop-Signature: 1686244478000:1634456207
+X-MC-Ingress-Time: 1686244478000
+Received: from srv736.main-hosting.eu ([UNAVAILABLE]. [194.195.84.52])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.107.49.247 (trex/6.8.1);
+	Thu, 08 Jun 2023 17:14:37 +0000
+Received: from u431674835 by srv736.main-hosting.eu with local (Exim 4.96)
+	(envelope-from <u431674835@srv736.main-hosting.eu>)
+	id 1q7JDY-00AeYc-2P
+	for kira@binc.pw;
+	Thu, 08 Jun 2023 17:14:36 +0000
+To: kira@binc.pw
+Subject: [safetyinsurances.com] Login Details
+X-PHP-Script: safetyinsurances.com/wp-admin/user-new.php for 36.72.60.79, 36.72.60.79
+X-PHP-Filename: /home/u431674835/domains/safetyinsurances.com/public_html/wp-admin/user-new.php REMOTE_ADDR: 36.72.60.79
+X-PHP-Originating-Script: 431674835:PHPMailer.php
+Date: Thu, 8 Jun 2023 17:14:36 +0000
+From: WordPress <wordpress@safetyinsurances.com>
+Message-ID: <o2S6dMtihxRoLwFEKzkYJWLiWBTnRI2wgeuln2Is@safetyinsurances.com>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <u431674835@srv736.main-hosting.eu>
+X-AuthUser: u431674835@srv736.main-hosting.eu
+X-Spam-Status: No, score=2.8
+X-Spam-Score: 28
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Username: kira To set your password, visit the following address:
+    https://safetyinsurances.com/wp-login.php?action=rp&key=7EnClFR4BwzLIZWIMloe&login=kira
+    
+ Content analysis details:   (2.8 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: safetyinsurances.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  2.5 PHP_SCRIPT             Sent by PHP script
+X-Spam-Flag: NO
+
+Username: kira
+
+To set your password, visit the following address:
+
+https://safetyinsurances.com/wp-login.php?action=rp&key=7EnClFR4BwzLIZWIMloe&login=kira
+
+https://safetyinsurances.com/wp-login.php
+

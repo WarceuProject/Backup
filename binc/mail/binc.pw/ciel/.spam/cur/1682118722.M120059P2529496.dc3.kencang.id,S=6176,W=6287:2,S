@@ -1,0 +1,111 @@
+Return-Path: <generazionecerno@srv314.seekahost.net>
+Delivered-To: ciel+spam@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id qNNSBEIYQ2TYmCYAMUeTPA
+	(envelope-from <generazionecerno@srv314.seekahost.net>)
+	for <ciel+spam@binc.pw>; Sat, 22 Apr 2023 06:12:02 +0700
+Return-path: <generazionecerno@srv314.seekahost.net>
+Envelope-to: ciel@binc.pw
+Delivery-date: Sat, 22 Apr 2023 06:12:02 +0700
+Received: from srv314.seekahost.net ([51.210.208.71]:48504)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <generazionecerno@srv314.seekahost.net>)
+	id 1ppzv9-00AdRv-1V
+	for ciel@binc.pw;
+	Sat, 22 Apr 2023 06:12:01 +0700
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=generazionecernobyl.org; s=default; h=Content-Transfer-Encoding:
+	Content-Type:MIME-Version:Message-ID:From:Date:Subject:To:Sender:Reply-To:Cc:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=hrgFKBC+Uxp4ZwakMiKVFemIlcH9yizMQq1IwJYSbo0=; b=Zt1R+z9dp+WEhtnFDA4Mf0eX58
+	X2IEAF8BKIb3MPtD+6ZRSYd4DnNmLSKD+gQPnGkar5/ZIFyib+/iqPR0TxefZLucv3FhUtyD/BPTF
+	c1Fhh+lORBR0zVMaJlQ8YqE/avdMvdPGgXaqwI+u3rryOcE4C3vTxMfYJClRbb1Vb14abbgxL5cBr
+	WO6LYp7y6edwVXcIRqZu3RBxAjZPoQ8cCdvrv+ac2BOyYH18vfWZpnCdDem2Hng3nRnh+W7ZeCjzi
+	X4FDQ/x1bNzf9QJ4M08aCmCFREuWwxmTIhwvTmId8HdUMpGlFakBH94sKIaSHiD95AMPPmeSzJ6/b
+	B03+592Q==;
+Received: from generazionecerno by srv314.seekahost.net with local (Exim 4.96)
+	(envelope-from <generazionecerno@srv314.seekahost.net>)
+	id 1ppzuP-004yF4-2J
+	for ciel@binc.pw;
+	Sat, 22 Apr 2023 01:11:17 +0200
+To: ciel@binc.pw
+X-PHP-Script: generazionecernobyl.org/wp-comments-post.php for 138.199.63.95
+ X-PHP-Originating-Script: 1853:PHPMailer.php
+Date: Fri, 21 Apr 2023 23:11:17 +0000
+From: WordPress <wordpress@generazionecernobyl.org>
+Message-ID: <ICCfBJQOvCos4usykZ26pfRX5gXcOouCJ6e5gF6X3qs@generazionecernobyl.org>
+X-Mailer: PHPMailer 6.6.5 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - srv314.seekahost.net
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [1853 990] / [47 12]
+X-AntiAbuse: Sender Address Domain - srv314.seekahost.net
+X-Get-Message-Sender-Via: srv314.seekahost.net: authenticated_id: generazionecerno/from_h
+X-Authenticated-Sender: srv314.seekahost.net: wordpress@generazionecernobyl.org
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: generazionecernobyl.org:/public_html
+X-Spam-Status: Yes, score=6.2
+X-Spam-Score: 62
+X-Spam-Bar: ++++++
+X-Spam-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "The World of Online Games" is waiting
+    for your approval https://generazionecernobyl.org/the-world-of-online-games/
+    Author: Elenamig (IP address: 138.199.63.95, 138.199.63.95) Email: elenamig@mgtconsul.com
+    URL: http://cardtisoters.tk/usr-7410/ Comment: Hello! Pеrhаps mу mеѕѕagе
+    іѕ too ѕрeсifiс. Βut m� [...] 
+ Content analysis details:   (6.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: generazionecernobyl.org]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  5.0 KAM_TK                 RAW: Abuse of .tk domain registrar which offers free
+                             domains
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  1.0 UNICODE_OBFU_ASC       Obfuscating text with unicode
+X-Spam-Flag: YES
+Subject:  ***SPAM***  =?us-ascii?Q?[Generazione_Cerno]_Please_moderate:_"The_World?=
+ =?us-ascii?Q?_of_Online_Games"?=
+
+A new comment on the post "The World of Online Games" is waiting for your approval
+https://generazionecernobyl.org/the-world-of-online-games/
+
+Author: Elenamig (IP address: 138.199.63.95, 138.199.63.95)
+Email: elenamig@mgtconsul.com
+URL: http://cardtisoters.tk/usr-7410/
+Comment: 
+Hello!
+Pеrhаps mу mеѕѕagе іѕ too ѕрeсifiс.
+Βut mу оldеr siѕtеr fоund a wоndеrful man herе аnd theу hаve a great relationѕhір, but whаt abоut me?
+I аm 22 yеаrѕ оld, Еlena, frоm the Czech Reрublіc, know Еngliѕh language alѕo
+Αnd... bеtter tо say іt іmmеdіately. I аm bіѕехuаl. Ι аm not ϳеаlous оf аnother wоmаn... еsреcially іf wе makе love togеthеr.
+Ah уеѕ, I cоok very tasty! and I lоve nоt only сoоk ;))
+Im rеаl girl аnd lоoking fоr ѕеrіouѕ and hоt rеlаtionshіp...
+Аnyway, you cаn fіnd mу рrofіlе hеrе: http://cardtisoters.tk/usr-7410/
+
+Approve it: https://generazionecernobyl.org/wp-admin/comment.php?action=approve&c=15975#wpbody-content
+Trash it: https://generazionecernobyl.org/wp-admin/comment.php?action=trash&c=15975#wpbody-content
+Spam it: https://generazionecernobyl.org/wp-admin/comment.php?action=spam&c=15975#wpbody-content
+Currently 15,877 comments are waiting for approval. Please visit the moderation panel:
+https://generazionecernobyl.org/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

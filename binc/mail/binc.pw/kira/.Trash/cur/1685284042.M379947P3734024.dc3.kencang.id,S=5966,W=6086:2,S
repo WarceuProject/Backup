@@ -1,0 +1,120 @@
+Return-Path: <shannonbrachehai@cpanel-552-syd.hostingww.com>
+Delivered-To: kira+spam@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id mAtpFspkc2QI+jgAMUeTPA
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	for <kira+spam@binc.pw>; Sun, 28 May 2023 21:27:22 +0700
+Return-path: <shannonbrachehai@cpanel-552-syd.hostingww.com>
+Envelope-to: kira@binc.pw
+Delivery-date: Sun, 28 May 2023 21:27:22 +0700
+Received: from bumble.maple.relay.mailchannels.net ([23.83.214.25]:52529)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	id 1q3HMa-00Fg9r-2G
+	for kira@binc.pw;
+	Sun, 28 May 2023 21:27:22 +0700
+X-Sender-Id:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 8117C7E0F8E;
+	Sun, 28 May 2023 14:26:34 +0000 (UTC)
+Received: from cpanel-552-syd.hostingww.com (unknown [127.0.0.6])
+	(Authenticated sender: instrampxe0y3a)
+	by relay.mailchannels.net (Postfix) with ESMTPA id F06AD7E115E
+	for <kira@binc.pw>; Sun, 28 May 2023 14:26:33 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1685283994; a=rsa-sha256;
+	cv=none;
+	b=CxXxPs6OFm3S0tCCNPRRkfU10+3rePRGDwrVkwHvaMsrfh6rZ5N89foTpmdyLEvOxN/ft5
+	0iGl0qMtuK/uf4bqVblMfNk+1YyUdOlMlxS0UY9d2JD4SdJeQMMDj9j8qkBqGcVJBPBagm
+	i5nYDkEGmQuK1/6MEQpg69hXxRWMaeVAFXNHa6WyUfcL7ej5FJ9qAnr4qgs0MAgM+m0LcA
+	4Wf2k45ngE3mcriFX2jGqu94CboP+Q8719+NBFyNp/jC9lWaPSjHv/g/mBKeFMHI5Rcp29
+	eAmlCVUuYSXn7Mo+Yi+C1aAPz8/ms9d6APIEgWZo61vGZzV4I7a8uplcnX+DIQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1685283994;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type; bh=jMgMIt/at+uRo8md+As8lAf/dL41ojo2rtYNHjjnMkM=;
+	b=xw+QI9pHPHtDg2NjBs9jKSfX667XzpjstWzh+NmzKo2ngAlYF8gG2sfbU/78gTmnQSHQ9C
+	6LBRnYU9nmNqPPMi5plOCfPsYhwTboLftsE7oIh603V6YIBAo/ui6PoKhi9ifc+BglrDMD
+	rrIA3bY0w6QBNNlda/pp5cUayvs9mxTkpTTL+U/2er49jklh9pxhVOxBArTwylzptjl1yC
+	oOvaxsr/HGpPA3MSxgY6RwGR7Mxn1jrKmbSr03ddDSvJ9PoZLvBBLv+HIh/axLXfJVuRBP
+	7TS+7O3bSjmTZFDkkTtnU4Qxllqjn5vyZZokLk0SMJZPkyk9MdAGkiaRhS1J2Q==
+ARC-Authentication-Results: i=1;
+	rspamd-859c7bff78-g7slg;
+	auth=pass smtp.auth=instrampxe0y3a
+ smtp.mailfrom=shannonbrachehai@cpanel-552-syd.hostingww.com
+X-Sender-Id:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+X-MC-Relay: Neutral
+X-MC-Copy: stored-urls
+X-MailChannels-SenderId:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+X-MailChannels-Auth-Id: instrampxe0y3a
+X-Tart-Hysterical: 762772265f795af2_1685283994291_1901147320
+X-MC-Loop-Signature: 1685283994291:900034970
+X-MC-Ingress-Time: 1685283994291
+Received: from cpanel-552-syd.hostingww.com (cpanel-552-syd.hostingww.com
+ [103.152.248.20])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384)
+	by 100.125.42.141 (trex/6.8.1);
+	Sun, 28 May 2023 14:26:34 +0000
+Received: from shannonbrachehai by cpanel-552-syd.hostingww.com with local (Exim 4.96)
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	id 1q3HLn-00De64-0a
+	for kira@binc.pw;
+	Mon, 29 May 2023 00:26:32 +1000
+To: kira@binc.pw
+X-PHP-Script: shannonbrachehair.com.au/wp-admin/user-new.php for 222.124.123.222
+X-PHP-Filename: /home/shannonbrachehai/public_html/wp-admin/user-new.php REMOTE_ADDR: 222.124.123.222
+Date: Sun, 28 May 2023 14:26:27 +0000
+From: WordPress <wordpress@shannonbrachehair.com.au>
+Message-ID: <D11u008arZoT6su0IHyHfDYU1hwPZNARcmqexMaA@shannonbrachehair.com.au>
+X-Mailer: PHPMailer 6.6.5 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <shannonbrachehai@cpanel-552-syd.hostingww.com>
+X-AuthUser: shannonbrachehai@cpanel-552-syd.hostingww.com
+X-Spam-Status: Yes, score=6.5
+X-Spam-Score: 65
+X-Spam-Bar: ++++++
+X-Spam-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Username: kira To set your password, visit the following address:
+    https://shannonbrachehair.com.au/wp-login.php?action=rp&key=64zhBfzqC9BZsUkbVxDP&login=kira
+    
+ Content analysis details:   (6.5 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: shannonbrachehair.com.au]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.2 KAM_DMARC_NONE         DKIM has Failed or SPF has failed on the message
+                             and the domain has no DMARC policy
+  1.0 KAM_LAZY_DOMAIN_SECURITY Sending domain does not have any
+                             anti-forgery methods
+  2.5 PHP_SCRIPT             Sent by PHP script
+  2.5 KAM_LINKBAIT           Short messages containing little more than a link,
+                             from a domain with no security in place
+X-Spam-Flag: YES
+Subject:  ***SPAM***  [Shannon Brache Hair] Login Details
+
+Username: kira
+
+To set your password, visit the following address:
+
+https://shannonbrachehair.com.au/wp-login.php?action=rp&key=64zhBfzqC9BZsUkbVxDP&login=kira
+
+https://shannonbrachehair.com.au/wp-login.php
+

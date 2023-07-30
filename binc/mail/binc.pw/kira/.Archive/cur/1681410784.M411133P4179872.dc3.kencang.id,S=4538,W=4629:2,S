@@ -1,0 +1,91 @@
+Return-Path: <grafica2@host4004.hospedameusite.net>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id OEZBGOBKOGSgxz8AMUeTPA
+	(envelope-from <grafica2@host4004.hospedameusite.net>)
+	for <kira@binc.pw>; Fri, 14 Apr 2023 01:33:04 +0700
+Return-path: <grafica2@host4004.hospedameusite.net>
+Envelope-to: kira@binc.pw
+Delivery-date: Fri, 14 Apr 2023 01:33:04 +0700
+Received: from host4004.hospedameusite.net ([158.69.17.134]:35373)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <grafica2@host4004.hospedameusite.net>)
+	id 1pn1km-00HYCP-25
+	for kira@binc.pw;
+	Fri, 14 Apr 2023 01:33:04 +0700
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=graficaemnatal.com.br; s=default; h=Content-Type:MIME-Version:Message-ID:
+	From:Date:Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=Uhw5aQnknc/Yb8VFwMIvmUxz/5EUnmBSbrsLyzhi/KI=; b=j2L55mWNSZh1UKb36M26FJApbL
+	/gW615Ref7h1GhqNR6GT6zxoRZNNWMLIIEFx5Pf+bt6ZNI9pBkbeH8GdXttiFXSuRInfbEe/4cJgq
+	ZmXQXbZGN3Nhn0gtIsGu25B6s0DtLRpL/opKSK3JVSDZuExKBX5cR/oh58bRRNbRSFYF/u2uaZgrt
+	m8KbXRbMjgKaIGZsbPzvNlqWVQuSoiknt66Yv1F0ctvdnA7cnvYw8HuB42uzykzhDlMmsBnpc7rpb
+	9P7jPjA6j6Y9HKoF9F1O7BFpPcsSB+9+bs/yeEZvodrjsbTcGCBcI4ePJf8Y08BnWuqv8ludLjMr/
+	4H0bDXyw==;
+Received: from grafica2 by host4004.hospedameusite.net with local (Exim 4.95)
+	(envelope-from <grafica2@host4004.hospedameusite.net>)
+	id 1pn1k3-002PXK-Na
+	for kira@binc.pw;
+	Thu, 13 Apr 2023 15:32:19 -0300
+To: kira@binc.pw
+Subject: =?UTF-8?Q?[PNP_Gr=C3=A1fica=C2=AE]_Login_Details?=
+X-PHP-Script: graficaemnatal.com.br/wp-admin/user-new.php for 36.78.74.205
+X-PHP-Originating-Script: 3261:PHPMailer.php
+Date: Thu, 13 Apr 2023 18:32:19 +0000
+From: WordPress <wordpress@graficaemnatal.com.br>
+Message-ID: <VBnbb0TMeNQopBwExCaiyGYHfTWNgxHEXgp0ISdvrMY@graficaemnatal.com.br>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - host4004.hospedameusite.net
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [3261 990] / [47 12]
+X-AntiAbuse: Sender Address Domain - host4004.hospedameusite.net
+X-Get-Message-Sender-Via: host4004.hospedameusite.net: authenticated_id: grafica2/from_h
+X-Authenticated-Sender: host4004.hospedameusite.net: wordpress@graficaemnatal.com.br
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: graficaemnatal.com.br:/public_html/wp-admin
+X-Spam-Status: No, score=2.6
+X-Spam-Score: 26
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Username: kira To set your password, visit the following address:
+    https://graficaemnatal.com.br/wp-login.php?action=rp&key=FkyTlCzmkKJbfuGXulLA&login=kira
+    
+ Content analysis details:   (2.6 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: graficaemnatal.com.br]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  2.5 PHP_SCRIPT             Sent by PHP script
+X-Spam-Flag: NO
+
+Username: kira
+
+To set your password, visit the following address:
+
+https://graficaemnatal.com.br/wp-login.php?action=rp&key=FkyTlCzmkKJbfuGXulLA&login=kira
+
+https://graficaemnatal.com.br/wp-login.php
+

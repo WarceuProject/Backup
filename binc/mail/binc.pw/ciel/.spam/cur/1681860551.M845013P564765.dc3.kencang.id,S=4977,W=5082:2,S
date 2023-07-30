@@ -1,0 +1,105 @@
+Return-Path: <bzird@stack10.ethii.com>
+Delivered-To: ciel+spam@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id IL0AMccnP2QdnggAMUeTPA
+	(envelope-from <bzird@stack10.ethii.com>)
+	for <ciel+spam@binc.pw>; Wed, 19 Apr 2023 06:29:11 +0700
+Return-path: <bzird@stack10.ethii.com>
+Envelope-to: ciel@binc.pw
+Delivery-date: Wed, 19 Apr 2023 06:29:11 +0700
+Received: from [148.163.69.98] (port=46158 helo=jack98.bispeliden.info)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <bzird@stack10.ethii.com>)
+	id 1poul2-002MmN-19
+	for ciel@binc.pw;
+	Wed, 19 Apr 2023 06:29:11 +0700
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=bzird.com;
+	s=default; h=Sender:Content-Type:MIME-Version:Message-ID:From:Date:Subject:To
+	:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=Cb/vuCmSnUqMR0gv/qB0IE63iyMn/Q0hw7E+zBijwUQ=; b=Z5BYsS8Uznr9EUzo2O8Bnz57MS
+	7D0kiVN4mwJqpcKXRcdhnZ4s6fBxpJg5Qj556OGOQ2SFCL6UHdsvrwp5aqxxhb/3RV4erJXBm03/v
+	Flvb93ZGEcPeO3w2mFgWWQ+XVjs0bImT/mvfClhu6JD1NRsCeMJV+LsRRN8miI1mGxq+t5PlcHfZF
+	DCteOL/ne+6lPp+8426bNnkOWJsiKS8hRSVVoKMMoO+pvVqIGuMBPuJskxLyX1AlmbVCrZtIHdaxK
+	yrcnGEtXyeEFQis6b7z3uIriUbizNq6TDLq37EMXAxulmoLMrp2z3WEosAN0Y695vJZEN0U5oEtQv
+	uaP9QtoA==;
+Received: from bzird by stack10.ethii.com with local (Exim 4.96)
+	(envelope-from <bzird@stack10.ethii.com>)
+	id 1poukI-00CIvD-01
+	for ciel@binc.pw;
+	Tue, 18 Apr 2023 19:28:22 -0400
+To: ciel@binc.pw
+X-PHP-Script: bzird.com/wp-admin/profile.php for 180.242.68.128
+X-PHP-Originating-Script: 1112:PHPMailer.php
+Date: Tue, 18 Apr 2023 23:28:21 +0000
+From: WordPress <wordpress@bzird.com>
+Message-ID: <wAePKSG3b89udYb39Gmh6WvzN1PfWUsvv6OZLWjJk@bzird.com>
+X-Mailer: PHPMailer 6.6.0 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <bzird@stack10.ethii.com>
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - stack10.ethii.com
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [1112 980] / [47 12]
+X-AntiAbuse: Sender Address Domain - stack10.ethii.com
+X-Get-Message-Sender-Via: stack10.ethii.com: authenticated_id: bzird/from_h
+X-Authenticated-Sender: stack10.ethii.com: wordpress@bzird.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: bzird.com:/public_html/wp-admin
+X-Spam-Status: Yes, score=8.2
+X-Spam-Score: 82
+X-Spam-Bar: ++++++++
+X-Spam-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Howdy Pie, You recently requested to have the email address
+    on your account changed. If this is correct, please click on the following
+    link to change it: https://bzird.com/wp-admin/profile.php?newuseremail=ab01e65a5bb9ebc027b60d738e9dd491
+    
+ Content analysis details:   (8.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: bzird.com]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  5.0 KAM_SOMETLD_ARE_BAD_TLD .stream, .trade, .pw, .top, .press,
+                             .guru, .casa & .date TLD Abuse
+  1.0 KAM_MXINFO             MX Record and dot info domains associated with
+                             FAKERBL Spammers
+  2.0 RDNS_NONE              Delivered to internal network by a host with no rDNS
+X-Spam-Flag: YES
+Subject:  ***SPAM***  [biaxecoder] Email Change Request
+
+Howdy Pie,
+
+You recently requested to have the email address on your account changed.
+
+If this is correct, please click on the following link to change it:
+https://bzird.com/wp-admin/profile.php?newuseremail=ab01e65a5bb9ebc027b60d738e9dd491
+
+You can safely ignore and delete this email if you do not want to
+take this action.
+
+This email has been sent to ciel@binc.pw
+
+Regards,
+All at biaxecoder
+https://bzird.com
+

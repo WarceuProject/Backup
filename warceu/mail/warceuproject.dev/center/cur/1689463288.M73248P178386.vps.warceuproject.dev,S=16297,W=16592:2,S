@@ -1,0 +1,295 @@
+Return-Path: <notification@facebookmail.com>
+Delivered-To: center@warceuproject.dev
+Received: from vps.warceuproject.dev
+	by vps.warceuproject.dev with LMTP
+	id XDwABPgps2TSuAIA0wEIKA
+	(envelope-from <notification@facebookmail.com>)
+	for <center@warceuproject.dev>; Sun, 16 Jul 2023 01:21:28 +0200
+Return-path: <notification@facebookmail.com>
+Envelope-to: center@warceuproject.dev
+Delivery-date: Sun, 16 Jul 2023 01:21:28 +0200
+Received: from 69-171-232-149.mail-mail.facebook.com ([69.171.232.149]:37704)
+	by vps.warceuproject.dev with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <notification@facebookmail.com>)
+	id 1qKoZp-000kOl-32
+	for center@warceuproject.dev;
+	Sun, 16 Jul 2023 01:21:27 +0200
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=facebookmail.com;
+	s=s1024-2013-q3; t=1689463233;
+	bh=YU51cLobxBKbBRquwOVlSrTGnD6UjJePLnAJ0AHDqwA=;
+	h=Date:To:Subject:From:MIME-Version:Content-Type;
+	b=I4doHWlKldXeIBv//dqgVRJcdQyTl4WegRnmk9XD5SbxRwuTGeEDb1De3KqjWFz8J
+	 u02c4VGXRQ5vMPIi9Uy+JcX8yE25Vo8gXoWK8zvmu5fesjPQnB/CPcHiNySvFXY2In
+	 j76Q2qCa/G7+wCJeTP67LL+MNrdlA934kPIx8RjQ=
+X-Facebook: from 2401:db00:135c:660f:face:0:3c2:0 ([MTI3LjAuMC4x]) 
+	by business.facebook.com with HTTPS (ZuckMail);
+Date: Sat, 15 Jul 2023 16:20:33 -0700
+To: center@warceuproject.dev
+Subject: Confirm your business email address
+X-Priority: 3
+X-Mailer: ZuckMail [version 1.00]
+From: "Facebook" <notification@facebookmail.com>
+Reply-to: noreply <noreply@facebookmail.com>
+Errors-To: notification@facebookmail.com
+X-Facebook-Notify: business_email_verification_code_unreg; mailid=HMTY4OTQ2MTk5OTAzMDQyNjpjZW50ZXJAd2FyY2V1cHJvamVjdC5kZXY6ODUz
+Feedback-ID: 9999:business_email_verification_code_unreg:Facebook
+X-FACEBOOK-PRIORITY: 1
+X-Auto-Response-Suppress: All
+Require-Recipient-Valid-Since: center@warceuproject.dev; Saturday, 15 Jul 2023 23:18:11 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_c98dc67318c018a8d047a9428810862b"
+Message-ID: <329cb34a-2366-11ee-8c29-95c1acb83a8c@facebookmail.com>
+X-Spam-Status: No, score=-13.0
+X-Spam-Score: -129
+X-Spam-Bar: -------------
+X-Ham-Report: Spam detection software, running on the system "vps.warceuproject.dev",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hi,      Please confirm your email address Please click
+    the link below to confirm that your email address for Warceu Project Dev
+   should be updated to center@warceuproject.dev.  Confirm Now     
+ Content analysis details:   (-13.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: facebookmail.com]
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: facebookmail.com]
+  2.7 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
+                             [69.171.232.149 listed in psbl.surriel.com]
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query
+                              to zen.spamhaus.org was blocked due to
+                             usage of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [69.171.232.149 listed in zen.spamhaus.org]
+  0.0 URIBL_ZEN_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: facebookmail.com]
+  0.0 TVD_RCVD_IP            Message was received from an IP address
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -7.5 USER_IN_DEF_DKIM_WL    From: address is in the default DKIM
+                             welcome-list
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -7.5 USER_IN_DEF_SPF_WL     From: address is in the default SPF
+                             welcome-list
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+                             identical to background
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+ -0.5 ENV_AND_HDR_SPF_MATCH  Env and Hdr From used in default SPF WL
+                             Match
+ -0.0 DKIMWL_WL_HIGH         DKIMwl.org - High trust sender
+X-Spam-Flag: NO
+
+
+--b1_c98dc67318c018a8d047a9428810862b
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+=C2=A0
+
+=C2=A0=C2=A0=C2=A0Please confirm your email address Please click the link =
+below to confirm that your email address for Warceu Project Dev should be =
+updated to center@warceuproject.dev. =
+=C2=A0Confirm=C2=A0Now=C2=A0=C2=A0=C2=A0=C2=A0
+
+=C2=A0
+
+Thanks,
+The Facebook team
+
+
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+This message was sent to center@warceuproject.dev at your request.
+Meta Platforms, Inc., Attention: Community Support, 1 Facebook Way, Menlo =
+Park, CA 94025
+
+
+--b1_c98dc67318c018a8d047a9428810862b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional =
+//EN"><html><head><title>Facebook</title><meta http-equiv=3D"Content-Type" =
+content=3D"text/html; charset=3Dutf-8" /><style nonce=3D"glkpaLPT">@media =
+all and (max-width: 480px){*[class].ib_t{min-width:100% =
+!important}*[class].ib_row{display:block =
+!important}*[class].ib_ext{display:block !important;padding:10px 0 5px =
+0;vertical-align:top !important;width:100% =
+!important}*[class].ib_img,*[class].ib_mid{vertical-align:top =
+!important}*[class].mb_blk{display:block =
+!important;padding-bottom:10px;width:100% =
+!important}*[class].mb_hide{display:none =
+!important}*[class].mb_inl{display:inline =
+!important}*[class].d_mb_flex{display:block =
+!important}}.d_mb_show{display:none}.d_mb_flex{display:flex}@media only =
+screen and (max-device-width: 480px){.d_mb_hide{display:none =
+!important}.d_mb_show{display:block !important}.d_mb_flex{display:block =
+!important}}.mb_text h1,.mb_text h2,.mb_text h3,.mb_text h4,.mb_text =
+h5,.mb_text h6{line-height:normal}.mb_work_text =
+h1{font-size:18px;line-height:normal;margin-top:4px}.mb_work_text =
+h2,.mb_work_text =
+h3{font-size:16px;line-height:normal;margin-top:4px}.mb_work_text =
+h4,.mb_work_text h5,.mb_work_text =
+h6{font-size:14px;line-height:normal}.mb_work_text =
+a{color:#1270e9}.mb_work_text p{margin-top:4px}</style></head><table =
+border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td width=3D"100%" =
+align=3D"center" style=3D""><table border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"center" =
+style=3D"border-collapse:collapse;"><tr><td width=3D"1204" =
+align=3D"center" style=3D""><body style=3D"max-width:602px;margin:0 auto;" =
+dir=3D"ltr" bgcolor=3D"#f6f7f9"><table border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"center" id=3D"email_table" =
+style=3D"border-collapse:collapse;max-width:602px;margin:0 auto;"><tr><td =
+id=3D"email_content" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;background:#f6f7f9;"><table =
+border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr style=3D""><td height=3D"20" =
+style=3D"line-height:20px;" colspan=3D"3">&nbsp;</td></tr><tr><td =
+height=3D"1" colspan=3D"3" style=3D"line-height:1px;"><span =
+style=3D"color:#FFFFFF;font-size:1px;opacity:0;">=C2=A0 =C2=A0=C2=A0=C2=A0 =
+Please confirm your email address Please click the link below to confirm =
+that your email address for Warceu Project Dev should be updated to =
+center&#064;warceuproject.dev. =C2=A0 Confirm=C2=A0Now =C2=A0 =
+=C2=A0=C2=A0=C2=A0 =C2=A0</span></td></tr><tr><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+align=3D"left" style=3D"border-collapse:collapse;width:320px;"><tr><td =
+style=3D""><tr style=3D""><td height=3D"0" =
+style=3D"line-height:0px;">&nbsp;</td></tr></td></tr><tr><td =
+style=3D""><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td style=3D""><td width=3D"16" =
+style=3D"display:block;width:16px;">&nbsp;&nbsp;&nbsp;</td></td><td =
+style=3D""><a href=3D"https://business.facebook.com/" =
+style=3D"color:#1b74e4;text-decoration:none;padding:0 8px 0 0;"><img =
+width=3D"24" height=3D"24" =
+src=3D"https://facebook.com/images/email/meta_icon.png" =
+style=3D"border:0;" /></a></td><td style=3D""><span style=3D"font-size:20p=
+x;line-height:24px;color:#1d2129;font-family:FreightSansLFPro-Light, =
+Helvetica Neue, Helvetica, Arial, sans-serif;">Business =
+Manager</span></td></tr></table></td></tr><td style=3D""><tr =
+style=3D""><td height=3D"12" =
+style=3D"line-height:12px;">&nbsp;</td></tr></td><tr><td =
+style=3D"border-top:none;"></td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" bgcolor=3D"#ffffff" align=3D"center" =
+style=3D"border-collapse:collapse;"><tr><td style=3D""><table border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td style=3D"font-size:11px;font-f=
+amily:LucidaGrande,tahoma,verdana,arial,sans-serif;padding-bottom:0px;"><t=
+r style=3D""><td height=3D"20" =
+style=3D"line-height:20px;">&nbsp;</td></tr></td></tr><tr><td =
+style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;padding-top:0px;padding-bottom:0px;"><tr><td style=3D""><td =
+width=3D"11" =
+style=3D"display:block;width:11px;">&nbsp;&nbsp;&nbsp;</td></td><td =
+style=3D"text-align:left;"><table border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr><td =
+style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;"><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td style=3D"font-size:11px;font-f=
+amily:LucidaGrande,tahoma,verdana,arial,sans-serif;"><span =
+class=3D"mb_text" style=3D"font-family:Arial, =
+sans-serif;font-size:12px;line-height:18px;color:#4b4f56;"><div =
+style=3D"font-family:Helvetica Neue,Helvetica,Arial;font-size: 12px; =
+box-sizing: border-box; padding: 12px 20px;"><div style=3D"font-size: =
+14px;"><b>Please confirm your email address</b></div><div style=3D"margin: =
+12px 0px 24px 0px;"> Please click the link below to confirm that your =
+email address for <a =
+href=3D"https://business.facebook.com/?business_id=3D2508517052647160" =
+style=3D"text-decoration: none">Warceu Project Dev</a> should be updated =
+to center&#064;warceuproject.dev. </div><div><table border=3D"0" =
+width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr style=3D""><td height=3D"2" =
+style=3D"line-height:2px;" colspan=3D"3">&nbsp;</td></tr><tr><td =
+class=3D"mb_blk" style=3D""><a href=3D"https://www.facebook.com/verify/ema=
+il/checkpoint/?token=3DAbpL0aTqS7sSedRMeZL2AMQ46zhT1jQexYnrOe-S52U-s_y5vyh=
+FD8DjTNKaxXdcgv3FPabo56G8zjQ32EIe0FGJHf_TQiNR6Kt3_nLc4R80xGwO4fk0AVdwC_mq9=
+ucDh04JDjABEFjT0BnMuOnk2vtEWIfFvOVjb3KULYs_XOLzZgvSazgT1VH52CQTQljaFgFJKeo=
+52Bq5AfC4IB_s5FczA4ipXOZW0wH51jbiIhyS2htPI9-GUqNpqgZU2norbBjb3rD5Aop28PpDU=
+oTtyJVD" style=3D"color:#1b74e4;text-decoration:none;"><table border=3D"0" =
+width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td style=3D"border-collapse:colla=
+pse;border-radius:6px;text-align:center;display:block;background:#1877f2;b=
+ackground-color:#3b7cff;border:none;padding:8px 16px 10px 16px;"><a =
+href=3D"https://www.facebook.com/verify/email/checkpoint/?token=3DAbpL0aTq=
+S7sSedRMeZL2AMQ46zhT1jQexYnrOe-S52U-s_y5vyhFD8DjTNKaxXdcgv3FPabo56G8zjQ32E=
+Ie0FGJHf_TQiNR6Kt3_nLc4R80xGwO4fk0AVdwC_mq9ucDh04JDjABEFjT0BnMuOnk2vtEWIfF=
+vOVjb3KULYs_XOLzZgvSazgT1VH52CQTQljaFgFJKeo52Bq5AfC4IB_s5FczA4ipXOZW0wH51j=
+biIhyS2htPI9-GUqNpqgZU2norbBjb3rD5Aop28PpDUoTtyJVD" =
+style=3D"color:#1b74e4;text-decoration:none;display:block;"><center><font =
+size=3D"3"><span style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;white-space:nowrap;font-weight:bold=
+;vertical-align:middle;color:white;font-family:Arial-BoldMT, =
+sans-serif;text-shadow:none;white-space:nowrap;font-size:12px;line-height:=
+14px;">Confirm&nbsp;Now</span></font></center></a></td></tr></table></a></=
+td><td width=3D"100%" class=3D"mb_hide" style=3D""></td></tr><tr =
+style=3D""><td height=3D"0" style=3D"line-height:0px;" =
+colspan=3D"3">&nbsp;</td></tr></table></div></div></span></td></tr></table=
+></td></tr></table></td><td style=3D""><td width=3D"11" =
+style=3D"display:block;width:11px;">&nbsp;&nbsp;&nbsp;</td></td></tr></td>=
+</tr><tr><td style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verda=
+na,arial,sans-serif;padding-top:0px;"><tr style=3D""><td height=3D"20" =
+style=3D"line-height:20px;">&nbsp;</td></tr></td></tr></table></td></tr></=
+table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+align=3D"left" style=3D"border-collapse:collapse;padding:0 0 0 =
+15px;"><tr><td style=3D"border-top:none;"></td></tr><tr><tr style=3D""><td =
+height=3D"15" style=3D"line-height:15px;">&nbsp;</td></tr></tr><tr><td =
+style=3D""><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td style=3D""><td width=3D"16" =
+style=3D"display:block;width:16px;">&nbsp;&nbsp;&nbsp;</td></td><td =
+style=3D""><div =
+style=3D"font-size:12px;line-height:14px;font-family:Arial, =
+sans-serif;color:#90949c;margin:0 auto 10px auto;"><a =
+href=3D"https://www.facebook.com/#" style=3D"color:#90949c;text-decoration=
+:underline;font-size:12px;line-height:14px;font-family:SFUIDisplay-BOLD, =
+sans-serif;"></a></div><div =
+style=3D"font-size:12px;line-height:14px;font-family:Arial, =
+sans-serif;color:#90949c;margin:0 auto 10px auto;">This message was sent =
+to center&#064;warceuproject.dev. Meta Platforms, Inc., Attention: =
+Community Support, 1 Facebook Way, Menlo Park, CA 94025</div></td><td =
+style=3D""><td width=3D"16" style=3D"display:block;width:16px;">&nbsp;&nbs=
+p;&nbsp;</td></td></tr></table></td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr =
+style=3D""><td height=3D"20" style=3D"line-height:20px;" =
+colspan=3D"3">&nbsp;</td></tr></table><span style=3D""><img =
+src=3D"https://www.facebook.com/email_open_log_pic.php?mid=3DHMTY4OTQ2MTk5=
+OTAzMDQyNjpjZW50ZXJAd2FyY2V1cHJvamVjdC5kZXY6ODUz" =
+style=3D"border:0;width:1px;height:1px;" /></span></td></tr></table></body=
+></td></tr></table></td></tr></table></html>
+
+
+
+--b1_c98dc67318c018a8d047a9428810862b--
+

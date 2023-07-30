@@ -1,0 +1,129 @@
+Return-Path: <jodycallanhairco@cpanel-552-syd.hostingww.com>
+Delivered-To: kira+spam@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id CCttI+9Wc2Rn7jYAMUeTPA
+	(envelope-from <jodycallanhairco@cpanel-552-syd.hostingww.com>)
+	for <kira+spam@binc.pw>; Sun, 28 May 2023 20:28:15 +0700
+Return-path: <jodycallanhairco@cpanel-552-syd.hostingww.com>
+Envelope-to: kira@binc.pw
+Delivery-date: Sun, 28 May 2023 20:28:15 +0700
+Received: from bumble.maple.relay.mailchannels.net ([23.83.214.25]:32422)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <jodycallanhairco@cpanel-552-syd.hostingww.com>)
+	id 1q3GRP-00F6qq-0g
+	for kira@binc.pw;
+	Sun, 28 May 2023 20:28:15 +0700
+X-Sender-Id:
+ instrampxe0y3a|x-authuser|jodycallanhairco@cpanel-552-syd.hostingww.com
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 06C9B6C07C2;
+	Sun, 28 May 2023 13:27:29 +0000 (UTC)
+Received: from cpanel-552-syd.hostingww.com (unknown [127.0.0.6])
+	(Authenticated sender: instrampxe0y3a)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 431CC6C0895
+	for <kira@binc.pw>; Sun, 28 May 2023 13:27:28 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1685280448; a=rsa-sha256;
+	cv=none;
+	b=JUW2QuaOEnV5paUK4/LJTdgQqDJyEzdJc8E+MWUnz3pv4bjJ+YocJ5hZ8k0kK/FQ09MBE/
+	xmK7QYOjSfKXnpfSAa1wQqyf0Qrw2tvKF9x1H9RlO85dbIjPO5CkQrtkYF0J2FTBRJmGS2
+	07USNLf8PLub2pJAhQkDeN0iNCF57dChpb9HaszC5AV5UZ0pifb0MxP3JPXenCWxMp2W99
+	lfi425XLZDsgoEFHxnnaBzAVY/EVunAXgL6wW07sskkAQYPHUXMuZineA6da+/Fmmv59xe
+	S+fzJtY5bzlIP82CRMY1wl1bjyfvJSUIu4tLFGQtWi4maYpodJmAkODosi1BHg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1685280448;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type; bh=pQ9IpNxyJN9dL61Jh4VngfIXU0EEs7/9A3faFpzMhKE=;
+	b=SDhWkpD9LrLEZ031mx4qndL5lI4bckZ6t3X9rdhZps/omojX4SNO3MUrTT157PBaaJxtPf
+	wzi4Uv3b6VNYD6MGZrFYC77H5SjTYquRMRjVNAYa4sCLmVRgqYEkZw4P0zB1w4rFfowV5g
+	rtKVv2iGoy9AR0E/UTxx8sxTekRJVRpPVKfAefDT2AFOf9FvFp+Bonq5vb4/sHp9N/M1oU
+	wOHSmenRIUJ49Xj2ySP7N+uEgZBoGo6RtYz5HbWx/z182lC1KHnGnK+4EzZCP32W1Qipbi
+	c2NN4PeLp0ISeOs3Ghlj5lV6WGtItaivnfYJdlSQBqfD32oz3OMa9pR8tQJV9A==
+ARC-Authentication-Results: i=1;
+	rspamd-7d4b855556-g46sk;
+	auth=pass smtp.auth=instrampxe0y3a
+ smtp.mailfrom=jodycallanhairco@cpanel-552-syd.hostingww.com
+X-Sender-Id:
+ instrampxe0y3a|x-authuser|jodycallanhairco@cpanel-552-syd.hostingww.com
+X-MC-Relay: Neutral
+X-MC-Copy: stored-urls
+X-MailChannels-SenderId:
+ instrampxe0y3a|x-authuser|jodycallanhairco@cpanel-552-syd.hostingww.com
+X-MailChannels-Auth-Id: instrampxe0y3a
+X-Hysterical-White: 2b3e574039002650_1685280448749_205056578
+X-MC-Loop-Signature: 1685280448749:2311760553
+X-MC-Ingress-Time: 1685280448748
+Received: from cpanel-552-syd.hostingww.com (cpanel-552-syd.hostingww.com
+ [103.152.248.20])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384)
+	by 100.109.138.46 (trex/6.8.1);
+	Sun, 28 May 2023 13:27:28 +0000
+Received: from jodycallanhairco by cpanel-552-syd.hostingww.com with local (Exim 4.96)
+	(envelope-from <jodycallanhairco@cpanel-552-syd.hostingww.com>)
+	id 1q3GQb-00DOp8-1V
+	for kira@binc.pw;
+	Sun, 28 May 2023 23:27:26 +1000
+To: kira@binc.pw
+X-PHP-Script: new.jodycallanhair.com.au/wp-admin/options.php for 222.124.123.222
+X-PHP-Filename: /home/jodycallanhairco/new.jodycallanhair.com.au/wp-admin/options.php REMOTE_ADDR: 222.124.123.222
+Date: Sun, 28 May 2023 21:27:21 +0800
+From: WordPress <wordpress@new.jodycallanhair.com.au>
+Message-ID: <Ehds9CtTuhORel5BmVQAbGFkGYc5gCaqT636vt5wE@new.jodycallanhair.com.au>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <jodycallanhairco@cpanel-552-syd.hostingww.com>
+X-AuthUser: jodycallanhairco@cpanel-552-syd.hostingww.com
+X-Spam-Status: Yes, score=6.3
+X-Spam-Score: 63
+X-Spam-Bar: ++++++
+X-Spam-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Howdy admin, Someone with administrator capabilities recently
+    requested to have the administration email address changed on this site:
+   https://new.jodycallanhair.com.au To confirm this change, please click on
+   the following link: https://new.jodycallanhair.com.au/wp-admin/options.php?adminhash=a35aa2acf38f34721ebab10e187a8013
+    
+ Content analysis details:   (6.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: jodycallanhair.com.au]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  5.0 KAM_SOMETLD_ARE_BAD_TLD .stream, .trade, .pw, .top, .press,
+                             .guru, .casa & .date TLD Abuse
+  1.0 KAM_LAZY_DOMAIN_SECURITY Sending domain does not have any
+                             anti-forgery methods
+X-Spam-Flag: YES
+Subject:  ***SPAM***  [Jody Callan Hair] New Admin Email Address
+
+Howdy admin,
+
+Someone with administrator capabilities recently requested to have the
+administration email address changed on this site:
+https://new.jodycallanhair.com.au
+
+To confirm this change, please click on the following link:
+https://new.jodycallanhair.com.au/wp-admin/options.php?adminhash=a35aa2acf38f34721ebab10e187a8013
+
+You can safely ignore and delete this email if you do not want to
+take this action.
+
+This email has been sent to kira@binc.pw
+
+Regards,
+All at Jody Callan Hair
+https://new.jodycallanhair.com.au
+

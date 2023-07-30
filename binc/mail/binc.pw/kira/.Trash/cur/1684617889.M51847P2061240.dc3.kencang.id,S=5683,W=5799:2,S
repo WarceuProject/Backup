@@ -1,0 +1,116 @@
+Return-Path: <igstud5w@cs3003.bigrock.com>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id mDkJAqE6aWS4cx8AMUeTPA
+	(envelope-from <igstud5w@cs3003.bigrock.com>)
+	for <kira@binc.pw>; Sun, 21 May 2023 04:24:49 +0700
+Return-path: <igstud5w@cs3003.bigrock.com>
+Envelope-to: kira@binc.pw
+Delivery-date: Sun, 21 May 2023 04:24:49 +0700
+Received: from gateway30.websitewelcome.com ([192.185.152.11]:43809)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <igstud5w@cs3003.bigrock.com>)
+	id 1q0U4F-008gu8-0X
+	for kira@binc.pw;
+	Sun, 21 May 2023 04:24:48 +0700
+Received: from atl1wswcm05.websitewelcome.com (unknown [50.6.129.166])
+	by atl3wswob01.websitewelcome.com (Postfix) with ESMTP id E0E71CBC9
+	for <kira@binc.pw>; Sat, 20 May 2023 21:24:04 +0000 (UTC)
+Received: from cs3003.bigrock.com ([119.18.54.142])
+	by cmsmtp with ESMTP
+	id 0U3Wq0hMIU1GU0U3XqocGE; Sat, 20 May 2023 21:24:04 +0000
+X-Authority-Reason: nr=8
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=igstudio.in
+	; s=default; h=Content-Type:MIME-Version:Message-ID:From:Date:Subject:To:
+	Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=p5DKvtOuerWeHePbj+TJ1UFpHAVUMdZVmAS/TL8AS64=; b=QoGidC7MLNvr7zPSL4wAKVuMXw
+	LYhpezux3LRPoXsyb/ueIXRQ7cxzhQc+Xw6560tu7RQy3qp0twrMw6vrKDlPL0qF59mBs12gJwlk2
+	yR+MokWzhKIl7/pTwn2mQZwTFrmTI7Yxs/tIZdRne4y5IofrNUrI/zkQmyh5EI3lopIHTdb3bKrVD
+	/72n00ivSGPRPi4EwdS4xmv6zIoFYlcTqzUOj1nNf9B4CT1cvUgaKDtqlwSc9A9vPJtTDS2qPC9DS
+	NIXoyZtey5F3joJVymIU8K16b9o3O+NJc8It2o0jYnxzZEJDBnMSTfDoVSElzQ5blyz87v2JrtixC
+	GA80UXLQ==;
+Received: from igstud5w by cs3003.bigrock.com with local (Exim 4.95)
+	(envelope-from <igstud5w@cs3003.bigrock.com>)
+	id 1q0U3V-003Jtb-L8
+	for kira@binc.pw;
+	Sun, 21 May 2023 02:54:01 +0530
+To: kira@binc.pw
+Subject: =?us-ascii?Q?[Sakshi_Art_Gallery]_Your_site_has_updated_to_W?=
+ =?us-ascii?Q?ordPress_6.2.2?=
+X-PHP-Script: igstudio.in/developer3/wp-cron.php for 119.18.54.146
+ X-PHP-Originating-Script: 1353:PHPMailer.php
+Date: Sat, 20 May 2023 21:24:01 +0000
+From: WordPress <wordpress@igstudio.in>
+Message-ID: <g6kDngFTSpJZ2yAIxfSpj65u6x51ppHAlQvuYdvgKo@igstudio.in>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - cs3003.bigrock.com
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [1353 993] / [47 12]
+X-AntiAbuse: Sender Address Domain - cs3003.bigrock.com
+X-BWhitelist: no
+X-Source-IP: 
+X-Source-L: No
+X-Exim-ID: 1q0U3V-003Jtb-L8
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: igstudio.in:/public_html/developer3
+X-Source-Sender: 
+X-Source-Auth: igstud5w
+X-Email-Count: 1
+X-Source-Cap: aWdzdHVkNXc7aWdzdHVkNXc7Y3MzMDAzLmJpZ3JvY2suY29t
+X-Local-Domain: yes
+X-CMAE-Envelope: MS4xfKFW4MeaGckA61x4qHgT00rGcpnC4mMVU3q8KPcML9YLsyz9Aw8RosBpPaI0fZY9xr6fu2d3s428I2cVko+5chGTAuR87RtW1ocg6BHjIvgrFg+8m8Iv
+ WLSXLbr41As7UNhNfw1hTpgX7q0uME3HMqMRTdE4oh5rODtyavyN0Zb7eamLEnBsw1a3O0JHQnIxBX42m8DFFmjJMmfSCOhIuRg=
+X-Spam-Status: No, score=3.1
+X-Spam-Score: 31
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Howdy! Your site at https://igstudio.in/developer3 has been
+    updated automatically to WordPress 6.2.2. No further action is needed on
+   your part. For more on version 6.2.2, see the About WordPress screen: https://igstudio.in/developer3/wp-admin/about.php
+    
+ Content analysis details:   (3.1 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: igstudio.in]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+  2.5 PHP_SCRIPT             Sent by PHP script
+X-Spam-Flag: NO
+
+Howdy! Your site at https://igstudio.in/developer3 has been updated automatically to WordPress 6.2.2.
+
+No further action is needed on your part. For more on version 6.2.2, see the About WordPress screen:
+https://igstudio.in/developer3/wp-admin/about.php
+
+If you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help.
+https://wordpress.org/support/forums/
+
+You also have some plugins or themes with updates available. Update them now:
+https://igstudio.in/developer3/wp-admin/
+
+The WordPress Team
+

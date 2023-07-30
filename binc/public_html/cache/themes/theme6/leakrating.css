@@ -1,0 +1,14 @@
+.leak_rating{padding:10px;color:#fff;border-radius:2px;width:50%;margin:0 auto;margin-bottom:15px;font-size:13px;display:flex;align-items:center}
+.leak_rating > span{margin:0 auto}
+.leak_rating_infected{background:#ff513f6e}
+.leak_rating_notworking{background:#ffd800ba}
+.leak_rating_working{background:#26a65b8c}
+div[class^="ougc_private_leechometer"]{display:inline-block;background:#1b1b1b;border-radius:2px;width:150px;margin-bottom:10px;position:relative;overflow:hidden}
+div[class^="ougc_private_leechometer"] > div{height:1.5em;padding:0}
+.ougc_private_leechometer_positive > div{background-color:#017b01;width:20%}
+.ougc_private_leechometer_positive_secondary > div{background-color:#017b01;width:40%}
+.ougc_private_leechometer_medium > div{background-color:#ff5821;width:60%}
+.ougc_private_leechometer_medium_secondary > div{background-color:#ff5821;width:80%}
+.ougc_private_leechometer_negative > div{background-color:#c0392b;width:100%}
+.ougc_private_leechometer_negative_secondary > div{background-color:#c0392b}
+		

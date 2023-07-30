@@ -1,0 +1,57 @@
+--- 
+files: 
+  certificate: 
+    nexo_investfx_com_96368_06e57_1720701001_4d65b08af6771f0b832315f825c97cec: 
+      created: '1689165002'
+      domains: 
+        - nexo-investfx.com
+        - mail.nexo-investfx.com
+        - www.nexo-investfx.com
+        - cpanel.nexo-investfx.com
+        - webmail.nexo-investfx.com
+        - webdisk.nexo-investfx.com
+        - cpcontacts.nexo-investfx.com
+        - cpcalendars.nexo-investfx.com
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Cert for “nexo-investfx.com”
+      id: nexo_investfx_com_96368_06e57_1720701001_4d65b08af6771f0b832315f825c97cec
+      is_self_signed: 1
+      issuer.commonName: nexo-investfx.com
+      issuer.organizationName: ~
+      key_algorithm: rsaEncryption
+      modulus: 963683b67a1e0f2649447468483fd958f725e338d2c3efc2da136676ee4ca5642ac63e42a51f1a481e4cbefc3229ab6ac4bc3fb21d5a75b4f5dbe8cbd337b611a05bd28267dfef4325da00732de9cb3aa866aa00a456f581ec1a2964b70d684cad5f811959ac957625ed87be56370105ee8940ccd3b2b7fb5630f7f4a67a3bbc08597610f91fa1438d6af46820ac02a24bd1917e9e9b521a70133e48bd9027c7df795bd2f8f0fc6e28e7b40c3f07da997be62934dbe13868641d84d6536efaa710ff21651133477d6e5288f09483b212d8dcd4941e8e0fa57396ee1f45596a7e6f9e7540ad96002e3bed9e18d77e6b159d8a5901e9ff198a4e37a3cdaf806e57
+      modulus_length: 2048
+      not_after: '1720701001'
+      not_before: '1689165001'
+      serial: a2f28b64
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: nexo-investfx.com
+      validation_type: ~
+  key: 
+    96368_06e57_83c7334abb0700e3de45a7f2a9fdea00: 
+      created: '1689165002'
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Key for “nexo-investfx.com”
+      id: 96368_06e57_83c7334abb0700e3de45a7f2a9fdea00
+      key_algorithm: rsaEncryption
+      modulus: 963683b67a1e0f2649447468483fd958f725e338d2c3efc2da136676ee4ca5642ac63e42a51f1a481e4cbefc3229ab6ac4bc3fb21d5a75b4f5dbe8cbd337b611a05bd28267dfef4325da00732de9cb3aa866aa00a456f581ec1a2964b70d684cad5f811959ac957625ed87be56370105ee8940ccd3b2b7fb5630f7f4a67a3bbc08597610f91fa1438d6af46820ac02a24bd1917e9e9b521a70133e48bd9027c7df795bd2f8f0fc6e28e7b40c3f07da997be62934dbe13868641d84d6536efaa710ff21651133477d6e5288f09483b212d8dcd4941e8e0fa57396ee1f45596a7e6f9e7540ad96002e3bed9e18d77e6b159d8a5901e9ff198a4e37a3cdaf806e57
+      modulus_length: 2048
+indexes: 
+  certificate: 
+    modulus: 
+      963683b67a1e0f2649447468483fd958f725e338d2c3efc2da136676ee4ca5642ac63e42a51f1a481e4cbefc3229ab6ac4bc3fb21d5a75b4f5dbe8cbd337b611a05bd28267dfef4325da00732de9cb3aa866aa00a456f581ec1a2964b70d684cad5f811959ac957625ed87be56370105ee8940ccd3b2b7fb5630f7f4a67a3bbc08597610f91fa1438d6af46820ac02a24bd1917e9e9b521a70133e48bd9027c7df795bd2f8f0fc6e28e7b40c3f07da997be62934dbe13868641d84d6536efaa710ff21651133477d6e5288f09483b212d8dcd4941e8e0fa57396ee1f45596a7e6f9e7540ad96002e3bed9e18d77e6b159d8a5901e9ff198a4e37a3cdaf806e57: 
+        nexo_investfx_com_96368_06e57_1720701001_4d65b08af6771f0b832315f825c97cec: ~
+    subject.commonName: 
+      nexo-investfx.com: 
+        nexo_investfx_com_96368_06e57_1720701001_4d65b08af6771f0b832315f825c97cec: ~
+uniques: 
+  certificate: 
+    friendly_name: 
+      Cert for “nexo-investfx.com”: nexo_investfx_com_96368_06e57_1720701001_4d65b08af6771f0b832315f825c97cec
+  key: 
+    friendly_name: 
+      Key for “nexo-investfx.com”: 96368_06e57_83c7334abb0700e3de45a7f2a9fdea00
+    modulus:ecdsa_curve_name:ecdsa_public: 
+      963683b67a1e0f2649447468483fd958f725e338d2c3efc2da136676ee4ca5642ac63e42a51f1a481e4cbefc3229ab6ac4bc3fb21d5a75b4f5dbe8cbd337b611a05bd28267dfef4325da00732de9cb3aa866aa00a456f581ec1a2964b70d684cad5f811959ac957625ed87be56370105ee8940ccd3b2b7fb5630f7f4a67a3bbc08597610f91fa1438d6af46820ac02a24bd1917e9e9b521a70133e48bd9027c7df795bd2f8f0fc6e28e7b40c3f07da997be62934dbe13868641d84d6536efaa710ff21651133477d6e5288f09483b212d8dcd4941e8e0fa57396ee1f45596a7e6f9e7540ad96002e3bed9e18d77e6b159d8a5901e9ff198a4e37a3cdaf806e57: 96368_06e57_83c7334abb0700e3de45a7f2a9fdea00

@@ -1,0 +1,163 @@
+Return-Path: <ingeocon@webhosting2033.is.cc>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id UBmTCHvRcGQG4RgAMUeTPA
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	for <kira@binc.pw>; Fri, 26 May 2023 22:34:19 +0700
+Return-path: <ingeocon@webhosting2033.is.cc>
+Envelope-to: kira@binc.pw
+Delivery-date: Fri, 26 May 2023 22:34:19 +0700
+Received: from glass.ash.relay.mailchannels.net ([23.83.222.70]:20594)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q2ZSL-006v0r-15
+	for kira@binc.pw;
+	Fri, 26 May 2023 22:34:19 +0700
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 9966A541194
+	for <kira@binc.pw>; Fri, 26 May 2023 15:33:26 +0000 (UTC)
+Received: from offloadmongo2b.mailbaby.net (unknown [127.0.0.6])
+	(Authenticated sender: interserver)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 3806B54196B
+	for <kira@binc.pw>; Fri, 26 May 2023 15:33:24 +0000 (UTC)
+ARC-Seal: i=2; s=arc-2022; d=mailchannels.net; t=1685115204; a=rsa-sha256;
+	cv=pass;
+	b=FHuk3R30WGN0Mjmg+DEsl1e3/o07jbULwuuCp5cloDSOGejK20pwmPyqcWOVhEcdUPhuqS
+	hRHWgCnq+mQ8caoWL8VA59yvAZRSrLggv5s1gVp0wBHDpo5JsOuJkzMowg+KZi3wUbT93z
+	XXbUY4YYeS98zZwxZ7AWYTAGpUjtONjnq9x7TjM0tsIkLubq0XWwyhoqNu6PyOvNAvxtdO
+	FeLfagLIsKNtqSrthnuNeqdLaRHk1WBjQfqthrcC9FrZIwvPYNPpAVfqqzpxurxIH83c+d
+	x+J6dSkbQ63UuTd73M0zQdE2F6jHJwtKGxU3KaKh2MjvI5Pf7EH2mtei5Uz3uQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1685115204;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=typArhXKGWkjvhfQkQL57iK0aRksTWkpRiGBm6rDTTg=;
+	b=eKB/rsvYCQFY3Nz7BJviXjIOLDZbvxQmoJazW3KikB44nhrLiAG3mdH6IkNDmHWC9xzV3L
+	tdWjRwK8erRICRKmvSa5CvAfoT/BRpGb6EkmslIp3/m4/XiQpKYCCUm3WfGU1vvtk9AqYL
+	xHfsWKfKchY919C1mvWMmUKshxddqqk6nB+PGmU+yvr3cKYaKbFOWTRIRu3HwNr/J4kb4k
+	oCRA0EqjgQuQfS8OyHA4o/G4SbnATu8z/gnBXK8cC27Zcan0MODigC9fuJJatqbA0Rh8RJ
+	XVRJQlHWgh2UBlsPILz/z8hbOvxCXMmMlC9xe6hzFn4HynGJ7VySfFihqmfiig==
+ARC-Authentication-Results: i=2;
+	rspamd-7d4b855556-z6wlw;
+	arc=pass ("mailbaby.net:s=detka:i=1");
+	auth=pass smtp.auth=interserver smtp.mailfrom=ingeocon@webhosting2033.is.cc
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MC-Relay: Neutral
+X-MailChannels-SenderId: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MailChannels-Auth-Id: interserver
+X-Stretch-Whistle: 66f01147234cb814_1685115206356_1235764771
+X-MC-Loop-Signature: 1685115206356:1712798560
+X-MC-Ingress-Time: 1685115206355
+Received: from offloadmongo2b.mailbaby.net (offloadmongo2b.mailbaby.net
+ [74.50.67.113])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.109.138.46 (trex/6.8.1);
+	Fri, 26 May 2023 15:33:26 +0000
+Received: from webhosting2033.is.cc ([68.168.213.91] webhosting2033.is.cc)
+ (Authenticated sender: webhosting2033)
+ by offloadmongo2b.mailbaby.net (InterServerMTA) with ESMTPSA id 18858b1422a000f0d1.001
+ for <kira@binc.pw>
+ (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256);
+ Fri, 26 May 2023 15:33:11 +0000
+X-Zone-Loop: 8dac6551a5de057e880f60a7a8f89e9fdc71704c74b7
+ARC-Authentication-Results: i=1;	rspamd.mailbaby.net;	auth=pass
+ smtp.auth=webhosting2033 smtp.mailfrom=ingeocon@webhosting2033.is.cc
+ARC-Seal: i=1; s=detka; d=mailbaby.net; t=1685115191; a=rsa-sha256;
+	cv=none;
+	b=Vw31XPZGURAJyy0pzRaAV6Fen3fFE2PRewOMwLVOGFqRc74Pb14VUx7cNDoXo5HRxn3elJ
+	nes0+7wT1o1IVKlZpvfVAAFLZaKGzeFRuYaksFfP8o7nUQMsC3ZAYhjzxXvgB1s6Cwvk/W
+	JoV4i/hXICIIMYjmnNdsf4sRsJuYaUe9E0RdBSguFmbdydYJi/PwNWol/nAKTqlq4lv1Ko
+	e/rToCq3Wsx0Ey6+a1+U6YP9qytbMsUR1LFuUdDccdZsidRC5Rd10Xa0crMRQcMNpDWmGi
+	fxoLpgvplbWVmN1GpAfZfQNRk16uhukXycs7AN5ABgbhOh6NeSIV3Vn573hJhQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailbaby.net;	s=detka; t=1685115191;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=typArhXKGWkjvhfQkQL57iK0aRksTWkpRiGBm6rDTTg=;
+	b=iBixnTxWG9g4v9ohdJQ0QaAdNRa423KQah82/OifPwDTn83srFy0cUkTMVKXerm2chihV0
+	Fx5e+N8UpJPYRqzDySgt+PN61XA0/h36mdQhEXTqkWGtc10kofnCz4JNqPT70nM2RUmyuy
+	EDvDc6pqjX1xNCjLbQnHk3W5i6Vtpg3jlhTAnqrIMI3lkRJHyuH/OUn4LlygWDvDMtKvd4
+	VM1tqtj6WnWqcAP1/d//4KXpfTvF7gZp3FlBB8QJxcE2ZWmtvBXFieHJHqNdFoc1+VoVo3
+	MfaS6cRufGLjq7c9sl0LBO84w0zJRmUWubwF9deJLz8Ljd9xbenXBMCadXU1TQ==
+X-SPF: pass
+X-Originating-IP: [68.168.213.91]
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=webhosting2033.is.cc; s=default; h=Sender:Content-Type:MIME-Version:
+	Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=typArhXKGWkjvhfQkQL57iK0aRksTWkpRiGBm6rDTTg=; b=BsgS71xdYODv/W3k0Ovm3AYWGr
+	0+5max9SDMCwQxHS3Yf5nSZfUMS3qSxq/RW790ULEwZMPyw+cUF+ZfI1z3q51ImRQKEBB+mraScDP
+	ja3fuW/y57dWZOAp99lR3DISVND7j4ZkcVs3YZOaBeJ4uEArqQ2WSGfHCt58a9lHW6jcSY97/Qcim
+	UZn6pY+QOgNWk+CwqPRJNqlK2uXw3Q5v/WXLBxnVDyiicnaezNMdQgecQQgw626IG/rvFAWKwbzzR
+	E/MGEJpmGjWz8sUvK45al3j2IRYdr9U3Jjv6A1j9lAhRKpAPjzWgN+vK9TT5ESiKOCE5iJHeOgoDt
+	QdGPeeFg==;
+Received: from ingeocon by webhosting2033.is.cc with local (Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q2ZRF-000BTZ-2b
+	for kira@binc.pw;
+	Fri, 26 May 2023 11:33:11 -0400
+To: kira@binc.pw
+Subject: [InGEO consulting] Please moderate: "How-to Destination a good Drone at night"
+X-PHP-Script: ingeoconsulting.com/wp-comments-post.php for 116.11.145.200
+X-PHP-Originating-Script: 1159:class-phpmailer.php
+Date: Fri, 26 May 2023 15:33:09 +0000
+From: WordPress <wordpress@ingeoconsulting.com>
+Message-ID: <f1de8151e99013410293a48c548e7cbf@ingeoconsulting.com>
+X-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <ingeocon@webhosting2033.is.cc>
+X-AuthUser: ingeocon@webhosting2033.is.cc
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "How-to Destination a good Drone
+    at night" is waiting for your approval https://ingeoconsulting.com/2023/01/02/how-to-destination-a-good-drone-at-night/
+    Author: gate.io (IP address: 116.11.145.200, 116.11.145.200) Email: 63609750@outlook.com
+    URL: https://www.gate.io/ru/signup/XwNAU Comment: The point of view of your
+    article has taught me a lot, and I [...] 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: gate.io]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+X-Spam-Flag: NO
+
+A new comment on the post "How-to Destination a good Drone at night" is waiting for your approval
+https://ingeoconsulting.com/2023/01/02/how-to-destination-a-good-drone-at-night/
+
+Author: gate.io (IP address: 116.11.145.200, 116.11.145.200)
+Email: 63609750@outlook.com
+URL: https://www.gate.io/ru/signup/XwNAU
+Comment: 
+The point of view of your article has taught me a lot, and I already know how to improve the paper on gate.oi, thank you. https://www.gate.io/ru/signup/XwNAU
+
+Approve it: https://ingeoconsulting.com/wp-admin/comment.php?action=approve&c=130#wpbody-content
+Trash it: https://ingeoconsulting.com/wp-admin/comment.php?action=trash&c=130#wpbody-content
+Spam it: https://ingeoconsulting.com/wp-admin/comment.php?action=spam&c=130#wpbody-content
+Currently 25 comments are waiting for approval. Please visit the moderation panel:
+https://ingeoconsulting.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

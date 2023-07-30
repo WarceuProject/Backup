@@ -1,0 +1,115 @@
+Return-Path: <bzird@stack10.ethii.com>
+Delivered-To: ciel@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id eHgEM6x3QGTYaCkAMUeTPA
+	(envelope-from <bzird@stack10.ethii.com>)
+	for <ciel@binc.pw>; Thu, 20 Apr 2023 06:22:20 +0700
+Return-path: <bzird@stack10.ethii.com>
+Envelope-to: ciel@binc.pw
+Delivery-date: Thu, 20 Apr 2023 06:22:20 +0700
+Received: from [148.163.69.98] (port=59018 helo=jack98.bispeliden.info)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <bzird@stack10.ethii.com>)
+	id 1ppH7y-00BNtD-2q
+	for ciel@binc.pw;
+	Thu, 20 Apr 2023 06:22:20 +0700
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=bzird.com;
+	s=default; h=Sender:Content-Type:MIME-Version:Message-ID:From:Date:Subject:To
+	:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=yHBdubu01vs9Ovd/cl2q0lyjJScWxcVcBTvwt7Kf9IY=; b=bLdrFIFd7/vidUD0j5PqynGEco
+	ByqzspRdwaiaJNP3TG/RWP4Pk3GySqdJi8VfWC6kUB6sBFwtp+ZCcv90vgYQkulWgeJEYwh1W86rA
+	vi7xMV+OfWHEnAH82BX03Ja5bseBtDA+xVOVaqlP4OAtWhXo9FJ/skHew2w1HG+5igkGdS3x1SmAt
+	QFqEwsrdtotuKjWEk2lSq8PsPQfA5Im/N2UCjGQj1pCUBg0wHjBIFunXBE/3vabuZhtAYKdet5dN9
+	MY76GcKdxO2z4Nal0fG6xVzGSyzrnKhKeXYKVy1JYayxNLQqarIds5rUEvdE07YN9Kk5Dg8pzppmM
+	diD2udkQ==;
+Received: from bzird by stack10.ethii.com with local (Exim 4.96)
+	(envelope-from <bzird@stack10.ethii.com>)
+	id 1ppH7G-008QJ4-07
+	for ciel@binc.pw;
+	Wed, 19 Apr 2023 19:21:34 -0400
+To: ciel@binc.pw
+Subject: =?us-ascii?Q?[biaxecoder]_Please_moderate:_"Services_For_Mot?=  =?us-ascii?Q?her_board_Room"?=
+X-PHP-Script: bzird.com/wp-comments-post.php for 144.172.118.36
+X-PHP-Originating-Script: 1112:PHPMailer.php
+Date: Wed, 19 Apr 2023 23:21:33 +0000
+From: WordPress <wordpress@bzird.com>
+Message-ID: <zUZ4XFIXdXizZQSOP20ZuQPb564iPjacMOKvyaEi7w@bzird.com>
+X-Mailer: PHPMailer 6.6.0 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <bzird@stack10.ethii.com>
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - stack10.ethii.com
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [1112 980] / [47 12]
+X-AntiAbuse: Sender Address Domain - stack10.ethii.com
+X-Get-Message-Sender-Via: stack10.ethii.com: authenticated_id: bzird/from_h
+X-Authenticated-Sender: stack10.ethii.com: wordpress@bzird.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: bzird.com:/public_html
+X-Spam-Status: No, score=3.2
+X-Spam-Score: 32
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "Services For Mother board Room"
+    is waiting for your approval https://bzird.com/services-for-mother-board-room/
+    Author: Lamaencox (IP address: 144.172.118.36, lantian1.cf) Email: megaboommegaboom@yandex.com
+    URL: https://www.youtube.com/watch?v=cOLX3g6ByR4 Comment: I want to show
+   you one exclusive program called [...] 
+ Content analysis details:   (3.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: bzird.com]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+  1.0 KAM_MXINFO             MX Record and dot info domains associated with
+                             FAKERBL Spammers
+  2.0 RDNS_NONE              Delivered to internal network by a host with no rDNS
+X-Spam-Flag: NO
+
+A new comment on the post "Services For Mother board Room" is waiting for your approval
+https://bzird.com/services-for-mother-board-room/
+
+Author: Lamaencox (IP address: 144.172.118.36, lantian1.cf)
+Email: megaboommegaboom@yandex.com
+URL: https://www.youtube.com/watch?v=cOLX3g6ByR4
+Comment: 
+I want to show you one exclusive program called (BTC PROFIT SEARCH AND MINING PHRASES), which can make you a rich man, and maybe even a billionaire! 
+ 
+This program searches for Bitcoin wallets with a balance, and tries to find a secret phrase for them to get full access to the lost wallet! 
+ 
+Run the program and wait, and in order to increase your chances, install the program on all computers available to you, at work, with your friends, with your relatives, you can also ask your classmates to use the program, so your chances will increase tenfold! 
+Remember the more computers you use, the higher your chances of getting the treasure! 
+ 
+Video: 
+https://www.youtube.com/watch?v=cOLX3g6ByR4 
+ 
+Telegram: 
+https://t.me/btc_profit_search
+
+Approve it: https://bzird.com/wp-admin/comment.php?action=approve&c=305#wpbody-content
+Trash it: https://bzird.com/wp-admin/comment.php?action=trash&c=305#wpbody-content
+Spam it: https://bzird.com/wp-admin/comment.php?action=spam&c=305#wpbody-content
+Currently 42 comments are waiting for approval. Please visit the moderation panel:
+https://bzird.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

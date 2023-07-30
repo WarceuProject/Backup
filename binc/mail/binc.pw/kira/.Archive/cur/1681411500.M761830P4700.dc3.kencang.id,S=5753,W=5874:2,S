@@ -1,0 +1,121 @@
+Return-Path: <igstud5w@cs3003.bigrock.com>
+Delivered-To: kira+spam@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id 2HWULKxNOGRcEgAAMUeTPA
+	(envelope-from <igstud5w@cs3003.bigrock.com>)
+	for <kira+spam@binc.pw>; Fri, 14 Apr 2023 01:45:00 +0700
+Return-path: <igstud5w@cs3003.bigrock.com>
+Envelope-to: kira@binc.pw
+Delivery-date: Fri, 14 Apr 2023 01:45:00 +0700
+Received: from gateway31.websitewelcome.com ([192.185.144.91]:55658)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <igstud5w@cs3003.bigrock.com>)
+	id 1pn1wL-0002zO-0S
+	for kira@binc.pw;
+	Fri, 14 Apr 2023 01:45:00 +0700
+Received: from atl1wswcm05.websitewelcome.com (unknown [50.6.129.166])
+	by atl3wswob02.websitewelcome.com (Postfix) with ESMTP id 66F57C92A
+	for <kira@binc.pw>; Thu, 13 Apr 2023 18:44:16 +0000 (UTC)
+Received: from cs3003.bigrock.com ([119.18.54.142])
+	by cmsmtp with ESMTP
+	id n1vapU9UeU1GUn1vbpvhak; Thu, 13 Apr 2023 18:44:16 +0000
+X-Authority-Reason: nr=8
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=igstudio.in
+	; s=default; h=Content-Type:MIME-Version:Message-ID:From:Date:Subject:To:
+	Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=LsK2PoyZEK2q6+aLa3cZQ68DIA1uP32R9z3rXpaxRc8=; b=mTG1fMUgjUc0Pewa1R1ucDtPVH
+	hLywG8qarWtPJ4Z8AsMudqquoMsXh3iAJUcViV50UKu/Y5k07OFD5uup9y9UH0t11fFGcvNw41uaf
+	DJntagu8dUCNDJE6XGFiMOtvNGhQxz67OPopq/urxkP7MyhJY+UKT43Q1nAK70T3T3R3Hr3Bx2J4p
+	71oGRGKFNgyoXsL1sSr80EAspLoQauvIXCXRKh3RL0+WUHM8C/bhgJ4UPGMsU8d61kcTCuMD+SBta
+	/gGBcP5FyVLD+xTI3ervs4uYLUhmHAI0jcGHLN3sDej5874LCI3bqzbuWIZWXgwCtlz32mflNQlOm
+	qjDuz09Q==;
+Received: from igstud5w by cs3003.bigrock.com with local (Exim 4.95)
+	(envelope-from <igstud5w@cs3003.bigrock.com>)
+	id 1pn1vZ-000KLh-Iv
+	for kira@binc.pw;
+	Fri, 14 Apr 2023 00:14:13 +0530
+To: kira@binc.pw
+X-PHP-Script: igstudio.in/developer3/wp-admin/options.php for 36.78.74.205, 36.78.74.205
+ X-PHP-Originating-Script: 1353:PHPMailer.php
+Date: Thu, 13 Apr 2023 18:44:13 +0000
+From: WordPress <wordpress@igstudio.in>
+Message-ID: <kys36qa02I243zgO4lCANbHUEGxoIAh8nWaqne4nNtg@igstudio.in>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - cs3003.bigrock.com
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [1353 993] / [47 12]
+X-AntiAbuse: Sender Address Domain - cs3003.bigrock.com
+X-BWhitelist: no
+X-Source-IP: 
+X-Source-L: No
+X-Exim-ID: 1pn1vZ-000KLh-Iv
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: igstudio.in:/public_html/developer3/wp-admin
+X-Source-Sender: 
+X-Source-Auth: igstud5w
+X-Email-Count: 1
+X-Source-Cap: aWdzdHVkNXc7aWdzdHVkNXc7Y3MzMDAzLmJpZ3JvY2suY29t
+X-Local-Domain: yes
+X-CMAE-Envelope: MS4xfKah6V0zQV+tIlYLSR1tA0nh1KR0hViAUMu2ABrq1oVdKi3kVvsDIyVm8UxeEwL/tc8fgx/9EXahmW3rYe0hcKlCAnADDXb+hlcrpk1Ewt3IePgRAWoG
+ 5PdOx7EXjATaW+1y4cKAZoVqqO5Izp33rm0BGwi7LsOUPYl76rMKUfuHYfcJhk1DwU091WGNmmOM5+DiMX7dIQ0pVB/xn65/JG0=
+X-Spam-Status: Yes, score=5.2
+X-Spam-Score: 52
+X-Spam-Bar: +++++
+X-Spam-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Howdy wolfizertech, Someone with administrator capabilities
+    recently requested to have the administration email address changed on this
+    site: https://igstudio.in/developer3 To confirm this change, please click
+    on the following link: https://igstudio.in/developer3/wp-admin/options.php?adminhash=84c5569feb136b4aebb92cd2e46e1ff4
+    
+ Content analysis details:   (5.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: igstudio.in]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  5.0 KAM_SOMETLD_ARE_BAD_TLD .stream, .trade, .pw, .top, .press,
+                             .guru, .casa & .date TLD Abuse
+X-Spam-Flag: YES
+Subject:  ***SPAM***  [Sakshi Art Gallery] New Admin Email Address
+
+Howdy wolfizertech,
+
+Someone with administrator capabilities recently requested to have the
+administration email address changed on this site:
+https://igstudio.in/developer3
+
+To confirm this change, please click on the following link:
+https://igstudio.in/developer3/wp-admin/options.php?adminhash=84c5569feb136b4aebb92cd2e46e1ff4
+
+You can safely ignore and delete this email if you do not want to
+take this action.
+
+This email has been sent to kira@binc.pw
+
+Regards,
+All at Sakshi Art Gallery
+https://igstudio.in/developer3
+

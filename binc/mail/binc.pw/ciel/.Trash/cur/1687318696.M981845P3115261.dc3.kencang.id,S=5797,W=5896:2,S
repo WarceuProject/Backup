@@ -1,0 +1,99 @@
+Return-Path: <floridaproudllc@host.360serverhost.com>
+Delivered-To: ciel@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id iFFqOahwkmT9iC8AMUeTPA
+	(envelope-from <floridaproudllc@host.360serverhost.com>)
+	for <ciel@binc.pw>; Wed, 21 Jun 2023 10:38:16 +0700
+Return-path: <floridaproudllc@host.360serverhost.com>
+Envelope-to: ciel@binc.pw
+Delivery-date: Wed, 21 Jun 2023 10:38:16 +0700
+Received: from host.360serverhost.com ([128.127.106.147]:37576)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <floridaproudllc@host.360serverhost.com>)
+	id 1qBofT-00DLQf-0s
+	for ciel@binc.pw;
+	Wed, 21 Jun 2023 10:38:16 +0700
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=floridaproudllc.com; s=default; h=Content-Type:MIME-Version:Message-ID:From
+	:Date:Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=22xfJTra/98ClLtZe9Qb2Z8E7atXpsfFQl0mwOUKipM=; b=bnW+j7NYL+z3h4COrO2GBBbiQV
+	eLBSxhnp619xIPR0/b3PGGiuy0iRlW1FlZiHJ0GNfvt1HFHAE0eLIG9223qNCFhyHp/kSdo6obdbX
+	Y8ljbO2pHxpgcjPItDXepgsEaqiuxy6aeOnfwma1XpmplJicPD02u1VEWHguS+9PQLj87h7g/OPZM
+	H98519tt0nIwnCWufI4f4vQS5BpD44axBD5XbShTmCKwj7Ch8/Ef2PG1G8vw3YKr2hflYyUlWD77a
+	MYHhUu2XOi1gvI1sKMCAYSmlt7nMWopILHrk9iywJMByisfRP3S36rgJ1UdtubpNGu4X5JfNAJ209
+	4u0y7/6A==;
+Received: from floridaproudllc by host.360serverhost.com with local (Exim 4.96)
+	(envelope-from <floridaproudllc@host.360serverhost.com>)
+	id 1qBoee-0005I0-2h
+	for ciel@binc.pw;
+	Tue, 20 Jun 2023 23:37:12 -0400
+To: ciel@binc.pw
+Subject: =?us-ascii?Q?[Florida_Proud_LLC]_Please_moderate:_"We_reques?=  =?us-ascii?Q?ted_Tinder_to_have_information_regarding_the_Au?=  =?us-ascii?Q?stralian_registration_number,_nevertheless_they?=  =?us-ascii?Q?_is_only_able_to_bring_an_international_profile?=  =?us-ascii?Q?_of_five"?=
+X-PHP-Script: floridaproudllc.com/wp-comments-post.php for 218.21.88.93
+X-PHP-Originating-Script: 1800:PHPMailer.php
+Date: Wed, 21 Jun 2023 03:37:12 +0000
+From: WordPress <wordpress@floridaproudllc.com>
+Message-ID: <NyPjj6D93i0Jt3U9iBYxGP9WbTyKswv5l6ouhB58Ohk@floridaproudllc.com>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - host.360serverhost.com
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [1800 993] / [47 12]
+X-AntiAbuse: Sender Address Domain - host.360serverhost.com
+X-Get-Message-Sender-Via: host.360serverhost.com: authenticated_id: floridaproudllc/from_h
+X-Authenticated-Sender: host.360serverhost.com: wordpress@floridaproudllc.com
+X-Source: 
+X-Source-Args: php-fpm: pool floridaproudllc_com                        
+X-Source-Dir: floridaproudllc.com:/public_html
+X-Spam-Status: No, score=0.5
+X-Spam-Score: 5
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "We requested Tinder to have information
+    regarding the Australian registration number, nevertheless they is only able
+    to bring an international profile of five" is waiting fo [...] 
+ Content analysis details:   (0.5 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: binance.com]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.0 T_SPF_TEMPERROR        SPF: test of record failed (temperror)
+  0.0 T_SPF_HELO_TEMPERROR   SPF: test of HELO record failed (temperror)
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+X-Spam-Flag: NO
+
+A new comment on the post "We requested Tinder to have information regarding the Australian registration number, nevertheless they is only able to bring an international profile of five" is waiting for your approval
+https://floridaproudllc.com/we-requested-tinder-to-have-information-regarding/
+
+Author: M~a gii thiu binance tt nht (IP address: 218.21.88.93, 218.21.88.93)
+Email: 18277738@outlook.com
+URL: https://accounts.binance.com/vi/register?ref=V2H9AFPY
+Comment: 
+Your point of view caught my eye and was very interesting. Thanks. I have a question for you. https://accounts.binance.com/vi/register?ref=V2H9AFPY
+
+Approve it: https://floridaproudllc.com/wp-admin/comment.php?action=approve&c=129#wpbody-content
+Trash it: https://floridaproudllc.com/wp-admin/comment.php?action=trash&c=129#wpbody-content
+Spam it: https://floridaproudllc.com/wp-admin/comment.php?action=spam&c=129#wpbody-content
+Currently 16 comments are waiting for approval. Please visit the moderation panel:
+https://floridaproudllc.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

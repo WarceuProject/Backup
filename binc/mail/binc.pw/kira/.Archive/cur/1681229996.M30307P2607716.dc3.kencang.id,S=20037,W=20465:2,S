@@ -1,0 +1,428 @@
+Return-Path: <01010187711d1264-d77213d6-947b-4367-a7ac-12ae3f2ee273-000000@auth.accountsemail.com>
+Delivered-To: kira+spam@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id 0LB5N6uINWRkyicAMUeTPA
+	(envelope-from <01010187711d1264-d77213d6-947b-4367-a7ac-12ae3f2ee273-000000@auth.accountsemail.com>)
+	for <kira+spam@binc.pw>; Tue, 11 Apr 2023 23:19:55 +0700
+Return-path: <01010187711d1264-d77213d6-947b-4367-a7ac-12ae3f2ee273-000000@auth.accountsemail.com>
+Envelope-to: kira@binc.pw
+Delivery-date: Tue, 11 Apr 2023 23:19:56 +0700
+Received: from a27-31.smtp-out.us-west-2.amazonses.com ([54.240.27.31]:43891)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <01010187711d1264-d77213d6-947b-4367-a7ac-12ae3f2ee273-000000@auth.accountsemail.com>)
+	id 1pmGim-00Ax4g-1J
+	for kira@binc.pw;
+	Tue, 11 Apr 2023 23:19:55 +0700
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=nudk7dsets27k56i7ddkfgodpuwmar3p; d=accountsemail.com;
+	t=1681229943;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type;
+	bh=3gTHQg0efQBaApthhqYzpuw7AQN37DVBWYy0E5sYEfk=;
+	b=agAx7FBpM93ASRx1IehwdS+633qa6BQEblWrullP24tqw0UZ7IdMe+3SqaioK9Rx
+	NLENKYTGVEbT08/X+lQ4CNNPXS1LuzgE9Rb/QzsTFTLkAgiS+HWqLF2uL3HiEuLDxeU
+	3heBq6KPH8PHidLFna9eH4cT35+gek79F+daXbtl9dQ2BKWj9id/CPxu4Q8dNVEpYXM
+	3DqJUPRRV5z5W2670kwlv+L0Y2dUUywwe1m549CE/I76yGey71lGhD3DpXudGP54pdN
+	A/Ud84VM7JvqrtnHTkrqFUsNNn8QFtMOBAuZ2oP2gH4WFWUvRZf9gNW+/BaZf+BC/ie
+	LYz/KE8lRw==
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1681229943;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:Feedback-ID;
+	bh=3gTHQg0efQBaApthhqYzpuw7AQN37DVBWYy0E5sYEfk=;
+	b=q8osnxdyR5Oc+kOZKBDO35kqnQuM+SkNer9PwV5xVTMZf9yL1K43qMWER2ElbUS3
+	Jzo/tCsVOQhQsnxGdPW0FAHaLxVKE9bCB7zPHHhVqas8HiDoxbhOgf/OCBfXRIA+sTC
+	1yTkwDXxogdB6vrunpyRVrMbVBOqKxvLeQKGh+Zg=
+Date: Tue, 11 Apr 2023 16:19:03 +0000
+From: auth@accountsemail.com
+To: kira@binc.pw
+Message-ID: <01010187711d1264-d77213d6-947b-4367-a7ac-12ae3f2ee273-000000@us-west-2.amazonses.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_11646_176926463.1681229943336"
+Feedback-ID: 1.us-west-2.I9+AjPUd0hBN6bIYehVQstfmWoa3spJ/AdvTdFXKDFk=:AmazonSES
+X-SES-Outgoing: 2023.04.11-54.240.27.31
+X-Spam-Status: Yes, score=5.6
+X-Spam-Score: 56
+X-Spam-Bar: +++++
+X-Spam-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hello kira@binc.pw Congratulations on creating a new account
+    with us. We just setup your instance and made it sleeker and easier for you
+    to manage! Without further ado, lets dive right into your account dashboard!
+    
+ Content analysis details:   (5.6 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: accountsemail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 NUMERIC_HTTP_ADDR      URI: Uses a numeric IP address in URL
+  0.7 MPART_ALT_DIFF         BODY: HTML and text parts are different
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image
+                             area
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  5.0 KAM_SOMETLD_ARE_BAD_TLD .stream, .trade, .pw, .top, .press,
+                             .guru, .casa & .date TLD Abuse
+  0.0 MIME_HTML_ONLY_MULTI   Multipart message only has text/html MIME
+                             parts
+  0.0 T_REMOTE_IMAGE         Message contains an external image
+X-Spam-Flag: YES
+Subject:  ***SPAM***  myorg61bed6bc965c1 Signup
+
+------=_Part_11646_176926463.1681229943336
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <title></title>
+      <!--[if !mso]>-->
+      <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+      <!--<![endif]-->
+      <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF=
+-8">
+      <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scal=
+e=3D1">
+      <style type=3D"text/css">
+        #outlook a {
+        padding: 0;
+        }
+        body {
+        margin: 0;
+        padding: 0;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        }
+        table,
+        td {
+        border-collapse: collapse;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        }
+        img {
+        border: 0;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+        }
+        p {
+        display: block;
+        margin: 13px 0;
+        }
+      </style>
+      <!--[if mso]>
+      <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+      <![endif]-->
+      <!--[if lte mso 11]>
+      <style type=3D"text/css">
+        .mj-outlook-group-fix { width:100% !important; }
+      </style>
+      <![endif]-->
+      <!--[if !mso]><!-->
+      <link href=3D"https://fonts.googleapis.com/css?family=3DPoppins:400,5=
+00" rel=3D"stylesheet" type=3D"text/css">
+      <style type=3D"text/css">
+        @import url(https://fonts.googleapis.com/css?family=3DPoppins:400,5=
+00);
+      </style>
+      <!--<![endif]-->
+      <style type=3D"text/css">
+        @media only screen and (min-width:480px) {
+        .mj-column-per-60 {
+        width: 60% !important;
+        max-width: 60%;
+        }
+        .mj-column-per-40 {
+        width: 40% !important;
+        max-width: 40%;
+        }
+        .mj-column-per-100 {
+        width: 100% !important;
+        max-width: 100%;
+        }
+        .mj-column-per-45 {
+        width: 45% !important;
+        max-width: 45%;
+        }
+        .mj-column-per-11 {
+        width: 11% !important;
+        max-width: 11%;
+        }
+        .mj-column-per-89 {
+        width: 89% !important;
+        max-width: 89%;
+        }
+        .mj-column-per-75 {
+        width: 75% !important;
+        max-width: 75%;
+        }
+        .mj-column-per-25 {
+        width: 25% !important;
+        max-width: 25%;
+        }
+        .mj-column-per-65 {
+        width: 65% !important;
+        max-width: 65%;
+        }
+        .mj-column-per-35 {
+        width: 35% !important;
+        max-width: 35%;
+        }
+        }
+      </style>
+      <style type=3D"text/css">
+        @media only screen and (max-width:480px) {
+        table.mj-full-width-mobile {
+        width: 100% !important;
+        }
+        td.mj-full-width-mobile {
+        width: auto !important;
+        }
+        }
+      </style>
+      <link rel=3D"icon" href=3D"./img/favicon.png">
+  </head>
+  <body style=3D"background-color: #f9f9f9;">
+      <div style=3D"">
+
+        <div style=3D"margin:0px auto;max-width:600px;background-color:#fff=
+fff;">
+          <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" role=3D"presentation" bgcolor=3D"#ffffff" style=3D"width:100%;">
+          <tbody>
+            <tr>
+              <td style=3D"direction:ltr;font-size:0px;padding:20px 0;text-=
+align:center;background-color: #ffffff;">
+
+                  <div class=3D"mj-column-per-60 mj-outlook-group-fix" styl=
+e=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;verti=
+cal-align:top;width:100%;background-color:#ffffff;">
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" bgcolor=3D"#ffffff" style=3D"vertical-align:to=
+p;" width=3D"100%">
+                          <tr>
+                              <td align=3D"left" style=3D"font-size:0px;pad=
+ding:10px 25px;word-break:break-word;">
+                                <div style=3D"font-family:poppins, Helvetic=
+a, sans-serif;font-size:16px;font-weight:300;line-height:24px;text-align:le=
+ft;color:#616161;">
+                                      <img src=3D"data:image/png;base64,iVB=
+ORw0KGgoAAAANSUhEUgAAASwAAABQCAYAAACj6kh7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbW=
+FnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpb=
+j0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6=
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE=
+2NDQ4OCwgMjAyMC8wNy8xMC0yMjowNjo1MyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPS=
+JodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjc=
+mlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8x=
+LjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM=
+6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIH=
+htcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIyLjAgKFdpbmRvd3MpIiB4bXBNTTpJb=
+nN0YW5jZUlEPSJ4bXAuaWlkOjM4OUQ4MkVCMzJDQjExRUI4QjU0QUUyQ0E0M0Q3MzA1IiB4bXBN=
+TTpEb2N1bWVudElEPSJ4bXAuZGlkOjM4OUQ4MkVDMzJDQjExRUI4QjU0QUUyQ0E0M0Q3MzA1Ij4=
+gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Mzg5RDgyRTkzMk=
+NCMTFFQjhCNTRBRTJDQTQzRDczMDUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Mzg5RDgyR=
+UEzMkNCMTFFQjhCNTRBRTJDQTQzRDczMDUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJE=
+Rj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6ygA43AAANbUlEQVR42uxd645cRxH=
+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
+cAAAAASUVORK5CYII=3D" alt=3D"Stackk" height=3D"auto" width=3D"146" align=3D=
+"bottom" style=3D"border: 0px;">
+                                </div>
+                              </td>
+                            </tr>
+                        </table>
+                  </div>
+
+                  <div class=3D"mj-column-per-40 mj-outlook-group-fix" styl=
+e=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;verti=
+cal-align:top;width:100%;">
+                      <table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+                        <tr>
+                          <td align=3D"right" style=3D"font-size:0px;paddin=
+g:10px 25px;word-break:break-word;">
+                              <div style=3D"font-family:poppins, Helvetica,=
+ sans-serif;font-size:10px;font-weight:300;line-height:24px;text-align:righ=
+t;color:#616161;"></div>
+                            </td>
+                          </tr>
+                        </table>
+                  </div>
+                </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style=3D"margin:0px auto;max-width:600px;background-color:#f=
+fffff;">
+            <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" role=3D"presentation" bgcolor=3D"#ffffff" style=3D"width:100%;">
+              <tbody>
+                <tr>
+                  <td style=3D"direction:ltr;font-size:0px;padding:0px;text=
+-align:center;">
+                    <div class=3D"mj-column-per-100 mj-outlook-group-fix" s=
+tyle=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;ve=
+rtical-align:top;width:100%;">
+                      <table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" role=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">
+                        <tr>
+                          <td align=3D"center" style=3D"font-size:0px;paddi=
+ng:10px 25px;word-break:break-word;">
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" role=3D"presentation" style=3D"border-collapse:collapse;border-spa=
+cing:0px;">
+                              <tbody>
+                                <tr>
+                                  <td style=3D"width:550px;"> <a href=3D"ht=
+tps://www.stackk.com" target=3D"_blank">
+
+                              <img
+                                height=3D"auto" src=3D"https://app.stackk.c=
+om/assets/images/email-banner-2.png" style=3D"border:0;display:block;outlin=
+e:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width=
+=3D"550"
+                              />
+
+                              </a> </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style=3D"margin:0px auto;max-width:600px;background-color:#f=
+fffff;">
+              <table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" bgcolor=3D"#ffffff" role=3D"presentation" style=3D"width:100%;"=
+>
+                <tbody>
+                  <tr>
+                    <td style=3D"direction:ltr;font-size:0px;padding:0px;te=
+xt-align:center;">
+                      <div class=3D"mj-column-per-100 mj-outlook-group-fix"=
+ style=3D"font-size:0px;text-align:left;direction:ltr;display:inline-block;=
+vertical-align:top;width:100%;background-color:#ffffff;">
+                          <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" bgcolor=3D"#ffffff" style=3D"vertical-align:to=
+p;" width=3D"100%">
+                          <tr>
+                            <td align=3D"left" style=3D"font-size:0px;paddi=
+ng:10px 25px;word-break:break-word;">
+                              <div style=3D"font-family:poppins, Helvetica,=
+ sans-serif;font-size:16px;font-weight:300;line-height:24px;text-align:left=
+;color:#616161;">
+                                <p>Hello kira@binc.pw</p>
+                                <p>Congratulations on creating a new accoun=
+t with us. We just setup your instance and made it sleeker and easier for y=
+ou to manage! </p>
+                                <p>Without further ado, lets dive right int=
+o your account <a href=3D"https://tezizone.stackk.in" style=3D"text-decorat=
+ion: none; color: #ff701a;">dashboard</a>!</p>
+                                <p>Your username is kira@binc.pw and tempor=
+ary password is <b> yF8V$^*EnESni4g6X)fEz()J </b></p>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+  </body>
+</html>
+------=_Part_11646_176926463.1681229943336--

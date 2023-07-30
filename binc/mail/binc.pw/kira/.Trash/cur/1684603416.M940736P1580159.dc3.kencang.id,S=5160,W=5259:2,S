@@ -1,0 +1,99 @@
+Return-Path: <grafica2@host4004.hospedameusite.net>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id EIvDNxgCaWR/HBgAMUeTPA
+	(envelope-from <grafica2@host4004.hospedameusite.net>)
+	for <kira@binc.pw>; Sun, 21 May 2023 00:23:36 +0700
+Return-path: <grafica2@host4004.hospedameusite.net>
+Envelope-to: kira@binc.pw
+Delivery-date: Sun, 21 May 2023 00:23:36 +0700
+Received: from host4004.hospedameusite.net ([158.69.17.134]:51210)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <grafica2@host4004.hospedameusite.net>)
+	id 1q0QIr-006e7q-1w
+	for kira@binc.pw;
+	Sun, 21 May 2023 00:23:36 +0700
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=graficaemnatal.com.br; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:From:Date:Subject:To:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=W6Ac/aj4kwa/9Fg1uBzyTJOUNuGxdhQYORdPddv8wRU=; b=GtK9y8i3npZWrqXqzrJAwhEQJr
+	OT4Eg66SVepUdvLX086zw7xgH8KhWwr7byt25Tcn6d8BCCDgCuaoMvRQsANlmfL+M7G2M9dYWYs/1
+	Rm5j11FwC0F6AIzeco8ncXcY7p8ltLP8ZZ/kGmMqSes7ZEJ05tP58uDFJaS6Mg/nFovzEWRMsYO66
+	UFpay3FFYmg4FK72xpADFAK3IQszXN5b3LgeVLeH69FMo+h0n2orzMKW1HXsbtn71WVDN6a/yQ44g
+	9peLN+2Z1hJ/Uf6lRhI4uo9US8V2AhvoGzEYYP6+ejjcakl9jGfQHsiiKjJqtr83sifYwzR2b5Sxr
+	NC0jPzcg==;
+Received: from grafica2 by host4004.hospedameusite.net with local (Exim 4.95)
+	(envelope-from <grafica2@host4004.hospedameusite.net>)
+	id 1q0QI4-00DDy4-8I
+	for kira@binc.pw;
+	Sat, 20 May 2023 14:22:48 -0300
+To: kira@binc.pw
+Subject: =?UTF-8?Q?[PNP_Gr=C3=A1fica=C2=AE]_Seu_site_foi_atualizado_p?=  =?UTF-8?Q?ara_o_WordPress_6.2.2?=
+X-PHP-Script: graficaemnatal.com.br/wp-cron.php for 158.69.17.134
+X-PHP-Originating-Script: 3261:PHPMailer.php
+Date: Sat, 20 May 2023 17:22:47 +0000
+From: WordPress <wordpress@graficaemnatal.com.br>
+Message-ID: <lWbMEmNOKxidJccVFvJxyKXAOB0DI24O90hgg8rUQ8@graficaemnatal.com.br>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - host4004.hospedameusite.net
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [3261 990] / [47 12]
+X-AntiAbuse: Sender Address Domain - host4004.hospedameusite.net
+X-Get-Message-Sender-Via: host4004.hospedameusite.net: authenticated_id: grafica2/from_h
+X-Authenticated-Sender: host4004.hospedameusite.net: wordpress@graficaemnatal.com.br
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: graficaemnatal.com.br:/public_html
+X-Spam-Status: No, score=3.1
+X-Spam-Score: 31
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Olá! Seu site em https://graficaemnatal.com.br foi atualizado
+    automaticamente para o WordPress 6.2.2. Você não precisa fazer nada. Para
+    saber mais sobre a versão 6.2.2, veja a tela Sobre o WordPress: https://graficaemnatal.com.br/wp-admin/about.php
+    
+ Content analysis details:   (3.1 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: wordpress.org]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+  2.5 PHP_SCRIPT             Sent by PHP script
+X-Spam-Flag: NO
+
+Olá! Seu site em https://graficaemnatal.com.br foi atualizado automaticamente para o WordPress 6.2.2.
+
+Você não precisa fazer nada. Para saber mais sobre a versão 6.2.2, veja a tela Sobre o WordPress:
+https://graficaemnatal.com.br/wp-admin/about.php
+
+Se você passar por qualquer problema ou precisar de suporte, os voluntários nos fóruns de suporte do WordPress.org podem ajudá-lo.
+https://br.wordpress.org/support/forums/
+
+Você também possui alguns plugins e temas com atualizações disponíveis. Atualize-os agora:
+https://graficaemnatal.com.br/wp-admin/
+
+A equipe do WordPress
+

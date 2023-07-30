@@ -1,0 +1,103 @@
+Return-Path: <floridaproudllc@host.360serverhost.com>
+Delivered-To: ciel@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id oFYeO2zWbmT3hQkAMUeTPA
+	(envelope-from <floridaproudllc@host.360serverhost.com>)
+	for <ciel@binc.pw>; Thu, 25 May 2023 10:30:52 +0700
+Return-path: <floridaproudllc@host.360serverhost.com>
+Envelope-to: ciel@binc.pw
+Delivery-date: Thu, 25 May 2023 10:30:53 +0700
+Received: from host.360serverhost.com ([128.127.106.147]:37955)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <floridaproudllc@host.360serverhost.com>)
+	id 1q21gi-002fke-1d
+	for ciel@binc.pw;
+	Thu, 25 May 2023 10:30:52 +0700
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=floridaproudllc.com; s=default; h=Content-Type:MIME-Version:Message-ID:From
+	:Date:Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=550102OIpeZ0GUTSl02lrwdindtNRhBYdFOBKdZEhOE=; b=IOMyh+HzMuKGjDnGSgSod9Auad
+	hJwFDF27rJCfLrTJ2TROC5lRGl1fH41Itt3ir3KURWDrVQz6Xs8y1GTWnLP0/LlXurxl3ZvXpvxn4
+	7P9YBXr0Su3C6RgC3CcP0TH8H1obi02sBEL8+6dEQUNfJ/+uVg67uLlM93FpkVFJn/10UaxfrWWCf
+	CrHsXgD0Zho0Ah0iQrWWesgvcX1Ritwr3lPzUVlW53qX83EoFM6j6bTDcV0Lv3JxyZ1LfNemABnrh
+	VoWAC5+odD4hKNlLVhEHPwQFizw1GLG2AK+rz3DNHiiGPOaxHDAdtoFtf9jhLbac2My4WSEd7dTIH
+	tHV7sfMQ==;
+Received: from floridaproudllc by host.360serverhost.com with local (Exim 4.96)
+	(envelope-from <floridaproudllc@host.360serverhost.com>)
+	id 1q21fx-0002a5-0n
+	for ciel@binc.pw;
+	Wed, 24 May 2023 23:30:05 -0400
+To: ciel@binc.pw
+Subject: =?us-ascii?Q?[Florida_Proud_LLC]_Please_moderate:_"today_if_?=  =?us-ascii?Q?you_believe._A-try_very_first_any_time_you_re_n?=  =?us-ascii?Q?evertheless_uncertain,_feel_free_to_promote_our?=  =?us-ascii?Q?_financial_calculator."?=
+X-PHP-Script: floridaproudllc.com/wp-comments-post.php for 45.64.246.153
+X-PHP-Originating-Script: 1800:PHPMailer.php
+Date: Thu, 25 May 2023 03:30:05 +0000
+From: WordPress <wordpress@floridaproudllc.com>
+Message-ID: <0KG1NDjpnb6zHAcclJMctgowoOEpkq7xyEsHDEYZxg@floridaproudllc.com>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - host.360serverhost.com
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [1800 993] / [47 12]
+X-AntiAbuse: Sender Address Domain - host.360serverhost.com
+X-Get-Message-Sender-Via: host.360serverhost.com: authenticated_id: floridaproudllc/from_h
+X-Authenticated-Sender: host.360serverhost.com: wordpress@floridaproudllc.com
+X-Source: 
+X-Source-Args: php-fpm: pool floridaproudllc_com                        
+X-Source-Dir: floridaproudllc.com:/public_html
+X-Spam-Status: No, score=4.3
+X-Spam-Score: 43
+X-Spam-Bar: ++++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "today if you believe. A-try very
+    first any time you re nevertheless uncertain, feel free to promote our financial
+    calculator." is waiting for your approval https://floridapr [...] 
+ Content analysis details:   (4.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: gate.io]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  1.7 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
+  2.4 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
+                             [cf: 100]
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+X-Spam-Flag: NO
+
+A new comment on the post "today if you believe. A-try very first any time you re nevertheless uncertain, feel free to promote our financial calculator." is waiting for your approval
+https://floridaproudllc.com/today-if-you-believe-a-try-very-first-any-time-you/
+
+Author: gate io (IP address: 45.64.246.153, 45.64.246.153)
+Email: 59754577@outlook.com
+URL: https://www.gate.io/vi/signup/XlQVXVo
+Comment: 
+I may need your help. I've been doing research on gate io recently, and I've tried a lot of different things. Later, I read your article, and I think your way of writing has given me some innovative ideas, thank you very much.
+
+Approve it: https://floridaproudllc.com/wp-admin/comment.php?action=approve&c=127#wpbody-content
+Trash it: https://floridaproudllc.com/wp-admin/comment.php?action=trash&c=127#wpbody-content
+Spam it: https://floridaproudllc.com/wp-admin/comment.php?action=spam&c=127#wpbody-content
+Currently 14 comments are waiting for approval. Please visit the moderation panel:
+https://floridaproudllc.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

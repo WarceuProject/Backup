@@ -1,0 +1,103 @@
+Return-Path: <naipom@203-194-113-146.cprapid.com>
+Delivered-To: syn+spam@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id AB/GLupjRWQK6RwAMUeTPA
+	(envelope-from <naipom@203-194-113-146.cprapid.com>)
+	for <syn+spam@binc.pw>; Sun, 23 Apr 2023 23:59:22 +0700
+Return-path: <naipom@203-194-113-146.cprapid.com>
+Envelope-to: syn@binc.pw
+Delivery-date: Sun, 23 Apr 2023 23:59:22 +0700
+Received: from [203.194.113.146] (port=45150 helo=203-194-113-146.cprapid.com)
+	by dc3.kencang.id with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <naipom@203-194-113-146.cprapid.com>)
+	id 1pqd3a-0080Iu-1F
+	for syn@binc.pw;
+	Sun, 23 Apr 2023 23:59:22 +0700
+Received: from naipom by 203-194-113-146.cprapid.com with local (Exim 4.96)
+	(envelope-from <naipom@203-194-113-146.cprapid.com>)
+	id 1pqd2k-000A2e-19
+	for syn@binc.pw;
+	Sun, 23 Apr 2023 18:58:30 +0200
+To: syn@binc.pw
+X-PHP-Script: naipom.us/gensin/index.php for 2001:448a:70aa:1a40:95aa:e6b2:16c7:8121, 172.70.147.32
+ X-PHP-Originating-Script: 1001:php.php
+From: "NaipomForums Market" <vijaysharma.b@rediffmail.com>
+ Return-Path: vijaysharma.b@rediffmail.com
+ Reply-To: vijaysharma.b@rediffmail.com
+ Message-ID: <8bb18587de41d7dcfe80bde11f4b42fc@naipom.us>
+ Content-Transfer-Encoding: 8bit
+ X-Priority: 3
+ X-Mailer: MyBB
+ MIME-Version: 1.0
+ Content-Type: text/plain; charset=utf-8
+Message-Id: <E1pqd2k-000A2e-19@203-194-113-146.cprapid.com>
+Date: Sun, 23 Apr 2023 18:58:30 +0200
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - 203-194-113-146.cprapid.com
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [1001 985] / [47 8]
+X-AntiAbuse: Sender Address Domain - 203-194-113-146.cprapid.com
+X-Get-Message-Sender-Via: 203-194-113-146.cprapid.com: authenticated_id: naipom/primary_hostname/system user
+X-Authenticated-Sender: 203-194-113-146.cprapid.com: naipom
+X-Source: 
+X-Source-Args: sh -c /usr/sbin/sendmail -t -i  
+X-Source-Dir: naipom.us:/public_html/gensin
+X-Spam-Status: Yes, score=15.5
+X-Spam-Score: 155
+X-Spam-Bar: +++++++++++++++
+X-Spam-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Syn, The administrator has activated your forum account on
+    NaipomForums Market. To proceed, please go to 
+ Content analysis details:   (15.5 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  5.0 KAM_CCFROM1            Addition of cc: and similar as a phishing tactic
+  0.3 FROM_LOCAL_HEX         From: localpart has long hexadecimal sequence
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: naipom.us]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [vijaysharma.b[at]rediffmail.com]
+  1.0 KAM_LAZY_DOMAIN_SECURITY Sending domain does not have any
+                             anti-forgery methods
+  1.5 KAM_DMARC_QUARANTINE   DKIM has Failed or SPF has failed on the
+                             message and the domain has a DMARC
+                             quarantine policy
+  0.2 FREEMAIL_FORGED_FROMDOMAIN 2nd level domains in From and
+                             EnvelopeFrom freemail headers are
+                             different
+  2.5 PHP_SCRIPT             Sent by PHP script
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  2.0 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  2.5 KAM_LINKBAIT           Short messages containing little more than a link,
+                             from a domain with no security in place
+  0.0 SPOOFED_FREEMAIL_NO_RDNS From SPOOFED_FREEMAIL and no rDNS
+  0.2 HELO_MISC_IP           Looking for more Dynamic IP Relays
+  0.0 SPOOFED_FREEMAIL       No description available.
+X-Spam-Flag: YES
+Subject:  ***SPAM***  Account Activation at NaipomForums Market
+
+Syn,
+
+The administrator has activated your forum account on NaipomForums Market.
+
+To proceed, please go to
+
+https://naipom.us
+
+You will be able to login with the credentials you registered with.
+
+Thank you,
+NaipomForums Market Staff

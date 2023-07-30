@@ -1,0 +1,39 @@
+nav,nav ul{padding:0;margin:0}
+.toggle,[id^=drop],nav ul ul{display:none}
+nav ul,nav ul ul li,nav ul ul ul li{position:relative}
+nav{background:#333}
+nav::after{clear:both;content:"";display:table}
+nav ul{list-style:none}
+nav ul li{border-left:1px solid #555;display:inline-block;float:left;margin:0}
+nav a{background:#222;color:#fff;display:block;font-family:Helvetica,Arial,Verdana,sans-serif;font-size:12px;padding:10px 15px;text-decoration:none}
+nav ul li ul li:hover{background:#444}
+nav a:hover{background-color:#000}
+nav ul ul{position:absolute;top:35px}
+nav ul li:hover>ul{display:inherit}
+nav ul ul li{display:list-item;float:none;width:170px}
+nav ul ul ul li{left:170px;top:-60px}
+nav ul li>a::after{content:" ";display:inline;font-family:fontawesome}
+nav ul li>a:only-child::after{content:""}
+@media all and (max-width:768px) {
+nav ul ul,nav ul ul ul li{position:static}
+nav{margin:0}
+.menu,.toggle+a{display:none}
+.toggle,[id^=drop]:checked+ul,nav ul li{display:block}
+.toggle{background:#333;color:#fff;border:none;padding:10px 15px;text-decoration:none;font-family:Helvetica,Arial,Verdana,sans-serif;font-size:12px}
+.toggle:hover,nav a:hover,nav ul ul ul a{background-color:#000}
+nav ul li{width:100%}
+nav ul ul .toggle,nav ul ul a{padding:0 40px}
+nav ul li ul li .toggle,nav ul ul a,nav ul ul ul a{color:#fff;font-size:12px;padding:10px 15px}
+nav ul li ul li .toggle,nav ul ul a{background-color:#212121}
+nav ul ul{color:#fff;float:none}
+nav ul li:hover>ul,nav ul ul li:hover>ul{display:none}
+nav ul ul li{display:block;width:100%}
+}
+@media all and (max-width:330px) {
+nav ul li{display:block;width:94%}
+}
+@media only screen and (min-width:769px) {
+nav ul{margin-left:8%}
+nav ul ul{margin-left:0}
+}
+		

@@ -1,0 +1,223 @@
+Return-Path: <u1692039@srv150.niagahoster.id>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id YLzjE3N9NWTglCYAMUeTPA
+	(envelope-from <u1692039@srv150.niagahoster.id>)
+	for <kira@binc.pw>; Tue, 11 Apr 2023 22:32:03 +0700
+Return-path: <u1692039@srv150.niagahoster.id>
+Envelope-to: kira@binc.pw
+Delivery-date: Tue, 11 Apr 2023 22:32:03 +0700
+Received: from out16-46.antispamcloud.com ([185.201.18.46]:52034)
+	by dc3.kencang.id with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <u1692039@srv150.niagahoster.id>)
+	id 1pmFyQ-00AcFm-1R
+	for kira@binc.pw;
+	Tue, 11 Apr 2023 22:32:03 +0700
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=out.niagahoster.com; s=spamexpert; h=Sender:Content-Type:MIME-Version:
+	Message-ID:From:Date:Subject:To:reply-to:cc:bcc:in-reply-to:references:
+	content-transfer-encoding; bh=IBtPMQzo5f6vqH2hDXbbOu/9EIg7wiCIbMe3eWjvIdc=;
+	 b=Z3iePBTrjNCEyZv9K/P0m+nmCSD+QicQJ79Jpn5gOtkmGFEX7vYh/9GFr+7u7lBj2KPGZu1z99
+	zVq9KyAQvPsadudjx4yxoEf6vZliT1xBg8oTMoEnR9Xb45dVu4nou9/eU/aUWAzd9CIKDGiKIaJQy
+	LKDnKAfnLvC69yF0hqsWCdlVpZoueNy9KmQs/anqCWtPREBdzPbk68sc1whdx/9MUKfSlRnQHc2sG
+	o2rpuxjGCOo1IDo3aiwp+doL7J1drtGLwLA/Zygkt0TUb7MQ2Q3/TQinCvRl/pPDfwlEgdF0VgrTG
+	ZzsD9WMME7KbNq70nPbLVJ//Oj+CMXw06h8gg==;
+Received: from srv150.niagahoster.com ([217.21.72.101])
+	by mx249.antispamcloud.com with esmtpsa (TLSv1.2:AES128-GCM-SHA256:128)
+	(Exim 4.92)
+	(envelope-from <u1692039@srv150.niagahoster.id>)
+	id 1pmFxf-000MSF-E3
+	for kira@binc.pw; Tue, 11 Apr 2023 17:31:13 +0200
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=supergamingid.com; s=default; h=Sender:Content-Type:MIME-Version:Message-ID
+	:From:Date:Subject:To:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=IBtPMQzo5f6vqH2hDXbbOu/9EIg7wiCIbMe3eWjvIdc=; b=hu+IL/QzOxHsenlT5xEZih0jks
+	ALoAxfrZ+eKTN0aEPWWz4T3FRfblIfruKaeP3zkO+H4kSDG0aVF9iJIihrd8P3gif0DIfRndDw/L1
+	6vaOBZRGz84gnrxcFAxKs8Ep4UrpyiXpL8OowqUMPORy/ZCd38JP/EuaENjKS+QdS7aEA2NJyKwT/
+	NNW0BpUrqn4uheQU3rS5tR3tjxJxvd7a7TCeBXniNQpxCydkfXA4IkwPNp0q3Vp71jezaqiHyVL2W
+	0+QiowuU+N2/NbhK0zNzjEwFWKURw/Uc2tlumnoEaEgWeC8tP67nbeQIiI009Zi2Ib9NBwfyJ/Btf
+	C+6cpJ6w==;
+Received: from mailnull by srv150.niagahoster.com with spam-scanner (Exim 4.96)
+	(envelope-from <u1692039@srv150.niagahoster.com>)
+	id 1pmFxZ-0005Ls-0c
+	for kira@binc.pw;
+	Tue, 11 Apr 2023 22:31:05 +0700
+X-ImunifyEmail-Filter-Info: ewogICAgImlzX3NraXBwZWQiOiBmYWxzZSwKICAgICJ0aW1lX3JlYWw
+	iOiAwLjMxOTkxNiwKICAgICJzeW1ib2xzIjogewogICAgICAgICJCQV
+	lFU19IQU0iOiB7CiAgICAgICAgICAgICJtZXRyaWNfc2NvcmUiOiAtM
+	S45MDIwMDAsCiAgICAgICAgICAgICJvcHRpb25zIjogWwogICAgICAg
+	ICAgICAgICAgIjU4LjU0JSIKICAgICAgICAgICAgXSwKICAgICAgICA
+	gICAgImRlc2NyaXB0aW9uIjogIk1lc3NhZ2UgcHJvYmFibHkgaGFtLC
+	Bwcm9iYWJpbGl0eTogIiwKICAgICAgICAgICAgIm5hbWUiOiAiQkFZR
+	VNfSEFNIiwKICAgICAgICAgICAgInNjb3JlIjogLTAuMDI2MjY2CiAg
+	ICAgICAgfSwKICAgICAgICAiRlJPTV9ORVFfRU5WRlJPTSI6IHsKICA
+	gICAgICAgICAgIm1ldHJpY19zY29yZSI6IDAuMzk1MDAwLAogICAgIC
+	AgICAgICAib3B0aW9ucyI6IFsKICAgICAgICAgICAgICAgICJ3b3Jkc
+	HJlc3NAc3VwZXJnYW1pbmdpZC5jb20iLAogICAgICAgICAgICAgICAg
+	InUxNjkyMDM5QHNydjE1MC5uaWFnYWhvc3Rlci5jb20iCiAgICAgICA
+	gICAgIF0sCiAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJGcm9tIG
+	FkZHJlc3MgaXMgZGlmZmVyZW50IHRvIHRoZSBlbnZlbG9wZSIsCiAgI
+	CAgICAgICAgICJuYW1lIjogIkZST01fTkVRX0VOVkZST00iLAogICAg
+	ICAgICAgICAic2NvcmUiOiAwLjM5NTAwMAogICAgICAgIH0sCiAgICA
+	gICAgIk1JTUVfVU5LTk9XTiI6IHsKICAgICAgICAgICAgIm1ldHJpY1
+	9zY29yZSI6IDAsCiAgICAgICAgICAgICJvcHRpb25zIjogWwogICAgI
+	CAgICAgICAgICAgInRleHQvcGxhaW4iCiAgICAgICAgICAgIF0sCiAg
+	ICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJNaXNzaW5nIG9yIHVua25
+	vd24gY29udGVudC10eXBlIiwKICAgICAgICAgICAgIm5hbWUiOiAiTU
+	lNRV9VTktOT1dOIiwKICAgICAgICAgICAgInNjb3JlIjogMAogICAgI
+	CAgIH0sCiAgICAgICAgIkFSQ19OQSI6IHsKICAgICAgICAgICAgIm1l
+	dHJpY19zY29yZSI6IDAsCiAgICAgICAgICAgICJkZXNjcmlwdGlvbiI
+	6ICJBUkMgc2lnbmF0dXJlIGFic2VudCIsCiAgICAgICAgICAgICJuYW
+	1lIjogIkFSQ19OQSIsCiAgICAgICAgICAgICJzY29yZSI6IDAKICAgI
+	CAgICB9LAogICAgICAgICJIQVNfUEhQTUFJTEVSX1NJRyI6IHsKICAg
+	ICAgICAgICAgIm1ldHJpY19zY29yZSI6IC01LAogICAgICAgICAgICA
+	iZGVzY3JpcHRpb24iOiAiUEhQTWFpbGVyIHNpZ25hdHVyZSIsCiAgIC
+	AgICAgICAgICJuYW1lIjogIkhBU19QSFBNQUlMRVJfU0lHIiwKICAgI
+	CAgICAgICAgInNjb3JlIjogLTUKICAgICAgICB9LAogICAgICAgICJN
+	SURfUkhTX01BVENIX0ZST00iOiB7CiAgICAgICAgICAgICJtZXRyaWN
+	fc2NvcmUiOiAwLAogICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTW
+	Vzc2FnZS1JRCBSSFMgbWF0Y2hlcyBGcm9tIGRvbWFpbiIsCiAgICAgI
+	CAgICAgICJuYW1lIjogIk1JRF9SSFNfTUFUQ0hfRlJPTSIsCiAgICAg
+	ICAgICAgICJzY29yZSI6IDAKICAgICAgICB9LAogICAgICAgICJJRV9
+	GT1JHRURfU0VOREVSX0RPTUFJTiI6IHsKICAgICAgICAgICAgIm1ldH
+	JpY19zY29yZSI6IDAsCiAgICAgICAgICAgICJvcHRpb25zIjogWwogI
+	CAgICAgICAgICAgICAgInNydjE1MC5uaWFnYWhvc3Rlci5jb20iLAog
+	ICAgICAgICAgICAgICAgInN1cGVyZ2FtaW5naWQuY29tIgogICAgICA
+	gICAgICBdLAogICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiRG9tYW
+	lucyBmb3IgTUFJTCBGUk9NIGFuZCBGcm9tOiBhcmUgZGlmZmVyZW50I
+	iwKICAgICAgICAgICAgIm5hbWUiOiAiSUVfRk9SR0VEX1NFTkRFUl9E
+	T01BSU4iLAogICAgICAgICAgICAic2NvcmUiOiAwCiAgICAgICAgfSw
+	KICAgICAgICAiRk9SR0VEX1NFTkRFUiI6IHsKICAgICAgICAgICAgIm
+	1ldHJpY19zY29yZSI6IDAuMzk1MDAwLAogICAgICAgICAgICAib3B0a
+	W9ucyI6IFsKICAgICAgICAgICAgICAgICJ3b3JkcHJlc3NAc3VwZXJn
+	YW1pbmdpZC5jb20iLAogICAgICAgICAgICAgICAgInUxNjkyMDM5QHN
+	ydjE1MC5uaWFnYWhvc3Rlci5jb20iCiAgICAgICAgICAgIF0sCiAgIC
+	AgICAgICAgICJkZXNjcmlwdGlvbiI6ICJTZW5kZXIgaXMgZm9yZ2VkI
+	ChkaWZmZXJlbnQgRnJvbTogaGVhZGVyIGFuZCBzbXRwIE1BSUwgRlJP
+	TTogYWRkcmVzc2VzKSIsCiAgICAgICAgICAgICJuYW1lIjogIkZPUkd
+	FRF9TRU5ERVIiLAogICAgICAgICAgICAic2NvcmUiOiAwLjM5NTAwMA
+	ogICAgICAgIH0sCiAgICAgICAgIkZST01fSEFTX0ROIjogewogICAgI
+	CAgICAgICAibWV0cmljX3Njb3JlIjogMCwKICAgICAgICAgICAgImRl
+	c2NyaXB0aW9uIjogIkZyb20gaGVhZGVyIGhhcyBhIGRpc3BsYXkgbmF
+	tZSIsCiAgICAgICAgICAgICJuYW1lIjogIkZST01fSEFTX0ROIiwKIC
+	AgICAgICAgICAgInNjb3JlIjogMAogICAgICAgIH0sCiAgICAgICAgI
+	lRPX0ROX05PTkUiOiB7CiAgICAgICAgICAgICJtZXRyaWNfc2NvcmUi
+	OiAtMi4wNjIwMDAsCiAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJ
+	Ob25lIG9mIHRoZSByZWNpcGllbnRzIGhhdmUgZGlzcGxheSBuYW1lcy
+	IsCiAgICAgICAgICAgICJuYW1lIjogIlRPX0ROX05PTkUiLAogICAgI
+	CAgICAgICAic2NvcmUiOiAtMi4wNjIwMDAKICAgICAgICB9LAogICAg
+	ICAgICJSQ1BUX0NPVU5UX09ORSI6IHsKICAgICAgICAgICAgIm1ldHJ
+	pY19zY29yZSI6IDAsCiAgICAgICAgICAgICJvcHRpb25zIjogWwogIC
+	AgICAgICAgICAgICAgIjEiCiAgICAgICAgICAgIF0sCiAgICAgICAgI
+	CAgICJkZXNjcmlwdGlvbiI6ICJPbmUgcmVjaXBpZW50IiwKICAgICAg
+	ICAgICAgIm5hbWUiOiAiUkNQVF9DT1VOVF9PTkUiLAogICAgICAgICA
+	gICAic2NvcmUiOiAwCiAgICAgICAgfSwKICAgICAgICAiUkNWRF9OT1
+	9UTFNfTEFTVCI6IHsKICAgICAgICAgICAgIm1ldHJpY19zY29yZSI6I
+	C0yLjk0ODAwMCwKICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIkxh
+	c3QgaG9wIGRpZCBub3QgdXNlIGVuY3J5cHRlZCB0cmFuc3BvcnRzIiw
+	KICAgICAgICAgICAgIm5hbWUiOiAiUkNWRF9OT19UTFNfTEFTVCIsCi
+	AgICAgICAgICAgICJzY29yZSI6IC0yLjk0ODAwMAogICAgICAgIH0sC
+	iAgICAgICAgIlRPX01BVENIX0VOVlJDUFRfQUxMIjogewogICAgICAg
+	ICAgICAibWV0cmljX3Njb3JlIjogMCwKICAgICAgICAgICAgImRlc2N
+	yaXB0aW9uIjogIkFsbCBvZiB0aGUgcmVjaXBpZW50cyBtYXRjaCB0aG
+	UgZW52ZWxvcGUiLAogICAgICAgICAgICAibmFtZSI6ICJUT19NQVRDS
+	F9FTlZSQ1BUX0FMTCIsCiAgICAgICAgICAgICJzY29yZSI6IDAKICAg
+	ICAgICB9LAogICAgICAgICJNSU1FX1RSQUNFIjogewogICAgICAgICA
+	gICAibWV0cmljX3Njb3JlIjogMCwKICAgICAgICAgICAgIm9wdGlvbn
+	MiOiBbCiAgICAgICAgICAgICAgICAiMDp+IgogICAgICAgICAgICBdL
+	AogICAgICAgICAgICAibmFtZSI6ICJNSU1FX1RSQUNFIiwKICAgICAg
+	ICAgICAgInNjb3JlIjogMAogICAgICAgIH0sCiAgICAgICAgIlJDVkR
+	fQ09VTlRfT05FIjogewogICAgICAgICAgICAibWV0cmljX3Njb3JlIj
+	ogMCwKICAgICAgICAgICAgIm9wdGlvbnMiOiBbCiAgICAgICAgICAgI
+	CAgICAiMSIKICAgICAgICAgICAgXSwKICAgICAgICAgICAgImRlc2Ny
+	aXB0aW9uIjogIk1lc3NhZ2UgaGFzIG9uZSBSZWNlaXZlZCBoZWFkZXI
+	iLAogICAgICAgICAgICAibmFtZSI6ICJSQ1ZEX0NPVU5UX09ORSIsCi
+	AgICAgICAgICAgICJzY29yZSI6IDAKICAgICAgICB9CiAgICB9LAogI
+	CAgInJlcXVpcmVkX3Njb3JlIjogNywKICAgICJtZXNzYWdlcyI6IHt9
+	LAogICAgImFjdGlvbiI6ICJubyBhY3Rpb24iLAogICAgIm1lc3NhZ2U
+	taWQiOiAidGlVYmpGemJ5Z2FPRFRoYTdJOW5GNkV0OHhRQUxDaXdIN0
+	U4VGY3aU1Ac3VwZXJnYW1pbmdpZC5jb20iLAogICAgInNjb3JlIjogL
+	TkuMjQ2MjY2Cn0=
+X-ImunifyEmail-Filter-Score: -9.2462660869341
+X-ImunifyEmail-Filter-Action: no action
+Received: from u1692039 by srv150.niagahoster.com with local (Exim 4.96)
+	(envelope-from <u1692039@srv150.niagahoster.com>)
+	id 1pmFxU-0004q2-2t
+	for kira@binc.pw;
+	Tue, 11 Apr 2023 22:31:04 +0700
+To: kira@binc.pw
+Subject: [Super Gaming Indonesia] Login Details
+Date: Tue, 11 Apr 2023 15:31:00 +0000
+From: WordPress <wordpress@supergamingid.com>
+Message-ID: <tiUbjFzbygaODTha7I9nF6Et8xQALCiwH7E8Tf7iM@supergamingid.com>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <u1692039@srv150.niagahoster.com>
+X-AuthUser: u1692039@srv150.niagahoster.com
+X-Originating-IP: 217.21.72.101
+X-Spampanel-Domain: out.niagahoster.com
+X-Spampanel-Username: niaga
+Authentication-Results: antispamcloud.com; auth=pass (login) smtp.auth=niaga@out.niagahoster.com
+X-Spampanel-Outgoing-Class: unsure
+X-Spampanel-Outgoing-Evidence: Combined (0.24)
+X-Recommended-Action: accept
+X-Filter-ID: Pt3MvcO5N4iKaDQ5O6lkdGlMVN6RH8bjRMzItlySaT971oxlW8qq8WRGsKzPfgU3PUtbdvnXkggZ
+ 3YnVId/Y5jcf0yeVQAvfjHznO7+bT5xox929c+cxsvRUaYg/IBAnJmMHs8Hyx70QMnQZ1+KIA+AG
+ DYRJZp+ldXKy6T+49wnlYLLlWSy3OGfGBNeqx2anbXXwA5IrYj4HfZRvL4Jm3fAZF7/0ozmpyhpC
+ DPUNGTHjy7DCt3hFFFhNlrSPiXm3BaLKEAYLFFJCgqZPIxwn/H85ho2vCZwAxjp1x/ONg7b2qRzy
+ lGFaBOjoK7INNUAi1QmdZsu6kxo/qWEj6Z1d7QEbMp8Qx9A/kiwyVnREl87dx5QS1wGtE3dw5kR1
+ xA9PjKMF8TYtSivAdoAxkwmq6Cl3A/BZX9RZxClNj2YU2RHIZwKDK1Qy7Yn0clcDVSjg19XmQJXp
+ UjHlZ0pUMH/SAnGdi/vqIS62IdcE5jLLr2TJ7ZiMw+dnYRmSOn12YZz+UHn+gnmsNLchHhymY5JU
+ 63hy/sIYQHSrltYx0aSLXrYfouEbBjgDbGgO65Dn/Kq0KNNZP5kt9QJBTT4FjeDP/Y/QRUYnRtop
+ VCx4Q8MaMgebtFWEMLqsZqM85AyyKVDKBkiY9v1Rlez6jmoRl5GlOLcFP/Fxqx7uULDQRB3NLRDh
+ m8q8BJDaFvqikdmpMtcejkukuh+kyGPcQ4TYY5Ks13yNfBgwTEdrvo0The+DgaUHmFDqewO9xyOq
+ CYO8P1aHY0KbXkcZmqavVFIxc3gLK6dM2kmVq603aW6BgyLXzkVfHCXY8ONHVIujntYeg4QKx6cH
+ 1wJZ59PTm5dujTuihsZNQ2wu05WxkrDPbyM2m5V7Z7/SwDDpbFih87uBVXa1Z1UdaDZJdO9lkZqX
+ 8wBWGl4395scgP09cQkDaDMei7yfc/BzHpaeeKDOv2Q2LNqr647lNwN4qOsSZg+fYhVZG95CpWjx
+ o9x+j5+fNc/vNMNkerUkwLzeTnBJ5Yl9pMLf1p6kA78rrfR4c9KIaEsbbWvDK3PKrieG7T6bf9hS
+ 7hRBQX6neg0zbl64XGBzIn0eeb8HAB7WeHZG3vjHUDIRm2xt4QNqlTaq5CgI0ykwIOH2OKHH5lr9
+ xXvSM4nM3avg
+X-Report-Abuse-To: spam@quarantine15.antispamcloud.com
+X-Spam-Status: No, score=0.2
+X-Spam-Score: 2
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Username: kira To set your password, visit the following address:
+    https://supergamingid.com/wp-login.php?action=rp&key=Prf1ilp19TU8hLTRTH5m&login=kira
+    
+ Content analysis details:   (0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: supergamingid.com]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+X-Spam-Flag: NO
+
+Username: kira
+
+To set your password, visit the following address:
+
+https://supergamingid.com/wp-login.php?action=rp&key=Prf1ilp19TU8hLTRTH5m&login=kira
+
+https://supergamingid.com/wp-login.php
+
+

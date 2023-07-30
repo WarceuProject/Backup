@@ -1,0 +1,206 @@
+Return-Path: <bounces@heroku.com>
+Delivered-To: center@warceuproject.dev
+Received: from vps.warceuproject.dev
+	by vps.warceuproject.dev with LMTP
+	id 9ZZ6B76/wmQJCg8A0wEIKA
+	(envelope-from <bounces@heroku.com>)
+	for <center@warceuproject.dev>; Thu, 27 Jul 2023 21:04:30 +0200
+Return-path: <bounces@heroku.com>
+Envelope-to: center@warceuproject.dev
+Delivery-date: Thu, 27 Jul 2023 21:04:30 +0200
+Received: from m245-149.mailgun.net ([159.112.245.149]:20596)
+	by vps.warceuproject.dev with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <bounces@heroku.com>)
+	id 1qP6Hi-0048O1-0d
+	for center@warceuproject.dev;
+	Thu, 27 Jul 2023 21:04:29 +0200
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=heroku.com; q=dns/txt;
+ s=mx; t=1690484599; x=1690491799; h=Content-Transfer-Encoding: Content-Type:
+ Mime-Version: Subject: Subject: Message-ID: To: To: From: From: Date: Sender;
+ bh=3c+gGi4JcZzG+Ok7AdR8h4j2srh6cngWaaG03XHWCW0=;
+ b=mvcX7an3Z6mPbpe2pua8RU3K3GDNmKxXi5ocfbW4WRcDS3akEMOowBmTk7vWdgWW1c3aPQLcAZcs4cHGph/xaaUd2DHxy3dRz/vgo6o79nzwhhPUMa5e/RTOUePg5V0LCRa97/YOk3LlkkHbW6weHLldT7Hk95czoW4338UAQqY=
+X-Mailgun-Sending-Ip: 159.112.245.149
+X-Mailgun-Sid: WyJlYTAzYSIsImNlbnRlckB3YXJjZXVwcm9qZWN0LmRldiIsIjcyNmUiXQ==
+Received: from heroku.com (ec2-52-21-115-250.compute-1.amazonaws.com [52.21.115.250]) by
+ d8af08ee55db with SMTP id 64c2bf728eae254b7ea73e92 (version=TLS1.3,
+ cipher=TLS_AES_128_GCM_SHA256); Thu, 27 Jul 2023 19:03:14 GMT
+Date: Thu, 27 Jul 2023 12:03:14 -0700
+From: Heroku <noreply@heroku.com>
+To: center@warceuproject.dev
+Message-ID: <64c2bf723d603_b17e6c10032e@dyno-c912aee4-7787-4f84-b9c6-aed1bff67a65.mail>
+Subject: Confirm your account on Heroku
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_64c2bf723d1e3_b17e6c10020";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-Mailgun-Native-Send: true
+X-Mailgun-Tag: mailer=new_signup
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "vps.warceuproject.dev",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Thanks for signing up with Heroku! You must follow this link
+    within 30 days of registration to activate your account: https://id.heroku.com/account/accept/14302316/fd48f8c46ff8d057945daf85b6c6cb4f
+    Have fun, and don't hesitate to contact us with your feedback. 
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: heroku.com]
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: heroku.com]
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query
+                              to zen.spamhaus.org was blocked due to
+                             usage of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [159.112.245.149 listed in zen.spamhaus.org]
+  0.0 URIBL_ZEN_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: heroku.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Spam-Flag: NO
+
+----==_mimepart_64c2bf723d1e3_b17e6c10020
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thanks for signing up with Heroku! You must follow this link within 30 days of registration to activate your account:
+
+https://id.heroku.com/account/accept/14302316/fd48f8c46ff8d057945daf85b6c6cb4f
+
+Have fun, and don't hesitate to contact us with your feedback.
+
+
+- The Heroku Team
+http://heroku.com/
+
+Heroku is the cloud platform for rapid deployment and scaling of web applications.
+Get up and running in minutes, then deploy instantly via Git.
+
+To learn more about Heroku and all its features, check out the Dev Center:
+http://devcenter.heroku.com/articles/quickstart
+
+----==_mimepart_64c2bf723d1e3_b17e6c10020
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body style="width: 100% !important; -webkit-text-size-adjust: none; margin: 0; padding: 0;">
+    <center>
+      <table id="backgroundTable" style="border-spacing: 0; border-collapse: collapse; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; width: 100% !important; height: 100% !important; color: #4c4c4c; font-size: 15px; line-height: 150%; background: #ffffff; margin: 0; padding: 0; border: 0;">
+        <tr style="vertical-align: top; padding: 0;">
+          <td align="center" valign="top" style="vertical-align: top; padding: 0;">
+            <table id="templateContainer" style="border-spacing: 0; border-collapse: collapse; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; width: 600px; color: #4c4c4c; font-size: 15px; line-height: 150%; background: #ffffff; margin: 40px 0; padding: 0; border: 0;">
+              <tr style="vertical-align: top; padding: 0;">
+                <td class="templateContainerPadding" align="center" valign="top" style="vertical-align: top; padding: 0 40px;">
+                  <table id="templateContent" style="border-spacing: 0; border-collapse: collapse; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; width: 100%; background: #ffffff; margin: 0; padding: 0; border: 0;">
+                    <tr style="vertical-align: top; padding: 0;">
+                      <td style="vertical-align: top; text-align: left; padding: 0;" align="left" valign="top">
+                        <h1 id="logo" style="color: #6E5BAA; display: block; font-family: hybrea, proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; font-size: 32px; font-weight: 200; text-align: left; margin: 0 0 40px;" align="left"><img src="https://www0.assets.heroku.com/email/heroku-logo.png" alt="heroku" width="120" height="42" style="outline: none; text-decoration: none; border: 0;" /></h1>
+
+                        <p style="margin: 20px 0;">Thanks for signing up with Heroku! You must follow this link within 30 days of registration to activate your account:</p>
+
+<p style="margin: 20px 0;"><a href="https://id.heroku.com/account/accept/14302316/fd48f8c46ff8d057945daf85b6c6cb4f" style="color: #6E5BAA;">https://id.heroku.com/account/accept/14302316/fd48f8c46ff8d057945daf85b6c6cb4f</a>
+
+<p style="margin: 20px 0;">Have fun, and don't hesitate to contact us with your feedback.</p>
+
+
+                        <p style="margin: 20px 0;">
+                          The Heroku Team<br />
+                          <a href="https://heroku.com" style="color: #6E5BAA;">https://heroku.com</a>
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+                <tr style="vertical-align: top; padding: 0;">
+                  <td class="templateContainerPadding" align="center" valign="top" style="vertical-align: top; padding: 0 40px;">
+                    <table id="footerContent" style="border-spacing: 0; border-collapse: collapse; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; width: 100%; border-top-style: solid; border-top-color: #ebeaef; color: #999999; font-size: 12px; background: #ffffff; margin: 0; padding: 0; border-width: 1px 0 0;">
+                      <tr style="vertical-align: top; padding: 0;">
+                        <td valign="top" style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                          <p style="margin: 20px 0;">
+                            Heroku is the cloud platform for rapid deployment and scaling of web applications. Get up and running in minutes, then deploy instantly via Git.
+                          </p>
+
+                          <p style="margin: 20px 0;">
+                            To learn more about Heroku and all its features, check out the Dev Center: <a href="https://devcenter.heroku.com/articles/quickstart" style="color: #666666;">https://devcenter.heroku.com/articles/quickstart</a>
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
+
+<style type="text/css">
+body {
+width: 100% !important;
+}
+.ReadMsgBody {
+width: 100%;
+}
+.ExternalClass {
+width: 100%;
+}
+body {
+-webkit-text-size-adjust: none;
+}
+body {
+margin: 0; padding: 0;
+}
+img {
+border: 0; outline: none; text-decoration: none;
+}
+#backgroundTable {
+height: 100% !important; margin: 0; padding: 0; width: 100% !important;
+}
+#backgroundTable {
+color: #4c4c4c; background-color: #ffffff; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; font-size: 15px; line-height: 150%;
+}
+@media (max-width: 540px) {
+  #templateContainer {
+    width: 100% !important;
+  }
+  #templateContainer .templateContainerPadding {
+    padding: 0 5% !important;
+  }
+}
+</style>
+</body>
+</html>
+
+----==_mimepart_64c2bf723d1e3_b17e6c10020--

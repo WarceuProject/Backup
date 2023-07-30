@@ -1,0 +1,153 @@
+Return-Path: <shannonbrachehai@cpanel-552-syd.hostingww.com>
+Delivered-To: kira@binc.pw
+Received: from vps.warceuproject.dev
+	by vps.warceuproject.dev with LMTP
+	id UKSLAl0WtmRO1gQA0wEIKA
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	for <kira@binc.pw>; Tue, 18 Jul 2023 06:34:37 +0200
+Return-path: <shannonbrachehai@cpanel-552-syd.hostingww.com>
+Envelope-to: kira@binc.pw
+Delivery-date: Tue, 18 Jul 2023 06:34:37 +0200
+Received: from flamingo.ash.relay.mailchannels.net ([23.83.222.60]:63643)
+	by vps.warceuproject.dev with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	id 1qLcPw-001KTu-1j
+	for kira@binc.pw;
+	Tue, 18 Jul 2023 06:34:36 +0200
+X-Sender-Id:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 273446C1018;
+	Tue, 18 Jul 2023 04:33:46 +0000 (UTC)
+Received: from cpanel-552-syd.hostingww.com (unknown [127.0.0.6])
+	(Authenticated sender: instrampxe0y3a)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 4A6196C1125
+	for <kira@binc.pw>; Tue, 18 Jul 2023 04:33:45 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1689654825; a=rsa-sha256;
+	cv=none;
+	b=fRzeTUb6IifnBsnnreMAmNlaiESoOXVvTi2ebPpxpnddBPn1RrIUyJIvrcicu31ukFwgny
+	nNam9ZWoeRQaqgskf2VyAZ/uv2DjgA/kjXFox8eDa3XKbNCl48tWo4MZZRtceWYdMj2M7k
+	L1KUVckOLJr39yNAyWpN/daNMDPcJmzCYWpo5N7W85m6oRGmz77bYsvZKGxPi155+tLCRb
+	AVMh5HbqHrPuVQ6Q9a0qZWgXkMf3nNTVH9sfNG2VNU/2zAkGvTiSeBHvMZVRFiq2xkYnFp
+	pj52mIplx+D2B7vQ0N0juvZqV8CguGAdZz25jSPZMxIk61cCpDiktgAax3sYjQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1689654825;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=WtFq6eMntApshgiwfrUUCxT8YsYQoYBLXkFtqbS+oNY=;
+	b=Pvw7MdLnOMkOKiKAQVuExxZJesPCyQeDhyjJy90NrFIJEOQDNobNKt9iKEbmkcHf+yUw/e
+	lbyAcSlHFl2AAtvN4u1a+cwRVslGpa5JL+5V1DUtWSplBHwRKsFIpkMP60T+W6N5jYQt97
+	zIZIHMuHfjhvsu5J5Yw/RGsZWQ+KI1R48daSdp510vbyKauQtwq7D9/bjSDyaGL1aQ0XIU
+	wiijUUI49sfd5GxI+oWHN18ZFMcJnTkJakC3UmB4iZuV1RPfMoWg7bCYq3OfxpFLOKRh/K
+	XDH3QBnq9EzRY/zw1M+f55PG4lPlXUyejPXStIA2sokXlej8ARVzwU/+tSLJTw==
+ARC-Authentication-Results: i=1;
+	rspamd-7d9c4d5c9b-vwd99;
+	auth=pass smtp.auth=instrampxe0y3a
+ smtp.mailfrom=shannonbrachehai@cpanel-552-syd.hostingww.com
+X-Sender-Id:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+X-MC-Relay: Neutral
+X-MC-Copy: stored-urls
+X-MailChannels-SenderId:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+X-MailChannels-Auth-Id: instrampxe0y3a
+X-Plucky-Befitting: 3621002b40a96340_1689654825787_931504810
+X-MC-Loop-Signature: 1689654825787:1740767943
+X-MC-Ingress-Time: 1689654825787
+Received: from cpanel-552-syd.hostingww.com (cpanel-552-syd.hostingww.com
+ [103.152.248.20])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384)
+	by 100.119.120.53 (trex/6.9.1);
+	Tue, 18 Jul 2023 04:33:45 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=cpanel-552-syd.hostingww.com; s=default; h=Sender:Content-Type:MIME-Version
+	:Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=WtFq6eMntApshgiwfrUUCxT8YsYQoYBLXkFtqbS+oNY=; b=GYcwkvqpvOoNg786OmbhrMYPhp
+	O879E29B+VYiv5tctnhtr/O47m1d3X/SXcXoSM6Iw/6qI+ZjZKcN7xYEKBQF/bZ467nxGY1vhu3Pj
+	0nzTy+0VllG3Ql5ArQVFPX3J3p9uPRmCqXL8IYKIloMjIa8IdqSVabm8ZvzMVP42q/uHp8ftAXOCI
+	fzB9WcOuIhGjoRAK9tAhvcelgRlSKIjPp6LoOecUahHaA56rFMKnkWtooVR2SU+tI3TnHLUMPevWk
+	BU2nhuoaJzlfHBuR/kqwM1iMArK7JZ8WzhiUbsGSmhotbdttTC1QK++D9WUGylBy0uHTsgLbFYVQF
+	WX4S+TCQ==;
+Received: from shannonbrachehai by cpanel-552-syd.hostingww.com with local (Exim 4.96)
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	id 1qLcP4-001x0c-0v
+	for kira@binc.pw;
+	Tue, 18 Jul 2023 14:33:43 +1000
+To: kira@binc.pw
+Subject: =?us-ascii?Q?Sucuri_Alert,_shannonbrachehair.com.au,_Post_Up?=  =?us-ascii?Q?date,_49.179.94.49?=
+X-PHP-Script: shannonbrachehair.com.au/index.php for 49.179.94.49
+X-PHP-Filename: /home/shannonbrachehai/public_html/index.php REMOTE_ADDR: 49.179.94.49
+Date: Tue, 18 Jul 2023 04:33:38 +0000
+From: WordPress <wordpress@shannonbrachehair.com.au>
+Message-ID: <REQNiAOfifHj2mlEmSU1E8m2ZeIJMGkkXOUi02tvsrw@shannonbrachehair.com.au>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <shannonbrachehai@cpanel-552-syd.hostingww.com>
+X-AuthUser: shannonbrachehai@cpanel-552-syd.hostingww.com
+X-Spam-Status: No, score=3.7
+X-Spam-Score: 37
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "vps.warceuproject.dev",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Event: Post Update Website: http://shannonbrachehair.com.au
+    IP Address: 49.179.94.49 Reverse IP: pa49-179-94-49.pa.nsw.optusnet.com.au
+    Date/Time: July 18, 2023 4:33 am Message: Flamingo_inbound status has been
+    changed; details: ID: 1957,Old status: new,New status: publish,Title: [your-subject]
+    
+ Content analysis details:   (3.7 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: optusnet.com.au]
+  0.0 URIBL_ZEN_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: shannonbrachehair.com.au]
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: optusnet.com.au]
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query
+                              to zen.spamhaus.org was blocked due to
+                             usage of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [23.83.222.60 listed in zen.spamhaus.org]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.2 KAM_DMARC_NONE         DKIM has Failed or SPF has failed on the message
+                             and the domain has no DMARC policy
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+  2.5 PHP_SCRIPT             Sent by PHP script
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Spam-Flag: NO
+
+
+Event: Post Update
+Website: http://shannonbrachehair.com.au
+IP Address: 49.179.94.49
+Reverse IP: pa49-179-94-49.pa.nsw.optusnet.com.au
+Date/Time: July 18, 2023 4:33 am
+
+
+Message: Flamingo_inbound status has been changed; details: ID: 1957,Old status: new,New status: publish,Title: [your-subject]
+

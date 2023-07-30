@@ -1,0 +1,138 @@
+Return-Path: <shannonbrachehai@cpanel-552-syd.hostingww.com>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id QBvLARIqk2ThazcAMUeTPA
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	for <kira@binc.pw>; Wed, 21 Jun 2023 23:49:22 +0700
+Return-path: <shannonbrachehai@cpanel-552-syd.hostingww.com>
+Envelope-to: kira@binc.pw
+Delivery-date: Wed, 21 Jun 2023 23:49:22 +0700
+Received: from dragonfly.birch.relay.mailchannels.net ([23.83.209.51]:14120)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	id 1qC11D-00FIM7-12
+	for kira@binc.pw;
+	Wed, 21 Jun 2023 23:49:21 +0700
+X-Sender-Id:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id EC2D17E2D9E;
+	Wed, 21 Jun 2023 16:48:33 +0000 (UTC)
+Received: from cpanel-552-syd.hostingww.com (unknown [127.0.0.6])
+	(Authenticated sender: instrampxe0y3a)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 36CF27E2D15
+	for <kira@binc.pw>; Wed, 21 Jun 2023 16:48:33 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1687366113; a=rsa-sha256;
+	cv=none;
+	b=k0SUSC0ULCiAXC50CX2Sa3nfpbNiW4JVx9ZJCN3l9CTcBdZ7wS3sow4SEqsUvenbWgFXoW
+	UoWRDiezblgElBk1ytSNpfnWc6rML67EYOkqGKZ+2aVeYpeRa6rWgnr950r5h6l6dZmL2G
+	6FCPwpFw5mV9QR3DSVsdFF2ocmyqZ2fTou7lGJl8ceMYc0+hmrk3MGT4/PFtdv4PjwPozN
+	bUO5dORs1b29hkAC8JNTu8uo6U1hlYkbi1qGdivpJBQMMZwAWB2goR5WR/JRZgZsKtDiYD
+	KOtOYrza5T0Eq8swA2LC66Vl1EdgI1MfwxnlQgq0xkM31OoCj2Os4ukJ8P2IOA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1687366113;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=q/6OqcYxURs16QgOusjDwEIbK/fYrz12jHbuh50olkQ=;
+	b=CJsZgoPmync5G3f44pBNgtrFWrbo8DoO+6Ytpu0bN5veligIg3wKDwqMuyfYXWxpgZm50R
+	gO1MOPB3sd2+rqzQApwKXL4pdUaLAi/bfTWoVCwJ4YZGm1wazM9XP67yn3I/2QI00mb/AC
+	c/iNKeuFHfmoFPv1peh6k6bF1WRZqqrsiN2+/5ZQ1smvkFW520kvE7Dzg356C7xrn7kteo
+	vwd+OFi2tgoLjHbY0RFDftpLCRcPGiW+ELZRw0qRHxi/dhdZ3iOfcwttnb1UVdzRFVI7r7
+	XffhaXDtO6gBOIB42OyzRw3KwdMMJzZywJjr49Ya495j+JwbsxEIpRBE7CWl+g==
+ARC-Authentication-Results: i=1;
+	rspamd-85899d6fcc-c8x6v;
+	auth=pass smtp.auth=instrampxe0y3a
+ smtp.mailfrom=shannonbrachehai@cpanel-552-syd.hostingww.com
+X-Sender-Id:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+X-MC-Relay: Neutral
+X-MC-Copy: stored-urls
+X-MailChannels-SenderId:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+X-MailChannels-Auth-Id: instrampxe0y3a
+X-Broad-Supply: 561b90b34dfe5131_1687366113738_1012357956
+X-MC-Loop-Signature: 1687366113738:2717412866
+X-MC-Ingress-Time: 1687366113737
+Received: from cpanel-552-syd.hostingww.com (cpanel-552-syd.hostingww.com
+ [103.152.248.20])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384)
+	by 100.125.42.143 (trex/6.9.1);
+	Wed, 21 Jun 2023 16:48:33 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=cpanel-552-syd.hostingww.com; s=default; h=Sender:Content-Type:MIME-Version
+	:Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=q/6OqcYxURs16QgOusjDwEIbK/fYrz12jHbuh50olkQ=; b=qsodvorFWeGEv3y5ONDq2DcBgm
+	QlnD9e/DolmWHyBASBmGe3h4Q2i73JcfYdd94ItMIVfy9Y2JoLPBRgGRnsLeq+a2fG0Qs+CeUuJpT
+	bixAr0uObiik35udV6XjUsNBBBHniSFOgefrB8J2a3rkLJE8YKTen3530SCq3u6PQwkJE631YF7bR
+	/FDyk0eKNpgpv2Q0eEofwJRQoq6qAXTToDcQN9nxbYvKyJkss0lDF/7a8viVzRlY9836Hqg6NoQCl
+	zg/yVS0sKlakYqHfprzCU3QKPvJPYvLNvt/NPMoYpMsy8LRx4lpp8qTG4bxrjsBtShPuwZOJ0ZvQJ
+	pWLdC3Xg==;
+Received: from shannonbrachehai by cpanel-552-syd.hostingww.com with local (Exim 4.96)
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	id 1qC10M-008m8j-2f
+	for kira@binc.pw;
+	Thu, 22 Jun 2023 02:48:31 +1000
+To: kira@binc.pw
+Subject: =?us-ascii?Q?[Shannon_Brache_Hair]_Some_plugins_were_automat?=  =?us-ascii?Q?ically_updated?=
+X-PHP-Script: shannonbrachehair.com.au/wp-cron.php for 103.152.248.20
+X-PHP-Filename: /home/shannonbrachehai/public_html/wp-cron.php REMOTE_ADDR: 103.152.248.20
+Date: Wed, 21 Jun 2023 16:48:26 +0000
+From: WordPress <wordpress@shannonbrachehair.com.au>
+Message-ID: <vpPsqkmLmXG47SFr9dP6u4qy6cCb0VlH7xZ81DGYrng@shannonbrachehair.com.au>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <shannonbrachehai@cpanel-552-syd.hostingww.com>
+X-AuthUser: shannonbrachehai@cpanel-552-syd.hostingww.com
+X-Spam-Status: No, score=3.2
+X-Spam-Score: 32
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Howdy! Some plugins have automatically updated to their latest
+    versions on your site at https://shannonbrachehair.com.au. No further action
+    is needed on your part. These plugins are now up to date: - Wordfence Security
+    (from version 7.9.3 to 7.10.0) : https://wordpress.org/plugins/wordfence/
+    
+ Content analysis details:   (3.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: wordpress.org]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  2.5 PHP_SCRIPT             Sent by PHP script
+  0.2 KAM_DMARC_NONE         DKIM has Failed or SPF has failed on the message
+                             and the domain has no DMARC policy
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+X-Spam-Flag: NO
+
+Howdy! Some plugins have automatically updated to their latest versions on your site at https://shannonbrachehair.com.au. No further action is needed on your part.
+
+
+These plugins are now up to date:
+- Wordfence Security (from version 7.9.3 to 7.10.0) : https://wordpress.org/plugins/wordfence/
+
+
+If you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help.
+https://wordpress.org/support/forums/
+
+The WordPress Team
+

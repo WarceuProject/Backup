@@ -1,0 +1,116 @@
+Return-Path: <anonymous@iwhost12.vpslocal.co.za>
+Delivered-To: ciel+spam@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id 0GVJDTTZPmSYLQAAMUeTPA
+	(envelope-from <anonymous@iwhost12.vpslocal.co.za>)
+	for <ciel+spam@binc.pw>; Wed, 19 Apr 2023 00:53:56 +0700
+Return-path: <anonymous@iwhost12.vpslocal.co.za>
+Envelope-to: ciel@binc.pw
+Delivery-date: Wed, 19 Apr 2023 00:53:56 +0700
+Received: from black.elm.relay.mailchannels.net ([23.83.212.19]:9798)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <anonymous@iwhost12.vpslocal.co.za>)
+	id 1popWa-000EMn-2H
+	for ciel@binc.pw;
+	Wed, 19 Apr 2023 00:53:56 +0700
+X-Sender-Id: xx3ssm1lchnn3l|env-sender|anonymous@iwhost12.vpslocal.co.za
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 23C4B3E2797
+	for <ciel@binc.pw>; Tue, 18 Apr 2023 17:53:07 +0000 (UTC)
+Received: from iwhost12.vpslocal.co.za (unknown [127.0.0.6])
+	(Authenticated sender: xx3ssm1lchnn3l)
+	by relay.mailchannels.net (Postfix) with ESMTPA id E81C03E27F3
+	for <ciel@binc.pw>; Tue, 18 Apr 2023 17:53:05 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1681840386; a=rsa-sha256;
+	cv=none;
+	b=ArDH6muylMQTfkuJmfgxseKeRgVu7UfuwbJqfzzV9RCNx0AgS9rheDDEkDk6ixPrgwUb1Y
+	5zocsgev9x46onzDreuDe0C/cjAK0HCZJfplfBaIIvqAoeeuj1VuimgbKc53yiPQnKcLWW
+	YtCoYDwoPH4xDqg9vq2ErWtjmdDd4PAo/SD6aVxko8CMVUXBxbeZ84kM7Vn4B6sv+j6tXd
+	giZluQ3uKwn90kCtmw3m5GkrwwhXOshD3vAow1W7xEl3K3RBZAO7N3Ftxl3/xDTaK4WUWs
+	+atUhMDNvi2rCbBjFrv+fC51fiXUBiF9g/Js5npgt9AW6JI/HyGVtGsCkRt86A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1681840386;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type;
+	bh=vQ5/jMdJPP0mmbWLQW1Qg5c2I11kyuj80fjGKm++Dxs=;
+	b=Z5TEw5MefEfAJGoAjEg1zq+ZJ5F05SU0qSOd91IW8gjgY1t2UaFE6M60Xa1cwr8Yl81/8S
+	iqxa3834ENQN1SNO8drS+U+PH+23KBMRijxG/wq0jtBQWRv94YREF25QPoyKflrhC5tF1n
+	SjcOjojtrqOVjVNFUi6MN9sZosXTU2E1sv+VEI5dZhhbAowEZlTK43T1KE0F675Z16Judb
+	wcYYG6fKCfO8GBVsmCTOsd9MGmZW5OY19GIZbIaJNWup3EFu+Io7ysL+vmCc3JDKaDBEQt
+	kkh6n/FxVu96WMEHN75tCBE3FHHzzXozFVrLtqiOKrFvevOrE2goA2r/1MeBgQ==
+ARC-Authentication-Results: i=1;
+	rspamd-548d6c8f77-5csc2;
+	auth=pass smtp.auth=xx3ssm1lchnn3l
+ smtp.mailfrom=anonymous@iwhost12.vpslocal.co.za
+X-Sender-Id: xx3ssm1lchnn3l|env-sender|anonymous@iwhost12.vpslocal.co.za
+X-MC-Relay: Neutral
+X-MailChannels-SenderId:
+ xx3ssm1lchnn3l|env-sender|anonymous@iwhost12.vpslocal.co.za
+X-MailChannels-Auth-Id: xx3ssm1lchnn3l
+X-Supply-Bottle: 5a023ca751399919_1681840386814_2174222422
+X-MC-Loop-Signature: 1681840386814:3234985273
+X-MC-Ingress-Time: 1681840386814
+Received: from iwhost12.vpslocal.co.za (iwhost12.vpslocal.co.za
+ [156.155.252.41])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384)
+	by 100.123.193.179 (trex/6.7.2);
+	Tue, 18 Apr 2023 17:53:06 +0000
+Received: (qmail 4028540 invoked by uid 1200); 18 Apr 2023 19:53:02 +0200
+To: ciel@binc.pw
+Date: Tue, 18 Apr 2023 17:53:02 +0000
+From: WordPress <wordpress@smithwebdesign.co.za>
+Message-ID: <WNpg2wdSttRh4JdM91oX3lBOxADyXrjM6ABIcs0QwQ@www.smithwebdesign.co.za>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+X-Spam-Status: Yes, score=8.5
+X-Spam-Score: 85
+X-Spam-Bar: ++++++++
+X-Spam-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Howdy smithwd, You recently requested to have the email address
+    on your account changed. If this is correct, please click on the following
+    link to change it: https://www.smithwebdesign.co.za/wp-admin/profile.php?newuseremail=b6bfb9ecdc75d116748ea9f84f435a55
+    
+ Content analysis details:   (8.5 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: smithwebdesign.co.za]
+  1.0 KAM_LAZY_DOMAIN_SECURITY Sending domain does not have any
+                             anti-forgery methods
+  5.0 KAM_SOMETLD_ARE_BAD_TLD .stream, .trade, .pw, .top, .press,
+                             .guru, .casa & .date TLD Abuse
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  2.5 KAM_LINKBAIT           Short messages containing little more than a link,
+                             from a domain with no security in place
+X-Spam-Flag: YES
+Subject:  ***SPAM***  [Smith Web Design] Email Change Request
+
+
+Howdy smithwd,
+
+You recently requested to have the email address on your account changed.
+
+If this is correct, please click on the following link to change it:
+https://www.smithwebdesign.co.za/wp-admin/profile.php?newuseremail=b6bfb9ecdc75d116748ea9f84f435a55
+
+You can safely ignore and delete this email if you do not want to
+take this action.
+
+This email has been sent to ciel@binc.pw
+
+Regards,
+All at Smith Web Design
+https://www.smithwebdesign.co.za
+

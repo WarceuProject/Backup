@@ -1,0 +1,123 @@
+Return-Path: <wpe.notifications=sobeys.com@mail1.wpengine.com>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id MNd8NbUiOGRcwToAMUeTPA
+	(envelope-from <wpe.notifications=sobeys.com@mail1.wpengine.com>)
+	for <kira@binc.pw>; Thu, 13 Apr 2023 22:41:41 +0700
+Return-path: <wpe.notifications=sobeys.com@mail1.wpengine.com>
+Envelope-to: kira@binc.pw
+Delivery-date: Thu, 13 Apr 2023 22:41:41 +0700
+Received: from aye.elm.relay.mailchannels.net ([23.83.212.6]:57234)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <wpe.notifications=sobeys.com@mail1.wpengine.com>)
+	id 1pmz4v-00GFgU-2c
+	for kira@binc.pw;
+	Thu, 13 Apr 2023 22:41:41 +0700
+X-Sender-Id: wpengine|x-authuser|e156ba5601872cfc3be6594d1880dcfc4ce1dbe9
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 94F5A8826AA
+	for <kira@binc.pw>; Thu, 13 Apr 2023 15:40:56 +0000 (UTC)
+Received: from pod-112690 (unknown [127.0.0.6])
+	(Authenticated sender: wpengine)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 117F48825B8
+	for <kira@binc.pw>; Thu, 13 Apr 2023 15:40:56 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1681400456; a=rsa-sha256;
+	cv=none;
+	b=HIUldCWoEeu7p02YhEwriCWjNypGM18kWNycWuusYeVeP09Kp2b9VtPAS0G6rxzcaVE66B
+	FPPALDblWkFdTTpJ7nrYkgDN0/ylOb65cGsjphjBi3I+pb7sTqU6ZGuXeaOjgmDaOZ0D3p
+	gAF34oB68Fn+CT5eOcVHK+cJPOOwP5r6VBa4nnTUDiga306Y3TNHl1ge7KUcSmnMv39Yj4
+	Z7XaN1eEVmHEBpooWmNrIxsMAsFH4ha7RJuZw5pykaNljppHVdd69qNpnfQMajY1lwKeDi
+	eRu0AqAW1/JtpcBRSdnNfWijFRpmMHcsldx1fQr2VZMiGK9sod8EXk2nN8bkMA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1681400456;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 dkim-signature; bh=ARCoasRikwakSEfLUTz3t33bOjb3SsnWeg4LbBVJYEQ=;
+	b=b9Vb7OMO2KTL4sk7+pQD566PEJjWa7eVrdPyt8712jqm6jfEM/3/YVRgwt7lzOL/x78ACo
+	qsk9LNLNRoHiGikZZsNxRVOmxNCzrDh/P0jm2lqito8xpZCTaZJETFXivDReDa8UHtaJ7Z
+	KescXG46zM1OaahPrYcG4wE/sbrcqeOmAPHw76jB1p5qcS9fQgPmPrF4/6aglXG3b/Mywi
+	xX5UnLjdDHLBiU0BOkKHdVY96C4/yYDazm0QdBOyL8SwECLhrK6RxH833yjVvHjPVwf/+X
+	OaitlqzH5K7U7OWxu//QQvhTHl3Y1NzU3R6RXWsJEysqOOZXPYeWsJymP8drbA==
+ARC-Authentication-Results: i=1;
+	rspamd-7f66b7b68c-rt7c7;
+	auth=pass smtp.auth=wpengine
+ smtp.mailfrom="wpe.notifications=sobeys.com@mail1.wpengine.com"
+X-Sender-Id: wpengine|x-authuser|e156ba5601872cfc3be6594d1880dcfc4ce1dbe9
+X-MC-Relay: Neutral
+X-MailChannels-SenderId:
+ wpengine|x-authuser|e156ba5601872cfc3be6594d1880dcfc4ce1dbe9
+X-MailChannels-Auth-Id: wpengine
+X-Bitter-Madly: 7791446c448243c4_1681400456409_1046046231
+X-MC-Loop-Signature: 1681400456409:4200148742
+X-MC-Ingress-Time: 1681400456409
+Received: from pod-112690 (204.110.197.104.bc.googleusercontent.com
+ [104.197.110.204])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.114.243.23 (trex/6.7.2);
+	Thu, 13 Apr 2023 15:40:56 +0000
+Received: from pod-112690 (localhost [127.0.0.1])
+	by pod-112690 (Postfix) with ESMTP id ACC4E470A1
+	for <kira@binc.pw>; Thu, 13 Apr 2023 15:40:54 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=mail1.wpengine.com;
+	s=mx; t=1681400454; bh=ARCoasRikwakSEfLUTz3t33bOjb3SsnWeg4LbBVJYEQ=;
+	h=To:Subject:Date:From:From;
+	b=eaoFpoGb7BXFSoXHOQKfkGC2OdMeT09tWw+YWJ5mqfRzo3WjI3H/4zT2dUrHBB5Of
+	 zf+BMXmvnj/vu1Nlx5Uw5COqvcoBa9/sT1E6ItL9mtqtkHEXiz6bGor3SOq79YEGxS
+	 QMSmXRecP32VXe7lL/UGCB95b/Xs7bDOFuMqgN1zy0s7calJVKk8H8AB0367YflByl
+	 EOGDE5p5EfLu56lWxqcn1dftK9H9Zf709gOyspvMFyJ27leF1FDoHdtKZD8gryD73j
+	 cXo+NwvchVnD36NUVLyS5nIHWIjfH5a7yeutQPmEkmoo18glSlnbygQbW3a0eGxhn+
+	 vGiw64UKOE/Ng==
+Received: from pod-112690:apache2_80:v0.1.12 (localhost [127.0.0.1])
+	by pod-112690 (Postfix) with SMTP id 9F0DA470A0
+	for <kira@binc.pw>; Thu, 13 Apr 2023 15:40:53 +0000 (UTC)
+Received: by pod-112690:apache2_80:v0.1.12 (sSMTP sendmail emulation); Thu, 13 Apr 2023 15:40:53 +0000
+X-AuthUser: e156ba5601872cfc3be6594d1880dcfc4ce1dbe9
+To: kira@binc.pw
+Subject: =?us-ascii?Q?[New_Site_Placeholder_Sobeys_Site_Sites]_Activa?=
+ =?us-ascii?Q?te_kira?=
+X-PHP-Originating-Script: 33:PHPMailer.php
+Date: Thu, 13 Apr 2023 15:40:53 +0000
+From: New Site Placeholder Sobeys Site Sites <wpe.notifications@sobeys.com>
+Message-ID: <RxXAZ3lv6zTeI3SY9NvComWPm1W8RvNQwIKjmNsM@qa-login-seconnecter.ca>
+X-Mailer: PHPMailer 6.5.3 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+X-Spam-Status: No, score=0.2
+X-Spam-Score: 2
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hi, You've been invited to join 'New Site Placeholder Sobeys
+    Site' at https://qa-login-seconnecter.ca with the role of Administrator.
+   If you do not want to join this site please ignore this email. Thi [...] 
+ Content analysis details:   (0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: qa-login-seconnecter.ca]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+X-Spam-Flag: NO
+
+Hi,
+You've been invited to join 'New Site Placeholder Sobeys Site' at
+https://qa-login-seconnecter.ca with the role of Administrator.
+If you do not want to join this site please ignore
+this email. This invitation will expire in a few days.
+
+Please click the following link to activate your user account:
+https://qa-login-seconnecter.ca/wp-activate.php?key=a451da70f2dd9e47
+

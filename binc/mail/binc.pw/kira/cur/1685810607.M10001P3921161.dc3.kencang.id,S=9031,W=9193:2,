@@ -1,0 +1,162 @@
+Return-Path: <ingeocon@webhosting2033.is.cc>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id yAZGO65te2QJ1TsAMUeTPA
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	for <kira@binc.pw>; Sat, 03 Jun 2023 23:43:26 +0700
+Return-path: <ingeocon@webhosting2033.is.cc>
+Envelope-to: kira@binc.pw
+Delivery-date: Sat, 03 Jun 2023 23:43:27 +0700
+Received: from dragonfly.birch.relay.mailchannels.net ([23.83.209.51]:35020)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q5ULb-00Gfjh-1f
+	for kira@binc.pw;
+	Sat, 03 Jun 2023 23:43:26 +0700
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 2FB24500EDE
+	for <kira@binc.pw>; Sat,  3 Jun 2023 16:42:39 +0000 (UTC)
+Received: from rspamd.mailbaby.net (unknown [127.0.0.6])
+	(Authenticated sender: interserver)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 932AF5013D6
+	for <kira@binc.pw>; Sat,  3 Jun 2023 16:42:38 +0000 (UTC)
+ARC-Seal: i=2; s=arc-2022; d=mailchannels.net; t=1685810558; a=rsa-sha256;
+	cv=pass;
+	b=J0/jq2XWfTI2E5K9XmkI9vAza8mBjORqxVBW1+CGHo8dGb5+CnGhOSd1qOtH3xLo4cArfx
+	Z2bz+4Fs4KXjYgJgJGoI5LvpUOfg2B+N1SjtuPxCNlZP4AIe81ZqENkVJSC+kCQhix8aSl
+	JfoCPBHbwMfjKj8xzWj1x/3G8p/EH9lMEJzRP1yVrr3NQuGVUFRylSGBEJELPT8anqgHy2
+	/qBArQrce07POZmqllGHVDD0ryzp5wJ/hUdZaA4sHSIlPzKi4vKngo9S9pcYscM+pC2PZY
+	N+3BXl6LNLjEtKlGdPHwxYrKpcePrRE+yxcytqv9q1RFdsn4chRHK1MlnAhUhg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1685810558;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=UdR7s7HH/BfL0ZCWkYyjDQlznr3DRT1cMjvWZzj3qH0=;
+	b=sEdbMuOOX+A1gu3kDWJTwC+3ZII6GXVP9ZG2F9T4xLIXd+AiAONrH8zgO33911Q3aqLeYl
+	OvitL21jNuAlpgWKQAILj1kuhRf+uiQp7vRjGqVf6WH7c1Jg0fdHIExReouHfEPi1qTdNf
+	bXh3ud6VcT6BANNlaYPREdvEWsBjUvUwyBi0wB8AbIwi9WL/Sa1eNDUmc3bZ9Vz/L2+le0
+	v27+rFxN2KikK+m3M1TQk1Ml8C+dAOeWbqCZ51ASm2mFqg/irNyoW4xb5t0FWDsv6Jm+iz
+	p8wbz6n8Q42zfWpCLIXLMDYL1VSGiDXPIsmR2BSgK8Y7CTSiE/GZEX889eD2yg==
+ARC-Authentication-Results: i=2;
+	rspamd-5f966895c-mbm5n;
+	arc=pass ("mailbaby.net:s=detka:i=1");
+	auth=pass smtp.auth=interserver smtp.mailfrom=ingeocon@webhosting2033.is.cc
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MC-Relay: Neutral
+X-MailChannels-SenderId: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MailChannels-Auth-Id: interserver
+X-Whispering-Plucky: 3f27115e1fb0d304_1685810559015_1188101834
+X-MC-Loop-Signature: 1685810559015:3405630068
+X-MC-Ingress-Time: 1685810559015
+Received: from rspamd.mailbaby.net (rspamd.mailbaby.net [67.211.214.250])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.106.146.245 (trex/6.8.1);
+	Sat, 03 Jun 2023 16:42:39 +0000
+Received: from webhosting2033.is.cc ([68.168.213.91] webhosting2033.is.cc)
+ (Authenticated sender: webhosting2033)
+ by rspamd.mailbaby.net (InterServerMTA) with ESMTPSA id 1888223a6e100005a2.001
+ for <kira@binc.pw>
+ (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256);
+ Sat, 03 Jun 2023 16:42:34 +0000
+X-Zone-Loop: a58ba0153f18efe8e8d6f765a4b01c8dea0a5e16ad13
+ARC-Authentication-Results: i=1;	relay1.mailbaby.net;	auth=pass
+ smtp.auth=webhosting2033 smtp.mailfrom=ingeocon@webhosting2033.is.cc
+ARC-Seal: i=1; s=detka; d=mailbaby.net; t=1685810554; a=rsa-sha256;
+	cv=none;
+	b=Av4DQzaiRBP98G/g9JP7HXHu0kbbOQ3cRcWFgpZCGuI+0UmO5vH1p0NSFrYuAJ46FW2NzI
+	QF+4Z6Lh5syD1tu6IMB5SxaiMsOu3i35twYw1Fl3Ps4Qjv1GphtgzFIE2kAl9g5j8hYNAc
+	F2LmmwdyeMNMfwnGHBbxu7V9up0GY70mTwmMQtNqn3057GtR1DT4BOzgk9B0EqNbt/Aia2
+	zkrSh+rlblTxmEQJAM/gX/jYsw/ufWNhSVBpU+k9T7E4vudc5YxnoAmqRqP8DsLyoUBXQ8
+	8Uqzk0LIpVCI9+/Vznm9lre4K6KXgz6zOAcGwpotvvpmfeZnDe11FoPYQAtFwg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailbaby.net;	s=detka; t=1685810554;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=UdR7s7HH/BfL0ZCWkYyjDQlznr3DRT1cMjvWZzj3qH0=;
+	b=yJUlycxksugHZRrZLFVJq7rLKgyEwsks1/UQkSacKFMsbp+qJFtq6EOmLN5bp2qMB/5/wC
+	zFNPzeTPcq093zqSJTq6E5tfpvv8tJsTq0UwpGnT4sX3fMnqZT3xEUmyumMgV4SIb7zymb
+	2jQSSK3fvC/gYiz9+vOtZeR7sa5WEPN7E6vJsS21ku6BW/dmSq5V+D4LpLuCzhc+/NL1oT
+	fy97FWJ7D+m1h3t9qoYJcR4b+9AmAH/Dai2jLtCr95pb+lcKyo79YMIlOy4ToMtHRAml5t
+	pICXSE9Fae0LK3ywIijD3c2HqEngVZQgqvoTufg9u8D24WLIr2e3CbkJdEPGyA==
+X-SPF: pass
+X-Originating-IP: [68.168.213.91]
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=webhosting2033.is.cc; s=default; h=Sender:Content-Type:MIME-Version:
+	Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=UdR7s7HH/BfL0ZCWkYyjDQlznr3DRT1cMjvWZzj3qH0=; b=Dh3tUsUVu5pRUWh3bBCcoxPR0i
+	ZomrZ87ryQSEXcxZASPhlIrn08E5Hx6tsVEGr83mDyBjiQ3pd758FeZcn2x55tBZOyRCtJxxMD+V+
+	gRw92M5gqSHQun2F3224yTsTSpdRJddI02rFgSG4aG2oGVKdn2P/JimkkfWHy9sw2g3EOI9qH2M8o
+	IJrWx3SF4XBoVMLEO34JxLvioNNP2dgerfp8K69NA7PvWoutQfY8TqxQnEAc01jeAssJQ0PON/gu3
+	7n6O0fbBFGaxM7+P1wQwG5MGvD1OlNznaPllU+b0hdzObTDZFW65Zac9as36w8rp1mK6bfcvmGYXI
+	lwafQGKQ==;
+Received: from ingeocon by webhosting2033.is.cc with local (Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q5UKn-001rFR-0V
+	for kira@binc.pw;
+	Sat, 03 Jun 2023 12:42:34 -0400
+To: kira@binc.pw
+Subject: [InGEO consulting] Please moderate: "Taurus Girl and Aquarius Man Love Compatibility"
+X-PHP-Script: ingeoconsulting.com/wp-comments-post.php for 218.21.88.11
+X-PHP-Originating-Script: 1159:class-phpmailer.php
+Date: Sat, 3 Jun 2023 16:42:33 +0000
+From: WordPress <wordpress@ingeoconsulting.com>
+Message-ID: <19c396020f26b7fb732e37e6f7fa8a06@ingeoconsulting.com>
+X-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <ingeocon@webhosting2033.is.cc>
+X-AuthUser: ingeocon@webhosting2033.is.cc
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "Taurus Girl and Aquarius Man Love
+    Compatibility" is waiting for your approval https://ingeoconsulting.com/2023/01/04/taurus-girl-and-aquarius-man-love-compatibility/
+    Author: gateio (IP address: 218.21.88.11, 218.21.88.11) Email: 90151009@outlook.com
+    URL: https://www.gate.io/es/signup/XwNAU Comment: I have read your article
+    carefully and I agree with you very much. [...] 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: gate.io]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+X-Spam-Flag: NO
+
+A new comment on the post "Taurus Girl and Aquarius Man Love Compatibility" is waiting for your approval
+https://ingeoconsulting.com/2023/01/04/taurus-girl-and-aquarius-man-love-compatibility/
+
+Author: gateio (IP address: 218.21.88.11, 218.21.88.11)
+Email: 90151009@outlook.com
+URL: https://www.gate.io/es/signup/XwNAU
+Comment: 
+I have read your article carefully and I agree with you very much. This has provided a great help for my thesis writing, and I will seriously improve it. However, I don't know much about a certain place. Can you help me? https://www.gate.io/es/signup/XwNAU
+
+Approve it: https://ingeoconsulting.com/wp-admin/comment.php?action=approve&c=150#wpbody-content
+Trash it: https://ingeoconsulting.com/wp-admin/comment.php?action=trash&c=150#wpbody-content
+Spam it: https://ingeoconsulting.com/wp-admin/comment.php?action=spam&c=150#wpbody-content
+Currently 45 comments are waiting for approval. Please visit the moderation panel:
+https://ingeoconsulting.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

@@ -1,0 +1,191 @@
+Return-Path: <ingeocon@webhosting2033.is.cc>
+Delivered-To: kira@binc.pw
+Received: from vps.warceuproject.dev
+	by vps.warceuproject.dev with LMTP
+	id WxhGJQoAv2S2/AYA0wEIKA
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	for <kira@binc.pw>; Tue, 25 Jul 2023 00:49:46 +0200
+Return-path: <ingeocon@webhosting2033.is.cc>
+Envelope-to: kira@binc.pw
+Delivery-date: Tue, 25 Jul 2023 00:49:46 +0200
+Received: from hamster.birch.relay.mailchannels.net ([23.83.209.80]:40496)
+	by vps.warceuproject.dev with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1qO4N0-001v7H-1j
+	for kira@binc.pw;
+	Tue, 25 Jul 2023 00:49:46 +0200
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 895746C0D9D
+	for <kira@binc.pw>; Mon, 24 Jul 2023 22:48:55 +0000 (UTC)
+Received: from offloadmongo4.mailbaby.net (unknown [127.0.0.6])
+	(Authenticated sender: interserver)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 0A83B6C048E
+	for <kira@binc.pw>; Mon, 24 Jul 2023 22:48:54 +0000 (UTC)
+ARC-Seal: i=2; s=arc-2022; d=mailchannels.net; t=1690238935; a=rsa-sha256;
+	cv=pass;
+	b=x2Z6RklJeb7QGjgKT9qVDghfwn3c+ioOrn/7NNoJf2J14HfB6p1WPujmx6PF3jVcb5gYOx
+	drjho8gYTnBnBWg7M0qFA6NXV7uhFNlLmLP+wYtcRNHijfRr2WB1l0bK0qDk1TJQ4rTN3W
+	1w2M+GckNdxt3PR9ngpjET/HW3mk0p4j9o27EmMUQ3kgpA/HDelSkqooMLAx9uZvuXuUYh
+	LWUWEA624Fx5SmWRXzpGbOqHorVAEzAAAACCi/Lk1di0EE099SfFWxX3pSJ+dxO4CyJJ/q
+	/JqORT10V4d9GFe0CbhnUnTvhh8AvVyomhyIib6HYXJzyNaEnA27FqyBXae30Q==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1690238935;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=93Kky6bkQjjzmZFHIZhx1we/7f2KIRTcMZqDelhKErs=;
+	b=45EENS2mRhJ/c1kOvGFbj1fOmTi8lCLDV6q6fqhH/rtBmGvsTfSmkJOxTD3ZkgMewrPuEo
+	CogHglRnzhAw6TuvblrOWIQxITmwcNpBH6FFjOBunj4FS0ENNyTG23lo67VSNU5mwJzSYO
+	UdQdpaZsuf2V/zs5dWrs1NK24chiUO+aZAcKZV/M3TnXPfO8/dewKpeas8uykOHSAIvqN7
+	9uhFSP653KMD1G/FigkXij5LS5KaWd2UjSs4QKPrU24NgIU3rNorIjh6QR992TtLxAswOZ
+	j7x9rh5IoTMp+q1Bnx/cJU3HfMOYSchfhKHcXnCMDmMKe31BRQCg17mEw04RLQ==
+ARC-Authentication-Results: i=2;
+	rspamd-bd8c8f549-pzqnf;
+	arc=pass ("mailbaby.net:s=detka:i=1");
+	auth=pass smtp.auth=interserver smtp.mailfrom=ingeocon@webhosting2033.is.cc
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MC-Relay: Neutral
+X-MailChannels-SenderId: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MailChannels-Auth-Id: interserver
+X-Fumbling-Duck: 11979d25460edc09_1690238935367_3406081106
+X-MC-Loop-Signature: 1690238935367:3440184301
+X-MC-Ingress-Time: 1690238935367
+Received: from offloadmongo4.mailbaby.net (offloadmongo4.mailbaby.net
+ [66.45.239.91])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.114.181.249 (trex/6.9.1);
+	Mon, 24 Jul 2023 22:48:55 +0000
+Received: from webhosting2033.is.cc ([68.168.213.91] webhosting2033.is.cc)
+ (Authenticated sender: webhosting2033)
+ by offloadmongo4.mailbaby.net (InterServerMTA) with ESMTPSA id 1898a17445900016d8.001
+ for <kira@binc.pw>
+ (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256);
+ Mon, 24 Jul 2023 22:48:47 +0000
+X-Zone-Loop: 85d705f3298a1ae89d3a254392bc6d875e2ee403b1ba
+ARC-Authentication-Results: i=1;	offloadmongo4.mailbaby.net;	auth=pass
+ smtp.auth=webhosting2033 smtp.mailfrom=ingeocon@webhosting2033.is.cc
+ARC-Seal: i=1; s=detka; d=mailbaby.net; t=1690238928; a=rsa-sha256;
+	cv=none;
+	b=Dx2pnkR6h6N7jvTdRYjLyL0af9l7nwTGdG9V5hncb/FjSqiAGjJMNMsXuRw8ySBDwBCsKN
+	k8zB3JeUHPpNjsPIxcguieoghQdWyVmXcLwVRHGAMGonuJ/dHlGhvdX9uayGPLPN6r6Yig
+	a6+2pCrU9T85h78eRPSGzB+VXFMM1t3W7qn0IdU8Tsr56+m7Fk59hBfA2XWQCWBqOm37F/
+	H3Fls4UZvXlitgFX/PVEQqIrOYJf+srB3WahcQ+G0b7VXjk1EhV9aK+5Xdr8b+69p9tpGK
+	VVLwpnSoxOAwDXkczdpejAsR0nMExDRjc6MtnY4MPI1n9xheDrMDbd4U61151Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailbaby.net;	s=detka; t=1690238928;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=93Kky6bkQjjzmZFHIZhx1we/7f2KIRTcMZqDelhKErs=;
+	b=ogfqFNE8KnUTsm4vwK8AqSx4zmu0KMNYSCul3CdIQ5aDqTw6WxJkgDLE42b5E4lJKtrto1
+	TregtLFnmJMBxMwLH+6UbkktQptbQ/lscNMdi7iDCkeAZgEnmLhZAKaSi0lWwk419g4o2R
+	OJwvGblZ9OKya5gwnevHBrCzLxo7PWXVVWIK7tBMn1nKRmXhuhoAgTO756dux+fD9ciGJH
+	8EYJ/7RyQXO1ETX7/C18p9qtia734r2BFlp6enlDztqnqxDBSGm3mnzdMdFUWcFpeq0BhX
+	wYDnvwbgy3lfvGkQewmNc+c++g5c1mjbUQS3TV6wk0z/ZHA9cM+guIUFHiZCQQ==
+X-SPF: pass
+X-Originating-IP: [68.168.213.91]
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=webhosting2033.is.cc; s=default; h=Sender:Content-Type:MIME-Version:
+	Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=93Kky6bkQjjzmZFHIZhx1we/7f2KIRTcMZqDelhKErs=; b=W0XWh32MM+YergzUVp8MPU6hNF
+	MYi6dhJ7KkLzRMgQiTsNIWMqZdzR03VAExsAL0u0gMAud3en/ikB+c5jJrD+uoZ7Mghgl4Gd1+QFk
+	OPtfObI/qgScdUQAg8agioAHGWi03WyqygKndp+EGvRumDkfkboOWJ6NYvtOdSgaMjaa4A3AALIYb
+	MJCehJgx382zVH1SRjUeUxP+6qLZovhF/YADc/KRbXDWWIYcIrWJA1BeuD4C0rUF+jC8O0R7VCEby
+	jvll/jf+44gZudxiC7HmHQyFcS0/kC/YytbT1DgXVcvqos/zqklAM4NfTaMsyjPJxahx1e1TnleSn
+	Zl5ZjzNw==;
+Received: from ingeocon by webhosting2033.is.cc with local (Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1qO4M9-0031HK-2J
+	for kira@binc.pw;
+	Mon, 24 Jul 2023 18:48:47 -0400
+To: kira@binc.pw
+Subject: =?us-ascii?Q?[InGEO_consulting]_Your_Site_is_Experiencing_a_?=  =?us-ascii?Q?Technical_Issue?=
+X-PHP-Script: ingeoconsulting.com/wp-admin/admin-ajax.php for 86.33.71.227
+X-PHP-Originating-Script: 1159:PHPMailer.php
+Date: Mon, 24 Jul 2023 22:48:45 +0000
+From: WordPress <wordpress@ingeoconsulting.com>
+Message-ID: <rhXza6mzjOwBWaYr79m6Vrzkz8lIVzrsxno1LJjeyWI@ingeoconsulting.com>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <ingeocon@webhosting2033.is.cc>
+X-AuthUser: ingeocon@webhosting2033.is.cc
+X-Spam-Status: No, score=2.7
+X-Spam-Score: 27
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "vps.warceuproject.dev",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Howdy! WordPress has a built-in feature that detects when
+   a plugin or theme causes a fatal error on your site, and notifies you with
+    this automated email. In this case, WordPress caught an error with your theme,
+    Colibri WP. 
+ Content analysis details:   (2.7 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: ingeoconsulting.com]
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query
+                              to zen.spamhaus.org was blocked due to
+                             usage of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [23.83.209.80 listed in zen.spamhaus.org]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: ingeoconsulting.com]
+  0.0 URIBL_ZEN_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: is.cc]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+  2.5 PHP_SCRIPT             Sent by PHP script
+X-Spam-Flag: NO
+
+Howdy!
+
+WordPress has a built-in feature that detects when a plugin or theme causes a fatal error on your site, and notifies you with this automated email.
+
+In this case, WordPress caught an error with your theme, Colibri WP.
+
+First, visit your website (https://ingeoconsulting.com/) and check for any visible issues. Next, visit the page where the error was caught (https://ingeoconsulting.com/wp-admin/admin-ajax.php) and check for any visible issues.
+
+Please contact your host for assistance with investigating this issue further.
+
+If your site appears broken and you can't access your dashboard normally, WordPress now has a special "recovery mode". This lets you safely login to your dashboard and investigate further.
+
+https://ingeoconsulting.com/wp-login.php?action=enter_recovery_mode&rm_token=mlXfITMBfA3QdVlIDiXpje&rm_key=u6Zf1uMnxUJzq3CDAQIi04
+
+To keep your site safe, this link will expire in 1 day. Don't worry about that, though: a new link will be emailed to you if the error occurs again after it expires.
+
+When seeking help with this issue, you may be asked for some of the following information:
+WordPress version 6.2.2
+Active theme: Colibri WP (version 1.0.92)
+Current plugin:  (version )
+PHP version 7.4.33
+
+
+
+Error Details
+=============
+An error of type E_COMPILE_ERROR was caused in line 5 of the file /home/ingeocon/public_html/wp-content/themes/colibri-wp/inc/vendor/autoload.php. Error message: require_once(): Failed opening required '/home/ingeocon/public_html/wp-content/themes/colibri-wp/inc/vendor/composer/autoload_real.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear')
+

@@ -1,0 +1,161 @@
+Return-Path: <ingeocon@webhosting2033.is.cc>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id 4O8vGY1oc2TPcDkAMUeTPA
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	for <kira@binc.pw>; Sun, 28 May 2023 21:43:25 +0700
+Return-path: <ingeocon@webhosting2033.is.cc>
+Envelope-to: kira@binc.pw
+Delivery-date: Sun, 28 May 2023 21:43:25 +0700
+Received: from fish.birch.relay.mailchannels.net ([23.83.209.251]:51127)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q3HcA-00Fq96-2p
+	for kira@binc.pw;
+	Sun, 28 May 2023 21:43:25 +0700
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 87C915C113B
+	for <kira@binc.pw>; Sun, 28 May 2023 14:32:09 +0000 (UTC)
+Received: from offloadmongo2b.mailbaby.net (unknown [127.0.0.6])
+	(Authenticated sender: interserver)
+	by relay.mailchannels.net (Postfix) with ESMTPA id C3E8A5C1D86
+	for <kira@binc.pw>; Sun, 28 May 2023 14:32:08 +0000 (UTC)
+ARC-Seal: i=2; s=arc-2022; d=mailchannels.net; t=1685284329; a=rsa-sha256;
+	cv=pass;
+	b=Mwy5XgbvsMr+A2H3fu2mK3uWuMkjn8mr8PiiNdnmJH9ZYyEbTHQJMqvj8d2EeqznPX/rCI
+	xxqqp1Pue1GH3qv5uDQQuX7eIODgnUQawLn6QDWV+Y28l1cf5iby6SyjM+FyRW2Nm/buYg
+	3CQxy7EK3w1jlNm4enGcPDUok+BaI05X7vVy179IHiL+oWTGvFrzyhVegDynqoRjMMg2kj
+	TjUpeMjkHKb57+wnQ7DrRtSPj7U6aP/3yrMVXGSTfTUaNGQWPN1VWVc5A5Q8yBziFOMk2i
+	UweWtIawIiYasEpVcZCbpJNHMxNaqKK65Zns0f6cynuiv3N4+Xqc8ahTDdycOQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1685284328;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=BW6DtA3Ez+2mClKgqCHTtHIB5deQV9Hy0z9viEhgyJY=;
+	b=hbql7VHhHSZsnUD8WsXEh0OHQhdTp7m3eb3ViaPyKWoYcWJMXCnTvokxzLXru+XaB/yeNe
+	MFDGbp2i/8CYxvunxKDKKjKYcqeIZYFLrF16dX4flEnlvVioYNQuwDPJ+8bsT021ncKoOY
+	MNqQQeTZzJ60EAzU2gjjZctTKF6Ok5i6uadurUu0W50cftivFTtnAk4It60z5qgfoFL4Sp
+	vkJjAVSnU+uLcDUNuoi4gh7JUTPHYnEDfw17BCYxJad+I3R8VxU6AUe2oEDFoMsByx1xyu
+	PT7yJt72Kl7EyWwigweYoOK4WX53YOEvt+rQ/uHrIP5/Wn46Tq+crL2SQJqY8w==
+ARC-Authentication-Results: i=2;
+	rspamd-7d4b855556-4xzwm;
+	arc=pass ("mailbaby.net:s=detka:i=1");
+	auth=pass smtp.auth=interserver smtp.mailfrom=ingeocon@webhosting2033.is.cc
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MC-Relay: Bad
+X-MailChannels-SenderId: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MailChannels-Auth-Id: interserver
+X-Sponge-Turn: 447edf0904774a7c_1685284329333_3933773017
+X-MC-Loop-Signature: 1685284329333:1416419266
+X-MC-Ingress-Time: 1685284329333
+Received: from offloadmongo2b.mailbaby.net (offloadmongo2b.mailbaby.net
+ [74.50.67.113])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.126.30.34 (trex/6.8.1);
+	Sun, 28 May 2023 14:32:09 +0000
+Received: from webhosting2033.is.cc ([68.168.213.91] webhosting2033.is.cc)
+ (Authenticated sender: webhosting2033)
+ by offloadmongo2b.mailbaby.net (InterServerMTA) with ESMTPSA id 18862c6054b0006048.001
+ for <kira@binc.pw>
+ (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256);
+ Sun, 28 May 2023 14:32:04 +0000
+X-Zone-Loop: b6189af58d54b001c86b53dc421c8c750776a069b6f6
+ARC-Authentication-Results: i=1;	offloadmongo2b.mailbaby.net;	auth=pass
+ smtp.auth=webhosting2033 smtp.mailfrom=ingeocon@webhosting2033.is.cc
+ARC-Seal: i=1; s=detka; d=mailbaby.net; t=1685284324; a=rsa-sha256;
+	cv=none;
+	b=HSkBsvnaNiMAIpVWJFyoF3a35hg0StMM806Z0fGNkzQ2GczpSbXmWzUk0BYbR/q1sArWwK
+	c9PkbCuuhkgrO/VI0GnahviM/8w03DBymBAgRcBt3/iegOJbszNZAnwn7nV4aC4ngECR0P
+	90IS0LUltAmGKlcwY0BMpABknO17HBE+W40pNgnLLi8GhX9YtJCuyZSEW5ybCCMOtPAejE
+	w5Zyk16rKf0HP7PS30J/XG/sjEWhh08HVwXvWXz/WGd7d2rXZnmajv71YbH+YrDK1ra+8S
+	pmmAQHARlo49z9bVyCciE59uUlpoOgMez7s78ppkpMlv7Qyefn5QeMntQk1OXQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailbaby.net;	s=detka; t=1685284324;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=BW6DtA3Ez+2mClKgqCHTtHIB5deQV9Hy0z9viEhgyJY=;
+	b=Lm35FMhkauDUdXJ1rkXYOaYC7MOIWq/DPIzmMLUQwgi8GZsA7kiGRWwPuxI6StjkPjFr/H
+	o/Ep1xGa8FdD/11b19vg/7tyv2iJkTOTi86RHP7nI569lJXxiajGJjunx3pQpu6pws7kkz
+	S7L/p8obS4HrzDfCDhULaZSxjcuQW2WECdh9DakP9mrZHEKmVD4zfme339sE0AsoSgvkPn
+	CzmvKpNB+sT/CxOinvDDijnqB0o6+ok3VsJoKdFtsZZLvX/B/BLAw5174AIiQsFGCjpsud
+	RFWI1sHEwi8Zh1LXDUqugwTztGMI4OG/3CbBr3pHhb4abHmPCx1aPn/jpH+I5g==
+X-SPF: pass
+X-Originating-IP: [68.168.213.91]
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=webhosting2033.is.cc; s=default; h=Sender:Content-Type:MIME-Version:
+	Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=BW6DtA3Ez+2mClKgqCHTtHIB5deQV9Hy0z9viEhgyJY=; b=SXNfN1ILXIatabWVOoP9+JWGjh
+	4d5Og86xR3NW0LirWH6m+ZqfKK4YSsawGbIFvHvlrwsRC3c6ovdWei7Yr4oeASBkJhse9hMFpWH4v
+	kFLaJtbhL6bdicW5s5LwMV+BEbOoJYkZTw5TbIZEYElkVRIFhAz7HycfW+kBn0cyo6ZOhIEISokW6
+	APvUuE499CXRGQ88v/rWW2Kv0n6dd25DZ6JwxUXfO1/ZgxEyosh/08zRJI9ShTb+qNCztL74Btjpr
+	pkWcNSrlN0s6LlVACa+FscVIGJ5Byf0HGj/eoRtoIQV5zGyc0xPUvkjlDiH508Br7Jw4x/a+Qr7me
+	V5J9PIag==;
+Received: from ingeocon by webhosting2033.is.cc with local (Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q3HRD-000Agn-0x
+	for kira@binc.pw;
+	Sun, 28 May 2023 10:32:04 -0400
+To: kira@binc.pw
+Subject: [InGEO consulting] Please moderate: "Of many that OCD choose never to date and give a wide berth to intimate relationships"
+X-PHP-Script: ingeoconsulting.com/wp-comments-post.php for 116.11.145.200
+X-PHP-Originating-Script: 1159:class-phpmailer.php
+Date: Sun, 28 May 2023 14:32:03 +0000
+From: WordPress <wordpress@ingeoconsulting.com>
+Message-ID: <7cc1b2e837264ac0e4fb9c81cba0f4f1@ingeoconsulting.com>
+X-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <ingeocon@webhosting2033.is.cc>
+X-AuthUser: ingeocon@webhosting2033.is.cc
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "Of many that OCD choose never to
+    date and give a wide berth to intimate relationships" is waiting for your
+    approval https://ingeoconsulting.com/2023/01/04/of-many-that-ocd-c [...] 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: gate.io]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+X-Spam-Flag: NO
+
+A new comment on the post "Of many that OCD choose never to date and give a wide berth to intimate relationships" is waiting for your approval
+https://ingeoconsulting.com/2023/01/04/of-many-that-ocd-choose-never-to-date-and-give-a/
+
+Author: gate io (IP address: 116.11.145.200, 116.11.145.200)
+Email: 20684317@outlook.com
+URL: https://www.gate.io/th/signup/XwNAU
+Comment: 
+The point of view of your article has taught me a lot, and I already know how to improve the paper on gate.oi, thank you. https://www.gate.io/th/signup/XwNAU
+
+Approve it: https://ingeoconsulting.com/wp-admin/comment.php?action=approve&c=136#wpbody-content
+Trash it: https://ingeoconsulting.com/wp-admin/comment.php?action=trash&c=136#wpbody-content
+Spam it: https://ingeoconsulting.com/wp-admin/comment.php?action=spam&c=136#wpbody-content
+Currently 31 comments are waiting for approval. Please visit the moderation panel:
+https://ingeoconsulting.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

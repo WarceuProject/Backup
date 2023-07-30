@@ -1,0 +1,112 @@
+Return-Path: <no-reply@gov.in>
+Delivered-To: syn@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id cKw2IDzlQmT59yEAMUeTPA
+	(envelope-from <no-reply@gov.in>)
+	for <syn@binc.pw>; Sat, 22 Apr 2023 02:34:20 +0700
+Return-path: <no-reply@gov.in>
+Envelope-to: syn@binc.pw
+Delivery-date: Sat, 22 Apr 2023 02:34:20 +0700
+Received: from relayout3.nic.in ([164.100.14.99]:10090)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <no-reply@gov.in>)
+	id 1ppwWU-009MvB-08
+	for syn@binc.pw;
+	Sat, 22 Apr 2023 02:34:20 +0700
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple;
+  d=gov.in; i=@gov.in; q=dns/txt; s=GOV; t=1682105658;
+  x=1713641658;
+  h=to:subject:from:mime-version:message-id:date;
+  bh=8twOZDLSgDrwwjowdJd3Y2Rtd6ho81ZF77bJ3J/Cs6o=;
+  b=HCbySwPAfL6HnQWEdnTW5D9Jw+3mRM7NuowHW/fx5TqeLCZixaPIIXCc
+   CHWnKu5MPNZV5vUTOE5m/MxHscPrq03eNby6FpxRsGZkukyUi3kgGJLNA
+   5N1HhmlSlgCEpwVZ2Bxe03l7sy6nTJdPWIFe5F7G1OrHeQ2a7zhRayM+m
+   M=;
+X-IPAS-Result: =?us-ascii?q?A2BgFAA/4kJk/+6zwgpaHgEBCxIMQAmEaYFahFKUXZNoh?=
+ =?us-ascii?q?mKBeQEBAQEBAQEBAT4PBAEBhQYfhR8mOBMBAgQBAQEBAwIDAQEBAQEBAwEBB?=
+ =?us-ascii?q?gEBAQEBAQYEgR2FL0aFejMaWgEJDQImAi48CIJ/glwTqmCBMhoCZZ9zgVGBF?=
+ =?us-ascii?q?C2BaIdHhXOCcYINgUiHQAUBEgEuBwkwgw45gi4ElSppgTN0gSeBMYEEAgkCE?=
+ =?us-ascii?q?WuBEAhpgXNAAg1kCw5wgUWBe4EdBAIUQgwXeANEHUADC3U9NRQfglsEggVRl?=
+ =?us-ascii?q?S+GFRGTV440ghegB6R1TYN9jGaGUAOSDIEOih6MS6oZgQ5whCcJSRmiIm09A?=
+ =?us-ascii?q?gcLAQEDCYtFAQE?=
+IronPort-Data: A9a23:8yCVGKy7XEO3dqfv/+F6t+e9xCrEfRIJ4+MujC+fZmUNrF6WrkUCx
+ zAcCjzVa/aIZ2WjKop+Pong/R9VvpLcnNBlT1M//lhgHilAwSbnLY3Cdx+vZUt+DSFioGZPt
+ Zh2hgzodZhsJpPkjk7xdOKn9BGQ7InQLpLkEunIJyttcgFtTSYlmHpLlvUw6mJSqYHR7z6l4
+ LseneWOZTdJ5BYragr424rbwDtzsfL7vi8vv1BWTZina3eHyhH5pLpGTU2AByOQrrt8R4ZWd
+ M6fpF2NxV41yj92Yj+TfhkXRWVRKlLaFVDmZnO7wMFOiDAazsA5+v5T2Pbx9S67hh3R9+2dx
+ umhurStdgNyJL/ott4laBtSUGIuNupIpZLYdC3XXcy7lyUqclPvnuVtSV8qJ5Md4KN9CzgL8
+ +QZbT4AK0jZweSx3ru/TeJlgqzPLuGyZMVG6y0mlG6IS6x9EfgvQI2TjTNc9DE3w9pDBfLPT
+ 8Ued3xuanwsZjUSZQdPVc1lzbrAan/XQwwD+G+SgfoMyWXQyyFq0ILpasH/U4nfLSlStgPCz
+ o7cxEziExcyPt2Zwnyd7RqRavTnxHu9AdNOUuTnp7gw2w37KnEvNSD6nGCT+ZGR4nNSkfoGQ
+ 6DI0kLCdZQPyXE=
+IronPort-HdrOrdr: A9a23:PcHenKgnSudkxDxWB4wLRoMdTnBQXrUji2hC6mlwRA09TyVCra
+ 6TdZsgtSMc5Ax8ZJhCo7+90de7IE80nKQdieIs1NyZMTUO1lHDEL1f
+X-Talos-CUID: =?us-ascii?q?9a23=3AQ0pmRmqgPq86ZaI9NV3yq+7mUd0adibH3lP+GXe?=
+ =?us-ascii?q?DC2wqC+2eDlHN1bwxxg=3D=3D?=
+X-Talos-MUID: =?us-ascii?q?9a23=3AluBizg1ywNlEg1ffg9l7rGeffDUj05X1WH0KtcU?=
+ =?us-ascii?q?9kcSHMgFrOw2Z1i+da9py?=
+X-IronPort-Anti-Spam-Filtered: true
+Received: from unknown (HELO k5xk-vtrvmr-bb1-npi-fe-02.novalocal) ([10.194.179.238])
+  by relayin.nic.in with ESMTP; 22 Apr 2023 01:03:36 +0530
+Received: by k5xk-vtrvmr-bb1-npi-fe-02.novalocal (Postfix, from userid 48)
+	id 40F2340335; Sat, 22 Apr 2023 01:03:04 +0530 (IST)
+To: syn@binc.pw
+Subject: Feedback Acknowledgement
+From:indiaportal@gov.in 
+MIME-Version: 1.0 
+Content-type: text/html;charset=UTF-8
+Message-Id: <20230421193304.40F2340335@k5xk-vtrvmr-bb1-npi-fe-02.novalocal>
+Date: Sat, 22 Apr 2023 01:03:04 +0530 (IST)
+X-Spam-Status: No, score=-0.1
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Feedback Acknowledgement Dear Syn Naulaid Thank you for providing
+    your valuable feedback. Our team will review your comments and implement
+   your suggestions if found actionable. This is an auto generated email. Please
+    do not reply to it.. 
+ Content analysis details:   (-0.1 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: gov.in]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+X-Spam-Flag: NO
+
+<html>
+		<head>
+		  <title>Feedback Acknowledgement</title>
+		</head>
+		<body>
+			<h3>Dear Syn Naulaid</h3>
+			<p> 
+			Thank you for providing your valuable feedback. Our team will review your comments and implement your suggestions if found actionable.<br />
+
+			This is an auto generated email. Please do not reply to it..</p>
+			<pTeam National Portal of India
+				<br />
+				From Name: <a href="/https://www.india.gov.in/" title="National Portal of India">National Portal of India</a>
+			<br />
+				From Email: indiaportal@gov.in
+
+		</p>
+		</body>
+	</html>

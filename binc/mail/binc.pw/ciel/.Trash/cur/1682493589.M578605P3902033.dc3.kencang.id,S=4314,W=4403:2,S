@@ -1,0 +1,89 @@
+Return-Path: <afpggc@srv307.seekahost.net>
+Delivered-To: ciel@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id sMeEIZXQSGRRijsAMUeTPA
+	(envelope-from <afpggc@srv307.seekahost.net>)
+	for <ciel@binc.pw>; Wed, 26 Apr 2023 14:19:49 +0700
+Return-path: <afpggc@srv307.seekahost.net>
+Envelope-to: ciel@binc.pw
+Delivery-date: Wed, 26 Apr 2023 14:19:49 +0700
+Received: from srv307.seekahost.net ([51.91.220.26]:59426)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <afpggc@srv307.seekahost.net>)
+	id 1prZRO-00GNMY-1O
+	for ciel@binc.pw;
+	Wed, 26 Apr 2023 14:19:49 +0700
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=afp-ggc.org
+	; s=default; h=Content-Type:MIME-Version:Message-ID:From:Date:Subject:To:
+	Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=JKPzFqmuHZAup47UJlq3LzGjoCYkzq3mV+w/9WWDK7A=; b=BHmNGHSRy1hwOX0WsYkjpCBgl1
+	sdOj6JbOrZqON0VX7kCWQ0PzEUsEdGP/utWJedTzSE6fxuhjgqzYRXSgOBn4dw7EgDxdbDB904juH
+	PDNO+RAi2MQUB4Sky0IxacEQZSXi0V20f3iOoz9KaW96GxrtfruaLnISPnVktQ1bLy9gEz0Y5qWDj
+	n956wmHDAJbC0anH8+1y0n6vn+0TOkfEkNFFN6pyxnmGewlDDNtwX6RxMwNth4hNqJz5jv4xu6Nph
+	eu+/TggLKQfpIo8YNgL6GIx7RChsH1nQ+FH0Gk3GziLINIrIj6lT6jrmTk204BnHsZBC/0q3DqRxX
+	cSFRKWPg==;
+Received: from afpggc by srv307.seekahost.net with local (Exim 4.96)
+	(envelope-from <afpggc@srv307.seekahost.net>)
+	id 1prZQf-003XQa-0c
+	for ciel@binc.pw;
+	Wed, 26 Apr 2023 09:19:05 +0200
+To: ciel@binc.pw
+Subject: [Afp GGC] Login Details
+Date: Wed, 26 Apr 2023 07:19:05 +0000
+From: WordPress <wordpress@afp-ggc.org>
+Message-ID: <g0FLmORFsOEO35fXBFs4Mc0nPuuSfXOABFbZXHtUMo@afp-ggc.org>
+X-Mailer: PHPMailer 6.6.5 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - srv307.seekahost.net
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [2833 990] / [47 12]
+X-AntiAbuse: Sender Address Domain - srv307.seekahost.net
+X-Get-Message-Sender-Via: srv307.seekahost.net: authenticated_id: afpggc/from_h
+X-Authenticated-Sender: srv307.seekahost.net: wordpress@afp-ggc.org
+X-Source: 
+X-Source-Args: /usr/sbin/proxyexec -q -d -s /var/lib/proxyexec/cagefs.sock/socket /bin/cagefs.server 
+X-Source-Dir: afp-ggc.org:/public_html/wp-admin
+X-Spam-Status: No, score=0.2
+X-Spam-Score: 2
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Username: ciel To set your password, visit the following address:
+    https://afp-ggc.org/wp-login.php?action=rp&key=gjmLUEHNEd23u6c5Y0NP&login=ciel
+    
+ Content analysis details:   (0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 HK_RANDOM_ENVFROM      Envelope sender username looks random
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: afp-ggc.org]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+X-Spam-Flag: NO
+
+Username: ciel
+
+To set your password, visit the following address:
+
+https://afp-ggc.org/wp-login.php?action=rp&key=gjmLUEHNEd23u6c5Y0NP&login=ciel
+
+https://afp-ggc.org/wp-login.php
+

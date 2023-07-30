@@ -1,0 +1,170 @@
+Return-Path: <shannonbrachehai@cpanel-552-syd.hostingww.com>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id SHqIMrw2fmSA0QUAMUeTPA
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	for <kira@binc.pw>; Tue, 06 Jun 2023 02:25:48 +0700
+Return-path: <shannonbrachehai@cpanel-552-syd.hostingww.com>
+Envelope-to: kira@binc.pw
+Delivery-date: Tue, 06 Jun 2023 02:25:48 +0700
+Received: from insect.birch.relay.mailchannels.net ([23.83.209.93]:50179)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	id 1q6Fpn-001b0x-0u
+	for kira@binc.pw;
+	Tue, 06 Jun 2023 02:25:48 +0700
+X-Sender-Id:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 467626415CE;
+	Mon,  5 Jun 2023 19:25:01 +0000 (UTC)
+Received: from cpanel-552-syd.hostingww.com (unknown [127.0.0.6])
+	(Authenticated sender: instrampxe0y3a)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 6D4C66415EC
+	for <kira@binc.pw>; Mon,  5 Jun 2023 19:25:00 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1685993100; a=rsa-sha256;
+	cv=none;
+	b=gJORQmIip60d20ul0qdXORWQjcMFbaVKIqShD08JzANq1bUf2lrWQqvObCca/7n/KVhRXI
+	F05jVDRoTEdK1anwjaYbcXegoz5dHAMoFChasV5K5ss5rbZ1AKSsUhn4riF6qunWJWh9+/
+	5ewNtEcNPRP9T5LZmkHAvaOJq9xYR90sedBq3CnwsMu+t7IN943IbnK4MwpBKpI3C8qkhM
+	pBT90YCbEBN7vKtQ867LocN58Dx9wwSogZBIznPHk9LvNj8sxC/2Z3TSsJS2R+tDWoufMw
+	saE9tTk9z42BopjZZYLxX/ROTrY5OZWlOAY4QCYPdukgwHzFTAYOFD2HoG/N7A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1685993100;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=4UHBURl4RfxrDZkq3kW4mvwKRjMkDYGT0D4WbZr2bNE=;
+	b=rJAD+09cNkZ8B4cHvWKsYTHC298oUXkgjU0ISBukY6dKhlO9eAFCcH1hb5wU6td++Owcih
+	ah/JAowSaj6hdp3TF1fuZoFmu0WUJl8Yohmk7OL/I/FXyY3rQ4XA3lOMi9sic56pIk2bDs
+	K07UMfxs3EATSRL823SvsiMdzqj55aaD7aFfTjAaJdgIO5BAjvd+4e9tkK2DOxWLreLv3M
+	TrgpYz2taA9A/HGwqikW5N7cacIesEWqzwIqU8Ur3ldrAnc8ROWo7fYD93/+0bE1GLZ9UQ
+	GCB3oENcUH9YIT0UyH3DCJCwqP0U+1yO7ToDHiRQvyYZkwZ2ejAxgL7Ff1a8tg==
+ARC-Authentication-Results: i=1;
+	rspamd-56648fb6f9-fz9v8;
+	auth=pass smtp.auth=instrampxe0y3a
+ smtp.mailfrom=shannonbrachehai@cpanel-552-syd.hostingww.com
+X-Sender-Id:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+X-MC-Relay: Neutral
+X-MC-Copy: stored-urls
+X-MailChannels-SenderId:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+X-MailChannels-Auth-Id: instrampxe0y3a
+X-White-Daffy: 6a71220504f5a5bd_1685993100947_3504755402
+X-MC-Loop-Signature: 1685993100947:3222135520
+X-MC-Ingress-Time: 1685993100946
+Received: from cpanel-552-syd.hostingww.com (cpanel-552-syd.hostingww.com
+ [103.152.248.20])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384)
+	by 100.127.59.37 (trex/6.8.1);
+	Mon, 05 Jun 2023 19:25:00 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=cpanel-552-syd.hostingww.com; s=default; h=Sender:Content-Type:MIME-Version
+	:Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=4UHBURl4RfxrDZkq3kW4mvwKRjMkDYGT0D4WbZr2bNE=; b=RcO2wOtn7YOP+8jJtEgNVUDPEf
+	QpKy/TkhFS7NlXhS+wb3LAA6zaWIjWPklZeHssZuR8ZRJQ3+p/W3NL3UQHL2HroPjUBI4kqxyDBJt
+	UQbN3YDxMKNzhcm+QNGVOoUed0sD7Kpty8+yjlykb0ofboZrVpwgqpxnp4U+lwZSE7nGS+ZiHjAVK
+	UybvaLy4qlk2kUiswWYd3bh1dAcsANjNUEZgXz20cj4pRxxS9rEbHu4cQ93VgHcyarUBN9cJ5h9N5
+	fmgbocxIOJ6I8LN6FolYjyvK/gZRjomNZG5qKhtc6n1Qar3IISCnXj7RrOVMiUx+OiaqBuaPOXYiD
+	NBqkbc9A==;
+Received: from shannonbrachehai by cpanel-552-syd.hostingww.com with local (Exim 4.96)
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	id 1q6Foz-00B92c-19
+	for kira@binc.pw;
+	Tue, 06 Jun 2023 05:24:58 +1000
+To: kira@binc.pw
+Subject: =?us-ascii?Q?[Shannon_Brache_Hair]_Your_Site_is_Experiencing?=
+ =?us-ascii?Q?_a_Technical_Issue?=
+Date: Mon, 5 Jun 2023 19:24:53 +0000
+From: WordPress <wordpress@shannonbrachehair.com.au>
+Message-ID: <POaj4lNcUH7qikVdWh3FkHjcPNjFeBMKt3ztqDj74@shannonbrachehair.com.au>
+X-Mailer: PHPMailer 6.6.5 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <shannonbrachehai@cpanel-552-syd.hostingww.com>
+X-AuthUser: shannonbrachehai@cpanel-552-syd.hostingww.com
+X-Spam-Status: No, score=0.7
+X-Spam-Score: 7
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Howdy! Since WordPress 5.2 there is a built-in feature that
+    detects when a plugin or theme causes a fatal error on your site, and notifies
+    you with this automated email. In this case, WordPress caught an error with
+    one of your plugins, Fusion Builder. 
+ Content analysis details:   (0.7 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: shannonbrachehair.com.au]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+  0.2 KAM_DMARC_NONE         DKIM has Failed or SPF has failed on the message
+                             and the domain has no DMARC policy
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+X-Spam-Flag: NO
+
+Howdy!
+
+Since WordPress 5.2 there is a built-in feature that detects when a plugin or theme causes a fatal error on your site, and notifies you with this automated email.
+
+In this case, WordPress caught an error with one of your plugins, Fusion Builder.
+
+First, visit your website (https://shannonbrachehair.com.au/) and check for any visible issues. Next, visit the page where the error was caught (https://shannonbrachehair.com.au/wp-admin/) and check for any visible issues.
+
+Please contact your host for assistance with investigating this issue further.
+
+If your site appears broken and you can't access your dashboard normally, WordPress now has a special "recovery mode". This lets you safely login to your dashboard and investigate further.
+
+https://shannonbrachehair.com.au/wp-login.php?action=enter_recovery_mode&rm_token=1Byji2MCnsDFgDNhYiNS4q&rm_key=wRDB1inxebNmP4qU6EWrjG
+
+To keep your site safe, this link will expire in 1 day. Don't worry about that, though: a new link will be emailed to you if the error occurs again after it expires.
+
+When seeking help with this issue, you may be asked for some of the following information:
+WordPress version 6.1.3
+Active theme: Avada Child (version 1.0.0)
+Current plugin: Fusion Builder (version 1.8.2)
+PHP version 8.0.28
+
+
+
+Error Details
+=============
+An error of type E_ERROR was caused in line 239 of the file /home/shannonbrachehai/public_html/wp-content/plugins/fusion-builder/inc/helpers.php. Error message: Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, WP_Term given in /home/shannonbrachehai/public_html/wp-content/plugins/fusion-builder/inc/helpers.php:239
+Stack trace:
+#0 /home/shannonbrachehai/public_html/wp-content/plugins/fusion-builder/shortcodes/fusion-post-slider.php(574): fusion_builder_shortcodes_categories()
+#1 /home/shannonbrachehai/public_html/wp-includes/class-wp-hook.php(308): fusion_element_post_slider()
+#2 /home/shannonbrachehai/public_html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#3 /home/shannonbrachehai/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /home/shannonbrachehai/public_html/wp-content/plugins/fusion-builder/fusion-builder.php(228): do_action()
+#5 /home/shannonbrachehai/public_html/wp-content/plugins/fusion-builder/fusion-builder.php(203): FusionBuilder->init()
+#6 /home/shannonbrachehai/public_html/wp-content/plugins/fusion-builder/fusion-builder.php(174): FusionBuilder->__construct()
+#7 /home/shannonbrachehai/public_html/wp-content/plugins/fusion-builder/fusion-builder.php(2223): FusionBuilder::get_instance()
+#8 /home/shannonbrachehai/public_html/wp-includes/class-wp-hook.php(308): fusion_builder_activate()
+#9 /home/shannonbrachehai/public_html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#10 /home/shannonbrachehai/public_html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#11 /home/shannonbrachehai/public_html/wp-settings.php(595): do_action()
+#12 /home/shannonbrachehai/public_html/wp-config.php(90): require_once('/home/shannonbr...')
+#13 /home/shannonbrachehai/public_html/wp-load.php(50): require_once('/home/shannonbr...')
+#14 /home/shannonbrachehai/public_html/wp-admin/admin.php(34): require_once('/home/shannonbr...')
+#15 /home/shannonbrachehai/public_html/wp-admin/index.php(10): require_once('/home/shannonbr...')
+#16 {main}
+  thrown
+

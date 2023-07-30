@@ -1,0 +1,129 @@
+Return-Path: <deohoman@sg1-ss13.a2hosting.com>
+Delivered-To: ciel@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id YOO1JLggTGSIqxIAMUeTPA
+	(envelope-from <deohoman@sg1-ss13.a2hosting.com>)
+	for <ciel@binc.pw>; Sat, 29 Apr 2023 02:38:32 +0700
+Return-path: <deohoman@sg1-ss13.a2hosting.com>
+Envelope-to: ciel@binc.pw
+Delivery-date: Sat, 29 Apr 2023 02:38:32 +0700
+Received: from insect.birch.relay.mailchannels.net ([23.83.209.93]:49194)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <deohoman@sg1-ss13.a2hosting.com>)
+	id 1psTvI-005ADm-2y
+	for ciel@binc.pw;
+	Sat, 29 Apr 2023 02:38:32 +0700
+X-Sender-Id: a2hosting|x-authuser|deohoman@sg1-ss13.a2hosting.com
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 35C69541C58;
+	Fri, 28 Apr 2023 19:37:44 +0000 (UTC)
+Received: from sg1-ss13.a2hosting.com (unknown [127.0.0.6])
+	(Authenticated sender: a2hosting)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 5CAC1542864
+	for <ciel@binc.pw>; Fri, 28 Apr 2023 19:37:43 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1682710663; a=rsa-sha256;
+	cv=none;
+	b=I7KbdJtnHnAq7qo66zQAR9GscKWHQe4TNFRrumoMsP2J3HYG3Hn6/zwrQPuMZFNRORpG8m
+	m3JJECvd52AZ4k2AZtd+qYKGyjRxeUjlmx89DLEM90nkaGKOi5y+nru2Od9R6CeEtJUzM4
+	QjzIZ1lNwZxqkKeedJ9f8lPXFz3T6pm8Hvr56uCeXElD9Hl3nqewaWII33DC0mi9GrFoT9
+	eInn/SnO/pAloupgSm0lys01Odk5OveAIYn0ymmtaxu3yLnOOoNKtN2Iuqu0kcfwdXpMK6
+	ucr7rrh3bfgaSks0JbKUQpUf9P0w1lqzCKsdZqYH4PbpG/sdk21yRmgFbg15/g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1682710663;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 dkim-signature; bh=izkmGYtX8pcxH8h0p1wcFWFXYtuNl7tACHiFB7k3GCQ=;
+	b=0SsOOPXvEehk/6C33kcdEVoi+ToQ582UC+9jDR7jq1q8TuJ4oIrPxK7Dvp4tYgVOk7SZ81
+	WNd8oFY4qpl3/BYcAMp79a5+cU2MZz4HiE6IrF/mQx/OGQuuupwRSiVO94jiCIXRbUkmEZ
+	hPmSy3qY6vWBPva8dqng8KQl8oSDeaanHsX1WqBoT6Mv6nrblUPlKHuu05R0Sji+mqgq6c
+	4axW8X/1XE137cuWoG07dsdT6epOE3grP8VdtsjSKWALMb4YnEyWn3uzvgsr2O/6HXn3QU
+	AZDfho8zcE8P2pGqd39Pm9hS+yWl0Z3hG9q8zGvXVCOKtlthvdEEaYQ/Pzx6Aw==
+ARC-Authentication-Results: i=1;
+	rspamd-7f66b7b68c-qw5fh;
+	auth=pass smtp.auth=a2hosting smtp.mailfrom=deohoman@sg1-ss13.a2hosting.com
+X-Sender-Id: a2hosting|x-authuser|deohoman@sg1-ss13.a2hosting.com
+X-MC-Relay: Neutral
+X-MC-Copy: stored-urls
+X-MailChannels-SenderId: a2hosting|x-authuser|deohoman@sg1-ss13.a2hosting.com
+X-MailChannels-Auth-Id: a2hosting
+X-Cooperative-Interest: 3c1527826a730769_1682710663851_4065029386
+X-MC-Loop-Signature: 1682710663851:1175747230
+X-MC-Ingress-Time: 1682710663850
+Received: from sg1-ss13.a2hosting.com (sg1-ss13.a2hosting.com
+ [85.187.128.30])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384)
+	by 100.109.138.52 (trex/6.7.2);
+	Fri, 28 Apr 2023 19:37:43 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=sg1-ss13.a2hosting.com; s=default; h=Content-Type:MIME-Version:Message-ID:
+	From:Date:Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=izkmGYtX8pcxH8h0p1wcFWFXYtuNl7tACHiFB7k3GCQ=; b=GquM4nzkpj19B+k28E3/jT2Mc3
+	CmXimvCdVbbFaCfgyzYLjsjQmFQeGOv3PRRKkxTuLAt12cM883rvg5IVd3qxkkxQ6CWuPHYItMYTa
+	BjR2dQJ29crshdIkRIdbauYf8/F3Dacd9SVbScZLfqP9vmJ72dP10t0gIxTnFnErvJAy+Lfm8r/Ag
+	8zQUhsDZOhYFGuDa+Kt6YcO1xcbmTGdjrjMENzCeL0Jsw+ODgVpLtk9zUx/IPi8b3ceBjl1nbE8pb
+	Yprlsu0DlaFRAt++HBCuEJYzBkuJtayXkEvA74+hUIt82W+VTFC4WFM+gMwrsYejoM67qb8TnjmJk
+	CPb1cq7w==;
+Received: from deohoman by sg1-ss13.a2hosting.com with local (Exim 4.96)
+	(envelope-from <deohoman@sg1-ss13.a2hosting.com>)
+	id 1psTuW-0006Dz-1N
+	for ciel@binc.pw;
+	Sat, 29 Apr 2023 03:37:40 +0800
+To: ciel@binc.pw
+Subject: [DEOH OMAN] Login Details
+X-PHP-Script: deohoman.org/wp-admin/user-new.php for 180.242.68.142
+X-PHP-Filename: /home/deohoman/public_html/wp-admin/user-new.php REMOTE_ADDR: 180.242.68.142
+Date: Fri, 28 Apr 2023 19:37:40 +0000
+From: WordPress <wordpress@deohoman.org>
+Message-ID: <DbKmptAEosYM97FhZxZwnwX7tdeQt7NJqCV7EBTbxoE@deohoman.org>
+X-Mailer: PHPMailer 6.1.6 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+X-AuthUser: deohoman@sg1-ss13.a2hosting.com
+X-Spam-Status: No, score=3.5
+X-Spam-Score: 35
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Username: ciel To set your password, visit the following address:
+    https://deohoman.org/wp-login.php?action=rp&key=hYEfZp2uuGDtrIxF6tcI&login=ciel
+    
+ Content analysis details:   (3.5 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: deohoman.org]
+  0.5 JMQ_SPF_NEUTRAL        ASKDNS: SPF set to ?all
+                             [sg1-ss13.a2hosting.com TXT:v=spf1 a mx]
+                             [include:relay.mailchannels.net]
+                             [?all]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  2.5 PHP_SCRIPT             Sent by PHP script
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+X-Spam-Flag: NO
+
+Username: ciel
+
+To set your password, visit the following address:
+
+https://deohoman.org/wp-login.php?action=rp&key=hYEfZp2uuGDtrIxF6tcI&login=ciel
+
+https://deohoman.org/wp-login.php
+

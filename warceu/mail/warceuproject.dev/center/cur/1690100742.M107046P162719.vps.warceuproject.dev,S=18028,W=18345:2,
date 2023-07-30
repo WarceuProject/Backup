@@ -1,0 +1,317 @@
+Return-Path: <messages@facebookmail.com>
+Delivered-To: center@warceuproject.dev
+Received: from vps.warceuproject.dev
+	by vps.warceuproject.dev with LMTP
+	id 4O7CBAbkvGSfewIA0wEIKA
+	(envelope-from <messages@facebookmail.com>)
+	for <center@warceuproject.dev>; Sun, 23 Jul 2023 10:25:42 +0200
+Return-path: <messages@facebookmail.com>
+Envelope-to: center@warceuproject.dev
+Delivery-date: Sun, 23 Jul 2023 10:25:42 +0200
+Received: from 69-171-232-148.mail-mail.facebook.com ([69.171.232.148]:51370)
+	by vps.warceuproject.dev with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <messages@facebookmail.com>)
+	id 1qNUPH-000gIC-2R
+	for center@warceuproject.dev;
+	Sun, 23 Jul 2023 10:25:41 +0200
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=facebookmail.com;
+	s=s1024-2013-q3; t=1690100681;
+	bh=Yq7CfSR5Hr0K/L5WjFghRsHZR39wmT13VC1eH21js9k=;
+	h=Date:To:Subject:From:MIME-Version:Content-Type;
+	b=qJMiUbHSidlw0Ro1GCqRdZTrlH3Efh8zv0qjHJ1yZod+WG+ZyIw29szAHUS6Q0aES
+	 FUdBR8ru9koTJZ9ShXqjh6hJTREgXFzzVN+aer8e34TqV/H8/PrnW5gFaZs9NkW3B0
+	 5mU5ibHiPPQMagGzw6bSjub3OXL6fcQSLc/qrYYQ=
+X-Facebook: from 2401:db00:1130:803a:face:0:45:0 ([MTI3LjAuMC4x]) 
+	by www.facebook.com with HTTPS (ZuckMail);
+Date: Sun, 23 Jul 2023 01:24:41 -0700
+To: Kira Sinigami <center@warceuproject.dev>
+Subject: Ade Malsasa Akbar mengirimi Anda pesan.
+X-Priority: 3
+X-Mailer: ZuckMail [version 1.00]
+From: "Messenger" <messages@facebookmail.com>
+Reply-to: noreply <noreply@facebookmail.com>
+Errors-To: messages@facebookmail.com
+X-Facebook-Notify: msg; from=1274051677; t=cid.c.1274051677:100079731229247; mailid=U1U60122f12dc6caG5b05a0d4423fG601233ac3c99cG0
+List-Unsubscribe: <https://www.facebook.com/o.php?k=AS3qEPPAIg9owwW3FuQ&u=100079731229247&mid=60122f12dc6caG5b05a0d4423fG0G0&ee=AY0m-GgCxwcLWQ0I59UeKBMinFSS80MWMf7-GjLBu7D3KrfMh45bgQAS-vW4QuKnXGE8G231xhuEDuiE0vJLiWv1>
+Feedback-ID: 0:msg:Facebook
+X-FACEBOOK-PRIORITY: 0
+X-Auto-Response-Suppress: All
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_c9838e5053a059c816657dc6ec9c2b7d"
+Message-ID: <5f4350bc-2932-11ee-a561-b91e91c8cc72@facebookmail.com>
+X-Spam-Status: No, score=-13.0
+X-Spam-Score: -129
+X-Spam-Bar: -------------
+X-Ham-Report: Spam detection software, running on the system "vps.warceuproject.dev",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Halo Kira, Ade Malsasa Akbar mengirimi Anda pesan. Terima
+   kasih, Tim Facebook 
+ Content analysis details:   (-13.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: facebookmail.com]
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: facebookmail.com]
+  2.7 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
+                             [69.171.232.148 listed in psbl.surriel.com]
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query
+                              to zen.spamhaus.org was blocked due to
+                             usage of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [69.171.232.148 listed in zen.spamhaus.org]
+  0.0 URIBL_ZEN_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: facebookmail.com]
+  0.0 TVD_RCVD_IP            Message was received from an IP address
+ -7.5 USER_IN_DEF_DKIM_WL    From: address is in the default DKIM
+                             welcome-list
+ -7.5 USER_IN_DEF_SPF_WL     From: address is in the default SPF
+                             welcome-list
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+                             identical to background
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+ -0.5 ENV_AND_HDR_SPF_MATCH  Env and Hdr From used in default SPF WL
+                             Match
+ -0.0 DKIMWL_WL_HIGH         DKIMwl.org - High trust sender
+X-Spam-Flag: NO
+
+
+--b1_c9838e5053a059c816657dc6ec9c2b7d
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Halo Kira,
+
+Ade Malsasa Akbar mengirimi Anda pesan.
+
+Terima kasih,
+Tim Facebook
+
+
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Pesan ini dikirim ke center@warceuproject.dev. Jika Anda tidak ingin =
+menerima email dari Meta ini di masa mendatang, ikuti tautan di bawah ini =
+untuk berhenti berlangganan.
+https://www.facebook.com/o.php?k=3DAS3qEPPAIg9owwW3FuQ&u=3D100079731229247=
+&mid=3D60122f12dc6caG5b05a0d4423fG0G0&ee=3DAY2xa316gePuGGWW0DhI4O-5uIjaoDZ=
+Z-u3CDITTE9o3dle79Hes78KSFy2iY4kGTTHtC4Uc6mBfPh4p1ZmKW8mg
+Meta Platforms, Inc., Attention: Community Support, 1 Facebook Way, Menlo =
+Park, CA 94025
+Untuk membantu menjaga akun Anda tetap aman, jangan teruskan email ini. =
+Ikuti tautan di bawah untuk mempelajari selengkapnya.
+https://www.facebook.com/email_forward_notice/?mid=3D60122f12dc6caG5b05a0d=
+4423fG0G0
+
+
+--b1_c9838e5053a059c816657dc6ec9c2b7d
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional =
+//EN"><html><head><title>Facebook</title><meta http-equiv=3D"Content-Type" =
+content=3D"text/html; charset=3Dutf-8" /><style nonce=3D"zsE0XHQp">@media =
+all and (max-width: 480px){*[class].ib_t{min-width:100% =
+!important}*[class].ib_row{display:block =
+!important}*[class].ib_ext{display:block !important;padding:10px 0 5px =
+0;vertical-align:top !important;width:100% =
+!important}*[class].ib_img,*[class].ib_mid{vertical-align:top =
+!important}*[class].mb_blk{display:block =
+!important;padding-bottom:10px;width:100% =
+!important}*[class].mb_hide{display:none =
+!important}*[class].mb_inl{display:inline =
+!important}*[class].d_mb_flex{display:block =
+!important}}.d_mb_show{display:none}.d_mb_flex{display:flex}@media only =
+screen and (max-device-width: 480px){.d_mb_hide{display:none =
+!important}.d_mb_show{display:block !important}.d_mb_flex{display:block =
+!important}}.mb_text h1,.mb_text h2,.mb_text h3,.mb_text h4,.mb_text =
+h5,.mb_text h6{line-height:normal}.mb_work_text =
+h1{font-size:18px;line-height:normal;margin-top:4px}.mb_work_text =
+h2,.mb_work_text =
+h3{font-size:16px;line-height:normal;margin-top:4px}.mb_work_text =
+h4,.mb_work_text h5,.mb_work_text =
+h6{font-size:14px;line-height:normal}.mb_work_text =
+a{color:#1270e9}.mb_work_text p{margin-top:4px}</style></head><body =
+style=3D"margin:0;padding:0;" dir=3D"ltr" bgcolor=3D"#ffffff"><table =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" =
+id=3D"email_table" style=3D"border-collapse:collapse;"><tr><td =
+id=3D"email_content" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;background:#ffffff;"><table =
+border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td height=3D"1" colspan=3D"3" =
+style=3D"line-height:1px;"><span =
+style=3D"color:#FFFFFF;font-size:1px;opacity:0;">=C2=A0 =C2=A0 Ade Malsasa =
+Akbar mengirimi Anda pesan. 23 Jul, 02:54 PM =C2=A0 =C2=A0 View message Go =
+to profile =C2=A0 =C2=A0</span></td></tr><tr><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;html_width:100%;"><tr =
+style=3D""><td height=3D"9" style=3D"line-height:9px;" =
+colspan=3D"4">&nbsp;</td></tr><tr><td align=3D"left" style=3D""><a =
+href=3D"https://www.facebook.com/messenger/email/?recipient_fbid=3D1000797=
+31229247&amp;sender_fbid=3D1274051677&amp;thread_fbid=3D1274051677&amp;is_=
+group_thread=3D0&amp;source=3Dmsg&amp;notif_id=3DU1U60122f12dc6caG5b05a0d4=
+423fG601233ac3c99cG0&amp;message_id=3Dmid.%24cAABbBeskPmKPswOYkWJgb5PHEekZ=
+&amp;cta_type=3Dopen_messenger_header&amp;is_fbm_redirect=3D0" =
+style=3D"color:#1b74e4;text-decoration:none;"><img width=3D"24px" =
+src=3D"https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/jt-7SO2I1zC.png" =
+height=3D"24px" style=3D"border:0;" /></a></td><td width=3D"9" =
+style=3D"display:block;width:9px;">&nbsp;&nbsp;&nbsp;</td><td =
+align=3D"left" style=3D"font-size:15px;line-height:20px;font-weight:400;fo=
+nt-family:SFProText, Facebook Sans, Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;"><span class=3D"mb_text"><a =
+href=3D"https://www.facebook.com/messenger/email/?recipient_fbid=3D1000797=
+31229247&amp;sender_fbid=3D1274051677&amp;thread_fbid=3D1274051677&amp;is_=
+group_thread=3D0&amp;source=3Dmsg&amp;notif_id=3DU1U60122f12dc6caG5b05a0d4=
+423fG601233ac3c99cG0&amp;message_id=3Dmid.%24cAABbBeskPmKPswOYkWJgb5PHEekZ=
+&amp;cta_type=3Dopen_messenger_header&amp;is_fbm_redirect=3D0" =
+style=3D"color:#1b74e4;text-decoration:none;"><span =
+style=3D"white-space:nowrap; =
+color:black;">Messenger</span></a></span></td><td align=3D"right" =
+style=3D"width:100%;font-size:15px;line-height:20px;color:messenger-color-=
+blue-light-2020;font-family:SFProText, Facebook Sans, Helvetica =
+Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;font-weight:400;"></td></tr><tr =
+style=3D"border-bottom:solid 1px #e5e5e5;"><td height=3D"9" =
+style=3D"line-height:9px;" colspan=3D"4">&nbsp;</td></tr></table></td><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr style=3D""><td =
+height=3D"40" style=3D"line-height:40px;">&nbsp;</td></tr><tr><td =
+style=3D""><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+align=3D"center" class=3D"messenger.sender.table" =
+style=3D"border-collapse:collapse;"><tr><td align=3D"center" style=3D""><a =
+href=3D"https://facebook.com/email/appredirect/?rid=3D100079731229247&amp;=
+fallback_uri=3Dhttps%3A%2F%2Fwww.facebook.com%2Fademalsasa&amp;native_uri=
+=3Dfb%3A%2F%2Fprofile%2F1274051677&amp;email_type=3Demail" =
+style=3D"color:#1b74e4;text-decoration:none;"><img src=3D"https://scontent=
+.xx.fbcdn.net/v/t1.18169-1/421767_2736191645348_376954457_n.jpg?_nc_cat=3D=
+106&amp;ccb=3D1-7&amp;_nc_sid=3Da64a2f&amp;_nc_ohc=3DjvZ6u-HkbggAX9tLzi4&a=
+mp;_nc_ad=3Dz-m&amp;_nc_cid=3D0&amp;_nc_ht=3Dscontent.xx&amp;oh=3D00_AfAyy=
+eqNVTbk5brAFTdm3qMqSRe1nFNSTchmEYbHoHDrrQ&amp;oe=3D64E45EE5" =
+style=3D"border:0;border-radius:300px;width:100px;height:100px;" =
+/></a></td></tr></table></td></tr><tr style=3D""><td height=3D"16" =
+style=3D"line-height:16px;">&nbsp;</td></tr><tr><td style=3D""><table =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" =
+class=3D"messenger.sender.table" =
+style=3D"border-collapse:collapse;"><tr><td style=3D""><span =
+style=3D"text-align:center;display:block;font-family:SFProDisplay-Regular, =
+Segoe UI, Helvetica Neue, Helvetica, Arial, =
+sans-serif;font-size:20px;line-height:24px;"><a href=3D"https://facebook.c=
+om/email/appredirect/?rid=3D100079731229247&amp;fallback_uri=3Dhttps%3A%2F=
+%2Fwww.facebook.com%2Fademalsasa&amp;native_uri=3Dfb%3A%2F%2Fprofile%2F127=
+4051677&amp;email_type=3Demail" =
+style=3D"color:#1b74e4;text-decoration:none;"><span =
+style=3D"font-weight:bold; color:black; display:block;">Ade Malsasa =
+Akbar</span></a> mengirimi Anda pesan.</span></td></tr><tr><td =
+align=3D"center" style=3D""><span =
+style=3D"text-align:center;display:block;font-family:SFProText, Facebook =
+Sans, Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-ser=
+if;font-weight:400;font-size:13px;line-height:18px;margin-top:8px;color:rg=
+ba(0, 0, 0, 0.34);">23 Jul, 02:54 PM</span></td></tr></table></td></tr><tr =
+style=3D""><td height=3D"16" =
+style=3D"line-height:16px;">&nbsp;</td></tr><tr><td style=3D""><table =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" =
+style=3D"border-collapse:collapse;"><tr><td style=3D""><tr style=3D""><td =
+height=3D"4" style=3D"line-height:4px;">&nbsp;</td></tr></td></tr><tr><td =
+style=3D""><a href=3D"https://www.facebook.com/messenger/email/?recipient_=
+fbid=3D100079731229247&amp;sender_fbid=3D1274051677&amp;thread_fbid=3D1274=
+051677&amp;is_group_thread=3D0&amp;source=3Dmsg&amp;notif_id=3DU1U60122f12=
+dc6caG5b05a0d4423fG601233ac3c99cG0&amp;message_id=3Dmid.%24cAABbBeskPmKPsw=
+OYkWJgb5PHEekZ&amp;cta_type=3Dview_message_body&amp;is_fbm_redirect=3D0" =
+style=3D"color:#1b74e4;text-decoration:none;"><span =
+style=3D"border-radius:10px;padding:8px 16px 8px =
+16px;text-align:center;font-family:SFProText, Facebook Sans, Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:15p=
+x;line-height:20px;display:inline-block;color:#ffffff;background-color:#0A=
+7CFF;width:312px;font-weight:400;margin-bottom:4px;margin-top:4px;">View =
+message</span></a></td></tr><tr><td style=3D""><a href=3D"https://facebook=
+.com/email/appredirect/?rid=3D100079731229247&amp;fallback_uri=3Dhttps%3A%=
+2F%2Fwww.facebook.com%2Fademalsasa&amp;native_uri=3Dfb%3A%2F%2Fprofile%2F1=
+274051677&amp;email_type=3Demail" =
+style=3D"color:#1b74e4;text-decoration:none;"><span =
+style=3D"border-radius:10px;padding:8px 16px 8px =
+16px;text-align:center;font-family:SFProText, Facebook Sans, Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:15p=
+x;line-height:20px;display:inline-block;color:#0A7CFF;background-color:#ff=
+ffff;width:312px;font-weight:400;margin-bottom:4px;margin-top:4px;"><img =
+src=3D"https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/I92GqZOkKcu.png" =
+style=3D"border:0;margin-right:7.5px;position:relative;top:2px;width:16px;=
+height:16px;" />Go to profile</span></a></td></tr><tr><td style=3D""><tr =
+style=3D""><td height=3D"4" =
+style=3D"line-height:4px;">&nbsp;</td></tr></td></tr></table></td></tr><tr =
+style=3D""><td height=3D"16" =
+style=3D"line-height:16px;">&nbsp;</td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"left" style=3D"border-collapse:collapse;"><tr =
+style=3D"border-top:solid 1px #e5e5e5;"><td height=3D"19" =
+style=3D"line-height:19px;">&nbsp;</td></tr><tr><td =
+style=3D"font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana=
+,arial,sans-serif;font-size:11px;color:#00000057;line-height:13px;font-wei=
+ght:300;">Pesan ini dikirim ke <a =
+href=3D"mailto:center&#064;warceuproject.dev" style=3D"color:#1b74e4;text-=
+decoration:none;">center&#064;warceuproject.dev</a>. Jika Anda tidak ingin =
+menerima email dari Meta ini di masa mendatang, <a href=3D"https://www.fac=
+ebook.com/o.php?k=3DAS3qEPPAIg9owwW3FuQ&amp;u=3D100079731229247&amp;mid=3D=
+60122f12dc6caG5b05a0d4423fG0G0&amp;ee=3DAY1yvFEwvnYa8crsDmUshQrbZhFhViqwrU=
+BQnxwgzsc4mtw6iMuk7iwtCZy3GLRr5a0t25nAVRtFNJaz_dC_T6GM" =
+style=3D"color:#1b74e4;text-decoration:none;">berhenti =
+berlangganan</a>.<br />Meta Platforms, Inc., Attention: Community Support, =
+1 Facebook Way, Menlo Park, CA 94025</td></tr></table></td><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr><td =
+style=3D"font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana=
+,arial,sans-serif;font-size:11px;color:#00000057;line-height:13px;font-wei=
+ght:300;"><span class=3D"mb_text" style=3D"font-family:Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:11p=
+x;color:#00000057;line-height:13px;font-weight:300;">Untuk membantu =
+menjaga akun Anda tetap aman, jangan teruskan email ini. <a =
+style=3D"color:#1b74e4;text-decoration:none;" href=3D"https://www.facebook=
+.com/email_forward_notice/?mid=3D60122f12dc6caG5b05a0d4423fG0G0">Pelajari =
+selengkapnya</a></span></td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr =
+style=3D""><td height=3D"20" style=3D"line-height:20px;" =
+colspan=3D"3">&nbsp;</td></tr></table><span style=3D""><img =
+src=3D"https://www.facebook.com/email_open_log_pic.php?mid=3D60122f12dc6ca=
+G5b05a0d4423fG0G0" style=3D"border:0;width:1px;height:1px;" =
+/></span></td></tr></table></body></html>
+
+
+
+--b1_c9838e5053a059c816657dc6ec9c2b7d--
+

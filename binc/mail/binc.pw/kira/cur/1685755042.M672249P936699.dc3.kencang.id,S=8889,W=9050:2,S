@@ -1,0 +1,161 @@
+Return-Path: <ingeocon@webhosting2033.is.cc>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id IMz7JqKUemT7Sg4AMUeTPA
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	for <kira@binc.pw>; Sat, 03 Jun 2023 08:17:22 +0700
+Return-path: <ingeocon@webhosting2033.is.cc>
+Envelope-to: kira@binc.pw
+Delivery-date: Sat, 03 Jun 2023 08:17:22 +0700
+Received: from bumble.birch.relay.mailchannels.net ([23.83.209.25]:41457)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q5FtQ-003wfs-0M
+	for kira@binc.pw;
+	Sat, 03 Jun 2023 08:17:22 +0700
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id EF1D36C0EAB
+	for <kira@binc.pw>; Sat,  3 Jun 2023 01:16:35 +0000 (UTC)
+Received: from relay1-fwd-b.mailbaby.net (unknown [127.0.0.6])
+	(Authenticated sender: interserver)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 372BB6C0FC5
+	for <kira@binc.pw>; Sat,  3 Jun 2023 01:16:35 +0000 (UTC)
+ARC-Seal: i=2; s=arc-2022; d=mailchannels.net; t=1685754995; a=rsa-sha256;
+	cv=pass;
+	b=EAXS6ZBpaYIm8y+lqqvuuhAQR6q6HjT+TFP68VsZKaqNujr5v1EQFiuHyAzQtKnYaS34V8
+	wgTzNri+CRk9jdLTDxV3BfwbX30K14RWkD5J7AiRQDA0KkEgSPnV4GyKnLfXsznWpA8g7C
+	9xl2VFkFoBlpBSpN7e7Fmx7WJ7VW80e9+LxDanQWbQU3IP2B8N7iv8I5Uo/U2CNBB2iem4
+	f1gLD2eGFFO7Ur3VhjLVaLDWGtcvClrYJ0aPpMWFYzInQnjtvxNo0H16SsCZ04CPDAsja1
+	SM5CF5cKysHsO5pZQX0IavKSLSDHmjKdbUISFyLj7VnYpAEux9Zc8Tw3mf/GzQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1685754995;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=KdKO/ityJaK+o/NHmJo8EaDtiRreiK7pgA0X/CmgG5k=;
+	b=uhqPVhi6fgVFeHdZYI94CAERl7dKFLKI8obCEYaxS8QKZXkPLfE5aC3SdnH1/aJcyD9uro
+	yyEWWilPybZZWKsHOGAZrunR/eElEWLYF446IDX2z2cnxvO4a+iAwRcl7iU/Lgrbl1H+iZ
+	dkwTrk1ueiKRrGloK55R0N65wjXXGIJXvBdPwnlLb9FCEvuLP0DzJbxek4lfn2xCfJta8M
+	Pu/0lKaUH5ujVPNOnvqrKPzBLuGQEdbojOgW+2SyeaMbggmcyBtxEG+s87w9W7vZtr63Xi
+	f0z+t+agmWY/TWEC3qbozHChvaE0Og4XEjZHZSPcXkkR4gGV0R5Qis8AghCfpg==
+ARC-Authentication-Results: i=2;
+	rspamd-56648fb6f9-2lm24;
+	arc=pass ("mailbaby.net:s=detka:i=1");
+	auth=pass smtp.auth=interserver smtp.mailfrom=ingeocon@webhosting2033.is.cc
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MC-Relay: Neutral
+X-MailChannels-SenderId: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MailChannels-Auth-Id: interserver
+X-Callous-Cellar: 4f5341c04a05ea1f_1685754995724_3034533444
+X-MC-Loop-Signature: 1685754995724:1959188379
+X-MC-Ingress-Time: 1685754995723
+Received: from relay1-fwd-b.mailbaby.net (relay1-fwd-b.mailbaby.net
+ [174.138.180.162])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.120.163.32 (trex/6.8.1);
+	Sat, 03 Jun 2023 01:16:35 +0000
+Received: from webhosting2033.is.cc ([68.168.213.91] webhosting2033.is.cc)
+ (Authenticated sender: webhosting2033)
+ by relay1-fwd-b.mailbaby.net (InterServerMTA) with ESMTPSA id 1887ed3cfac000f0bf.001
+ for <kira@binc.pw>
+ (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256);
+ Sat, 03 Jun 2023 01:16:30 +0000
+X-Zone-Loop: d204b2ba915f8e2eb1ee04cd7989e8680591455f0e72
+ARC-Authentication-Results: i=1;	rspamd6.mailbaby.net;	auth=pass
+ smtp.auth=webhosting2033 smtp.mailfrom=ingeocon@webhosting2033.is.cc
+ARC-Seal: i=1; s=detka; d=mailbaby.net; t=1685754990; a=rsa-sha256;
+	cv=none;
+	b=U0V0OaxF2qEjPnPTtxWKojcU7ESUe+5QXvQ+ajHlMcQrSr+ozpQAspN8gCEezUN5RqyyUp
+	xz4QRS9Ix0uaOBDqruRE5vQG+BURF2EUjMsV4YMsWiOnk3ojOJYsMiJZ9IUUlRZEsgFFzW
+	jMtmtND51ZeLBDGhQsVws4e+UDjcYlfCKoVXiB52f2ZMXqoDbOq08sp7BrlFb5flUNkfo1
+	5N8iVtqik4RJOtzoHEpmg0nF+S4//OKzHXxuk8A1vqW1qYPYYLS8eA9a3rRdI+9cy0/MRu
+	KxL0I8mB8txuXTs1C62g8EKYRHxFE80BGA+4Cnoh4o6SeLrfFvkrWNk3AE0O5Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailbaby.net;	s=detka; t=1685754990;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=KdKO/ityJaK+o/NHmJo8EaDtiRreiK7pgA0X/CmgG5k=;
+	b=H9EcoJToWGJEoKNNSQ6C7ybQviDcmpGF6BDjgAblsRTBxRXY4mQBaqr6M8uJA+rc3K1dYb
+	Iqfq79lktssPXZlSlYBwrpMQahuKSNX7FKEdlFIboEO+J3DvA3S1jpcpo5z7gVzu65sBKY
+	Lha8hqYN85j0LYEx6nqFaKKBJY+C5/DqDPZYChh6B5Z9Qenc8UYWCulrMNV2KgPp7hYxe6
+	sqQkxFqETvuZBHutql+AL0JZMr7fHQ5wNuKCvXhoCozWTnrt0ZTqb9F5U9ZFWye8SFyRNz
+	CfsZUEXO9a71Z0bzAlMTdQRKrotW5u72NqLFDeUgFaJW1WyCGLoIUH10bRix7g==
+X-SPF: pass
+X-Originating-IP: [68.168.213.91]
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=webhosting2033.is.cc; s=default; h=Sender:Content-Type:MIME-Version:
+	Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=KdKO/ityJaK+o/NHmJo8EaDtiRreiK7pgA0X/CmgG5k=; b=bDA5Cb27ZF5W9L/l2dXipfKhuk
+	FoFyPG8EVeashxHwGCz2kZJ5cfEGqyVKsLJljzMrcYQBNSy8hgWumqBNu5s1br/4ulW2E233rCawS
+	1Orrlp4i32ngtN0/kPlfAGXahxN5u9x0z919yot8xQgCd+ny0qE7F2VZT0mWDurwPC6iTdlgjTDWR
+	Xpx62Bsoxc8b0PHlycSF27fW8o4MGCjyQ6m0ptxKqHMAl3GKfjLRcb/u4cMA6Ss0un77mrUfTIHiu
+	GneAgpavBGjDM3RnZPXpPvLKXC8Q7SZLYAjowVV4rC4/vIFvxuVFzI8wgZYkKHm8djZxCIl1hivnA
+	9OScJBzA==;
+Received: from ingeocon by webhosting2033.is.cc with local (Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q5FsZ-002MvQ-1x
+	for kira@binc.pw;
+	Fri, 02 Jun 2023 21:16:30 -0400
+To: kira@binc.pw
+Subject: [InGEO consulting] Please moderate: "fifteen Cues that a man doesn't like you, does not want a love, the guy just would like to have fun"
+X-PHP-Script: ingeoconsulting.com/wp-comments-post.php for 171.38.10.72
+X-PHP-Originating-Script: 1159:class-phpmailer.php
+Date: Sat, 3 Jun 2023 01:16:27 +0000
+From: WordPress <wordpress@ingeoconsulting.com>
+Message-ID: <5340226f9cf6495bf96d5b4279e55a28@ingeoconsulting.com>
+X-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <ingeocon@webhosting2033.is.cc>
+X-AuthUser: ingeocon@webhosting2033.is.cc
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "fifteen Cues that a man doesn't
+    like you, does not want a love, the guy just would like to have fun" is waiting
+    for your approval https://ingeoconsulting.com/2023/01/02/fift [...] 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: ingeoconsulting.com]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+X-Spam-Flag: NO
+
+A new comment on the post "fifteen Cues that a man doesn't like you, does not want a love, the guy just would like to have fun" is waiting for your approval
+https://ingeoconsulting.com/2023/01/02/fifteen-cues-that-a-man-doesn-t-like-you-does-not/
+
+Author: gate io (IP address: 171.38.10.72, 171.38.10.72)
+Email: 43856875@outlook.com
+URL: https://www.gate.io/ja/signup/XlQVXVo
+Comment: 
+I may need your help. I tried many ways but couldn't solve it, but after reading your article, I think you have a way to help me. I'm looking forward for your reply. Thanks.
+
+Approve it: https://ingeoconsulting.com/wp-admin/comment.php?action=approve&c=148#wpbody-content
+Trash it: https://ingeoconsulting.com/wp-admin/comment.php?action=trash&c=148#wpbody-content
+Spam it: https://ingeoconsulting.com/wp-admin/comment.php?action=spam&c=148#wpbody-content
+Currently 43 comments are waiting for approval. Please visit the moderation panel:
+https://ingeoconsulting.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

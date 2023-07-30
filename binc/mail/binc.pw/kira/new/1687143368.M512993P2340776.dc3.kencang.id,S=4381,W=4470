@@ -1,0 +1,89 @@
+Return-Path: <cncmartbox@nvme.securewebserver.co.in>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id GK9JHMjDj2SotyMAMUeTPA
+	(envelope-from <cncmartbox@nvme.securewebserver.co.in>)
+	for <kira@binc.pw>; Mon, 19 Jun 2023 09:56:08 +0700
+Return-path: <cncmartbox@nvme.securewebserver.co.in>
+Envelope-to: kira@binc.pw
+Delivery-date: Mon, 19 Jun 2023 09:56:08 +0700
+Received: from static.131.87.21.65.clients.your-server.de ([65.21.87.131]:38340)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <cncmartbox@nvme.securewebserver.co.in>)
+	id 1qB53k-00CCkV-1j
+	for kira@binc.pw;
+	Mon, 19 Jun 2023 09:56:08 +0700
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sgafi.co.in
+	; s=default; h=Content-Type:MIME-Version:Message-ID:From:Date:Subject:To:
+	Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=YGrUKdeZPFTQwAVx6tgJgnf8zHSenQenAW/K1zEHIFE=; b=XkrYczxkTg00QyJy2tZ7jCjbxQ
+	F8Y+wA1hX/eAdoYkhz03nZZ118gNYeSCl//2SiFxKeV/+urq2cFdNJuTL9XG/js8xqCrG0SbhrGuD
+	xzs5NbKG0al/hFMdH79RQIwjxKpi4S8yFOlI+i4T8/QQpGIfjMWux+3n/bHD/R6LwdHrBKvb4NFlq
+	1r5amWNMKAfXhoLdwkaFtjAaOB1ntQOE68qDL0+65cPYU2YD8//CnzrcUuTMgxTV10jS8M68UNSFm
+	xe1wjO3kTdoLx2eSYg5WHe2boUyPSGdHYB5ZAKNOl65LxwvqIPPcQv9ZPhSjVEDjIOGDTZ0wbbaI8
+	H3Svk/nw==;
+Received: from cncmartbox by nvme.securewebserver.co.in with local (Exim 4.96)
+	(envelope-from <cncmartbox@nvme.securewebserver.co.in>)
+	id 1qB532-00CM4l-0a
+	for kira@binc.pw;
+	Mon, 19 Jun 2023 08:25:20 +0530
+To: kira@binc.pw
+Subject: [Seized by 3xpl0it] New User Registration
+X-PHP-Script: sgafi.co.in/wp-admin/user-new.php for 120.188.64.113
+ X-PHP-Originating-Script: 1084:PHPMailer.php
+Date: Mon, 19 Jun 2023 02:55:20 +0000
+From: Seized by 3xpl0it <wordpress@sgafi.co.in>
+Message-ID: <EVJTyHk73cUeVa7RSqOrUkv5C81GtLABX4rKA10@sgafi.co.in>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - nvme.securewebserver.co.in
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [1084 983] / [47 12]
+X-AntiAbuse: Sender Address Domain - nvme.securewebserver.co.in
+X-Get-Message-Sender-Via: nvme.securewebserver.co.in: authenticated_id: cncmartbox/from_h
+X-Authenticated-Sender: nvme.securewebserver.co.in: wordpress@sgafi.co.in
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: cncmartbox.com:/public_html/sgafi.co.in/wp-admin
+X-Spam-Status: No, score=3.2
+X-Spam-Score: 32
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  New user registration on your site Seized by 3xpl0it: Username:
+    cidoh Email: cidoh1@eeu.jp 
+ Content analysis details:   (3.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 CK_HELO_GENERIC        Relay used name indicative of a Dynamic Pool or
+                             Generic rPTR
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: sgafi.co.in]
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  3.2 HELO_DYNAMIC_IPADDR    Relay HELO'd using suspicious hostname (IP
+                             addr 1)
+X-Spam-Flag: NO
+
+New user registration on your site Seized by 3xpl0it:
+
+Username: cidoh
+
+Email: cidoh1@eeu.jp
+

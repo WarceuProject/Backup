@@ -1,0 +1,480 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202307 will be lost/reset.
+# Last config file used to build this data file was /home/binc/tmp/awstats/awstats.binc.pw.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2000                
+POS_TIME 2679                
+POS_VISITOR 10250               
+POS_DAY 12515               
+POS_DOMAIN 3405                
+POS_LOGIN 3740                
+POS_ROBOT 3895                
+POS_WORMS 4433                
+POS_EMAILSENDER 4564                
+POS_EMAILRECEIVER 4707                
+POS_SESSION 12836               
+POS_SIDER 13016               
+POS_FILETYPES 4842                
+POS_DOWNLOADS 4975                
+POS_OS 5023                
+POS_BROWSER 5173                
+POS_SCREENSIZE 5459                
+POS_UNKNOWNREFERER 5533                
+POS_UNKNOWNREFERERBROWSER 5845                
+POS_ORIGIN 5927                
+POS_SEREFERRALS 6063                
+POS_PAGEREFS 6207                
+POS_SEARCHWORDS 6453                
+POS_KEYWORDS 6605                
+POS_MISC 2341                
+POS_ERRORS 6664                
+POS_CLUSTER 3596                
+POS_SIDER_404 6801                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20230730041724 51 9310 8529551558128
+FirstTime 20230701030036
+LastTime 20230714022609
+LastUpdate 20230730042842 51 0 51 0 0
+TotalVisits 55                  
+TotalUnique 54                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 54                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+AddToFavourites 0 161 0
+QuickTimeSupport 0 0 0
+RealPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+DirectorSupport 0 0 0
+TotalMisc 0 0 0
+FlashSupport 0 0 0
+JavaEnabled 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 2 2 8440 11 31 25076
+1 0 0 0 4 10 6269
+2 2 2 273 65 86 17948
+3 4 4 19854 411 428 258174
+4 2 2 8440 22 38 41474
+5 2 2 8440 25 46 40441
+6 5 5 20140 32 51 33367
+7 11 11 94183 408 429 307648
+8 25 25 105500 41 60 57909
+9 7 7 29740 16 33 18002
+10 7 7 29540 44 65 31223
+11 11 11 54572 387 399 273808
+12 4 4 16870 23 37 23561
+13 2 2 8440 92 113 42368
+14 6 6 25320 29 45 20707
+15 4 4 16880 430 451 311497
+16 0 0 0 33 52 46054
+17 17 17 71740 31 61 57543
+18 12 12 46520 45 74 48515
+19 1 1 4220 369 398 278185
+20 1 1 4220 28 40 32513
+21 12 12 50640 19 47 29656
+22 2 2 8640 45 56 38419
+23 0 0 0 395 411 291636
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 9
+us 48 48 250128
+id 34 34 142520
+be 23 23 93510
+ip 21 21 91594
+ru 4 4 16880
+in 4 4 16880
+eu 2 2 8440
+th 2 2 8440
+br 1 1 4220
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 11
+Googlebot/ 33 135040 20230713085035 0
+bingbot/ 27 108120 20230713181156 0
+AhrefsBot/ 20 89402 20230724054730 0
+SemrushBot/ 16 76852 20230725145532 0
+YandexBot/ 10 42200 20230710155454 0
+MJ12bot/ 10 42200 20230712194730 0
+DotBot/ 3 19436 20230717185154 0
+yandex 3 5234 20230728025719 0
+facebookexternalhit/ 2 8430 20230713113204 0
+BLEXBot/ 2 8440 20230702075714 0
+Googlebot\-Image/ 1 4220 20230710184215 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 4
+cgi 110 459965 0 0
+xml 17 71740 0 0
+html 9 85273 0 0
+php 3 15634 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 6
+win10 33 33
+android 11 11
+Unknown 46 46
+macosx15 7 7
+android10 39 39
+linuxubuntu 3 3
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 12
+chrome106.0.0.0 2 2
+safari16.4.1 1 1
+cloudflare 16 16
+firefox115.0 3 3
+chrome114.0.5735.196 7 7
+mozilla 30 30
+chrome114.0.0.0 46 46
+chrome78.0.3904.108 19 19
+chrome108.0.0.0 5 5
+firefox114.0 2 2
+chrome87.0.4280.141 6 6
+firefox91.0 2 2
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 3
+Mozilla/5.0_(compatible;_CensysInspect/1.1;__https://about.censys.io/) 20230708083700
+Mozilla/5.0_(compatible;_InternetMeasurement/1.0;__https://internet-measurement.com/) 20230711063017
+Cloudflare-SSLDetector 20230707115442
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 41 41
+From1 0 0
+From2 0 0
+From3 12 12
+From4 86 86
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 3
+https://mail.binc.pw 7 7
+https://mail.binc.pw/favicon.ico 4 4
+https://mail.binc.pw/robots.txt 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 5
+404 288 2124
+401 2 104
+403 3 2097
+500 347 0
+302 2457 1678131
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 119
+/new/.git/config 1 -
+/sitemap.txt 1 -
+//2020/wp-includes/wlwmanifest.xml 1 -
+/jscripts/get_updates.js 1 -
+/live/.git/config 1 -
+/new/ 1 http://binc.pw/new/
+/old-cuburn/.git/config 1 -
+/build/.git/config 1 -
+//sito/wp-includes/wlwmanifest.xml 1 -
+/media../.git/config 1 -
+/s3/.git/config 1 -
+/wordpress/ 1 http://binc.pw/wordpress/
+/store/.git/config 1 -
+/application/.git/config 1 -
+/amphtml/.git/config 1 -
+/sitemaps.xml 3 -
+/aomanalyzer/.git/config 1 -
+/vendor/.git/config 1 -
+/qa/.git/config 1 -
+/wp-includes/js/.git/config 1 -
+/sitemap_index.xml 23 -
+/indexz.php 1 -
+/api/v3/.git/config 1 -
+//xmlrpc.php 1 -
+/wp/ 1 http://binc.pw/wp/
+//wp-includes/wlwmanifest.xml 1 -
+/backup/ 1 http://binc.pw/backup/
+/content../.git/config 1 -
+/demo/.git/config 1 -
+//2019/wp-includes/wlwmanifest.xml 1 -
+/wp-content/plugins/ht-mega-for-elementor/assets/css/htbbootstrap.css 3 -
+/cms/.git/config 1 -
+/xmlhttp.php 1 https://binc.pw/
+/git/.git/config 1 -
+/blog/.git/config 1 -
+/beta/.git/config 1 -
+/gateway/.git/config 1 -
+//blog/wp-includes/wlwmanifest.xml 1 -
+/lib../.git/config 1 -
+/shop/.git/config 1 -
+/api/user/v2/.git/config 1 -
+/admin/.git/config 1 -
+/repository/.git/config 1 -
+/developer/.git/config 1 -
+/static/.git/config 1 -
+//test/wp-includes/wlwmanifest.xml 1 -
+/vouches.php 1 -
+//news/wp-includes/wlwmanifest.xml 1 -
+/style.php 1 -
+//shop/wp-includes/wlwmanifest.xml 1 -
+/api/user/v3/.git/config 1 -
+/js../.git/config 1 -
+/__MACOSX/.git/config 1 -
+/api/user/v4/.git/config 1 -
+/img../.git/config 1 -
+//site/wp-includes/wlwmanifest.xml 1 -
+/assets../.git/config 1 -
+/.git/config 2 -
+/database/.git/config 1 -
+/test/ 1 http://binc.pw/test/
+/wp-content/plugins/.git/config 1 -
+/a/.git/config 1 -
+/v1/.git/config 1 -
+/api/v2/.git/config 1 -
+/robots.txt 111 -
+/cedit.php 1 -
+/backup/.git/config 1 -
+/alpha/.git/config 1 -
+/blog/wp-content/themes/.git/config 1 -
+/v3/.git/config 1 -
+/staging/.git/config 1 -
+/test/.git/config 1 -
+/api/admin/v2/.git/config 1 -
+/images../.git/config 1 -
+//wordpress/wp-includes/wlwmanifest.xml 1 -
+/api/.git/config 1 -
+//web/wp-includes/wlwmanifest.xml 1 -
+/data/.git/config 1 -
+/api/v4/.git/config 1 -
+/api/user/v1/.git/config 1 -
+//wp2/wp-includes/wlwmanifest.xml 1 -
+/flock/.git/config 1 -
+/newpoints.php 1 -
+/jscripts/tabcontent.js 1 -
+/old/ 1 http://binc.pw/old/
+/blog/ 1 http://binc.pw/blog/
+/bk/ 1 http://binc.pw/bk/
+/wp-content/themes/.git/config 1 -
+/api/admin/v3/.git/config 1 -
+/api/admin/v1/.git/config 1 -
+/static../.git/config 1 -
+/web/.git/config 1 -
+/api/v1/.git/config 1 -
+/common/.git/config 1 -
+/css../.git/config 1 -
+/bans.php 1 -
+/events../.git/config 1 -
+/public/.git/config 1 -
+/api/admin/v4/.git/config 1 -
+//wp1/wp-includes/wlwmanifest.xml 1 -
+/site/.git/config 1 -
+/dev/.git/config 1 -
+/sitemap 1 -
+//website/wp-includes/wlwmanifest.xml 1 -
+/user/.git/config 1 -
+/OLD/ 1 http://binc.pw/OLD/
+/sitemap.xml 3 -
+/samples/.git/config 1 -
+/wp-content/.git/config 1 -
+//wp/wp-includes/wlwmanifest.xml 1 -
+/app/.git/config 1 -
+/m/.git/config 1 -
+/v2/.git/config 1 -
+/repos/.git/config 1 -
+/wiki/.git/config 1 -
+/sitemap.xml.gz 30 -
+//cms/wp-includes/wlwmanifest.xml 1 -
+/ 2 -
+/auth.php 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 54
+174.138.24.184 19 19 80180 20230711080707
+172.70.9.198 9 9 85743 20230702075605
+101.128.110.23 7 7 29540 20230702171951
+172.70.2.4 7 7 37522 20230707115442
+180.242.128.183 6 6 25320 20230703181816
+2409:4070:2c91:7e21::7308:880f 6 6 25320 20230710141527
+2001:448a:50e1:2e5c:34f1:a8c1:85c3:af4d 6 6 25320 20230701103826
+182.2.140.34 5 5 21100 20230703175918
+180.252.113.54 5 5 21100 20230705090652
+185.213.83.158 4 4 16880 20230703152922
+2001:448a:20e0:beb9:b18d:6794:9bc9:9487 4 4 16880 20230709085247
+114.4.220.147 3 3 12660 20230704212353
+2001:448a:20e0:beb9:1c69:6fb1:c320:9aad 3 3 12660 20230711213412
+114.4.213.222 3 3 11700 20230707064719
+103.171.183.1 3 3 12660 20230708185545
+114.10.29.241 2 2 8440 20230705213616
+87.236.176.46 2 2 8540 20230704111221
+167.248.133.187 2 2 8440 20230708074437
+114.4.216.89 2 2 8440 20230709210909
+167.248.133.190 2 2 8440 20230708050154
+138.199.60.30 2 2 8440 20230701173137
+156.146.55.226 2 2 8440 20230711003722
+167.248.133.188 2 2 8440 20230708083700
+2a06:98c0:3600::103 2 2 11414 20230701030039
+49.237.33.38 2 2 8440 20230704132626
+87.236.176.110 1 1 0 20230701180451
+65.154.226.168 1 1 4210 20230711125449
+87.236.176.91 1 1 4220 20230711063015
+87.236.176.206 1 1 4305 20230706115706
+162.142.125.216 1 1 4220 20230704101647
+65.154.226.167 1 1 4220 20230703120338
+87.236.176.227 1 1 4220 20230701202822
+87.236.176.209 1 1 4220 20230706044117
+87.236.176.238 1 1 4220 20230709215504
+162.158.170.249 1 1 273 20230714022041
+87.236.176.67 1 1 4220 20230707120434
+87.236.176.147 1 1 4305 20230706115710
+87.236.176.195 1 1 4220 20230707120423
+103.140.176.130 1 1 4220 20230711180405
+87.236.176.142 1 1 4220 20230702035308
+87.236.176.7 1 1 4320 20230703093337
+87.236.176.71 1 1 4220 20230709170616
+87.236.176.79 1 1 4220 20230704111212
+87.236.176.92 1 1 4220 20230702035309
+172.70.142.233 1 1 0 20230714022609
+87.236.176.144 1 1 4320 20230703093339
+87.236.176.49 1 1 4220 20230706044116
+186.206.251.124 1 1 4220 20230706194043
+87.236.176.98 1 1 4220 20230709170625
+180.245.166.37 1 1 4220 20230710174451
+87.236.176.130 1 1 4220 20230709215509
+87.236.176.15 1 1 4320 20230702225322
+87.236.176.27 1 1 4320 20230702225324
+87.236.176.221 1 1 4220 20230711063017
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 12
+20230701 13 13 53714 6
+20230702 20 20 132363 6
+20230703 18 18 76160 6
+20230704 8 8 33760 5
+20230705 7 7 29540 2
+20230706 5 5 21270 5
+20230707 12 12 57662 4
+20230708 9 9 37980 4
+20230709 10 10 42200 6
+20230710 7 7 29540 2
+20230711 28 28 118150 7
+20230714 2 2 273 2
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 4
+30s-2mn 5
+15mn-30mn 1
+5mn-15mn 1
+0s-30s 48
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 21
+/cgi-sys/suspendedpage.cgi 110 459965 49 50
+/ 9 85273 4 3
+/member.php 2 11414 1 1
+/cgi-sys/suspendedpage.cgi/wp-includes/wlwmanifest.xml 1 4220 1 0
+/cgi-sys/suspendedpage.cgi/wp1/wp-includes/wlwmanifest.xml 1 4220 0 0
+/cgi-sys/suspendedpage.cgi/test/wp-includes/wlwmanifest.xml 1 4220 0 0
+/cgi-sys/suspendedpage.cgi/cms/wp-includes/wlwmanifest.xml 1 4220 0 0
+/cgi-sys/suspendedpage.cgi/news/wp-includes/wlwmanifest.xml 1 4220 0 0
+/cgi-sys/suspendedpage.cgi/media/wp-includes/wlwmanifest.xml 1 4220 0 0
+/cgi-sys/suspendedpage.cgi/web/wp-includes/wlwmanifest.xml 1 4220 0 0
+/cgi-sys/suspendedpage.cgi/wp/wp-includes/wlwmanifest.xml 1 4220 0 0
+/cgi-sys/suspendedpage.cgi/site/wp-includes/wlwmanifest.xml 1 4220 0 0
+/cgi-sys/suspendedpage.cgi/wp2/wp-includes/wlwmanifest.xml 1 4220 0 0
+/cgi-sys/suspendedpage.cgi/2019/wp-includes/wlwmanifest.xml 1 4220 0 0
+/cgi-sys/suspendedpage.cgi/wordpress/wp-includes/wlwmanifest.xml 1 4220 0 0
+/cgi-sys/suspendedpage.cgi/xmlrpc.php 1 4220 0 0
+/cgi-sys/suspendedpage.cgi/shop/wp-includes/wlwmanifest.xml 1 4220 0 0
+/cgi-sys/suspendedpage.cgi/sito/wp-includes/wlwmanifest.xml 1 4220 0 1
+/cgi-sys/suspendedpage.cgi/2018/wp-includes/wlwmanifest.xml 1 4220 0 0
+/cgi-sys/suspendedpage.cgi/website/wp-includes/wlwmanifest.xml 1 4220 0 0
+/cgi-sys/suspendedpage.cgi/blog/wp-includes/wlwmanifest.xml 1 4220 0 0
+END_SIDER

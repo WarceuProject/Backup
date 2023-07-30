@@ -1,0 +1,1629 @@
+Return-Path: <bounce+ecbaba.c761fa-ciel=binc.pw@hello.scribd.com>
+Delivered-To: ciel+spam@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id WNL1G6wYamRJ/DwAMUeTPA
+	(envelope-from <bounce+ecbaba.c761fa-ciel=binc.pw@hello.scribd.com>)
+	for <ciel+spam@binc.pw>; Sun, 21 May 2023 20:12:12 +0700
+Return-path: <bounce+ecbaba.c761fa-ciel=binc.pw@hello.scribd.com>
+Envelope-to: ciel@binc.pw
+Delivery-date: Sun, 21 May 2023 20:12:12 +0700
+Received: from m36-147.mailgun.net ([69.72.36.147]:23434)
+	by dc3.kencang.id with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <bounce+ecbaba.c761fa-ciel=binc.pw@hello.scribd.com>)
+	id 1q0iqu-00GnAz-1r
+	for ciel@binc.pw;
+	Sun, 21 May 2023 20:12:12 +0700
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=hello.scribd.com;
+ q=dns/txt; s=smtp; t=1684674655; x=1684681855; h=Message-Id: Reply-To:
+ X-Feedback-ID: List-Unsubscribe: To: To: From: From: Subject: Subject:
+ Content-Type: Mime-Version: Date: Sender: Sender;
+ bh=YcoUfEzcxKzl2FnFgnaoBZwFSdUs5plUS0WviXiuN44=;
+ b=fBaF7K/lMi8fMZEygkuiV5lab6Z9EIs7rZywedfABMGeF0c3Kra6e3egyj9/w386KjqkmChx/DhSPZx1ezXBdBkeIUOyvxC1sNTEXUKTR5u83iD7J+LulsLO5Do6nyCd2DFNRbz0jp2c4BeW+8IKTUDmjPfOkv/5/KflxFRhUDs=
+X-Mailgun-Sending-Ip: 69.72.36.147
+X-Mailgun-Sid: WyJlNDliNCIsImNpZWxAYmluYy5wdyIsImM3NjFmYSJd
+Received: from <unknown> (<unknown> []) by 266d17bc488f with HTTP id
+ 646a185f24653bda6c88e9fb; Sun, 21 May 2023 13:10:55 GMT
+Sender: hello@hello.scribd.com
+Date: Sun, 21 May 2023 13:10:55 +0000
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="d8ccf89df4acdc4d4dbb6a4d7a137e965b01e2243435b6306aaebe860725"
+From: Scribd <hello@hello.scribd.com>
+To: ciel@binc.pw
+Feedback-ID: 3574869:2610799:22703:iterable
+List-Unsubscribe: <https://iterable.scribd.com/e/encryptedUnsubscribe?_r=92f0cbc6f584418c9def9397d7beca21&_s=52bb8dc2e7d54b66b43c4c637e713dcf&_t=tG5XBBXjcfK_gOn_MvhAFMgxvf19cdRk8EwF10IbfEZhCFEkynSglMghiQj0C0k3u1_3VEP8sxRYsYJcj3MDWS-RfAlMjp8QZsD1hEYfUXM%3D>,<mailto:unsubscribe+2610799+3574869@unsubscribe.iterable.com>
+X-Feedback-ID: 3574869:2610799:22703:iterable
+X-Message-ID: 52bb8dc2e7d54b66b43c4c637e713dcf
+Reply-To: hello@scribd.com
+X-Campaign-ID: 2610799
+X-Mailgun-Variables: {"metadata":
+ "{\"messageId\":\"52bb8dc2e7d54b66b43c4c637e713dcf\",\"templateId\":3574869,\"projectId\":6283,\"campaignId\":2610799}"}
+Message-Id: <20230521131055.4d351521782264b6@hello.scribd.com>
+X-Spam-Status: Yes, score=5.4
+X-Spam-Score: 54
+X-Spam-Bar: +++++
+X-Spam-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Read books with Scribd Claim your FREE 60-day trial before
+    it expires ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+    ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ � [...] 
+ Content analysis details:   (5.4 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: fonts.googleapis.com]
+  0.0 T_SPF_TEMPERROR        SPF: test of record failed (temperror)
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.5 KAM_REALLYHUGEIMGSRC   RAW: Spam with image tags with ridiculously
+                              huge http urls
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  5.0 KAM_SOMETLD_ARE_BAD_TLD .stream, .trade, .pw, .top, .press,
+                             .guru, .casa & .date TLD Abuse
+  0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay
+                             lines
+  0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
+                             Colors in HTML
+X-Spam-Flag: YES
+Subject:  ***SPAM***  You've qualified for a 60 day trial. Activate today!
+
+--d8ccf89df4acdc4d4dbb6a4d7a137e965b01e2243435b6306aaebe860725
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"
+
+Read books with Scribd Claim your FREE 60-day trial before it expires  =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C=20
+
+
+
+
+
+
+ <https://www.scribd.com>=20
+
+
+
+
+
+
+ Your first 60 days are free=20
+ How much can you read in 60 days? Sign up in less than a minute, then chec=
+k=20
+out the recommendations below to get started.=20
+
+
+
+Read free for 60 days <https://www.scribd.com/promo/60daytrial/> =20
+<https://www.scribd.com/promo/60daytrial/>=20
+ Cancel anytime.=20
+
+
+ Find your next read=20
+
+
+
+
+
+
+ <http://www.scribd.com/audiobook/515124006>=20
+
+
+ Fellowship of the Ring, The (The Lord...=20
+
+Listen now <http://www.scribd.com/audiobook/515124006>=20
+
+
+
+
+ <http://www.scribd.com/audiobook/582415128>=20
+
+
+ Elizabeth Taylor: The Grit and Glamou...=20
+
+Listen now <http://www.scribd.com/audiobook/582415128>=20
+
+
+
+
+ <http://www.scribd.com/audiobook/482398441>=20
+
+
+ Klara and the Sun: The Times and Sund...=20
+
+Listen now <http://www.scribd.com/audiobook/482398441>=20
+
+
+
+
+
+
+
+ <http://www.scribd.com/audiobook/514745695>=20
+
+
+ The Paris Apartment=20
+
+Listen now <http://www.scribd.com/audiobook/514745695>=20
+
+
+
+
+ <http://www.scribd.com/audiobook/289188129>=20
+
+
+ Year of Yes: How to Dance It Out, Sta...=20
+
+Listen now <http://www.scribd.com/audiobook/289188129>=20
+
+
+
+
+ <http://www.scribd.com/audiobook/486619648>=20
+
+
+ Let Me Tell You What I Mean=20
+
+Listen now <http://www.scribd.com/audiobook/486619648>=20
+
+
+
+
+Read free for 60 days <https://www.scribd.com/promo/60daytrial/> =20
+<https://www.scribd.com/promo/60daytrial/>=20
+ Cancel anytime.=20
+
+
+
+
+
+
+ <https://www.instagram.com/scribd/>  <https://www.facebook.com/Scribd/> =
+=20
+<https://twitter.com/Scribd/>  <https://www.pinterest.com/scribd/> =20
+<https://www.tiktok.com/@scribd>=20
+
+
+
+
+
+Our blog <https://blog.scribd.com/> Refer a friend=20
+<https://www.scribd.com/referrals?source=3Demail> Unsubscribe=20
+<https://iterable.scribd.com/e/encryptedUnsubscribe?_r=3D92f0cbc6f584418c9d=
+ef9397d7beca21&_s=3D52bb8dc2e7d54b66b43c4c637e713dcf&_t=3DtG5XBBXjcfK_gOn_M=
+vhAFMgxvf19cdRk8EwF10IbfEZhCFEkynSglMghiQj0C0k3u1_3VEP8sxRYsYJcj3MDWS-RfAlM=
+jp8QZsD1hEYfUXM%3D>
+Preferences=20
+<https://www.scribd.com/account-settings/preferences?show_email_prefs=3Dy>=
+=20
+Contact us <https://www.scribd.com/contact>=20
+
+
+
+ This email was sent to ciel@binc.pw=20
+<https://support.scribd.com/hc/articles/210129326>.
+ Scribd, 460 Bryant Street, San Francisco, CA 94107=20
+--d8ccf89df4acdc4d4dbb6a4d7a137e965b01e2243435b6306aaebe860725
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns=3D"http://www.w3=
+=2Eorg/1999/xhtml" xmlns:o=3D"urn:schema=
+s-microsoft-com:office:office" xmlns:=
+v=3D"urn:schemas-microsoft-com:vml" style=3D"margin: 0; padding: 0; -webkit=
+-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-bo=
+x;"> <head> <!--[if gte mso 9]><xml> <o:OfficeDocumentSettings> <o:AllowPNG=
+/> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml>=
+<![endif]--> <title>Read books with Scribd</title> <meta content=3D"IE=3Ded=
+ge" http-equiv=3D"X-UA-Compatible"> <meta name=3D"viewport" content=3D"widt=
+h=3Ddevice-width"> <meta http-equiv=3D"content-type" content=3D"text/html;c=
+harset=3Dutf-8"> <meta name=3D"x-apple-disable-message-reformatting"> <meta=
+ name=3D"format-detection" content=3D"date=3Dno"> <meta name=3D"format-dete=
+ction" content=3D"address=3Dno"> <meta name=3D"format-detection" content=3D=
+"email=3Dno"> <meta name=3D"format-detection" content=3D"telephone=3Dno"> <=
+meta name=3D"color-scheme" content=3D"light dark"> <meta name=3D"supported-=
+color-schemes" content=3D"light dark"> <link href=3D"https://fonts.googleap=
+is.com/css2?family=3DSource+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,30=
+0;1,400;1,600;1,700&family=3DSource+Serif+Pro:ital,wght@0,300;0,400;0,600;0=
+,700;1,300;1,400;1,600;1,700&display=3Dswap" rel=3D"stylesheet"> <style typ=
+e=3D"text/css">html,body,div,tr,td,table,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h=
+6,pre,form,p,blockquote,fieldset,input,abbr,article,aside,details,figcaptio=
+n,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,summar=
+y,time{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:bor=
+der-box;box-sizing:border-box}table{border-collapse:collapse;border-spacing=
+:0}body{background-color:#fff;min-width:320px!important;font-family:'Source=
+ Sans Pro',Helvetica,sans-serif}sup{line-height:0;font-size:70%}.clearfix:a=
+fter{content:" ";visibility:hidden!important;display:block!important;height=
+:0;clear:both!important}@import url('https://fonts.googleapis.com/css2?fami=
+ly=3DSource+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1=
+,700&display=3Dswap');@import url('https://fonts.googleapis.com/css2?family=
+=3DSource+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,70=
+0&display=3Dswap');body{width:100%!important;padding:0;margin:0;background-=
+color:#f0f2f9}.sheet{margin:0 auto;width:100%;max-width:640px;font-family:'=
+Source Sans Pro',Helvetica,sans-serif;border:0;border-collapse:collapse;bor=
+der-spacing:0;-webkit-text-size-adjust:none}#mobile-top section,#mobile-bot=
+tom section{mso-hide:all}.show_me_always{visibility:visible}.preheader-hide=
+{display:none!important;mso-hide:all!important}@media only screen and (max-=
+device-width:768px){*{text-rendering:optimizelegibility}body{-webkit-text-s=
+ize-adjust:110%}}@media only screen and (min-device-width:320px) and (max-d=
+evice-width:428px){#desktop{display:none!important}#mobile-top{width:100%!i=
+mportant;max-width:100%!important;max-height:none!important;float:none!impo=
+rtant;overflow:visible!important;height:inherit!important;display:block!imp=
+ortant;margin:0 auto!important}#mobile-bottom{width:100%!important;max-widt=
+h:100%!important;max-height:none!important;float:none!important;overflow:vi=
+sible!important;height:inherit!important;display:block!important;margin:0 a=
+uto!important}#mobile-wrapper{width:100%!important;max-width:100%!important=
+;max-height:none!important;float:none!important;overflow:visible!important;=
+height:inherit!important;display:block!important;margin:0 auto!important}.m=
+obile{width:100%;font-family:'Source Sans Pro',Helvetica,sans-serif;-webkit=
+-text-size-adjust:none;text-rendering:optimizelegibility}.mobile .grid{padd=
+ing:0 20px}.grid div{padding-bottom:20px!important}.desktop-element{display=
+:none!important}.mobile-element{display:block!important}.section-padding-to=
+p{display:none!important}.logo-padding{height:24px!important;padding:0!impo=
+rtant}.keyline{width:inherit!important}.inside-margins{width:inherit!import=
+ant}.inside-margins-table{width:100%!important}.padding-left{display:none!i=
+mportant}.padding-right{display:none!important}.header{padding:0 28px}.head=
+er-table{width:100%!important}.inside-margins{padding:0 28px!important}.log=
+o-padding-right{width:32px!important}.hero-headline{font-size:32px!importan=
+t;line-height:38px!important}.copy{font-size:16px!important}.hero-section{w=
+idth:100%!important}.hero-img{width:100%!important}.list-tile{width:100%!im=
+portant;display:table-row!important}.list-tile-table{width:100%!important;h=
+eight:auto!important}.list-spacer{display:table-row!important;height:18px}.=
+title-row{display:table-cell!important}.title-copy{padding-bottom:8px!impor=
+tant}.title-copy-padding-bottom{display:block!important}.tile-row-padding-b=
+ottom{height:18px!important}.title-padding-top{height:24px!important;width:=
+358px!important}.thumbnail-container{text-align:right!important}.title-thum=
+bnail-padding-bottom{width:24px!important}u+.body .list-tile{width:100%!imp=
+ortant}u+.body .title-row{display:table-row!important}u+.body .list-tile-co=
+ntainer{width:100%!important}u+.body .list-tile-content{margin:0 auto!impor=
+tant}u+.body .title-info{text-align:center!important;margin:0 auto!importan=
+t;height:auto!important;padding-bottom:24px!important}u+.body .title-info-t=
+able{text-align:center!important;margin:0 auto!important}u+.body .thumbnail=
+-container{text-align:center!important}body[data-outlook-cycle] .list-tile{=
+width:100%!important}body[data-outlook-cycle] .title-row{display:table-row!=
+important}body[data-outlook-cycle] .list-tile-container{width:100%!importan=
+t}body[data-outlook-cycle] .list-tile-content{margin:0 auto!important}body[=
+data-outlook-cycle] .title-info{text-align:center!important;margin:0 auto!i=
+mportant;height:auto!important;padding-bottom:24px!important}body[data-outl=
+ook-cycle] .title-info-table{text-align:center!important;margin:0 auto!impo=
+rtant}body[data-outlook-cycle] .thumbnail-container{text-align:center!impor=
+tant}.footer-text-links{line-height:32px!important}.footer-fine-print{paddi=
+ng:0 24px}}@media only screen and (max-device-width:320px){.list-tile{width=
+:100%!important}.title-row{display:table-row!important}.list-tile-container=
+{width:100%!important}.list-tile-content{margin:0 auto!important}.title-inf=
+o{text-align:center!important;margin:0 auto!important;height:auto!important=
+;padding-bottom:24px!important}.title-info-table{text-align:center!importan=
+t;margin:0 auto!important}.thumbnail-container{text-align:center!important}=
+}@media(prefers-color-scheme:dark){body{background-color:#303030!important}=
+=2Ebody-darkmode{background-color:#3030=
+30!important}.darkmode{background-colo=
+r:#1e1e1e!important;border-left:none!important;border-right:none!important}=
+=2Efooter-darkmode{background-color:#00=
+293f!important}.superheadline{color:#f=
+0a534!important}.headline{color:#fff!important}.copy{color:#fff!important}.=
+cta-button{background-color:#02a793!important}.footnote-copy{color:#fff!imp=
+ortant}.link-copy{color:#02a793!important}.keyline{border-top:1px solid #7f=
+9aa8!important}.dark-img{display:block!important}.light-img{display:none!im=
+portant}.list-tile-table{border:1px solid #cfd6e0}.footer-darkmode{backgrou=
+nd-color:#303030!important}.footer-copy{color:#fff!important}}[data-ogsc] b=
+ody{background-color:#303030!important}[data-ogsc] .body-darkmode{backgroun=
+d-color:#303030!important}[data-ogsc] .darkmode{background-color:#1e1e1e!im=
+portant;border-left:none!important;border-right:none!important}[data-ogsc] =
+=2Efooter-darkmode{background-color:#00=
+293f!important}[data-ogsc] .superheadl=
+ine{color:#f0a534!important}[data-ogsc] .headline{color:#fff!important}[dat=
+a-ogsc] .copy{color:#fff!important}[data-ogsc] .cta-button{background-color=
+:#02a793!important}[data-ogsc] .footnote-copy{color:#fff!important}[data-og=
+sc] .link-copy{color:#02a793!important}[data-ogsc] .keyline{border-top:1px =
+solid #7f9aa8!important}[data-ogsc] .dark-img{display:block!important}[data=
+-ogsc] .light-img{display:none!important}[data-ogsc] .list-tile-table{borde=
+r:1px solid #cfd6e0}[data-ogsc] .footer-darkmode{background-color:#303030!i=
+mportant}[data-ogsc] .footer-copy{color:#fff!important}</style> <!--[if mso=
+]><style type=3D"text/css">table.main{width:640px}</style><![endif]--> </he=
+ad> <body class=3D"body" style=3D"-webkit-box-sizing: border-box; -moz-box-=
+sizing: border-box; box-sizing: border-box; font-family: 'Source Sans Pro',=
+ Helvetica, sans-serif; margin: 0; padding: 0; background-color: #F0F2F9; m=
+in-width: 320px !important; width: 100% !important;"><span style=3D"color:t=
+ransparent;visibility:hidden;display:none;opacity:0;height:0;width:0;font-s=
+ize:0;">Claim your FREE 60-day trial before it expires</span><img src=3D"ht=
+tps://iterable.scribd.com/e/eo?_t=3D92f0cbc6f584418c9def9397d7beca21&amp;_m=
+=3D52bb8dc2e7d54b66b43c4c637e713dcf&amp;_e=3DtG5XBBXjcfK_gOn_MvhAFMgxvf19cd=
+Rk8EwF10IbfEZhCFEkynSglMghiQj0C0k3u1_3VEP8sxRYsYJcj3MDWRZYaF4VQbaOcy8uyE9ao=
+7Frrrx410RCIs5bwUwytCNy" style=3D"border:0;width:1px;height:1px;border-widt=
+h:0px!important;display:none!important;line-height:0!important;" width=3D"1=
+" height=3D"1"/> <div class=3D"preheader-hide" style=3D"margin: 0; padding:=
+ 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing=
+: border-box; max-height: 0px; overflow: hidden; mso-hide: all !important; =
+display: none !important;">&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C </div> <!--[if !mso]=
+><!--> <div class=3D"sheet" style=3D"padding: 0; -webkit-box-sizing: border=
+-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0 auto; =
+width: 100%; max-width: 640px; font-family: 'Source Sans Pro', Helvetica, s=
+ans-serif; border: none; border-collapse: collapse; border-spacing: 0; -web=
+kit-text-size-adjust: none;"> <!--<![endif]--> <!-- GO_TO_WEB --> <div styl=
+e=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing=
+: border-box; box-sizing: border-box; position: absolute; max-height: 0; fo=
+nt-size: 0; text-indent: -999px;"></div> <table align=3D"center" style=3D"p=
+adding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box=
+-sizing: border-box; border-spacing: 0; text-align: center; margin: 0 auto;=
+ border-collapse: collapse !important;"> <tr style=3D"margin: 0; padding: 0=
+; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: =
+border-box;"> <td class=3D"body-darkmode" bgcolor=3D"#F0F2F9" style=3D"padd=
+ing: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-si=
+zing: border-box; background-color: #F0F2F9; width: 100%; margin: 0 auto; t=
+ext-align: center;" width=3D"100%" align=3D"center"> <table class=3D"main" =
+style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-si=
+zing: border-box; box-sizing: border-box; border-collapse: collapse; border=
+-spacing: 0; text-align: center; max-width: 640px;" align=3D"center" max-wi=
+dth=3D"640" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presen=
+tation"> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box=
+; -moz-box-sizing: border-box; box-sizing: border-box;"><td class=3D"sectio=
+n-padding-top" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-b=
+ox; -moz-box-sizing: border-box; box-sizing: border-box; height: 40px; disp=
+lay: block;" height=3D"40">&nbsp;</td></tr> <!--top--> <tr style=3D"margin:=
+ 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box=
+; box-sizing: border-box;"> <td class=3D"darkmode" style=3D"padding: 0; -we=
+bkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: borde=
+r-box; background-color: #fff; border: 1px solid #F0F2F9; text-align: cente=
+r; margin: 0 auto; border-bottom: none !important;" bgcolor=3D"#fff" align=
+=3D"center"> <table class=3D"hero" width=3D"100%" align=3D"center" cellpadd=
+ing=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentation" style=3D"pad=
+ding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-s=
+izing: border-box; border-spacing: 0; text-align: center; margin: 0 auto; m=
+ax-width: 640px; border-collapse: collapse !important;"> <tr style=3D"margi=
+n: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-b=
+ox; box-sizing: border-box;"> <td style=3D"margin: 0; padding: 0; -webkit-b=
+ox-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;=
+"> <!--nav--> <table class=3D"nav" cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" role=3D"presentation" style=3D"border-collapse: collapse !importan=
+t;"> <tr> <td class=3D"padding-left" style=3D"width:32px; "width=3D"32">&nb=
+sp;</td> <td class=3D"header" style=3D"width:576px; text-align: left !impor=
+tant; "width=3D"576"> <table class=3D"header-table"> <tr><td class=3D"logo-=
+padding-top" style=3D"height:32px; "height=3D"32">&nbsp;</td></tr> <tr> <td=
+ align=3D"left"> <div> <picture> <a href=3D"https://iterable.scribd.com/u/c=
+lick?_t=3D92f0cbc6f584418c9def9397d7beca21&_m=3D52bb8dc2e7d54b66b43c4c637e7=
+13dcf&_e=3DqREOxcSyuxXAQAu6D8ZFn9Vc9rqofbKJQWV_xuLXsqJWWZbp2DBg27X4ccBUW2-A=
+NCRtvXNzYsWwGkcye9vcwffrJqOA9tjfGWBZzlARV-caYMzybvkNVvb9DoNJNPPFNlSFb_uiEPm=
+DP1s5fAFem6iFYycf8HGNGgJHI1uh0S5mc76B3yHZvXkzD2ziUReT6BqzME2572q1eYUjveQ1IN=
+pRMtdyYU2jEEVLFuLtc6NL4E2qW3hVjmcOAiHjJRrIay4iQwFsKB_Y6sbo54g9sQ%3D%3D"> <i=
+mg class=3D"logo light-img" src=3D"https://d15k2d11r6t6rl.cloudfront.net/pu=
+blic/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418=
+c9def9397d7beca21/Brand-Assets_2021/header-logos/logo_teal.png" alt=3D"Scri=
+bd" class=3D"show-me-always" border=3D"0" width=3D"131" style=3D"display: b=
+lock; text-align: left; vertical-align: center;"/> <!--[if !mso]><!--> <img=
+ class=3D"logo dark-img" src=3D"https://d15k2d11r6t6rl.cloudfront.net/publi=
+c/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9d=
+ef9397d7beca21/Brand-Assets_2021/header-logos/logo_dk.png" alt=3D"Scribd" c=
+lass=3D"show-me-always" border=3D"0" width=3D"131" style=3D"display: none; =
+text-align: left; vertical-align: center; mso-hide: all !important;"/> <!--=
+<![endif]--> </a> </picture> </div> </td> </tr> <tr><td class=3D"logo-paddi=
+ng-bottom" style=3D"height:24px; "height=3D"24">&nbsp;</td></tr> <tr><td cl=
+ass=3D"keyline" style=3D"font-size: 1px; line-height: 1px; border-top: 1px =
+solid #E3E6EF; width: 576px; text-align: center;" valign=3D"top"></td></tr>=
+ </table> </td> <td class=3D"padding-right" style=3D"width:32px; "width=3D"=
+32">&nbsp;</td> </tr> </table> <!--end nav--> <!--hero--> <table class=3D"h=
+ero-section" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D=
+"0" role=3D"presentation" style=3D"padding: 0; -webkit-box-sizing: border-b=
+ox; -moz-box-sizing: border-box; box-sizing: border-box; border-spacing: 0;=
+ width: 640px; margin: 0 auto; border-collapse: collapse !important;" width=
+=3D"640"> <tbody> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: b=
+order-box; -moz-box-sizing: border-box; box-sizing: border-box;"><td class=
+=3D"hero-content-padding-top" style=3D"margin: 0; padding: 0; -webkit-box-s=
+izing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; hei=
+ght: 40px;" height=3D"40">&nbsp;</td></tr> <!-- hero-copy --> <tr style=3D"=
+margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bor=
+der-box; box-sizing: border-box;"> <td style=3D"margin: 0; padding: 0; -web=
+kit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border=
+-box;"> <table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" role=3D"presentation" style=3D"padding: 0; -webkit-box-sizing: borde=
+r-box; -moz-box-sizing: border-box; box-sizing: border-box; border-spacing:=
+ 0; margin: 0 auto; border-collapse: collapse !important;"> <tbody> <tr sty=
+le=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizin=
+g: border-box; box-sizing: border-box;"> <td class=3D"padding-left" style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box; width: 70px;" width=3D"70">&nbsp;</td>=
+ <td class=3D"inside-margins" align=3D"center" style=3D"margin: 0; padding:=
+ 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing=
+: border-box; width: 500px;" width=3D"500"> <table align=3D"center" cellpad=
+ding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentation" style=3D"pa=
+dding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-=
+sizing: border-box; border-spacing: 0; margin: 0 auto; border-collapse: col=
+lapse !important;"> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing:=
+ border-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <td ali=
+gn=3D"center" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-bo=
+x; -moz-box-sizing: border-box; box-sizing: border-box;"> <table align=3D"c=
+enter" style=3D"padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing=
+: border-box; box-sizing: border-box; border-spacing: 0; margin: 0 auto; te=
+xt-align: center; border-collapse: collapse !important;"> <tr style=3D"marg=
+in: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-=
+box; box-sizing: border-box;"> <td align=3D"center" valign=3D"top" style=3D=
+"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bo=
+rder-box; box-sizing: border-box; font-family: 'Source Serif Pro', Georgia,=
+ serif;"> <div class=3D"hero-headline headline" style=3D"margin: 0; padding=
+: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizin=
+g: border-box; font-family: 'Source Serif Pro', Georgia, serif; font-size: =
+41px; line-height: 49.2px; font-weight: 600; color: #000; text-align: cente=
+r; font-style: normal; padding-bottom: 16px;"> Your first 60 days are free =
+</div> </td> </tr> </table> <!--<![endif]--> </td> </tr> <!--[if mso]><tr><=
+td class=3D"hero-headline-padding-bottom" style=3D"height:16px; "height=3D"=
+16">&nbsp;</td></tr><![endif]--> <tr style=3D"margin: 0; padding: 0; -webki=
+t-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-b=
+ox;"> <td align=3D"center" valign=3D"top" style=3D"margin: 0; padding: 0; -=
+webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bor=
+der-box; font-family: 'Source Sans Pro', Helvetica, sans-serif;"> <div clas=
+s=3D"hero-copy copy" style=3D"margin: 0; padding: 0; -webkit-box-sizing: bo=
+rder-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family:=
+ 'Source Sans Pro', Helvetica, sans-serif; font-size: 18px; line-height: 23=
+px; font-weight: normal; font-weight: 400; color: #000; text-align: center;=
+ font-style: normal;"> How much can you read in 60 days? Sign up in less th=
+an a minute, then check out the recommendations below to get&nbsp;started. =
+</div> </td> </tr> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: =
+border-box; -moz-box-sizing: border-box; box-sizing: border-box;"><td class=
+=3D"body-copy-padding-bottom" style=3D"margin: 0; padding: 0; -webkit-box-s=
+izing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; hei=
+ght: 32px;" height=3D"32">&nbsp;</td></tr> <!--button--> <tr style=3D"margi=
+n: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-b=
+ox; box-sizing: border-box;"> <td align=3D"center" style=3D"margin: 0; padd=
+ing: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-si=
+zing: border-box;"> <a href=3D"https://iterable.scribd.com/u/click?_t=3D92f=
+0cbc6f584418c9def9397d7beca21&_m=3D52bb8dc2e7d54b66b43c4c637e713dcf&_e=3DqR=
+EOxcSyuxXAQAu6D8ZFn6ghy3nKRnFFzrWLvqB0NvxmI0W7q1nBno8LgM-KqgmyuFMwPdRiWX2Zp=
+aLz_yz7GntAmbKm4pzCSmJvKTw1Ipb_V_Z0Cv7cZeHQgNPaTqK_rj3W9P3Epu5cXweut-0cCZRu=
+XOTIrJU6gWPgNADcgqNDRsN5NSb8vUtVgisVqyfrCkoa_ZnFtdr5jeNFGsf4upQD9IwDlSoE5JV=
+4XYHam2TTU7KR9kIGMh-DNPl0p9y7ZEyD5iurlCGXofuFKX9002dehOjG3sVnflBMs66qX-o%3D=
+" style=3D"text-decoration:none;" target=3D"_blank"> <table style=3D"margin=
+: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-bo=
+x; box-sizing: border-box; border-spacing: 0; border-collapse: collapse !im=
+portant;"> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-b=
+ox; -moz-box-sizing: border-box; box-sizing: border-box;"> <td class=3D"des=
+ktop-element" style=3D"margin: 0; -webkit-box-sizing: border-box; -moz-box-=
+sizing: border-box; box-sizing: border-box; border-collapse: collapse !impo=
+rtant; border-spacing: 0 !important; padding: 0 !important;"> <img class=3D=
+"light-img" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integ=
+rators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def9397d7beca2=
+1/Brand-Assets_2021/buttons/EN/cta_read-free-60.png" width=3D"300" height=
+=3D"40" style=3D"display:block;margin:0 auto; color: #fff; text-align:cente=
+r;" alt=3D"[ Read free for 60 days ]"> <!--[if !mso]><!--> <img class=3D"da=
+rk-img" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrato=
+rs/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def9397d7beca21/Br=
+and-Assets_2021/buttons/EN/cta_read-free-60_dk1.png" width=3D"300" height=
+=3D"40" style=3D"display:none; margin:0 auto;color: #fff; text-align:center=
+; mso-hide: all !important;" alt=3D"[ Read free for 60 days ]"> <!--<![endi=
+f]--> </td> </tr> </table> <!--[if !mso]><!--> <table style=3D"margin: 0; p=
+adding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box=
+-sizing: border-box; border-spacing: 0; width: 100%; max-width: 350px; bord=
+er-collapse: collapse !important; mso-hide: all !important;" width=3D"100%"=
+> <tbody> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-bo=
+x; -moz-box-sizing: border-box; box-sizing: border-box;"> <td class=3D"mobi=
+le-element cta-button" align=3D"center" valign=3D"top" style=3D"margin: 0; =
+padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; bo=
+x-sizing: border-box; display: none; font-family: 'Source Sans Pro', Helvet=
+ica, sans-serif; font-size: 18px; line-height: 20px; -webkit-border-radius:=
+ 4px; -moz-border-radius: 4px; border-radius: 4px; background-color: #20828=
+D; width: 100%; mso-hide: all !important;" width=3D"100%" bgcolor=3D"#20828=
+D"> <a class=3D"mobile-element" style=3D"mso-hide: all !important; display:=
+none; margin:0 auto; border:0; white-space:pre; text-align:center; text-dec=
+oration:none; padding:12px 0px; color:#FFFFFF;letter-spacing:0.02em;cursor:=
+pointer;" href=3D"https://iterable.scribd.com/u/click?_t=3D92f0cbc6f584418c=
+9def9397d7beca21&_m=3D52bb8dc2e7d54b66b43c4c637e713dcf&_e=3DqREOxcSyuxXAQAu=
+6D8ZFn6ghy3nKRnFFzrWLvqB0NvxmI0W7q1nBno8LgM-KqgmyuFMwPdRiWX2ZpaLz_yz7GntAmb=
+Km4pzCSmJvKTw1Ipb_V_Z0Cv7cZeHQgNPaTqK_rj3W9P3Epu5cXweut-0cCWAS1_Bvw8GPDemiF=
+dRjmL2yQW_dzfp6RyYazexYRV19uNb1zYxJuS_IJcabPIs3TNLP3oIFbuwLe49TmK3yZnks0FLr=
+alHFWzg2D3DvoQ5LlBBA9SrHGOX9WkyQbz20TYDj7JHsEjPqJyDo0VJkSvw%3D">Read free f=
+or 60 days</a> </td> </tr> </tbody> </table><!--<![endif]--> </a> </td> </t=
+r><!--end button--> <!--[if !mso]><tr><td class=3D"button-disclaimer-paddin=
+g" style=3D"height:18px; "height=3D"18">&nbsp;</td></tr><![endif]--> <tr st=
+yle=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizi=
+ng: border-box; box-sizing: border-box;"> <td align=3D"center" valign=3D"to=
+p" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box=
+-sizing: border-box; box-sizing: border-box; font-family: 'Source Sans Pro'=
+, Helvetica, sans-serif; padding-top: 12px;"> <div class=3D"copy" style=3D"=
+margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bor=
+der-box; box-sizing: border-box; font-family: 'Source Sans Pro', Helvetica,=
+ sans-serif; font-size: 14px; line-height: 19px; font-weight: normal; font-=
+weight: 400; color: #303140; text-align: center; font-style: normal;"> Canc=
+el anytime. </div> </td> </tr> </table> </td> <td class=3D"padding-right" s=
+tyle=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-siz=
+ing: border-box; box-sizing: border-box; width: 70px;" width=3D"70">&nbsp;<=
+/td> </tr> </tbody> </table> </td> </tr> <tr style=3D"margin: 0; padding: 0=
+; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: =
+border-box;"><td class=3D"hero-content-padding-bottom" style=3D"margin: 0; =
+padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; bo=
+x-sizing: border-box; height: 48px;" height=3D"48">&nbsp;</td></tr> </tbody=
+> </table> <!--end hero--> </td> </tr> </table> <!--main--> <table align=3D=
+"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentat=
+ion" style=3D"padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: =
+border-box; box-sizing: border-box; border-spacing: 0; margin: 0 auto; bord=
+er-collapse: collapse !important;"> <tbody> <tr style=3D"margin: 0; padding=
+: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizin=
+g: border-box;"> <td class=3D"padding-left" style=3D"margin: 0; padding: 0;=
+ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: b=
+order-box; width: 32px;" width=3D"32">&nbsp;</td> <td class=3D"inside-margi=
+ns" align=3D"center" style=3D"margin: 0; padding: 0; -webkit-box-sizing: bo=
+rder-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 576px=
+;" width=3D"576"> <table align=3D"center" cellpadding=3D"0" cellspacing=3D"=
+0" border=3D"0" role=3D"presentation" style=3D"padding: 0; -webkit-box-sizi=
+ng: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border=
+-spacing: 0; margin: 0 auto; border-collapse: collapse !important;"> <tbody=
+> <!--body--> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: borde=
+r-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <td align=3D"=
+center" valign=3D"top" style=3D"margin: 0; padding: 0; -webkit-box-sizing: =
+border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-famil=
+y: 'Source Sans Pro', Helvetica, sans-serif;"> <div class=3D"copy" style=3D=
+"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bo=
+rder-box; box-sizing: border-box; font-family: 'Source Sans Pro', Helvetica=
+, sans-serif; font-size: 24px; line-height: 36px; font-weight: normal; font=
+-weight: 600; color: #000; text-align: center; font-style: normal;"> Find y=
+our next read </div> </td> </tr> <tr style=3D"margin: 0; padding: 0; -webki=
+t-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-b=
+ox;"><td class=3D"body-headline-padding-bottom" style=3D"margin: 0; padding=
+: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizin=
+g: border-box; height: 48px;" height=3D"48">&nbsp;</td></tr> <tr style=3D"m=
+argin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bord=
+er-box; box-sizing: border-box;"> <td style=3D"margin: 0; padding: 0; -webk=
+it-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-=
+box;"> <table class=3D"list-tile-container" style=3D"margin: 0; padding: 0;=
+ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: b=
+order-box; border-collapse: collapse; border-spacing: 0;"> <tr style=3D"mar=
+gin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border=
+-box; box-sizing: border-box;"> <td class=3D"list-tile" style=3D"margin: 0;=
+ padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; b=
+ox-sizing: border-box;"> <!--title 01--> <table class=3D"list-tile-table" s=
+tyle=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-siz=
+ing: border-box; box-sizing: border-box; border-spacing: 0; border: 1px sol=
+id #CFD6E0; width: 180px; height: 345px; border-collapse: collapse !importa=
+nt;" width=3D"180" height=3D"345"> <!----> <tr style=3D"margin: 0; padding:=
+ 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing=
+: border-box;"><td class=3D"title-padding-top" style=3D"margin: 0; padding:=
+ 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing=
+: border-box; height: 44px;" height=3D"44">&nbsp;</td></tr> <!----> <tr sty=
+le=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizin=
+g: border-box; box-sizing: border-box;"> <td style=3D"margin: 0; padding: 0=
+; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: =
+border-box;"> <table class=3D"list-tile-content" style=3D"margin: 0; paddin=
+g: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizi=
+ng: border-box; border-collapse: collapse; border-spacing: 0;"> <td class=
+=3D"tile-padding-left" style=3D"margin: 0; padding: 0; -webkit-box-sizing: =
+border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 20p=
+x;" width=3D"20">&nbsp;</td> <td class=3D"list-column" valign=3D"top" style=
+=3D"padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box=
+; box-sizing: border-box; vertical-align: top; margin: 0 auto; text-align: =
+center;" align=3D"center"> <table style=3D"margin: 0; padding: 0; -webkit-b=
+ox-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;=
+ border-spacing: 0; border-collapse: collapse !important;"> <!-- thumbnail =
+container --> <tr class=3D"title-row" align=3D"left" valign=3D"top" style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box; vertical-align: top;"> <td align=3D"le=
+ft" valign=3D"top" style=3D"margin: 0; padding: 0; -webkit-box-sizing: bord=
+er-box; -moz-box-sizing: border-box; box-sizing: border-box; vertical-align=
+: top;"> <!-- img --> <div class=3D"thumbnail-container" style=3D"padding: =
+0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing:=
+ border-box; text-align: center; margin: 0 auto; width: 140px;"> <a href=3D=
+"https://iterable.scribd.com/u/click?_t=3D92f0cbc6f584418c9def9397d7beca21&=
+_m=3D52bb8dc2e7d54b66b43c4c637e713dcf&_e=3DXMfcb3dOnASij9onwFmoS3BocQPVTAK6=
+nO77RQhSAHuvOBr8eogizxhcNSK8fluGbvR0M9aZ0GhDDy-Gm6ULa80888HTOMx0wUvb_r-7XAg=
+AmqZBKj4oE_gQiIObpMQfS2vfC_FkIFjlLPXRaV-HG-IQRqXoh4kiVS6PwYG1_FZy1795R_j8hc=
+SO1isSPqhCKEQotL41IyNfNFkzPQSsteDYRUp4DFty9yq9JBEsUbiM9G1sQyISCUc5aEs0V9y-F=
+ryWpe2ZUaz7Atac6R2zDR2F-WEB99K8sAYIiG8zJb4%3D" target=3D"_blank"> <picture>=
+ <!----> <img class=3D"list-thumbnail" src=3D"https://imgv2-2-f.scribdasset=
+s.com/img/audiobook_square_badge/515124006/218x218/0cc0afc65e/1684262476?v=
+=3D1" width=3D"140" height=3D"140" style=3D"display: inline-block; vertical=
+-align:bottom; margin:0; font-family: 'CircularMedium', Arial, sans-serif; =
+color: #000; font-size: 21px; line-height: 1.2em;" border=3D"0" alt=3D"Fell=
+owship of the Ring, The (The Lord..."> <!----> </picture> </a> </div> </td>=
+ </tr> <!-- end thumbnail container --> <tr class=3D"title-row title-thumbn=
+ail-padding-bottom" style=3D"margin: 0; padding: 0; -webkit-box-sizing: bor=
+der-box; -moz-box-sizing: border-box; box-sizing: border-box;"><td style=3D=
+"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bo=
+rder-box; box-sizing: border-box;">&nbsp;</td></tr> <!-- copy container -->=
+ <tr class=3D"title-row" valign=3D"bottom" style=3D"margin: 0; padding: 0; =
+-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bo=
+rder-box; vertical-align: bottom;"> <td align=3D"left" class=3D"title-copy"=
+ style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-s=
+izing: border-box; box-sizing: border-box;"> <table class=3D"title-info-tab=
+le" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-bo=
+x-sizing: border-box; box-sizing: border-box; border-spacing: 0; border-col=
+lapse: collapse !important;"> <tr style=3D"margin: 0; padding: 0; -webkit-b=
+ox-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;=
+"> <td align=3D"left" valign=3D"top" style=3D"margin: 0; padding: 0; -webki=
+t-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-b=
+ox; font-family: 'Source Sans Pro', Helvetica, sans-serif;"> <div class=3D"=
+copy title-info" height=3D"96" style=3D"margin: 0; padding: 0; -webkit-box-=
+sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; fo=
+nt-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-=
+height: 24px; font-weight: 600; color: #000; text-align: left; font-style: =
+normal; height: 96px;"> Fellowship of the Ring, The (The Lord... <!--<br><s=
+pan style=3D"font-size: 16px; line-height: 24px; font-weight: 400 !importan=
+t;">By Fellowship of the Ring, The (The Lord...</span>--> </div> </td> </tr=
+> <!--[if mso]><tr><td class=3D"list-selection-copy-padding-bottom" style=
+=3D"height:16px; "height=3D"16">&nbsp;</td></tr><![endif]--> <!--buttons-->=
+ <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-b=
+ox-sizing: border-box; box-sizing: border-box;"> <td style=3D"margin: 0; pa=
+dding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-=
+sizing: border-box;"> <table class=3D"title-info-table" style=3D"margin: 0;=
+ padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; b=
+ox-sizing: border-box; border-collapse: collapse; border-spacing: 0;"> <tr =
+style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-si=
+zing: border-box; box-sizing: border-box;"> <td align=3D"left" valign=3D"to=
+p" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box=
+-sizing: border-box; box-sizing: border-box; font-family: 'Source Sans Pro'=
+, Helvetica, sans-serif; font-size: 16px; line-height: 24px;"> <a class=3D"=
+link-copy" style=3D"margin:0 auto; border:0; white-space:pre; text-align:le=
+ft; text-decoration: underline; color: #20828D; letter-spacing:0.02em;curso=
+r:pointer;" href=3D"https://iterable.scribd.com/u/click?_t=3D92f0cbc6f58441=
+8c9def9397d7beca21&_m=3D52bb8dc2e7d54b66b43c4c637e713dcf&_e=3DXMfcb3dOnASij=
+9onwFmoS3BocQPVTAK6nO77RQhSAHuvOBr8eogizxhcNSK8fluGbvR0M9aZ0GhDDy-Gm6ULa808=
+88HTOMx0wUvb_r-7XAgAmqZBKj4oE_gQiIObpMQfS2vfC_FkIFjlLPXRaV-HG_TjjTP9OlinZhX=
+ymCc7l2_BsXayvp93zYG9DdMDmmlj0yW6tANrDl1dlu_h4V0g3iiY2H3UDd8f4aBEw6IBzKpt4N=
+vqhiBGRwm2Yx0qifCJ7YWIl_1twNf_urj_hXnVKTNqwiIwueCW1gArzZW6PvY%3D" target=3D=
+"_blank"><!---->Listen now<!----></a> </td> </tr> </table> </td> </tr><!--e=
+nd buttons--> </table> </td> </tr> <!-- end copy container --> </table> </t=
+d> <td class=3D"tile-padding-right" style=3D"margin: 0; padding: 0; -webkit=
+-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-bo=
+x; width: 20px;" width=3D"20">&nbsp;</td> </table> </td> </tr> <tr style=3D=
+"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bo=
+rder-box; box-sizing: border-box;"><td class=3D"title-padding-bottom" style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box; height: 24px;" height=3D"24">&nbsp;</t=
+d></tr> </table> <!--end title 01--> </td> <td class=3D"list-spacer" width=
+=3D"18" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -mo=
+z-box-sizing: border-box; box-sizing: border-box; width: 18px;"></td> <td c=
+lass=3D"list-tile" style=3D"margin: 0; padding: 0; -webkit-box-sizing: bord=
+er-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <!--title 02=
+--> <table class=3D"list-tile-table" style=3D"margin: 0; padding: 0; -webki=
+t-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-b=
+ox; border-spacing: 0; border: 1px solid #CFD6E0; width: 180px; height: 345=
+px; border-collapse: collapse !important;" width=3D"180" height=3D"345"> <!=
+----> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -=
+moz-box-sizing: border-box; box-sizing: border-box;"><td class=3D"title-pad=
+ding-top" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -=
+moz-box-sizing: border-box; box-sizing: border-box; height: 44px;" height=
+=3D"44">&nbsp;</td></tr> <!----> <tr style=3D"margin: 0; padding: 0; -webki=
+t-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-b=
+ox;"> <td style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -=
+moz-box-sizing: border-box; box-sizing: border-box;"> <table class=3D"list-=
+tile-content" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-bo=
+x; -moz-box-sizing: border-box; box-sizing: border-box; border-collapse: co=
+llapse; border-spacing: 0;"> <td class=3D"tile-padding-left" style=3D"margi=
+n: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-b=
+ox; box-sizing: border-box; width: 20px;" width=3D"20">&nbsp;</td> <td clas=
+s=3D"list-column" valign=3D"top" style=3D"padding: 0; -webkit-box-sizing: b=
+order-box; -moz-box-sizing: border-box; box-sizing: border-box; vertical-al=
+ign: top; margin: 0 auto; text-align: center;" align=3D"center"> <table sty=
+le=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizin=
+g: border-box; box-sizing: border-box; border-spacing: 0; border-collapse: =
+collapse !important;"> <!-- thumbnail container --> <tr class=3D"title-row"=
+ align=3D"left" valign=3D"top" style=3D"margin: 0; padding: 0; -webkit-box-=
+sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; ve=
+rtical-align: top;"> <td align=3D"left" valign=3D"top" style=3D"margin: 0; =
+padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; bo=
+x-sizing: border-box; vertical-align: top;"> <!-- img --> <div class=3D"thu=
+mbnail-container" style=3D"padding: 0; -webkit-box-sizing: border-box; -moz=
+-box-sizing: border-box; box-sizing: border-box; text-align: center; margin=
+: 0 auto; width: 140px;"> <a href=3D"https://iterable.scribd.com/u/click?_t=
+=3D92f0cbc6f584418c9def9397d7beca21&_m=3D52bb8dc2e7d54b66b43c4c637e713dcf&_=
+e=3DXMfcb3dOnASij9onwFmoS3BocQPVTAK6nO77RQhSAHsppfyqcUzWcdSDzryeB4VUNpuohQj=
+GxpCRWbsXSaZC5aAURXAiGMcRHTU0TYbeYZV7ZiPbgIH26gZ0MwV7jKt3Vb2rOOq7VUhrNc4VHJ=
+91pdHqijOhskxhB4T085cxJogkqQdYcALzNZXVs6YX4qldo_ADso-m829YNJNBgmJ8UDDkOpxsC=
+T3IwS-aPbHTXKtDpCdtA5rJvFbFPOsw4E7g1Yiwd_oMI2ZQOD_8Rt_-SW6NL2h5DPlmbPI201gp=
+Yvk%3D" target=3D"_blank"> <picture> <!----> <img class=3D"list-thumbnail" =
+src=3D"https://imgv2-2-f.scribdassets.com/img/audiobook_square_badge/582415=
+128/218x218/922d8de9e7/1684262476?v=3D1" width=3D"140" height=3D"140" style=
+=3D"display: inline-block; vertical-align:bottom; margin:0; font-family: 'C=
+ircularMedium', Arial, sans-serif; color: #000; font-size: 21px; line-heigh=
+t: 1.2em;" border=3D"0" alt=3D"Elizabeth Taylor: The Grit and Glamou..."> <=
+!----> </picture> </a> </div> </td> </tr> <!-- end thumbnail container --> =
+<tr class=3D"title-row title-thumbnail-padding-bottom" style=3D"margin: 0; =
+padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; bo=
+x-sizing: border-box;"><td style=3D"margin: 0; padding: 0; -webkit-box-sizi=
+ng: border-box; -moz-box-sizing: border-box; box-sizing: border-box;">&nbsp=
+;</td></tr> <!-- copy container --> <tr class=3D"title-row" valign=3D"botto=
+m" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box=
+-sizing: border-box; box-sizing: border-box; vertical-align: bottom;"> <td =
+align=3D"left" class=3D"title-copy" style=3D"margin: 0; padding: 0; -webkit=
+-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-bo=
+x;"> <table class=3D"title-info-table" style=3D"margin: 0; padding: 0; -web=
+kit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border=
+-box; border-spacing: 0; border-collapse: collapse !important;"> <tr style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box;"> <td align=3D"left" valign=3D"top" st=
+yle=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizi=
+ng: border-box; box-sizing: border-box; font-family: 'Source Sans Pro', Hel=
+vetica, sans-serif;"> <div class=3D"copy title-info" height=3D"96" style=3D=
+"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bo=
+rder-box; box-sizing: border-box; font-family: 'Source Sans Pro', Helvetica=
+, sans-serif; font-size: 16px; line-height: 24px; font-weight: 600; color: =
+#000; text-align: left; font-style: normal; height: 96px;"> Elizabeth Taylo=
+r: The Grit and Glamou... <!--<br><span style=3D"font-size: 16px; line-heig=
+ht: 24px; font-weight: 400 !important;">By Elizabeth Taylor: The Grit and G=
+lamou...</span>--> </div> </td> </tr> <!--[if mso]><tr><td class=3D"list-se=
+lection-copy-padding-bottom" style=3D"height:16px; "height=3D"16">&nbsp;</t=
+d></tr><![endif]--> <!--buttons--> <tr style=3D"margin: 0; padding: 0; -web=
+kit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border=
+-box;"> <td style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box;=
+ -moz-box-sizing: border-box; box-sizing: border-box;"> <table class=3D"tit=
+le-info-table" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-b=
+ox; -moz-box-sizing: border-box; box-sizing: border-box; border-collapse: c=
+ollapse; border-spacing: 0;"> <tr style=3D"margin: 0; padding: 0; -webkit-b=
+ox-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;=
+"> <td align=3D"left" valign=3D"top" style=3D"margin: 0; padding: 0; -webki=
+t-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-b=
+ox; font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px;=
+ line-height: 24px;"> <a class=3D"link-copy" style=3D"margin:0 auto; border=
+:0; white-space:pre; text-align:left; text-decoration: underline; color: #2=
+0828D; letter-spacing:0.02em;cursor:pointer;" href=3D"https://iterable.scri=
+bd.com/u/click?_t=3D92f0cbc6f584418c9def9397d7beca21&_m=3D52bb8dc2e7d54b66b=
+43c4c637e713dcf&_e=3DXMfcb3dOnASij9onwFmoS3BocQPVTAK6nO77RQhSAHsppfyqcUzWcd=
+SDzryeB4VUNpuohQjGxpCRWbsXSaZC5aAURXAiGMcRHTU0TYbeYZV7ZiPbgIH26gZ0MwV7jKt3V=
+b2rOOq7VUhrNc4VHJ91pcRk3fYnSHCPzNG71Eu3t03uZKr7Y2bQ2c-HLzblK_dafLLaFy2SxAl3=
+dCaaZYbcJGWOCNekWYdSKUIoFWPNYu9XAWU8aF5aT6h3RRwzErqFhyFD75t-mUGJUIAf47NfoTv=
+wGQtL4_a-wg1uymGGdB8%3D" target=3D"_blank"><!---->Listen now<!----></a> </t=
+d> </tr> </table> </td> </tr><!--end buttons--> </table> </td> </tr> <!-- e=
+nd copy container --> </table> </td> <td class=3D"tile-padding-right" style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box; width: 20px;" width=3D"20">&nbsp;</td>=
+ </table> </td> </tr> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizin=
+g: border-box; -moz-box-sizing: border-box; box-sizing: border-box;"><td cl=
+ass=3D"title-padding-bottom" style=3D"margin: 0; padding: 0; -webkit-box-si=
+zing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; heig=
+ht: 24px;" height=3D"24">&nbsp;</td></tr> </table> <!--end title 02--> </td=
+> <td class=3D"list-spacer" width=3D"18" style=3D"margin: 0; padding: 0; -w=
+ebkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bord=
+er-box; width: 18px;"></td> <td class=3D"list-tile" style=3D"margin: 0; pad=
+ding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-s=
+izing: border-box;"> <!--title 03--> <table class=3D"list-tile-table" style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box; border-spacing: 0; border: 1px solid #=
+CFD6E0; width: 180px; height: 345px; border-collapse: collapse !important;"=
+ width=3D"180" height=3D"345"> <!----> <tr style=3D"margin: 0; padding: 0; =
+-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bo=
+rder-box;"><td class=3D"title-padding-top" style=3D"margin: 0; padding: 0; =
+-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bo=
+rder-box; height: 44px;" height=3D"44">&nbsp;</td></tr> <!----> <tr style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box;"> <td style=3D"margin: 0; padding: 0; =
+-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bo=
+rder-box;"> <table class=3D"list-tile-content" style=3D"margin: 0; padding:=
+ 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing=
+: border-box; border-collapse: collapse; border-spacing: 0;"> <td class=3D"=
+tile-padding-left" style=3D"margin: 0; padding: 0; -webkit-box-sizing: bord=
+er-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 20px;" =
+width=3D"20">&nbsp;</td> <td class=3D"list-column" valign=3D"top" style=3D"=
+padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; bo=
+x-sizing: border-box; vertical-align: top; margin: 0 auto; text-align: cent=
+er;" align=3D"center"> <table style=3D"margin: 0; padding: 0; -webkit-box-s=
+izing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; bor=
+der-spacing: 0; border-collapse: collapse !important;"> <!-- thumbnail cont=
+ainer --> <tr class=3D"title-row" align=3D"left" valign=3D"top" style=3D"ma=
+rgin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: borde=
+r-box; box-sizing: border-box; vertical-align: top;"> <td align=3D"left" va=
+lign=3D"top" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box=
+; -moz-box-sizing: border-box; box-sizing: border-box; vertical-align: top;=
+"> <!-- img --> <div class=3D"thumbnail-container" style=3D"padding: 0; -we=
+bkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: borde=
+r-box; text-align: center; margin: 0 auto; width: 140px;"> <a href=3D"https=
+://iterable.scribd.com/u/click?_t=3D92f0cbc6f584418c9def9397d7beca21&_m=3D5=
+2bb8dc2e7d54b66b43c4c637e713dcf&_e=3DXMfcb3dOnASij9onwFmoS3BocQPVTAK6nO77RQ=
+hSAHtEfGCw4h35t90X-FFdZ2pxViN_zY5xCT5y24DpUyCu0AyEyogNdR0X4LLhezVqfYNA1oAWp=
+J7naIYezrSQjan7CwjgYAjsg4erqky2Qe6vrJOqcVgXNnga16NxHMU1IT5JHfBcGBYKOeaDvEGh=
+3bKVkfPDWlZTVdkKdh3cHQnN66SQLfBpSvDkQ3Gn-L49_Jw2RteBj9oZenpt0MSMOL4lyE1-lml=
+ONKPiSZkFsxbVzwI9utM5JpDxG4MNN9OZOVs%3D" target=3D"_blank"> <picture> <!---=
+-> <img class=3D"list-thumbnail" src=3D"https://imgv2-1-f.scribdassets.com/=
+img/audiobook_square_badge/482398441/218x218/02452dc514/1684262476?v=3D1" w=
+idth=3D"140" height=3D"140" style=3D"display: inline-block; vertical-align:=
+bottom; margin:0; font-family: 'CircularMedium', Arial, sans-serif; color: =
+#000; font-size: 21px; line-height: 1.2em;" border=3D"0" alt=3D"Klara and t=
+he Sun: The Times and Sund..."> <!----> </picture> </a> </div> </td> </tr> =
+<!-- end thumbnail container --> <tr class=3D"title-row title-thumbnail-pad=
+ding-bottom" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box=
+; -moz-box-sizing: border-box; box-sizing: border-box;"><td style=3D"margin=
+: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-bo=
+x; box-sizing: border-box;">&nbsp;</td></tr> <!-- copy container --> <tr cl=
+ass=3D"title-row" valign=3D"bottom" style=3D"margin: 0; padding: 0; -webkit=
+-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-bo=
+x; vertical-align: bottom;"> <td align=3D"left" class=3D"title-copy" style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box;"> <table class=3D"title-info-table" st=
+yle=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizi=
+ng: border-box; box-sizing: border-box; border-spacing: 0; border-collapse:=
+ collapse !important;"> <tr style=3D"margin: 0; padding: 0; -webkit-box-siz=
+ing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <td=
+ align=3D"left" valign=3D"top" style=3D"margin: 0; padding: 0; -webkit-box-=
+sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; fo=
+nt-family: 'Source Sans Pro', Helvetica, sans-serif;"> <div class=3D"copy t=
+itle-info" height=3D"96" style=3D"margin: 0; padding: 0; -webkit-box-sizing=
+: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-fam=
+ily: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height=
+: 24px; font-weight: 600; color: #000; text-align: left; font-style: normal=
+; height: 96px;"> Klara and the Sun: The Times and Sund... <!--<br><span st=
+yle=3D"font-size: 16px; line-height: 24px; font-weight: 400 !important;">By=
+ Klara and the Sun: The Times and Sund...</span>--> </div> </td> </tr> <!--=
+[if mso]><tr><td class=3D"list-selection-copy-padding-bottom" style=3D"heig=
+ht:16px; "height=3D"16">&nbsp;</td></tr><![endif]--> <!--buttons--> <tr sty=
+le=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizin=
+g: border-box; box-sizing: border-box;"> <td style=3D"margin: 0; padding: 0=
+; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: =
+border-box;"> <table class=3D"title-info-table" style=3D"margin: 0; padding=
+: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizin=
+g: border-box; border-collapse: collapse; border-spacing: 0;"> <tr style=3D=
+"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bo=
+rder-box; box-sizing: border-box;"> <td align=3D"left" valign=3D"top" style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box; font-family: 'Source Sans Pro', Helvet=
+ica, sans-serif; font-size: 16px; line-height: 24px;"> <a class=3D"link-cop=
+y" style=3D"margin:0 auto; border:0; white-space:pre; text-align:left; text=
+-decoration: underline; color: #20828D; letter-spacing:0.02em;cursor:pointe=
+r;" href=3D"https://iterable.scribd.com/u/click?_t=3D92f0cbc6f584418c9def93=
+97d7beca21&_m=3D52bb8dc2e7d54b66b43c4c637e713dcf&_e=3DXMfcb3dOnASij9onwFmoS=
+3BocQPVTAK6nO77RQhSAHtEfGCw4h35t90X-FFdZ2pxViN_zY5xCT5y24DpUyCu0AyEyogNdR0X=
+4LLhezVqfYNA1oAWpJ7naIYezrSQjan7CwjgYAjsg4erqky2Qe6vrG34CWHnj7hLinVYZdmEPXZ=
+UnORWnnTjCpZutrJfgdLqHr8YNzbnRfocxEHifodEB1JAy0S0p8KqVWVRcgDB8N9c0y3x82DfsM=
+4g5u4p4kxWmnLq_2FQVibgWg6KdGQCIh6qFjsCNf45W0IEDYSuGT8%3D" target=3D"_blank"=
+><!---->Listen now<!----></a> </td> </tr> </table> </td> </tr><!--end butto=
+ns--> </table> </td> </tr> <!-- end copy container --> </table> </td> <td c=
+lass=3D"tile-padding-right" style=3D"margin: 0; padding: 0; -webkit-box-siz=
+ing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width=
+: 20px;" width=3D"20">&nbsp;</td> </table> </td> </tr> <tr style=3D"margin:=
+ 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box=
+; box-sizing: border-box;"><td class=3D"title-padding-bottom" style=3D"marg=
+in: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-=
+box; box-sizing: border-box; height: 24px;" height=3D"24">&nbsp;</td></tr> =
+</table> <!--end title 03--> </td> </tr> </table> </td> </tr> <tr style=3D"=
+margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bor=
+der-box; box-sizing: border-box;"><td class=3D"tile-row-padding-bottom" sty=
+le=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizin=
+g: border-box; box-sizing: border-box; height: 24px;" height=3D"24">&nbsp;<=
+/td></tr> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-bo=
+x; -moz-box-sizing: border-box; box-sizing: border-box;"> <td style=3D"marg=
+in: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-=
+box; box-sizing: border-box;"> <table class=3D"list-tile-container" style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box; border-collapse: collapse; border-spac=
+ing: 0;"> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-bo=
+x; -moz-box-sizing: border-box; box-sizing: border-box;"> <td class=3D"list=
+-tile" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz=
+-box-sizing: border-box; box-sizing: border-box;"> <!--title 04--> <table c=
+lass=3D"list-tile-table" style=3D"margin: 0; padding: 0; -webkit-box-sizing=
+: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-s=
+pacing: 0; border: 1px solid #CFD6E0; width: 180px; height: 345px; border-c=
+ollapse: collapse !important;" width=3D"180" height=3D"345"> <!----> <tr st=
+yle=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizi=
+ng: border-box; box-sizing: border-box;"><td class=3D"title-padding-top" st=
+yle=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizi=
+ng: border-box; box-sizing: border-box; height: 44px;" height=3D"44">&nbsp;=
+</td></tr> <!----> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: =
+border-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <td styl=
+e=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing=
+: border-box; box-sizing: border-box;"> <table class=3D"list-tile-content" =
+style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-si=
+zing: border-box; box-sizing: border-box; border-collapse: collapse; border=
+-spacing: 0;"> <td class=3D"tile-padding-left" style=3D"margin: 0; padding:=
+ 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing=
+: border-box; width: 20px;" width=3D"20">&nbsp;</td> <td class=3D"list-colu=
+mn" valign=3D"top" style=3D"padding: 0; -webkit-box-sizing: border-box; -mo=
+z-box-sizing: border-box; box-sizing: border-box; vertical-align: top; marg=
+in: 0 auto; text-align: center;" align=3D"center"> <table style=3D"margin: =
+0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;=
+ box-sizing: border-box; border-spacing: 0; border-collapse: collapse !impo=
+rtant;"> <!-- thumbnail container --> <tr class=3D"title-row" align=3D"left=
+" valign=3D"top" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border=
+-box; -moz-box-sizing: border-box; box-sizing: border-box; vertical-align: =
+top;"> <td align=3D"left" valign=3D"top" style=3D"margin: 0; padding: 0; -w=
+ebkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bord=
+er-box; vertical-align: top;"> <!-- img --> <div class=3D"thumbnail-contain=
+er" style=3D"padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: b=
+order-box; box-sizing: border-box; text-align: center; margin: 0 auto; widt=
+h: 140px;"> <a href=3D"https://iterable.scribd.com/u/click?_t=3D92f0cbc6f58=
+4418c9def9397d7beca21&_m=3D52bb8dc2e7d54b66b43c4c637e713dcf&_e=3DXMfcb3dOnA=
+Sij9onwFmoS3BocQPVTAK6nO77RQhSAHsUS8oZ92mk8JnNHR0Zm_xvvE5ftmnYO7mRdnCSIRx3F=
+Azz3ycwjd8yeJkDBBlA_Sz5x7kId_uPXwKHgRA0Atsbe8GD4WSCnCj9OLBp41IWPhB3scG35CEY=
+VAAMSVPbxlGWgRCWTptrWgeKPAtEbVnXx5tee_XZeQpGw7dR9TBMcQZlHDTa85gIOEu1N5L5YeL=
+HsqpeqaiMK4rLQlHKMf3osL9Iy-en-r6qAXXK_uOd4EPZCqFAZFZmpjV6_7LvIWc%3D" target=
+=3D"_blank"> <picture> <!----> <img class=3D"list-thumbnail" src=3D"https:/=
+/imgv2-1-f.scribdassets.com/img/audiobook_square_badge/514745695/218x218/45=
+0edc0c83/1684262476?v=3D1" width=3D"140" height=3D"140" style=3D"display: i=
+nline-block; vertical-align:bottom; margin:0; font-family: 'CircularMedium'=
+, Arial, sans-serif; color: #000; font-size: 21px; line-height: 1.2em;" bor=
+der=3D"0" alt=3D"The Paris Apartment"> <!----> </picture> </a> </div> </td>=
+ </tr> <!-- end thumbnail container --> <tr class=3D"title-row title-thumbn=
+ail-padding-bottom" style=3D"margin: 0; padding: 0; -webkit-box-sizing: bor=
+der-box; -moz-box-sizing: border-box; box-sizing: border-box;"><td style=3D=
+"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bo=
+rder-box; box-sizing: border-box;">&nbsp;</td></tr> <!-- copy container -->=
+ <tr class=3D"title-row" valign=3D"bottom" style=3D"margin: 0; padding: 0; =
+-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bo=
+rder-box; vertical-align: bottom;"> <td align=3D"left" class=3D"title-copy"=
+ style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-s=
+izing: border-box; box-sizing: border-box;"> <table class=3D"title-info-tab=
+le" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-bo=
+x-sizing: border-box; box-sizing: border-box; border-spacing: 0; border-col=
+lapse: collapse !important;"> <tr style=3D"margin: 0; padding: 0; -webkit-b=
+ox-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;=
+"> <td align=3D"left" valign=3D"top" style=3D"margin: 0; padding: 0; -webki=
+t-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-b=
+ox; font-family: 'Source Sans Pro', Helvetica, sans-serif;"> <div class=3D"=
+copy title-info" height=3D"96" style=3D"margin: 0; padding: 0; -webkit-box-=
+sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; fo=
+nt-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-=
+height: 24px; font-weight: 600; color: #000; text-align: left; font-style: =
+normal; height: 96px;"> The Paris Apartment <!--<br><span style=3D"font-siz=
+e: 16px; line-height: 24px; font-weight: 400 !important;">By The Paris Apar=
+tment</span>--> </div> </td> </tr> <!--[if mso]><tr><td class=3D"list-selec=
+tion-copy-padding-bottom" style=3D"height:16px; "height=3D"16">&nbsp;</td><=
+/tr><![endif]--> <!--buttons--> <tr style=3D"margin: 0; padding: 0; -webkit=
+-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-bo=
+x;"> <td style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -m=
+oz-box-sizing: border-box; box-sizing: border-box;"> <table class=3D"title-=
+info-table" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box;=
+ -moz-box-sizing: border-box; box-sizing: border-box; border-collapse: coll=
+apse; border-spacing: 0;"> <tr style=3D"margin: 0; padding: 0; -webkit-box-=
+sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;"> =
+<td align=3D"left" valign=3D"top" style=3D"margin: 0; padding: 0; -webkit-b=
+ox-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;=
+ font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; li=
+ne-height: 24px;"> <a class=3D"link-copy" style=3D"margin:0 auto; border:0;=
+ white-space:pre; text-align:left; text-decoration: underline; color: #2082=
+8D; letter-spacing:0.02em;cursor:pointer;" href=3D"https://iterable.scribd.=
+com/u/click?_t=3D92f0cbc6f584418c9def9397d7beca21&_m=3D52bb8dc2e7d54b66b43c=
+4c637e713dcf&_e=3DXMfcb3dOnASij9onwFmoS3BocQPVTAK6nO77RQhSAHsUS8oZ92mk8JnNH=
+R0Zm_xvvE5ftmnYO7mRdnCSIRx3FAzz3ycwjd8yeJkDBBlA_Sz5x7kId_uPXwKHgRA0Atsbe8GD=
+4WSCnCj9OLBp41IWPoVikdkQU93GE1wnCP5W2qm55NuhhnawXY-yyDtv1jd4821IBlKJ6KrQZXA=
+YbLqi-Yep-ucXNgK3XlMD79-_2QMT0zpRcK3P7xhKBsDDbwd0VhrakCAx7e9giGvkL698ZFFB3I=
+hUojWrEzKhmZWbqgQ%3D" target=3D"_blank"><!---->Listen now<!----></a> </td> =
+</tr> </table> </td> </tr><!--end buttons--> </table> </td> </tr> <!-- end =
+copy container --> </table> </td> <td class=3D"tile-padding-right" style=3D=
+"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bo=
+rder-box; box-sizing: border-box; width: 20px;" width=3D"20">&nbsp;</td> </=
+table> </td> </tr> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: =
+border-box; -moz-box-sizing: border-box; box-sizing: border-box;"><td class=
+=3D"title-padding-bottom" style=3D"margin: 0; padding: 0; -webkit-box-sizin=
+g: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height:=
+ 24px;" height=3D"24">&nbsp;</td></tr> </table> <!--end title 04--> </td> <=
+td class=3D"list-spacer" width=3D"18" style=3D"margin: 0; padding: 0; -webk=
+it-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-=
+box; width: 18px;"></td> <td class=3D"list-tile" style=3D"margin: 0; paddin=
+g: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizi=
+ng: border-box;"> <!--title 05--> <table class=3D"list-tile-table" style=3D=
+"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bo=
+rder-box; box-sizing: border-box; border-spacing: 0; border: 1px solid #CFD=
+6E0; width: 180px; height: 345px; border-collapse: collapse !important;" wi=
+dth=3D"180" height=3D"345"> <!----> <tr style=3D"margin: 0; padding: 0; -we=
+bkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: borde=
+r-box;"><td class=3D"title-padding-top" style=3D"margin: 0; padding: 0; -we=
+bkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: borde=
+r-box; height: 44px;" height=3D"44">&nbsp;</td></tr> <!----> <tr style=3D"m=
+argin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bord=
+er-box; box-sizing: border-box;"> <td style=3D"margin: 0; padding: 0; -webk=
+it-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-=
+box;"> <table class=3D"list-tile-content" style=3D"margin: 0; padding: 0; -=
+webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bor=
+der-box; border-collapse: collapse; border-spacing: 0;"> <td class=3D"tile-=
+padding-left" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-bo=
+x; -moz-box-sizing: border-box; box-sizing: border-box; width: 20px;" width=
+=3D"20">&nbsp;</td> <td class=3D"list-column" valign=3D"top" style=3D"paddi=
+ng: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-siz=
+ing: border-box; vertical-align: top; margin: 0 auto; text-align: center;" =
+align=3D"center"> <table style=3D"margin: 0; padding: 0; -webkit-box-sizing=
+: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-s=
+pacing: 0; border-collapse: collapse !important;"> <!-- thumbnail container=
+ --> <tr class=3D"title-row" align=3D"left" valign=3D"top" style=3D"margin:=
+ 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box=
+; box-sizing: border-box; vertical-align: top;"> <td align=3D"left" valign=
+=3D"top" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -m=
+oz-box-sizing: border-box; box-sizing: border-box; vertical-align: top;"> <=
+!-- img --> <div class=3D"thumbnail-container" style=3D"padding: 0; -webkit=
+-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-bo=
+x; text-align: center; margin: 0 auto; width: 140px;"> <a href=3D"https://i=
+terable.scribd.com/u/click?_t=3D92f0cbc6f584418c9def9397d7beca21&_m=3D52bb8=
+dc2e7d54b66b43c4c637e713dcf&_e=3DXMfcb3dOnASij9onwFmoS3BocQPVTAK6nO77RQhSAH=
+uTDKjL9F4DXAtrPE_W0jtWKNnvPNy8OyXxASbMHixSDNVGlSRSph_Mb4-qM4PeLANusenokxE4o=
+1ZRpsCy8lx9syaGT-WoquDw6nAuojft6HdxokDpyiu5rl4Ex21ny33v8xrX3Nu6RTheDsa1-QaP=
+oY7hWRa4A1VBP4mP1h1XMN0G4sk-zLy_i9Boz_WfwX_FFRhZ20tTNBQqJmyi_9wc_EjiEvKPrM-=
+b1oEJ1kedg01eQ6dWDRze4tUlyozia9Q%3D" target=3D"_blank"> <picture> <!----> <=
+img class=3D"list-thumbnail" src=3D"https://imgv2-1-f.scribdassets.com/img/=
+audiobook_square_badge/289188129/218x218/775e47a45a/1684262476?v=3D1" width=
+=3D"140" height=3D"140" style=3D"display: inline-block; vertical-align:bott=
+om; margin:0; font-family: 'CircularMedium', Arial, sans-serif; color: #000=
+; font-size: 21px; line-height: 1.2em;" border=3D"0" alt=3D"Year of Yes: Ho=
+w to Dance It Out, Sta..."> <!----> </picture> </a> </div> </td> </tr> <!--=
+ end thumbnail container --> <tr class=3D"title-row title-thumbnail-padding=
+-bottom" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -m=
+oz-box-sizing: border-box; box-sizing: border-box;"><td style=3D"margin: 0;=
+ padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; b=
+ox-sizing: border-box;">&nbsp;</td></tr> <!-- copy container --> <tr class=
+=3D"title-row" valign=3D"bottom" style=3D"margin: 0; padding: 0; -webkit-bo=
+x-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; =
+vertical-align: bottom;"> <td align=3D"left" class=3D"title-copy" style=3D"=
+margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bor=
+der-box; box-sizing: border-box;"> <table class=3D"title-info-table" style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box; border-spacing: 0; border-collapse: co=
+llapse !important;"> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing=
+: border-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <td al=
+ign=3D"left" valign=3D"top" style=3D"margin: 0; padding: 0; -webkit-box-siz=
+ing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-=
+family: 'Source Sans Pro', Helvetica, sans-serif;"> <div class=3D"copy titl=
+e-info" height=3D"96" style=3D"margin: 0; padding: 0; -webkit-box-sizing: b=
+order-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family=
+: 'Source Sans Pro', Helvetica, sans-serif; font-size: 16px; line-height: 2=
+4px; font-weight: 600; color: #000; text-align: left; font-style: normal; h=
+eight: 96px;"> Year of Yes: How to Dance It Out, Sta... <!--<br><span style=
+=3D"font-size: 16px; line-height: 24px; font-weight: 400 !important;">By Ye=
+ar of Yes: How to Dance It Out, Sta...</span>--> </div> </td> </tr> <!--[if=
+ mso]><tr><td class=3D"list-selection-copy-padding-bottom" style=3D"height:=
+16px; "height=3D"16">&nbsp;</td></tr><![endif]--> <!--buttons--> <tr style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box;"> <td style=3D"margin: 0; padding: 0; =
+-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bo=
+rder-box;"> <table class=3D"title-info-table" style=3D"margin: 0; padding: =
+0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing:=
+ border-box; border-collapse: collapse; border-spacing: 0;"> <tr style=3D"m=
+argin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bord=
+er-box; box-sizing: border-box;"> <td align=3D"left" valign=3D"top" style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box; font-family: 'Source Sans Pro', Helvet=
+ica, sans-serif; font-size: 16px; line-height: 24px;"> <a class=3D"link-cop=
+y" style=3D"margin:0 auto; border:0; white-space:pre; text-align:left; text=
+-decoration: underline; color: #20828D; letter-spacing:0.02em;cursor:pointe=
+r;" href=3D"https://iterable.scribd.com/u/click?_t=3D92f0cbc6f584418c9def93=
+97d7beca21&_m=3D52bb8dc2e7d54b66b43c4c637e713dcf&_e=3DXMfcb3dOnASij9onwFmoS=
+3BocQPVTAK6nO77RQhSAHuTDKjL9F4DXAtrPE_W0jtWKNnvPNy8OyXxASbMHixSDNVGlSRSph_M=
+b4-qM4PeLANusenokxE4o1ZRpsCy8lx9syaGT-WoquDw6nAuojft6PdA86pFNvE9ji7b8oecclJ=
+1yn4UYPxc0JfzbSkmlSptArBpkZj3_PHbWXC6smLyCUM-JcsBOuVE7LKpR2ZofG6j4_9xsmwRTk=
+T32WcHG7RLN4iyKEuBnCzruKbPy1l_KsMoXlgxd50WpbnMtjByXcc%3D" target=3D"_blank"=
+><!---->Listen now<!----></a> </td> </tr> </table> </td> </tr><!--end butto=
+ns--> </table> </td> </tr> <!-- end copy container --> </table> </td> <td c=
+lass=3D"tile-padding-right" style=3D"margin: 0; padding: 0; -webkit-box-siz=
+ing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width=
+: 20px;" width=3D"20">&nbsp;</td> </table> </td> </tr> <tr style=3D"margin:=
+ 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box=
+; box-sizing: border-box;"><td class=3D"title-padding-bottom" style=3D"marg=
+in: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-=
+box; box-sizing: border-box; height: 24px;" height=3D"24">&nbsp;</td></tr> =
+</table> <!--end title 05--> </td> <td class=3D"list-spacer" width=3D"18" s=
+tyle=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-siz=
+ing: border-box; box-sizing: border-box; width: 18px;"></td> <td class=3D"l=
+ist-tile" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -=
+moz-box-sizing: border-box; box-sizing: border-box;"> <!--title 06--> <tabl=
+e class=3D"list-tile-table" style=3D"margin: 0; padding: 0; -webkit-box-siz=
+ing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; borde=
+r-spacing: 0; border: 1px solid #CFD6E0; width: 180px; height: 345px; borde=
+r-collapse: collapse !important;" width=3D"180" height=3D"345"> <!----> <tr=
+ style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-s=
+izing: border-box; box-sizing: border-box;"><td class=3D"title-padding-top"=
+ style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-s=
+izing: border-box; box-sizing: border-box; height: 44px;" height=3D"44">&nb=
+sp;</td></tr> <!----> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizin=
+g: border-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <td s=
+tyle=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-siz=
+ing: border-box; box-sizing: border-box;"> <table class=3D"list-tile-conten=
+t" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box=
+-sizing: border-box; box-sizing: border-box; border-collapse: collapse; bor=
+der-spacing: 0;"> <td class=3D"tile-padding-left" style=3D"margin: 0; paddi=
+ng: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-siz=
+ing: border-box; width: 20px;" width=3D"20">&nbsp;</td> <td class=3D"list-c=
+olumn" valign=3D"top" style=3D"padding: 0; -webkit-box-sizing: border-box; =
+-moz-box-sizing: border-box; box-sizing: border-box; vertical-align: top; m=
+argin: 0 auto; text-align: center;" align=3D"center"> <table style=3D"margi=
+n: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-b=
+ox; box-sizing: border-box; border-spacing: 0; border-collapse: collapse !i=
+mportant;"> <!-- thumbnail container --> <tr class=3D"title-row" align=3D"l=
+eft" valign=3D"top" style=3D"margin: 0; padding: 0; -webkit-box-sizing: bor=
+der-box; -moz-box-sizing: border-box; box-sizing: border-box; vertical-alig=
+n: top;"> <td align=3D"left" valign=3D"top" style=3D"margin: 0; padding: 0;=
+ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: b=
+order-box; vertical-align: top;"> <!-- img --> <div class=3D"thumbnail-cont=
+ainer" style=3D"padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing=
+: border-box; box-sizing: border-box; text-align: center; margin: 0 auto; w=
+idth: 140px;"> <a href=3D"https://iterable.scribd.com/u/click?_t=3D92f0cbc6=
+f584418c9def9397d7beca21&_m=3D52bb8dc2e7d54b66b43c4c637e713dcf&_e=3DXMfcb3d=
+OnASij9onwFmoS3BocQPVTAK6nO77RQhSAHuIlJFhVyAMsNTj0qOjCMZ7lT6sKUB4_rCI6xzjhs=
+1stMXl6azc5WPh4g0hWFxZy4MkWdyt4BWYQZNsP5_1wyIuWnbD2dB_arXQKlARtNxhsvd780ESW=
+nHhEQq6GUNwmkKMrlY0rUUsOgIGh4u4TR7imMzdM4g3UWpkfkHQwpm4mdW4YbV5zZBQ4PTsTryp=
+Y3AUeXEyziUVZyk52zz1U-FsmidxyZP9whb1W9z1_fTk6vG78yVnpZXlsXgx8H4U9Mg%3D" tar=
+get=3D"_blank"> <picture> <!----> <img class=3D"list-thumbnail" src=3D"http=
+s://imgv2-1-f.scribdassets.com/img/audiobook_square_badge/486619648/218x218=
+/2237eeefbd/1684262476?v=3D1" width=3D"140" height=3D"140" style=3D"display=
+: inline-block; vertical-align:bottom; margin:0; font-family: 'CircularMedi=
+um', Arial, sans-serif; color: #000; font-size: 21px; line-height: 1.2em;" =
+border=3D"0" alt=3D"Let Me Tell You What I Mean"> <!----> </picture> </a> <=
+/div> </td> </tr> <!-- end thumbnail container --> <tr class=3D"title-row t=
+itle-thumbnail-padding-bottom" style=3D"margin: 0; padding: 0; -webkit-box-=
+sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;"><=
+td style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box=
+-sizing: border-box; box-sizing: border-box;">&nbsp;</td></tr> <!-- copy co=
+ntainer --> <tr class=3D"title-row" valign=3D"bottom" style=3D"margin: 0; p=
+adding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box=
+-sizing: border-box; vertical-align: bottom;"> <td align=3D"left" class=3D"=
+title-copy" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box;=
+ -moz-box-sizing: border-box; box-sizing: border-box;"> <table class=3D"tit=
+le-info-table" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-b=
+ox; -moz-box-sizing: border-box; box-sizing: border-box; border-spacing: 0;=
+ border-collapse: collapse !important;"> <tr style=3D"margin: 0; padding: 0=
+; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: =
+border-box;"> <td align=3D"left" valign=3D"top" style=3D"margin: 0; padding=
+: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizin=
+g: border-box; font-family: 'Source Sans Pro', Helvetica, sans-serif;"> <di=
+v class=3D"copy title-info" height=3D"96" style=3D"margin: 0; padding: 0; -=
+webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bor=
+der-box; font-family: 'Source Sans Pro', Helvetica, sans-serif; font-size: =
+16px; line-height: 24px; font-weight: 600; color: #000; text-align: left; f=
+ont-style: normal; height: 96px;"> Let Me Tell You What I Mean <!--<br><spa=
+n style=3D"font-size: 16px; line-height: 24px; font-weight: 400 !important;=
+">By Let Me Tell You What I Mean</span>--> </div> </td> </tr> <!--[if mso]>=
+<tr><td class=3D"list-selection-copy-padding-bottom" style=3D"height:16px; =
+"height=3D"16">&nbsp;</td></tr><![endif]--> <!--buttons--> <tr style=3D"mar=
+gin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border=
+-box; box-sizing: border-box;"> <td style=3D"margin: 0; padding: 0; -webkit=
+-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-bo=
+x;"> <table class=3D"title-info-table" style=3D"margin: 0; padding: 0; -web=
+kit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border=
+-box; border-collapse: collapse; border-spacing: 0;"> <tr style=3D"margin: =
+0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;=
+ box-sizing: border-box;"> <td align=3D"left" valign=3D"top" style=3D"margi=
+n: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-b=
+ox; box-sizing: border-box; font-family: 'Source Sans Pro', Helvetica, sans=
+-serif; font-size: 16px; line-height: 24px;"> <a class=3D"link-copy" style=
+=3D"margin:0 auto; border:0; white-space:pre; text-align:left; text-decorat=
+ion: underline; color: #20828D; letter-spacing:0.02em;cursor:pointer;" href=
+=3D"https://iterable.scribd.com/u/click?_t=3D92f0cbc6f584418c9def9397d7beca=
+21&_m=3D52bb8dc2e7d54b66b43c4c637e713dcf&_e=3DXMfcb3dOnASij9onwFmoS3BocQPVT=
+AK6nO77RQhSAHuIlJFhVyAMsNTj0qOjCMZ7lT6sKUB4_rCI6xzjhs1stMXl6azc5WPh4g0hWFxZ=
+y4MkWdyt4BWYQZNsP5_1wyIuWnbD2dB_arXQKlARtNxhsgXxbAp_KZrQNb-7XqWAH-qJ_mpYjOP=
+M09vfAO_97dN8nN89PeyMRiKr55e7v24vnIoMptAmUgk-BJ9RnJcwjqnFLlusaPhUu5eeMLKgUI=
+zbcLp05AyfNY4ZWJVq6F_hYibnetEBy4Sd92jkfGGiQds%3D" target=3D"_blank"><!---->=
+Listen now<!----></a> </td> </tr> </table> </td> </tr><!--end buttons--> </=
+table> </td> </tr> <!-- end copy container --> </table> </td> <td class=3D"=
+tile-padding-right" style=3D"margin: 0; padding: 0; -webkit-box-sizing: bor=
+der-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 20px;"=
+ width=3D"20">&nbsp;</td> </table> </td> </tr> <tr style=3D"margin: 0; padd=
+ing: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-si=
+zing: border-box;"><td class=3D"title-padding-bottom" style=3D"margin: 0; p=
+adding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box=
+-sizing: border-box; height: 24px;" height=3D"24">&nbsp;</td></tr> </table>=
+ <!--end title 06--> </td> </tr> </table> </td> </tr> <tr style=3D"margin: =
+0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;=
+ box-sizing: border-box;"><td class=3D"body-tiles-padding-bottom" style=3D"=
+margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bor=
+der-box; box-sizing: border-box; height: 32px;" height=3D"32">&nbsp;</td></=
+tr> <!--button--> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: b=
+order-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <td align=
+=3D"center" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box;=
+ -moz-box-sizing: border-box; box-sizing: border-box;"> <a href=3D"https://=
+iterable.scribd.com/u/click?_t=3D92f0cbc6f584418c9def9397d7beca21&_m=3D52bb=
+8dc2e7d54b66b43c4c637e713dcf&_e=3DqREOxcSyuxXAQAu6D8ZFn6ghy3nKRnFFzrWLvqB0N=
+vxmI0W7q1nBno8LgM-KqgmyuFMwPdRiWX2ZpaLz_yz7GntAmbKm4pzCSmJvKTw1Ipb_V_Z0Cv7c=
+ZeHQgNPaTqK_rj3W9P3Epu5cXweut-0cCZTt8jNsm92odkxPmYURfrGwGG-IwwgOQajqeg6neCu=
+FAY9mK89NwhGANi6wWJg-PBZNPhAw66bfoqUweKKMI7M00IsCJrlT5bNGhmz-qbhIv63q4soHZn=
+LYxfE67MtwXqAnfHfWOSLq7XxvnyC2vd8%3D" style=3D"text-decoration:none;" targe=
+t=3D"_blank"> <table style=3D"margin: 0; padding: 0; -webkit-box-sizing: bo=
+rder-box; -moz-box-sizing: border-box; box-sizing: border-box; border-spaci=
+ng: 0; border-collapse: collapse !important;"> <tr style=3D"margin: 0; padd=
+ing: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-si=
+zing: border-box;"> <td class=3D"desktop-element" style=3D"margin: 0; -webk=
+it-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-=
+box; border-collapse: collapse !important; border-spacing: 0 !important; pa=
+dding: 0 !important;"> <img class=3D"light-img" src=3D"https://d15k2d11r6t6=
+rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6=
+dd6a/92f0cbc6f584418c9def9397d7beca21/Brand-Assets_2021/buttons/EN/cta_read=
+-free-60.png" width=3D"300" height=3D"40" style=3D"display:block;margin:0 a=
+uto; color: #fff; text-align:center;" alt=3D"[ Read free for 60 days ]"> <!=
+--[if !mso]><!--> <img class=3D"dark-img" src=3D"https://d15k2d11r6t6rl.clo=
+udfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/9=
+2f0cbc6f584418c9def9397d7beca21/Brand-Assets_2021/buttons/EN/cta_read-free-=
+60_dk1.png" width=3D"300" height=3D"40" style=3D"display:none; margin:0 aut=
+o;color: #fff; text-align:center; mso-hide: all !important;" alt=3D"[ Read =
+free for 60 days ]"> <!--<![endif]--> </td> </tr> </table> <!--[if !mso]><!=
+--> <table style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; =
+-moz-box-sizing: border-box; box-sizing: border-box; border-spacing: 0; wid=
+th: 100%; max-width: 350px; border-collapse: collapse !important; mso-hide:=
+ all !important;" width=3D"100%"> <tbody> <tr style=3D"margin: 0; padding: =
+0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing:=
+ border-box;"> <td class=3D"mobile-element cta-button" align=3D"center" val=
+ign=3D"top" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box;=
+ -moz-box-sizing: border-box; box-sizing: border-box; display: none; font-f=
+amily: 'Source Sans Pro', Helvetica, sans-serif; font-size: 18px; line-heig=
+ht: 20px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radiu=
+s: 4px; background-color: #20828D; width: 100%; mso-hide: all !important;" =
+width=3D"100%" bgcolor=3D"#20828D"> <a class=3D"mobile-element" style=3D"ms=
+o-hide: all !important; display:none; margin:0 auto; border:0; white-space:=
+pre; text-align:center; text-decoration:none; padding:12px 0px; color:#FFFF=
+FF;letter-spacing:0.02em;cursor:pointer;" href=3D"https://iterable.scribd.c=
+om/u/click?_t=3D92f0cbc6f584418c9def9397d7beca21&_m=3D52bb8dc2e7d54b66b43c4=
+c637e713dcf&_e=3DqREOxcSyuxXAQAu6D8ZFn6ghy3nKRnFFzrWLvqB0NvxmI0W7q1nBno8LgM=
+-KqgmyuFMwPdRiWX2ZpaLz_yz7GntAmbKm4pzCSmJvKTw1Ipb_V_Z0Cv7cZeHQgNPaTqK_rj3W9=
+P3Epu5cXweut-0cCRjmmDe2_USnxSkCvUWJ9olf3jgX_wP0bIWvfulE3v4ebrgiLbhKK315C0OM=
+lQl4Rz1xkQMst1b7HP1PV1pjsKyJPPU0p-Gt-dgBTbCYv1ugW0NJSFDPGs7f6x5TGUK6i8YG-C7=
+UbRhdgPEsqKoeFp8%3D">Read free for 60 days</a> </td> </tr> </tbody> </table=
+><!--<![endif]--> </a> </td> </tr><!--end button--> <!--[if !mso]><tr><td c=
+lass=3D"button-disclaimer-padding" style=3D"height:18px; "height=3D"18">&nb=
+sp;</td></tr><![endif]--> <tr style=3D"margin: 0; padding: 0; -webkit-box-s=
+izing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <=
+td align=3D"center" valign=3D"top" style=3D"margin: 0; padding: 0; -webkit-=
+box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box=
+; font-family: 'Source Sans Pro', Helvetica, sans-serif; padding-top: 12px;=
+"> <div class=3D"copy" style=3D"margin: 0; padding: 0; -webkit-box-sizing: =
+border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-famil=
+y: 'Source Sans Pro', Helvetica, sans-serif; font-size: 14px; line-height: =
+19px; font-weight: normal; font-weight: 400; color: #303140; text-align: ce=
+nter; font-style: normal;"> Cancel anytime. </div> </td> </tr> <!-- end BOD=
+Y --> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -=
+moz-box-sizing: border-box; box-sizing: border-box;"><td class=3D"section-p=
+adding-bottom" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-b=
+ox; -moz-box-sizing: border-box; box-sizing: border-box; height: 56px;" hei=
+ght=3D"56">&nbsp;</td></tr> </tbody> </table> </td> <td class=3D"padding-ri=
+ght" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-b=
+ox-sizing: border-box; box-sizing: border-box; width: 32px;" width=3D"32">&=
+nbsp;</td> </tr> </tbody> </table> <!--end main--> </td> </tr> <!--end top-=
+-> </table> <table class=3D"footer" style=3D"text-align:center;border-colla=
+pse:collapse!important;margin:0 auto;max-width:640px;width:100%;" align=3D"=
+center" max-width=3D"640" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" role=3D"presentation"><tr><td class=3D"footer-darkmode" styl=
+e=3D"background-color:#F0F2F9;"><table class=3D"footer" width=3D"100%" alig=
+n=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"prese=
+ntation" style=3D"text-align:center;border-collapse:collapse!important;marg=
+in:0 auto;max-width:640px;"><tbody><tr><td align=3D"center"> <table align=
+=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presen=
+tation" style=3D"border-collapse:collapse!important;margin:0 auto;"><tbody>=
+<tr><td class=3D"social-padding-top" style=3D"height:40px;"height=3D"40">&n=
+bsp; </td></tr><tr><td align=3D"center"> <table class=3D"footer-icon-contai=
+ner" style=3D"border-collapse:collapse!important;"><tr><td> <table align=3D=
+"center" style=3D"border-collapse:collapse!important;"><tr><td class=3D"foo=
+ter-social-icon-container" align=3D"left" valign=3D"top" style=3D"padding-r=
+ight:20px;font-family:'Source Sans Pro',Helvetica,sans-serif!important;"><d=
+iv> <picture> <a href=3D"https://iterable.scribd.com/u/click?_t=3D92f0cbc6f=
+584418c9def9397d7beca21&_m=3D52bb8dc2e7d54b66b43c4c637e713dcf&_e=3DqREOxcSy=
+uxXAQAu6D8ZFn3lCFFGDlVWg8StjXdeDpY5yQLQq4SgXKkd5yQF9xx53AKTwEEmkMnVvti8Wtv9=
+36Eqk8Q3XrZLlNyctwSN920subrCDF2VMdDVsYaZzBwaglTxdWsQeQC-yFoxAoxtpgIakGSah61=
+S0duN18N_9glznKJjcHjJhuE-TriGesb9lc7a2B65g0MLqUIIsvcYQsQpWgRRFicv-pzaY7pFp8=
+L6TNcxVLPD3cztCsbJnoHo5Yy_LwCStHanHwRyl0yw7Pw%3D%3D" target=3D"blank"> <img=
+ class=3D"social-icon" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/=
+users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def=
+9397d7beca21/Brand-Assets_2021/icons/footer-social-icons/icon_ig.png" alt=
+=3D"Instagram" class=3D"show-me-always" border=3D"0" width=3D"16" style=3D"=
+font-size:8px;display:block;text-align:left;vertical-align:center;"/></a></=
+picture></div> </td><td class=3D"footer-social-icon-container" align=3D"lef=
+t" valign=3D"top" style=3D"padding-right:20px;font-family:'Source Sans Pro'=
+,Helvetica,sans-serif!important;"><div> <picture> <a href=3D"https://iterab=
+le.scribd.com/u/click?_t=3D92f0cbc6f584418c9def9397d7beca21&_m=3D52bb8dc2e7=
+d54b66b43c4c637e713dcf&_e=3DqREOxcSyuxXAQAu6D8ZFn_qqPhSnZSO4I1mupjm4qMm7-yf=
+sh_GaSE7ngTmfvVaaVckRVMCFRC6p5nQyi_Ya-fXM5rBFq9ImfkF--LU0h2idFIFGyEL8k7an_8=
+SwSE07fQaXGrmCawSSoBPi65CSCYCehl6wct3DRHrOFU_lT1-kcFPr76zcS_P7BCMYCsi9KzJ2f=
+_u-oZYY99Tqbf_7cHIrbLJf8HGc62cBWPCFw667T5nnJ2oRQL2b2EnCp76FHxD76CEd-_L0XxO4=
+yvs0jA%3D%3D" target=3D"blank"> <img class=3D"social-icon" src=3D"https://d=
+15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd=
+7e-c542cff6dd6a/92f0cbc6f584418c9def9397d7beca21/Brand-Assets_2021/icons/fo=
+oter-social-icons/icon_fb.png" alt=3D"Facebook" class=3D"show-me-always" bo=
+rder=3D"0" width=3D"16" style=3D"font-size:8px;display:block;text-align:lef=
+t;vertical-align:center;"/></a></picture></div> </td><td class=3D"footer-so=
+cial-icon-container" align=3D"left" valign=3D"top" style=3D"padding-right:2=
+0px;font-family:'Source Sans Pro',Helvetica,sans-serif!important;"><div> <p=
+icture> <a href=3D"https://iterable.scribd.com/u/click?_t=3D92f0cbc6f584418=
+c9def9397d7beca21&_m=3D52bb8dc2e7d54b66b43c4c637e713dcf&_e=3DqREOxcSyuxXAQA=
+u6D8ZFn9A3YMdaiAEFwQTv0svyuQp7Cf0gyBIDyeuw0VY0bVVCAEM4y5F1mRi1kbqtGd5QK9Hwd=
+9Vo9ZJIfd6Owgl-por3a9P-5iSmtCBj1fl4fB1NhA4dGsvYMPShojM_65UalrevCSLn0H_ITL-T=
+Oc3KWpbQrTrHwscZpwsszOzJ6qTPnCPcNwkUjqp3LEDF4cc3ZdI9GitNRFY8W1x5YHm3g6hX6O3=
+USpFu6HJ8xFGUHsk6k61Il2SLM5XJcCr8BQ0PWQ%3D%3D" target=3D"blank"> <img class=
+=3D"social-icon" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/=
+Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def9397d7=
+beca21/Brand-Assets_2021/icons/footer-social-icons/icon_tw.png" alt=3D"Twit=
+ter" class=3D"show-me-always" border=3D"0" width=3D"16" style=3D"font-size:=
+8px;display:block;text-align:left;vertical-align:center;"/></a></picture></=
+div> </td><td class=3D"footer-social-icon-container" align=3D"left" valign=
+=3D"top" style=3D"padding-right:20px;font-family:'Source Sans Pro',Helvetic=
+a,sans-serif!important;"><div> <picture> <a href=3D"https://iterable.scribd=
+=2Ecom/u/click?_t=3D92f0cbc6f584418c9de=
+f9397d7beca21&_m=3D52bb8dc2e7d54b66b43=
+c4c637e713dcf&_e=3DqREOxcSyuxXAQAu6D8ZFn4_kg6iA-nwqgLsdWDvkZ-U6GhQHVsZkRF18=
+FTMOi8HGAhJ1kWs7aT_d1Ea8_PAEvyBqepEpTcBxBqLmEPptnaFsjDAhnR03un-qwhuXC3nUS5Y=
+9S-IAdJVzgohGr0ZmLZWYrAT080N_5BMUVoofx-80KEBnrZkMMs2bx3lElmTqUURm7UQMilvelg=
+U7lzl4v2OhKUZasHJWrtQxAbjgeUZNYMs2a-P5pNOGjUJKufhhk7PWYbHHBbvUYsfZjWnPsQ%3D=
+%3D" target=3D"blank"> <img class=3D"social-icon" src=3D"https://d15k2d11r6=
+t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cf=
+f6dd6a/92f0cbc6f584418c9def9397d7beca21/Brand-Assets_2021/icons/footer-soci=
+al-icons/icon_pin.png" alt=3D"Pinterest" class=3D"show-me-always" border=3D=
+"0" width=3D"16" style=3D"font-size:8px;display:block;text-align:left;verti=
+cal-align:center;"/></a></picture></div> </td><td class=3D"footer-social-ic=
+on-container" align=3D"left" valign=3D"top" style=3D"font-family:'Source Sa=
+ns Pro',Helvetica,sans-serif!important;"><div> <picture> <a href=3D"https:/=
+/iterable.scribd.com/u/click?_t=3D92f0cbc6f584418c9def9397d7beca21&_m=3D52b=
+b8dc2e7d54b66b43c4c637e713dcf&_e=3DqREOxcSyuxXAQAu6D8ZFn1MI4SEItx-sRsUs0CuC=
+TQRHmfBC619BsJF4hT0x6zpltI5cXNhRxpCUk9wzBZOoB8CNoY2oHOLyMajM8LMkRY3oQ7zphUW=
+lUA_vTeTqANyM3YkTmlu9aBCc7ooJ9MMGj46l9UXqtipfcJ9uHH30Qw4iNBj5JW54kQCDdKZQ6G=
+4nPT9cRRcsGEgY3wleaDtycdm0uIUVlZevVWoL5tAytHHZqmbLAyCQossP0T9g_kPvNBpEAdHtp=
+xgrWD0U_QFJsA%3D%3D" target=3D"blank"> <img class=3D"social-icon" src=3D"ht=
+tps://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-=
+46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def9397d7beca21/Brand-Assets_2021/i=
+cons/footer-social-icons/icon_tiktok.png" alt=3D"Tiktok" class=3D"show-me-a=
+lways" border=3D"0" width=3D"16" style=3D"font-size:8px;display:block;text-=
+align:left;vertical-align:center;"/></a></picture></div> </td></tr></table>=
+ </td></tr></table> </td></tr> <tr><td class=3D"social-padding-bottom" styl=
+e=3D"height:32px;"height=3D"32">&nbsp; </td></tr><tr><td align=3D"center"> =
+<table class=3D"footer-links-container" style=3D"border-collapse:collapse!i=
+mportant;"><tr><td class=3D"footer-column" valign=3D"bottom" style=3D"verti=
+cal-align:bottom;"> <table style=3D"border-collapse:collapse!important;"><t=
+r><td class=3D"footer-nav-links-container" align=3D"center" valign=3D"botto=
+m" style=3D"vertical-align:bottom;"> <table style=3D"border-collapse:collap=
+se!important;"><tr><td align=3D"center" valign=3D"bottom" style=3D"vertical=
+-align:bottom;"> <table style=3D"border-collapse:collapse!important;"><tr><=
+td valign=3D"top" style=3D"font-family:'Source Sans Pro',Helvetica,sans-ser=
+if!important;padding:0 20px 8px 20px;"><div class=3D"copy footer-copy foote=
+r-text-links" style=3D"font-family:'Source Sans Pro',Helvetica,sans-serif!i=
+mportant;font-size:14px;line-height:21px;font-weight:normal;font-weight:400=
+;color:#303140;text-align:center;font-style:normal;"> &nbsp;&nbsp;&nbsp;<sp=
+an class=3D"footer-copy" style=3D"color:#303140!important;text-decoration:n=
+one !important;"><a href=3D"https://iterable.scribd.com/u/click?_t=3D92f0cb=
+c6f584418c9def9397d7beca21&_m=3D52bb8dc2e7d54b66b43c4c637e713dcf&_e=3DqREOx=
+cSyuxXAQAu6D8ZFn21B-yfJIG6e-cEcn-6AOhhohNiXqQuihGgiwrm8S5ZH5MMe9JvXuznHgiE3=
+6PwPJm-99mxFDSaKrRYx8mwwdShjfZUPFI5WLHxteosqS3bwM4RFCzr20_NqZddtpDcHYt_1CM6=
+GBElU_09YilDySyexyxKuUnSrFK_fs8Ehn-oYVcfg8X9kfDYAg8c9oElGCLU2Dabh7zVH-i2L9T=
+fORG9o0XPgRbx3qGIWEbzl6ZVXG05eavVkXyJo4HssiO7lzw%3D%3D" class=3D"footer-cop=
+y" style=3D"text-decoration:none!important;color:#303140;" target=3D"blank"=
+>Our blog</a></span>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<span class=3D"foo=
+ter-copy" style=3D"color:#303140!important;text-decoration:none!important;"=
+><a href=3D"https://iterable.scribd.com/u/click?_t=3D92f0cbc6f584418c9def93=
+97d7beca21&_m=3D52bb8dc2e7d54b66b43c4c637e713dcf&_e=3DqREOxcSyuxXAQAu6D8ZFn=
+_LKwOhh0QwJEfnZuTi6l5fbDUUtNYBrXx-yC9Qvk6j94n8RpX1ELLdG0bXT33HNDqPf4faj5hgg=
+89KHzJfDl7tbLoC1Km-kT-2J1GXbgF720qSdBhAmHhiYYxewusCyhlJbENHJX6el4MtYkD818Yd=
+HpFpwLWlJ3nfEJcafNaD9V5GycXCzRfdWDIdLVdxZM6q2yQnGBDfQT4SjKKwqy2bOn5Lfg_KOlB=
+6ZIQVvZZjFr1KZgYmh2118t19CEwUSSMgQrfrVIsdtftkOmarQiXM%3D" class=3D"footer-c=
+opy" style=3D"text-decoration:none!important;color:#303140;" target=3D"blan=
+k">Refer&nbsp;a&nbsp;friend</a></span>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;=
+<span class=3D"footer-copy" style=3D"color:#303140!important;text-decoratio=
+n:none!important;"><a href=3D"https://iterable.scribd.com/e/encryptedUnsubs=
+cribe?_r=3D92f0cbc6f584418c9def9397d7beca21&_s=3D52bb8dc2e7d54b66b43c4c637e=
+713dcf&_t=3DtG5XBBXjcfK_gOn_MvhAFMgxvf19cdRk8EwF10IbfEZhCFEkynSglMghiQj0C0k=
+3u1_3VEP8sxRYsYJcj3MDWS-RfAlMjp8QZsD1hEYfUXM%3D" class=3D"footer-copy" styl=
+e=3D"text-decoration:none!important;color:#303140;" target=3D"blank">Unsubs=
+cribe</a></span>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<span class=3D"footer-=
+copy" style=3D"color:#303140!important;text-decoration:none!important;"><a =
+href=3D"https://iterable.scribd.com/u/click?_t=3D92f0cbc6f584418c9def9397d7=
+beca21&_m=3D52bb8dc2e7d54b66b43c4c637e713dcf&_e=3DqREOxcSyuxXAQAu6D8ZFn2vnJ=
+U0Qmgg0k9CT-lOVyHRcghkC9lxTGoM7OLOhehbXy_9PBxublLlrXDDO_yeOUmSoV4PNAUQCPMHm=
+_AS6gq-A1YT_f58bsqQxFKxBM5aUdC8-IPQyimd83Z2k-SbrN-jR3H4dLa4zcjiDkY6IqPTUDwh=
+ZVtWqsFqtwtQbeK72DIPiCdS0KaxPDKTemMpwyZ7fMdxvHX7ZioPvL8IukzifKrrw8S8Dd-Dkut=
+8nsbpxj_CX53VpSZkBUwIxx5uX9_7i0c4EkHO1XVjUVBNoiAW9fJ5wFYo6hHnVcW9CxHFQz2RAc=
+Oe1t19XP85ZUPioBQ%3D%3D" class=3D"footer-copy" style=3D"text-decoration:non=
+e!important;color: #303140;" target=3D"blank">Preferences</a></span>&nbsp;&=
+nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<span class=3D"footer-copy" style=3D"color:#3=
+03140!important;text-decoration:none!important;"><a href=3D"https://iterabl=
+e.scribd.com/u/click?_t=3D92f0cbc6f584418c9def9397d7beca21&_m=3D52bb8dc2e7d=
+54b66b43c4c637e713dcf&_e=3DqREOxcSyuxXAQAu6D8ZFn7wHBM_uRGgK2dGewCzJJUDY07yk=
+To_pq2p70unGdcjARYuhLDNe-ac9RfCsVicUdEfky-86tGDZHngQEHLMYFFODpy4wAzT7q-afLn=
+cNKyu2wR2lHIg5Gk4HvqJmuzlsQb7L-PyY6okT9RcKANb7mzFUsnJpByzHNjhtHKZ7dW-NSXnqH=
+xvHOsDkSzL19WbqGK_B3iPJX2hdYmRg8L4aK3FX8nTAMIUn8GbSRgyPMfpk--wuJ_xWr1GjU8-z=
+SC5_g%3D%3D" class=3D"footer-copy" style=3D"text-decoration:none!important;=
+color:#303140;" target=3D"blank">Contact&nbsp;us</a></span>&nbsp;&nbsp;&nbs=
+p; </div> </td></tr></table> </td></tr></table> </td></tr></table> </td></t=
+r></table> </td></tr> <tr><td class=3D"links-spacing-bottom" style=3D"heigh=
+t:32px;"height=3D"32">&nbsp; </td></tr><tr><td align=3D"center"> <table><tr=
+><td> <table align=3D"center" style=3D"border-collapse:collapse!important;"=
+><tr><td align=3D"center" valign=3D"top" style=3D"font-family:'Source Sans =
+Pro',Helvetica,sans-serif!important;"><div class=3D"footer-fine-print foote=
+r-copy" style=3D"font-family:'Source Sans Pro',Helvetica,sans-serif!importa=
+nt;font-size:12px;line-height:19px;font-weight:normal;font-weight:400;color=
+:#000;text-align:center;font-style:normal;"> This email was sent to <span c=
+lass=3D"link-copy" style=3D"font-weight:400;color:#1E7B85;text-decoration: =
+underline;"><a class=3D"link-copy" href=3D"https://iterable.scribd.com/u/cl=
+ick?_t=3D92f0cbc6f584418c9def9397d7beca21&_m=3D52bb8dc2e7d54b66b43c4c637e71=
+3dcf&_e=3DqREOxcSyuxXAQAu6D8ZFn2y2-LdnPDfbfO3SuD1MhEQ8srnWdVhRBqpizVAXInCW8=
+jW6RmgUnKOz7mXzStZ0h-YP_4aA8dhgBgmuSx7QZbLQYl07cAovRyyBp-ZjHs4j-0CyWYfmr1r5=
+qed2aEyA_DYVzfVst1nL_8jxoxH7ijWT_FzOhccc4MXoNasCa0okIcqkBCvX3ZyhtO2W3Z7MF10=
+xKmWCA2B0y796xo3dWdt86UDd-Yh6ir2Z5impWmAQGrjxmnmFLiVZSFTmEjc4eK9ETMR4rVKOSk=
+kFthQWjWA%3D" style=3D"font-weight:400;color:#1E7B85;text-decoration:underl=
+ine!important;">ciel@binc.pw</a></span>.<br> Scribd, <span class=3D"footer-=
+copy" style=3D"color:#000;text-decoration:none!important;">460 Bryant Stree=
+t, San Francisco, CA 94107</span></div> </td></tr></table> </td></tr></tabl=
+e> </td></tr><tr><td class=3D"section-padding-bottom" style=3D"height:56px;=
+"height=3D"56">&nbsp; </td></tr></tbody></table> </td></tr></tbody></table>=
+ </td></tr> </table> </td> </tr> </table> </div> <!--[if !mso]><!--> <!--<!=
+[endif]--> <img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.h=
+ello.scribd.com/o/eJw8yz1uwzAMQOHTyKMhkiJpDRr6s_QYFCUnLuzEiA30-kURpPP3XiuuA=
+rMNvYBMSTQJ83AtuWVHMbDZjSMLSY4gRNk188x5WApGpMgIQBCZx9SIgRF0QpRUJaR47et6Hw9_=
+LLWNft-GrZ_W7LQS9D0gbv047NK_WkAM9BYQGWudmmPXxqmK1ESeXEi7AjWf_0L8CIhn3_bVzv-=
+XWNMk-Yn74_7d_XyZ4ERPcNt2Wy63l6BA1JyDfg6P4ktfQ4p1ufm4__wGAAD__1nCTIA"></bod=
+y> </html>
+
+--d8ccf89df4acdc4d4dbb6a4d7a137e965b01e2243435b6306aaebe860725--

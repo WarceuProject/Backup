@@ -1,0 +1,162 @@
+Return-Path: <ingeocon@webhosting2033.is.cc>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id MFIaDtwgbGQ39RUAMUeTPA
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	for <kira@binc.pw>; Tue, 23 May 2023 09:11:40 +0700
+Return-path: <ingeocon@webhosting2033.is.cc>
+Envelope-to: kira@binc.pw
+Delivery-date: Tue, 23 May 2023 09:11:40 +0700
+Received: from eastern.birch.relay.mailchannels.net ([23.83.209.55]:27315)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q1HUu-0062ym-29
+	for kira@binc.pw;
+	Tue, 23 May 2023 09:11:40 +0700
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 53D7D341D24
+	for <kira@binc.pw>; Tue, 23 May 2023 02:10:51 +0000 (UTC)
+Received: from offload.mailbaby.net (unknown [127.0.0.6])
+	(Authenticated sender: interserver)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 9B8EC341FCC
+	for <kira@binc.pw>; Tue, 23 May 2023 02:10:50 +0000 (UTC)
+ARC-Seal: i=2; s=arc-2022; d=mailchannels.net; t=1684807850; a=rsa-sha256;
+	cv=pass;
+	b=m4fjhzBtyNhyN6UueuSjw9bgEYTZbdTOaJCVkMx7IvtxbDG/xxs5S7hKvtc/hqkzWM+IeD
+	ClIHP5y4lkeqmrFvdqYDOztAMFLRq0+rkWv2mQA5gHbXbaJOT4N5IRfH/g0MVeuocJ9SzO
+	MBk11v63g24TWN44rK5plWKdNvVKr5waJMn0q/tiBwqJ0/ot6NU3XsWjdEJ3KaYfTPIfXo
+	dd1HMGKcp8fZs6Bz+siXzPL9dG5Old+o6MfBnjIt27j1Zc7OuwkMkgxpftHrttnYLHTfqn
+	E6Dm6FvA5NqOf4dCDvTUpbg8GDwa8JUgTE52pqpsXSLvkR0cNlPbC6WN91lgQg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1684807850;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=DQTWcSsWpeOefu4CtSWijo42xeZl87fzmAITbIGqJWI=;
+	b=Ww5lMEMwUb589xyMSPHMeUARbBai/i8axY9yA0FSN7ZApf5PnR/dnew0jFHcH4223g39pP
+	cGRlT1MSMVTJ/mm1YMcfQwEnDqLGRUOmhl60XDvp4mSAGo/jWo2v2nmg5ANdsQlpksTNQm
+	txcH7miR5gxIDh3Mg8WnQNos9+UtaL/BdVRKKdP4RAeHppaNxEICiZIeOTVlo2OFRJJy+9
+	8RDLJbaNpHAQFdm1+WwoLD+3qLOf1J5xVLaZEg/JbleBzRPA3Eik5TXXNf4e4sXhfZ5rAW
+	FBn2JOCiFInoYU05dd8ECJLnfabXlv2gYMYVL/HYXuQ5n2sfBWBYHZYUhWzrGQ==
+ARC-Authentication-Results: i=2;
+	rspamd-5cdf8fd7d9-fw8rh;
+	arc=pass ("mailbaby.net:s=detka:i=1");
+	auth=pass smtp.auth=interserver smtp.mailfrom=ingeocon@webhosting2033.is.cc
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MC-Relay: Neutral
+X-MailChannels-SenderId: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MailChannels-Auth-Id: interserver
+X-Whimsical-Arithmetic: 6e2e829568b0294c_1684807851026_3479566766
+X-MC-Loop-Signature: 1684807851026:1759672942
+X-MC-Ingress-Time: 1684807851026
+Received: from offload.mailbaby.net (offload.mailbaby.net [192.64.83.199])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.120.163.35 (trex/6.8.1);
+	Tue, 23 May 2023 02:10:51 +0000
+Received: from webhosting2033.is.cc ([68.168.213.91] webhosting2033.is.cc)
+ (Authenticated sender: webhosting2033)
+ by offload.mailbaby.net (InterServerMTA) with ESMTPSA id 188465f9001000dfdc.001
+ for <kira@binc.pw>
+ (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256);
+ Tue, 23 May 2023 02:10:47 +0000
+X-Zone-Loop: ede7a326d14c507fff2c6506e2eb60ff54e780494e5d
+ARC-Authentication-Results: i=1;	rspamd2.mailbaby.net;	auth=pass
+ smtp.auth=webhosting2033 smtp.mailfrom=ingeocon@webhosting2033.is.cc
+ARC-Seal: i=1; s=detka; d=mailbaby.net; t=1684807848; a=rsa-sha256;
+	cv=none;
+	b=K23AqUEpTqcTHm0kCpUmu2xjyIiEB0n7y3rKtIJNDe3W1wQwVOXk7+PL5AY2rfPovjmRrl
+	rj/HddeBB0c/5ZL7LKWsJ1Vixtv+M+/E4Eicufn4+aPtTS7p0yjQb5/bJ0ECkcUZh00rGJ
+	hUgfUdOc2UjclP7b0HvhC4hhtRGtj/lYM2J4mi+VLGfzO6eZVkK6ctJbbhht94/bhyaQxk
+	7ezqM1Cu72LINIEdsJuDSfJxyctT7ddys2YmSNTmb1+dMwIfOgHiyBUzNpA/3PbYVJf3oQ
+	c24T8z0G1WPGxV2J8Br68dbYfOrGV3KDOm9LkH1H4IEaxY7rP9Y9EISYve9ImA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailbaby.net;	s=detka; t=1684807848;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=DQTWcSsWpeOefu4CtSWijo42xeZl87fzmAITbIGqJWI=;
+	b=W5k83PlpfRozzH/JIkilv4QDQN/DVQ9WXw94LOAHwSA7pLGsQJCMTpfHXgvADvd/jEuHtz
+	7A1hxODZLjKaCIQyZzBCJx9hghs/MHn3amXQpf2AfS1Qq7X4ga14lr3N/atqvFpkBecFPq
+	xeuiU3owtld5w54M8OnFttSmJiYN1OJcrKNnLZ8RhG7vocLZS7610Hsj7wdKPYUl0cubfW
+	C0a0UC7hyzB6EPmdV50DntUvoh8K5dFtQor53h04+vZ+P1pFvnnGuE1rW3IX2uHwCOcNvN
+	KmaJ9Jzj/WCIyBvMg50rU7pHV3aL0tvC2Q152Lx1atLJueBJA4iSpP8o8CYQdQ==
+X-SPF: pass
+X-Originating-IP: [68.168.213.91]
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=webhosting2033.is.cc; s=default; h=Sender:Content-Type:MIME-Version:
+	Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=DQTWcSsWpeOefu4CtSWijo42xeZl87fzmAITbIGqJWI=; b=LRsQiTIzzoX2jNuHHhrtzYwZsm
+	Sie2mSlkndZgDb5tKxjDZd6BekJea1LFZmYFWv4vHrymTzHlbYDKnv5D8aH43H7E3YaIQHQNCDrdl
+	dwz4T1DGQboma8Sx1l+tIo+fJvEORvcvPzH1bl30AGENHvL6xo+Hwr/OzG60+RPnL1zUgXTDKWG0M
+	vSO7kYKGWojWIN/d4nj8AJxlhPIlHAoJGs1ecsVMfTGjF4SVVbpybsWJyeKCLlFXobD74cGQ3z1G+
+	NmwoPdiV6ER3hTKom055an/ekUvZs2KIgM17RCtqjUS+VifRBxHghR8/Mo+kaAd0MajFchcecRI3+
+	HUDqamtg==;
+Received: from ingeocon by webhosting2033.is.cc with local (Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q1HU6-0020ad-1I
+	for kira@binc.pw;
+	Mon, 22 May 2023 22:10:47 -0400
+To: kira@binc.pw
+Subject: [InGEO consulting] Please moderate: "2. Blame the connection state towards years gap"
+X-PHP-Script: ingeoconsulting.com/wp-comments-post.php for 45.64.246.153
+X-PHP-Originating-Script: 1159:class-phpmailer.php
+Date: Tue, 23 May 2023 02:10:46 +0000
+From: WordPress <wordpress@ingeoconsulting.com>
+Message-ID: <2528fef1e6276e64cc57e8e9d53509c1@ingeoconsulting.com>
+X-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <ingeocon@webhosting2033.is.cc>
+X-AuthUser: ingeocon@webhosting2033.is.cc
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "2. Blame the connection state towards
+    years gap" is waiting for your approval https://ingeoconsulting.com/2022/12/30/2-blame-the-connection-state-towards-years-gap/
+    Author: gate io coinmarketcap (IP address: 45.64.246.153, 45.64.246.153)
+   Email: 80447251@outlook.com URL: https://www.gate.io/tr/signup/XlQVXVo Comment:
+    This article opened my eyes, I can feel your mo [...] 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: gate.io]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+X-Spam-Flag: NO
+
+A new comment on the post "2. Blame the connection state towards years gap" is waiting for your approval
+https://ingeoconsulting.com/2022/12/30/2-blame-the-connection-state-towards-years-gap/
+
+Author: gate io coinmarketcap (IP address: 45.64.246.153, 45.64.246.153)
+Email: 80447251@outlook.com
+URL: https://www.gate.io/tr/signup/XlQVXVo
+Comment: 
+This article opened my eyes, I can feel your mood, your thoughts, it seems very wonderful. I hope to see more articles like this. thanks for sharing.
+
+Approve it: https://ingeoconsulting.com/wp-admin/comment.php?action=approve&c=119#wpbody-content
+Trash it: https://ingeoconsulting.com/wp-admin/comment.php?action=trash&c=119#wpbody-content
+Spam it: https://ingeoconsulting.com/wp-admin/comment.php?action=spam&c=119#wpbody-content
+Currently 14 comments are waiting for approval. Please visit the moderation panel:
+https://ingeoconsulting.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

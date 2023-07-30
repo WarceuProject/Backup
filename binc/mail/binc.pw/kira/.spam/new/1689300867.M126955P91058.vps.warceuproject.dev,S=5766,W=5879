@@ -1,0 +1,113 @@
+Return-Path: <grafica2@host4004.hospedameusite.net>
+Delivered-To: kira+spam@binc.pw
+Received: from vps.warceuproject.dev
+	by vps.warceuproject.dev with LMTP
+	id 6hxdBoOvsGSyYwEA0wEIKA
+	(envelope-from <grafica2@host4004.hospedameusite.net>)
+	for <kira+spam@binc.pw>; Fri, 14 Jul 2023 04:14:27 +0200
+Return-path: <grafica2@host4004.hospedameusite.net>
+Envelope-to: kira@binc.pw
+Delivery-date: Fri, 14 Jul 2023 04:14:27 +0200
+Received: from host4004.hospedameusite.net ([158.69.17.134]:49375)
+	by vps.warceuproject.dev with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <grafica2@host4004.hospedameusite.net>)
+	id 1qK8K6-000NgL-0M
+	for kira@binc.pw;
+	Fri, 14 Jul 2023 04:14:26 +0200
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=graficaemnatal.com.br; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:From:Date:Subject:To:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=sLwDaWVh5+baZpc+KbWFbsvpo31W2NqJKxQRQFfj9uk=; b=FiYgK9oKRFimxQWyIYub3HmoL2
+	KeGKI3rx0vzrudmYKE7u1MFNjdqzuNe6UTedm3f3GRSRAWL4qpPrwtzK3vdLkFEiCJfDiyPbjir01
+	9z/PyTml7m3hW+7Tc7HHUVQENohouOncaIAstEqoYSk/mNmgw0G87TN4NAej8MhNb513wy1r7TIfM
+	/NCkwDkHIYojXpVS6MyrcsR50Ftbm8eL/kGAa8Ql42VqUOAinQTBjU4fO0eBhTADE+vpFFrZUqplg
+	Y1jTi9dKwgmWPp/xPDrO0HBjFdI5WcNu4ciRl8bq5TN2q/0zG0l9llxUpY4IHQy5l3U00x280HcK/
+	wS1Kn4Pw==;
+Received: from grafica2 by host4004.hospedameusite.net with local (Exim 4.96)
+	(envelope-from <grafica2@host4004.hospedameusite.net>)
+	id 1qK8JN-00GtRS-0h
+	for kira@binc.pw;
+	Thu, 13 Jul 2023 23:13:37 -0300
+To: kira@binc.pw
+X-PHP-Script: graficaemnatal.com.br/wp-admin/options.php for 187.19.163.212
+X-PHP-Originating-Script: 3261:PHPMailer.php
+Date: Fri, 14 Jul 2023 02:13:36 +0000
+From: WordPress <wordpress@graficaemnatal.com.br>
+Message-ID: <NNzbrsKYYNh7EXxYjxwFdT5YsCskxU14ABe3n7fzRQU@graficaemnatal.com.br>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - host4004.hospedameusite.net
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [3261 990] / [47 12]
+X-AntiAbuse: Sender Address Domain - host4004.hospedameusite.net
+X-Get-Message-Sender-Via: host4004.hospedameusite.net: authenticated_id: grafica2/from_h
+X-Authenticated-Sender: host4004.hospedameusite.net: wordpress@graficaemnatal.com.br
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: graficaemnatal.com.br:/public_html/wp-admin
+X-Spam-Status: Yes, score=5.1
+X-Spam-Score: 51
+X-Spam-Bar: +++++
+X-Spam-Report: Spam detection software, running on the system "vps.warceuproject.dev",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hi, This notice confirms that the admin email address was
+   changed on PNP Gráfica®. The new admin email address is cacjr84@gmail.com.
+    
+ Content analysis details:   (5.1 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: graficaemnatal.com.br]
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query
+                              to zen.spamhaus.org was blocked due to
+                             usage of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [158.69.17.134 listed in zen.spamhaus.org]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: graficaemnatal.com.br]
+  0.0 URIBL_ZEN_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: graficaemnatal.com.br]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+  5.0 KAM_SOMETLD_ARE_BAD_TLD .stream, .trade, .pw, .top, .press,
+                             .guru, .casa & .date TLD Abuse
+X-Spam-Flag: YES
+Subject:  ***SPAM***  =?UTF-8?Q?[PNP_Gr=C3=A1fica=C2=AE]_Admin_Email_Changed?=
+
+Hi,
+
+This notice confirms that the admin email address was changed on PNP Gráfica®.
+
+The new admin email address is cacjr84@gmail.com.
+
+This email has been sent to kira@binc.pw
+
+Regards,
+All at PNP Gráfica®
+https://graficaemnatal.com.br
+

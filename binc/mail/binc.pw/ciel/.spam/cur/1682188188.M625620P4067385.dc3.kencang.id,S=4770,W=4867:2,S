@@ -1,0 +1,97 @@
+Return-Path: <generazionecerno@srv314.seekahost.net>
+Delivered-To: ciel+spam@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id wPc4I5wnRGQ5ED4AMUeTPA
+	(envelope-from <generazionecerno@srv314.seekahost.net>)
+	for <ciel+spam@binc.pw>; Sun, 23 Apr 2023 01:29:48 +0700
+Return-path: <generazionecerno@srv314.seekahost.net>
+Envelope-to: ciel@binc.pw
+Delivery-date: Sun, 23 Apr 2023 01:29:48 +0700
+Received: from srv314.seekahost.net ([51.210.208.71]:57936)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <generazionecerno@srv314.seekahost.net>)
+	id 1pqHzZ-00H4iK-34
+	for ciel@binc.pw;
+	Sun, 23 Apr 2023 01:29:48 +0700
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=generazionecernobyl.org; s=default; h=Content-Type:MIME-Version:Message-ID:
+	From:Date:Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=rjPUARlO6z7HbAs3OipV+XZn4GfYNjw/OxAJBZ6XfoU=; b=nEisFNLvpHJvRsfx4RyRTkLCjG
+	993btdbrdaxpdR7kZiVF6kUyYo0S09GIbENa9RbS5Sb+cGuDMupS9Qt4Sl5gbq3ZrtipWP7ORXZyC
+	Zr5QuuDdH136memuOC9OW2mohkBHQjN7iYZzef8ItICGZswQ/Qvd1yMvTJ/12290twVdiUA+TU90d
+	pmoToI6FS6xGq+KeMlS5L1ajnlLi9jp15TkAo5g/dOe9eOtXv8wUMinR6ZNp2/UprPNRIn7CWtMFT
+	d4zb5N8OP2DmMgwWF/9BxGN7R+eGRqdRB7wDGgvblpKDbL2V+sa6ZMXZk7UEZOT81JazCIXOFPB8X
+	/67Y5jgw==;
+Received: from generazionecerno by srv314.seekahost.net with local (Exim 4.96)
+	(envelope-from <generazionecerno@srv314.seekahost.net>)
+	id 1pqHyq-005b7o-0Z
+	for ciel@binc.pw;
+	Sat, 22 Apr 2023 20:29:04 +0200
+To: ciel@binc.pw
+X-PHP-Script: generazionecernobyl.org/wp-admin/profile.php for 103.14.250.189
+ X-PHP-Originating-Script: 1853:PHPMailer.php
+Date: Sat, 22 Apr 2023 18:29:04 +0000
+From: WordPress <wordpress@generazionecernobyl.org>
+Message-ID: <FRaWexl9YPPpZtMCK0zEj7VTN1aNC9WaR61Ar41mc@generazionecernobyl.org>
+X-Mailer: PHPMailer 6.6.5 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - srv314.seekahost.net
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [1853 990] / [47 12]
+X-AntiAbuse: Sender Address Domain - srv314.seekahost.net
+X-Get-Message-Sender-Via: srv314.seekahost.net: authenticated_id: generazionecerno/from_h
+X-Authenticated-Sender: srv314.seekahost.net: wordpress@generazionecernobyl.org
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: generazionecernobyl.org:/public_html/wp-admin
+X-Spam-Status: Yes, score=5.2
+X-Spam-Score: 52
+X-Spam-Bar: +++++
+X-Spam-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hi Cerno, This notice confirms that your password was changed
+    on Generazione Cerno. If you did not change your password, please contact
+    the Site Administrator at admin@generazionecernobyl.org 
+ Content analysis details:   (5.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: generazionecernobyl.org]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  5.0 KAM_SOMETLD_ARE_BAD_TLD .stream, .trade, .pw, .top, .press,
+                             .guru, .casa & .date TLD Abuse
+X-Spam-Flag: YES
+Subject:  ***SPAM***  [Generazione Cerno] Password Changed
+
+Hi Cerno,
+
+This notice confirms that your password was changed on Generazione Cerno.
+
+If you did not change your password, please contact the Site Administrator at
+admin@generazionecernobyl.org
+
+This email has been sent to ciel@binc.pw
+
+Regards,
+All at Generazione Cerno
+https://generazionecernobyl.org
+

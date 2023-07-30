@@ -1,0 +1,700 @@
+Return-Path: <bounce-14_HTML-2576967-17-514006239-3224694@bounce.verify.salesforce.com>
+Delivered-To: center@warceuproject.dev
+Received: from vps.warceuproject.dev
+	by vps.warceuproject.dev with LMTP
+	id zmNXA13FwmQQFA8A0wEIKA
+	(envelope-from <bounce-14_HTML-2576967-17-514006239-3224694@bounce.verify.salesforce.com>)
+	for <center@warceuproject.dev>; Thu, 27 Jul 2023 21:28:29 +0200
+Return-path: <bounce-14_HTML-2576967-17-514006239-3224694@bounce.verify.salesforce.com>
+Envelope-to: center@warceuproject.dev
+Delivery-date: Thu, 27 Jul 2023 21:28:29 +0200
+Received: from kg211.mta.exacttarget.com ([13.111.171.211]:45351)
+	by vps.warceuproject.dev with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <bounce-14_HTML-2576967-17-514006239-3224694@bounce.verify.salesforce.com>)
+	id 1qP6ev-004945-1Z
+	for center@warceuproject.dev;
+	Thu, 27 Jul 2023 21:28:28 +0200
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=10dkim1; d=salesforce.com;
+ h=From:To:Subject:Date:MIME-Version:List-ID:X-CSA-Complaints:Message-ID:
+ Content-Type; i=noreply@salesforce.com;
+ bh=8DGHbiYdW7BlRuxlykk9tW9r0t3zr+UGSHDJvtPeLBY=;
+ b=UnDEaD36hGqPJZolHpIyCqd/2nSZvFHel+c6e9tXWYFK7CV7tsHBS9A51/1ck908+NSP77+bxDXH
+   VRoDSdugh8TSZko9r/PFu0pobG7DU91kd+5B7yinkv2rCDgKdiBYVw8VuzXqDPlrebkBa/mZ/tc2
+   12MaxhZjFHALdgXAm5sPqGqv/0bGAcip56rh5InUi/9Z1vsD9NZ/K1tzK9dHtZtfgQjRiKrsTBOw
+   l7Jz+5iiuKX/wgp7Iui1xzHYm22LWQDjEc8RWuT3vwoIz/BYjGeRZryb23ClaQjvrDx8PuOOA0WA
+   im/rv0moENJ73uHM3Ta8sxhehnLAVrNwOGjMBA==
+Received: by kg211.mta.exacttarget.com id hob2lg2fmd4n for <center@warceuproject.dev>; Thu, 27 Jul 2023 19:27:40 +0000 (envelope-from <bounce-14_HTML-2576967-17-514006239-3224694@bounce.verify.salesforce.com>)
+From: "Salesforce Verification Service" <noreply@salesforce.com>
+To: <center@warceuproject.dev>
+Subject: Verification Method Added
+Date: Thu, 27 Jul 2023 13:27:40 -0600
+MIME-Version: 1.0
+List-ID: <514006239.xt.local>
+X-CSA-Complaints: whitelist-complaints@eco.de
+x-messageKey: d061fbf0-a942-4302-b03f-f8d591566d9e
+X-Delivery: Transactional
+X-SFMC-Stack: 11
+x-job: 514006239_17
+Message-ID: <125c7b83-1e99-431f-85bb-135a06f0d5ea@atl1s11mta444.xt.local>
+Content-Type: multipart/alternative;
+	boundary="w9JQKtOJCLop=_?:"
+X-Spam-Status: No, score=1.3
+X-Spam-Score: 13
+X-Spam-Bar: +
+X-Ham-Report: Spam detection software, running on the system "vps.warceuproject.dev",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"
+    lang="en"> <head> <meta http-equiv= [...] 
+ Content analysis details:   (1.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_ZEN_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: salesforce.com]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: sfdcstatic.com]
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: salesforce.com]
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query
+                              to zen.spamhaus.org was blocked due to
+                             usage of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [13.111.171.211 listed in zen.spamhaus.org]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  1.5 MPART_ALT_DIFF_COUNT   BODY: HTML and text parts are different
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
+                             Colors in HTML
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+ -0.0 DKIMWL_WL_MED          DKIMwl.org - Medium trust sender
+X-Spam-Flag: NO
+
+This is a multi-part message in MIME format.
+
+--w9JQKtOJCLop=_?:
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>Verification Method Added</title>
+    <style type="text/css">
+      @font-face {
+        font-family: "SalesforceSansLight";
+        src: url("https://www2.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Light.woff2")
+            format("woff2"),
+          url("https://www2.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Light.woff")
+            format("woff");
+        font-style: normal;
+        font-weight: 300;
+      }
+      @font-face {
+        font-family: "SalesforceSans";
+        src: url("https://www2.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.woff2")
+            format("woff2"),
+          url("https://www2.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.woff")
+            format("woff");
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      table {
+        border-spacing: 0;
+      }
+      td {
+        padding: 0;
+      }
+      p {
+        font-size: 14px;
+      }
+      img {
+        border: 0;
+      }
+
+      @media screen and (max-width: 599.98px) {
+      }
+      @media screen and (max-width: 399.98px) {
+      }
+
+      /* Custom Dark Mode Colors */
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table,
+        div {
+          background-color: #2d2d2d !important;
+          color: #ffffff !important;
+        }
+        .darkmode-grey,
+        .darkmode-grey p,
+        .darkmode-grey table {
+          background-color: #3a3a3a !important;
+          color: #ffffff !important;
+        }
+
+        .darkmode-black {
+          background-color: #2d2d2d !important;
+          color: #ffffff !important;
+        }
+      }
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+          <style type="text/css">
+            table {border-collapse: collapse!important;}
+            </style>
+        <![endif] -->
+  </head>
+  <body
+    class="darkmode-black"
+    style="Margin:0; padding:0; min-width:100%; background-color:#534292"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {background-color:#534292!important;}
+        body, table, td, p, a {font-family: sans-serif !important;}
+      </style>
+    <![endif] -->
+    <center
+      style="width:100%; table-layout:fixed; background-color:#534292; padding-bottom:40px;"
+    >
+      <div
+        style="max-width:600px; background-color:#534292; border-radius:10px;"
+      >
+        <!-- Preview text div will go here -->
+
+        <!--[if (gte mso 9)|(IE)]>
+            <table width="600" align="center" style="border-spacing:0;color: #080707;" role="presentation">
+            <tr>
+              <td style="padding:0;">
+        <![endif] -->
+
+        <table
+          align="center"
+          style="border-spacing:0; color:#080707; font-family: SalesforceSans, sans-serif !important; background-color:#534292; Margin:0; padding:0; width:100%; max-width:600px;"
+          role="presentation"
+        >
+          <tr>
+            <td style="padding: 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <td style="text-align: center">
+                  <img
+                    src="https://authenticator-api.salesforce.com/themes/images/herokuidentity/0.21.0/upper_logo_img.png"
+                    alt=""
+                    width="200"
+                    style="max-width: 260px; padding: 20px 0 20px 0"
+                    border="0"
+                  />
+                </td>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+              </td>
+            </tr>
+          </table>
+        <![endif] -->
+      </div>
+
+      
+
+<div
+  class="darkmode-grey"
+  style="
+    width: 90%;
+    max-width:600px;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  "
+>
+  <!--[if (gte mso 9)|(IE)]>
+      <table width="90%" align="center" style="border-radius:10px;border-spacing:0;color: #080707;" role="presentation">
+        <tr>
+          <td style="padding:0;">
+  <![endif] -->
+
+  <table
+    align="center"
+    style="
+      border-radius: 10px;
+      border-spacing: 0;
+      color: #080707;
+      font-family: SalesforceSans, sans-serif !important;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      width: 80%;
+    "
+    role="presentation"
+  >
+    <tr>
+      <td style="padding: 10px 10px 0 10px; text-align: center">
+        <p style="font-size: 32px; font-weight:600; margin-bottom: 10px">
+          Verification Method Added
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:0; text-align:center">
+        <p style="line-height:1.71">
+          This verification method was recently added to your account:<br />
+          <a
+            rel="nofollow"
+            style="color: #080707 !important; text-decoration: None"
+            >center@warceuproject.dev</a
+          >
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:10px; text-align:center;">
+        <p
+          style="font-size: 32px; font-weight:600; color:#79589f; margin:0 0 20px 0;"
+        >
+          <strong>Authenticator App</strong>
+          <br />
+          
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td height="1" style="background-color:#dddbda;"></td>
+    </tr>
+
+    <tr>
+      <td style="text-align: center">
+        <p style="font-size: 14px; color: #080707">
+           If you didn't add this verification method, contact your administrator or Heroku support. 
+        </p>
+      </td>
+    </tr>
+  </table>
+  <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+    </table>
+  <![endif] -->
+</div>
+
+
+
+      <div
+        class="footer"
+        style="
+          max-width: 600px;
+          background-color:#534292;
+          border-radius: 10px;
+          margin-top: 10px;
+        "
+      >
+        <!--[if (gte mso 9)|(IE)]>
+        <table
+          width="100%"
+          align="center"
+          style="width:656px; padding:20px; font-family:sans-serif; font-size:12px;
+            color:#fefefe; font-size:14px; font-weight:normal;
+            font-stretch:normal; font-style:normal; line-height:1.5;
+            letter-spacing:normal; text-align:center;"
+          role="presentation"
+        >
+          <tr>
+            <td style="padding:0;">
+        <![endif] -->
+        <table
+          width="100%"
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          class="email-content-table-sub"
+          style="border: 0; padding: 0; margin: 0"
+        >
+          <tr>
+            <td
+              align="left"
+              style="
+                width: 100%;
+                padding: 20px;
+                font-family: SalesforceSans, sans-serif;
+                font-size: 12px;
+                color: #fefefe;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                text-align: center;
+              "
+              class="td-footer"
+            >
+              &copy; 2023<a
+                href=""
+                style="text-decoration: none; color: #fefefe"
+              >
+                Salesforce, Inc.</a
+              >
+              All rights reserved.<br />
+              Various trademarks held by their respective owners.<br />
+              &nbsp;<br />
+              <a
+                style="text-decoration: underline; color: #fefefe"
+                href="https://www.salesforce.com/company/privacy"
+              >
+                Privacy Statement
+              </a>
+            </td>
+          </tr>
+        </table>
+
+        <!--[if (gte mso 9)|(IE)]>
+              </td>
+            </tr>
+          </table>
+        <![endif] -->
+      </div>
+    </center>
+  </body>
+</html>
+
+
+--w9JQKtOJCLop=_?:
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>Verification Method Added</title>
+    <style type="text/css">
+      @font-face {
+        font-family: "SalesforceSansLight";
+        src: url("https://www2.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Light.woff2")
+            format("woff2"),
+          url("https://www2.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Light.woff")
+            format("woff");
+        font-style: normal;
+        font-weight: 300;
+      }
+      @font-face {
+        font-family: "SalesforceSans";
+        src: url("https://www2.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.woff2")
+            format("woff2"),
+          url("https://www2.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.woff")
+            format("woff");
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      table {
+        border-spacing: 0;
+      }
+      td {
+        padding: 0;
+      }
+      p {
+        font-size: 14px;
+      }
+      img {
+        border: 0;
+      }
+
+      @media screen and (max-width: 599.98px) {
+      }
+      @media screen and (max-width: 399.98px) {
+      }
+
+      /* Custom Dark Mode Colors */
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table,
+        div {
+          background-color: #2d2d2d !important;
+          color: #ffffff !important;
+        }
+        .darkmode-grey,
+        .darkmode-grey p,
+        .darkmode-grey table {
+          background-color: #3a3a3a !important;
+          color: #ffffff !important;
+        }
+
+        .darkmode-black {
+          background-color: #2d2d2d !important;
+          color: #ffffff !important;
+        }
+      }
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+          <style type="text/css">
+            table {border-collapse: collapse!important;}
+            </style>
+        <![endif] -->
+  </head>
+  <body
+    class="darkmode-black"
+    style="Margin:0; padding:0; min-width:100%; background-color:#534292"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {background-color:#534292!important;}
+        body, table, td, p, a {font-family: sans-serif !important;}
+      </style>
+    <![endif] -->
+    <center
+      style="width:100%; table-layout:fixed; background-color:#534292; padding-bottom:40px;"
+    >
+      <div
+        style="max-width:600px; background-color:#534292; border-radius:10px;"
+      >
+        <!-- Preview text div will go here -->
+
+        <!--[if (gte mso 9)|(IE)]>
+            <table width="600" align="center" style="border-spacing:0;color: #080707;" role="presentation">
+            <tr>
+              <td style="padding:0;">
+        <![endif] -->
+
+        <table
+          align="center"
+          style="border-spacing:0; color:#080707; font-family: SalesforceSans, sans-serif !important; background-color:#534292; Margin:0; padding:0; width:100%; max-width:600px;"
+          role="presentation"
+        >
+          <tr>
+            <td style="padding: 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <td style="text-align: center">
+                  <img
+                    src="https://authenticator-api.salesforce.com/themes/images/herokuidentity/0.21.0/upper_logo_img.png"
+                    alt=""
+                    width="200"
+                    style="max-width: 260px; padding: 20px 0 20px 0"
+                    border="0"
+                  />
+                </td>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+              </td>
+            </tr>
+          </table>
+        <![endif] -->
+      </div>
+
+      
+
+<div
+  class="darkmode-grey"
+  style="
+    width: 90%;
+    max-width:600px;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  "
+>
+  <!--[if (gte mso 9)|(IE)]>
+      <table width="90%" align="center" style="border-radius:10px;border-spacing:0;color: #080707;" role="presentation">
+        <tr>
+          <td style="padding:0;">
+  <![endif] -->
+
+  <table
+    align="center"
+    style="
+      border-radius: 10px;
+      border-spacing: 0;
+      color: #080707;
+      font-family: SalesforceSans, sans-serif !important;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      width: 80%;
+    "
+    role="presentation"
+  >
+    <tr>
+      <td style="padding: 10px 10px 0 10px; text-align: center">
+        <p style="font-size: 32px; font-weight:600; margin-bottom: 10px">
+          Verification Method Added
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:0; text-align:center">
+        <p style="line-height:1.71">
+          This verification method was recently added to your account:<br />
+          <a
+            rel="nofollow"
+            style="color: #080707 !important; text-decoration: None"
+            >center@warceuproject.dev</a
+          >
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:10px; text-align:center;">
+        <p
+          style="font-size: 32px; font-weight:600; color:#79589f; margin:0 0 20px 0;"
+        >
+          <strong>Authenticator App</strong>
+          <br />
+          
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td height="1" style="background-color:#dddbda;"></td>
+    </tr>
+
+    <tr>
+      <td style="text-align: center">
+        <p style="font-size: 14px; color: #080707">
+           If you didn't add this verification method, contact your administrator or Heroku support. 
+        </p>
+      </td>
+    </tr>
+  </table>
+  <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+    </table>
+  <![endif] -->
+</div>
+
+
+
+      <div
+        class="footer"
+        style="
+          max-width: 600px;
+          background-color:#534292;
+          border-radius: 10px;
+          margin-top: 10px;
+        "
+      >
+        <!--[if (gte mso 9)|(IE)]>
+        <table
+          width="100%"
+          align="center"
+          style="width:656px; padding:20px; font-family:sans-serif; font-size:12px;
+            color:#fefefe; font-size:14px; font-weight:normal;
+            font-stretch:normal; font-style:normal; line-height:1.5;
+            letter-spacing:normal; text-align:center;"
+          role="presentation"
+        >
+          <tr>
+            <td style="padding:0;">
+        <![endif] -->
+        <table
+          width="100%"
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          class="email-content-table-sub"
+          style="border: 0; padding: 0; margin: 0"
+        >
+          <tr>
+            <td
+              align="left"
+              style="
+                width: 100%;
+                padding: 20px;
+                font-family: SalesforceSans, sans-serif;
+                font-size: 12px;
+                color: #fefefe;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                text-align: center;
+              "
+              class="td-footer"
+            >
+              &copy; 2023<a
+                href=""
+                style="text-decoration: none; color: #fefefe"
+              >
+                Salesforce, Inc.</a
+              >
+              All rights reserved.<br />
+              Various trademarks held by their respective owners.<br />
+              &nbsp;<br />
+              <a
+                style="text-decoration: underline; color: #fefefe"
+                href="https://www.salesforce.com/company/privacy"
+              >
+                Privacy Statement
+              </a>
+            </td>
+          </tr>
+        </table>
+
+        <!--[if (gte mso 9)|(IE)]>
+              </td>
+            </tr>
+          </table>
+        <![endif] -->
+      </div>
+    </center>
+  </body>
+</html>
+
+
+--w9JQKtOJCLop=_?:--
+

@@ -1,0 +1,112 @@
+Return-Path: <u476107895@srv755.main-hosting.eu>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id EAb7IGtJOGS0qz8AMUeTPA
+	(envelope-from <u476107895@srv755.main-hosting.eu>)
+	for <kira@binc.pw>; Fri, 14 Apr 2023 01:26:51 +0700
+Return-path: <u476107895@srv755.main-hosting.eu>
+Envelope-to: kira@binc.pw
+Delivery-date: Fri, 14 Apr 2023 01:26:51 +0700
+Received: from dormouse.elm.relay.mailchannels.net ([23.83.212.50]:50185)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <u476107895@srv755.main-hosting.eu>)
+	id 1pn1ej-00HVxu-30
+	for kira@binc.pw;
+	Fri, 14 Apr 2023 01:26:51 +0700
+X-Sender-Id: hostingershared|x-authuser|u476107895@srv755.main-hosting.eu
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 1AD746C13EE
+	for <kira@binc.pw>; Thu, 13 Apr 2023 18:26:05 +0000 (UTC)
+Received: from srv755.main-hosting.eu (unknown [127.0.0.6])
+	(Authenticated sender: hostingershared)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 8228A6C155D
+	for <kira@binc.pw>; Thu, 13 Apr 2023 18:26:04 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1681410364; a=rsa-sha256;
+	cv=none;
+	b=qzaGkIgHgCk8QaRNUNFu4xG/17QMDrpiphCmzNK7lpHkd0HJsPe8cUxxNPjBriZ6onOD3T
+	cYIpnc6yFH5JsCb3Pr5cwll0p8xn+Om05oLH0e1U2oz9KZDsKG6cM/sYka2hq/jmQ6T6F6
+	qVaSs+kodEdImUcoQ+gmRkmNNJKu2YK+vZbbV18IdmF2Ei9dJIT7RGSCCrhmYbS2LzJ2Ga
+	/MwJ0nuNIHaLuypB5pbPyiJ7IbGmkG+y0K/NhZzK+PvFQT1REhteAIlxTr7C3eC1rZLq7U
+	hRnMrdFgf16OlBhlGNS6a+DGwo1GzwNqsV8aRz4zw0SKl6x2D4M21zn3AwMgiA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1681410364;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type; bh=ELSIC6VnWFkZWoZFqKsHvlxkHastS0WZD86HuXYZ+q4=;
+	b=z4fFZ7w4Z1nBKeQdMsDExu7HmV4bIhbR5avDTRY6onXBq2ZVdcDdHY/2yeeZggbAS+lUSt
+	tKrmFnIBirrTXDK92u7kZfBXFb9MlvGwxhSG5104Iuxkec9jRE6j7U1Ie2jd0TWQvwuen9
+	HP8WhlKuJsj5/PUx/5lj0MSICF1umo59tLsvGbIwvbJPsxHQ3TaYqwysyhkP9hqz5wAQG0
+	B3kDRF5sCwKwijhPxwe1kwJYKtgLLt2ftX2XQd7aNiJKOrU+oHFKeKyKdEVfvlg3HTIfYm
+	5WD8gmLOPbp11RY7dpY44ML0pY5KLzJFOHOnPTIfEkqL9yC9vwwXm2FWqc/esQ==
+ARC-Authentication-Results: i=1;
+	rspamd-7f66b7b68c-4fxhg;
+	auth=pass smtp.auth=hostingershared
+ smtp.mailfrom=u476107895@srv755.main-hosting.eu
+X-Sender-Id: hostingershared|x-authuser|u476107895@srv755.main-hosting.eu
+X-MC-Relay: Neutral
+X-MailChannels-SenderId:
+ hostingershared|x-authuser|u476107895@srv755.main-hosting.eu
+X-MailChannels-Auth-Id: hostingershared
+X-Daffy-Bitter: 3ef7ff4918730cd6_1681410364655_1098319565
+X-MC-Loop-Signature: 1681410364655:1115075671
+X-MC-Ingress-Time: 1681410364655
+Received: from srv755.main-hosting.eu ([UNAVAILABLE]. [82.180.175.153])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.101.8.109 (trex/6.7.2);
+	Thu, 13 Apr 2023 18:26:04 +0000
+Received: from u476107895 by srv755.main-hosting.eu with local (Exim 4.96)
+	(envelope-from <u476107895@srv755.main-hosting.eu>)
+	id 1pn1dz-00EH3U-2d
+	for kira@binc.pw;
+	Thu, 13 Apr 2023 18:26:03 +0000
+To: kira@binc.pw
+Subject: [Q8 Direct Travel] Login Details
+X-PHP-Script: q8directtravel.com/wp-admin/user-new.php for 36.78.74.205
+X-PHP-Filename: /home/u476107895/domains/q8directtravel.com/public_html/wp-admin/user-new.php REMOTE_ADDR: 36.78.74.205
+X-PHP-Originating-Script: 476107895:PHPMailer.php
+Date: Thu, 13 Apr 2023 18:26:03 +0000
+From: WordPress <wordpress@q8directtravel.com>
+Message-ID: <19q7qWFnIYqOMhMEmMg9dGiX14fe0dAF8nw6jK4mSk@q8directtravel.com>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <u476107895@srv755.main-hosting.eu>
+X-AuthUser: u476107895@srv755.main-hosting.eu
+X-Spam-Status: No, score=2.8
+X-Spam-Score: 28
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Username: kira To set your password, visit the following address:
+    https://q8directtravel.com/wp-login.php?action=rp&key=YxIkhWCI1rQXEorcaqhm&login=kira
+    
+ Content analysis details:   (2.8 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: q8directtravel.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  2.5 PHP_SCRIPT             Sent by PHP script
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+X-Spam-Flag: NO
+
+Username: kira
+
+To set your password, visit the following address:
+
+https://q8directtravel.com/wp-login.php?action=rp&key=YxIkhWCI1rQXEorcaqhm&login=kira
+
+https://q8directtravel.com/wp-login.php
+

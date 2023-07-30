@@ -1,0 +1,160 @@
+Return-Path: <ingeocon@webhosting2033.is.cc>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id 2MaQIJ2GhmQC/SEAMUeTPA
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	for <kira@binc.pw>; Mon, 12 Jun 2023 09:44:45 +0700
+Return-path: <ingeocon@webhosting2033.is.cc>
+Envelope-to: kira@binc.pw
+Delivery-date: Mon, 12 Jun 2023 09:44:45 +0700
+Received: from poodle.tulip.relay.mailchannels.net ([23.83.218.249]:26429)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q8XXv-009LHH-0O
+	for kira@binc.pw;
+	Mon, 12 Jun 2023 09:44:45 +0700
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 4C5B8200500
+	for <kira@binc.pw>; Mon, 12 Jun 2023 02:43:57 +0000 (UTC)
+Received: from rspamd8.mailbaby.net (unknown [127.0.0.6])
+	(Authenticated sender: interserver)
+	by relay.mailchannels.net (Postfix) with ESMTPA id A05A6200A59
+	for <kira@binc.pw>; Mon, 12 Jun 2023 02:43:56 +0000 (UTC)
+ARC-Seal: i=2; s=arc-2022; d=mailchannels.net; t=1686537836; a=rsa-sha256;
+	cv=pass;
+	b=6e0EfYXW/oyRhC9DeGaUiJ1IZI2vk4xiz1TvBTVkni+t6mMB7WEQBP+zwjixWYNv5z1w1q
+	7s8SZDYkZMArY+ivZAdSNnVIgplfU7oqO24BCgusp/Da5CH4p/M8rZIQroRWEIDxIOfCny
+	aCT3EK3Ieh3z/331Eu92BtjAyFwubtQsK97Tw8Og/g6Pg1pPJ89D+t5fxkuRR5cyOZR05s
+	2vrgtb9thTM9wycSYbmolzyYuj/sHvqpTOFxBGo4Xyalk9FluGZygLLQuPVBeblEOpvlcv
+	vCxHvxs5bxSKoWh26RcdIdBzXSkUn+oDyvSG9F/TN2Cdakis6r+rFfrg1YCocg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1686537836;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=RnHx4b6ov6+idczIJTDZuRihJI8lwUH+JkhXFAAsWHg=;
+	b=NNCIDs8KZUt3mumRIPvq10EkfEj9yy+0yrd0zjoLimk/l/RGc7DUxyngEtQVLi6sYhH85Q
+	qoAfcGn8S1Ov9AZ49LO7TzJONKi+FhMPG4EvUVoL2gzaBsIYyGVQayNSsvVPVSxtjrdPHC
+	r+rck5Q011Mhj9er7IE1KInskn/+PkU6/P0PeJ7N7jIboXW4pB92jIahOVdXPeOh6swS3O
+	YHkG+UE/J33cdN9SEis3vjry9k3J0tWrYMJctXPhd4BpOR6KtG36QcHPbFdxwJGZR7tQuw
+	7BJj8nfjC2TQbH6poWF7DHbNQWcD+v1RGWuFQZLCT57baAodJS+RlGOD9BWA9A==
+ARC-Authentication-Results: i=2;
+	rspamd-7c78575475-wll5q;
+	arc=pass ("mailbaby.net:s=detka:i=1");
+	auth=pass smtp.auth=interserver smtp.mailfrom=ingeocon@webhosting2033.is.cc
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MC-Relay: Neutral
+X-MailChannels-SenderId: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MailChannels-Auth-Id: interserver
+X-Rock-Chief: 333aec930f6d21b9_1686537837095_4077185309
+X-MC-Loop-Signature: 1686537837095:128294119
+X-MC-Ingress-Time: 1686537837095
+Received: from rspamd8.mailbaby.net (rspamd8.mailbaby.net [74.50.73.78])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.106.146.235 (trex/6.8.1);
+	Mon, 12 Jun 2023 02:43:57 +0000
+Received: from webhosting2033.is.cc ([68.168.213.91] webhosting2033.is.cc)
+ (Authenticated sender: webhosting2033)
+ by rspamd8.mailbaby.net (InterServerMTA) with ESMTPSA id 188ad7d11910000aaf.001
+ for <kira@binc.pw>
+ (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256);
+ Mon, 12 Jun 2023 02:43:54 +0000
+X-Zone-Loop: 84cc8e422afbebe0776b8598197f39a067aa6d40c522
+ARC-Authentication-Results: i=1;	rspamd4.mailbaby.net;	auth=pass
+ smtp.auth=webhosting2033 smtp.mailfrom=ingeocon@webhosting2033.is.cc
+ARC-Seal: i=1; s=detka; d=mailbaby.net; t=1686537834; a=rsa-sha256;
+	cv=none;
+	b=ecqMbGQGMlz0DMm9cHlqor0s+JhNKHtVesHTLEwMf909x0OlKkZcmPdINLBKFnN1wWz0X5
+	U2wYjvqO4zf+38eBekY2pq1MNpmJMVT/Lyvup17d1dHZc+mJJZ7y2eoR7QmEB/+qksZ6Te
+	MsUe4KpoubdtLuKHzTe0JShaD6mvqASw6n/E7Pp3QyyxvymJ4F2gsmxyi6WI9Bha5NIQXP
+	KULyNVl+diAK5/33u/mV1UXbDAetjUWEtu5p7qaPL2Q0NUDEoTeOXGb8u7sHwbLfsQDWMZ
+	9CvXbRV9VrG6w3Vj4zrXeN/HoyGRmHQGiNlBHnCAGx9CRaM5Tl+y384p9p87tQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailbaby.net;	s=detka; t=1686537834;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=RnHx4b6ov6+idczIJTDZuRihJI8lwUH+JkhXFAAsWHg=;
+	b=W8P85B2f0O04g8NNwz79ICp/qFJLMwRIWSE2pE6HfanZ0ov2eYao9oHuMD3rfnFMiVYzuc
+	6s26HVU9qdIvv4BQN2e3XcOzqY3RyHpHZWiu763Yq7zSno1So4SXKnDDVknuFVQMidcJkX
+	h0bcDbemP8mcvrOUZYdytRsLiQdsARDzFDXzvHh7xE8BhI/C4V/kViHj8qa6B/xbLCNoW1
+	evVinF2/v5pOIcmGsk/GCrJDvifsQckfqfiMUjd0we0G/FLDU9T/29PCnRKLdu0qrAEYAr
+	NpjtmnLJKPU3X8P1l8JTPsOQ9trzRnP6M+upDGxqgj37oF++HDa2aKLYAMGvaQ==
+X-SPF: pass
+X-Originating-IP: [68.168.213.91]
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=webhosting2033.is.cc; s=default; h=Sender:Content-Type:MIME-Version:
+	Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=RnHx4b6ov6+idczIJTDZuRihJI8lwUH+JkhXFAAsWHg=; b=g8NPX7DPLl4t4DUuBGG/EVw2xe
+	ulpn0I7Qqo+rXOq8/n+lW96TK7xKtRW7Geyl8h9Ty72+IgxMvOLy1kLKsg947NvSz4KOW5u9CfT7f
+	OaRV6ygIcc6OLUhklvekxMkplpFhZzlKd4El6U9Jsv1aEmwcZ0u5Sl0V0+Faxmt3qCrSrR6sC64Y7
+	r1b5xGbfpRYqwjerNlWcFkJ1TZqNcbeaYu5LH8qLv6J8o3HG/KQK9SJORehkw2DbfigRzSUNKsZHf
+	TiZcy6kQd83PXzwSdbnZMllwo835DV616lEVlYReDGOrj6KWTUeJT8NpnA9lV6lUQpxybsjAkNylb
+	L+T77ZxQ==;
+Received: from ingeocon by webhosting2033.is.cc with local (Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q8XX5-004Daj-1c
+	for kira@binc.pw;
+	Sun, 11 Jun 2023 22:43:54 -0400
+To: kira@binc.pw
+Subject: [InGEO consulting] Please moderate: "C-Rendezvous & Kohlenstoffmonoxid. - Welche seien nachfolgende seriosesten Datingportale?"
+X-PHP-Script: ingeoconsulting.com/wp-comments-post.php for 171.38.21.83
+X-PHP-Originating-Script: 1159:class-phpmailer.php
+Date: Mon, 12 Jun 2023 02:43:51 +0000
+From: WordPress <wordpress@ingeoconsulting.com>
+Message-ID: <21d02cf1eed5f2326804567f82cea347@ingeoconsulting.com>
+X-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <ingeocon@webhosting2033.is.cc>
+X-AuthUser: ingeocon@webhosting2033.is.cc
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "C-Rendezvous & Kohlenstoffmonoxid.
+    - Welche seien nachfolgende seriosesten Datingportale?" is waiting for your
+    approval https://ingeoconsulting.com/2023/01/05/c-rendezvous-k [...] 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: is.cc]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+X-Spam-Flag: NO
+
+A new comment on the post "C-Rendezvous & Kohlenstoffmonoxid. - Welche seien nachfolgende seriosesten Datingportale?" is waiting for your approval
+https://ingeoconsulting.com/2023/01/05/c-rendezvous-kohlenstoffmonoxid-welche-seien/
+
+Author: tenset (IP address: 171.38.21.83, 171.38.21.83)
+Email: 22822058@outlook.com
+URL: https://www.gate.io/ja/signup/612995
+Comment: 
+Reading your article helped me a lot and I agree with you. But I still have some doubts, can you clarify for me? I'll keep an eye out for your answers.
+
+Approve it: https://ingeoconsulting.com/wp-admin/comment.php?action=approve&c=167#wpbody-content
+Trash it: https://ingeoconsulting.com/wp-admin/comment.php?action=trash&c=167#wpbody-content
+Spam it: https://ingeoconsulting.com/wp-admin/comment.php?action=spam&c=167#wpbody-content
+Currently 62 comments are waiting for approval. Please visit the moderation panel:
+https://ingeoconsulting.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

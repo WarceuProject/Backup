@@ -1,0 +1,125 @@
+Return-Path: <u476107895@srv755.main-hosting.eu>
+Delivered-To: kira+spam@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id OMzvGs5IOGRzpD8AMUeTPA
+	(envelope-from <u476107895@srv755.main-hosting.eu>)
+	for <kira+spam@binc.pw>; Fri, 14 Apr 2023 01:24:14 +0700
+Return-path: <u476107895@srv755.main-hosting.eu>
+Envelope-to: kira@binc.pw
+Delivery-date: Fri, 14 Apr 2023 01:24:14 +0700
+Received: from frog.ash.relay.mailchannels.net ([23.83.222.63]:6748)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <u476107895@srv755.main-hosting.eu>)
+	id 1pn1cC-00HUoP-1D
+	for kira@binc.pw;
+	Fri, 14 Apr 2023 01:24:14 +0700
+X-Sender-Id: hostingershared|x-authuser|u476107895@srv755.main-hosting.eu
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 0A62B541D84
+	for <kira@binc.pw>; Thu, 13 Apr 2023 18:23:25 +0000 (UTC)
+Received: from srv755.main-hosting.eu (unknown [127.0.0.6])
+	(Authenticated sender: hostingershared)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 71C4E54205B
+	for <kira@binc.pw>; Thu, 13 Apr 2023 18:23:24 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1681410204; a=rsa-sha256;
+	cv=none;
+	b=kXL/8tt+/z7w1fJ0tKUW/ANiN6Ekzsr7jITSofCAUqQlQesXorCoPMU57RZRLx18JDjmto
+	kffVu47BUcpLIe/JqIk6BVSnODAdw81fM08EyITrx4afeNVQ5FZsqNp+ogh1XH3GYlWtB7
+	QkuWWqjWsdNcnXkhIImT/ILXop8UaT3oXhvzGY22t1HY9kHnwb03fT39TnMxE+7aBC5sl1
+	9Xt73C6pcmjGxgmsdM6UnCZE2MxdCWxKs1ezIR5V68sPSnO00Lp5KruewvVlAYfRVRPRK3
+	cjNHKcHd0NFoVZ3x5ip765xdZ4v2lDuh7oj6TtRi81LOPkfwIywGfqBrCv8XNw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1681410204;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type; bh=OBC9ZJl2XvYf/MAy57DvsX7Q5IFNRuR8klRm9mr6emk=;
+	b=E1NGXE8s0frrC7pj05DGWjSj7sOWJsLTczrjLZwBOfNkS0hCJ0VmCW1FN74JIWg0Ef7H+x
+	lg0GhRk42NN+gUBZ6j205nCT1vGEsz4BZqTHUQOVkycfC9itvwc67IjBtjzFyXRML/OgCh
+	gtgxV42KJZXp2FEqhlxj+SO2k6er8k0Wc8Zuad30GoxFxz3i+iksPEa01tzuQUWb75E1OP
+	alHnqlYR1mMDQc9fD8hl8SePdM7NDAc8Dg3gWPYQFZR6s6qbWxQJMV0P+bKcD6C2Jc+lU1
+	h5/nUoL4Q1KDXBpHGrrAMN4vRRPBivVyLUeKGFB0XDXj0TfOzTNT3OBUZ0CDZQ==
+ARC-Authentication-Results: i=1;
+	rspamd-7f66b7b68c-vbn7j;
+	auth=pass smtp.auth=hostingershared
+ smtp.mailfrom=u476107895@srv755.main-hosting.eu
+X-Sender-Id: hostingershared|x-authuser|u476107895@srv755.main-hosting.eu
+X-MC-Relay: Neutral
+X-MailChannels-SenderId:
+ hostingershared|x-authuser|u476107895@srv755.main-hosting.eu
+X-MailChannels-Auth-Id: hostingershared
+X-Cooperative-Average: 269e2a1914a00168_1681410204751_4241977417
+X-MC-Loop-Signature: 1681410204751:69522001
+X-MC-Ingress-Time: 1681410204750
+Received: from srv755.main-hosting.eu ([UNAVAILABLE]. [82.180.175.153])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.116.217.230 (trex/6.7.2);
+	Thu, 13 Apr 2023 18:23:24 +0000
+Received: from u476107895 by srv755.main-hosting.eu with local (Exim 4.96)
+	(envelope-from <u476107895@srv755.main-hosting.eu>)
+	id 1pn1bP-00DyTH-2Q
+	for kira@binc.pw;
+	Thu, 13 Apr 2023 18:23:23 +0000
+To: kira@binc.pw
+X-PHP-Script: q8directtravel.com/wp-admin/options.php for 36.78.74.205
+X-PHP-Filename: /home/u476107895/domains/q8directtravel.com/public_html/wp-admin/options.php REMOTE_ADDR: 36.78.74.205
+X-PHP-Originating-Script: 476107895:PHPMailer.php
+Date: Thu, 13 Apr 2023 18:23:23 +0000
+From: WordPress <wordpress@q8directtravel.com>
+Message-ID: <nopKJb6Jn3jsH5tuwKKMh9pwimCwYBZJS1HvlQ5IM@q8directtravel.com>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <u476107895@srv755.main-hosting.eu>
+X-AuthUser: u476107895@srv755.main-hosting.eu
+X-Spam-Status: Yes, score=5.3
+X-Spam-Score: 53
+X-Spam-Bar: +++++
+X-Spam-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Howdy admin, Someone with administrator capabilities recently
+    requested to have the administration email address changed on this site:
+   https://q8directtravel.com To confirm this change, please click on the following
+    link: https://q8directtravel.com/wp-admin/options.php?adminhash=517459b0f7cf03dbba25a76dd6b3671c
+    
+ Content analysis details:   (5.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: q8directtravel.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  5.0 KAM_SOMETLD_ARE_BAD_TLD .stream, .trade, .pw, .top, .press,
+                             .guru, .casa & .date TLD Abuse
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+X-Spam-Flag: YES
+Subject:  ***SPAM***  [Q8 Direct Travel] New Admin Email Address
+
+Howdy admin,
+
+Someone with administrator capabilities recently requested to have the
+administration email address changed on this site:
+https://q8directtravel.com
+
+To confirm this change, please click on the following link:
+https://q8directtravel.com/wp-admin/options.php?adminhash=517459b0f7cf03dbba25a76dd6b3671c
+
+You can safely ignore and delete this email if you do not want to
+take this action.
+
+This email has been sent to kira@binc.pw
+
+Regards,
+All at Q8 Direct Travel
+https://q8directtravel.com
+

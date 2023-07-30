@@ -1,0 +1,85 @@
+.thread_status {
+display:inline-block;
+margin-left:5px;
+font-family:"Font Awesome 5 Free";
+font-size:25px;
+font-weight:700
+}
+
+.thread_status.dot_folder:before {
+content:"\f15b";
+color:#474747
+}
+
+.thread_status.dot_hotfolder:before {
+content:"\f06d";
+color:#C0392B
+}
+
+.thread_status.dot_hotclosefolder:before,.thread_status.dot_closefolder:before {
+content:"\f023"!important;
+color:#474747
+}
+
+.thread_status.dot_newfolder:before {
+content:"\f27a";
+color:#386b8d
+}
+
+.thread_status.dot_newhotfolder:before {
+content:"\f06d";
+color:#C0392B
+}
+
+.thread_status.dot_newhotclosefolder:before {
+content:"\f023"!important;
+color:#474747
+}
+
+.thread_status.dot_newclosefolder:before {
+content:"\f023";
+color:#386b8d
+}
+
+.thread_status.folder:before {
+content:"\f15b";
+color:#474747
+}
+
+.thread_status.hotfolder:before {
+content:"\f06d";
+color:#C0392B
+}
+
+.thread_status.hotclosefolder:before,.thread_status.closefolder:before {
+content:"\f023"!important;
+color:#474747
+}
+
+.thread_status.movefolder:before {
+content:"\f061";
+color:#474747
+}
+
+.thread_status.newfolder:before {
+content:"\f15b";
+color:#386b8d
+}
+
+.thread_status.newhotfolder:before {
+content:"\f06d";
+color:#C0392B
+}
+
+.thread_status.newhotclosefolder:before,.thread_status.newclosefolder:before {
+content:"\f023"!important;
+color:#474747
+}
+
+.thread_status.stick_folder:before,td.forumdisplay_sticky>.thread_status:before {
+content:"\f08d";
+color:#386b8d
+}
+		
+		
+		

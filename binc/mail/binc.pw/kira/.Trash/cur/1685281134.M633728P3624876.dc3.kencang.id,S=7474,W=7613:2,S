@@ -1,0 +1,139 @@
+Return-Path: <jodycallanhairco@cpanel-552-syd.hostingww.com>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id QLWAJW5Zc2SsTzcAMUeTPA
+	(envelope-from <jodycallanhairco@cpanel-552-syd.hostingww.com>)
+	for <kira@binc.pw>; Sun, 28 May 2023 20:38:54 +0700
+Return-path: <jodycallanhairco@cpanel-552-syd.hostingww.com>
+Envelope-to: kira@binc.pw
+Delivery-date: Sun, 28 May 2023 20:38:54 +0700
+Received: from iguana.tulip.relay.mailchannels.net ([23.83.218.253]:46079)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <jodycallanhairco@cpanel-552-syd.hostingww.com>)
+	id 1q3Gba-00FCkl-0w
+	for kira@binc.pw;
+	Sun, 28 May 2023 20:38:54 +0700
+X-Sender-Id:
+ instrampxe0y3a|x-authuser|jodycallanhairco@cpanel-552-syd.hostingww.com
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id A96166C0F51;
+	Sun, 28 May 2023 13:37:23 +0000 (UTC)
+Received: from cpanel-552-syd.hostingww.com (unknown [127.0.0.6])
+	(Authenticated sender: instrampxe0y3a)
+	by relay.mailchannels.net (Postfix) with ESMTPA id F1C856C0C00
+	for <kira@binc.pw>; Sun, 28 May 2023 13:37:22 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1685281043; a=rsa-sha256;
+	cv=none;
+	b=gxMMk4ktwBoBPzVhe5sy7asWIVljADmEo0n6Rq1hVmHpCDGc2OKrCp4ObOmbBpBxK91KA5
+	IY2vZw6Wy0NKJCLC8f2T6dTKxG+VA3CiOoq9ARFdo9iAmw/Njs1d+7jIrNYPn5muUJCvJx
+	lHoc9ZmkKJbpIoimIuZ0+Q5SDStgtXV+0/6oD47wJ1YumGzX0vX/0mEoaONg4mRr/J1CuS
+	cT/pS0eqCQo59eRd9QhZo06vBU9hCLGv+JNV6RJn5frOLbXGXwKefDQyXCCxVULX1UERr/
+	eYggl1Ri4mCQYLnrRJFu3v0KraSOSPDZ+UFwWUi8Uqy+dfawYZa7URKvekDQvA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1685281043;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type; bh=UUOx4eDiM8iYmNdjT3g4Ybgq/Pvx02iYwwtucwU79Fk=;
+	b=fQfmDH3z5l9lDDQ4YUrAcKprlS+YBVCYgRI3j4t7UQ2lxNC3O04h43GGMkZK0K1NzlTCUT
+	hYHeZZtuMlzBqe085vUl4li9CsMYJkl8lSiNajJ+VzE1NolWZ7HekDekQ67SBE6m2yIQzv
+	Do3oargdtKHyalFFjGwrM7yYkEcBXwN8GMWvk7csM0malc5+y4xeCRuDo3L9I6yHWpO97O
+	GckGn5Wfl+Z6RZSrmP5JMY2rgzRfAr9ywDgFt16VEPJI4LuQf79OE3mgkkDQjK+Cjju+R4
+	Y7ycmFUdS8WqAOCdLNjq4MvxhgEXipHH0yylaRrMzwySXCWL5bVl+fkE78pyQA==
+ARC-Authentication-Results: i=1;
+	rspamd-7d4b855556-xtdvq;
+	auth=pass smtp.auth=instrampxe0y3a
+ smtp.mailfrom=jodycallanhairco@cpanel-552-syd.hostingww.com
+X-Sender-Id:
+ instrampxe0y3a|x-authuser|jodycallanhairco@cpanel-552-syd.hostingww.com
+X-MC-Relay: Neutral
+X-MC-Copy: stored-urls
+X-MailChannels-SenderId:
+ instrampxe0y3a|x-authuser|jodycallanhairco@cpanel-552-syd.hostingww.com
+X-MailChannels-Auth-Id: instrampxe0y3a
+X-Continue-Wiry: 1ce0eec06b724ea1_1685281043473_1861514103
+X-MC-Loop-Signature: 1685281043473:4024053701
+X-MC-Ingress-Time: 1685281043473
+Received: from cpanel-552-syd.hostingww.com (cpanel-552-syd.hostingww.com
+ [103.152.248.20])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384)
+	by 100.120.163.32 (trex/6.8.1);
+	Sun, 28 May 2023 13:37:23 +0000
+Received: from jodycallanhairco by cpanel-552-syd.hostingww.com with local (Exim 4.96)
+	(envelope-from <jodycallanhairco@cpanel-552-syd.hostingww.com>)
+	id 1q3GaC-00DV0y-1W
+	for kira@binc.pw;
+	Sun, 28 May 2023 23:37:21 +1000
+To: kira@binc.pw
+Subject: =?us-ascii?Q?[Jody_Callan_Hair]_Your_Site_is_Experiencing_a_?=  =?us-ascii?Q?Technical_Issue?=
+X-PHP-Script: new.jodycallanhair.com.au/wp-admin/plugin-editor.php for 222.124.123.222
+X-PHP-Filename: /home/jodycallanhairco/new.jodycallanhair.com.au/wp-admin/plugin-editor.php REMOTE_ADDR: 222.124.123.222
+Date: Sun, 28 May 2023 21:37:16 +0800
+From: WordPress <wordpress@new.jodycallanhair.com.au>
+Message-ID: <CPNF9DsMK2ZHFlaJqxeCN1MLUbJY4iwg5C7UfhAA@new.jodycallanhair.com.au>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <jodycallanhairco@cpanel-552-syd.hostingww.com>
+X-AuthUser: jodycallanhairco@cpanel-552-syd.hostingww.com
+X-Spam-Status: No, score=4.8
+X-Spam-Score: 48
+X-Spam-Bar: ++++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Howdy! WordPress has a built-in feature that detects when
+   a plugin or theme causes a fatal error on your site, and notifies you with
+    this automated email. In this case, WordPress caught an error with one of
+    your plugins, Contact Form 7. 
+ Content analysis details:   (4.8 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: jodycallanhair.com.au]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  1.0 KAM_LAZY_DOMAIN_SECURITY Sending domain does not have any
+                             anti-forgery methods
+  2.5 PHP_SCRIPT             Sent by PHP script
+  1.0 URI_WP_HACKED          URI for compromised WordPress site, possible
+                             malware
+X-Spam-Flag: NO
+
+Howdy!
+
+WordPress has a built-in feature that detects when a plugin or theme causes a fatal error on your site, and notifies you with this automated email.
+
+In this case, WordPress caught an error with one of your plugins, Contact Form 7.
+
+First, visit your website (https://new.jodycallanhair.com.au/) and check for any visible issues. Next, visit the page where the error was caught (https://new.jodycallanhair.com.au/wp-admin/plugin-editor.php?file=contact-form-7%2Fwp-contact-form-7.php&plugin=contact-form-7%2Fwp-contact-form-7.php) and check for any visible issues.
+
+Please contact your host for assistance with investigating this issue further.
+
+If your site appears broken and you can't access your dashboard normally, WordPress now has a special "recovery mode". This lets you safely login to your dashboard and investigate further.
+
+https://new.jodycallanhair.com.au/wp-login.php?action=enter_recovery_mode&rm_token=X1oJHBSEcASIpgqF05dZlw&rm_key=nnQ5mUjEjISiBTw7YSijgf
+
+To keep your site safe, this link will expire in 1 day. Don't worry about that, though: a new link will be emailed to you if the error occurs again after it expires.
+
+When seeking help with this issue, you may be asked for some of the following information:
+WordPress version 6.2.2
+Active theme: Divi (version 4.9.4)
+Current plugin: Contact Form 7 (version 5.7.6)
+PHP version 7.4.33
+
+
+
+Error Details
+=============
+An error of type E_COMPILE_ERROR was caused in line 70 of the file /home/jodycallanhairco/new.jodycallanhair.com.au/wp-content/plugins/contact-form-7/wp-contact-form-7.php. Error message: require_once(): Failed opening required '/home/jodycallanhairco/new.jodycallanhair.com.au/wp-content/plugins/contact-form-7/load.php' (include_path='.:/opt/alt/php74/usr/share/pear')
+

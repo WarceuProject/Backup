@@ -1,0 +1,88 @@
+Return-Path: <0101018771214e35-dbb4a5af-d927-4869-8bef-969ec66d6f4e-000000@auth.accountsemail.com>
+Delivered-To: kira+spam@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id 6LOPBrmJNWSb5CcAMUeTPA
+	(envelope-from <0101018771214e35-dbb4a5af-d927-4869-8bef-969ec66d6f4e-000000@auth.accountsemail.com>)
+	for <kira+spam@binc.pw>; Tue, 11 Apr 2023 23:24:25 +0700
+Return-path: <0101018771214e35-dbb4a5af-d927-4869-8bef-969ec66d6f4e-000000@auth.accountsemail.com>
+Envelope-to: kira@binc.pw
+Delivery-date: Tue, 11 Apr 2023 23:24:25 +0700
+Received: from a27-29.smtp-out.us-west-2.amazonses.com ([54.240.27.29]:41507)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <0101018771214e35-dbb4a5af-d927-4869-8bef-969ec66d6f4e-000000@auth.accountsemail.com>)
+	id 1pmGnA-00AzqE-1l
+	for kira@binc.pw;
+	Tue, 11 Apr 2023 23:24:24 +0700
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=nudk7dsets27k56i7ddkfgodpuwmar3p; d=accountsemail.com;
+	t=1681230221;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type;
+	bh=zY/ka2IbIgIPMk0lVQWlHfgJJ+Fzn5vjItAYl6/beHM=;
+	b=kFlotzGJiyX1sJyMgA3zuf9V19autiRq8a5tOFJsEDyNljOdaHvAQFEHYtE+PLFm
+	fwd/cnz0UUTZfq4oZGpPwdd/TA/MTg7kGARqW1syINSVxBeYB85mjf1C/a64ssvBL9b
+	6wPkoA+n363xd4KnudS8TVnmqlyy9rJKD1zv/D3RJty8Lc8nhyldt7devXlY/+2E0sW
+	u2EbPSQp0+hneYvPH28hnMbMCF0+NG83WZObwrel779fSd22hgtXSIfwZKxHv/YFYwe
+	1OzhIvmIXxrQ3FgpP9A0CmKLuqZ3gxlf3UL/FX8nC02+kyO+7c5iY6hlWYN6Iy1cd/Y
+	qtXcqGUgGA==
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1681230221;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:Feedback-ID;
+	bh=zY/ka2IbIgIPMk0lVQWlHfgJJ+Fzn5vjItAYl6/beHM=;
+	b=nmrh2jxPAXDJXCcJnxdOp0itJP8/jajBiUtmSiXV26yes6JvVzVngjN2fqyViXC3
+	gJF0UiX4ciNai5aVhhV0S4ZVhfu2IOnNH9qvBhsCeQ06/pza8VG9YEkWWy/oNEPhCI0
+	Di40garpT8NEr6gCdf5mwsdrt/Wg9dW+1iDeinOw=
+Date: Tue, 11 Apr 2023 16:23:40 +0000
+From: auth@accountsemail.com
+To: kira@binc.pw
+Message-ID: <0101018771214e35-dbb4a5af-d927-4869-8bef-969ec66d6f4e-000000@us-west-2.amazonses.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_11742_1364251724.1681230220818"
+Feedback-ID: 1.us-west-2.I9+AjPUd0hBN6bIYehVQstfmWoa3spJ/AdvTdFXKDFk=:AmazonSES
+X-SES-Outgoing: 2023.04.11-54.240.27.29
+X-Spam-Status: Yes, score=6.3
+X-Spam-Score: 63
+X-Spam-Bar: ++++++
+X-Spam-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Your username is kira@binc.pw and temporary password is UdVQo3_O.
+    
+ Content analysis details:   (6.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: accountsemail.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.7 MPART_ALT_DIFF         BODY: HTML and text parts are different
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  5.0 KAM_SOMETLD_ARE_BAD_TLD .stream, .trade, .pw, .top, .press,
+                             .guru, .casa & .date TLD Abuse
+  0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML
+                             tag
+  0.0 MIME_HTML_ONLY_MULTI   Multipart message only has text/html MIME
+                             parts
+X-Spam-Flag: YES
+Subject:  ***SPAM***  myorg61bed6bc965c1 Site - Password Reset
+
+------=_Part_11742_1364251724.1681230220818
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Your username is kira@binc.pw and temporary password is UdVQo3_O. 
+------=_Part_11742_1364251724.1681230220818--

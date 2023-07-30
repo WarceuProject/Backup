@@ -1,0 +1,85 @@
+Return-Path: <lightid180@gmail.com>
+Delivered-To: center@warceuproject.dev
+Received: from 103-219-251-189.cprapid.com
+	by 103-219-251-189.cprapid.com with LMTP
+	id leHtDPljqmQQFAAAmZP31Q
+	(envelope-from <lightid180@gmail.com>)
+	for <center@warceuproject.dev>; Sun, 09 Jul 2023 09:38:33 +0200
+Return-path: <lightid180@gmail.com>
+Envelope-to: center@warceuproject.dev
+Delivery-date: Sun, 09 Jul 2023 09:38:33 +0200
+Received: from mail-wr1-f42.google.com ([209.85.221.42]:62488)
+	by 103-219-251-189.cprapid.com with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <lightid180@gmail.com>)
+	id 1qIP03-0001Jd-05
+	for center@warceuproject.dev;
+	Sun, 09 Jul 2023 09:38:33 +0200
+Received: by mail-wr1-f42.google.com with SMTP id ffacd0b85a97d-313e09a5b19so3656791f8f.0
+        for <center@warceuproject.dev>; Sun, 09 Jul 2023 00:38:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1688888267; x=1691480267;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=0dqLpFyW+tZGEhjP7MwI2rb/WDU8Yv6K9CWpizD/kbc=;
+        b=OdBHr2JN7I29HfGhUj9iOCQfnWoj6FycEdMatImCY/B93Z5/TGWtEUmWteGxNGq2h+
+         YfUpwa29uN4QQq7xoF1zDI3BHIJIgKa/2CxTfI9fYqFJ/AgfcRmhtOEgH5Ht2ESXQgTK
+         /Bv1BbsV2oI05PWYdU7937IQkOPZgL9HApwIkAwhOgVns880+KXQ3hHFg3Z2lC1r001r
+         qcz4dzOby/XQiGYvNwVqlfnzoUND8PDd2Ild+WXcQGeqWVSioC8Bu+/Rl4W2TrKKbkl7
+         vAMcLJx0pH5H1Ie1QquhjiqA0EBUQO3RsqdfJBBL2xY4+q6RNPkLmTxPzIdprdlHGn0R
+         JSEA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1688888267; x=1691480267;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=0dqLpFyW+tZGEhjP7MwI2rb/WDU8Yv6K9CWpizD/kbc=;
+        b=DLcEgcfcs/UryDJUvAB4FeVN6w4jLtNEgXLMNGG1kqjn7uQrZF2o5cmOBmUTXEO3am
+         LeUkP7/myPx3G/GWVQD/zN7MhTtyRgZ5hy+K098HNjl5fWqHL1OrTqBr+W5s4Nxed1tz
+         mg3MdAQjXxXB1f2BBWerznTu7oAX+NAirELQxr5FPAlxl5O1+xPvzgMVONKh1/8EhVOJ
+         4dLL0s10DyqzmWmey+U14/0F6lx+8QwbZN/UZ88WuHPGTrk1xD/PXgkPG+5gy5r3tk6K
+         XKQ8Cll1vYlXh5kA0o7d4HHtTcs/ERec0kZqzoBmdauRNdvGFavpAV7Jpo862xTYcCdR
+         xLFg==
+X-Gm-Message-State: ABy/qLZ6l+lkm2brZNAelO/uF/gdgRhfeV0reN0pew9f67rRQBDD+M9U
+	6p1hIubVDLI9keZAGy8qf3k2+4jlB9xkqHALhjsyrJXG
+X-Google-Smtp-Source: APBJJlEInoxi+bcPBwftBAPCORGGkXCwf/Z+/fs2QzuUkHq4dcj597eggBUDoBSs/NT9o4RsTcnl/2vjbOQRPCF2Gyk=
+X-Received: by 2002:a05:6000:1285:b0:314:98f:2495 with SMTP id
+ f5-20020a056000128500b00314098f2495mr7820599wrx.12.1688888266349; Sun, 09 Jul
+ 2023 00:37:46 -0700 (PDT)
+MIME-Version: 1.0
+References: <f37c9e26fba392c576d31f558f72f3ca@warceuproject.dev>
+In-Reply-To: <f37c9e26fba392c576d31f558f72f3ca@warceuproject.dev>
+From: Kira Sinigami <lightid180@gmail.com>
+Date: Sun, 9 Jul 2023 14:37:34 +0700
+Message-ID: <CAM0mTbSZh+_5o4XyBx3gjrPJ+ve4qE4k-omLjii2=naid5iVVQ@mail.gmail.com>
+Subject: Re: tes heula
+To: center@warceuproject.dev
+Content-Type: multipart/alternative; boundary="0000000000002e5f7e060008f107"
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: (no report template found)
+X-Spam-Flag: NO
+
+--0000000000002e5f7e060008f107
+Content-Type: text/plain; charset="UTF-8"
+
+mantep gak tuh
+
+Pada tanggal Min, 9 Jul 2023 pukul 14.36 <center@warceuproject.dev> menulis:
+
+> test
+>
+
+--0000000000002e5f7e060008f107
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">mantep gak tuh<br></div><br><div class=3D"gmail_quote"><di=
+v dir=3D"ltr" class=3D"gmail_attr">Pada tanggal Min, 9 Jul 2023 pukul 14.36=
+ &lt;<a href=3D"mailto:center@warceuproject.dev">center@warceuproject.dev</=
+a>&gt; menulis:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:=
+0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex">=
+test<br>
+</blockquote></div>
+
+--0000000000002e5f7e060008f107--

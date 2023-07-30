@@ -1,0 +1,122 @@
+Return-Path: <pcks1@argon.cloudhosting.co.uk>
+Delivered-To: ciel@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id iOBpDwvIRmTnNgcAMUeTPA
+	(envelope-from <pcks1@argon.cloudhosting.co.uk>)
+	for <ciel@binc.pw>; Tue, 25 Apr 2023 01:18:51 +0700
+Return-path: <pcks1@argon.cloudhosting.co.uk>
+Envelope-to: ciel@binc.pw
+Delivery-date: Tue, 25 Apr 2023 01:18:51 +0700
+Received: from hedgehog.birch.relay.mailchannels.net ([23.83.209.81]:6372)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <pcks1@argon.cloudhosting.co.uk>)
+	id 1pr0m0-001zTc-0x
+	for ciel@binc.pw;
+	Tue, 25 Apr 2023 01:18:51 +0700
+X-Sender-Id: 9wt3zsp42r|x-authuser|pcks1@argon.cloudhosting.co.uk
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id C3DAF5C209F
+	for <ciel@binc.pw>; Mon, 24 Apr 2023 18:18:02 +0000 (UTC)
+Received: from argon.cloudhosting.co.uk (unknown [127.0.0.6])
+	(Authenticated sender: 9wt3zsp42r)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 18E165C1CAA
+	for <ciel@binc.pw>; Mon, 24 Apr 2023 18:18:01 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1682360282; a=rsa-sha256;
+	cv=none;
+	b=uOX1VHIUBtpC3v8yvcLWDt7hzWZuifz872I87OAjFNu9YihtdyzTq1OdfMa1AEXnXR9vYu
+	RT5wKHw52MZKzHFonmTZM9Exipo/liciJp/UddLlE9WgImYVypQtCUPo8h5jsjKLdkyIpj
+	yvciP6k7JsAMe8kpGupYM5j8zDfY6T8N7XxDNsuTh0s7cHyTuSGNrBw9unCouZ8WyYyK4Q
+	LYIJldUMp+ScZmW9cn78VmA/ethzSNqzb3Us+J/rs1bqnb8r+8MYRE35lTR9ZnXfmsDktG
+	tKM9gTRImPmhl+k2JTDB3hFJ+6qvF3CMhLu7iNaI/4sPkce+SqVhswpdlBzRbg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1682360282;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 dkim-signature; bh=Tt56mxU2MZQjWzKjdNH/ek9kcN/7pWpODNQDBheez6Y=;
+	b=4RmzMGOj6DKS3B5Y+POMk4BMHv7UlrkA0DcuV7VV6bC6d8Dj9HIZ+L1YPq7fLbFF4nAP9y
+	28Yd2pV3Kdz3CkK4yHmRft2vqw5/hyjD6L/XI2lVkw/gJCrgKUwk1SFP+HJeOVAZ67m3x8
+	5vFfWS80M7zsv2QJSIcMjpDowAYZBdtVTPGXo1b3aDW0i2pqiSvQm92gCtMUyN3SJx+2DB
+	uFS1+v6DyD/69jafc3J9sjM8rUBJssClC/yXaeE5A7RyCnmVwJoxMxmmm2YzsHAkoCM/ZM
+	eYIGVb/FPNArV70Rp6juap7kjt893kr52o8xXoVuEReCK0U1yNc8dIJPx07qrQ==
+ARC-Authentication-Results: i=1;
+	rspamd-7f66b7b68c-xcq24;
+	auth=pass smtp.auth=9wt3zsp42r smtp.mailfrom=pcks1@argon.cloudhosting.co.uk
+X-Sender-Id: 9wt3zsp42r|x-authuser|pcks1@argon.cloudhosting.co.uk
+X-MC-Relay: Neutral
+X-MailChannels-SenderId: 9wt3zsp42r|x-authuser|pcks1@argon.cloudhosting.co.uk
+X-MailChannels-Auth-Id: 9wt3zsp42r
+X-Cure-Hook: 6072fdb42388b388_1682360282446_2424734710
+X-MC-Loop-Signature: 1682360282446:2173145539
+X-MC-Ingress-Time: 1682360282446
+Received: from argon.cloudhosting.co.uk (argon.cloudhosting.co.uk
+ [77.72.0.146])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384)
+	by 100.116.217.239 (trex/6.7.2);
+	Mon, 24 Apr 2023 18:18:02 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=argon.cloudhosting.co.uk; s=default; h=Content-Type:MIME-Version:Message-ID
+	:From:Date:Subject:To:Content-Transfer-Encoding:Sender:Reply-To:Cc:Content-ID
+	:Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:
+	Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:
+	List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=Tt56mxU2MZQjWzKjdNH/ek9kcN/7pWpODNQDBheez6Y=; b=gAI2tTRndbQ0C31t2snMjrK/sR
+	maCfJA2dpd0o9s3iPVZT0SPYtOKZ3TjUTOgrMWkA8xyeWd/76QrgusaKo+db0/ufKClYS+MYRndj0
+	X4Xr+/663XbFtzvpPdQGFWSWyg+RwLULWP5iHJq6mIJA8rd1DcR1GsR2fVudl+4biSbNDwAEwVw1N
+	eypMfxLREASlEgWgAeAQZyUkhNolC3Ux9fOg4PIr+ab7E8mUgBAc9qcG79LkGfPylZukka/ijKdDn
+	OPULZB8zVLV+qJxPyc7TfKu7dOt/9qHr7e0yLBrZfptsvn72sHnWEkhCqsuovCkw3AC9ePAae/dbg
+	DQG0PJPA==;
+Received: from pcks1 by argon.cloudhosting.co.uk with local (Exim 4.95)
+	(envelope-from <pcks1@argon.cloudhosting.co.uk>)
+	id 1pr0lD-00BTvp-SO
+	for ciel@binc.pw;
+	Mon, 24 Apr 2023 19:17:59 +0100
+To: ciel@binc.pw
+Subject: [PCEA KAHAWA SUKARI] Login Details
+X-PHP-Script: church.pceasukari.org/wp-admin/user-new.php for 92.38.183.78
+X-PHP-Filename: /home/pcks1/church.pceasukari.org/wp-admin/user-new.php REMOTE_ADDR: 92.38.183.78
+Date: Mon, 24 Apr 2023 18:17:59 +0000
+From: WordPress <wordpress@church.pceasukari.org>
+Message-ID: <syyUTrGiodFNC4ZQ121f8CXFgmtxwmoGiTPWTsE@church.pceasukari.org>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+X-AuthUser: pcks1@argon.cloudhosting.co.uk
+X-Spam-Status: No, score=2.7
+X-Spam-Score: 27
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Username: ciel To set your password, visit the following address:
+    https://church.pceasukari.org/wp-login.php?action=rp&key=gSVbkbWjkTZNHlBGPgwW&login=ciel
+    
+ Content analysis details:   (2.7 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: pceasukari.org]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  2.5 PHP_SCRIPT             Sent by PHP script
+X-Spam-Flag: NO
+
+Username: ciel
+
+To set your password, visit the following address:
+
+https://church.pceasukari.org/wp-login.php?action=rp&key=gSVbkbWjkTZNHlBGPgwW&login=ciel
+
+https://church.pceasukari.org/wp-login.php
+

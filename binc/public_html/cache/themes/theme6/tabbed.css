@@ -1,0 +1,11 @@
+.shadetabs li a,.shadetabs li a.selected:hover{text-decoration:none}
+.shadetabs{list-style-type:none;text-align:left;margin:20px 0;padding:0}
+.shadetabs li{display:inline;margin:0}
+.shadetabs li a{padding:10px 20px;margin-right:3px;color:#fff;border-radius:3px;background-color:#212121}
+.shadetabs li a:hover{background-color:#0984e3;text-decoration:none}
+.shadetabs li a.selected{background-color:#0984e3;color:#fff}
+.tabcontent{display:none}
+@media print {
+.tabcontent{display:block!important}
+}
+		

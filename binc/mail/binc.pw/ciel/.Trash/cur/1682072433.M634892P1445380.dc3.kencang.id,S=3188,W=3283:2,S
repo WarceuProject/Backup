@@ -1,0 +1,95 @@
+Return-Path: <>
+Delivered-To: ciel@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id 6C2SJXFjQmQEDhYAMUeTPA
+	(envelope-from <>)
+	for <ciel@binc.pw>; Fri, 21 Apr 2023 17:20:33 +0700
+Return-path: <>
+Envelope-to: ciel@binc.pw
+Delivery-date: Fri, 21 Apr 2023 17:20:33 +0700
+Received: from mailnull by dc3.kencang.id with local (Exim 4.96)
+	id 1ppnsX-0065uV-1W
+	for ciel@binc.pw;
+	Fri, 21 Apr 2023 17:20:33 +0700
+X-Failed-Recipients: phh15twzeomw@sg2plcpnl0004.prod.sin2.secureserver.net
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@dc3.kencang.id>
+To: ciel@binc.pw
+References: <8f9b3fd9580bd8b3ce51584fcb6bef2c@binc.pw>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1682072433-eximdsn-901744857
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1ppnsX-0065uV-1W@dc3.kencang.id>
+Date: Fri, 21 Apr 2023 17:20:33 +0700
+
+--1682072433-eximdsn-901744857
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  phh15twzeomw@sg2plcpnl0004.prod.sin2.secureserver.net
+    host sg2plcpnl0004.prod.sin2.secureserver.net [182.50.132.9]
+    SMTP error from remote mail server after RCPT TO:<phh15twzeomw@sg2plcpnl0004.prod.sin2.secureserver.net>:
+    550 Unrouteable address
+
+--1682072433-eximdsn-901744857
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; dc3.kencang.id
+
+Action: failed
+Final-Recipient: rfc822;phh15twzeomw@sg2plcpnl0004.prod.sin2.secureserver.net
+Status: 5.0.0
+Remote-MTA: dns; sg2plcpnl0004.prod.sin2.secureserver.net
+Diagnostic-Code: smtp; 550 Unrouteable address
+
+--1682072433-eximdsn-901744857
+Content-type: message/rfc822
+
+Return-path: <ciel@binc.pw>
+Received: from [::1] (port=53564 helo=dc3.kencang.id)
+	by dc3.kencang.id with esmtpa (Exim 4.96)
+	(envelope-from <ciel@binc.pw>)
+	id 1ppnrw-0065cO-0T
+	for phh15twzeomw@sg2plcpnl0004.prod.sin2.secureserver.net;
+	Fri, 21 Apr 2023 17:19:52 +0700
+MIME-Version: 1.0
+Date: Fri, 21 Apr 2023 17:19:52 +0700
+From: ciel@binc.pw
+To: phh15twzeomw@sg2plcpnl0004.prod.sin2.secureserver.net
+Subject: Plss help me
+User-Agent: Roundcube Webmail/1.6.0
+Message-ID: <8f9b3fd9580bd8b3ce51584fcb6bef2c@binc.pw>
+X-Sender: ciel@binc.pw
+Content-Type: multipart/alternative;
+ boundary="=_e763d68e81633d0f0e0b39c42350fa15"
+
+--=_e763d68e81633d0f0e0b39c42350fa15
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset=US-ASCII;
+ format=flowed
+
+
+
+I'm not change my email plss help me on website, plss help me
+
+https://samachar27.com/
+--=_e763d68e81633d0f0e0b39c42350fa15
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8" /></head><body style=3D'font-size: 10pt; font-family: Verdana,Gen=
+eva,sans-serif'>
+<p>I'm not change my email plss help me on website, plss help me</p>
+<p><br /></p>
+<p>https://samachar27.com/</p>
+</body></html>
+
+--=_e763d68e81633d0f0e0b39c42350fa15--
+
+--1682072433-eximdsn-901744857--

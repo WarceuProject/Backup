@@ -1,0 +1,65 @@
+Return-Path: <>
+Delivered-To: kira@server.warceu.net
+Received: from server.warceu.net
+	by server.warceu.net with LMTP
+	id 6w/ZNFTbq2S9NQEAtDFpKQ
+	(envelope-from <>)
+	for <kira@server.warceu.net>; Mon, 10 Jul 2023 12:20:04 +0200
+Return-path: <>
+Envelope-to: kira@server.warceu.net
+Delivery-date: Mon, 10 Jul 2023 12:20:05 +0200
+Received: from mailnull by server.warceu.net with local (Exim 4.96)
+	id 1qIRKy-00039M-2E
+	for kira@server.warceu.net;
+	Sun, 09 Jul 2023 12:08:16 +0200
+X-Failed-Recipients: root@server.warceu.net
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@server.warceu.net>
+To: kira@server.warceu.net
+References: <E1qIRKy-000396-1M@server.warceu.net>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1688897296-eximdsn-1840356680
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1qIRKy-00039M-2E@server.warceu.net>
+Date: Sun, 09 Jul 2023 12:08:16 +0200
+
+--1688897296-eximdsn-1840356680
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  root@server.warceu.net
+    The mail server could not deliver mail to root@server.warceu.net.  The account or domain may not exist, they may be blacklisted, or missing the proper dns entries.
+
+--1688897296-eximdsn-1840356680
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; server.warceu.net
+
+Action: failed
+Final-Recipient: rfc822;root@server.warceu.net
+Status: 5.0.0
+
+--1688897296-eximdsn-1840356680
+Content-type: message/rfc822
+
+Return-path: <kira@server.warceu.net>
+Received: from kira by server.warceu.net with local (Exim 4.96)
+	(envelope-from <kira@server.warceu.net>)
+	id 1qIRKy-000396-1M
+	for root@server.warceu.net;
+	Sun, 09 Jul 2023 12:08:16 +0200
+To: root@server.warceu.net
+Auto-Submitted: auto-generated
+Subject: *** SECURITY information for server.warceu.net ***
+From: "kirasinigami dev,,," <kira@server.warceu.net>
+Message-Id: <E1qIRKy-000396-1M@server.warceu.net>
+Date: Sun, 09 Jul 2023 12:08:16 +0200
+
+server.warceu.net : Jul  9 12:08:16 : kira : unable to resolve host server.warceu.net
+
+
+--1688897296-eximdsn-1840356680--

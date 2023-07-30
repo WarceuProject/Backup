@@ -1,0 +1,120 @@
+From version 2.1.1 to 2.1.2:
+* Fixed bug in group rules payout.
+
+From version 2.1 to 2.1.1:
+* Fixed bug in group rules payout.
+* Fixed bug in donations to self.
+* Fixed compatibility issue with PHP 7
+
+From version 2.0 to 2.1:
+* Improved character count system (thanks to Omar G. - http://forums.mybb-plugins.com/Thread-OUGC-Post-Character-Count-Enhancement)
+* Deleted users' posts would display 0 points and the donate link: when showing the user as "Guest"
+* Added donation spam control (default is 5 per 15 minutes) - except for users in group 4.
+* Points are now removed when soft deleting (but not removed twice if the post/thread is permanently)
+* Points are given back when restoring posts
+* Fixed bug in points deducted when deleting threads with replies (would deduct more points)
+* Editing soft deleted posts does not give/deduct points based on character count.
+* newpoints_add_setting will first check if it can update the setting rather than inserting one with a duplicate name (thanks to Omar G.)
+* newpoints_add_template will first check if it can update the template rather than inserting one with a duplicate name; it will also remove existing duplicate templates (thanks to Omar G.)
+* Fixed one bug related to the deleting posts action: points for replies wouldn't be counted properly some times
+* Added 'numeric' field type to settings.
+* Fixed a few other bugs.
+* Settings can now be translated on the front-end (see language file)
+* Points are not given if a new post or thread is automatically put into moderation.
+* Points are removed if a thread/post is unapproved.
+* Points are given back when a thread/post is approved.
+* Fixed bug in plugin compatibility check in ACP.
+* Recounting tool will only count visible posts and threads now.
+* send_pm function bug fixed (affected ACP in MyBB 1.8).
+* Added username styles to Statistics (except for second column of the Last Donations for performance reasons)
+
+From version 1.9.9 to 2.0:
+* Compatible with MyBB 1.8.
+* Fixed bug in the points format, related to thousands and decimals separators.
+* Characters within quote tags are not counted anymore.
+* Guest posts / Deleted users' posts showed points in the user details section when in fact they don't have any possible points.
+
+From version 1.9.8 to 1.9.9:
+* Fixed major bug in the newpoints_addpoints function which would cause malfunction if it was executed more than once per page.
+
+From version 1.9.7 to 1.9.8:
+* Plugins can now use the hook newpoints_xmlhttp.
+* Forum Rules did not affect quick reply posting.
+* Donation number_format warning on some PHP installations.
+* Fixed 'newpoints_statistics' template problem.
+
+From version 1.9.6 to 1.9.7:
+* Fixed a high risk vulnerability (SQL injection).
+* Fixed a bug in the newpoints_addpoints function which wouldn't add/remove points from a user if points had been added/removed in the same page already.
+
+From version 1.9.5 to 1.9.6:
+* Settings are now re-cached when installing/uninstalling/activating/deactivating NewPoints plugins.
+* Group rules now affected points per visit and points for referral.
+
+From version 1.9.4 to 1.9.5:
+* Fixes minor bugs.
+* Fixed an SQL error which appeared on the ACP.
+* Settings are cached which reduces one query per page.
+* Forum Rules and Group Rules are cached resulting in a performance increase.
+
+From version 1.9.3 to 1.9.4:
+* Fixed an incompatibility issue with MyBB 1.6.6.
+
+From version 1.9.2 to 1.9.3:
+* Fixed bug in the recounting process (related to the income rules).
+
+From version 1.9.1 to 1.9.2:
+* Fixed SQL error in Plugins List and Plugins Updates Check pages.
+
+From version 1.9 to 1.9.1:
+* Fixed problem regarding points count in quick edit and quick reply - would allow users to get unlimited points by changing the characters number.
+
+From version 1.8 to 1.9:
+* Fixed double </span> tag
+* Points to View and Points to Post fields are no longer unsigned. (upgrade script must be run)
+* Now adds NewPoints' settings to $mybb->settings instead of having duplicates in the settings table (for some reason they were being deleted)
+
+From version 1.7 to 1.8:
+* Fixed possible bug in uninstallation, if there was a plugin installed but the file was missing, it would "quit" the uninstallation leaving other plugins installed and possibly causing conflict if you install NewPoints and its plugins again.
+* No longer displays setting groups when there are no settings for that plugin.
+* Split main plugin file into multiple files - takes less time for the parser to read what's actually required.
+* Fixed a small bug in the settings page related to a variable type.
+* BLOG/TEXT has no longer default value (it actually can't have a default value, bad mistake of mine)
+* Sets the collation of the tables on installation to what the user has as default, using MyBB's DB::build_create_table_collation() function.
+
+From version 1.6 to 1.7:
+* Changed TYPE=MyISAM to ENGINE=MyISAM
+* Fixed bug in Donations author.
+
+From version 1.5 to 1.6:
+* Compatible with MyBB 1.6.
+
+From version 1.4 to 1.5:
+* Improvements have been made - thanks zinga.
+* Now plugins can use the Archive's hooks, however the archive_start hook cannot be used - use newpoints_archive_start instead.
+* The bank plugin no longer comes with NewPoints, it must be downloaded from the website separately.
+* Fixed a problem with the latest donations date.
+
+From version 1.3 to 1.4:
+ * Changed the way points are formatted.
+ * Fixed a few other minor bugs.
+
+From version 1.2 to 1.3:
+ * Fixed two minor bugs.
+
+From version 1.1 to 1.2:
+ * Fixed a few bugs.
+
+From version 1.0 to 1.1:
+ * Fixed a bug in forum rules
+ * Fixed a typo in a hook name
+ * Added a new hook "newpoints_admin_load" as plugins can't hook to "admin_load" because they're loaded after that hook is called.
+ * Comes with Shop 1.0 plugin
+ * Increased performance speed by running most of the income queries on shut down and by allowing modules to add points on shut down.
+ * Fixed a bug in forum and group rules that would edit all rules by editing a single one
+ * Added donate reason (optional)
+ * Added points per referral
+ * Added Upgrade system
+ * Added a new function that plugins can use to do templat edits to NewPoints' templates
+ * Now it removes points from users when deleting threads/posts/polls
+ * Fixed some other minor bugs

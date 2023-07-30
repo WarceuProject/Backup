@@ -1,0 +1,123 @@
+Return-Path: <ashafdnorg@res338.servconfig.com>
+Delivered-To: kira+spam@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id yPzYB343YmQpwSYAMUeTPA
+	(envelope-from <ashafdnorg@res338.servconfig.com>)
+	for <kira+spam@binc.pw>; Mon, 15 May 2023 20:45:34 +0700
+Return-path: <ashafdnorg@res338.servconfig.com>
+Envelope-to: kira@binc.pw
+Delivery-date: Mon, 15 May 2023 20:45:34 +0700
+Received: from se4m-iad1.servconfig.com ([199.250.217.13]:51247)
+	by dc3.kencang.id with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <ashafdnorg@res338.servconfig.com>)
+	id 1pyYW5-00AeOQ-1y
+	for kira@binc.pw;
+	Mon, 15 May 2023 20:45:34 +0700
+Received: from res338.servconfig.com ([23.235.211.204])
+	by se4-iad1.servconfig.com with esmtps (TLSv1.2:AES128-GCM-SHA256:128)
+	(Exim 4.92)
+	(envelope-from <ashafdnorg@res338.servconfig.com>)
+	id 1pyYVK-0000zq-FX
+	for kira@binc.pw; Mon, 15 May 2023 09:44:49 -0400
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=res338.servconfig.com; s=default; h=Content-Type:MIME-Version:Message-ID:
+	From:Date:Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=ltD2uWwtVZJPsiBIHm1mQ0OTbkaDXLqWu++5GgwUAn8=; b=Ku2KD28hfJUQHTZLGnICsVnYBx
+	eKQ0Sc4gFhDI8OEMXSZJQuxolpcZBH0Llt0NO2rbRCFS1fUvN6JJQh+/On+bf/07NVIyO5w5Fhi1C
+	6OrrUYOs8OzR+RLAdrGBIg2d/1BxhYbFQBTjKxKp1kg7uCB0UQAvIYNkR2cPdzuRcZsac4uxEL0C/
+	gqT9WPcXOdWQY8rtcE8qKYbZWt7S+XgTuL6LC+VC9Oxe0tUT/ogq48gjqyBjFzAcAoZO0A645jHVD
+	BudKSjC3NRpVpJdgtkFU6RYV0yncLwLjfuqO73jNJQIxRfsrhEndUMBDnxcxjeKPYq3KHz9Diydz0
+	magqGuXg==;
+Received: from ashafdnorg by res338.servconfig.com with local (Exim 4.95)
+	(envelope-from <ashafdnorg@res338.servconfig.com>)
+	id 1pyYVJ-00GmaQ-Hi
+	for kira@binc.pw;
+	Mon, 15 May 2023 06:44:45 -0700
+To: kira@binc.pw
+X-PHP-Script: ashafdn.org.in/wp-admin/options.php for 36.72.63.101
+X-PHP-Originating-Script: 1703:class-phpmailer.php
+Date: Mon, 15 May 2023 13:44:45 +0000
+From: WordPress <wordpress@ashafdn.org.in>
+Message-ID: <b54b0ba2ddb38b0b70fa04eb62687c60@ashafdn.org.in>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+X-Get-Message-Sender-Via: res338.servconfig.com: authenticated_id: ashafdnorg/from_h
+X-Authenticated-Sender: res338.servconfig.com: wordpress@ashafdn.org.in
+X-Originating-IP: 23.235.211.204
+X-SpamExperts-Domain: res338.servconfig.com
+X-SpamExperts-Username: 23.235.211.204
+Authentication-Results: servconfig.com; auth=pass smtp.auth=23.235.211.204@res338.servconfig.com
+X-SpamExperts-Outgoing-Class: ham
+X-SpamExperts-Outgoing-Evidence: Combined (0.13)
+X-Recommended-Action: accept
+X-Filter-ID: Pt3MvcO5N4iKaDQ5O6lkdGlMVN6RH8bjRMzItlySaT+yiuirqoUsrQZXZaHMpWgCPUtbdvnXkggZ
+ 3YnVId/Y5jcf0yeVQAvfjHznO7+bT5xox929c+cxsvRUaYg/IBAnJmMHs8Hyx70QMnQZ1+KIAzc2
+ 0ldfyIWD0ZM5cTIOc/flYLLlWSy3OGfGBNeqx2anOR6cncefLkxsghP6bkHrfqDKpYhgT8G0suzW
+ 0a8LZHs+PXLIIgxDkvi22qkqmBPJthHTuidhm7W8iFyVeRg6Ih66Wzrm7XjiNwHwznIgDGUNxImt
+ GFf0qO8hdIXRut0WwIakfoo+8Jo9gzCaS1hGW2StBDJn9z+dAI3/7SF9NBbrtm3kaopZo4EOowN1
+ MGIJ43DG7JDHGkUFlLvaUAJ9EsZg/9mPb0OnPglkYW72F/Odw+XGlIW1bb6iLQaqIs5BLfTttFI5
+ MCNL/izpcNORuAUvossjam0/HVDFzCeLVAjI+ht+2XwDC3Hj+WjRz7du6zVFHr3MFJPY1AlsPKxo
+ UmgwwyHfTPSi7dSZrogIGqjGMPC2gOLtGTcHvrxjcMYxprnOfejoy0ryl/SE9sCR4JkwTwd6I5MF
+ c+Z5FxsZqYBzHDeqqFz43py4SDhdaHkWzhhc9VGmmVMOtGYQ1btOSs9E8/Ge/xvut1SuDi1JJPro
+ f9XOw7QfwFkrJyNE0FgtYu8C5mJ57ZG9g9QfbBpIFznBUPG6pIzGtJnl0gyVeWjRtFuayQSHKxuV
+ s+RmqoRqqe0qvr5yub6t9+RpDpmA6LkZ3iS8/VWJg7pAL+AIPeNLsZNFLy0ZwVvlbcaOc39lxMzn
+ cV+HwkJbCtmOQsnbvjKRfKzUFp4D6iXZodQehYhy2DNwOgV373pfDhBQ21OdnBrBUZOaLt+mv+y2
+ kVDlbZiN5lvCSN/mwBAlYToB1nv2gPIYmoq6fT4ieT78J1gEKAQPOua7Tb8HVkxnkuo4LbYUTYLO
+ yIOJf1xK6WJ94JUJMa+Jo+DGR/ov8N2Gw0YSBA1L1T1SqRTota5bglMqzEl8IQVNocLfydfAvh8o
+ CZdrV66CFwA5p0lLAXDOtvXeSbLXTepgNNCOiCr2S5lS+Q==
+X-Report-Abuse-To: spam@se1-lax1.servconfig.com
+X-Spam-Status: Yes, score=5.5
+X-Spam-Score: 55
+X-Spam-Bar: +++++
+X-Spam-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Howdy ashafdn@org, You recently requested to have the administration
+    email address on your site changed. If this is correct, please click on the
+    following link to change it: https://ashafdn.org.in/wp-admin/options.php?adminhash=6d5d6717947b65a4a8c35b825f588b2e
+    
+ Content analysis details:   (5.5 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: ashafdn.org.in]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  5.0 KAM_SOMETLD_ARE_BAD_TLD .stream, .trade, .pw, .top, .press,
+                             .guru, .casa & .date TLD Abuse
+X-Spam-Flag: YES
+Subject:  ***SPAM***  [Asha Foudation] New Admin Email Address
+
+Howdy ashafdn@org,
+
+You recently requested to have the administration email address on
+your site changed.
+
+If this is correct, please click on the following link to change it:
+https://ashafdn.org.in/wp-admin/options.php?adminhash=6d5d6717947b65a4a8c35b825f588b2e
+
+You can safely ignore and delete this email if you do not want to
+take this action.
+
+This email has been sent to kira@binc.pw
+
+Regards,
+All at Asha Foudation
+https://ashafdn.org.in
+

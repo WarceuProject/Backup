@@ -1,0 +1,105 @@
+Return-Path: <bzird@stack10.ethii.com>
+Delivered-To: ciel@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id 2JWbEk3zWmSkdSMAMUeTPA
+	(envelope-from <bzird@stack10.ethii.com>)
+	for <ciel@binc.pw>; Wed, 10 May 2023 08:28:45 +0700
+Return-path: <bzird@stack10.ethii.com>
+Envelope-to: ciel@binc.pw
+Delivery-date: Wed, 10 May 2023 08:28:45 +0700
+Received: from [148.163.69.98] (port=44160 helo=jack98.bispeliden.info)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <bzird@stack10.ethii.com>)
+	id 1pwYdF-009kNc-1Q
+	for ciel@binc.pw;
+	Wed, 10 May 2023 08:28:45 +0700
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=bzird.com;
+	s=default; h=Sender:Content-Transfer-Encoding:Content-Type:MIME-Version:
+	Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=DKblh3gw8DgTv9ayLjTUDphZbW/wKd0+jzJfYGTfqKg=; b=ToTvi615xi8K7VqnLGmwp9LKya
+	4pm196e92/WOI6RCcnY+7kNbyf1MADiku/ksWFE0vwGofcXFEZJ6+sKgP62GbxVJqpQtY9OGuHF1U
+	wthaC9Ii6SkHh1dPj07UUxUDpkKCyIKmQTswoGrg3NO4KHbnC1KQFg82Uuuvpf8V3FxBAh4YOHwDj
+	O8qsNn4SNeEdnpdrFfPS4RzTsh/0khw3OD05wTby7f42DX/L8ZvVe7k1aO/qv0SkBrSTZi6Gr8Lod
+	r+e5FRmrxvp6nxDnHpOTntmYfc+oLy9Wy3r4zdpkCho1DQkJo5xEs7KhA79Mvu/R7glCyc2KOcKS3
+	VBVo7Okg==;
+Received: from bzird by stack10.ethii.com with local (Exim 4.96)
+	(envelope-from <bzird@stack10.ethii.com>)
+	id 1pwYcY-00FLv4-1I
+	for ciel@binc.pw;
+	Tue, 09 May 2023 21:27:58 -0400
+To: ciel@binc.pw
+Subject: =?us-ascii?Q?[biaxecoder]_Please_moderate:_"Enviva_uses_bloc?=  =?us-ascii?Q?kchain_to_trace_wood_pellets_used_for_energy"?=
+X-PHP-Script: bzird.com/wp-comments-post.php for 45.141.83.193
+X-PHP-Originating-Script: 1112:PHPMailer.php
+Date: Wed, 10 May 2023 01:27:58 +0000
+From: WordPress <wordpress@bzird.com>
+Message-ID: <AG49gSaHsXQxy5lhFSxsz3CRZDI9pZ9C8RH4X5Yg4o@bzird.com>
+X-Mailer: PHPMailer 6.6.0 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Sender:  <bzird@stack10.ethii.com>
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - stack10.ethii.com
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [1112 980] / [47 12]
+X-AntiAbuse: Sender Address Domain - stack10.ethii.com
+X-Get-Message-Sender-Via: stack10.ethii.com: authenticated_id: bzird/from_h
+X-Authenticated-Sender: stack10.ethii.com: wordpress@bzird.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: bzird.com:/public_html
+X-Spam-Status: No, score=3.2
+X-Spam-Score: 32
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "Enviva uses blockchain to trace
+    wood pellets used for energy" is waiting for your approval https://bzird.com/enviva-uses-blockchain-to-trace-wood-pellets-used/
+    Author: nba standings 2022 to 2023 ph (IP address: 45.141.83.193, 45.141.83.193)
+    Email: davida.chatham@t-online.de URL: http://arenaplus.net/ Comment: I actually
+    reallʏ like thnis game.I engage in a [...] 
+ Content analysis details:   (3.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: bzird.com]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  2.0 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  1.0 KAM_MXINFO             MX Record and dot info domains associated with
+                             FAKERBL Spammers
+X-Spam-Flag: NO
+
+A new comment on the post "Enviva uses blockchain to trace wood pellets used for energy" is waiting for your approval
+https://bzird.com/enviva-uses-blockchain-to-trace-wood-pellets-used/
+
+Author: nba standings 2022 to 2023 ph (IP address: 45.141.83.193, 45.141.83.193)
+Email: davida.chatham@t-online.de
+URL: http://arenaplus.net/
+Comment: 
+I actually reallʏ like thnis game.I engage in a gsme аnd tһen clean a section օf my һome.
+Then, foor mｙ break I play ɑnother game. І'm addicted І'm aware.
+
+Approve it: https://bzird.com/wp-admin/comment.php?action=approve&c=309#wpbody-content
+Trash it: https://bzird.com/wp-admin/comment.php?action=trash&c=309#wpbody-content
+Spam it: https://bzird.com/wp-admin/comment.php?action=spam&c=309#wpbody-content
+Currently 46 comments are waiting for approval. Please visit the moderation panel:
+https://bzird.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

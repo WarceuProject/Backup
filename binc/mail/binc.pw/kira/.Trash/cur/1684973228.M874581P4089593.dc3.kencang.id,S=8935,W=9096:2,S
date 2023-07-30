@@ -1,0 +1,161 @@
+Return-Path: <ingeocon@webhosting2033.is.cc>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id 6OkfLKymbmT5Zj4AMUeTPA
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	for <kira@binc.pw>; Thu, 25 May 2023 07:07:08 +0700
+Return-path: <ingeocon@webhosting2033.is.cc>
+Envelope-to: kira@binc.pw
+Delivery-date: Thu, 25 May 2023 07:07:08 +0700
+Received: from olivedrab.birch.relay.mailchannels.net ([23.83.209.135]:52846)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q1yVX-00HHHk-33
+	for kira@binc.pw;
+	Thu, 25 May 2023 07:07:08 +0700
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id D3AE954197E
+	for <kira@binc.pw>; Thu, 25 May 2023 00:06:20 +0000 (UTC)
+Received: from offloadmongo3b.mailbaby.net (unknown [127.0.0.6])
+	(Authenticated sender: interserver)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 39C88541301
+	for <kira@binc.pw>; Thu, 25 May 2023 00:06:20 +0000 (UTC)
+ARC-Seal: i=2; s=arc-2022; d=mailchannels.net; t=1684973180; a=rsa-sha256;
+	cv=pass;
+	b=TJIEwj/F7Lgz4Up65DT4RPooy6Z/l80BUvnURvneZ3o3geMVhmG30jEiqAVsiikZ1lx+9I
+	dRjPcvsApUChyv7yfuY9877g0jGvWWfDpZ3Hplj2ti0apcrtWd3D8gzuoo3whBa9YRSMaQ
+	hjsw07g1eQXe3KKSkLofaRm3FPb6SUerfAMihvssZKkXRY0E4qaqAENj4oAdEElU3CLqJF
+	99unyMLhFuve3EX1d8iyRTmEx7c8eTyQxKhS/myY+Ld7vCsakx7meYdIDNJ85yycgvVW37
+	EtGPeTBq24KamLxv7dkqu1O3vI+38knzAvtssaaliK0r9QlfzJh6PEBgWhdUdg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1684973180;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=kE1i3mq/p9RSluErEzr49RnLv4PsIGkkD/rnnt6rtbU=;
+	b=ucnnfGwe4U9d2vsasGetoqtRSmAM3tJ8r2vScLMYfwb/7qd+Xm46AxXCkQdl9C78zlIgF3
+	HrHT4rNnqY6M9GaKPwDe8pptG1IQzA+5q4CxthdGfzxdEdVPxpmJM3sX1vegOQ+lwP0/Or
+	ewHlYHOwAwSrBLmEtCpzoo0zcIP7Iz3LLVw/TB/toiu+aFLus6xr391ReVfwwpISlVbXsx
+	f7aTbec4mI7RWQUgYCelwABc35+L1iFGUkOpEeYoTDn9JzE4DdZ5cW1FjlS893Pu5zBLul
+	TGAzEQfoviwi1gBspCnhn1SUkTpr9+EozE3xK35QBPyYqav6mpmfG5IKxl4Ctw==
+ARC-Authentication-Results: i=2;
+	rspamd-5cdf8fd7d9-qfmcz;
+	arc=pass ("mailbaby.net:s=detka:i=1");
+	auth=pass smtp.auth=interserver smtp.mailfrom=ingeocon@webhosting2033.is.cc
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MC-Relay: Neutral
+X-MailChannels-SenderId: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MailChannels-Auth-Id: interserver
+X-Unite-Arch: 5e5c6ef604fe41da_1684973180629_2531245567
+X-MC-Loop-Signature: 1684973180629:3925960279
+X-MC-Ingress-Time: 1684973180629
+Received: from offloadmongo3b.mailbaby.net (offloadmongo3b.mailbaby.net
+ [74.50.91.47])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.127.59.19 (trex/6.8.1);
+	Thu, 25 May 2023 00:06:20 +0000
+Received: from webhosting2033.is.cc ([68.168.213.91] webhosting2033.is.cc)
+ (Authenticated sender: webhosting2033)
+ by offloadmongo3b.mailbaby.net (InterServerMTA) with ESMTPSA id 188503a4f61000d8a7.001
+ for <kira@binc.pw>
+ (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256);
+ Thu, 25 May 2023 00:06:18 +0000
+X-Zone-Loop: 7ed1886ca6091d8050f9da4b061fe8edb4d8e9814faf
+ARC-Authentication-Results: i=1;	offloadmongo3b.mailbaby.net;	auth=pass
+ smtp.auth=webhosting2033 smtp.mailfrom=ingeocon@webhosting2033.is.cc
+ARC-Seal: i=1; s=detka; d=mailbaby.net; t=1684973178; a=rsa-sha256;
+	cv=none;
+	b=WTH3Wq9rzdL97vqMiG/GKM3hi/tqiur5lHgVHChKJ0h90exroz5iQHbU5DSAADtyyFfkJO
+	4OQ8DbAYjkETw/ufyz6BB+JRCdbrHPGIc3zUW1Y0l97BNqLYLd3wqDppteV7HectnzCfLH
+	Ig6tza2OXYVAc0ZlDvCSpSiOgzvvMlSWbhONU4EPda0XFw/Sep0l9w+t0IP2jYyk5xE2Zy
+	aTkpWdcbbd7i2Ec2/x7zASd2xmUDNCJSm374oVc3TvKS0NG1rIESpj9cMttWT2LvGQMA52
+	u2mkjiCxU0WIYtCUzj5Zducz3tmSfKUhLAlPcLJpvRmb1oP7O3KdtBz8sxfRzA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailbaby.net;	s=detka; t=1684973178;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=kE1i3mq/p9RSluErEzr49RnLv4PsIGkkD/rnnt6rtbU=;
+	b=GIJtAs+bRTHov6ikRHuqiebvAabI+yt50+2akBeEVHgagIvlikFbU4QldimNG3h49WPwAj
+	RA8p2UxUeu+/jmm8PBvKNnc6IgNDEXr1n6Y6uKvs1mqm4nnjqSKQr7e9RDqF9pcQlJQ4e2
+	Dxt+kJWjlWa1tuhMdikCQKeUJzYtsSOTVSxbwQlesiaayeyQbyHKbJNfPRQStkxTCTjqDq
+	MARHm+gV4hjfULEr9XHHFkP75cSJN4HoDptCeh8phBF0ClbpAC5fx6450guykXpMxlSf1w
+	36yJeNP2dbE6DVM+zmDSoHYl1iWaaZCadMbT8Y2DvIX4q7fGvqXrHEgbgjqXxw==
+X-SPF: pass
+X-Originating-IP: [68.168.213.91]
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=webhosting2033.is.cc; s=default; h=Sender:Content-Type:MIME-Version:
+	Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=kE1i3mq/p9RSluErEzr49RnLv4PsIGkkD/rnnt6rtbU=; b=yvqzhtgzVw8UtxJB82kAThhn3W
+	XtezBM82qiqBpWtHJqYxI/fS5FRAfcdm5tiEB4myIBo5CCH5fhpTMTZLS7Vl2QCN+bA88URkWu+k4
+	7VBM70srqIx2EgQdCUGBTu9JXNGuC8R3Xyt81vYIz0F34T7keyUaDCml/l2o4rC4fyGgjjuQNhvp9
+	7gTv/jJ4xCbhqej6jbtGgqJ0uJ9yJ1vh6nrngGOFqgIJq5V23uCKCsfThNLZgMhofk72O1Lo19w+6
+	vxiUOigwPhab98RAk9CcTke1ks02vwZ2de7NWDTVU1I+/3jeljMe2ND0oOfy1hGlJ2vXcDK1Lg96+
+	dMtICPyw==;
+Received: from ingeocon by webhosting2033.is.cc with local (Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q1yUg-001J9Z-37
+	for kira@binc.pw;
+	Wed, 24 May 2023 20:06:18 -0400
+To: kira@binc.pw
+Subject: [InGEO consulting] Please moderate: "Dein Tinder Profiltext wird dementsprechend alle nicht unerheblich bedeutsam"
+X-PHP-Script: ingeoconsulting.com/wp-comments-post.php for 116.11.145.200
+X-PHP-Originating-Script: 1159:class-phpmailer.php
+Date: Thu, 25 May 2023 00:06:14 +0000
+From: WordPress <wordpress@ingeoconsulting.com>
+Message-ID: <a4f63498d7761036afd50df4a78f69ec@ingeoconsulting.com>
+X-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <ingeocon@webhosting2033.is.cc>
+X-AuthUser: ingeocon@webhosting2033.is.cc
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "Dein Tinder Profiltext wird dementsprechend
+    alle nicht unerheblich bedeutsam" is waiting for your approval https://ingeoconsulting.com/2022/12/30/dein-tinder-profiltext-wird
+    [...] 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: gate.io]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+X-Spam-Flag: NO
+
+A new comment on the post "Dein Tinder Profiltext wird dementsprechend alle nicht unerheblich bedeutsam" is waiting for your approval
+https://ingeoconsulting.com/2022/12/30/dein-tinder-profiltext-wird-dementsprechend-alle-2/
+
+Author: gateio (IP address: 116.11.145.200, 116.11.145.200)
+Email: 12595432@outlook.com
+URL: https://www.gate.io/zh-tw/signup/XwNAU
+Comment: 
+I have read your article carefully and I agree with you very much. This has provided a great help for my thesis writing, and I will seriously improve it. However, I don't know much about a certain place. Can you help me? https://www.gate.io/zh-tw/signup/XwNAU
+
+Approve it: https://ingeoconsulting.com/wp-admin/comment.php?action=approve&c=125#wpbody-content
+Trash it: https://ingeoconsulting.com/wp-admin/comment.php?action=trash&c=125#wpbody-content
+Spam it: https://ingeoconsulting.com/wp-admin/comment.php?action=spam&c=125#wpbody-content
+Currently 20 comments are waiting for approval. Please visit the moderation panel:
+https://ingeoconsulting.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

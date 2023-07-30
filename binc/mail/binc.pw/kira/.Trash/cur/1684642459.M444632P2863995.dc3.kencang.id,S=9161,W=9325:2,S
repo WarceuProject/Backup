@@ -1,0 +1,164 @@
+Return-Path: <ingeocon@webhosting2033.is.cc>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id QIy6GZuaaWR7sysAMUeTPA
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	for <kira@binc.pw>; Sun, 21 May 2023 11:14:19 +0700
+Return-path: <ingeocon@webhosting2033.is.cc>
+Envelope-to: kira@binc.pw
+Delivery-date: Sun, 21 May 2023 11:14:19 +0700
+Received: from barn.aspen.relay.mailchannels.net ([23.83.221.11]:10651)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q0aSX-00C1ye-01
+	for kira@binc.pw;
+	Sun, 21 May 2023 11:14:19 +0700
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 9A59C3C19F0
+	for <kira@binc.pw>; Sun, 21 May 2023 04:13:31 +0000 (UTC)
+Received: from offloadmongo2.mailbaby.net (unknown [127.0.0.6])
+	(Authenticated sender: interserver)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 03CD93C1448
+	for <kira@binc.pw>; Sun, 21 May 2023 04:13:30 +0000 (UTC)
+ARC-Seal: i=2; s=arc-2022; d=mailchannels.net; t=1684642411; a=rsa-sha256;
+	cv=pass;
+	b=QPQfJUOIaAQOdlfb1FBBpbM9Wl+EDiLXsyzdTgQ/iTZGymh6Zp16IGIHNKnRp9QvZvavug
+	Ldwky6ncJKMRoQZUDFu0LZp4msks/z6GJ8CgJE6KhLvbQcIGNFTa8BgOreEFGt4clopB5F
+	862kyC4r+SY7tiEvpr4XnSPOIR7nzKx7TDNDmdKKmJ5jL7qb5xhN59LUlXLDN73VI4nvSf
+	HecV08YqHlGnbaV+Gx9/MELz+CDNMLMEKP5u14/EcWpHbQZRzLy49Q2VVMsvVvlNApasF5
+	mAzFpKqEQWLkzra4APLpj3pWDm+EOt6n2rGURsW9J6qnlVm6eIxvUAKfrY6clg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1684642411;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:dkim-signature;
+	bh=PzTRHG2LStc2hGdLKzOMFzGp2KOFJIHl0NqKm2Ccmjw=;
+	b=aAfuKX2yLjx2H1zjyj/W3KEbcuOyOclgpxKs4HKlJAv3febOJ2viheWBTEN3FeZZHld3pH
+	4QHcyMj2vlZ/kBV1TNi/vx/kA/+jNX1A3hY+56ElhrB/aGKLEinLq0jwG9Xw+1tdj6Ao6Y
+	/6MvHxt2FWbTTIQRcQRPnX5EATPL8Tb1yTVF78MrHtT68gnMog8/X8l1ney3GYuv+7toey
+	qgPDxRat9msfKoufS2Jylp0hJPgy+PQXxs31Pa7KDQ3Ej07ucJDRP25WCUPyTTM5QsX8kT
+	hMc75jcoGNYbDlPU/SnXINvAGInt/zcXAzkvVzldlnqU9KOIpB/XvpJgMD4Umw==
+ARC-Authentication-Results: i=2;
+	rspamd-79bb5575d7-4v5cb;
+	arc=pass ("mailbaby.net:s=detka:i=1");
+	auth=pass smtp.auth=interserver smtp.mailfrom=ingeocon@webhosting2033.is.cc
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MC-Relay: Bad
+X-MailChannels-SenderId: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MailChannels-Auth-Id: interserver
+X-Shrill-Macabre: 44b74a0b1fbfdb85_1684642411433_585296183
+X-MC-Loop-Signature: 1684642411433:1442824425
+X-MC-Ingress-Time: 1684642411433
+Received: from offloadmongo2.mailbaby.net (offloadmongo2.mailbaby.net
+ [64.20.57.30])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.104.253.217 (trex/6.8.1);
+	Sun, 21 May 2023 04:13:31 +0000
+Received: from webhosting2033.is.cc ([68.168.213.91] webhosting2033.is.cc)
+ (Authenticated sender: webhosting2033)
+ by offloadmongo2.mailbaby.net (InterServerMTA) with ESMTPSA id 1883c831edd000a5be.001
+ for <kira@binc.pw>
+ (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256);
+ Sun, 21 May 2023 04:13:26 +0000
+X-Zone-Loop: 091ab0025c05367f198a1ec62c793fe21da04d533367
+ARC-Authentication-Results: i=1;	offloadmongo2.mailbaby.net;	auth=pass
+ smtp.auth=webhosting2033 smtp.mailfrom=ingeocon@webhosting2033.is.cc
+ARC-Seal: i=1; s=detka; d=mailbaby.net; t=1684642406; a=rsa-sha256;
+	cv=none;
+	b=BqgPbE5YiPkCfyEgvjWJk5qZAXViKMUegfbjG7jYP6iFcc3MNTgxhBi967IkuqZD8zsC9H
+	XjApVvvUfkSJWclt6RpTryfOVsq90C2lpU+NcPA0+xT0nYpIku3iyL+MulRSt9ZlaKwLuk
+	I4PVwNEAZPZy+z6Xg7GqyBh1szn4keNbsMzFUG5IuQILQsMFdoAoJ3awLAe9FyTej207YN
+	A301zH5kzvN7KbzFJX7TpH0w+b05kYZrXZLnPwtpcsKFs0pmx2lreJLi1TLe+KZXhyLtQa
+	6rDthFcSoJzlcIQU25SMnNPFWv334jJsV5W28k8/V3oer6urrAMUE/qhTfv5Aw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailbaby.net;	s=detka; t=1684642406;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:dkim-signature;
+	bh=PzTRHG2LStc2hGdLKzOMFzGp2KOFJIHl0NqKm2Ccmjw=;
+	b=L/W5IEWgmjFE5tKZ/swbyWzYDHxYTfwucmbm2/SYCLMmCe1vUz5KS0HgafBkESAtrogOK/
+	93LAVuw5mjpfOQnVZyi2aKqLDl4kUJDdrE2B0R5y1wk8QXvngVKhoDMGBQNXCb55MnZeGo
+	zJ/UHuFp0tJF1XPLogB96BxvQU1BdI919Cl0P35MchkxJYzWFG8/rvVuobVEcd4yGawXkJ
+	pUk9vaqwshZOa91DS+vFt7aiVVaNl0ZFNDr8Oc9RVDneTEACGrU4h10JLV/6VSxhkg5jaE
+	tVC2bkyR/euyPipD5gFLI4v6OWNwjA8Pw5KFYGvtH0ttbqX6KgN4iKrwinSGJg==
+X-SPF: pass
+X-Originating-IP: [68.168.213.91]
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=webhosting2033.is.cc; s=default; h=Sender:Content-Transfer-Encoding:
+	Content-Type:MIME-Version:Message-ID:From:Date:Subject:To:Reply-To:Cc:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=PzTRHG2LStc2hGdLKzOMFzGp2KOFJIHl0NqKm2Ccmjw=; b=idLzquYBntywDlDuCSoTGy1au1
+	eitfEY2kO6WuDLSIE8Ky512FwEtFqx+4lkZejtjsjJrBdlfdkOMJmhSaSQ/M99WOdohTSGpzjOCNv
+	tiJJSIIYoCXZKi5DMIgvjlbp43pU7xi1AtKxiyPWX1m3wbhp37YGcJnchCQZ1naBlZPPjzWAMCabb
+	u3kl2bj9DlGvEuUpTCY+0/45DUG9isfIJHn8RHo++Ui+kL/m4NJmZT3dTmwCUmF4ZDTuH9sB4q8Vq
+	j6Fvu8sAZhTkuU1aYXUzTszYUBaTtySsAXLVSUCEl0uBt/gVBMX7WBOBVmSg+nrmkKdD0y+n5Jk+p
+	i99N5hVA==;
+Received: from ingeocon by webhosting2033.is.cc with local (Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q0aRg-003yj0-00
+	for kira@binc.pw;
+	Sun, 21 May 2023 00:13:25 -0400
+To: kira@binc.pw
+Subject: [InGEO consulting] Please moderate: "Korean Relationship: Satisfy fellow Korean single people here!"
+X-PHP-Script: ingeoconsulting.com/wp-comments-post.php for 171.38.11.85
+X-PHP-Originating-Script: 1159:class-phpmailer.php
+Date: Sun, 21 May 2023 04:13:23 +0000
+From: WordPress <wordpress@ingeoconsulting.com>
+Message-ID: <888250a5e0108a01eced892a32321c71@ingeoconsulting.com>
+X-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Sender:  <ingeocon@webhosting2033.is.cc>
+X-AuthUser: ingeocon@webhosting2033.is.cc
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "Korean Relationship: Satisfy fellow
+    Korean single people here!" is waiting for your approval https://ingeoconsulting.com/2023/01/04/korean-relationship-satisfy-fellow-korean
+    [...] 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: ingeoconsulting.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+X-Spam-Flag: NO
+
+A new comment on the post "Korean Relationship: Satisfy fellow Korean single people here!" is waiting for your approval
+https://ingeoconsulting.com/2023/01/04/korean-relationship-satisfy-fellow-korean-single/
+
+Author: gate io para yatırma nasıl yapılır (IP address: 171.38.11.85, 171.38.11.85)
+Email: 33527851@outlook.com
+URL: https://www.gate.io/tr/signup/XlQVXVo
+Comment: 
+I am a website designer. Recently, I am designing a website template about gate.io. The boss's requirements are very strange, which makes me very difficult. I have consulted many websites, and later I discovered your blog, which is the style I hope to need. thank you very much. Would you allow me to use your blog style as a reference? thank you!
+
+Approve it: https://ingeoconsulting.com/wp-admin/comment.php?action=approve&c=112#wpbody-content
+Trash it: https://ingeoconsulting.com/wp-admin/comment.php?action=trash&c=112#wpbody-content
+Spam it: https://ingeoconsulting.com/wp-admin/comment.php?action=spam&c=112#wpbody-content
+Currently 7 comments are waiting for approval. Please visit the moderation panel:
+https://ingeoconsulting.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

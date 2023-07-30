@@ -1,0 +1,103 @@
+Return-Path: <floridaproudllc@host.360serverhost.com>
+Delivered-To: ciel@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id WNxpOeRkmGQmyzoAMUeTPA
+	(envelope-from <floridaproudllc@host.360serverhost.com>)
+	for <ciel@binc.pw>; Sun, 25 Jun 2023 23:01:40 +0700
+Return-path: <floridaproudllc@host.360serverhost.com>
+Envelope-to: ciel@binc.pw
+Delivery-date: Sun, 25 Jun 2023 23:01:41 +0700
+Received: from host.360serverhost.com ([128.127.106.147]:59748)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <floridaproudllc@host.360serverhost.com>)
+	id 1qDSBD-00GqB3-0u
+	for ciel@binc.pw;
+	Sun, 25 Jun 2023 23:01:40 +0700
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=floridaproudllc.com; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:From:Date:Subject:To:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=+QY287kpRdKN6bhb7eVO3+QeSz4ncYFnUFtgU76qNJ4=; b=U547y/TvlyiWLMKU3JYpR3MuqJ
+	0Df0WqDHq7rscR3VabbG6MU3Z8SxIXuQpy8mZr/BnsQZTp6Y/uVUmH6O0cGDKE3tFhBmhwiVIH3j/
+	xrDOTdfuQVsUgFMADORFLf8gxugUF3RLrrnYqZccC0v/8hpsphoEXEcIs36Zl6/3uunqwSBPtdcQ+
+	ZhuJPkiAyp7l+hCm8tWm+e4Od+yg0lhXht/+UDbnqLcCRJSG6EWz6mkjAG44Z8Su0eMToVzJaKtA1
+	3BgDXRvaJRpCmhpW9LlVvCiV0y+1TNILAvljO1dnMJjRezZuR6l99qAmZOyxUMzzl7wFnymPFgOJb
+	DDwX3wng==;
+Received: from floridaproudllc by host.360serverhost.com with local (Exim 4.96)
+	(envelope-from <floridaproudllc@host.360serverhost.com>)
+	id 1qDSAV-0008K8-1K
+	for ciel@binc.pw;
+	Sun, 25 Jun 2023 12:00:51 -0400
+To: ciel@binc.pw
+Subject: =?us-ascii?Q?[Florida_Proud_LLC]_Please_moderate:_"14_Somebo?=  =?us-ascii?Q?dy_Imagine_You_might_be_Trying_to_Become_Seduct?=  =?us-ascii?Q?ive_When_you're_Maybe_not"?=
+X-PHP-Script: floridaproudllc.com/wp-comments-post.php for 222.84.84.226
+X-PHP-Originating-Script: 1800:PHPMailer.php
+Date: Sun, 25 Jun 2023 16:00:51 +0000
+From: WordPress <wordpress@floridaproudllc.com>
+Message-ID: <eUV34doYElw2Cm49AF5QJJgooMEBotXgdBYEAVngo40@floridaproudllc.com>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - host.360serverhost.com
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [1800 993] / [47 12]
+X-AntiAbuse: Sender Address Domain - host.360serverhost.com
+X-Get-Message-Sender-Via: host.360serverhost.com: authenticated_id: floridaproudllc/from_h
+X-Authenticated-Sender: host.360serverhost.com: wordpress@floridaproudllc.com
+X-Source: 
+X-Source-Args: php-fpm: pool floridaproudllc_com                        
+X-Source-Dir: floridaproudllc.com:/public_html
+X-Spam-Status: No, score=4.3
+X-Spam-Score: 43
+X-Spam-Bar: ++++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "14 Somebody Imagine You might be
+    Trying to Become Seductive When you're Maybe not" is waiting for your approval
+    https://floridaproudllc.com/14-somebody-imagine-you-might-be- [...] 
+ Content analysis details:   (4.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: binance.com]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  2.4 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
+                             [cf: 100]
+  1.7 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
+X-Spam-Flag: NO
+
+A new comment on the post "14 Somebody Imagine You might be Trying to Become Seductive When you're Maybe not" is waiting for your approval
+https://floridaproudllc.com/14-somebody-imagine-you-might-be-trying-to-become/
+
+Author: бнанс зареструватися (IP address: 222.84.84.226, 222.84.84.226)
+Email: 43011234@outlook.com
+URL: https://accounts.binance.com/uk-UA/register?ref=JHQQKNKN
+Comment: 
+Thank you for your sharing. I am worried that I lack creative ideas. It is your article that makes me full of hope. Thank you. But, I have a question, can you help me? https://accounts.binance.com/uk-UA/register?ref=JHQQKNKN
+
+Approve it: https://floridaproudllc.com/wp-admin/comment.php?action=approve&c=131#wpbody-content
+Trash it: https://floridaproudllc.com/wp-admin/comment.php?action=trash&c=131#wpbody-content
+Spam it: https://floridaproudllc.com/wp-admin/comment.php?action=spam&c=131#wpbody-content
+Currently 18 comments are waiting for approval. Please visit the moderation panel:
+https://floridaproudllc.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

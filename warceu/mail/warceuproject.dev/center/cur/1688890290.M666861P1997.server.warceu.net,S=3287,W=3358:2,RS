@@ -1,0 +1,71 @@
+Return-Path: <lightid180@gmail.com>
+Delivered-To: center@warceuproject.dev
+Received: from server.warceu.net
+	by server.warceu.net with LMTP
+	id 5w2+JrJrqmTNBwAAtDFpKQ
+	(envelope-from <lightid180@gmail.com>)
+	for <center@warceuproject.dev>; Sun, 09 Jul 2023 10:11:30 +0200
+Return-path: <lightid180@gmail.com>
+Envelope-to: center@warceuproject.dev
+Delivery-date: Sun, 09 Jul 2023 10:11:30 +0200
+Received: from mail-wr1-f43.google.com ([209.85.221.43]:60895)
+	by server.warceu.net with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <lightid180@gmail.com>)
+	id 1qIPVx-0000Uw-1o
+	for center@warceuproject.dev;
+	Sun, 09 Jul 2023 10:11:30 +0200
+Received: by mail-wr1-f43.google.com with SMTP id ffacd0b85a97d-31434226a2eso4108915f8f.1
+        for <center@warceuproject.dev>; Sun, 09 Jul 2023 01:11:07 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1688890245; x=1691482245;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=W1QRxfA/0NvFGn+/7EVOiHLmAq4nLHaLuxcosbAXn5s=;
+        b=LWYqIAl4GGkgQ8bRhx4SHBA+EBCrNChsVDw8kk6HsxW4oSNbnUQi4J4lQIOjRDzdtj
+         ni4mFbbK2i5GgZLux3//dwXbOzNYlqIYQAvdjJ0piq856joALq38imUFfZfB/DHQ3rxu
+         1Sp8OlO9yDJDwvcbsT9QjGxXErpBmiMBllQPb/+9HYBn/g+VoKtA0kuBbU/1TOd9rkz7
+         /XahQHYt4W4REdT58KINfIkiF11gjaD30tCNWANdN5CdwcodDZJyi4pq2/iRrch3iKr0
+         NH+n0tmCeT1dv7p1mFmK7D3KrOoMkSEr9ze/1FHlrYr5CgQhmKVeNygWh24kpaiNmgKm
+         yOZw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1688890245; x=1691482245;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=W1QRxfA/0NvFGn+/7EVOiHLmAq4nLHaLuxcosbAXn5s=;
+        b=RKydHuWk90cVut1HKcgaX3PCheoZ1fDUn5tiiUNTUc2HS9pMeNomxSOvW/Nq9n1SMr
+         RwXVufbBB6veAip4r3BGRuNN4ZhyfNUWWF5hiAz8djNOFKmVdlGhQ/QN+lft4m37UjIX
+         Gs0R0prgn5L98Qs0iDt5cvHJ49PRlD9PzjRJEPPtUVQNXqAhGm9jh1L4Hx0HlKD490zy
+         IggEYO4FhEfYgoBfxkl/JZpns/x6lE2jgvaKu3ZQDuumssuY8HaPB519VT/9YzAMMUgn
+         M27E7BwDdar4ZUFkMtG5Jp7dehvb68B3/ZvU2VYyFIPxlmCIw0FBI06FSP58RYC/CUo9
+         sRMw==
+X-Gm-Message-State: ABy/qLZoTkTFN3OBQfBJ1YXf4Q9ruD48BocZNfYoPXTBJ4K9/De2JDQa
+	46kJXKBsVxulntSUslbLRGDrxuXr1a45yEGs53pojYb+
+X-Google-Smtp-Source: APBJJlGvkDefo4FkidIC23OPYmp8bcZI6rfCMgdpRoAPIUxd0KXCCU6s9GRdo4g1EZAgt3fMOioK6eW4qXuCxfWBVy4=
+X-Received: by 2002:a5d:52cc:0:b0:314:f7e:8755 with SMTP id
+ r12-20020a5d52cc000000b003140f7e8755mr10280738wrv.55.1688890244333; Sun, 09
+ Jul 2023 01:10:44 -0700 (PDT)
+MIME-Version: 1.0
+From: Kira Sinigami <lightid180@gmail.com>
+Date: Sun, 9 Jul 2023 15:10:31 +0700
+Message-ID: <CAM0mTbQyANYwvm_6cMV1VRwi=_HtzrG3xqviJEFTDnWCVsN=UA@mail.gmail.com>
+Subject: testing cuy
+To: center@warceuproject.dev
+Content-Type: multipart/alternative; boundary="000000000000140651060009670c"
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: (no report template found)
+X-Spam-Flag: NO
+
+--000000000000140651060009670c
+Content-Type: text/plain; charset="UTF-8"
+
+hay cuy
+
+--000000000000140651060009670c
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">hay cuy<br></div>
+
+--000000000000140651060009670c--

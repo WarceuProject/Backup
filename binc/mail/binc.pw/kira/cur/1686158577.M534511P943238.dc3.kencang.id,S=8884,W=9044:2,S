@@ -1,0 +1,160 @@
+Return-Path: <ingeocon@webhosting2033.is.cc>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id yICwH/G8gGSGZA4AMUeTPA
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	for <kira@binc.pw>; Thu, 08 Jun 2023 00:22:57 +0700
+Return-path: <ingeocon@webhosting2033.is.cc>
+Envelope-to: kira@binc.pw
+Delivery-date: Thu, 08 Jun 2023 00:22:57 +0700
+Received: from toucan.tulip.relay.mailchannels.net ([23.83.218.254]:19303)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q6ws0-0044Ae-2I
+	for kira@binc.pw;
+	Thu, 08 Jun 2023 00:22:57 +0700
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 7891F50157E
+	for <kira@binc.pw>; Wed,  7 Jun 2023 17:22:07 +0000 (UTC)
+Received: from rspamd3.mailbaby.net (unknown [127.0.0.6])
+	(Authenticated sender: interserver)
+	by relay.mailchannels.net (Postfix) with ESMTPA id D02A6500B01
+	for <kira@binc.pw>; Wed,  7 Jun 2023 17:22:06 +0000 (UTC)
+ARC-Seal: i=2; s=arc-2022; d=mailchannels.net; t=1686158527; a=rsa-sha256;
+	cv=pass;
+	b=sax2gYmukpe5BgLZGEW92IuUpIxfuXT3nllqRykBuB+eeDkqUZ0PxS2gkwr9nc1Bm+pAad
+	AdmYbl5ZHa3w9n0PQuBY2a4SC0RVlA3sGzEECnKOKGwocZI3vmd/zk5qj7U5NrfTy95ciz
+	M6kZtd7BPz6H05100A9VfCENt9Qh0MW2qiQWO6lQ8z0S2DRc8C4GVid0mtP5XqxhM22UAJ
+	X0WvojsB1bHVunk4Diyby4XrBtKiqIGnoB4o8aCXHkWtCkHYDAN4wn+me8V2k3076tfGBG
+	QfbHPTfFGzkaSS+La1PDC+1h2vUKznXbIhZIO5bl7hCPudoZUyl3fz82i2DJCw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1686158527;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=pavYKoNhHT8kGLmhnsOdokNlostw1qwlfc9C1X6vIgE=;
+	b=ag7S/XsuKDnIV+QN/4QFMu54SgsLysY1zt9pZHIhusZtNbD7B9V2UUr1UgI0kOUnSDrtJu
+	ES2J2+PcNFGNWZOF8WtDqSDfgoln2Dd1C9mwC5xMQriDs1wtlN19uruJKUnkz6+SbSYzvw
+	8aa5KZTN6cwQpvkZKNLn/gwWNwy9Hc8RHD2MzFhk9GaWfjq2tvRLyvOGXVG2v87Ft0awP4
+	K5NSar9BY8DBNJU42IqsowtCmtfNRh90WIKx0ZTaWf002kMc2K73Xg5TwCgEk++vIxMmGY
+	2sbAewfSE/Q5o5DqjYDgtkoN6wxrnhv8bLl7JQQXxmohBxDIqUQRhXA49e8K/A==
+ARC-Authentication-Results: i=2;
+	rspamd-fcb9f4dcf-ng2pk;
+	arc=pass ("mailbaby.net:s=detka:i=1");
+	auth=pass smtp.auth=interserver smtp.mailfrom=ingeocon@webhosting2033.is.cc
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MC-Relay: Neutral
+X-MailChannels-SenderId: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MailChannels-Auth-Id: interserver
+X-Spot-Minister: 244a96e3094054c5_1686158527256_790904430
+X-MC-Loop-Signature: 1686158527255:3174889636
+X-MC-Ingress-Time: 1686158527255
+Received: from rspamd3.mailbaby.net (rspamd3.mailbaby.net [209.159.148.234])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.123.193.172 (trex/6.8.1);
+	Wed, 07 Jun 2023 17:22:07 +0000
+Received: from webhosting2033.is.cc ([68.168.213.91] webhosting2033.is.cc)
+ (Authenticated sender: webhosting2033)
+ by rspamd3.mailbaby.net (InterServerMTA) with ESMTPSA id 18896e143e7000acfb.001
+ for <kira@binc.pw>
+ (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256);
+ Wed, 07 Jun 2023 17:22:05 +0000
+X-Zone-Loop: c899612cf45cce9ffc101c1a65a7e330a644991c1b64
+ARC-Authentication-Results: i=1;	relay0.mailbaby.net;	auth=pass
+ smtp.auth=webhosting2033 smtp.mailfrom=ingeocon@webhosting2033.is.cc
+ARC-Seal: i=1; s=detka; d=mailbaby.net; t=1686158525; a=rsa-sha256;
+	cv=none;
+	b=pQyYVBgZ0/w8Okp13MgAHf2oubnsLMkHWnHJXrye0a8jEwJCe9gcpZNgtu4cpr4mbqji/u
+	7EtWvpEJ7VgtDObzoUhfR2z61uq59nzlhfltX1XnjoTmR9dNVcuW/Vwy/rx1wKx/rHYMGA
+	SWt1+opKD1IdQltFLMI/CepuODYR9TSfl6thsHC4JFhFgJMaEQ7g6W8HLy+xI4JWo+bWfo
+	wRIxSuyOGu+8HoKt5roqqRL93v/TIIWJktNKQsZpwdMwwOClPC5OtEzxC3igWviZHYLoGW
+	wWRXOkFnRBymA2kJyotOBGGunp2z1l9UqbaIGhTmSXnACtYwL36Xtay84b5dbQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailbaby.net;	s=detka; t=1686158525;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=pavYKoNhHT8kGLmhnsOdokNlostw1qwlfc9C1X6vIgE=;
+	b=RjmED0WO3SdqX5kXUroB5aV+mCA+NLVOSWTfUewXgWuPXudtNnpfvaFpa5sgthUPZOSkIH
+	UbySWK7krwYQUnuxMNM0naT79etQTj8AlNtCqcQkk9et55YBXGcWVSTHF2/AJIAZ9kjZ0Z
+	gegC+v4TcKvkFBiKWWUllCtg1kQKmK/fuw1C2KrtDs3rJC/MS7E4E6b7Z+xWVnOykAwoS2
+	9BavAjjU2o6DBlpJBe2In66Z/ssaxw5SiqnY+IIgMt1B+j101DAko6Ax/Nj+mLWq0auy28
+	lAR9ZUDK8YAdAAEnIrhGITZla5B2djKZRqe3va9gKNEfzDho/haTlccWNeflHg==
+X-SPF: pass
+X-Originating-IP: [68.168.213.91]
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=webhosting2033.is.cc; s=default; h=Sender:Content-Type:MIME-Version:
+	Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=pavYKoNhHT8kGLmhnsOdokNlostw1qwlfc9C1X6vIgE=; b=wDyWvdHMdYV979mj2JI5Vk8MiH
+	wJbLiVOX81nXy77FgTjJxnvoDcOqA3kD6BVx8k0Tn4PLHJe9en0y4ot2iT78xoWNdzcKBkfgrOzGv
+	6wj1/ryQKIpB9ZgE2Am9epBLOikh7g59SiZC0r+kcdiVvOx4OeuM6skE14w/7Je9lFs2tObYkF32o
+	tykgcanwdJd+9xaKtxq/m/jX5fYT6yvRzQ+GsJFxZfi/tRNFm/fyu+Eyf0F2e6U00mPRUvFw7cLCN
+	8YTEwszgfojh1WQphnqnC+dij0qdLiRBbfUlqFCA5/QJOIDWlRmwCZ2Z22sqIsR02Kdw/eF+QgmxP
+	G9gcQkOg==;
+Received: from ingeocon by webhosting2033.is.cc with local (Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q6wrD-002hIG-2a
+	for kira@binc.pw;
+	Wed, 07 Jun 2023 13:22:05 -0400
+To: kira@binc.pw
+Subject: [InGEO consulting] Please moderate: "Tinder ist und bleibt tief die Relationships-Software package generalisierend. An dieser stelle entscheiden..."
+X-PHP-Script: ingeoconsulting.com/wp-comments-post.php for 45.64.246.153
+X-PHP-Originating-Script: 1159:class-phpmailer.php
+Date: Wed, 7 Jun 2023 17:22:03 +0000
+From: WordPress <wordpress@ingeoconsulting.com>
+Message-ID: <a40bbacd7b927dd0fca570ad90b3d1e0@ingeoconsulting.com>
+X-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <ingeocon@webhosting2033.is.cc>
+X-AuthUser: ingeocon@webhosting2033.is.cc
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "Tinder ist und bleibt tief die
+   Relationships-Software package generalisierend. An dieser stelle entscheiden..."
+    is waiting for your approval https://ingeoconsulting.com/2022 [...] 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: ingeoconsulting.com]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+X-Spam-Flag: NO
+
+A new comment on the post "Tinder ist und bleibt tief die Relationships-Software package generalisierend. An dieser stelle entscheiden..." is waiting for your approval
+https://ingeoconsulting.com/2022/12/29/tinder-ist-und-bleibt-tief-die-relationships/
+
+Author: gateio (IP address: 45.64.246.153, 45.64.246.153)
+Email: 34506620@outlook.com
+URL: https://www.gate.io/id/signup/XlQVXVo
+Comment: 
+I may need your help. I tried many ways but couldn't solve it, but after reading your article, I think you have a way to help me. I'm looking forward for your reply. Thanks.
+
+Approve it: https://ingeoconsulting.com/wp-admin/comment.php?action=approve&c=163#wpbody-content
+Trash it: https://ingeoconsulting.com/wp-admin/comment.php?action=trash&c=163#wpbody-content
+Spam it: https://ingeoconsulting.com/wp-admin/comment.php?action=spam&c=163#wpbody-content
+Currently 58 comments are waiting for approval. Please visit the moderation panel:
+https://ingeoconsulting.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

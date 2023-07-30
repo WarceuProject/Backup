@@ -1,0 +1,100 @@
+Return-Path: <bounces+21846978-2c9b-kira=binc.pw@em9596.nulledbb.com>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id 0D4iHwuiPmQqFTsAMUeTPA
+	(envelope-from <bounces+21846978-2c9b-kira=binc.pw@em9596.nulledbb.com>)
+	for <kira@binc.pw>; Tue, 18 Apr 2023 20:58:35 +0700
+Return-path: <bounces+21846978-2c9b-kira=binc.pw@em9596.nulledbb.com>
+Envelope-to: kira@binc.pw
+Delivery-date: Tue, 18 Apr 2023 20:58:35 +0700
+Received: from s.wrqvtbkv.outbound-mail.sendgrid.net ([149.72.123.24]:31884)
+	by dc3.kencang.id with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <bounces+21846978-2c9b-kira=binc.pw@em9596.nulledbb.com>)
+	id 1polqt-00GLFG-03
+	for kira@binc.pw;
+	Tue, 18 Apr 2023 20:58:35 +0700
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=nulledbb.com;
+	h=subject:from:content-transfer-encoding:mime-version:content-type:
+	reply-to:to:cc:content-type:from:subject:to;
+	s=s1; bh=PpQFOVYVflUm9rAKXhFroQyey8cabK9IUlmkmBmL1vU=;
+	b=Ug41EFOGV/60XZCTbCAZN88Ho1VnzgHt2Eu8v0GINAbWyfSZHUQDJjlytcmbz+l+QtTO
+	mgEfCCfbQE1MwE1JJ8NxJjyzPpUl2CE6kH4k4jVrxI6eDpcdkacB+SnagZjfcA03cMR0Hf
+	X8eNe0vxnKUCXwtNpyySXG9TOut1zz+xBIoTsl/QQJzR8UhGyHq3XLYz4mKDREO4IoCjcT
+	rjcFM6Y6cDWPTWbrdEfz90SMth3CuL3sEycm4yQxgTY0xgZ4t/uFwiUSHh1OppWTS6icC/
+	cpoBFf3cui40wx/xhOiIbw2YEPHofgVsuGPfCK2C02SUyj7JuOv2GlRlViZWLOaA==
+Received: by filterdrecv-68f8d557c9-bsxpv with SMTP id filterdrecv-68f8d557c9-bsxpv-1-643EA1DF-1F
+        2023-04-18 13:57:51.372690162 +0000 UTC m=+4803979.222302550
+Received: from nulledbb (unknown)
+	by geopod-ismtpd-2 (SG) with ESMTP
+	id -9PYsYXyTMavYlBqoJhHwg
+	for <kira@binc.pw>;
+	Tue, 18 Apr 2023 13:57:51.154 +0000 (UTC)
+Date: Tue, 18 Apr 2023 13:57:51 +0000 (UTC)
+Subject: Account Activation at NulledBB
+From: NulledBB <noreply@nulledbb.com>
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Mailer: MyBB
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-ID: <-9PYsYXyTMavYlBqoJhHwg@geopod-ismtpd-2>
+Reply-To: noreply@nulledbb.com
+X-SG-EID: 
+ =?us-ascii?Q?1Coa+Grz=2FN9jM0zEhIX4WrBcRAPw226AhuWudZMLDVJH3OBsFnoAXyxJjKC5lf?=
+ =?us-ascii?Q?JoHLCVkCCQg8KnLpW8PIGfaSE00yGTIMj6qmi9o?=
+ =?us-ascii?Q?gtCaiEKzJz9urwDetpn54lQmlibUe2VDJgkLTdd?=
+ =?us-ascii?Q?DWYwVH4G8z8c4vPszxuCUUiDxmxAbLVn7jajI0T?=
+ =?us-ascii?Q?0+h7ZhoQrNSBf5ho4IMQQEt38EWtS7bM08drhOh?=
+ =?us-ascii?Q?THEaxbWmh9DLCoDHA=3D?=
+To: kira@binc.pw
+X-Entity-ID: Ri8njY+z+YU7UyL27bv4nQ==
+X-Spam-Status: No, score=1.0
+X-Spam-Score: 10
+X-Spam-Bar: +
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  kirasinigami, To complete the registration process on NulledBB,
+    you will need to go to the URL below in your web browser. http://url260.nulledbb.com/ls/click?upn=zer5nhbMxwl1HpuF-2FyTCFG4QzHfVx1ysa7L-2FemyANRpEDes2l6aYKSgS1IIcfwscIXll-2FRomIdz9EvlyU238pLCS3j2k-2FMgC4x8dFTCVlUYYrPk-2FKt-2FyYnDpwqWL8MSq1xJV_ffEqldfF0pp8-2F
+    [...] 
+ Content analysis details:   (1.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: nulledbb.com]
+  1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in
+                             bl.spamcop.net
+               [Blocked - see <https://www.spamcop.net/bl.shtml?149.72.123.24>]
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+X-Spam-Flag: NO
+
+kirasinigami,
+
+To complete the registration process on NulledBB, you will need to go to the URL below in your web browser.
+
+http://url260.nulledbb.com/ls/click?upn=zer5nhbMxwl1HpuF-2FyTCFG4QzHfVx1ysa7L-2FemyANRpEDes2l6aYKSgS1IIcfwscIXll-2FRomIdz9EvlyU238pLCS3j2k-2FMgC4x8dFTCVlUYYrPk-2FKt-2FyYnDpwqWL8MSq1xJV_ffEqldfF0pp8-2FekUbxkducupv40g9MSLQP6CbdMWLxN-2FIyqgkiu5phutARfh1KCSv33IGK0uyH208GZJ5XesA0nRtA01LIxSM2ehCAS6GDfvY5yNcuVmQJt5whZPBXB8aBERiikZdJfIlTpO5jLa7OgJ-2FoLqNM6gl0Hw217abGtYEOQEdNKDSn1ZaRmjBIFd-2Bo7bVNMRJUSEQOsgybYAlQ-3D-3D
+
+If the above link does not work correctly, go to
+
+http://url260.nulledbb.com/ls/click?upn=zer5nhbMxwl1HpuF-2FyTCFG4QzHfVx1ysa7L-2FemyANRpEDes2l6aYKSgS1IIcfwsco8aq5VNIvPsrDJWsPGZL7A-3D-3Dv2_b_ffEqldfF0pp8-2FekUbxkducupv40g9MSLQP6CbdMWLxN-2FIyqgkiu5phutARfh1KCStXMOSr9eOFB2NYipkwd5q0TDQY9ea6DwhV5yvm-2Bcs4sPVEJDEastmR59FTQznuV-2FaZi7s8XEqUWDSWD6MK8E1WadlagpjNKqLYgOI7BzSTxCUJottlBJhNVOip-2FTQDYR4zR4C0SD4-2BgesoNnPS6uiw-3D-3D
+
+You will need to enter the following:
+Username: kirasinigami
+Activation Code: WFuQ1isi
+
+Thank you,
+NulledBB Staff

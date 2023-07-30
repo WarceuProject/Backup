@@ -1,0 +1,193 @@
+Return-Path: <bounce-md_31139741.64c54a4d.v1-da4df13a11fa4671baa3030114244d8b@mandrillapp.com>
+Delivered-To: center@warceuproject.dev
+Received: from vps.warceuproject.dev
+	by vps.warceuproject.dev with LMTP
+	id mPo5Bn5KxWTr5hQA0wEIKA
+	(envelope-from <bounce-md_31139741.64c54a4d.v1-da4df13a11fa4671baa3030114244d8b@mandrillapp.com>)
+	for <center@warceuproject.dev>; Sat, 29 Jul 2023 19:21:02 +0200
+Return-path: <bounce-md_31139741.64c54a4d.v1-da4df13a11fa4671baa3030114244d8b@mandrillapp.com>
+Envelope-to: center@warceuproject.dev
+Delivery-date: Sat, 29 Jul 2023 19:21:02 +0200
+Received: from mail135-9.atl141.mandrillapp.com ([198.2.135.9]:29954)
+	by vps.warceuproject.dev with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <bounce-md_31139741.64c54a4d.v1-da4df13a11fa4671baa3030114244d8b@mandrillapp.com>)
+	id 1qPnce-005kMq-1n
+	for center@warceuproject.dev;
+	Sat, 29 Jul 2023 19:21:02 +0200
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=zerossl.com;
+	s=mandrill; t=1690651213; x=1690911713; i=noreply@zerossl.com;
+	bh=EVXudoqVIJ4TjOSvYZvW/DwsItCNLdiqv85fU+mSCxw=;
+	h=From:Subject:Reply-To:Message-Id:To:Feedback-ID:Date:MIME-Version:
+	 Content-Type:CC:Date:Subject:From;
+	b=ZoTga5QaBgbia2S/XUwRA2n7jn03Wgc1WpunvI5avty/X0MtNl952aQNJLUpcQ/I0
+	 ARTJpQ148dRJ8pnT+HXwZPOGnaPwHJBDZfW+9q2KRd7HylFSxGGAErdIF5INFozMsp
+	 feaYUK80T99RBwQcVDKcualMKZjZldiqFekChbOI=
+Received: from pmta14.mandrill.prod.atl01.rsglab.com (localhost [127.0.0.1])
+	by mail135-9.atl141.mandrillapp.com (Mailchimp) with ESMTP id 4RCrqK280tzK5vg9t
+	for <center@warceuproject.dev>; Sat, 29 Jul 2023 17:20:13 +0000 (GMT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mandrillapp.com; 
+ i=@mandrillapp.com; q=dns/txt; s=mandrill; t=1690651213; h=From : 
+ Subject : Reply-To : Message-Id : To : Date : MIME-Version : 
+ Content-Type : From : Subject : Date : X-Mandrill-User : 
+ List-Unsubscribe; bh=EVXudoqVIJ4TjOSvYZvW/DwsItCNLdiqv85fU+mSCxw=; 
+ b=DRzyV6gHrsc+tWz0rXr5JnjGa+vFbOA8kSwWhcmbfGg5vPsBCOESt4QMKhRYuK3y8eU8vb
+ A1XA8o8mquqaAxJdmP09+7nyzeifxSaZTXNeAt0Aa/YKtC0y1P1HrEoD5DAMumdJe74gK63L
+ AgyeyAReWJJva/HSleWZf5Mk8S7c0=
+From: ZeroSSL <noreply@zerossl.com>
+Subject: =?utf-8?Q?Certificate=20Cancelled:=20node.warceuproject.dev?=
+Received: from [50.16.173.163] by mandrillapp.com id da4df13a11fa4671baa3030114244d8b; Sat, 29 Jul 2023 17:20:13 +0000
+X-Mailer: apilayer
+Reply-To: ZeroSSL <noreply@zerossl.com>
+Message-Id: <08b2caf93c0d995f7913c18640ecd8a4@zerossl.com>
+To: center@warceuproject.dev
+X-Native-Encoded: 1
+X-Report-Abuse: =?UTF-8?Q?Please=20forward=20a=20copy=20of=20this=20message,=20including=20all=20headers,=20to=20abuse@mandrill.com.=20You=20can=20also=20report=20abuse=20here:=20https://mandrillapp.com/contact/abuse=3Fid=3D31139741.da4df13a11fa4671baa3030114244d8b?=
+X-Mandrill-User: md_31139741
+Feedback-ID: 31139741:31139741.20230729:md
+Date: Sat, 29 Jul 2023 17:20:13 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="_av-2O39VOZE1J7qE28Z7gV5TQ"
+X-Spam-Status: No, score=0.0
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "vps.warceuproject.dev",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  ZeroSSL Account center@warceuproject.dev Certificate Cancelled:
+    node.warceuproject.dev This is to notify you that your certificate with the
+    common name node.warceuproject.dev has been cancelled. Need assistance? Our
+    team here at ZeroSSL is [...] 
+ Content analysis details:   (0.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: warceuproject.dev]
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: warceuproject.dev]
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query
+                              to zen.spamhaus.org was blocked due to
+                             usage of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [198.2.135.9 listed in zen.spamhaus.org]
+  0.0 URIBL_ZEN_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: warceuproject.dev]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+ -0.0 DKIMWL_WL_MED          DKIMwl.org - Medium trust sender
+X-Spam-Flag: NO
+
+--_av-2O39VOZE1J7qE28Z7gV5TQ
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+ZeroSSL Account
+                  
+                  center@warceuproject.dev
+                
+              
+            
+        
+      
+    
+  
+  
+    
+
+      
+        Certificate Cancelled: node.warceuproject.dev
+This is to notify you that your certificate with the common name node.warceuproject.dev has been cancelled.
+Need assistance? Our team here at ZeroSSL is ready to help with any questions you might have. Feel free to reach out by sending an email to support@zerossl.com.
+Thank you for choosing us,ZeroSSL Team
+      
+
+      
+        
+
+            Account Login
+            Help Center
+
+
+--_av-2O39VOZE1J7qE28Z7gV5TQ
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html lang="en"><body style="background-color: rgb(255,255,255);">
+<div style="font-size: 15px;color: rgb(47,41,54);padding: 0;font-family: Helvetica Neue,Helvetica, sans-serif;width: 100%;font-weight: 400;margin: 0;background-color: rgb(255,255,255); background: #ffffff;">
+<div style="padding: 0;font-size: 0;display: none;max-height: 0;font-weight: 400;line-height: 0;"></div>
+<table style="border-radius: 4px;font-size: 15px;color: rgb(47,41,54);border-collapse: separate;border-spacing: 0;max-width: 700px;font-family: Helvetica Neue, helvetica, sans-serif;border: 1.0px solid rgb(199,208,212);padding: 0;width: 100%;font-weight: 400;margin: 15.0px auto;background-color: rgb(255,255,255);">
+  <tr style="font-weight: 400;">
+    <td style="padding: 0;font-weight: 400;margin: 0;text-align: center;">
+      <div style="padding: 25px 0 25px 0;font-size: 14px;font-weight: 400;border-bottom: 1.0px solid rgb(222,231,235);">
+        <div style="padding: 0 20px;max-width: 600px;font-weight: 400;margin: 0 auto;text-align: left;">
+
+            <table style="width: 100%;font-weight: 400;margin-bottom: 0;border-collapse: collapse;">
+              <tr style="font-weight: 400;">
+                <td width="125px" style="padding: 0;font-weight: 400;margin: 0;text-align: center;">
+
+                    <h1 style="font-size: 38px;color: rgb(0,0,0);letter-spacing: -1px;padding: 0;font-weight: normal;margin: 0;line-height: 42px;">
+                      <a href="https://zerossl.com" style="color: rgb(77, 112, 213);font-weight: 500;text-decoration: none;" target="_blank"><img src="https://zerossl.com/assets/images/zerossl_logo_mail.png" height="50px" alt="ZeroSSL" style="font-weight: 400;" /></a>
+                    </h1>
+
+                </td><td style="padding: 0;font-weight: 400;margin: 0;text-align: right;">
+                  <span style="font-weight: 600; font-size: 14px; position: relative; top: -2px;">ZeroSSL Account</span>
+                  <br/>
+                  <span style="font-size: 14px; position: relative; top: 2px;">center@warceuproject.dev</span>
+                </td>
+              </tr>
+            </table>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr style="font-weight: 400;">
+    <td style="padding: 0;font-weight: 400;margin: 0;text-align: center;">
+
+      <div style="padding: 0 20px;max-width: 600px;font-weight: 400;margin: 0 auto;text-align: left;">
+        <div style="padding: 30.0px 0 20px;font-weight: 400;background-color: rgb(255,255,255);"><h3 style="font-size: 22px;font-weight: 500;margin: 0 0 20px;">Certificate Cancelled: node.warceuproject.dev</h3>
+<p style="font-weight: 400;margin: 0 0 20px;font-size: 15px;line-height: 22px;">This is to notify you that your certificate with the common name <strong>node.warceuproject.dev</strong> has been cancelled.</p>
+<p style="font-weight: 400;margin: 0 0 20px;font-size: 15px;line-height: 22px;">Need assistance? Our team here at ZeroSSL is ready to help with any questions you might have. Feel free to reach out by sending an email to <a href="mailto:support@zerossl.com?subject=Certificate Cancelled (node.warceuproject.dev)">support@zerossl.com</a>.</p>
+<p style="font-weight: 400;margin: 0 0 20px;font-size: 15px;line-height: 22px;">Thank you for choosing us,<br>ZeroSSL Team</p></div>
+      </div>
+
+      <div style="max-width: 600px;padding: 0 20px; font-weight: 400;margin: 0 auto;text-align: left;">
+        <div style="padding: 20px 0 40px 0;border-top: 1px solid rgb(231,235,238);font-weight: 400;">
+
+            <a href="https://app.zerossl.com/login" style="cursor: pointer; color: rgb(104,114,118);float: right;font-weight: 500;text-decoration: none;" target="_blank">Account Login</a>
+            <a href="https://zerossl.com/help" style="cursor: pointer; color: rgb(104,114,118);font-weight: 500;text-decoration: none;" target="_blank">Help Center</a>
+
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
+</div>
+</body>
+</html>
+
+
+
+--_av-2O39VOZE1J7qE28Z7gV5TQ--
+

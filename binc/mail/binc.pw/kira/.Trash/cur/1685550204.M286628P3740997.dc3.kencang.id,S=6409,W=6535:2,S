@@ -1,0 +1,126 @@
+Return-Path: <shannonbrachehai@cpanel-552-syd.hostingww.com>
+Delivered-To: kira+spam@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id 2PbuD3x0d2RFFTkAMUeTPA
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	for <kira+spam@binc.pw>; Wed, 31 May 2023 23:23:24 +0700
+Return-path: <shannonbrachehai@cpanel-552-syd.hostingww.com>
+Envelope-to: kira@binc.pw
+Delivery-date: Wed, 31 May 2023 23:23:24 +0700
+Received: from bumble.maple.relay.mailchannels.net ([23.83.214.25]:24584)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	id 1q4ObZ-00Fj3d-0D
+	for kira@binc.pw;
+	Wed, 31 May 2023 23:23:24 +0700
+X-Sender-Id:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 9F0CE502B9C;
+	Wed, 31 May 2023 16:22:37 +0000 (UTC)
+Received: from cpanel-552-syd.hostingww.com (unknown [127.0.0.6])
+	(Authenticated sender: instrampxe0y3a)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 0FEBE502A40
+	for <kira@binc.pw>; Wed, 31 May 2023 16:22:30 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1685550151; a=rsa-sha256;
+	cv=none;
+	b=Tcbgz3Z5793zJzLHxykSS+t9aRmwWbV2CWjGraLtbyJb3A206e82LsW3pLY4369MrD1ZCS
+	33cyDj0vEpUjzQsMBc622i5sa/32Y5o7QPbfzG4P5RSYvNRmLl0X7Z7CSHZTt5csvmZdiR
+	5M3FvhVVk29XXWQFST2z0M0I3Ue5U32PTUgLfQV/MQLTw8k4peYZVii4bMCFu5m06lcjys
+	bckRTwU+o9oCsaE/2M5gCQOb8D5hh08LRCknIiLohi4I0cD2KuCv+BmkQpWcYhzUkIFu3j
+	7pqeG0NXe3QuaixJ6GveDrt57QaEXQ3VY20xy17YjRTpVU6FWWn4ich07Ic+5g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1685550151;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type; bh=B280i5xEV4m5R/qmGOU2X5Sdd7D6tJ0tDwI3gbsYCUw=;
+	b=FB4Axq02u5UFKF15HdYO1/rtdiV7uiqgYrpxE+0XuErzAQdzzhKWgPcXHxJDFwqz2fgdAb
+	tEVflVLPPjsoM8jDjJdF+tn/OFidmmvdTcTBsNdUeWE0wOLwuhHYL7Wi/aOBzGWLDnSaRg
+	4JqfqnKNZ515Qhk3rW7Gg4Q8/uOsoc/RZiTCq1ZB1SapXFNlJlsH9j/a0lUqDoAmjHOsZu
+	qAgtQOm9HYq/LqplrctKucDstxVB54YLVGjUwmgyl/uyZkNGnMBdNIwEWJdKb4uef1Z+Q0
+	Mcy7m85i/sdmUv5iQj0q4UavBrVJvCXWaA78rXGmfG5yvc/V7V523hEezR8Wyg==
+ARC-Authentication-Results: i=1;
+	rspamd-d7bbc7d84-5br5j;
+	auth=pass smtp.auth=instrampxe0y3a
+ smtp.mailfrom=shannonbrachehai@cpanel-552-syd.hostingww.com
+X-Sender-Id:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+X-MC-Relay: Neutral
+X-MC-Copy: stored-urls
+X-MailChannels-SenderId:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+X-MailChannels-Auth-Id: instrampxe0y3a
+X-Cold-Vacuous: 2050564c54f957b0_1685550151543_2710656504
+X-MC-Loop-Signature: 1685550151543:1583572266
+X-MC-Ingress-Time: 1685550151543
+Received: from cpanel-552-syd.hostingww.com (cpanel-552-syd.hostingww.com
+ [103.152.248.20])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384)
+	by 100.123.193.162 (trex/6.8.1);
+	Wed, 31 May 2023 16:22:31 +0000
+Received: from shannonbrachehai by cpanel-552-syd.hostingww.com with local (Exim 4.96)
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	id 1q4Oae-004Uoo-23
+	for kira@binc.pw;
+	Thu, 01 Jun 2023 02:22:29 +1000
+To: kira@binc.pw
+X-PHP-Script: shannonbrachehair.com.au/wp-cron.php for 103.152.248.20
+X-PHP-Filename: /home/shannonbrachehai/public_html/wp-cron.php REMOTE_ADDR: 103.152.248.20
+Date: Wed, 31 May 2023 16:22:24 +0000
+From: WordPress <wordpress@shannonbrachehair.com.au>
+Message-ID: <dGukHOGP1lSJcoLfJMzoZ32rSY5kgkN55ntT5KyQY@shannonbrachehair.com.au>
+X-Mailer: PHPMailer 6.6.5 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <shannonbrachehai@cpanel-552-syd.hostingww.com>
+X-AuthUser: shannonbrachehai@cpanel-552-syd.hostingww.com
+X-Spam-Status: Yes, score=6.5
+X-Spam-Score: 65
+X-Spam-Bar: ++++++
+X-Spam-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Howdy! Some plugins have automatically updated to their latest
+    versions on your site at https://shannonbrachehair.com.au. No further action
+    is needed on your part. These plugins are now up to date: - Contact Form
+   7 (from version 5.7.6 to 5.7.7) : https://wordpress.org/plugins/contact-form-7/
+    
+ Content analysis details:   (6.5 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: shannonbrachehair.com.au]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  1.0 KAM_LAZY_DOMAIN_SECURITY Sending domain does not have any
+                             anti-forgery methods
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.2 KAM_DMARC_NONE         DKIM has Failed or SPF has failed on the message
+                             and the domain has no DMARC policy
+  2.5 PHP_SCRIPT             Sent by PHP script
+  2.5 KAM_LINKBAIT           Short messages containing little more than a link,
+                             from a domain with no security in place
+X-Spam-Flag: YES
+Subject:  ***SPAM***  =?us-ascii?Q?[Shannon_Brache_Hair]_Some_plugins_were_automat?=  =?us-ascii?Q?ically_updated?=
+
+Howdy! Some plugins have automatically updated to their latest versions on your site at https://shannonbrachehair.com.au. No further action is needed on your part.
+
+
+These plugins are now up to date:
+- Contact Form 7 (from version 5.7.6 to 5.7.7) : https://wordpress.org/plugins/contact-form-7/
+
+
+If you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help.
+https://wordpress.org/support/forums/
+
+The WordPress Team
+

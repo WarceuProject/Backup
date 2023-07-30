@@ -1,0 +1,154 @@
+Return-Path: <shannonbrachehai@cpanel-552-syd.hostingww.com>
+Delivered-To: kira@binc.pw
+Received: from vps.warceuproject.dev
+	by vps.warceuproject.dev with LMTP
+	id 0Nk0MC4WtmRO1gQA0wEIKA
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	for <kira@binc.pw>; Tue, 18 Jul 2023 06:33:50 +0200
+Return-path: <shannonbrachehai@cpanel-552-syd.hostingww.com>
+Envelope-to: kira@binc.pw
+Delivery-date: Tue, 18 Jul 2023 06:33:50 +0200
+Received: from weasel.tulip.relay.mailchannels.net ([23.83.218.247]:40211)
+	by vps.warceuproject.dev with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	id 1qLcPA-001KSG-1a
+	for kira@binc.pw;
+	Tue, 18 Jul 2023 06:33:50 +0200
+X-Sender-Id:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 072007A0BE7;
+	Tue, 18 Jul 2023 04:32:57 +0000 (UTC)
+Received: from cpanel-552-syd.hostingww.com (unknown [127.0.0.6])
+	(Authenticated sender: instrampxe0y3a)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 0EF3F7A0A54
+	for <kira@binc.pw>; Tue, 18 Jul 2023 04:32:55 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1689654776; a=rsa-sha256;
+	cv=none;
+	b=F55PbLWMHPaNAnx6UEGUOcEoqC0EgdfFjfh8Ba8ZNT/I8JAZftrnx4h2cvf9oXEZ3qnSuJ
+	8rmPQWKeALR31ru3lAxuYXj0gw8vlRryPrrJ6jCZuykAel0qEjXPnNpcd62zm1KyQh6cVI
+	TmrDJEfFhMQ/esFG2QYSURBzpvx3A8NBIfg7eLNUJeoxgGyQi6zmPahEiH/eXqGTTdf6v7
+	n8vIlVxgByrc0RhvWx6i3yoOP9IyvnNBbmc5CGNFxUeoUEgghWesR75ukGH6+giRMRA6d4
+	LCT67wq8z8XWb58KNOTeYI30KMXTx1zQD/4lrRphJScXZAOjDkzOyaxWnP1oPA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1689654776;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=3mRC2S+ILOiWWe8vsEaQxZ96uuFyJlnZV8HKAojOWIc=;
+	b=KLBEYtoJ+KkfcwZUOcwSLHB+SIFl8VQ7dn5Ncn073xKUhcbiNbxmlIzfkhPaWcH8nGanQ9
+	GCGYxU7Ly7EOl0A6oR/VAKJL6dQn0vYfvwqGiP/a4B2+T+98C/sHDRtov63Jhp7OPgfzmU
+	BpVg75A6lCsy+0aPckM5lBhUwKtaP0P2K+PUiz6Yqt03Ghgbn8Yk7U53Pt+PxBi3Rv0cr7
+	d5gjodhyET6h6hQAJkjHVWFvdbR7Bo2AYAw0bh7WiZImx8DcrVLR/3hElqwOnJpPjAJvA+
+	oSkbzKdG7inLn/tb/qg5nf41N+2YOabd85bxuqRy57O62A2p4Pm0DiTpLt+bXg==
+ARC-Authentication-Results: i=1;
+	rspamd-5595f87fc9-ttbmd;
+	auth=pass smtp.auth=instrampxe0y3a
+ smtp.mailfrom=shannonbrachehai@cpanel-552-syd.hostingww.com
+X-Sender-Id:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+X-MC-Relay: Neutral
+X-MC-Copy: stored-urls
+X-MailChannels-SenderId:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+X-MailChannels-Auth-Id: instrampxe0y3a
+X-Occur-Illustrious: 596696f0413d98df_1689654776529_1136499922
+X-MC-Loop-Signature: 1689654776529:3262982295
+X-MC-Ingress-Time: 1689654776528
+Received: from cpanel-552-syd.hostingww.com (cpanel-552-syd.hostingww.com
+ [103.152.248.20])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384)
+	by 100.122.253.246 (trex/6.9.1);
+	Tue, 18 Jul 2023 04:32:56 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=cpanel-552-syd.hostingww.com; s=default; h=Sender:Content-Type:MIME-Version
+	:Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=3mRC2S+ILOiWWe8vsEaQxZ96uuFyJlnZV8HKAojOWIc=; b=EIGdBiyIMElv7ciqfwzdjpkHu0
+	WROG0JCldkmmWy4d/PvSFdSupXG/k0P3PTU4Lh+tSj1JDGCk/DRZEZ9fdpVBQ2mWo0Feye9x7qLlc
+	ewKMzfKX244jq71ggtv8wYtb9XxAgEuwzmvXGsU6BPLkWtEC/bHVUraR4Ev1N8Qn5TMpM7YHzaXJz
+	bAuTSV33Y8pxsAW+g50aKplOkQb8JiAbnvmLL9vQXD+mEP8UZbEWWPEMLzyBVRlveLhgnTKA64Zc7
+	ArK6vQoSDXGlPhKHksfjVDnbDJhrmBxHePtKpZw+TdyGQXte4l+py1Ukbd5v9Mo+o1dEGNHOuP1Ml
+	XV9J80Pw==;
+Received: from shannonbrachehai by cpanel-552-syd.hostingww.com with local (Exim 4.96)
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	id 1qLcOH-001wtO-0e
+	for kira@binc.pw;
+	Tue, 18 Jul 2023 14:32:54 +1000
+To: kira@binc.pw
+Subject: =?us-ascii?Q?[Shannon_Brache_Hair]_Some_plugins_were_automat?=  =?us-ascii?Q?ically_updated?=
+X-PHP-Script: shannonbrachehair.com.au/wp-cron.php for 103.152.248.20
+X-PHP-Filename: /home/shannonbrachehai/public_html/wp-cron.php REMOTE_ADDR: 103.152.248.20
+Date: Tue, 18 Jul 2023 04:32:49 +0000
+From: WordPress <wordpress@shannonbrachehair.com.au>
+Message-ID: <qUm5jHREsz2BAa3rv2mcUPjrvBHIPiDXvHSyoz0oQ@shannonbrachehair.com.au>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <shannonbrachehai@cpanel-552-syd.hostingww.com>
+X-AuthUser: shannonbrachehai@cpanel-552-syd.hostingww.com
+X-Spam-Status: No, score=3.2
+X-Spam-Score: 32
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "vps.warceuproject.dev",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Howdy! Some plugins have automatically updated to their latest
+    versions on your site at https://shannonbrachehair.com.au. No further action
+    is needed on your part. These plugins are now up to date: - Wordfence Security
+    (from version 7.10.1 to 7.10.2) : https://wordpress.org/plugins/wordfence/
+    
+ Content analysis details:   (3.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: wordpress.org]
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: wordpress.org]
+  0.0 URIBL_ZEN_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: wordpress.org]
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query
+                              to zen.spamhaus.org was blocked due to
+                             usage of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [23.83.218.247 listed in zen.spamhaus.org]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.2 KAM_DMARC_NONE         DKIM has Failed or SPF has failed on the message
+                             and the domain has no DMARC policy
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+  2.5 PHP_SCRIPT             Sent by PHP script
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Spam-Flag: NO
+
+Howdy! Some plugins have automatically updated to their latest versions on your site at https://shannonbrachehair.com.au. No further action is needed on your part.
+
+
+These plugins are now up to date:
+- Wordfence Security (from version 7.10.1 to 7.10.2) : https://wordpress.org/plugins/wordfence/
+
+
+If you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help.
+https://wordpress.org/support/forums/
+
+The WordPress Team
+

@@ -1,0 +1,122 @@
+Return-Path: <ashafdnorg@res338.servconfig.com>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id KEBiHFBlZGQl8zEAMUeTPA
+	(envelope-from <ashafdnorg@res338.servconfig.com>)
+	for <kira@binc.pw>; Wed, 17 May 2023 12:25:36 +0700
+Return-path: <ashafdnorg@res338.servconfig.com>
+Envelope-to: kira@binc.pw
+Delivery-date: Wed, 17 May 2023 12:25:36 +0700
+Received: from se1n-lax1.servconfig.com ([23.235.223.117]:52417)
+	by dc3.kencang.id with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <ashafdnorg@res338.servconfig.com>)
+	id 1pz9fL-00DoaM-1k
+	for kira@binc.pw;
+	Wed, 17 May 2023 12:25:36 +0700
+Received: from res338.servconfig.com ([23.235.211.204])
+	by se1-lax1.servconfig.com with esmtps (TLSv1.2:AES128-GCM-SHA256:128)
+	(Exim 4.92)
+	(envelope-from <ashafdnorg@res338.servconfig.com>)
+	id 1pz9eW-0001H5-R1
+	for kira@binc.pw; Wed, 17 May 2023 01:24:49 -0400
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=res338.servconfig.com; s=default; h=Content-Type:MIME-Version:Message-ID:
+	From:Date:Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=SszUaiiiVYbygV7Nb4LaznahosBqt3JGu4PXHrheguE=; b=nhgSwXWQnxIh41SflGy8nQO9uw
+	6PL716085FjatzG+NNdx/kQOjXtgouUvao5X128l+qEeYZYNK97SvkgF1cVR+nHdd2CifW2T1A2BG
+	+RrqXSaS2DHBhUs9goQScXO7J1TWPPJU9nDwiLoV/N9gJxFjWczg8/duFLh3aTiq/xhTi9SkMN8F0
+	RJ9R3qWGRrZ65klfhcouyLe46W+O4DX3Mrp6lTpwPzzAslldzY4mtDFvJ0+NBOkalqXQ4bpA9FjTg
+	47Vgh0oKyGiUJDEdQRwNnNOXHi7RShFzLHZhTagbsdbXBMP0Obmu+PQ8jyNUE0eF99q+DGbTrAer1
+	jwDSJdzQ==;
+Received: from ashafdnorg by res338.servconfig.com with local (Exim 4.95)
+	(envelope-from <ashafdnorg@res338.servconfig.com>)
+	id 1pz9eW-00FrnQ-Cp
+	for kira@binc.pw;
+	Tue, 16 May 2023 22:24:44 -0700
+To: kira@binc.pw
+Subject: [Asha Foudation] Your site has updated to WordPress 5.0.19
+X-PHP-Script: ashafdn.org.in/wp-cron.php for 104.244.120.104
+X-PHP-Originating-Script: 1703:class-phpmailer.php
+Date: Wed, 17 May 2023 05:24:44 +0000
+From: WordPress <wordpress@ashafdn.org.in>
+Message-ID: <7a923da39de4ad1ed6238ececed26847@ashafdn.org.in>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+X-Get-Message-Sender-Via: res338.servconfig.com: authenticated_id: ashafdnorg/from_h
+X-Authenticated-Sender: res338.servconfig.com: wordpress@ashafdn.org.in
+X-Originating-IP: 23.235.211.204
+X-SpamExperts-Domain: res338.servconfig.com
+X-SpamExperts-Username: 23.235.211.204
+Authentication-Results: servconfig.com; auth=pass smtp.auth=23.235.211.204@res338.servconfig.com
+X-SpamExperts-Outgoing-Class: ham
+X-SpamExperts-Outgoing-Evidence: Combined (0.12)
+X-Recommended-Action: accept
+X-Filter-ID: Pt3MvcO5N4iKaDQ5O6lkdGlMVN6RH8bjRMzItlySaT+EAgV+tvDPDiwvAJHqwYRSPUtbdvnXkggZ
+ 3YnVId/Y5jcf0yeVQAvfjHznO7+bT5xox929c+cxsvRUaYg/IBAnJmMHs8Hyx70QMnQZ1+KIA/qr
+ qBGF+dnu+urVxgdECuTlYLLlWSy3OGfGBNeqx2anOR6cncefLkxsghP6bkHrfqDKpYhgT8G0suzW
+ 0a8LZHs+PXLIIgxDkvi22qkqmBPJthHTuidhm7W8iFyVeRg6Ih66Wzrm7XjiNwHwznIgDGX7iMHM
+ /ezgIFw+j8hX+eoR6ERCN/TYO8Po1sFYLrYxp2StBDJn9z+dAI3/7SF9NBbrtm3kaopZo4EOowN1
+ MGIJ43DG7JDHGkUFlLvaUAJ9EsZg/9mPb0OnPglkYW72F/Odw+XGlIW1bb6iLQaqIs5BLfTttFI5
+ MCNL/izpcNORuAUvossjam0/HVDFzCeLVAjI+ht+2XwDC3Hj+WjRz7du6zVFHr3MFJPY1AlsPKxo
+ UmgwwyHfTPSi7dSZrogIGqjGMPC2gOLtGTcHvrxjcMYxprnOfejoy0ryl/SE9sCR4JkwTwd6I5MF
+ c+Z5FxsZqYBzHDeqqFz43py4SDhdaHkWHQ4J+bKrBakCoyreiNRHlG9zdh4NRztClePNLHvV8xqS
+ wbEkz/Ypbvlx+NGaUB5hfcusqDYXQ8uRbtEhHgufcKJ0PB2rQoTfl9NQYJXPBv9DVPQ6fMev1BMP
+ vQ9qu4cW0z6bhalFEM/pjPCQA+BAlqKaYcIegnx3HysFHrIyzVastDPde6cIub94IbhKCbs8uVKG
+ HoJsBEgo4daLf3xapADvYVIhQcyYETG8UUX2Chxm4zuNRcgRKiGg7nXFaZTxtEvzmkcIx4Q6J3US
+ 0W5VpBWw0s+U9p/PurMHfidiLIPI6v+NfqRS/qEfmoWUvl5Jw+jDQinW2wCPV0vMjmHOspHbuv0d
+ hTPOJMWERUrwtSCeQXPfTQ+mS1mr8022lr7spG+rn+5nQlaUGd5ulVlTlVP0xbL8ElvZbQoo4T5a
+ E4ASrmzD5k5sdo/mm4v1CAzV3DVcIoCdt7LsSikJereEVg==
+X-Report-Abuse-To: spam@se1-lax1.servconfig.com
+X-Spam-Status: No, score=3.5
+X-Spam-Score: 35
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Howdy! Your site at https://ashafdn.org.in has been updated
+    automatically to WordPress 5.0.19. For more on version 5.0.19, see the About
+    WordPress screen: https://ashafdn.org.in/wp-admin/about.php WordPress 6.2.1
+    is also now available. Updating is easy and only takes a few moments: https://ashafdn.org.in/wp-admin/update-core.php
+    
+ Content analysis details:   (3.5 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: servconfig.com]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+  2.5 PHP_SCRIPT             Sent by PHP script
+X-Spam-Flag: NO
+
+Howdy! Your site at https://ashafdn.org.in has been updated automatically to WordPress 5.0.19.
+
+For more on version 5.0.19, see the About WordPress screen:
+https://ashafdn.org.in/wp-admin/about.php
+
+WordPress 6.2.1 is also now available. Updating is easy and only takes a few moments:
+https://ashafdn.org.in/wp-admin/update-core.php
+
+If you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help.
+https://wordpress.org/support/
+
+Keeping your site updated is important for security. It also makes the internet a safer place for you and your readers.
+
+The WordPress Team
+

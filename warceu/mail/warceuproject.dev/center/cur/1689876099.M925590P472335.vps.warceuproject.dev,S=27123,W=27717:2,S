@@ -1,0 +1,594 @@
+Return-Path: <077-ZJT-858.0.632418.0.0.102518.9.404164149-67@marketoemail.dropbox.com>
+Delivered-To: center@warceuproject.dev
+Received: from vps.warceuproject.dev
+	by vps.warceuproject.dev with LMTP
+	id oPDPNYN2uWQPNQcA0wEIKA
+	(envelope-from <077-ZJT-858.0.632418.0.0.102518.9.404164149-67@marketoemail.dropbox.com>)
+	for <center@warceuproject.dev>; Thu, 20 Jul 2023 20:01:39 +0200
+Return-path: <077-ZJT-858.0.632418.0.0.102518.9.404164149-67@marketoemail.dropbox.com>
+Envelope-to: center@warceuproject.dev
+Delivery-date: Thu, 20 Jul 2023 20:01:39 +0200
+Received: from [199.15.215.17] (port=51117 helo=marketoemail.dropbox.com)
+	by vps.warceuproject.dev with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <077-ZJT-858.0.632418.0.0.102518.9.404164149-67@marketoemail.dropbox.com>)
+	id 1qMXy4-001yrZ-14
+	for center@warceuproject.dev;
+	Thu, 20 Jul 2023 20:01:39 +0200
+X-MSFBL: 5DwQ2fxGK0QihxYw5S2Hg6vYOiMsMN8XcktU5ItZZsE=|eyJnIjoiYmctc2pkLTE
+	3IiwiciI6ImNlbnRlckB3YXJjZXVwcm9qZWN0LmRldiIsImIiOiJkdnAtMTk5LTE
+	1LTIxNS0xNyIsInUiOiIwNzctWkpULTg1ODowOjc5MTk3OjMwMDk4NjoxNzc4ODA
+	2OjEwMjUxODo5OjYzMjQxODo0MDQxNjQxNDktNjcifQ==
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1689876052;
+	s=m1; d=em.hellosign.com; i=@em.hellosign.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=qj7yeFrvV2WG25tNdeDFR7Ruuubp6GPjzufP90pLnok=;
+	b=QrB5Aw0wNqCYg+7dgwpfzXjV00CPL2eIjyEj4SyL5soX49oAX5L4XyWp9CI089WY
+	Qy6cfvNO0hk3i2rTuc0sNDyKKZZQTobITV3t+1R3FhOnrnRc8njl3Z9BDC6H2KdH7M0
+	yhiIzfhdgMAeKq7/24vjnAkXGkunsqlDA/GhHc64=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1689876052;
+	s=m1; d=mktdns.com; i=@mktdns.com;
+	h=Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=qj7yeFrvV2WG25tNdeDFR7Ruuubp6GPjzufP90pLnok=;
+	b=h0lwZNoJBltKv/+OFGcxOprsQ44k7/cNv2EBepVJJNjOhpm3iq/A51nQXszmDdvr
+	BB1VDdVLlDJD68MIxSuPKYJUal7RBJdzYipdE9WZ1nADuf7hs6Sl9GYFdVtjDRz0T3J
+	p0A4DaJ8Th23M5MFobVnKwoTbMcoJalrhnVJSRhU=
+Date: Thu, 20 Jul 2023 13:00:52 -0500 (CDT)
+From: The Dropbox Sign Team <marketing@em.hellosign.com>
+Reply-To: no-reply@em.hellosign.com
+To: center@warceuproject.dev
+Message-ID: <1204315697.426441356.1689876052439@sjmktmail-batch1o.marketo.org>
+Subject: 3 Steps to Your First eSignature
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_426441354_1306907969.1689876052439"
+X-Binding: bg-sjd-17
+List-Unsubscribe: <mailto:J5EVKNRSMFCHOWCSKZWG6QKRFVCXIWSIIJ2WUZZYJJHTCVCFKE3GKYJNKNWDKVRRJBDTIPI=.632418.102518.9@unsub-sj.mktomail.com>
+X-MarketoID: 077-ZJT-858:0:79197:300986:1778806:102518:9:632418:404164149-67
+X-PVIQ: mkto-077ZJT858-000001-000000-632418
+X-Mailfrom: 077-ZJT-858.0.632418.0.0.102518.9.404164149-67@marketoemail.dropbox.com
+X-MktArchive: false
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+X-Spam-Status: No, score=-5.4
+X-Spam-Score: -53
+X-Spam-Bar: -----
+X-Ham-Report: Spam detection software, running on the system "vps.warceuproject.dev",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  <https://go2.hellosign.com/MDc3LVpKVC04NTgAAAGNE27p1WHSGA8pNNLe1m7hqVEXn2W2jSF4LcAgPzU8tZZlLR0nLXkOgO_aFAB6hqsGX5H-77A=>
+    Step #1: Select Who Needs to Sign Your Document Based on your unique signature
+    [...] 
+ Content analysis details:   (-5.4 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: mktdns.com]
+  0.0 URIBL_DBL_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             dbl.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: mktdns.com]
+  0.0 URIBL_ZEN_BLOCKED_OPENDNS ADMINISTRATOR NOTICE: The query to
+                             zen.spamhaus.org was blocked due to usage
+                             of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [URIs: mktdns.com]
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query
+                              to zen.spamhaus.org was blocked due to
+                             usage of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [199.15.215.17 listed in zen.spamhaus.org]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -7.5 USER_IN_DEF_SPF_WL     From: address is in the default SPF
+                             welcome-list
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  2.0 RDNS_NONE              Delivered to internal network by a host with no rDNS
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+  0.0 HTML_FONT_TINY_NORDNS  Font too small to read, no rDNS
+ -0.0 DKIMWL_WL_MED          DKIMwl.org - Medium trust sender
+X-Spam-Flag: NO
+
+------=_Part_426441354_1306907969.1689876052439
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+<https://go2.hellosign.com/MDc3LVpKVC04NTgAAAGNE27p1WHSGA8pNNLe1m7hqVEXn2W2=
+jSF4LcAgPzU8tZZlLR0nLXkOgO_aFAB6hqsGX5H-77A=3D>
+Step #1: Select Who Needs to Sign Your Document=20
+Based on your unique signature request, select which parties need to sign y=
+our document.
+
+Step #2: Prepare Your Document For Signing
+Upload the document that needs an eSignature directly from your device or t=
+hrough one of the integrated cloud services. If others need to sign, enter =
+the name and email of the person(s) who need to sign.
+
+Step #3: Request for Signature=20
+Add an email title and custom message in the signature request email to you=
+r signer. Click the blue "Request Signature" button and that's it! You just=
+ sent a document out for signature.
+Request Signature <https://app.hellosign.com/home/index?utm_source=3Dmkto&u=
+tm_medium=3Dmarketing_email&utm_campaign=3Dact_cus_sign_free_onb_onboarding=
+_mtr&utm_id=3Dsign_act&utm_term=3Dem2&utm_content=3Dcta1>
+Need help? Check out our=C2=A0support <https://faq.hellosign.com/hc/en-us?u=
+tm_source=3Dmkto&utm_medium=3Dmarketing_email&utm_campaign=3Dact_cus_sign_f=
+ree_onb_onboarding_mtr&utm_id=3Dsign_act&utm_term=3Dem2&utm_content=3Dtext1=
+>=C2=A0page for more information.
+View Privacy Policy <https://go2.hellosign.com/MDc3LVpKVC04NTgAAAGNE27p1Wkh=
+QBDr7HUSN3Q9WP15U1JGNuBgf56i5ZbcfIJyb_0VkjCaSLLPCmRS1Yw6PmNYSVQ=3D>  |  Uns=
+ubscribe <https://go2.hellosign.com/MDc3LVpKVC04NTgAAAGNE27p1WAByno7xXL5q3X=
+8-bM11Hzx6dbVwcmWs4PNpHbJRZojtpYAFl5JnOKekt9rX2AuWwM=3D>  | =20
+
+ All Rights Reserved. =C2=A9 2023 Dropbox Sign
+PO Box 77767, San Francisco, CA 94107
+
+.
+
+------=_Part_426441354_1306907969.1689876052439
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+<head>=20
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" />=
+=20
+<meta name=3D"viewport" content=3D"width=3Ddevice-width" />=20
+<meta content=3D"telephone=3Dno" name=3D"format-detection" />=20
+<meta content=3D"date=3Dno" name=3D"format-detection" />=20
+<meta content=3D"address=3Dno" name=3D"format-detection" />=20
+<meta content=3D"email=3Dno" name=3D"format-detection" />=20
+<!-- EMAIL SETTINGS -->       =20
+<!-- MODULE SETTINGS -->                       =20
+<!-- BANNER SETTINGS -->    =20
+<!-- COL SETTINGS -->   =20
+<!-- DIVIDER & BORDER SETTINGS -->     =20
+<!-- IMAGE SETTINGS -->          =20
+<!-- TYPOGRAPHY SETTINGS H1-6 + P - Duplicate as needed -->                =
+                                                                           =
+  =20
+<!-- CTA SETTINGS -->                    =20
+<!-- TOGGLES - Example in body of email -->                      =20
+<title>Dropbox Sign</title>=20
+<style type=3D"text/css">
+    * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: graysc=
+ale;}
+    html, body {margin: 0; padding: 0;}
+    body {margin: 0 auto!important; padding: 0; font-family: Arial, sans-se=
+rif; -webkit-text-size-adjust: 100%!important; -ms-text-size-adjust: 100%!i=
+mportant; -webkit-font-smoothing: antialiased!important;}
+    .mktoText a, .mktoSnippet a, a:link, a:visited {color: #019BCE; text-de=
+coration: none;}
+    .link-alt a {color: #FFFFFF; text-decoration: underline;}
+    a[x-apple-data-detectors] {color: inherit!important; text-decoration: n=
+one!important; font-size: inherit!important; font-family: inherit!important=
+; font-weight: inherit!important; line-height: inherit!important;}
+    img {border: 0!important; outline: none!important;}
+    table {border-spacing: 0; mso-table-lspace: 0px; mso-table-rspace: 0px;=
+}
+    th {margin: 0; padding: 0;font-weight: normal;}
+    div,td,a,span {mso-line-height-rule: exactly;}
+    ul {margin: 0; padding: 0; padding-left: 20px; margin-left: 20px;}
+    li {margin: 0; padding-top: 0px; margin-top: 0px;}
+    [owa] .col, .col {display: table-cell!important;}
+
+    @media only screen and (max-width:599px) {
+      .mob-center {margin: 0px auto!important; float: none!important;}
+      .mob-full {min-width: 100%!important; width: 100%!important; height: =
+auto!important;}
+      .img-full {width:100%!important; height:auto!important;}
+      .col {display: block!important;}
+      .mob-text-left {text-align: left!important;}
+      .mob-text-center {text-align: center!important;}
+      .mob-text-right {text-align: right!important;}
+      .mob-align-left {margin-right: auto!important; float: none!important;=
+}
+      .mob-align-center {margin: 0 auto!important; float: none!important;}
+      .mob-align-right {margin-left: auto!important; float: none!important;=
+}
+      .mob-hide {display:none!important; visibility: hidden!important;}
+    }
+
+    @media yahoo {
+      * {overflow: visible!important;}
+      .y-overflow-hidden {overflow: hidden!important;}
+    }
+  </style>=20
+<!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPer=
+Inch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->=20
+<!--[if (gte mso 9)|(IE)]><style type=3D"text/css">li {text-indent: -1.3em;=
+margin-left: 1.5em !important;}</style><![endif]-->=20
+</head>=20
+<body class=3D"body" style=3D"background-color:#FFFFFF;">=20
+<div style=3D"background-color:#FFFFFF; table-layout: fixed; -webkit-text-s=
+ize-adjust:100%; -ms-text-size-adjust:100%; width:100%; vertical-align:top;=
+">=20
+<table class=3D"mob-full mktoContainer" id=3D"mainTable" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0" style=3D"width:600px; overflow:visible; marg=
+in:0 auto; vertical-align:middle;" valign=3D"middle" align=3D"center">
+<tr class=3D"mktoModule" id=3D"vib">=20
+<td style=3D"background-color:#FFFFFF;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"min-width:100%;">=20
+<tbody>=20
+<tr>=20
+<td style=3D"padding-left:20px; padding-right:20px; padding-top:20px; paddi=
+ng-bottom:20px;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"min-width:100%;">=20
+<tbody>=20
+<tr>=20
+<td>=20
+<div class=3D"mktoText" id=3D"vib.psm" style=3D"font-family:Arial, Helvetic=
+a, sans-serif; font-size:12px; line-height:18px; font-weight:normal; text-a=
+lign:right; color:#121519;">
+ <a href=3D"https://lp.dropboxbusiness.com/index.php/email/emailWebview?mkt=
+_tok=3DMDc3LVpKVC04NTgAAAGNE27p1USx_W5WvABYXfEisuUqYJo6P8JGV7X1AnDMTBPqn3NA=
+CDVgUvzgNVp6iGNoqXKAUgIAUNmikczE29cSZwpiyy_myQxKiPeQBBt3crQe6MPthQ&md_id=3D=
+102518" target=3D"_blank" style=3D"color:#808080; text-decoration:underline=
+;">View in Browser</a>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"header-a">=20
+<td style=3D"background-color:#FFFFFF;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"min-width:100%;">=20
+<tbody>=20
+<tr>=20
+<td style=3D"padding-left:20px; padding-right:20px; padding-top:20px; paddi=
+ng-bottom:20px;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"min-width:100%;">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left">=20
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0">=20
+<tbody>=20
+<tr>=20
+<td>=20
+<div class=3D"mktoSnippet" id=3D"header-a.snippet">=20
+<p><a href=3D
+"https://go2.hellosign.com/MDc3LVpKVC04NTgAAAGNE27p1WHSGA8pNNLe1m7hqVEXn2W2=
+jSF4LcAgPzU8tZZlLR0nLXkOgO_aFAB6hqsGX5H-77A=3D" target=3D"_blank"
+><img src=3D"https://lp.dropboxbusiness.com/rs/077-ZJT-858/images/Dropbox S=
+ign Logo.png" alt=3D"flex_em_hellosign_logo.png" constrain=3D"true" imagepr=
+eview=3D"false" width=3D"200" height=3D"40" /></a></p>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"image-b313e400d-561c-48d4-a5aa-fd771ee736ff"=
+>=20
+<td style=3D"background-color:#FFFFFF;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"min-width:100%;">=20
+<tbody>=20
+<tr>=20
+<td style=3D"padding-left:20px; padding-right:20px; padding-top:0px; paddin=
+g-bottom:20px;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"min-width:100%;">=20
+<tbody>=20
+<tr>=20
+<td>=20
+<div class=3D"mktoImg" id=3D"image-b.img276fa1eb-a138-4b64-8bbc-53b9447e86d=
+3" mktolockimgsize=3D"true" mktolockimgstyle=3D"true">=20
+<a href=3D
+"https://go2.hellosign.com/MDc3LVpKVC04NTgAAAGNE27p1ZBT_v-PuFQhtVukoHb2MdrI=
+21db3tszEFVpHhYLCk362wbA1ynikZjQywBKozAM_zo=3D" target=3D"_blank"
+><img src=3D"https://lp.dropboxbusiness.com/rs/077-ZJT-858/images/email_onb=
+oarding_2.png" width=3D"560" alt=3D"An illustration of a signature and the =
+numbers 1, 2, and 3 with checkboxes by them" class=3D"img-full" style=3D"di=
+splay:block;" /></a>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"paragraph1e4a3712-d8d5-4f9e-a566-d1fc51831e7=
+6">=20
+<td style=3D"background-color:#FFFFFF;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"min-width:100%;">=20
+<tbody>=20
+<tr>=20
+<td style=3D"padding-left:20px; padding-right:20px; padding-top:0px; paddin=
+g-bottom:20px;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"min-width:100%;">=20
+<tbody>=20
+<tr>=20
+<td>=20
+<div class=3D"mktoText mob-text-left" id=3D"paragraph.p5289e5ff-c949-4f70-a=
+bc7-fb853e7860af" style=3D"font-family:Arial, Helvetica, sans-serif; font-s=
+ize:14px; line-height:18px; font-weight:normal; text-align:left; color:#121=
+519;">
+ <p style=3D"caret-color: #121519; color: #121519; font-family: Arial, Helv=
+etica, sans-serif; font-size: 14px; font-style: normal; font-variant-caps: =
+normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-al=
+ign: left; text-indent: 0px; text-transform: none; white-space: normal; wid=
+ows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-=
+stroke-width: 0px; background-color: #ffffff; text-decoration: none;"><stro=
+ng>Step #1: Select Who Needs to Sign Your Document</strong> <br />Based on =
+your unique signature request, select which parties need to sign your docum=
+ent.</p>
+<p style=3D"caret-color: #121519; color: #121519; font-family: Arial, Helve=
+tica, sans-serif; font-size: 14px; font-style: normal; font-variant-caps: n=
+ormal; font-weight: normal; letter-spacing: normal; orphans: auto; text-ali=
+gn: left; text-indent: 0px; text-transform: none; white-space: normal; wido=
+ws: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-s=
+troke-width: 0px; background-color: #ffffff; text-decoration: none;"><stron=
+g><br />Step #2: Prepare Your Document For Signing</strong><br />Upload the=
+ document that needs an eSignature directly from your device or through one=
+ of the integrated cloud services. If others need to sign, enter the name a=
+nd email of the person(s) who need to sign.</p>
+<p style=3D"caret-color: #121519; color: #121519; font-family: Arial, Helve=
+tica, sans-serif; font-size: 14px; font-style: normal; font-variant-caps: n=
+ormal; font-weight: normal; letter-spacing: normal; orphans: auto; text-ali=
+gn: left; text-indent: 0px; text-transform: none; white-space: normal; wido=
+ws: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-s=
+troke-width: 0px; background-color: #ffffff; text-decoration: none;"><stron=
+g><br />Step #3: Request for Signature</strong> <br />Add an email title an=
+d custom message in the signature request email to your signer. Click the b=
+lue "Request Signature" button and that's it! You just sent a document out =
+for signature.</p>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"cta-a2692dcbc-0fc7-4243-aca8-57866ede61a8">=
+=20
+<td style=3D"background-color:#FFFFFF;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"min-width:100%;">=20
+<tbody>=20
+<tr>=20
+<td style=3D"padding-left:20px; padding-right:20px; padding-top:0px; paddin=
+g-bottom:20px;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"min-width:100%;">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center">=20
+<table class=3D"mob-align-center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"width:174px;">=20
+<tbody>=20
+<tr>=20
+<td style=3D"margin-left:10px; margin-right:10px; margin-top:12px; margin-b=
+ottom:12px; background-color:#121519; border:0px solid #121519; border-radi=
+us:6px;">=20
+<div class=3D"mktoText" id=3D"cta-a.cta3b84c46b-bc85-4099-b15e-41fc32a45ede=
+" style=3D"font-family:Arial, Helvetica, sans-serif; font-size:14px; font-w=
+eight:normal; text-align:center;">
+ <p><a href=3D
+"https://go2.hellosign.com/n/MDc3LVpKVC04NTgAAAGNE27p1fdlsQNzaQJqgogn-17laJ=
+lVDPvIUP7VaPYiJNzF1of7yYgb43b_dR9Q3IGZFrKruKs=3D" target=3D"_blank" class=
+=3D"mktNoTok" style=3D"color: #ffffff; text-decoration: none; display: bloc=
+k; padding: 12px 10px; text-align: center;"
+>Request Signature</a></p>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"paragraphf725695f-998e-4b35-8912-560f96a02d8=
+2">=20
+<td style=3D"background-color:#FFFFFF;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"min-width:100%;">=20
+<tbody>=20
+<tr>=20
+<td style=3D"padding-left:20px; padding-right:20px; padding-top:0px; paddin=
+g-bottom:20px;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"min-width:100%;">=20
+<tbody>=20
+<tr>=20
+<td>=20
+<div class=3D"mktoText mob-text-left" id=3D"paragraph.pb7db83a8-a7e2-4289-9=
+5b8-172dd929758a" style=3D"font-family:Arial, Helvetica, sans-serif; font-s=
+ize:14px; line-height:18px; font-weight:normal; text-align:left; color:#121=
+519;">
+=20
+<p><span style=3D"color: #000000; font-family: Arial, 'Helvetica Neue', Hel=
+vetica, sans-serif; font-size: 16px; font-style: normal; font-variant-ligat=
+ures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: =
+normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: non=
+e; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-w=
+idth: 0px;=20
+background-color: #ffffff; text-decoration-style: initial; text-decoration-=
+color: initial; display: inline !important; float: none;">Need help? Check =
+out our</span><span style=3D"margin: 0px; padding: 0px; font-size: 16px; li=
+ne-height: 26px; color: #000000; font-family: Arial, 'Helvetica Neue', Helv=
+etica, sans-serif; font-style: normal; font-variant-ligatures: normal; font=
+-variant-caps: normal;=20
+font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; tex=
+t-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-s=
+pacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial=
+; text-decoration-color: initial;">&nbsp;</span><a  href=3D
+"https://go2.hellosign.com/n/MDc3LVpKVC04NTgAAAGNE27p1Uo8WZsbSgjT0-H3fAyPSR=
+Laa0hrclnzKbqdCoo6SSasw6doKZuht7NeGyLlH8AHsVw=3D" target=3D"_blank" class=
+=3D"mktNoTok" style=3D"margin: 0px; padding: 0px; font-size: 16px; line-hei=
+ght: 26px; text-decoration: underline; font-family: Arial, 'Helvetica Neue'=
+, Helvetica, sans-serif;=20
+font-style: normal; font-variant-ligatures: normal; font-variant-caps: norm=
+al; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left;=
+ text-indent: 0px; text-transform: none; white-space: normal; widows: 2; wo=
+rd-spacing: 0px; -webkit-text-stroke-width: 0px;"
+>support</a><span style=3D"margin: 0px; padding: 0px; font-size: 16px; line=
+-height: 26px; color: #000000; font-family: Arial,=20
+'Helvetica Neue', Helvetica, sans-serif; font-style: normal; font-variant-l=
+igatures: normal; font-variant-caps: normal; font-weight: 400; letter-spaci=
+ng: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform:=
+ none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stro=
+ke-width: 0px; text-decoration-style: initial; text-decoration-color: initi=
+al;">&nbsp;</span><span=20
+style=3D"color: #000000; font-family: Arial, 'Helvetica Neue', Helvetica, s=
+ans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: nor=
+mal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; o=
+rphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-=
+space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px=
+; background-color:=20
+#ffffff; text-decoration-style: initial; text-decoration-color: initial; di=
+splay: inline !important; float: none;">page for more information.</span></=
+p>
+=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>
+<tr class=3D"mktoModule" id=3D"footer-a">=20
+<td style=3D"background-color:#FFFFFF;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"min-width:100%;">=20
+<tbody>=20
+<tr>=20
+<td style=3D"padding-left:20px; padding-right:20px; padding-top:20px; paddi=
+ng-bottom:20px;">=20
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"min-width:100%;">=20
+<!--[if IE | mso]><!-- -->=20
+<tbody>=20
+<tr style=3D"display:noneIE | important;">=20
+<td align=3D"center">=20
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0">=20
+<tbody>=20
+<tr>=20
+<td>=20
+<div class=3D"mktoImg" id=3D"footer-a.social-1" mktolockimgsize=3D"true" mk=
+tolockimgstyle=3D"true">=20
+<a href=3D
+"https://go2.hellosign.com/MDc3LVpKVC04NTgAAAGNE27p1V8cEWSuPPd_EjSBdjVaw0p5=
+0Dlj0iS7uMSJLkbmnbHSu_Xx9PEpqn1bkejTIeb3zfM=3D" target=3D"_blank"
+><img src=3D"https://na-ab42.marketo.com/rs/dropbox/images/flex_em_hellosig=
+n_facebook.png" width=3D"28" alt=3D"Facebook" style=3D"display:block;" /></=
+a>=20
+</div> </td>=20
+<td width=3D"8" style=3D"width:8px; min-width:8px; font-size:0px;">&nbsp;</=
+td>=20
+<td>=20
+<div class=3D"mktoImg" id=3D"footer-a.social-2" mktolockimgsize=3D"true" mk=
+tolockimgstyle=3D"true">=20
+<a href=3D
+"https://go2.hellosign.com/MDc3LVpKVC04NTgAAAGNE27p1eYYb4CLZpFByYQKAxoUqiHa=
+izaMkhVP4SHwU_6FJhBBxHl9CrGau6uXUT9XNcaPUgQ=3D" target=3D"_blank"
+><img src=3D"https://na-ab42.marketo.com/rs/dropbox/images/flex_em_hellosig=
+n_twitter.png" width=3D"28" alt=3D"Twitter" style=3D"display:block;" /></a>=
+=20
+</div> </td>=20
+<td width=3D"8" style=3D"width:8px; min-width:8px; font-size:0px;">&nbsp;</=
+td>=20
+<td>=20
+<div class=3D"mktoImg" id=3D"footer-a.social-3" mktolockimgsize=3D"true" mk=
+tolockimgstyle=3D"true">=20
+<a href=3D
+"https://go2.hellosign.com/MDc3LVpKVC04NTgAAAGNE27p1QHMk_khFPNd8agXYGYI-Nq-=
+2nQOI0XDfEZAae6-Kaz4So3znGsE_Ic3GsEfT5THeeY=3D" target=3D"_blank"
+><img src=3D"https://na-ab42.marketo.com/rs/dropbox/images/flex_em_hellosig=
+n_linkedin.png" width=3D"28" alt=3D"LinkedIn" style=3D"display:block;" /></=
+a>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<div style=3D"line-height:20px; height:20px; font-size:0px;">
+ &nbsp;=20
+</div> </td>=20
+</tr>=20
+<!--<![endif]-->=20
+<tr>=20
+<td>=20
+<div class=3D"mktoSnippet" id=3D"footer-a.snippet" style=3D"font-family:Ari=
+al, Helvetica, sans-serif; font-size:12px; line-height:18px; font-weight:no=
+rmal; text-align:center; color:#121519;">=20
+<table style=3D"border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace:=
+ 0pt; margin: 0 auto; width: 100%;" cellspacing=3D"0" cellpadding=3D"0" bor=
+der=3D"0" align=3D"center">=20
+<tbody>=20
+<tr>=20
+<td style=3D"font-family: 'Atlas Grotesk',Arial,sans-serif; font-size: 10px=
+; line-height: 14px; color: #000000; text-align: left; font-weight: 400; ms=
+o-line-height-rule: exactly;"><a style=3D"text-decoration: none; color: #b4=
+b4b4;" href=3D
+"https://go2.hellosign.com/MDc3LVpKVC04NTgAAAGNE27p1WkhQBDr7HUSN3Q9WP15U1JG=
+NuBgf56i5ZbcfIJyb_0VkjCaSLLPCmRS1Yw6PmNYSVQ=3D" target=3D"_blank"
+>View&nbsp;Privacy&nbsp;Policy</a>&nbsp;&nbsp;|&nbsp; <a style=3D"text-deco=
+ration: none; color: #b4b4b4;" href=3D
+"https://go2.hellosign.com/MDc3LVpKVC04NTgAAAGNE27p1WAByno7xXL5q3X8-bM11Hzx=
+6dbVwcmWs4PNpHbJRZojtpYAFl5JnOKekt9rX2AuWwM=3D"
+>Unsubscribe</a>&nbsp; |&nbsp;&nbsp;<br /><br /> All Rights Reserved. =C2=
+=A9 2023 Dropbox Sign<br />PO Box 77767, San&nbsp;Francisco,&nbsp;CA&nbsp;9=
+4107<br /></td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>
+</table>=20
+</div> =20
+<a href=3D
+"https://go2.hellosign.com/MDc3LVpKVC04NTgAAAGNE27p1WM0nqW4mgMAGDjbptcGF1Ez=
+HgXi5hXNOs2XJ7faZ7EGlQWRKlO9VDAERS1cxACMwvI=3D"
+></a>
+<img src=3D"https://go2.hellosign.com/trk?t=3D1&mid=3DMDc3LVpKVC04NTg6MDo3O=
+TE5NzozMDA5ODY6MTc3ODgwNjoxMDI1MTg6OTo2MzI0MTg6NDA0MTY0MTQ5LTY3OmNlbnRlckB3=
+YXJjZXVwcm9qZWN0LmRldg%3D%3D" width=3D"1" height=3D"1" style=3D"display:non=
+e !important;" alt=3D"" />
+
+<!--This is a comment -->.
+</body>
+</html>
+------=_Part_426441354_1306907969.1689876052439--

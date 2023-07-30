@@ -1,0 +1,1499 @@
+Return-Path: <bounce+ecbaba.c761fa-ciel=binc.pw@hello.scribd.com>
+Delivered-To: ciel+spam@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id AHnWFOwUZmR4HDAAMUeTPA
+	(envelope-from <bounce+ecbaba.c761fa-ciel=binc.pw@hello.scribd.com>)
+	for <ciel+spam@binc.pw>; Thu, 18 May 2023 19:07:08 +0700
+Return-path: <bounce+ecbaba.c761fa-ciel=binc.pw@hello.scribd.com>
+Envelope-to: ciel@binc.pw
+Delivery-date: Thu, 18 May 2023 19:07:08 +0700
+Received: from m36-146.mailgun.net ([69.72.36.146]:37927)
+	by dc3.kencang.id with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <bounce+ecbaba.c761fa-ciel=binc.pw@hello.scribd.com>)
+	id 1pzcPS-00DDry-22
+	for ciel@binc.pw;
+	Thu, 18 May 2023 19:07:08 +0700
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=hello.scribd.com;
+ q=dns/txt; s=smtp; t=1684411558; x=1684418758; h=Message-Id: X-Feedback-ID:
+ List-Unsubscribe: Reply-To: To: To: From: From: Subject: Subject:
+ Content-Type: Mime-Version: Date: Sender: Sender;
+ bh=a92K4ZYy9Lrg430+/wjFC6TfMcY+gcOkKtqFM++7AEM=;
+ b=cUZI5lGUNWcj0UqHn0FHFSJabFGVokbj+HAWAAajTCxREl/9kfixiTGW4jTg4vSuOHULmZQfaMSMYwx1bJ+vH5rchXigM7KYG+rrDCvB4kXIpiGicidSEdwopUCiGLDSIMo0NB2OzWX9C+O5lDzDuqe1oZCa7fNhFVqKDKLYJwI=
+X-Mailgun-Sending-Ip: 69.72.36.146
+X-Mailgun-Sid: WyJlNDliNCIsImNpZWxAYmluYy5wdyIsImM3NjFmYSJd
+Received: from <unknown> (<unknown> []) by ea3d84cd53d6 with HTTP id
+ 646614a51af0cbc72e25f793; Thu, 18 May 2023 12:05:57 GMT
+Sender: hello@hello.scribd.com
+Date: Thu, 18 May 2023 12:05:57 +0000
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="836d98aecc0f82f5ff9d1c5d92c251543e524b502449b880e93a9998adb8"
+From: Scribd <hello@hello.scribd.com>
+To: ciel@binc.pw
+Reply-To: hello@scribd.com
+List-Unsubscribe: <https://iterable.scribd.com/e/encryptedUnsubscribe?_r=92f0cbc6f584418c9def9397d7beca21&_s=ba18836459c943c3b153d45b5a75901a&_t=GLINZZIdPUwOYNqBNMG1bbbA2S9b1t9NwKQGKYRE2nsombbGLz1R_02Y8h_F5JO8eScJLh-greHOBUiCW8h_pl18OPlhulYlKy5T6Gdu9Jo%3D>,<mailto:unsubscribe+5962995+8035132@unsubscribe.iterable.com>
+X-Campaign-ID: 5962995
+X-Message-ID: ba18836459c943c3b153d45b5a75901a
+Feedback-ID: 8035132:5962995:22703:iterable
+X-Feedback-ID: 8035132:5962995:22703:iterable
+X-Mailgun-Variables: {"metadata":
+ "{\"messageId\":\"ba18836459c943c3b153d45b5a75901a\",\"templateId\":8035132,\"projectId\":6283,\"campaignId\":5962995}"}
+Message-Id: <20230518120557.99164dc84cbe69b8@hello.scribd.com>
+X-Spam-Status: Yes, score=5.4
+X-Spam-Score: 54
+X-Spam-Bar: +++++
+X-Spam-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Your free trial is waiting Never stop growing with access
+   to everything worth reading. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+    ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ � [...] 
+ Content analysis details:   (5.4 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: scribd.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.5 KAM_REALLYHUGEIMGSRC   RAW: Spam with image tags with ridiculously
+                              huge http urls
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  5.0 KAM_SOMETLD_ARE_BAD_TLD .stream, .trade, .pw, .top, .press,
+                             .guru, .casa & .date TLD Abuse
+  0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay
+                             lines
+  0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
+                             Colors in HTML
+X-Spam-Flag: YES
+Subject:  ***SPAM***  Welcome to Scribd!
+
+--836d98aecc0f82f5ff9d1c5d92c251543e524b502449b880e93a9998adb8
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"
+
+Your free trial is waiting Never stop growing with access to everything wor=
+th=20
+reading.  =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C=20
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C=20
+
+
+
+
+
+
+ <https://www.scribd.com>=20
+
+
+
+
+
+ Welcome to Scribd!=20
+ Scribd gives you instant access to millions of ebooks, audiobooks, magazin=
+es,=20
+sheet music, and more across your favorite devices. You=E2=80=99ll never ru=
+n out of=20
+great things to read.=20
+
+Read free for 30 days  <https://www.scribd.com>=20
+ Cancel anytime.=20
+
+
+
+
+ <https://www.scribd.com/>=20
+
+
+
+ Why you=E2=80=99ll love Scribd=20
+
+
+
+
+
+
+ <https://www.scribd.com/>=20
+
+
+Explore what Scribd has to offer with a free 30-day trial=20
+<https://www.scribd.com/>. We=E2=80=99ll remind you before your trial ends.=
+=20
+
+
+
+Discover millions of ebooks, audiobooks, magazines, and podcasts, plus=20
+exclusiveScribd Originals=20
+<https://www.scribd.com/curated-lists/24249568/Exclusive-Scribd-Originals> =
+from=20
+acclaimed authors.=20
+
+
+
+Personalize reading lists, choose color themes and listening speed, plus en=
+joy=20
+recommendations <https://www.scribd.com/> based on your interests.=20
+
+
+
+Enjoy Scribd on all iOS=20
+<https://apps.apple.com/us/app/scribd-worlds-largest-online/id542557212> an=
+d=20
+Android <https://play.google.com/store/apps/details?id=3Dcom.scribd.app.rea=
+der0>=20
+devices. Download content for offline reading and listening.=20
+
+
+
+
+ The best books and audiobooks are waiting for you=20
+
+
+
+
+ <https://www.scribd.com/>=20
+
+Read free for 30 days  <https://www.scribd.com>=20
+ Cancel anytime.=20
+
+
+
+
+
+
+
+
+
+ <https://www.instagram.com/scribd/>  <https://www.facebook.com/Scribd/> =
+=20
+<https://twitter.com/Scribd/>  <https://www.pinterest.com/scribd/> =20
+<https://www.tiktok.com/@scribd>=20
+
+
+
+
+
+Our blog <https://blog.scribd.com/> Refer a friend=20
+<https://www.scribd.com/referrals?source=3Demail> Unsubscribe=20
+<https://iterable.scribd.com/e/encryptedUnsubscribe?_r=3D92f0cbc6f584418c9d=
+ef9397d7beca21&_s=3Dba18836459c943c3b153d45b5a75901a&_t=3DGLINZZIdPUwOYNqBN=
+MG1bbbA2S9b1t9NwKQGKYRE2nsombbGLz1R_02Y8h_F5JO8eScJLh-greHOBUiCW8h_pl18OPlh=
+ulYlKy5T6Gdu9Jo%3D>
+Preferences=20
+<https://www.scribd.com/account-settings/preferences?show_email_prefs=3Dy>=
+=20
+Contact us <https://www.scribd.com/contact>=20
+
+
+
+ This email was sent to ciel@binc.pw=20
+<https://support.scribd.com/hc/articles/210129326>.
+ Scribd, 460 Bryant Street, San Francisco, CA 94107=20
+--836d98aecc0f82f5ff9d1c5d92c251543e524b502449b880e93a9998adb8
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns=3D"http://www.w3=
+=2Eorg/1999/xhtml" xmlns:o=3D"urn:schema=
+s-microsoft-com:office:office" xmlns:=
+v=3D"urn:schemas-microsoft-com:vml" style=3D"margin: 0; padding: 0; -webkit=
+-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-bo=
+x;"> <head> <!--[if gte mso 9]><xml> <o:OfficeDocumentSettings> <o:AllowPNG=
+/> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml>=
+<![endif]--> <title>Your free trial is waiting</title> <meta content=3D"IE=
+=3Dedge" http-equiv=3D"X-UA-Compatible"> <meta name=3D"viewport" content=3D=
+"width=3Ddevice-width"> <meta http-equiv=3D"content-type" content=3D"text/h=
+tml;charset=3Dutf-8"> <meta name=3D"x-apple-disable-message-reformatting"> =
+<meta name=3D"format-detection" content=3D"date=3Dno"> <meta name=3D"format=
+-detection" content=3D"address=3Dno"> <meta name=3D"format-detection" conte=
+nt=3D"email=3Dno"> <meta name=3D"format-detection" content=3D"telephone=3Dn=
+o"> <meta name=3D"color-scheme" content=3D"light dark"> <meta name=3D"suppo=
+rted-color-schemes" content=3D"light dark"> <link href=3D"https://fonts.goo=
+gleapis.com/css2?family=3DSource+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700=
+;1,300;1,400;1,600;1,700&family=3DSource+Serif+Pro:ital,wght@0,300;0,400;0,=
+600;0,700;1,300;1,400;1,600;1,700&display=3Dswap" rel=3D"stylesheet"> <styl=
+e type=3D"text/css">@media(prefers-color-scheme:dark){u+.body .dark-img{dis=
+play:block!important}u+.body .light-img{display:none!important}}</style> <s=
+tyle type=3D"text/css">html,body,div,tr,td,table,ul,ol,li,dl,dt,dd,h1,h2,h3=
+,h4,h5,h6,pre,form,p,blockquote,fieldset,input,abbr,article,aside,details,f=
+igcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,sectio=
+n,summary,time{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-si=
+zing:border-box;box-sizing:border-box}table{border-collapse:collapse;border=
+-spacing:0}body{background-color:#fff;min-width:320px!important;font-family=
+:'Source Sans Pro',Helvetica,sans-serif!important}sup{line-height:0;font-si=
+ze:70%}.clearfix:after{content:" ";visibility:hidden!important;display:bloc=
+k!important;height:0;clear:both!important}@import url('https://fonts.google=
+apis.com/css2?family=3DSource+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;1=
+,300;1,400;1,600;1,700&display=3Dswap');@import url('https://fonts.googleap=
+is.com/css2?family=3DSource+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,30=
+0;1,400;1,600;1,700&display=3Dswap');body{width:100%!important;padding:0;ma=
+rgin:0;background-color:#f0f2f9}.sheet{margin:0 auto;width:100%;max-width:6=
+40px;font-family:'Source Sans Pro',Helvetica,sans-serif!important;border:0;=
+border-collapse:collapse;border-spacing:0;-webkit-text-size-adjust:none}#mo=
+bile-top section,#mobile-bottom section{mso-hide:all}.show_me_always{visibi=
+lity:visible}.preheader-hide{display:none!important;mso-hide:all!important}=
+@media only screen and (max-device-width:768px){*{text-rendering:optimizele=
+gibility}body{-webkit-text-size-adjust:110%}}@media only screen and (max-de=
+vice-width:430px){#desktop{display:none!important}#mobile-top{width:100%!im=
+portant;max-width:100%!important;max-height:none!important;float:none!impor=
+tant;overflow:visible!important;height:inherit!important;display:block!impo=
+rtant;margin:0 auto!important}#mobile-bottom{width:100%!important;max-width=
+:100%!important;max-height:none!important;float:none!important;overflow:vis=
+ible!important;height:inherit!important;display:block!important;margin:0 au=
+to!important}#mobile-wrapper{width:100%!important;max-width:100%!important;=
+max-height:none!important;float:none!important;overflow:visible!important;h=
+eight:inherit!important;display:block!important;margin:0 auto!important}.mo=
+bile{width:100%;font-family:'Source Sans Pro',Helvetica,sans-serif!importan=
+t;-webkit-text-size-adjust:none;text-rendering:optimizelegibility}.mobile .=
+grid{padding:0 20px}.grid div{padding-bottom:20px!important}.desktop-elemen=
+t{display:none!important}.mobile-element{display:block!important}.section-p=
+adding-top{display:none!important}.logo-padding{height:24px!important;paddi=
+ng:0!important}.keyline{width:inherit!important}.inside-margins{width:inher=
+it!important}.padding-left{display:none!important}.padding-right{display:no=
+ne!important}.header{padding:0 28px}.inside-margins{padding:0 28px!importan=
+t}.logo-padding-right{width:32px!important}.superheadline{font-size:16px;li=
+ne-height:24px}.hero-headline{font-size:36px!important;line-height:43px!imp=
+ortant}.button{width:100%!important}.quote-container{display:table!importan=
+t}.love-scribd-cell{width:100%;display:table-row!important}.love-scribd-pad=
+ding{height:32px!important}.love-scribd-quote-padding{display:none!importan=
+t}.love-scribd-img{width:100%!important}.love-scribd-copy{width:100%!import=
+ant}.love-scribd-copy-container{padding:0 32px!important}.love-scribd-reaso=
+n-copy{font-size:16px!important;line-height:24px!important}.quote-column{di=
+splay:table-cell!important}.quote-column-left{border-right:12px solid rgba(=
+255,255,255,0)}.quote-spacer{height:18px;display:table-row!important}.quote=
+-thumb-mobile{display:block!important;padding-left:18px!important}.quote-th=
+umbnail{height:160px!important;width:inherit!important}.quote-tile{width:10=
+0%!important;display:table-row!important}.quote-tile-table{width:100%!impor=
+tant;height:auto!important}.footer-text-links{line-height:32px!important}.f=
+ooter-fine-print{padding:0 24px}}@media(prefers-color-scheme:dark){body{bac=
+kground-color:#303030!important}.body-darkmode{background-color:#303030!imp=
+ortant}.darkmode{background-color:#1e1e1e!important;border-left:none!import=
+ant;border-right:none!important}.superheadline{color:#f0a534!important}.hea=
+dline{color:#fff!important}.copy{color:#fff!important}.footnote-copy{color:=
+#fff!important}.fine-print{color:#fff!important}.link-copy{color:#02a793!im=
+portant}.button{background-color:#02a793!important;color:#fff!important}.ke=
+yline{border-top:1px solid #7f9aa8!important}.dark-img{display:block!import=
+ant}.light-img{display:none!important}.footer-darkmode{background-color:#30=
+3030!important}.footer-copy{color:#fff!important}}[data-ogsc] body{backgrou=
+nd-color:#303030!important}[data-ogsc] .body-darkmode{background-color:#303=
+030!important}[data-ogsc] .darkmode{background-color:#1e1e1e!important;bord=
+er-left:none!important;border-right:none!important}[data-ogsc] .superheadli=
+ne{color:#f0a534!important}[data-ogsc] .headline{color:#fff!important}[data=
+-ogsc] .copy{color:#fff!important}[data-ogsc] .footnote-copy{color:#fff!imp=
+ortant}[data-ogsc] .fine-print{color:#fff!important}[data-ogsc] .link-copy{=
+color:#02a793!important}[data-ogsc] .button{background-color:#02a793!import=
+ant;color:#fff!important}[data-ogsc] .keyline{border-top:1px solid #7f9aa8!=
+important}[data-ogsc] .dark-img{display:block!important}body[data-outlook-c=
+ycle] .dark-img{display:block!important}[data-ogsc] .light-img{display:none=
+!important}body[data-outlook-cycle] .light-img{display:none!important}[data=
+-ogsc] .footer-darkmode{background-color:#303030!important}[data-ogsc] .foo=
+ter-copy{color:#fff!important}</style> <!--[if mso]><style type=3D"text/css=
+">table.main{width:640px}body,table,td{font-family:Helvetica,sans-serif!imp=
+ortant}div.headline{font-family:Georgia,serif!important}</style><![endif]--=
+> </head> <body style=3D"-webkit-box-sizing: border-box; -moz-box-sizing: b=
+order-box; box-sizing: border-box; margin: 0; padding: 0; background-color:=
+ #F0F2F9; min-width: 320px !important; font-family: 'Source Sans Pro', Helv=
+etica, sans-serif !important; width: 100% !important;"><span style=3D"color=
+:transparent;visibility:hidden;display:none;opacity:0;height:0;width:0;font=
+-size:0;">Never stop growing with access to everything worth reading.</span=
+><img src=3D"https://iterable.scribd.com/e/eo?_t=3D92f0cbc6f584418c9def9397=
+d7beca21&amp;_m=3Dba18836459c943c3b153d45b5a75901a&amp;_e=3DGLINZZIdPUwOYNq=
+BNMG1bbbA2S9b1t9NwKQGKYRE2nsombbGLz1R_02Y8h_F5JO8eScJLh-greHOBUiCW8h_pqx2Rw=
+CPfUTX5se2-1eXgz4LveWUR1lQepGapKaO0v6I" style=3D"border:0;width:1px;height:=
+1px;border-width:0px!important;display:none!important;line-height:0!importa=
+nt;" width=3D"1" height=3D"1"/> <div class=3D"preheader-hide" style=3D"marg=
+in: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-=
+box; box-sizing: border-box; max-height: 0px; overflow: hidden; mso-hide: a=
+ll !important; display: none !important;">&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C </div=
+> <!--[if !mso]><!--> <div class=3D"sheet" style=3D"padding: 0; -webkit-box=
+-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; m=
+argin: 0 auto; width: 100%; max-width: 640px; border: none; border-collapse=
+: collapse; border-spacing: 0; -webkit-text-size-adjust: none; font-family:=
+ 'Source Sans Pro', Helvetica, sans-serif !important;"> <!--<![endif]--> <!=
+-- GO_TO_WEB --> <div style=3D"margin: 0; padding: 0; -webkit-box-sizing: b=
+order-box; -moz-box-sizing: border-box; box-sizing: border-box; position: a=
+bsolute; max-height: 0; font-size: 0; text-indent: -999px;"></div> <table a=
+lign=3D"center" style=3D"padding: 0; -webkit-box-sizing: border-box; -moz-b=
+ox-sizing: border-box; box-sizing: border-box; border-spacing: 0; text-alig=
+n: center; margin: 0 auto; border-collapse: collapse !important;"> <tr styl=
+e=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing=
+: border-box; box-sizing: border-box;"> <td class=3D"body-darkmode" bgcolor=
+=3D"#F0F2F9" style=3D"padding: 0; -webkit-box-sizing: border-box; -moz-box-=
+sizing: border-box; box-sizing: border-box; background-color: #F0F2F9; widt=
+h: 100%; margin: 0 auto; text-align: center;" width=3D"100%" align=3D"cente=
+r"> <table class=3D"main" style=3D"margin: 0; padding: 0; -webkit-box-sizin=
+g: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-=
+collapse: collapse; border-spacing: 0; text-align: center; max-width: 640px=
+;" align=3D"center" max-width=3D"640" cellpadding=3D"0" cellspacing=3D"0" b=
+order=3D"0" role=3D"presentation"> <tr style=3D"margin: 0; padding: 0; -web=
+kit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border=
+-box;"><td class=3D"section-padding-top" style=3D"margin: 0; padding: 0; -w=
+ebkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bord=
+er-box; height: 40px; display: block;" height=3D"40">&nbsp;</td></tr> <!--t=
+op--> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -=
+moz-box-sizing: border-box; box-sizing: border-box;"> <td class=3D"darkmode=
+" style=3D"padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bor=
+der-box; box-sizing: border-box; background-color: #fff; text-align: center=
+; margin: 0 auto;" bgcolor=3D"#fff" align=3D"center"> <table class=3D"top" =
+width=3D"100%" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" role=3D"presentation" style=3D"padding: 0; -webkit-box-sizing: borde=
+r-box; -moz-box-sizing: border-box; box-sizing: border-box; border-spacing:=
+ 0; text-align: center; margin: 0 auto; max-width: 640px; border-collapse: =
+collapse !important;"> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizi=
+ng: border-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <td =
+style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-si=
+zing: border-box; box-sizing: border-box;"> <!--nav--> <table class=3D"nav"=
+ cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentation" sty=
+le=3D"border-collapse: collapse !important;"> <tr> <td class=3D"padding-lef=
+t" style=3D"width:32px; "width=3D"32">&nbsp;</td> <td class=3D"header" styl=
+e=3D"width:576px; text-align: left !important; "width=3D"576"> <table class=
+=3D"header-table"> <tr><td class=3D"logo-padding-top" style=3D"height:32px;=
+ "height=3D"32">&nbsp;</td></tr> <tr> <td align=3D"left"> <div> <picture> <=
+a href=3D"https://iterable.scribd.com/u/click?_t=3D92f0cbc6f584418c9def9397=
+d7beca21&_m=3Dba18836459c943c3b153d45b5a75901a&_e=3DNS2vyqcES57N-IQzJ4a0u1D=
+FJmJK9POeI3iKKw4ZTmUgp9T-Y2IyxLkQVhiZoxOGz3lFURTpgq5APhTje_Ap5IV7twzhPG2d85=
+NgDeiID3hb5JTlR0VKZzzyPcKcV6jm9ROWcYp_vHUftuH_A5XbCEp1codpyAfjFaIds5urbwFqI=
+1XxmtYKg5wgffPx1eq1n5TbIdonZ7mRbp4f-DjBVrfU_wkQkj9lW3E6CK7uq98nDhdgXOVj0dsR=
+Ch09l-gWZPJ_nYjACU1s9PWpJVg405_vYvrdJz_N_WZrP1F4W3c%3D"> <img class=3D"logo=
+ light-img" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integ=
+rators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def9397d7beca2=
+1/Brand-Assets_2021/header-logos/logo_teal.png" alt=3D"Scribd" class=3D"sho=
+w-me-always" border=3D"0" width=3D"131" style=3D"display: block; text-align=
+: left; vertical-align: center;"/> <!--[if !mso]><!--> <img class=3D"logo d=
+ark-img" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrat=
+ors/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def9397d7beca21/B=
+rand-Assets_2021/header-logos/logo_dk.png" alt=3D"Scribd" class=3D"show-me-=
+always" border=3D"0" width=3D"131" style=3D"display: none; text-align: left=
+; vertical-align: center; mso-hide: all !important;"/> <!--<![endif]--> </a=
+> </picture> </div> </td> </tr> <tr><td class=3D"logo-padding-bottom" style=
+=3D"height:24px; "height=3D"24">&nbsp;</td></tr> <tr><td class=3D"keyline" =
+style=3D"font-size: 1px; line-height: 1px; border-top: 1px solid #E3E6EF; w=
+idth: 576px; text-align: center;" valign=3D"top"></td></tr> </table> </td> =
+<td class=3D"padding-right" style=3D"width:32px; "width=3D"32">&nbsp;</td> =
+</tr> </table> <!--end nav--> <!--hero--> <table class=3D"hero-section" ali=
+gn=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"pres=
+entation" style=3D"padding: 0; -webkit-box-sizing: border-box; -moz-box-siz=
+ing: border-box; box-sizing: border-box; border-spacing: 0; max-width: 640p=
+x; margin: 0 auto; border-collapse: collapse !important;"> <tbody> <!-- her=
+o-copy --> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-b=
+ox; -moz-box-sizing: border-box; box-sizing: border-box;"> <td style=3D"mar=
+gin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border=
+-box; box-sizing: border-box;"> <table align=3D"center" cellpadding=3D"0" c=
+ellspacing=3D"0" border=3D"0" role=3D"presentation" style=3D"padding: 0; -w=
+ebkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bord=
+er-box; border-spacing: 0; margin: 0 auto; border-collapse: collapse !impor=
+tant;"> <tbody> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: bor=
+der-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <td class=
+=3D"padding-left" style=3D"margin: 0; padding: 0; -webkit-box-sizing: borde=
+r-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 70px;" w=
+idth=3D"70">&nbsp;</td> <td class=3D"inside-margins" align=3D"center" style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box; width: 500px;" width=3D"500"> <table a=
+lign=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"pr=
+esentation" style=3D"padding: 0; -webkit-box-sizing: border-box; -moz-box-s=
+izing: border-box; box-sizing: border-box; border-spacing: 0; margin: 0 aut=
+o; border-collapse: collapse !important;"> <tbody> <tr style=3D"margin: 0; =
+padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; bo=
+x-sizing: border-box;"><td class=3D"headline-padding-top" style=3D"margin: =
+0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;=
+ box-sizing: border-box; height: 56px;" height=3D"56">&nbsp;</td></tr> <!--=
+ hero-headline --> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: =
+border-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <td alig=
+n=3D"center" valign=3D"top" style=3D"margin: 0; padding: 0; -webkit-box-siz=
+ing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; paddi=
+ng-bottom: 16px; font-family: 'Source Serif Pro', Georgia, serif !important=
+;"> <div class=3D"hero-headline headline" style=3D"margin: 0; padding: 0; -=
+webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bor=
+der-box; font-size: 41px; line-height: 53.3px; font-weight: 600; color: #00=
+0; text-align: center; font-style: normal; font-family: 'Source Serif Pro',=
+ Georgia, serif !important;"> Welcome to Scribd! </div> </td> </tr> <!--[if=
+ mso]><tr><td class=3D"hero-headline-padding-bottom" style=3D"height:16px; =
+"height=3D"16">&nbsp;</td></tr><![endif]--> <tr style=3D"margin: 0; padding=
+: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizin=
+g: border-box;"> <td align=3D"center" valign=3D"top" style=3D"margin: 0; pa=
+dding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-=
+sizing: border-box; font-family: 'Source Sans Pro', Helvetica, sans-serif !=
+important;"> <div class=3D"copy" style=3D"margin: 0; padding: 0; -webkit-bo=
+x-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; =
+font-size: 16px; line-height: 24px; font-weight: normal; font-weight: 400; =
+color: #000; text-align: center; font-style: normal; font-family: 'Source S=
+ans Pro', Helvetica, sans-serif !important;"> Scribd gives you instant acce=
+ss to millions of ebooks, audiobooks, magazines, sheet music, and more acro=
+ss your favorite devices. You=E2=80=99ll never run out of great things to=
+=C2=A0read. </div> </td> </tr> <tr style=3D"margin: 0; padding: 0; -webkit-=
+box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box=
+;"><td class=3D"button-padding" style=3D"margin: 0; padding: 0; -webkit-box=
+-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; h=
+eight: 32px;" height=3D"32">&nbsp;</td></tr> <!--button--> <tr style=3D"mar=
+gin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border=
+-box; box-sizing: border-box;"> <td align=3D"center" style=3D"margin: 0; pa=
+dding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-=
+sizing: border-box;"> <div style=3D"margin: 0; padding: 0; -webkit-box-sizi=
+ng: border-box; -moz-box-sizing: border-box; box-sizing: border-box;"><!--[=
+if mso]><v:roundrect class=3D"button" xmlns:v=3D"urn:schemas-microsoft-com:=
+vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" href=3D"http://" sty=
+le=3D"height:40px;v-text-anchor:middle;width:300px;" arcsize=3D"10%" stroke=
+=3D"f" fillcolor=3D"#20828D"> <w:anchorlock/> <center><![endif]--> <a class=
+=3D"button" href=3D"https://iterable.scribd.com/u/click?_t=3D92f0cbc6f58441=
+8c9def9397d7beca21&_m=3Dba18836459c943c3b153d45b5a75901a&_e=3DNS2vyqcES57N-=
+IQzJ4a0u1DFJmJK9POeI3iKKw4ZTmUgp9T-Y2IyxLkQVhiZoxOGz3lFURTpgq5APhTje_Ap5IV7=
+twzhPG2d85NgDeiID3hb5JTlR0VKZzzyPcKcV6jm9ROWcYp_vHUftuH_A5XbCPe9Tky5Kw8R_lN=
+PwIizSds0l3njzUQuFwAzcbtZdgDR_pQawRBQbyTb1OiM_7S_9BqcA5-knZDCdRWQqR-OVq-oZW=
+UqRDfNvAH6HrIC6XRwNhoMdcThgDfLjN4QR9QOesBj-9sFHZ_eZBlFeuuRTYA%3D" style=3D"=
+background-color: #20828D; width: 300px; font-size: 16px; line-height:20px;=
+ font-family: 'Source Sans Pro', Helvetica, sans-serif !important; font-wei=
+ght: 600; text-decoration: none; padding: 10px 0px; color: #ffffff; -webkit=
+-border-radius:4px; -moz-border-radius:4px; border-radius:4px; display: inl=
+ine-block; mso-padding-alt: 0; letter-spacing:0.03em; cursor:pointer; text-=
+align: center;"> <!--[if mso]><i style=3D"letter-spacing: 40px; mso-font-wi=
+dth: -100%;">&nbsp;</i><![endif]--> <span>Read free for 30 days</span> <!--=
+[if mso]><i style=3D"letter-spacing: 40px; mso-font-width: -100%;">&nbsp;</=
+i><![endif]--> </a> <!--[if mso]></center> </v:roundrect><![endif]--> </div=
+> </td> </tr> <!--end button--> <!--[if !mso]><tr><td class=3D"button-discl=
+aimer-padding" style=3D"height:12px; "height=3D"12">&nbsp;</td></tr><![endi=
+f]--> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -=
+moz-box-sizing: border-box; box-sizing: border-box;"> <td align=3D"center" =
+valign=3D"top" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-b=
+ox; -moz-box-sizing: border-box; box-sizing: border-box; padding-top: 12px;=
+ font-family: 'Source Sans Pro', Helvetica, sans-serif !important;"> <div c=
+lass=3D"copy" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-bo=
+x; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 14px; li=
+ne-height: 19px; font-weight: normal; font-weight: 400; color: #303140; tex=
+t-align: center; font-style: normal; font-family: 'Source Sans Pro', Helvet=
+ica, sans-serif !important;"> Cancel anytime. </div> </td> </tr> </tbody> <=
+/table> </td> <td class=3D"padding-right" style=3D"margin: 0; padding: 0; -=
+webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bor=
+der-box; width: 70px;" width=3D"70">&nbsp;</td> </tr> </tbody> </table> </t=
+d> </tr> <!-- end hero-copy --> <tr style=3D"margin: 0; padding: 0; -webkit=
+-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-bo=
+x;"><td class=3D"hero-img-padding" style=3D"margin: 0; padding: 0; -webkit-=
+box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box=
+; height: 24px;" height=3D"24">&nbsp;</td></tr> <!-- hero-img --> <tr style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box;"> <td style=3D"-webkit-box-sizing: bor=
+der-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0 aut=
+o; text-align: center; border-collapse: collapse !important; border-spacing=
+: 0 !important; padding: 0 !important;" align=3D"center"> <table align=3D"c=
+enter" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" style=3D"padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bo=
+rder-box; box-sizing: border-box; border-spacing: 0; margin: 0 auto; border=
+-collapse: collapse !important;"> <tbody> <tr style=3D"margin: 0; padding: =
+0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing:=
+ border-box;"> <td align=3D"center" style=3D"margin: 0; -webkit-box-sizing:=
+ border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: =
+0;"> <a href=3D"https://iterable.scribd.com/u/click?_t=3D92f0cbc6f584418c9d=
+ef9397d7beca21&_m=3Dba18836459c943c3b153d45b5a75901a&_e=3DNS2vyqcES57N-IQzJ=
+4a0u6dixOF9aj8ku4oHfTryylrA1dI541oaCLraUfVinh7s3TWc5dqtIGXYF4PqvWbrdvbs-Kb1=
+IvHXKZmQGrCX8QK2l-4nXPmFEUPM1gFjIRHGweRrg-n0GyYFLcXe_7wSZkY1rEsSBeHqB1ZmH0v=
+UtjE_ccAEP39fRmUq1xng6cbGWEdahY2TBmIXT-nN3WniigyPaKYKX8rSIqDGDU6EQcVbIm97a2=
+m7T68klj0hJGoudSgW5Z08Q0N6YAFiXKWjCjbiq9nytiCxZg_bhD_kI8Q%3D" style=3D"text=
+-decoration:none;" target=3D"_blank"> <table class=3D"desktop-element" styl=
+e=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing=
+: border-box; box-sizing: border-box; border-spacing: 0; border-collapse: c=
+ollapse !important;"> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizin=
+g: border-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <td s=
+tyle=3D"margin: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-=
+box; box-sizing: border-box; border-collapse: collapse !important; border-s=
+pacing: 0 !important; padding: 0 !important;"> <img src=3D"https://d15k2d11=
+r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542=
+cff6dd6a/92f0cbc6f584418c9def9397d7beca21/Lifecycle/Images/2023/EN/hero_gri=
+d_all-devices-02.png" width=3D"640" style=3D"display:block;margin:0 auto;bo=
+rder:0;white-space:pre;text-align:center;" alt=3D""> </td> </tr> </table> <=
+!--[if !mso]><!--> <table class=3D"mobile-element" style=3D"margin: 0; padd=
+ing: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-si=
+zing: border-box; border-spacing: 0; display: none; border-collapse: collap=
+se !important; mso-hide: all !important;"> <tr style=3D"margin: 0; padding:=
+ 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing=
+: border-box;"> <td style=3D"margin: 0; padding: 0; -webkit-box-sizing: bor=
+der-box; -moz-box-sizing: border-box; box-sizing: border-box; mso-hide: all=
+ !important;"> <img src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/use=
+rs/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def939=
+7d7beca21/Lifecycle/Images/2023/EN/hero_grid_all-devices-02.png" width=3D"1=
+00%" style=3D"mso-hide: all !important;margin:0 auto;border:0;white-space:p=
+re;text-align:center; max-width: 428px;" alt=3D""> </td> </tr> </table> <!-=
+-<![endif]--> </a> </td> </tr> </tbody> </table> </td> </tr> </tbody> </tab=
+le> <!--end hero--> <!-- body --> <table class=3D"body-section" align=3D"ce=
+nter" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentation=
+" style=3D"padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bor=
+der-box; box-sizing: border-box; border-spacing: 0; max-width: 640px; margi=
+n: 0 auto; border-collapse: collapse !important;"> <tr style=3D"margin: 0; =
+padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; bo=
+x-sizing: border-box;"> <td style=3D"margin: 0; padding: 0; -webkit-box-siz=
+ing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <ta=
+ble class=3D"love-scribd-section" align=3D"center" cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" role=3D"presentation" style=3D"padding: 0; -webkit=
+-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-bo=
+x; border-spacing: 0; margin: 0 auto; border-collapse: collapse !important;=
+"> <tbody> <!-- why you'll love scribd headline --> <tr style=3D"margin: 0;=
+ padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; b=
+ox-sizing: border-box;"> <td style=3D"margin: 0; padding: 0; -webkit-box-si=
+zing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <t=
+able align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=
+=3D"presentation" style=3D"padding: 0; -webkit-box-sizing: border-box; -moz=
+-box-sizing: border-box; box-sizing: border-box; border-spacing: 0; margin:=
+ 0 auto; border-collapse: collapse !important;"> <tbody> <tr style=3D"margi=
+n: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-b=
+ox; box-sizing: border-box;"> <td class=3D"padding-left" style=3D"margin: 0=
+; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; =
+box-sizing: border-box; width: 70px;" width=3D"70">&nbsp;</td> <td class=3D=
+"inside-margins" align=3D"center" style=3D"margin: 0; padding: 0; -webkit-b=
+ox-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;=
+ width: 500px;" width=3D"500"> <table align=3D"center" cellpadding=3D"0" ce=
+llspacing=3D"0" border=3D"0" role=3D"presentation" style=3D"padding: 0; -we=
+bkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: borde=
+r-box; border-spacing: 0; margin: 0 auto; border-collapse: collapse !import=
+ant;"> <tbody> <!-- body-headline --> <tr style=3D"margin: 0; padding: 0; -=
+webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bor=
+der-box;"> <td align=3D"center" valign=3D"top" style=3D"margin: 0; padding:=
+ 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing=
+: border-box; font-family: 'Source Serif Pro', Georgia, serif !important;">=
+ <div class=3D"body-headline headline" style=3D"margin: 0; padding: 0; -web=
+kit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border=
+-box; font-size: 26px; line-height: 33.8px; font-weight: 600; color: #000; =
+text-align: center; font-style: normal; font-family: 'Source Serif Pro', Ge=
+orgia, serif !important;"> Why you=E2=80=99ll love Scribd </div> </td> </tr=
+> </tbody> </table> </td> <td class=3D"padding-right" style=3D"margin: 0; p=
+adding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box=
+-sizing: border-box; width: 70px;" width=3D"70">&nbsp;</td> </tr> </tbody> =
+</table> </td> </tr> <!-- end why you'll love scribd headline --> <tr style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box;"><td class=3D"hero-img-padding" style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box; height: 32px;" height=3D"32">&nbsp;</t=
+d></tr> <!-- why you'll love scribd infographic --> <tr style=3D"margin: 0;=
+ padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; b=
+ox-sizing: border-box;"> <td style=3D"-webkit-box-sizing: border-box; -moz-=
+box-sizing: border-box; box-sizing: border-box; margin: 0 auto; text-align:=
+ center; border-collapse: collapse !important; border-spacing: 0 !important=
+; padding: 0 !important;" align=3D"center"> <table align=3D"center" cellpad=
+ding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentation" style=3D"pa=
+dding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-=
+sizing: border-box; border-spacing: 0; margin: 0 auto; border-collapse: col=
+lapse !important;"> <tbody> <tr style=3D"margin: 0; padding: 0; -webkit-box=
+-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;">=
+ <td class=3D"love-scribd-container" style=3D"margin: 0; padding: 0; -webki=
+t-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-b=
+ox;"> <table style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box=
+; -moz-box-sizing: border-box; box-sizing: border-box; border-collapse: col=
+lapse; border-spacing: 0;"> <tr style=3D"margin: 0; padding: 0; -webkit-box=
+-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;">=
+ <td class=3D"love-scribd-img love-scribd-cell" align=3D"left" valign=3D"to=
+p" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box=
+-sizing: border-box; box-sizing: border-box; width: 294px;" width=3D"294"> =
+<table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" ro=
+le=3D"presentation" style=3D"padding: 0; -webkit-box-sizing: border-box; -m=
+oz-box-sizing: border-box; box-sizing: border-box; border-spacing: 0; margi=
+n: 0 auto; border-collapse: collapse !important;"> <tbody> <tr style=3D"mar=
+gin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border=
+-box; box-sizing: border-box;"> <td align=3D"center" style=3D"margin: 0; -w=
+ebkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bord=
+er-box; padding: 0;"> <a href=3D"https://iterable.scribd.com/u/click?_t=3D9=
+2f0cbc6f584418c9def9397d7beca21&_m=3Dba18836459c943c3b153d45b5a75901a&_e=3D=
+NS2vyqcES57N-IQzJ4a0u6dixOF9aj8ku4oHfTryylrA1dI541oaCLraUfVinh7s3TWc5dqtIGX=
+YF4PqvWbrdvbs-Kb1IvHXKZmQGrCX8QK2l-4nXPmFEUPM1gFjIRHGweRrg-n0GyYFLcXe_7wSZg=
+LEzLPjUqFKXEEvrOmKfYlKYPS8kEWaQ6dkDMZ6ak2yWeHh2cIrCi5iFkytizop39xdxkUXCntAc=
+JSSEhFJieIqU1V2VR4UUWW67DujhsMUNbyl0Aa7a31cptAghL4kbkNxbbuQTkkHb4qANiYw-Nw%=
+3D" style=3D"text-decoration:none;" target=3D"_blank"> <table class=3D"desk=
+top-element" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box=
+; -moz-box-sizing: border-box; box-sizing: border-box; border-spacing: 0; b=
+order-collapse: collapse !important;"> <tr style=3D"margin: 0; padding: 0; =
+-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bo=
+rder-box;"> <td style=3D"margin: 0; -webkit-box-sizing: border-box; -moz-bo=
+x-sizing: border-box; box-sizing: border-box; border-collapse: collapse !im=
+portant; border-spacing: 0 !important; padding: 0 !important;"> <img src=3D=
+"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b=
+6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def9397d7beca21/Lifecycle/Images=
+/Q2Q3_2022/EN/d_top_charts.png" width=3D"294" style=3D"display:block;margin=
+:0 auto;border:0;white-space:pre;text-align:center;" alt> </td> </tr> </tab=
+le> <!--[if !mso]><!--> <table class=3D"mobile-element" style=3D"margin: 0;=
+ padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; b=
+ox-sizing: border-box; border-spacing: 0; display: none; border-collapse: c=
+ollapse !important; mso-hide: all !important;"> <tr style=3D"margin: 0; pad=
+ding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-s=
+izing: border-box;"> <td style=3D"margin: 0; padding: 0; -webkit-box-sizing=
+: border-box; -moz-box-sizing: border-box; box-sizing: border-box; mso-hide=
+: all !important;"> <img src=3D"https://d15k2d11r6t6rl.cloudfront.net/publi=
+c/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9d=
+ef9397d7beca21/Lifecycle/Images/Q2Q3_2022/EN/m_top_charts.png" width=3D"100=
+%" style=3D"display:block;margin:0 auto;border:0;white-space:pre;text-align=
+:center;" alt> </td> </tr> </table> <!--<![endif]--> </a> </td> </tr> </tbo=
+dy> </table> </td> <td class=3D"love-scribd-copy love-scribd-cell" valign=
+=3D"top" align=3D"left" style=3D"margin: 0; padding: 0; -webkit-box-sizing:=
+ border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 28=
+2px;" width=3D"282"> <table align=3D"left" cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" role=3D"presentation" style=3D"margin: 0; padding: 0; -web=
+kit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border=
+-box; border-spacing: 0; border-collapse: collapse !important;"> <tbody> <t=
+r style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-=
+sizing: border-box; box-sizing: border-box;"><td class=3D"love-scribd-quote=
+-padding" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -=
+moz-box-sizing: border-box; box-sizing: border-box; height: 40px;" height=
+=3D"40">&nbsp;</td> </tr><tr style=3D"margin: 0; padding: 0; -webkit-box-si=
+zing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <t=
+d class=3D"love-scribd-copy-container" align=3D"left" valign=3D"top" style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box;"> <table style=3D"margin: 0; padding: =
+0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing:=
+ border-box; border-collapse: collapse; border-spacing: 0;"> <tr style=3D"m=
+argin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bord=
+er-box; box-sizing: border-box;"> <td valign=3D"top" style=3D"margin: 0; pa=
+dding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-=
+sizing: border-box;"> <img class=3D"logo light-img" src=3D"https://d15k2d11=
+r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542=
+cff6dd6a/92f0cbc6f584418c9def9397d7beca21/Icons/search_24.png" width=3D"24"=
+ style=3D"display:block;vertical-align: center; margin:0 auto;border:0;whit=
+e-space:pre;text-align:center;" alt> <!--[if !mso]><!--> <img class=3D"logo=
+ dark-img" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integr=
+ators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def9397d7beca21=
+/Icons/search_24_dk.png" width=3D"24" style=3D"display: none; vertical-alig=
+n: center; margin:0 auto;border:0;white-space:pre;text-align:center; mso-hi=
+de: all !important;"> <!--<![endif]--> </td> <td class=3D"love-scribd-reaso=
+n-padding" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; =
+-moz-box-sizing: border-box; box-sizing: border-box; width: 18px;" width=3D=
+"18">&nbsp;</td> <td valign=3D"top" style=3D"margin: 0; padding: 0; -webkit=
+-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-bo=
+x;"> <div class=3D"copy love-scribd-reason-copy" style=3D"margin: 0; paddin=
+g: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizi=
+ng: border-box; font-size: 14px; line-height: 21px; font-weight: normal; fo=
+nt-weight: 400; color: #000; text-align: left; font-style: normal; font-fam=
+ily: 'Source Sans Pro', Helvetica, sans-serif !important;"> <span style=3D"=
+font-weight:600;">Explore</span> what Scribd has to offer with a <a class=
+=3D"copy" href=3D"https://iterable.scribd.com/u/click?_t=3D92f0cbc6f584418c=
+9def9397d7beca21&_m=3Dba18836459c943c3b153d45b5a75901a&_e=3DNS2vyqcES57N-IQ=
+zJ4a0u6dixOF9aj8ku4oHfTryylrA1dI541oaCLraUfVinh7s3TWc5dqtIGXYF4PqvWbrdvbs-K=
+b1IvHXKZmQGrCX8QK2l-4nXPmFEUPM1gFjIRHGweRrg-n0GyYFLcXe_7wSZnZjG6ElbxVOvlTpO=
+dwylSpbRk_OSfsRCkhnrvoLDmt--48VxBAnrfoFoxeZNrYSNOzSwLidp4ZyEvl_gWKB1uoC5yGu=
+vJw3L_5z8Ak8k63r9QYsR8H8E0Yzh80-9JOBQA510bimqMV3oxEmzoX9BYc%3D" style=3D"fo=
+nt-weight:600; text-decoration: underline; color: #000;">free 30-day trial<=
+/a>. We=E2=80=99ll remind you before your trial ends. </div> </td> </tr> </=
+table> </td> </tr> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: =
+border-box; -moz-box-sizing: border-box; box-sizing: border-box;"><td class=
+=3D"love-scribd-reason-padding" style=3D"margin: 0; padding: 0; -webkit-box=
+-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; h=
+eight: 18px;" height=3D"18">&nbsp;</td></tr> <tr style=3D"margin: 0; paddin=
+g: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizi=
+ng: border-box;"> <td class=3D"love-scribd-copy-container" align=3D"left" v=
+align=3D"top" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-bo=
+x; -moz-box-sizing: border-box; box-sizing: border-box;"> <table style=3D"m=
+argin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bord=
+er-box; box-sizing: border-box; border-collapse: collapse; border-spacing: =
+0;"> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -m=
+oz-box-sizing: border-box; box-sizing: border-box;"> <td align=3D"left" val=
+ign=3D"top" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box;=
+ -moz-box-sizing: border-box; box-sizing: border-box;"> <table style=3D"mar=
+gin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border=
+-box; box-sizing: border-box; border-collapse: collapse; border-spacing: 0;=
+"> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz=
+-box-sizing: border-box; box-sizing: border-box;"> <td valign=3D"top" style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box;"> <img class=3D"logo light-img" src=3D=
+"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b=
+6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def9397d7beca21/Icons/browse_24.=
+png" width=3D"24" style=3D"display:block;vertical-align: center; margin:0 a=
+uto;border:0;white-space:pre;text-align:center;" alt> <!--[if !mso]><!--> <=
+img class=3D"logo dark-img" src=3D"https://d15k2d11r6t6rl.cloudfront.net/pu=
+blic/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418=
+c9def9397d7beca21/Icons/browse_24_dk.png" width=3D"24" style=3D"display: no=
+ne; vertical-align: center; margin:0 auto;border:0;white-space:pre;text-ali=
+gn:center; mso-hide: all !important;"> <!--<![endif]--> </td> <td class=3D"=
+love-scribd-reason-padding" style=3D"margin: 0; padding: 0; -webkit-box-siz=
+ing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width=
+: 18px;" width=3D"18">&nbsp;</td> <td valign=3D"top" style=3D"margin: 0; pa=
+dding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-=
+sizing: border-box;"> <div class=3D"copy love-scribd-reason-copy" style=3D"=
+margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bor=
+der-box; box-sizing: border-box; font-size: 14px; line-height: 21px; font-w=
+eight: normal; font-weight: 400; color: #000; text-align: left; font-style:=
+ normal; font-family: 'Source Sans Pro', Helvetica, sans-serif !important;"=
+> <span style=3D"font-weight:600;">Discover</span> millions of ebooks, audi=
+obooks, magazines, and podcasts, plus exclusive <a class=3D"copy" href=3D"h=
+ttps://iterable.scribd.com/u/click?_t=3D92f0cbc6f584418c9def9397d7beca21&_m=
+=3Dba18836459c943c3b153d45b5a75901a&_e=3DNS2vyqcES57N-IQzJ4a0u65-k_qJjMlYju=
+HMsG8eKNBtQab4OG425pTRDrPq7583VaWzsnFocxq__EO97JonjrHuINTEYUSGyzoPCtEHSwzJM=
+iqJe-7c8xJ_GX5KqVRSj_KFzXNp4pyNPPrwFPLLR3u3TEjAfT-FK4cpKvFmBINBMLhNcXeovHMW=
+VyVgNgq9ArDSVHiEdy0qQi35Uelnf3aJ-v1JnIfB-ritpvqoUjNHIFmhxz-ui9UHk7AXA6y3aic=
+jy4PxcZVgoomm-1V0_BqERf0ez-pbhUOtSEmPIcLpi-0jBUlP4dYTtZMkXyonmI7o2jghgMCjxV=
+sFde23XIqqGbWJYXqidRacd11EcvM%3D" style=3D"font-weight:600; text-decoration=
+: underline; color: #000;">Scribd=C2=A0Originals</a> from acclaimed authors=
+=2E </div> </td> </tr> </table> </td>=20=
+</tr> </table> </td> </tr> <tr style=3D=
+"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bo=
+rder-box; box-sizing: border-box;"><td class=3D"love-scribd-reason-padding"=
+ style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-s=
+izing: border-box; box-sizing: border-box; height: 18px;" height=3D"18">&nb=
+sp;</td></tr> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: borde=
+r-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <td class=3D"=
+love-scribd-copy-container" align=3D"left" valign=3D"top" style=3D"margin: =
+0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;=
+ box-sizing: border-box;"> <table style=3D"margin: 0; padding: 0; -webkit-b=
+ox-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;=
+ border-collapse: collapse; border-spacing: 0;"> <tr style=3D"margin: 0; pa=
+dding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-=
+sizing: border-box;"> <td align=3D"left" valign=3D"top" style=3D"margin: 0;=
+ padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; b=
+ox-sizing: border-box;"> <table style=3D"margin: 0; padding: 0; -webkit-box=
+-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; b=
+order-collapse: collapse; border-spacing: 0;"> <tr style=3D"margin: 0; padd=
+ing: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-si=
+zing: border-box;"> <td valign=3D"top" style=3D"margin: 0; padding: 0; -web=
+kit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border=
+-box;"> <img class=3D"logo light-img" src=3D"https://d15k2d11r6t6rl.cloudfr=
+ont.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0c=
+bc6f584418c9def9397d7beca21/Icons/filter_24.png" width=3D"24" style=3D"disp=
+lay:block;vertical-align: center; margin:0 auto;border:0;white-space:pre;te=
+xt-align:center;" alt> <!--[if !mso]><!--> <img class=3D"logo dark-img" src=
+=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713=
+-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def9397d7beca21/Icons/filter_=
+24_dk.png" width=3D"24" style=3D"display: none; vertical-align: center; mar=
+gin:0 auto;border:0;white-space:pre;text-align:center; mso-hide: all !impor=
+tant;"> <!--<![endif]--> </td> <td class=3D"love-scribd-reason-padding" sty=
+le=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizin=
+g: border-box; box-sizing: border-box; width: 18px;" width=3D"18">&nbsp;</t=
+d> <td valign=3D"top" style=3D"margin: 0; padding: 0; -webkit-box-sizing: b=
+order-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <div clas=
+s=3D"copy love-scribd-reason-copy" style=3D"margin: 0; padding: 0; -webkit-=
+box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box=
+; font-size: 14px; line-height: 21px; font-weight: normal; font-weight: 400=
+; color: #000; text-align: left; font-style: normal; font-family: 'Source S=
+ans Pro', Helvetica, sans-serif !important;"> <span style=3D"font-weight:60=
+0;">Personalize</span> reading lists, choose color themes and listening spe=
+ed, plus enjoy <a class=3D"copy" href=3D"https://iterable.scribd.com/u/clic=
+k?_t=3D92f0cbc6f584418c9def9397d7beca21&_m=3Dba18836459c943c3b153d45b5a7590=
+1a&_e=3DNS2vyqcES57N-IQzJ4a0u6dixOF9aj8ku4oHfTryylrA1dI541oaCLraUfVinh7s3TW=
+c5dqtIGXYF4PqvWbrdvbs-Kb1IvHXKZmQGrCX8QK2l-4nXPmFEUPM1gFjIRHGweRrg-n0GyYFLc=
+Xe_7wSZqkKKrPT5ad9GXURvgYXXCUxGdMnHuopXcUIxBYnaekwge7eFomiXg7YhBY0KqrcjI-MX=
+Ut7BavmZLN-Cn0pSPXXG1XxVduMN4EYpYF4dXwMNQWqRD-d3P-uJjm4mMWoK0pGEdvcxyNAGBWU=
+0YvAqPI%3D" style=3D"font-weight:600; text-decoration: underline; color: #0=
+00;">recommendations</a> based on your interests. </div> </td> </tr> </tabl=
+e> </td> </tr> </table> </td> </tr> <tr style=3D"margin: 0; padding: 0; -we=
+bkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: borde=
+r-box;"><td class=3D"love-scribd-reason-padding" style=3D"margin: 0; paddin=
+g: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizi=
+ng: border-box; height: 18px;" height=3D"18">&nbsp;</td></tr> <tr style=3D"=
+margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bor=
+der-box; box-sizing: border-box;"> <td class=3D"love-scribd-copy-container"=
+ align=3D"left" valign=3D"top" style=3D"margin: 0; padding: 0; -webkit-box-=
+sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;"> =
+<table style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz=
+-box-sizing: border-box; box-sizing: border-box; border-collapse: collapse;=
+ border-spacing: 0;"> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizin=
+g: border-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <td a=
+lign=3D"left" valign=3D"top" style=3D"margin: 0; padding: 0; -webkit-box-si=
+zing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <t=
+able style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-b=
+ox-sizing: border-box; box-sizing: border-box; border-collapse: collapse; b=
+order-spacing: 0;"> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing:=
+ border-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <td val=
+ign=3D"top" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box;=
+ -moz-box-sizing: border-box; box-sizing: border-box;"> <img class=3D"logo =
+light-img" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integr=
+ators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def9397d7beca21=
+/Icons/download_24.png" width=3D"24" style=3D"display:block;vertical-align:=
+ center; margin:0 auto;border:0;white-space:pre;text-align:center;" alt> <!=
+--[if !mso]><!--> <img class=3D"logo dark-img" src=3D"https://d15k2d11r6t6r=
+l.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6d=
+d6a/92f0cbc6f584418c9def9397d7beca21/Icons/download_24_dk.png" width=3D"24"=
+ style=3D"display: none; vertical-align: center; margin:0 auto;border:0;whi=
+te-space:pre;text-align:center; mso-hide: all !important;"> <!--<![endif]--=
+> </td> <td class=3D"love-scribd-reason-padding" style=3D"margin: 0; paddin=
+g: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizi=
+ng: border-box; width: 18px;" width=3D"18">&nbsp;</td> <td valign=3D"top" s=
+tyle=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-siz=
+ing: border-box; box-sizing: border-box;"> <div class=3D"copy love-scribd-r=
+eason-copy" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box;=
+ -moz-box-sizing: border-box; box-sizing: border-box; font-size: 14px; line=
+-height: 21px; font-weight: normal; font-weight: 400; color: #000; text-ali=
+gn: left; font-style: normal; font-family: 'Source Sans Pro', Helvetica, sa=
+ns-serif !important;"> <span style=3D"font-weight:600;">Enjoy</span> Scribd=
+ on all <a class=3D"copy" href=3D"https://iterable.scribd.com/u/click?_t=3D=
+92f0cbc6f584418c9def9397d7beca21&_m=3Dba18836459c943c3b153d45b5a75901a&_e=
+=3DNS2vyqcES57N-IQzJ4a0u5EOWee1SP4M18vCztdjIB9ZmoSAeU6jE5WW7xzwGgBboIKHhX7e=
+w51xS8ppzhfQbFYbj-CqHAyoM7t7hUnPDXS3RcZLmdGZmZUOaZc5xQii2LfRRQVUuEG5YsCBCOj=
+G2J2avktZ0GZt-sonAaKPJyX6NWEkRDyYXQ1Dzp3PB_2j_czkmtZVOAzIeZ-9SXEYXx2Me1puGY=
+GKZqaO2ZcNCqIsp5y84hF93XEkx0xL6P9DcZJKxx02Ti0gMV6K_RWqVuNa4AEnAbFRRloRebLzb=
+pS29r1O0gcWP_tf-3RsfAZ3l80Im_2ixxNhmfLODsc0TQnLaYImne2kf1-ieb4WiVE%3D" styl=
+e=3D"font-weight:600; text-decoration: underline; color: #000;">iOS</a> and=
+ <a class=3D"copy" href=3D"https://iterable.scribd.com/u/click?_t=3D92f0cbc=
+6f584418c9def9397d7beca21&_m=3Dba18836459c943c3b153d45b5a75901a&_e=3DNS2vyq=
+cES57N-IQzJ4a0u-TkofNc-RIP93kJgeudF8_aYl7qINX7CQ6DyeVE7ZaM9BXzwcJy0YXubfrQS=
+dxMvvukv28igxAyod6WwnIuxyjFSBnSg8vV18nKWkLyBUu8bpfoMuPZxB1MjHJ0DTyBhARWA2Jk=
+yApx_-sube0mmB3eEQc5UpsSxoXsUnEkLTCPHTIUFZt6vVlEbMkc5-VVUlVTnGMgG7fBek1A5nW=
+uYPTSjg2UzuvwSUlVAUyyKISpQjPaJlRQ6SUz03qi9pe0Emu4L6KRMA7DqXA0aM1rBQq3k1GnRe=
+x4HuX5YSj16kSFPqDQDV2viEljoVSuFHv2NskNcWgDMOAw4AzMaLP2qUM%3D" style=3D"font=
+-weight:600; text-decoration: underline; color: #000;">Android</a> devices.=
+ Download content for offline reading and listening. </div> </td> </tr> </t=
+able> </td> </tr> </table> </td> </tr> </tbody> </table> </td> <td class=3D=
+"love-scribd-padding love-scribd-cell" style=3D"margin: 0; padding: 0; -web=
+kit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border=
+-box; width: 64px;" width=3D"64">&nbsp;</td> </tr> </table> </td> </tr> </t=
+body> </table> </td> </tr> </tbody> </table> </td> </tr> <tr style=3D"margi=
+n: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-b=
+ox; box-sizing: border-box;"> <td style=3D"margin: 0; padding: 0; -webkit-b=
+ox-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;=
+"> <table class=3D"thumbnail-section" align=3D"center" cellpadding=3D"0" ce=
+llspacing=3D"0" border=3D"0" role=3D"presentation" style=3D"padding: 0; -we=
+bkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: borde=
+r-box; border-spacing: 0; margin: 0 auto; border-collapse: collapse !import=
+ant;"> <tbody> <!-- thumbnail lockup headline --> <tr style=3D"margin: 0; p=
+adding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box=
+-sizing: border-box;"><td class=3D"headline-padding" style=3D"margin: 0; pa=
+dding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-=
+sizing: border-box; height: 32px;" height=3D"32">&nbsp;</td></tr> <tr style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box;"> <td style=3D"margin: 0; padding: 0; =
+-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bo=
+rder-box;"> <table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" bor=
+der=3D"0" role=3D"presentation" style=3D"padding: 0; -webkit-box-sizing: bo=
+rder-box; -moz-box-sizing: border-box; box-sizing: border-box; border-spaci=
+ng: 0; margin: 0 auto; border-collapse: collapse !important;"> <tbody> <tr =
+style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-si=
+zing: border-box; box-sizing: border-box;"> <td class=3D"padding-left" styl=
+e=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing=
+: border-box; box-sizing: border-box; width: 48px;" width=3D"48">&nbsp;</td=
+> <td class=3D"inside-margins" align=3D"center" style=3D"margin: 0; padding=
+: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizin=
+g: border-box; width: 544px;" width=3D"544"> <table align=3D"center" cellpa=
+dding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentation" style=3D"p=
+adding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box=
+-sizing: border-box; border-spacing: 0; margin: 0 auto; border-collapse: co=
+llapse !important;"> <tbody> <!-- body-headline --> <tr style=3D"margin: 0;=
+ padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; b=
+ox-sizing: border-box;"> <td align=3D"center" valign=3D"top" style=3D"margi=
+n: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-b=
+ox; box-sizing: border-box; font-family: 'Source Serif Pro', Georgia, serif=
+ !important;"> <div class=3D"body-headline headline" style=3D"margin: 0; pa=
+dding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-=
+sizing: border-box; font-size: 26px; line-height: 33.8px; font-weight: 600;=
+ color: #000; text-align: center; font-style: normal; font-family: 'Source =
+Serif Pro', Georgia, serif !important;"> The best books and audiobooks are =
+waiting=C2=A0for=C2=A0you </div> </td> </tr> <!-- end thumbnail lockup head=
+line --> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box=
+; -moz-box-sizing: border-box; box-sizing: border-box;"><td class=3D"thumbn=
+ail-img-padding" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border=
+-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 32px;" h=
+eight=3D"32">&nbsp;</td></tr> <!-- thumbnail lockup image --> <tr style=3D"=
+margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bor=
+der-box; box-sizing: border-box;"> <td style=3D"-webkit-box-sizing: border-=
+box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0 auto; t=
+ext-align: center; border-collapse: collapse !important; border-spacing: 0 =
+!important; padding: 0 !important;" align=3D"center"> <table align=3D"cente=
+r" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentation" s=
+tyle=3D"padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border=
+-box; box-sizing: border-box; border-spacing: 0; margin: 0 auto; border-col=
+lapse: collapse !important;"> <tbody> <tr style=3D"margin: 0; padding: 0; -=
+webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bor=
+der-box;"> <td align=3D"center" style=3D"margin: 0; -webkit-box-sizing: bor=
+der-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0;">=
+ <a href=3D"https://iterable.scribd.com/u/click?_t=3D92f0cbc6f584418c9def93=
+97d7beca21&_m=3Dba18836459c943c3b153d45b5a75901a&_e=3DNS2vyqcES57N-IQzJ4a0u=
+6dixOF9aj8ku4oHfTryylrA1dI541oaCLraUfVinh7s3TWc5dqtIGXYF4PqvWbrdvbs-Kb1IvHX=
+KZmQGrCX8QK2l-4nXPmFEUPM1gFjIRHGweRrg-n0GyYFLcXe_7wSZundpg0fJCdAGwxUTf7l6tR=
+puOKv6mdVetkCsEofwnb7IeqxRIVpM8mUuLuJxf-BKLADhXEehLKN6HnsN-YQJZZoRFnVUjV2MW=
+vZ0R0ONTboYo9YDX0ckBBfQDS00ryCo_KM_4RntEDzhtJ3co08a0E%3D" style=3D"text-dec=
+oration:none;" target=3D"_blank"> <table class=3D"desktop-element" style=3D=
+"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bo=
+rder-box; box-sizing: border-box; border-spacing: 0; border-collapse: colla=
+pse !important;"> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: b=
+order-box; -moz-box-sizing: border-box; box-sizing: border-box;"> <td style=
+=3D"margin: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;=
+ box-sizing: border-box; border-collapse: collapse !important; border-spaci=
+ng: 0 !important; padding: 0 !important;"> <img src=3D"https://d15k2d11r6t6=
+rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6=
+dd6a/92f0cbc6f584418c9def9397d7beca21/Lifecycle/Images/Q2Q3_2022/EN/d_thumb=
+nail_lockup_01.png" width=3D"544" style=3D"display:block;margin:0 auto;bord=
+er:0;white-space:pre;text-align:center;" alt> </td> </tr> </table> <!--[if =
+!mso]><!--> <table class=3D"mobile-element" style=3D"margin: 0; padding: 0;=
+ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: b=
+order-box; border-spacing: 0; display: none; border-collapse: collapse !imp=
+ortant; mso-hide: all !important;"> <tr style=3D"margin: 0; padding: 0; -we=
+bkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: borde=
+r-box;"> <td style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box=
+; -moz-box-sizing: border-box; box-sizing: border-box; mso-hide: all !impor=
+tant;"> <img src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Inte=
+grators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def9397d7beca=
+21/Lifecycle/Images/Q2Q3_2022/EN/m_thumbnail_lockup_01.png" width=3D"100%" =
+style=3D"mso-hide: all !important;margin:0 auto;border:0;white-space:pre;te=
+xt-align:center; max-width: 364px;" alt> </td> </tr> </table> <!--<![endif]=
+--> </a> </td> </tr> </tbody> </table> </td> </tr> <tr style=3D"margin: 0; =
+padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; bo=
+x-sizing: border-box;"><td class=3D"thumbnail-img-padding" style=3D"margin:=
+ 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box=
+; box-sizing: border-box; height: 32px;" height=3D"32">&nbsp;</td></tr> <!-=
+-button--> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-b=
+ox; -moz-box-sizing: border-box; box-sizing: border-box;"> <td align=3D"cen=
+ter" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-b=
+ox-sizing: border-box; box-sizing: border-box;"> <div style=3D"margin: 0; p=
+adding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box=
+-sizing: border-box;"><!--[if mso]><v:roundrect class=3D"button" xmlns:v=3D=
+"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office=
+:word" href=3D"http://" style=3D"height:40px;v-text-anchor:middle;width:300=
+px;" arcsize=3D"10%" stroke=3D"f" fillcolor=3D"#20828D"> <w:anchorlock/> <c=
+enter><![endif]--> <a class=3D"button" href=3D"https://iterable.scribd.com/=
+u/click?_t=3D92f0cbc6f584418c9def9397d7beca21&_m=3Dba18836459c943c3b153d45b=
+5a75901a&_e=3DNS2vyqcES57N-IQzJ4a0u1DFJmJK9POeI3iKKw4ZTmUgp9T-Y2IyxLkQVhiZo=
+xOGz3lFURTpgq5APhTje_Ap5IV7twzhPG2d85NgDeiID3hb5JTlR0VKZzzyPcKcV6jm9ROWcYp_=
+vHUftuH_A5XbCHUrJVIfRZe2L2x3Dwp1JKChM83ddxh78r08izUmdGdBajWBmUyBh5GPl9Vo40V=
+EMd8L9FA66QNmjSkASa86qaq0ENKHHYhqbINDjDF6jMsNLJuzo3EBGq4zc4AyMneECBiTRzz26a=
+g_daY38rF_NuY%3D" style=3D"background-color: #20828D; width: 300px; font-si=
+ze: 16px; line-height:20px; font-family: 'Source Sans Pro', Helvetica, sans=
+-serif !important; font-weight: 600; text-decoration: none; padding: 10px 0=
+px; color: #ffffff; -webkit-border-radius:4px; -moz-border-radius:4px; bord=
+er-radius:4px; display: inline-block; mso-padding-alt: 0; letter-spacing:0.=
+03em; cursor:pointer; text-align: center;"> <!--[if mso]><i style=3D"letter=
+-spacing: 40px; mso-font-width: -100%;">&nbsp;</i><![endif]--> <span>Read f=
+ree for 30 days</span> <!--[if mso]><i style=3D"letter-spacing: 40px; mso-f=
+ont-width: -100%;">&nbsp;</i><![endif]--> </a> <!--[if mso]></center> </v:r=
+oundrect><![endif]--> </div> </td> </tr> <!--end button--> <!--[if !mso]><t=
+r><td class=3D"button-disclaimer-padding" style=3D"height:12px; "height=3D"=
+12">&nbsp;</td></tr><![endif]--> <tr style=3D"margin: 0; padding: 0; -webki=
+t-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-b=
+ox;"> <td align=3D"center" valign=3D"top" style=3D"margin: 0; padding: 0; -=
+webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bor=
+der-box; padding-top: 12px; font-family: 'Source Sans Pro', Helvetica, sans=
+-serif !important;"> <div class=3D"copy" style=3D"margin: 0; padding: 0; -w=
+ebkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bord=
+er-box; font-size: 14px; line-height: 19px; font-weight: normal; font-weigh=
+t: 400; color: #303140; text-align: center; font-style: normal; font-family=
+: 'Source Sans Pro', Helvetica, sans-serif !important;"> Cancel anytime. </=
+div> </td> </tr> </tbody> </table> </td> <td class=3D"padding-right" style=
+=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing:=
+ border-box; box-sizing: border-box; width: 48px;" width=3D"48">&nbsp;</td>=
+ </tr> </tbody> </table> </td> </tr> </tbody> </table> </td> </tr> <tr styl=
+e=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing=
+: border-box; box-sizing: border-box;"> <td style=3D"margin: 0; padding: 0;=
+ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: b=
+order-box;"> <table class=3D"quote-section" align=3D"center" cellpadding=3D=
+"0" cellspacing=3D"0" border=3D"0" role=3D"presentation" style=3D"padding: =
+0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing:=
+ border-box; border-spacing: 0; margin: 0 auto; border-collapse: collapse !=
+important;"> <tbody> <!-- user quotes lockup headline --> <!-- <tr> <td> <t=
+able align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=
+=3D"presentation" style=3D"border-collapse: collapse !important; margin:0 a=
+uto;"> <tbody> <tr> <td class=3D"padding-left" style=3D"width:70px; "width=
+=3D"70">&nbsp;</td> <td class=3D"inside-margins" align=3D"center" style=3D"=
+width:500px;"> <table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0" role=3D"presentation" style=3D"border-collapse: collapse !impo=
+rtant; margin:0 auto;"> <tbody> <tr><td class=3D"headline-padding" style=3D=
+"height:32px; "height=3D"32">&nbsp;</td></tr> <tr> <td align=3D"center" val=
+ign=3D"top" style=3D"font-family:'Source Serif Pro', Georgia, serif !import=
+ant;"> <div class=3D"body-headline headline" style=3D"font-family:'Source S=
+erif Pro', Georgia, serif !important; font-size: 26px; line-height: 33.8px;=
+ font-weight: 600; color: #000; text-align: center; font-style: normal;"> G=
+et inspired by real Scribd readers* </div> </td> </tr> </tbody> </table> </=
+td> <td class=3D"padding-right" style=3D"width:70px; "width=3D"70">&nbsp;</=
+td> </tr> </tbody> </table> </td> </tr> --> <!-- end user quotes lockup hea=
+dline --> <!-- <tr><td class=3D"thumbnail-img-padding" style=3D"height:32px=
+; "height=3D"32">&nbsp;</td></tr> --> <tr style=3D"margin: 0; padding: 0; -=
+webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bor=
+der-box;"> <td style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-b=
+ox; -moz-box-sizing: border-box; box-sizing: border-box;"> <table style=3D"=
+margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: bor=
+der-box; box-sizing: border-box; border-collapse: collapse; border-spacing:=
+ 0;"> <tr style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -=
+moz-box-sizing: border-box; box-sizing: border-box;"> <td class=3D"padding-=
+left" style=3D"margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-=
+box-sizing: border-box; box-sizing: border-box; width: 32px;" width=3D"32">=
+&nbsp;</td> <td class=3D"inside-margins" align=3D"center" style=3D"margin: =
+0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;=
+ box-sizing: border-box; width: 594px;" width=3D"594"> <table align=3D"cent=
+er" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentation" =
+style=3D"padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: borde=
+r-box; box-sizing: border-box; border-spacing: 0; margin: 0 auto; border-co=
+llapse: collapse !important;"> <tbody> <!-- <tr> <td> <table class=3D"quote=
+-tile-container"> <tr> <td class=3D"quote-tile"> <table class=3D"quote-tile=
+-table" style=3D"border-collapse: collapse !important; border: 1px solid #C=
+FD6E0; width: 288px; height: 270px;"> <tr><td class=3D"quote-tile-padding-b=
+ottom" style=3D"height:24px; "height=3D"24">&nbsp;</td> <tr> <td> <table cl=
+ass=3D"quote-tile-content"> <td class=3D"quote-tile-padding-left" style=3D"=
+width:24px;" width=3D"24">&nbsp;</td> <td class=3D"quote-column" valign=3D"=
+top" style=3D"vertical-align: top; margin: 0 auto; text-align:center;"> <ta=
+ble style=3D"border-collapse: collapse !important;"> <tr class=3D"title-row=
+" align=3D"left" valign=3D"top" style=3D"vertical-align: top;"> <td align=
+=3D"left" valign=3D"top" style=3D"vertical-align: top;"> --> <!-- img --> <=
+!-- <div class=3D"quote-mark" style=3D"text-align: left;"> <picture> <img c=
+lass=3D"logo light-img" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public=
+/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9de=
+f9397d7beca21/Icons/quote_mark.png" width=3D"20" style=3D"display:block;ver=
+tical-align: center; border:0;white-space:pre;text-align:left;" alt=3D""> -=
+-> <!--[if !mso]><!--> <!-- <img class=3D"logo dark-img" src=3D"https://d15=
+k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e=
+-c542cff6dd6a/92f0cbc6f584418c9def9397d7beca21/Icons/quote_mark_dk.png" wid=
+th=3D"20" style=3D"display: none; vertical-align: center; border:0;white-sp=
+ace:pre;text-align:left; mso-hide: all !important;"/> --> <!--<![endif]--> =
+<!-- </picture> </div> </td> </tr> <tr><td class=3D"quote-padding" style=3D=
+"height:24px; "height=3D"24">&nbsp;</td></tr> <tr> <td align=3D"left" valig=
+n=3D"top" style=3D"font-family:'Source Sans Pro', Helvetica, sans-serif !im=
+portant;"> <div class=3D"copy quote" style=3D"font-family:'Source Sans Pro'=
+, Helvetica, sans-serif !important; font-size: 18px; line-height: 25.5px; f=
+ont-weight: 400; color: #000; text-align: left; font-style: normal; ">This =
+app is great! It=E2=80=99s like the Netflix of books! As a homeschool mom, =
+this app has saved us $$$. </div> </td> </tr> <tr><td class=3D"quote-paddin=
+g" style=3D"height:24px; "height=3D"24">&nbsp;</td></tr> --> <!-- divider -=
+-> <!-- <tr> <td> <div class=3D"quote-mark" style=3D"text-align: left;"> <p=
+icture> <img class=3D"logo light-img" src=3D"https://d15k2d11r6t6rl.cloudfr=
+ont.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0c=
+bc6f584418c9def9397d7beca21/Icons/divider.png" width=3D"40" style=3D"displa=
+y:block;vertical-align: center; border:0;white-space:pre;text-align:left;" =
+alt=3D""> --> <!--[if !mso]><!--> <!-- <img class=3D"logo dark-img" src=3D"=
+https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6=
+a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def9397d7beca21/Icons/divider_dk.=
+png" width=3D"40" style=3D"display: none; vertical-align: center; border:0;=
+white-space:pre;text-align:left; mso-hide: all !important;"/> --> <!--<![en=
+dif]--> <!-- </picture> </div> --> <!-- end divider --> <!-- </td> </tr> <t=
+r><td class=3D"quote-padding" style=3D"height:24px; "height=3D"24">&nbsp;</=
+td></tr> <tr> <td align=3D"left" valign=3D"top" style=3D"font-family:'Sourc=
+e Serif Pro', Georgia, serif !important;"> <div class=3D"copy user-name" st=
+yle=3D"font-family:'Source Serif Pro', Georgia, serif !important; font-size=
+: 16px; line-height: 20.8px; font-weight: 600; color: #000; text-align: lef=
+t; font-style: normal;">Amy D. </div> </td> </tr> </table> </td> <td class=
+=3D"quote-tile-padding-right" style=3D"width:24px;" width=3D"24">&nbsp;</td=
+> </table> </td> </tr> <tr><td class=3D"quote-tile-padding-bottom" style=3D=
+"height:24px; "height=3D"24">&nbsp;</td></tr> </table> </td> <td class=3D"q=
+uote-spacer" width=3D"18" style=3D"width: 18px;"></td> <td class=3D"quote-t=
+ile"> <table class=3D"quote-tile-table" style=3D"border-collapse: collapse =
+!important; border: 1px solid #CFD6E0; width: 288px; height: 270px;"> <tr><=
+td class=3D"quote-tile-padding-bottom" style=3D"height:24px; "height=3D"24"=
+>&nbsp;</td> <tr> <td> <table class=3D"quote-tile-content"> <td class=3D"qu=
+ote-tile-padding-left" style=3D"width:24px;" width=3D"24">&nbsp;</td> <td c=
+lass=3D"quote-column" valign=3D"top" style=3D"vertical-align: top; margin: =
+0 auto; text-align:center;"> <table style=3D"border-collapse: collapse !imp=
+ortant;"> <tr class=3D"title-row" align=3D"left" valign=3D"top" style=3D"ve=
+rtical-align: top;"> <td align=3D"left" valign=3D"top" style=3D"vertical-al=
+ign: top;"> --> <!-- img --> <!-- <div class=3D"quote-mark" style=3D"text-a=
+lign: left;"> <picture> <img class=3D"logo light-img" src=3D"https://d15k2d=
+11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c5=
+42cff6dd6a/92f0cbc6f584418c9def9397d7beca21/Icons/quote_mark.png" width=3D"=
+20" style=3D"display:block;vertical-align: center; border:0;white-space:pre=
+;text-align:left;" alt=3D""> --> <!--[if !mso]><!--> <!-- <img class=3D"log=
+o dark-img" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integ=
+rators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def9397d7beca2=
+1/Icons/quote_mark_dk.png" width=3D"20" style=3D"display: none; vertical-al=
+ign: center; border:0;white-space:pre;text-align:left; mso-hide: all !impor=
+tant;"/> --> <!--<![endif]--> <!-- </picture> </div> </td> </tr> <tr><td cl=
+ass=3D"quote-padding" style=3D"height:24px; "height=3D"24">&nbsp;</td></tr>=
+ <tr> <td align=3D"left" valign=3D"top" style=3D"font-family:'Source Sans P=
+ro', Helvetica, sans-serif !important;"> <div class=3D"copy quote" style=3D=
+"font-family:'Source Sans Pro', Helvetica, sans-serif !important; font-size=
+: 18px; line-height: 25.5px; font-weight: 400; color: #000; text-align: lef=
+t; font-style: normal; ">I have found and saved so many books to read and l=
+isten to that would have otherwise cost me a fortune. </div> </td> </tr> <t=
+r><td class=3D"quote-padding" style=3D"height:24px; "height=3D"24">&nbsp;</=
+td></tr> --> <!-- divider --> <!-- <tr> <td> <div class=3D"quote-mark" styl=
+e=3D"text-align: left;"> <picture> <img class=3D"logo light-img" src=3D"htt=
+ps://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-4=
+6bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def9397d7beca21/Icons/divider.png" w=
+idth=3D"40" style=3D"display:block;vertical-align: center; border:0;white-s=
+pace:pre;text-align:left;" alt=3D""> --> <!--[if !mso]><!--> <!-- <img clas=
+s=3D"logo dark-img" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/use=
+rs/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def939=
+7d7beca21/Icons/divider_dk.png" width=3D"40" style=3D"display: none; vertic=
+al-align: center; border:0;white-space:pre;text-align:left; mso-hide: all !=
+important;"/> --> <!--<![endif]--> <!-- </picture> </div> --> <!-- end divi=
+der --> <!-- </td> </tr> <tr><td class=3D"quote-padding" style=3D"height:24=
+px; "height=3D"24">&nbsp;</td></tr> <tr> <td align=3D"left" valign=3D"top" =
+style=3D"font-family:'Source Serif Pro', Georgia, serif !important;"> <div =
+class=3D"copy user-name" style=3D"font-family:'Source Serif Pro', Georgia, =
+serif !important; font-size: 16px; line-height: 20.8px; font-weight: 600; c=
+olor: #000; text-align: left; font-style: normal;">Heather J. </div> </td> =
+</tr> </table> </td> <td class=3D"quote-tile-padding-right" style=3D"width:=
+24px;" width=3D"24">&nbsp;</td> </table> </td> </tr> <tr><td class=3D"quote=
+-tile-padding-bottom" style=3D"height:24px; "height=3D"24">&nbsp;</td></tr>=
+ </table> </td> </tr> </table> </td> </tr> --> <!-- <tr><td class=3D"body-t=
+iles-padding-bottom" style=3D"height:32px; "height=3D"32">&nbsp;</td></tr> =
+--> <!-- end BODY --> <!-- <tr><td class=3D"section-padding-bottom" style=
+=3D"height:40px; "height=3D"40">&nbsp;</td></tr> <tr> <td class=3D"keyline"=
+ style=3D"font-size: 1px; line-height: 1px; border-top: 1px solid #d6d6d6; =
+width: 100%; text-align: center; padding-bottom:16px;" width=3D"100%" valig=
+n=3D"top">&nbsp;</td> </tr> --> <!--[if mso]><tr><td class=3D"keyline-paddi=
+ng-bottom" style=3D"height:16px; "height=3D"16">&nbsp;</td></tr><![endif]--=
+> <!--footnote--> <!-- <tr> <td align=3D"center" valign=3D"top" style=3D"fo=
+nt-family:'Source Sans Pro', Helvetica, sans-serif !important;"> <div class=
+=3D"footnote-copy" style=3D"font-family:'Source Sans Pro', Helvetica, sans-=
+serif !important; font-size: 12px !important; line-height: 15px; font-weigh=
+t: normal; font-weight: 400; color: #434A67; text-align: center; font-style=
+: normal;">*Testimonials from actual Scribd customers. </div> </td> </tr> <=
+tr><td class=3D"footnote-padding-bottom" style=3D"height:24px; "height=3D"2=
+4">&nbsp;</td></tr> --> <!--end footnote--> <tr style=3D"margin: 0; padding=
+: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizin=
+g: border-box;"><td class=3D"section-padding-bottom" style=3D"margin: 0; pa=
+dding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-=
+sizing: border-box; height: 56px;" height=3D"56">&nbsp;</td></tr> </tbody> =
+</table> </td> <td class=3D"padding-right" style=3D"margin: 0; padding: 0; =
+-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: bo=
+rder-box; width: 32px;" width=3D"32">&nbsp;</td> </tr> </table> </td> </tr>=
+ </tbody> </table> </td> </tr> </table> <!-- end body --> </td> </tr> </tab=
+le> </td> </tr> <!--end top--> </table> <table class=3D"footer" style=3D"te=
+xt-align:center;border-collapse:collapse!important;margin:0 auto;max-width:=
+640px;width:100%;" align=3D"center" max-width=3D"640" width=3D"100%" cellpa=
+dding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentation"><tr><td cl=
+ass=3D"footer-darkmode" style=3D"background-color:#F0F2F9;"><table class=3D=
+"footer" width=3D"100%" align=3D"center" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" role=3D"presentation" style=3D"text-align:center;border-coll=
+apse:collapse!important;margin:0 auto;max-width:640px;"><tbody><tr><td alig=
+n=3D"center"> <table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" b=
+order=3D"0" role=3D"presentation" style=3D"border-collapse:collapse!importa=
+nt;margin:0 auto;"><tbody><tr><td class=3D"social-padding-top" style=3D"hei=
+ght:40px;"height=3D"40">&nbsp; </td></tr><tr><td align=3D"center"> <table c=
+lass=3D"footer-icon-container" style=3D"border-collapse:collapse!important;=
+"><tr><td> <table align=3D"center" style=3D"border-collapse:collapse!import=
+ant;"><tr><td class=3D"footer-social-icon-container" align=3D"left" valign=
+=3D"top" style=3D"padding-right:20px;font-family:'Source Sans Pro',Helvetic=
+a,sans-serif!important;"><div> <picture> <a href=3D"https://iterable.scribd=
+=2Ecom/u/click?_t=3D92f0cbc6f584418c9de=
+f9397d7beca21&_m=3Dba18836459c943c3b15=
+3d45b5a75901a&_e=3DNS2vyqcES57N-IQzJ4a0uzYT9ryDV3HwXKknTcNfdScucA0TpH18jlvY=
+E77nSbzUoZxB6bsLXmUGm5LkZzUjo__JiKtyOF0KEAHlWqWl1FzeYgN8h66XH3h5mSh81DnZAIF=
+CBrfhC__kj3LU_amL279F8UsDujVN8SUa2LpaoB-E6WCIg5PwSYvO9eBPZBVOxNHcq_HsMeGTYu=
+8E0xTbbcfWa_mckhGZMqqGQPzijCOzz2F4a3Z2wPpEb75itcDvotPKA1Asl9k6Eo2qF0ZOpDkta=
+ro87gKoqTETJDunSkIU1f3UuLer2Am7iiVwFPiM" target=3D"blank"> <img class=3D"so=
+cial-icon" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integr=
+ators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def9397d7beca21=
+/Brand-Assets_2021/icons/footer-social-icons/icon_ig.png" alt=3D"Instagram"=
+ class=3D"show-me-always" border=3D"0" width=3D"16" style=3D"font-size:8px;=
+display:block;text-align:left;vertical-align:center;"/></a></picture></div>=
+ </td><td class=3D"footer-social-icon-container" align=3D"left" valign=3D"t=
+op" style=3D"padding-right:20px;font-family:'Source Sans Pro',Helvetica,san=
+s-serif!important;"><div> <picture> <a href=3D"https://iterable.scribd.com/=
+u/click?_t=3D92f0cbc6f584418c9def9397d7beca21&_m=3Dba18836459c943c3b153d45b=
+5a75901a&_e=3DNS2vyqcES57N-IQzJ4a0u3D052BpK4hTkUdkxkdj_OkTdCMkha3-p_dvgKyec=
+i13Z-YQZKzoA8euesVfcWBCMQhgUprwoKyZ5SZQ7rF4ad9qP7mJkKMM0UU_9_MioBZz3xl1alo6=
+Y2wk9czB8qJWTwpR6XPWv6Se2C20RXqHbffU3r7Cb_9sTQfHswZCdZovIQCq5MbjZ6kVCtCfjH3=
+-b8rjlV32jdFNDbocPQnAcpBD-rLFlb34DC0pqO0p8pvSnnWcKvF9rXhZpoBSjFjYMbIp6Z-cHF=
+m3HpJbtDaFrzPdmts2NjI6syqa7GpvfrDb" target=3D"blank"> <img class=3D"social-=
+icon" src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators=
+/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c9def9397d7beca21/Bran=
+d-Assets_2021/icons/footer-social-icons/icon_fb.png" alt=3D"Facebook" class=
+=3D"show-me-always" border=3D"0" width=3D"16" style=3D"font-size:8px;displa=
+y:block;text-align:left;vertical-align:center;"/></a></picture></div> </td>=
+<td class=3D"footer-social-icon-container" align=3D"left" valign=3D"top" st=
+yle=3D"padding-right:20px;font-family:'Source Sans Pro',Helvetica,sans-seri=
+f!important;"><div> <picture> <a href=3D"https://iterable.scribd.com/u/clic=
+k?_t=3D92f0cbc6f584418c9def9397d7beca21&_m=3Dba18836459c943c3b153d45b5a7590=
+1a&_e=3DNS2vyqcES57N-IQzJ4a0u0YgTQ5hvpjr68CLr1RktPW-TCjvLg_VYvkuFaEcdCZqep3=
+gckJ4917th9-aSYsa5CLl8113wfrOA16RNDe7fiq2H1VRgy71H8OifAwRh3pnS-SyzGcZbE5ph0=
+YuNBY-r7bzQTehbPFeQeeNh6fbG3E07Ksm-enar5ZB20H_9_J2IACE2TUwmfPY4340uqquV9kWi=
+A1vtcYmaaIyGUFnXRVbQ9DNK8kIHfZtY2a9u0mety7fUI-96W-O8cNRBVTAEnxDg-yetF51SBgj=
+_vsCeis%3D" target=3D"blank"> <img class=3D"social-icon" src=3D"https://d15=
+k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e=
+-c542cff6dd6a/92f0cbc6f584418c9def9397d7beca21/Brand-Assets_2021/icons/foot=
+er-social-icons/icon_tw.png" alt=3D"Twitter" class=3D"show-me-always" borde=
+r=3D"0" width=3D"16" style=3D"font-size:8px;display:block;text-align:left;v=
+ertical-align:center;"/></a></picture></div> </td><td class=3D"footer-socia=
+l-icon-container" align=3D"left" valign=3D"top" style=3D"padding-right:20px=
+;font-family:'Source Sans Pro',Helvetica,sans-serif!important;"><div> <pict=
+ure> <a href=3D"https://iterable.scribd.com/u/click?_t=3D92f0cbc6f584418c9d=
+ef9397d7beca21&_m=3Dba18836459c943c3b153d45b5a75901a&_e=3DNS2vyqcES57N-IQzJ=
+4a0uyWH8ZRYq5h3I88LWBhlewWQp_-wl0fingt61DR9qB98RAJ4aZzQr2CJIKNt_hVb_jWv3LgM=
+p_3Pk_6qyDsW0jtouIc1kxRTxC0i_0-cHfnh94cMu7ELdB4MsIhED4O-X-nxarRfd7u6eRjCVqi=
+vf8fu8Ohn1-Yvg6TSVgkdjgVHbkJA0kCA9xQ26kU14OyHSpCw2iBcffXRlWRzisH7gWr8yNVe9W=
+SaEr3ukdgHshP1nW1GRwPNWW9WrqXrTCpNlkXaWxmN-lX249039HvxCTKH7IdftVDvPemFnKpjG=
+wA0" target=3D"blank"> <img class=3D"social-icon" src=3D"https://d15k2d11r6=
+t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cf=
+f6dd6a/92f0cbc6f584418c9def9397d7beca21/Brand-Assets_2021/icons/footer-soci=
+al-icons/icon_pin.png" alt=3D"Pinterest" class=3D"show-me-always" border=3D=
+"0" width=3D"16" style=3D"font-size:8px;display:block;text-align:left;verti=
+cal-align:center;"/></a></picture></div> </td><td class=3D"footer-social-ic=
+on-container" align=3D"left" valign=3D"top" style=3D"font-family:'Source Sa=
+ns Pro',Helvetica,sans-serif!important;"><div> <picture> <a href=3D"https:/=
+/iterable.scribd.com/u/click?_t=3D92f0cbc6f584418c9def9397d7beca21&_m=3Dba1=
+8836459c943c3b153d45b5a75901a&_e=3DNS2vyqcES57N-IQzJ4a0u74JpX83me2X3-mi8oGm=
+8YNaNPlRdiKMrXaDOLQPY95Zm5wFQvFpOpblJiPEnSEeC82lciphwR5Rj19IXNVLohyUrPx0WU8=
+IvAAnE-Pj1QLkZNVxR_cXVay_EnDQHUbPB81MIbdRtHEUlCF-bcuAADynwGgZzZnBCMusjh-69f=
+erPBtA4S299ErhM79qqOwGH8XGEkFBzVLHEvtaNH7aylJPdQMkZPreapSfKPaP8F5UQ1xX4gDrG=
+tWgAcm-bVXw31zuziOi3AT6y1c0Y1blr_OgK7TzBEn6jMseYIhB5Obh" target=3D"blank"> =
+<img class=3D"social-icon" src=3D"https://d15k2d11r6t6rl.cloudfront.net/pub=
+lic/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/92f0cbc6f584418c=
+9def9397d7beca21/Brand-Assets_2021/icons/footer-social-icons/icon_tiktok.pn=
+g" alt=3D"Tiktok" class=3D"show-me-always" border=3D"0" width=3D"16" style=
+=3D"font-size:8px;display:block;text-align:left;vertical-align:center;"/></=
+a></picture></div> </td></tr></table> </td></tr></table> </td></tr> <tr><td=
+ class=3D"social-padding-bottom" style=3D"height:32px;"height=3D"32">&nbsp;=
+ </td></tr><tr><td align=3D"center"> <table class=3D"footer-links-container=
+" style=3D"border-collapse:collapse!important;"><tr><td class=3D"footer-col=
+umn" valign=3D"bottom" style=3D"vertical-align:bottom;"> <table style=3D"bo=
+rder-collapse:collapse!important;"><tr><td class=3D"footer-nav-links-contai=
+ner" align=3D"center" valign=3D"bottom" style=3D"vertical-align:bottom;"> <=
+table style=3D"border-collapse:collapse!important;"><tr><td align=3D"center=
+" valign=3D"bottom" style=3D"vertical-align:bottom;"> <table style=3D"borde=
+r-collapse:collapse!important;"><tr><td valign=3D"top" style=3D"font-family=
+:'Source Sans Pro',Helvetica,sans-serif!important;padding:0 20px 8px 20px;"=
+><div class=3D"copy footer-copy footer-text-links" style=3D"font-family:'So=
+urce Sans Pro',Helvetica,sans-serif!important;font-size:14px;line-height:21=
+px;font-weight:normal;font-weight:400;color:#303140;text-align:center;font-=
+style:normal;"> &nbsp;&nbsp;&nbsp;<span class=3D"footer-copy" style=3D"colo=
+r:#303140!important;text-decoration:none !important;"><a href=3D"https://it=
+erable.scribd.com/u/click?_t=3D92f0cbc6f584418c9def9397d7beca21&_m=3Dba1883=
+6459c943c3b153d45b5a75901a&_e=3DNS2vyqcES57N-IQzJ4a0uw-9lP_2vOs7p6EnvspdbbD=
+5v33RK1BSJBPheVDMTbVYQ6nr8sBRGT-xAQ2dNCbQdgibwEVG_kAGdkt-xXzK_cyFlpl3XmAOxl=
+AFnwU8xcjCFwrz0Se_9CCG6rUrFdgUV58dCbBW3GtyDhdhIyuggrgeXlaJbXCjcioqF-_ubjABj=
+xgzr81rG6foZF40JzsnlRlyE0qA7pr-AWcJ1R4z7qIRgsaIS0sFbJextQID4oW9y20_YHIbqd5Q=
+2jQNJA_5vqMdE977zl2Lcyw2BslPFCY%3D" class=3D"footer-copy" style=3D"text-dec=
+oration:none!important;color:#303140;" target=3D"blank">Our blog</a></span>=
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<span class=3D"footer-copy" style=3D"c=
+olor:#303140!important;text-decoration:none!important;"><a href=3D"https://=
+iterable.scribd.com/u/click?_t=3D92f0cbc6f584418c9def9397d7beca21&_m=3Dba18=
+836459c943c3b153d45b5a75901a&_e=3DNS2vyqcES57N-IQzJ4a0u0qX_7TS9gkXJBBCNFGQP=
+DM87V69xXG_FqXOlAV6wCHM9gWTaypK3u6ooaHNbKUg5RKHmPQzHZEg6ztmbs8m23-8_-_hRDE8=
+HyOqY6YJxK8orG2pIWa2ykyudlkcRkWk_Xlw50FTPm155P9NkurMmKK319t6RokDq2sA4bkoG6I=
+78ITaz7rfj9y7B3-Y7KVGxY8MDO1FaM1aWrr-FwNeVscRcmrN2dnfam06A01arAii4Ro8uERzS0=
+lK-y9N_W5SJXxqNOR_psBMY3TajNncmr1CfeqSGnDMJB6gGR6ZW33HEo8LLBiiIdL_wOBl93tF9=
+Q%3D%3D" class=3D"footer-copy" style=3D"text-decoration:none!important;colo=
+r:#303140;" target=3D"blank">Refer&nbsp;a&nbsp;friend</a></span>&nbsp;&nbsp=
+;&nbsp; &nbsp;&nbsp;&nbsp;<span class=3D"footer-copy" style=3D"color:#30314=
+0!important;text-decoration:none!important;"><a href=3D"https://iterable.sc=
+ribd.com/e/encryptedUnsubscribe?_r=3D92f0cbc6f584418c9def9397d7beca21&_s=3D=
+ba18836459c943c3b153d45b5a75901a&_t=3DGLINZZIdPUwOYNqBNMG1bbbA2S9b1t9NwKQGK=
+YRE2nsombbGLz1R_02Y8h_F5JO8eScJLh-greHOBUiCW8h_pl18OPlhulYlKy5T6Gdu9Jo%3D" =
+class=3D"footer-copy" style=3D"text-decoration:none!important;color:#303140=
+;" target=3D"blank">Unsubscribe</a></span>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&n=
+bsp;<span class=3D"footer-copy" style=3D"color:#303140!important;text-decor=
+ation:none!important;"><a href=3D"https://iterable.scribd.com/u/click?_t=3D=
+92f0cbc6f584418c9def9397d7beca21&_m=3Dba18836459c943c3b153d45b5a75901a&_e=
+=3DNS2vyqcES57N-IQzJ4a0u6HI-YqluNkfSR4UFrdXHLVj8AZKJkbys7a0Jw_RrJK3zhxABOkq=
+e3nn7euxeM8UkYjEzYqDHSEmcwX51MlhTZsInTqG6vCihN3euv8Qc1pLlqnJH4GjAjQFmm4YXzk=
+GvLEvijOrq1D2y_U65qLqIvgVnQJTWmXsBxi-f5w_QVtAfnr_VdiFPvZUcdALLuCnxIKsBQPpkY=
+K8hILHVLnvAmoEl3KHB76zByH-2buN34eag1VMEW_GiQ_8P6HQA5nyRKJuFEpbuPAw0CyerXdYS=
+FzyGtho6PRaX_B3W0h88gou0qu-G3ffH-JQCVKG2x9DNuWmP_4jJBgC81AwjMJbQns%3D" clas=
+s=3D"footer-copy" style=3D"text-decoration:none!important;color: #303140;" =
+target=3D"blank">Preferences</a></span>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp=
+;<span class=3D"footer-copy" style=3D"color:#303140!important;text-decorati=
+on:none!important;"><a href=3D"https://iterable.scribd.com/u/click?_t=3D92f=
+0cbc6f584418c9def9397d7beca21&_m=3Dba18836459c943c3b153d45b5a75901a&_e=3DNS=
+2vyqcES57N-IQzJ4a0u65-k_qJjMlYjuHMsG8eKNBHU2FD1JdmyWxnveBNXr7SOsEpk8bNOjHVe=
+LhQB9z0BmuCXooKGMgYdfiTBd6pK_wCMyqs-uYf99yJ2Jb-Tu8AGfu6MpluXsypjKpz9dxrxFa-=
+z-6vQqNLrLnseSQgY-7ygE9Y54y2J_yonJfH4cRMRk_N_8ik_pjaqYx7uhaOUgghCb1oIKWYBUH=
+nuKaYiZ1cPlszGYuNSF0eCvPYGTweV64r_cnICW9ojNVP3jqFdDcDsbfYmRhJBo4WyhMbUmUuuJ=
+J029SnUwXu8EzDGRUW" class=3D"footer-copy" style=3D"text-decoration:none!imp=
+ortant;color:#303140;" target=3D"blank">Contact&nbsp;us</a></span>&nbsp;&nb=
+sp;&nbsp; </div> </td></tr></table> </td></tr></table> </td></tr></table> <=
+/td></tr></table> </td></tr> <tr><td class=3D"links-spacing-bottom" style=
+=3D"height:32px;"height=3D"32">&nbsp; </td></tr><tr><td align=3D"center"> <=
+table><tr><td> <table align=3D"center" style=3D"border-collapse:collapse!im=
+portant;"><tr><td align=3D"center" valign=3D"top" style=3D"font-family:'Sou=
+rce Sans Pro',Helvetica,sans-serif!important;"><div class=3D"footer-fine-pr=
+int footer-copy" style=3D"font-family:'Source Sans Pro',Helvetica,sans-seri=
+f!important;font-size:12px;line-height:19px;font-weight:normal;font-weight:=
+400;color:#000;text-align:center;font-style:normal;"> This email was sent t=
+o <span class=3D"link-copy" style=3D"font-weight:400;color:#1E7B85;text-dec=
+oration: underline;"><a class=3D"link-copy" href=3D"https://iterable.scribd=
+=2Ecom/u/click?_t=3D92f0cbc6f584418c9de=
+f9397d7beca21&_m=3Dba18836459c943c3b15=
+3d45b5a75901a&_e=3DNS2vyqcES57N-IQzJ4a0u0Da27D9o8xZ3YE46itUxg_99uKeCWGk8utW=
+degi4SD0jo-rtkoVDN_dbxM4gEfnodXdkWFeGBU6I0sBUcRz6jHOMO6RjKUj7HhDUnA6VB554az=
+_qLIowbNL8JiRUBBwh_qxJHP-mqO9aZofaoe3ucU7drLek9sX-j6tB4kyCVS492CUUssFbCUczD=
+uF_73myAcKXLhR_pwW48dZALW398fe3AiKoQP4BMSILAFCDWM3T9n0PobGvSkn-u9hmo3jfZHz_=
+buSLgU7g4XW1GveIRgF8kMe1UCWeLqvgQynJa4fc1MOuE-QKqMybQLcNi_gKg%3D%3D" style=
+=3D"font-weight:400;color:#1E7B85;text-decoration:underline!important;">cie=
+l@binc.pw</a></span>.<br> Scribd, <span class=3D"footer-copy" style=3D"colo=
+r:#000;text-decoration:none!important;">460 Bryant Street, San Francisco, C=
+A 94107</span></div> </td></tr></table> </td></tr></table> </td></tr><tr><t=
+d class=3D"section-padding-bottom" style=3D"height:56px;"height=3D"56">&nbs=
+p; </td></tr></tbody></table> </td></tr></tbody></table> </td></tr> </table=
+> </td> </tr> </table> </div> <!--[if !mso]><!--> <!--<![endif]--> <img wid=
+th=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.hello.scribd.com/o/e=
+Jw8y01uhDAMQOHThCWK7TiJF1n0Z9NjOE6YoYIBAVKvX1XtdP2914qlCJMOvUDMIQAw5-FeOHqe=
+REKaMqIQcJsiSVVLEyMFG-aCHskzZEDPnEYRiKFZDlZ7lJpd8Pe-LNt42jHXNtq2Dmu_tOmlxaV=
+Xh7j289Rb_2gO0dGLQ6wKOVMMLCaBjCowtcCVNbF40J8Q3xzi1dd90ev_zZ4Y6A_3Y_vsdj0tYq=
+ZfMF13nW-Pp7BEFGGX3oej2NwXF3ydHzbuX98BAAD__32aTF8"></body> </html>
+
+--836d98aecc0f82f5ff9d1c5d92c251543e524b502449b880e93a9998adb8--

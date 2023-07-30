@@ -1,0 +1,1560 @@
+Return-Path: <bounces+7450235-936b-ciel=binc.pw@em.mail.crunchyroll.com>
+Delivered-To: ciel+spam@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id SNCNE+CpnGQlhxUAMUeTPA
+	(envelope-from <bounces+7450235-936b-ciel=binc.pw@em.mail.crunchyroll.com>)
+	for <ciel+spam@binc.pw>; Thu, 29 Jun 2023 04:45:04 +0700
+Return-path: <bounces+7450235-936b-ciel=binc.pw@em.mail.crunchyroll.com>
+Envelope-to: ciel@binc.pw
+Delivery-date: Thu, 29 Jun 2023 04:45:04 +0700
+Received: from o1483.em.mail.crunchyroll.com ([167.89.84.26]:44556)
+	by dc3.kencang.id with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <bounces+7450235-936b-ciel=binc.pw@em.mail.crunchyroll.com>)
+	id 1qEcyA-005v7s-1D
+	for ciel@binc.pw;
+	Thu, 29 Jun 2023 04:45:04 +0700
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mail.crunchyroll.com;
+	h=content-type:from:mime-version:subject:reply-to:to:cc:content-type:
+	from:subject:to;
+	s=s1; bh=aYpntTINgndI7geYwkUqC9XfkctNIs52kkNxxq+prRU=;
+	b=UePuZq5wfRkD3EWFcbGTZ55dr/49nG22aFND+CtZQFZJMUCw4zrNm0b00ui/SjYBFtN7
+	IJryZs9rr2OtO+1E7p1vl0sBTgTmp0ogAeuzwv+LA0J/ui+LgogQP6wKgnIfd31gjduMxQ
+	gpERfip9+f5E7FmDVhbi7kyrHS0MHEU1/mjX3qzQktiSKVZWlFyeb2UV3NavhD4Zb6xNJj
+	OfC5glPKoHYRIewuO6h5SihPnbX7L//eYgs4Xf3ZtW/L+iHPGVfRa1sxrjPILulTPTg7jC
+	RwLszeZtef/ijip4rcaKA32F/LC5gkXi7jxCuH55xootBalDaFZdpxLQSRWMBHtw==
+Received: by filterdrecv-68f649d54f-8t8bw with SMTP id filterdrecv-68f649d54f-8t8bw-1-649CA9AF-59
+        2023-06-28 21:44:15.806514456 +0000 UTC m=+4226894.731612718
+Received: from NzQ1MDIzNQ (unknown)
+	by geopod-ismtpd-17 (SG) with HTTP
+	id 1J6ZCGIYSoqhEJTrClxi6w
+	Wed, 28 Jun 2023 21:44:15.771 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=3efb7d2dca86792bbe195c037b0d0d43804ab954ca8d4e8f46b1de7b1bc2
+Date: Wed, 28 Jun 2023 21:44:15 +0000 (UTC)
+From: Crunchyroll <hello@mail.crunchyroll.com>
+Mime-Version: 1.0
+Message-ID: <1J6ZCGIYSoqhEJTrClxi6w@geopod-ismtpd-17>
+Reply-To: no-reply@mail.crunchyroll.com
+X-SG-EID: 
+ =?us-ascii?Q?4AjNuqb28d35ryzSP5cR2QtC9JF+y1SniRCUzTopcNBd4UnsR=2FDEIauPlAvijM?=
+ =?us-ascii?Q?zwTXBdBYmQ1FzkQKZLGHfFDyCkOfsEj2DumpZYR?=
+ =?us-ascii?Q?w5ak1+rbDmVm+jEwPf+dndvpNpXZnmZwVHpf7Y9?=
+ =?us-ascii?Q?3kf0OYugZ8W12KUboBbJ48r7DxG5Y7Zt9Vka3bZ?=
+ =?us-ascii?Q?bCtP3Qss=2Faukj9MtOUj09PHstbWDQOzPe9+=2FSx0?=
+ =?us-ascii?Q?Sjbp3rbE6Y=2F+sEz2JI4XvYs+TKO39jW6X3x44t?=
+X-SG-ID: 
+ =?us-ascii?Q?N2C25iY2uzGMFz6rgvQsb8raWjw0ZPf1VmjsCkspi=2FKvUYPFb2vwyNNeBc9bJi?=
+ =?us-ascii?Q?Ch81vuCl07EwBoNBOy+sYM7w7uGUgPS+6sGPBbb?=
+ =?us-ascii?Q?h0rAj2iBGbjzoeE46stjvgnR5PNsJM0bfiXfVTa?=
+ =?us-ascii?Q?hOYUDhwMoszx3p0ULrA9Sl7KdipIZSpsfL3g688?=
+ =?us-ascii?Q?ToDUJpFSI+Ot1uW00yfQsXpH5WQY=2FgmG2N3afWR?=
+ =?us-ascii?Q?tAav1DL9=2FeMdiVAcHOM15YWyW=2FCRyiLxvLCEP6F?=
+ =?us-ascii?Q?fRH9mutBU1mE5VPRLvZd5eUkzNSwo83obsGlkTb?=
+ =?us-ascii?Q?ylSK1PF8vO1dEyg=2FLUiZW3qmOwIIrAnOCUbRpbx?=
+ =?us-ascii?Q?bWbKje=2F=2F6CS7TRw2GKvox1peaprBDgq39W8LEDS?=
+ =?us-ascii?Q?J6N8qfRgdKKX3+BIclH=2FdR3VGoHpIH+d2OTMGRK?=
+ =?us-ascii?Q?fMoCuK2D6XXb0bBvpwmdRvBAuGJY96REb9ccuPY?=
+ =?us-ascii?Q?pwiHGe64ZfXHkdbHRA1b5qHIE8419k4PL=2FIZVPq?=
+ =?us-ascii?Q?Lcg0RqhF716ZT6Ft90H2fwkap0EGfyckzVaK8sN?=
+ =?us-ascii?Q?GJAkfrp6HzZfiOwWN8a8jDTPLVrXWKcJaNiSz=2Fx?=
+ =?us-ascii?Q?kxKfi74?=
+To: ciel@binc.pw
+X-Entity-ID: L+NVjfv2JgLGKXfL9KYNhg==
+X-Spam-Status: Yes, score=5.4
+X-Spam-Score: 54
+X-Spam-Bar: +++++
+X-Spam-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Anime awesomeness awaits! ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+   ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+    ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ � [...] 
+ Content analysis details:   (5.4 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: crunchyroll.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+                             identical to background
+  0.0 HTML_IMAGE_RATIO_04    BODY: HTML has a low ratio of text to image
+                             area
+  0.5 KAM_REALLYHUGEIMGSRC   RAW: Spam with image tags with ridiculously
+                              huge http urls
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  5.0 KAM_SOMETLD_ARE_BAD_TLD .stream, .trade, .pw, .top, .press,
+                             .guru, .casa & .date TLD Abuse
+X-Spam-Flag: YES
+Subject:  ***SPAM***  Welcome to Crunchyroll!
+
+--3efb7d2dca86792bbe195c037b0d0d43804ab954ca8d4e8f46b1de7b1bc2
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+Mime-Version: 1.0
+
+Anime awesomeness awaits!
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C
+Welcome to the internet's premier anime experience! Get started
+by browsing our always growing library and filling your queue.
+Then just sit back and enjoy all the anime you can handle!
+
+Browse Now=20
+( https://links.mail.crunchyroll.com/ls/click?upn=3DPX0Yv1ewwpkKwozoIPlC5RE=
+GPLh5NKExa-2B0ShX7Vo34psOkUCu6v4VWHUmN9IdPpCXVqlpLgYEo8fb-2BzXynblAHfbhRBet=
+jBuOpY-2BALdEjdnNlwzT59fyL05mB7jxVzE2ej9TbyjXUdxqbWSFC9WYi5pEy9bNNFfWaty3Vr=
+B2NkPBj8uIIgLSa6zPFHfuUnTGnOuLIk3T8ydXg7OqrT-2BN6NieSK3f6iffaBsrE2-2BaDuJDr=
+gVfsFU5xtM-2BbLHKf3YA6-h_yX8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3NxkC76U=
+htYinHJoo8zWnEW50dKxY5ftTcZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-2F5opa=
+xIve42vFJ-2BrfaZxd7sHwprvKsIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh12Y4qS6=
+tYNsq56l8WTfs5Uo00RhR87-2BlamVN3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0sukqx4us=
+TnD-2BbAhWG6AEbxpP6uLMvFIllpIRdczlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmbmU65KC=
+bqH5QBK8pQmKWx-2B2-2FvraolgQgf2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bdYqZnb8=
+uyn-2BFBE3OP-2BOPetzt1-2Fn8KCljinVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9JZtf3-=
+2FUS5Mv7ReX2ZYyUAK8jUxte4LhX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshjViPxad=
+idDn58mjnbfvciMVx0vOluV9X-2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU8hdKPz=
+PR3PPt9MGcLqJ5Y4OWFqhFGGMPpfyH5NeUFSIWBPZfewpAD3XUgmoQzYdcTH-2FK0Ou1iPe3tj3=
+hzOA8TFDtYMJPRNEVsqX4zDc0tc94zDiBfzDaZClmLyL6DFMdY2ceeQDd3HHedXOpRcT8nI8-3D=
+ )
+
+fb=20
+( https://links.mail.crunchyroll.com/ls/click?upn=3D2SUa3reo277uXu924h7OHUo=
+YBdHJxszXUdcs1WaeYkICmkTDUh4bdIAWzQR7RWB8GFnwjCkoI9bQc2PgXnTZ6dwE43tDcQwbhT=
+0JrhtSyt1DxTHtDEYP4pjqqmuFwfbKMUOTI1NFAu-2Br1J0h-2Fy9FLr-2BwYsLQCPiBpcnRiGU=
+DwQb5XV8BcIPSILrWRKPmDBsM9Y4zqJlBBKDnlk1GUQQCqi6gEgR9LOInarnFkxZ6FGU-3D0XeP=
+_yX8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3NxkC76UhtYinHJoo8zWnEW50dKxY5ft=
+TcZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-2F5opaxIve42vFJ-2BrfaZxd7sHwpr=
+vKsIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh12Y4qS6tYNsq56l8WTfs5Uo00RhR87-=
+2BlamVN3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0sukqx4usTnD-2BbAhWG6AEbxpP6uLMvF=
+IllpIRdczlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmbmU65KCbqH5QBK8pQmKWx-2B2-2Fvra=
+olgQgf2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bdYqZnb8uyn-2BFBE3OP-2BOPetzt1-2=
+Fn8KCljinVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9JZtf3-2FUS5Mv7ReX2ZYyUAK8jUxte=
+4LhX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshjViPxadidDn58mjnbfvciMVx0vOluV9=
+X-2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU8uLuqkJNtRrwK7bIiXZahxoFM7tF5S=
+Z5M05abRnYO0d3BXrCeLmaYBpdpgjRvwBJjpnAtAR13jcH6v-2FYBskRKNN2pnv-2Frh1ylndNi=
+rpj7WvlS3bvTbWqZYvaqLSRfp8Gsw5w5yJvZ5eKiZBbxOhHNe0-3D )
+ tw=20
+( https://links.mail.crunchyroll.com/ls/click?upn=3D2SUa3reo277uXu924h7OHdX=
+M9On6x6mAC0beKZ8E-2F6PvTJOtroNCBt1NuLtJiONUhOxPBq2z3oYn0JxZ465YCE5bG6RPF6z1=
+FUEh-2BV4BK67C9sWGblVGgkD72KcBUa58T3L4jbXhVfjHX2tEQ6J1Uy712MLYu16x1Kq4RznuV=
+ASIEiyq7RFSxvgHSfYJ6JKrueXgWZnE6NVGLA3nQI-2BPU9mJuKN-2FLw2TUu99i0gUrS4-3DJp=
+Rg_yX8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3NxkC76UhtYinHJoo8zWnEW50dKxY5=
+ftTcZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-2F5opaxIve42vFJ-2BrfaZxd7sHw=
+prvKsIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh12Y4qS6tYNsq56l8WTfs5Uo00RhR8=
+7-2BlamVN3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0sukqx4usTnD-2BbAhWG6AEbxpP6uLM=
+vFIllpIRdczlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmbmU65KCbqH5QBK8pQmKWx-2B2-2Fv=
+raolgQgf2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bdYqZnb8uyn-2BFBE3OP-2BOPetzt1=
+-2Fn8KCljinVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9JZtf3-2FUS5Mv7ReX2ZYyUAK8jUx=
+te4LhX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshjViPxadidDn58mjnbfvciMVx0vOlu=
+V9X-2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU8gnaWoUJd7fSCQI4grhRiE09EwXe=
+P6GGFVA5Ln51Js7uXD-2BEAUlceMEPlSSwBN60JpzHEmuc-2BFGTRx5WP9ZtSta8mn18Ayt73vY=
+CVVM2Z64FFprJdc4M8d42PUnRAwQt8rmbjEs-2BYRRfHVIoXJ3umo8-3D )
+ yt=20
+( https://links.mail.crunchyroll.com/ls/click?upn=3D2SUa3reo277uXu924h7OHU1=
+jDVPUZWNdL7KtfUjvfWzYWRreboQOYtCB943dXMXlwRV658Q0NSYJOnMSJikiyEXObBRYelqU9a=
+9HqbF4975tRhsQ6Lj6rorn5Ey9E2-2BVxP4Yeb64vHn-2B3eS2IVtqojQgEGOcaPoUAprKjo-2B=
+yDKW-2FYEDs6n4ubPz-2FYoieBzVmEKO4ze7N9-2FatrFKhJ494xTxhE2-2BUrKn8qecdvMD4Tp=
+4-3Du8XH_yX8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3NxkC76UhtYinHJoo8zWnEW5=
+0dKxY5ftTcZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-2F5opaxIve42vFJ-2BrfaZ=
+xd7sHwprvKsIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh12Y4qS6tYNsq56l8WTfs5Uo=
+00RhR87-2BlamVN3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0sukqx4usTnD-2BbAhWG6AEbx=
+pP6uLMvFIllpIRdczlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmbmU65KCbqH5QBK8pQmKWx-2=
+B2-2FvraolgQgf2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bdYqZnb8uyn-2BFBE3OP-2BO=
+Petzt1-2Fn8KCljinVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9JZtf3-2FUS5Mv7ReX2ZYyU=
+AK8jUxte4LhX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshjViPxadidDn58mjnbfvciMV=
+x0vOluV9X-2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU8lnjaBQeaAqAYOVYkmDfrW=
+uZaGxfc-2FnFSeIBS9xBWFkTGoX0homBcPSe6qeND9gNagod5IaM1ZG37pkyGMat8tnd7rLVohk=
+UcaS7Zg3DdqxpPNtnzJ1ZzS8zS4-2BB-2Brgk8s12uTH3tSJ-2BC7CsOjhci1Y-3D )
+ insta=20
+( https://links.mail.crunchyroll.com/ls/click?upn=3D2SUa3reo277uXu924h7OHYL=
+R6V-2Ff1VYZ6ibVypUTeyqsLShQhCls53YES-2BzgWXNtVCMshql-2BWsUmEcWCTOO1MGXH9lYE=
+vPnL6UZJ1D7jcnQPhEwZJo2yrjfi46Yra3Up6FiFWuCuB5hY-2B8ZYoDTrTIBK-2BY-2FnRr0Ic=
+wTTgTSw4VATMz3PoNO05p3gLecgnTjP5DdhuNjO9vbrV1cwlXhU66e0hIc5K8ApYI1e3sOqUzQ-=
+3Dvo_u_yX8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3NxkC76UhtYinHJoo8zWnEW50d=
+KxY5ftTcZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-2F5opaxIve42vFJ-2BrfaZxd=
+7sHwprvKsIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh12Y4qS6tYNsq56l8WTfs5Uo00=
+RhR87-2BlamVN3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0sukqx4usTnD-2BbAhWG6AEbxpP=
+6uLMvFIllpIRdczlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmbmU65KCbqH5QBK8pQmKWx-2B2=
+-2FvraolgQgf2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bdYqZnb8uyn-2BFBE3OP-2BOPe=
+tzt1-2Fn8KCljinVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9JZtf3-2FUS5Mv7ReX2ZYyUAK=
+8jUxte4LhX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshjViPxadidDn58mjnbfvciMVx0=
+vOluV9X-2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU8vlXDSewwF7Gv6XjdBvrMYjk=
+JERZKYO2ZAlcr2JTFq-2BYL-2FT9SbPT0f-2Fvh-2FbwDps91YBftTbERZoon0BOfhUPK-2F7m2=
+FPEZEGDl5M68Te6f6DHhERGI6KAxPMWZs1YTptV9lpQriPl5Ozcyw03xy3hS7k-3D )
+ crunchyroll=20
+( https://links.mail.crunchyroll.com/ls/click?upn=3D2SUa3reo277uXu924h7OHbR=
+b6hBmo33N0LbsTT7acLZPo5T3CYnqQR8hqkCqX0byzBmapWwvEgWZ2mOvHgFzTqgajgy34zrs8D=
+wmAoMbwv8gYTOOPPtqsIhs4e4OBfwAvPzW3-2FOAyh1C32d0q9PUbaM-2B9ViUh9RZxJObsXP5X=
+ItNmYiqYvh8kWbVQsW6UWp1SpjBOBtwd4N5nCUj0GICn7-2BQyqofqnEpH1MqBCXFjeo-3DfASw=
+_yX8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3NxkC76UhtYinHJoo8zWnEW50dKxY5ft=
+TcZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-2F5opaxIve42vFJ-2BrfaZxd7sHwpr=
+vKsIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh12Y4qS6tYNsq56l8WTfs5Uo00RhR87-=
+2BlamVN3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0sukqx4usTnD-2BbAhWG6AEbxpP6uLMvF=
+IllpIRdczlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmbmU65KCbqH5QBK8pQmKWx-2B2-2Fvra=
+olgQgf2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bdYqZnb8uyn-2BFBE3OP-2BOPetzt1-2=
+Fn8KCljinVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9JZtf3-2FUS5Mv7ReX2ZYyUAK8jUxte=
+4LhX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshjViPxadidDn58mjnbfvciMVx0vOluV9=
+X-2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU8kTc0MvQyTZ-2Fj-2FQFmox-2F51QI=
+gn5eZ9Q391SNur9nzkyKDPa5A7ikBf9vop6EgxRcSKFny5neYSvvT86w8Lh9sdgYEc7VO3Hi4F7=
+a3UBoga4MEzbdNjv6iH9LfAzOKUyl0nAEUHURW9RFe1MTBR77Esw-3D )
+    Crunchyroll
+PO BOX 405
+San Francisco, CA 94104-0405
+
+This email was sent to ciel@binc.pw
+PRIVACY POLICY=20
+( https://links.mail.crunchyroll.com/ls/click?upn=3DPX0Yv1ewwpkKwozoIPlC5RE=
+GPLh5NKExa-2B0ShX7Vo34vc3Bsg6pCbjr5fjRyW9ob-2BV3pUwAhj4tODqLJ6mTMzr-2BA2xtc=
+3W4wtifI75ngwfFQkQUzlY9Mr2eMSeMI8IC7AEY1BzBGIK4Dgo2uLsK79PvpPGRvnEepyvDp-2B=
+NjYQybQlba979AwIBLd8jlIVXDA0MUQDxGs4Zru7nSxnmuWx-2FqdQlifiq9JILjFqqzqPRI-3D=
+Q90Y_yX8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3NxkC76UhtYinHJoo8zWnEW50dKx=
+Y5ftTcZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-2F5opaxIve42vFJ-2BrfaZxd7s=
+HwprvKsIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh12Y4qS6tYNsq56l8WTfs5Uo00Rh=
+R87-2BlamVN3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0sukqx4usTnD-2BbAhWG6AEbxpP6u=
+LMvFIllpIRdczlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmbmU65KCbqH5QBK8pQmKWx-2B2-2=
+FvraolgQgf2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bdYqZnb8uyn-2BFBE3OP-2BOPetz=
+t1-2Fn8KCljinVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9JZtf3-2FUS5Mv7ReX2ZYyUAK8j=
+Uxte4LhX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshjViPxadidDn58mjnbfvciMVx0vO=
+luV9X-2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU8nlikxvJLXQBPRv6Hfv5u69-2F=
+H0n6HS4smO-2BXPkXRBBvcDa4ZQ0wQv2x3yB8-2B3yYetzinOoWrQvGv7yk5JnP6DAPvjFkhz-2=
+B6hDUDD9mppsthbKUreGET1fPe3t11cXqCUpkrRbPoPUc6pHvmPp9esLN8-3D )
+ | UNSUBSCRIBE=20
+( https://links.mail.crunchyroll.com/ls/click?upn=3D2SUa3reo277uXu924h7OHbR=
+b6hBmo33N0LbsTT7acLYwrLUnmttE7h4d1BYkVDrtELl8HdXmLr34F0rheTJcyg-3D-3D2ivq_y=
+X8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3NxkC76UhtYinHJoo8zWnEW50dKxY5ftTc=
+ZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-2F5opaxIve42vFJ-2BrfaZxd7sHwprvK=
+sIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh12Y4qS6tYNsq56l8WTfs5Uo00RhR87-2B=
+lamVN3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0sukqx4usTnD-2BbAhWG6AEbxpP6uLMvFIl=
+lpIRdczlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmbmU65KCbqH5QBK8pQmKWx-2B2-2Fvraol=
+gQgf2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bdYqZnb8uyn-2BFBE3OP-2BOPetzt1-2Fn=
+8KCljinVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9JZtf3-2FUS5Mv7ReX2ZYyUAK8jUxte4L=
+hX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshjViPxadidDn58mjnbfvciMVx0vOluV9X-=
+2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU8iOb29hqBYiASUHDx0e7ESWUyf1JTdSd=
+P7b4IlEkOG-2BBRICmXRC2A6D7sPh84Er3G0uCxQi-2FiTfmwAJzAM1X-2BUumyK-2Bnie6lkg4=
+z1Ic-2B5vx44Tsj3l-2B0yN4UkEDfH6nYgeRwQ0w-2F9pbLoaKo5LqzocM-3D ) | TERMS OF
+SERVICE=20
+( https://links.mail.crunchyroll.com/ls/click?upn=3DPX0Yv1ewwpkKwozoIPlC5RE=
+GPLh5NKExa-2B0ShX7Vo35xLXtRSJy-2FsPJfiZ6QalCkUYDjeJQCb3h61L0IXvdXAhuqFmbamq=
+OhMmNl-2BVnnB-2FX2pI0qDFg5sTA7BvGjkCFQZx4AE8avSRKYOpIzaH11fZWJiHtLvB8YX5CoE=
+KUPk-2Bb6PLRIkdxILRoOPDz-2BR53-2Fczx3RWQ4hnx8TCYoP1aBpQ-3D-3DrxA4_yX8ThNwB4=
+BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3NxkC76UhtYinHJoo8zWnEW50dKxY5ftTcZYZO-2FU=
+5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-2F5opaxIve42vFJ-2BrfaZxd7sHwprvKsIeMAqC5=
+RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh12Y4qS6tYNsq56l8WTfs5Uo00RhR87-2BlamVN3XK=
+SezJmdof-2BNSjF4ffak7-2BPeTH-2Be0sukqx4usTnD-2BbAhWG6AEbxpP6uLMvFIllpIRdczl=
+wQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmbmU65KCbqH5QBK8pQmKWx-2B2-2FvraolgQgf2shw=
+wyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bdYqZnb8uyn-2BFBE3OP-2BOPetzt1-2Fn8KCljinV=
+h2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9JZtf3-2FUS5Mv7ReX2ZYyUAK8jUxte4LhX5saFcZ=
+8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshjViPxadidDn58mjnbfvciMVx0vOluV9X-2FqeVPgi=
+oCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU8mpulSB13putbCDvTdpj7RFz1imXFbQ8jv9LkPk8=
+l74f-2BD2N1PB8aKltUE2CXkJKyA0k-2FzmRQHfQK4yyNLc6XokXCzyA2HQIs4BbJ5AKkYkR-2B=
+2D-2FGUDSkoYMxBbFRnsRinYNzcwpzGPmzYo6pmvxArQ-3D )
+                 *
+--3efb7d2dca86792bbe195c037b0d0d43804ab954ca8d4e8f46b1de7b1bc2
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+Mime-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+<head>
+<custom name=3D"opencounter" type=3D"tracking"></custom>
+<title>Crunchyroll</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0 ">
+<meta name=3D"format-detection" content=3D"telephone=3Dno">
+
+<style>body {
+margin: 0 !important; padding: 0 !important; -webkit-text-size-adjust: 100%=
+ !important; -ms-text-size-adjust: 100% !important; -webkit-font-smoothing:=
+ antialiased !important;
+}
+img {
+border: 0 !important; outline: none !important;
+}
+@font-face {
+font-family: 'Lato'; font-style: italic; font-weight: 400; src: url('https:=
+//fonts.gstatic.com/s/lato/v24/S6u8w4BMUTPHjxsAXC-v.ttf') format('truetype'=
+);
+}
+@font-face {
+font-family: 'Lato'; font-style: italic; font-weight: 700; src: url('https:=
+//fonts.gstatic.com/s/lato/v24/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf') format('truet=
+ype');
+}
+@font-face {
+font-family: 'Lato'; font-style: normal; font-weight: 400; src: url('https:=
+//fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wWw.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Lato'; font-style: normal; font-weight: 700; src: url('https:=
+//fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh6UVSwiPHA.ttf') format('truetyp=
+e');
+}
+@media only screen and (min-width:481px) and (max-width:599px) {
+  .em_wrapper {
+    width: 100% !important;
+  }
+  .em_aside {
+    padding: 0px 10px !important;
+  }
+  .em_hide {
+    display: none !important;
+  }
+  .em_img {
+    width: 100% !important; height: auto !important; max-width: none !impor=
+tant;
+  }
+  .em_img2 {
+    width: 120px !important; height: 120px !important; max-width: none !imp=
+ortant;
+  }
+  .em_button {
+    width: 160px !important; height: 38px !important;
+  }
+  .em_center {
+    text-align: center !important;
+  }
+  .em_side {
+    width: 10px !important;
+  }
+  .em_h20 {
+    height: 20px !important;
+  }
+  .em_h30 {
+    height: 30px !important;
+  }
+  .em_h15 {
+    height: 40px !important;
+  }
+  .em_bottom {
+    padding-bottom: 10px !important;
+  }
+  .em_bottom1 {
+    padding-bottom: 25px !important;
+  }
+  .em_bottom2 {
+    padding-bottom: 15px !important;
+  }
+  .em_hide_desktop {
+    display: table !important; float: none !important; width: 100% !importa=
+nt; overflow: visible !important; height: auto !important;
+  }
+  .em_h10 {
+    height: 30px !important; font-size: 1px !important; line-height: 1px !i=
+mportant;
+  }
+  .em_bg {
+    background-image: url(https://appboy-images.com/appboy/communication/as=
+sets/image_assets/images/5ca3e4bd7dea0d413f3b7c53/original.jpg?1554244797) =
+!important; background-position: left top !important; height: auto !importa=
+nt;
+  }
+  .em_hauto {
+    height: auto !important;
+  }
+}
+@media only screen and (max-width:480px) {
+  .em_wrapper {
+    width: 100% !important;
+  }
+  .em_aside {
+    padding: 0px 10px !important;
+  }
+  .em_hide {
+    display: none !important;
+  }
+  .em_img {
+    width: 100% !important; height: auto !important; max-width: none !impor=
+tant;
+  }
+  .em_img2 {
+    width: 120px !important; height: 120px !important; max-width: none !imp=
+ortant;
+  }
+  .em_center {
+    text-align: center !important;
+  }
+  .em_side {
+    width: 10px !important;
+  }
+  .em_h20 {
+    height: 20px !important;
+  }
+  .em_h30 {
+    height: 30px !important;
+  }
+  .em_h15 {
+    height: 40px !important;
+  }
+  .em_bottom {
+    padding-bottom: 10px !important;
+  }
+  .em_bottom1 {
+    padding-bottom: 25px !important;
+  }
+  .em_bottom2 {
+    padding-bottom: 15px !important;
+  }
+  .em_hide_desktop {
+    display: table !important; float: none !important; width: 100% !importa=
+nt; overflow: visible !important; height: auto !important;
+  }
+  .watchnow {
+    height: 25px !important;
+  }
+  .text2 {
+    font-size: 16px !important; line-height: 17px !important;
+  }
+  .text4 {
+    font-size: 14px !important; line-height: 17px !important;
+  }
+  .text3 {
+    font-size: 12px !important; line-height: 17px !important;
+  }
+  .text6 {
+    font-size: 12px !important; line-height: 17px !important;
+  }
+  .text7 {
+    font-size: 12px !important; line-height: 13px !important;
+  }
+  .cta {
+    font-size: 14px !important; line-height: 26px !important; height: 26px =
+!important;
+  }
+  .cta a {
+    line-height: 26px !important; height: 26px !important;
+  }
+  .em_h10 {
+    height: 30px !important; font-size: 1px !important; line-height: 1px !i=
+mportant;
+  }
+  .em_bg {
+    background-image: url(https://appboy-images.com/appboy/communication/as=
+sets/image_assets/images/5ca3e4bd7dea0d413f3b7c53/original.jpg?1554244797) =
+!important; background-position: center top !important; height: auto !impor=
+tant;
+  }
+  .em_button {
+    width: 130px !important; height: 38px !important;
+  }
+  .em_h6 {
+    height: 6px !important; font-size: 1px !important; line-height: 1px !im=
+portant;
+  }
+  .em_hauto {
+    height: auto !important;
+  }
+}
+</style>
+</head>
+<body background=3D"https://appboy-images.com/appboy/communication/assets/i=
+mage_assets/images/5ca3e500d5b6820200c2e6e8/original.jpg?1554244864" style=
+=3D"-webkit-text-size-adjust: 100% !important; -ms-text-size-adjust: 100% !=
+important; -webkit-font-smoothing: antialiased !important; background: url(=
+) center top / cover; margin: 0; padding: 0;">
+<div style=3D"display:none !important;visibility:hidden;mso-hide:all;font-s=
+ize:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:=
+0;overflow:hidden;">Anime awesomeness awaits!</div>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" back=
+ground=3D"" style=3D"height: auto; border-collapse: collapse; mso-table-lsp=
+ace: 0px; mso-table-rspace: 0px; background: center top / cover;" bgcolor=
+=3D"#000000">
+
+  <tr>
+    <td align=3D"center" valign=3D"top" style=3D"table-layout: fixed; width=
+: 600px; border-collapse: collapse; mso-line-height-rule: exactly;" width=
+=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"em_main_=
+table" bgcolor=3D"#000000">
+      <table width=3D"600" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ align=3D"center" style=3D"max-width: 600px; width: 100%; border-collapse: =
+collapse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+
+    <center style=3D"width: 100%; background-color: #000000; text-align: le=
+ft;">
+
+        <!-- Visually Hidden Preheader Text : BEGIN -->
+    =20
+        <!-- Visually Hidden Preheader Text : END -->
+
+        <!--
+            Set the email width. Defined in two places:
+            1. max-width for all clients except Desktop Windows Outlook, al=
+lowing the email to squish on narrow but never go wider than 600px.
+            2. MSO tags for Desktop Windows Outlook enforce a 600px width.
+        -->
+        <div style=3D"max-width: 600px; margin: auto;" class=3D"email-conta=
+iner">
+            <!--[if mso]>
+            <table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0=
+" border=3D"0" width=3D"600" align=3D"center">
+            <tr>
+            <td>
+            <![endif]-->
+
+            <!-- Email Header : BEGIN -->
+         <table width=3D"600" cellspacing=3D"0" cellpadding=3D"0" border=3D=
+"0" align=3D"center" style=3D"max-width: 600px; width: 100%; border-collaps=
+e: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px;">=20
+        </table>
+            <!-- Email Header : END -->
+
+            <!-- Email Body : BEGIN -->
+            <table role=3D"presentation" width=3D"600px" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" align=3D"center" style=3D"max-width: 600px; =
+border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+<tr> </tr>
+				<tr>
+<td class=3D"em_grey" align=3D"center" valign=3D"middle" style=3D"font-fami=
+ly: Arial, sans-serif; font-size: 14px; line-height: 18px; color: #8b8b8b; =
+border-collapse: collapse; mso-line-height-rule: exactly;"><div style=3D"di=
+splay: none; max-height: 0px; overflow: hidden;">
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nb=
+sp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;
+	</div></td> </tr>
+                <!-- Hero Image, Flush : BEGIN -->
+                <tr>
+                    <td bgcolor=3D"#ffffff" align=3D"center" style=3D"borde=
+r-collapse: collapse; mso-line-height-rule: exactly;">
+                        <a href=3D"https://links.mail.crunchyroll.com/ls/cl=
+ick?upn=3DPX0Yv1ewwpkKwozoIPlC5REGPLh5NKExa-2B0ShX7Vo36tjEmdbK6N0V8NESxJJ4r=
+VWDl0wakcGNN0pDwzOTVfRiZgUCwMfUON1RlUx0c8lMJ5v9b3SUMDjVesuR35rCUk7c8Xnuij28=
+aJ8wAFLeb-2BqdlvP0Lpprei73KeXbXtvzXlm7MZiw2QbWw8ae7eA37V0oUFwr-2B0daXhv1LH3=
+PhAcrqtTQC2IR-2F0BZW5htisis7sGqTA8jOCR64r1coJttFqBD6T_yX8ThNwB4BpsG7wB4PTRB=
+YJ61WfwxcJ7PuQO86-2Fs3NxkC76UhtYinHJoo8zWnEW50dKxY5ftTcZYZO-2FU5DonKF-2BtdT=
+EI5BIcfvnka381L-2FJjG1-2F5opaxIve42vFJ-2BrfaZxd7sHwprvKsIeMAqC5RE75gjXSJF9Q=
+3P7LB3cOom2HwY1g-2FwBh12Y4qS6tYNsq56l8WTfs5Uo00RhR87-2BlamVN3XKSezJmdof-2BN=
+SjF4ffak7-2BPeTH-2Be0sukqx4usTnD-2BbAhWG6AEbxpP6uLMvFIllpIRdczlwQd2-2FYf96g=
+WD7bjRcU7-2BtkEOecVhRmbmU65KCbqH5QBK8pQmKWx-2B2-2FvraolgQgf2shwwyttnRwNjDFN=
+PfgEUHPXP9HfxlDB4Tyb9bdYqZnb8uyn-2BFBE3OP-2BOPetzt1-2Fn8KCljinVh2AAoZHcy0oU=
+BjM81NATfRwagdJAeQJj9H9JZtf3-2FUS5Mv7ReX2ZYyUAK8jUxte4LhX5saFcZ8q7oXD7wznbe=
+nWXu-2F6HkNXVSnGJamRshjViPxadidDn58mjnbfvciMVx0vOluV9X-2FqeVPgioCZ3mxkUNsfy=
+4Can1VtBmYPH8M-2Fm-2FJU8lzcq4ywn2Egg84Q58lNbqCuaUxPaCLpWEDHK3Oi4ATd2Z9grsCY=
+-2BE9cxlFi9e58QG5PC1rYlhSmj5APmkNnkQusdhQt-2FcXwyYx4KHrTNd4Ju8KJ-2F2KXt3q2W=
+UTzrPgLxOf-2FThOJRte8oo5AnPJF0to-3D" target=3D"_blank" style=3D"text-decora=
+tion: none; border-collapse: collapse; mso-line-height-rule: exactly;"><img=
+ src=3D"https://appboy-images.com/appboy/communication/assets/image_assets/=
+images/5f35b92ff5d16744c508bce9/original.png?1597356335" width=3D"600" heig=
+ht=3D"" alt=3D"" border=3D"0" align=3D"center" style=3D"width: 100%; max-wi=
+dth: 600px; height: auto; background-color: #dddddd; font-family: sans-seri=
+f; font-size: 15px; line-height: 140%; color: #555555; outline: none !impor=
+tant; margin: auto; border: 0;" class=3D"g-img"></a>
+                    </td>
+                </tr>
+<tr>
+                    <td bgcolor=3D"#000000" align=3D"center" style=3D"borde=
+r-collapse: collapse; mso-line-height-rule: exactly;">
+                        <a href=3D"https://links.mail.crunchyroll.com/ls/cl=
+ick?upn=3DPX0Yv1ewwpkKwozoIPlC5REGPLh5NKExa-2B0ShX7Vo34psOkUCu6v4VWHUmN9IdP=
+pCXVqlpLgYEo8fb-2BzXynblAHfbhRBetjBuOpY-2BALdEjdnNlwzT59fyL05mB7jxVzE2ej9Tb=
+yjXUdxqbWSFC9WYi5pEy9bNNFfWaty3VrB2NkPBj8uIIgLSa6zPFHfuUnTGnOuLIk3T8ydXg7Oq=
+rT-2BN5Tn-2BMRmmbMRDkYbC3wplbArN0B02yrXFv-2FCsk4YGyjaumzo_yX8ThNwB4BpsG7wB4=
+PTRBYJ61WfwxcJ7PuQO86-2Fs3NxkC76UhtYinHJoo8zWnEW50dKxY5ftTcZYZO-2FU5DonKF-2=
+BtdTEI5BIcfvnka381L-2FJjG1-2F5opaxIve42vFJ-2BrfaZxd7sHwprvKsIeMAqC5RE75gjXS=
+JF9Q3P7LB3cOom2HwY1g-2FwBh12Y4qS6tYNsq56l8WTfs5Uo00RhR87-2BlamVN3XKSezJmdof=
+-2BNSjF4ffak7-2BPeTH-2Be0sukqx4usTnD-2BbAhWG6AEbxpP6uLMvFIllpIRdczlwQd2-2FY=
+f96gWD7bjRcU7-2BtkEOecVhRmbmU65KCbqH5QBK8pQmKWx-2B2-2FvraolgQgf2shwwyttnRwN=
+jDFNPfgEUHPXP9HfxlDB4Tyb9bdYqZnb8uyn-2BFBE3OP-2BOPetzt1-2Fn8KCljinVh2AAoZHc=
+y0oUBjM81NATfRwagdJAeQJj9H9JZtf3-2FUS5Mv7ReX2ZYyUAK8jUxte4LhX5saFcZ8q7oXD7w=
+znbenWXu-2F6HkNXVSnGJamRshjViPxadidDn58mjnbfvciMVx0vOluV9X-2FqeVPgioCZ3mxkU=
+Nsfy4Can1VtBmYPH8M-2Fm-2FJU8q0do9lyMcSX9QgUCip-2FXLikZd3U5ndn0ZY8Wd4wmYRfIu=
+VO7xkAwrCT-2F3sbCMPts1d8xPfTIfBbGNkgejSX-2FJowGOiMZgMeD0hyJIbDX1m9PFNeb3ImZ=
+gurF6baW8eCMfVgyzVAOSCqx5GX-2BA9AsBA-3D" target=3D"_blank" style=3D"text-de=
+coration: none; border-collapse: collapse; mso-line-height-rule: exactly;">=
+<img src=3D"https://appboy-images.com/appboy/communication/assets/image_ass=
+ets/images/5e8b63e7d1085333aa1a634e/original.jpg?1586193383" width=3D"600" =
+height=3D"" alt=3D"" border=3D"0" align=3D"center" style=3D"width: 100%; ma=
+x-width: 600px; height: auto; background-color: #000000; font-family: sans-=
+serif; font-size: 15px; line-height: 140%; color: #555555; outline: none !i=
+mportant; margin: auto; border: 0;" class=3D"g-img"></a>
+                    </td>
+                </tr>
+                <!-- Hero Image, Flush : END -->
+
+                <!-- 1 Column Text + Button : BEGIN -->
+                <tr>
+                    <td bgcolor=3D"#000000" style=3D"border-collapse: colla=
+pse; mso-line-height-rule: exactly;">
+                        <table role=3D"presentation" cellspacing=3D"0" cell=
+padding=3D"0" border=3D"0" width=3D"100%" style=3D"border-collapse: collaps=
+e; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                            <tr>
+                                <td style=3D"font-family: 'Lato', Verdana, =
+Ariel, sans-serif; font-size: 19px; line-height: 140%; color: #ffffff; bord=
+er-collapse: collapse; mso-line-height-rule: exactly; padding: 20px 75px;" =
+align=3D"center">
+                                  =20
+                                    <p style=3D"margin: 0px; padding: 0px;"=
+>
+Welcome to the internet's premier anime experience! Get started by browsing=
+ our always growing library and filling your queue. Then just sit back and =
+enjoy all the anime you can handle!
+</p>
+                                </td>
+                            </tr>
+<tr>
+                                <td style=3D"font-family: sans-serif; font-=
+size: 15px; line-height: 140%; color: #555555; border-collapse: collapse; m=
+so-line-height-rule: exactly; padding: 0 40px 45px;">
+                                    <!-- Button : BEGIN -->
+                                        <table role=3D"presentation" cellsp=
+acing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" style=3D"border=
+-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px; margin: =
+auto;">
+                                        <tr>
+                                            <td style=3D"border-radius: 0px=
+; border-collapse: collapse; mso-line-height-rule: exactly;" class=3D"butto=
+n-td" align=3D"center">
+                                            <a href=3D"https://links.mail.c=
+runchyroll.com/ls/click?upn=3DPX0Yv1ewwpkKwozoIPlC5REGPLh5NKExa-2B0ShX7Vo34=
+psOkUCu6v4VWHUmN9IdPpCXVqlpLgYEo8fb-2BzXynblAHfbhRBetjBuOpY-2BALdEjdnNlwzT5=
+9fyL05mB7jxVzE2ej9TbyjXUdxqbWSFC9WYi5pEy9bNNFfWaty3VrB2NkPBj8uIIgLSa6zPFHfu=
+UnTGnOuLIk3T8ydXg7OqrT-2BN6NieSK3f6iffaBsrE2-2BaDuJDrgVfsFU5xtM-2BbLHKf3Y0E=
+2w_yX8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3NxkC76UhtYinHJoo8zWnEW50dKxY5=
+ftTcZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-2F5opaxIve42vFJ-2BrfaZxd7sHw=
+prvKsIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh12Y4qS6tYNsq56l8WTfs5Uo00RhR8=
+7-2BlamVN3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0sukqx4usTnD-2BbAhWG6AEbxpP6uLM=
+vFIllpIRdczlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmbmU65KCbqH5QBK8pQmKWx-2B2-2Fv=
+raolgQgf2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bdYqZnb8uyn-2BFBE3OP-2BOPetzt1=
+-2Fn8KCljinVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9JZtf3-2FUS5Mv7ReX2ZYyUAK8jUx=
+te4LhX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshjViPxadidDn58mjnbfvciMVx0vOlu=
+V9X-2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU8h54cNmh2nUHY4yagt7D1JYJ6nQH=
+6U-2Fb2XIIm3yx4Tr8Ze57SuEeyfg2hBtJrCCwiBpKaHc-2B-2FpMzCE-2F-2FjKu9mFy-2B9Rq=
+2wbyenGTAEvo2XmAGVSsDCywOXs8QvsbJf6xw40YYDkLdk9Dl-2BiJbzRG-2F-2BZ4-3D" targ=
+et=3D"_blank" style=3D"text-decoration: none; color: #ffffff; border-collap=
+se: collapse; mso-line-height-rule: exactly;"><img src=3D"https://appboy-im=
+ages.com/appboy/communication/assets/image_assets/images/5e8b63ecdc99b41914=
+5a5b03/original.png?1586193388" width=3D"" height=3D"45" alt=3D"Browse Now"=
+ style=3D"display: block; font-family: Arial, sans-serif; font-size: 20px; =
+line-height: 22px; color: #ffffff; outline: none !important; border: 0;" bo=
+rder=3D"0"></a>
+                                               =20
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- Button : END -->
+                                </td>
+                            </tr>
+                           =20
+                           =20
+                        </table>
+                    </td>
+                </tr>  <tr>
+                    <td aria-hidden=3D"true" height=3D"" style=3D"font-size=
+: 0; line-height: 0; border-collapse: collapse; mso-line-height-rule: exact=
+ly;" bgcolor=3D"#000000">&nbsp;
+                       =20
+                    </td>
+                </tr>
+<tr>
+                    <td bgcolor=3D"#000000" align=3D"center" style=3D"borde=
+r-collapse: collapse; mso-line-height-rule: exactly; padding: 0 25px 20px;"=
+>
+                        <img src=3D"https://appboy-images.com/appboy/commun=
+ication/assets/image_assets/images/5e8b63ea9196ee372e6abb7b/original.gif?15=
+86193386" width=3D"600" height=3D"" alt=3D"" border=3D"0" align=3D"center" =
+style=3D"width: 100%; max-width: 600px; height: auto; background-color: #00=
+0000; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #=
+555555; outline: none !important; margin: auto; border: 0;" class=3D"g-img"=
+>
+                    </td>
+                </tr>
+<tr>
+                    <td bgcolor=3D"#000000" align=3D"center" height=3D"100%=
+" valign=3D"top" width=3D"100%" style=3D"border-collapse: collapse; mso-lin=
+e-height-rule: exactly; padding: px px 0px;">
+                        <table role=3D"presentation" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" align=3D"center" width=3D"100%" style=3D"border-=
+collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                                <tr>
+                    <td bgcolor=3D"#ffffff" align=3D"center" height=3D"100%=
+" valign=3D"top" width=3D"100%" style=3D"border-collapse: collapse; mso-lin=
+e-height-rule: exactly;">
+                        <table role=3D"presentation" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" align=3D"center" width=3D"100%" style=3D"max-wid=
+th: 600px; border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspa=
+ce: 0px;">
+                            <tr>
+                                <td align=3D"center" valign=3D"top" width=
+=3D"50%" bgcolor=3D"#000000" style=3D"border-collapse: collapse; mso-line-h=
+eight-rule: exactly;">
+                                    <table role=3D"presentation" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" style=3D"font-size: 1=
+4px; text-align: left; border-collapse: collapse; mso-table-lspace: 0px; ms=
+o-table-rspace: 0px;">
+                                        <tr>
+                                            <td style=3D"border-right-style=
+: solid; border-bottom-style: solid; border-collapse: collapse; mso-line-he=
+ight-rule: exactly; padding: 0 0px; border: black;" align=3D"center">
+                                               <a href=3D"https://links.mai=
+l.crunchyroll.com/ls/click?upn=3DPX0Yv1ewwpkKwozoIPlC5REGPLh5NKExa-2B0ShX7V=
+o37r8D-2F0-2BgWHY6ZauX8I-2Fd2LMBrvoft4BPqrYAcwBDIgTMc0F5sVJ-2Fn7QsP2LGzxtYA=
+p0-2F-2FBt8HkiR-2BApW98zXad6GEnEysNP27vAgmDo5rf2s6HMg67YGsOeqi3aw-2B82c1lxV=
+x2czOgCzXt3cTWEokih3J3AR-2FIupiTVaCr-2B-2Bk4Gd0W-2BJC8eGXZHvZB7jkqLx0kRZANk=
+ihwdbH8YqBm-2FlvU8pg0K9Crjkd73o0iK8YrFQ-3D-3DXjY__yX8ThNwB4BpsG7wB4PTRBYJ61=
+WfwxcJ7PuQO86-2Fs3NxkC76UhtYinHJoo8zWnEW50dKxY5ftTcZYZO-2FU5DonKF-2BtdTEI5B=
+Icfvnka381L-2FJjG1-2F5opaxIve42vFJ-2BrfaZxd7sHwprvKsIeMAqC5RE75gjXSJF9Q3P7L=
+B3cOom2HwY1g-2FwBh12Y4qS6tYNsq56l8WTfs5Uo00RhR87-2BlamVN3XKSezJmdof-2BNSjF4=
+ffak7-2BPeTH-2Be0sukqx4usTnD-2BbAhWG6AEbxpP6uLMvFIllpIRdczlwQd2-2FYf96gWD7b=
+jRcU7-2BtkEOecVhRmbmU65KCbqH5QBK8pQmKWx-2B2-2FvraolgQgf2shwwyttnRwNjDFNPfgE=
+UHPXP9HfxlDB4Tyb9bdYqZnb8uyn-2BFBE3OP-2BOPetzt1-2Fn8KCljinVh2AAoZHcy0oUBjM8=
+1NATfRwagdJAeQJj9H9JZtf3-2FUS5Mv7ReX2ZYyUAK8jUxte4LhX5saFcZ8q7oXD7wznbenWXu=
+-2F6HkNXVSnGJamRshjViPxadidDn58mjnbfvciMVx0vOluV9X-2FqeVPgioCZ3mxkUNsfy4Can=
+1VtBmYPH8M-2Fm-2FJU8l6s5Jl-2FE9SvumBEj54J1ckx1DLwNLYUmQQcCiUgagjJsDRyLsdpmP=
+SEkzDGPZaDvzycVtVmeeHQgmWswTpIVmu3EVr4eluAUh-2Fe6a6z0T2FwQjOnxHk6JPNVGYqDyY=
+T2o3r5Rxk0mmULfe8wezRn4A-3D" target=3D"_blank" style=3D"text-decoration: no=
+ne; border-collapse: collapse; mso-line-height-rule: exactly;"> <img src=3D=
+"https://appboy-images.com/appboy/communication/assets/image_assets/images/=
+5e8b624c0f155f4e79249c89/original.gif?1586192972" width=3D"300" height=3D""=
+ alt=3D"" border=3D"" align=3D"center" style=3D"width: 99%; max-width: 300p=
+x; background-color: #dddddd; font-family: sans-serif; font-size: 15px; lin=
+e-height: 140%; color: #555555; outline: none !important; border: 0;"></a>
+                                            </td>
+                                        </tr>
+                             =20
+                                    </table>
+                                </td>
+                                <td align=3D"center" valign=3D"top" width=
+=3D"50%" bgcolor=3D"000000" style=3D"border-collapse: collapse; mso-line-he=
+ight-rule: exactly;">
+                                    <table role=3D"presentation" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" style=3D"font-size: 1=
+4px; text-align: left; border-collapse: collapse; mso-table-lspace: 0px; ms=
+o-table-rspace: 0px;">
+                                        <tr>
+                                            <td style=3D"border-left-style:=
+ solid; border-bottom-style: solid; border-collapse: collapse; mso-line-hei=
+ght-rule: exactly; padding: 0 0px; border: black;" align=3D"center">
+                                               <a href=3D"https://links.mai=
+l.crunchyroll.com/ls/click?upn=3DPX0Yv1ewwpkKwozoIPlC5REGPLh5NKExa-2B0ShX7V=
+o37r8D-2F0-2BgWHY6ZauX8I-2Fd2LU96pzWMfJsoZEAqM0Ms0V3fUCWYrrlzIIgv1EqxvthEaX=
+ZtG6KwU-2BppoLjFjxK4FKjsQh-2FnULhp5TsFZR2U-2BN1K3E3EboYgPkTt0wkb9wp5VePgSwv=
+8VErikp4XJU89cdvPtyqJJEJCJAsW8ys8TMjRFzcPmJxCbRUR-2FU8HBvGDrybtJmGJJUfdigG-=
+2F1tZZlR66xmEz9dQFf8XUXKmhtWw-3D-3D6-9y_yX8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQ=
+O86-2Fs3NxkC76UhtYinHJoo8zWnEW50dKxY5ftTcZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381=
+L-2FJjG1-2F5opaxIve42vFJ-2BrfaZxd7sHwprvKsIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY=
+1g-2FwBh12Y4qS6tYNsq56l8WTfs5Uo00RhR87-2BlamVN3XKSezJmdof-2BNSjF4ffak7-2BPe=
+TH-2Be0sukqx4usTnD-2BbAhWG6AEbxpP6uLMvFIllpIRdczlwQd2-2FYf96gWD7bjRcU7-2Btk=
+EOecVhRmbmU65KCbqH5QBK8pQmKWx-2B2-2FvraolgQgf2shwwyttnRwNjDFNPfgEUHPXP9Hfxl=
+DB4Tyb9bdYqZnb8uyn-2BFBE3OP-2BOPetzt1-2Fn8KCljinVh2AAoZHcy0oUBjM81NATfRwagd=
+JAeQJj9H9JZtf3-2FUS5Mv7ReX2ZYyUAK8jUxte4LhX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVS=
+nGJamRshjViPxadidDn58mjnbfvciMVx0vOluV9X-2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M=
+-2Fm-2FJU8ho9TvFXnEQEiT0-2BRAveDpFUTtvymGjzAI-2F3xT-2BwGSUAdS4bxUD95MClu7rp=
+8nWVIwnoIyVoiEyIdNUGPMtSDOgqEvVH-2F6IdVhWQkHJyj1WYXoKOoqAGq64fTh9mga8tVgZo9=
+JydqZAxDMxJ1YohlOQ-3D" target=3D"_blank" style=3D"text-decoration: none; bo=
+rder-collapse: collapse; mso-line-height-rule: exactly;"> <img src=3D"https=
+://appboy-images.com/appboy/communication/assets/image_assets/images/5e8b61=
+c0d9ff145d36e97a99/original.gif?1586192832" width=3D"300" height=3D"" alt=
+=3D"" border=3D"0" align=3D"center" style=3D"width: 99%; max-width: 300px; =
+background-color: #000000; font-family: sans-serif; font-size: 15px; line-h=
+eight: 140%; color: #555555; outline: none !important; border: 0;"></a>
+                                            </td>
+                                        </tr>
+                                      =20
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+<table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" align=3D"center" width=3D"100%" style=3D"max-width: 600px; border-collap=
+se: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                            <tr>
+                                <td align=3D"center" valign=3D"top" width=
+=3D"50%" bgcolor=3D"#000000" style=3D"border-collapse: collapse; mso-line-h=
+eight-rule: exactly;">
+                                    <table role=3D"presentation" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" style=3D"font-size: 1=
+4px; text-align: left; border-collapse: collapse; mso-table-lspace: 0px; ms=
+o-table-rspace: 0px;">
+                                       =20
+                             =20
+                                    </table>
+                                </td>
+                                <td align=3D"center" valign=3D"top" width=
+=3D"50%" bgcolor=3D"000000" style=3D"border-collapse: collapse; mso-line-he=
+ight-rule: exactly;">
+                                    <table role=3D"presentation" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" style=3D"font-size: 1=
+4px; text-align: left; border-collapse: collapse; mso-table-lspace: 0px; ms=
+o-table-rspace: 0px;">
+                                     =20
+                                      =20
+                                    </table>
+                                </td>
+                            </tr>
+<tr>
+                                <td align=3D"center" valign=3D"top" width=
+=3D"50%" bgcolor=3D"#000000" style=3D"border-collapse: collapse; mso-line-h=
+eight-rule: exactly;">
+                                    <table role=3D"presentation" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" style=3D"font-size: 1=
+4px; text-align: left; border-collapse: collapse; mso-table-lspace: 0px; ms=
+o-table-rspace: 0px;">
+                                        <tr>
+                                            <td style=3D"border-right-style=
+: solid; border-bottom-style: solid; border-collapse: collapse; mso-line-he=
+ight-rule: exactly; padding: 0 0px; border: black;" align=3D"center">
+                                                <a href=3D"https://links.ma=
+il.crunchyroll.com/ls/click?upn=3DPX0Yv1ewwpkKwozoIPlC5REGPLh5NKExa-2B0ShX7=
+Vo37r8D-2F0-2BgWHY6ZauX8I-2Fd2LwbNgDeSfMMpLpxeWCcZC5bKKeoDETit4EYUOQBj1KVU9=
+2O9hEqm48HRTXyXjdptJAc-2BH-2B0FDQuRw3vMCNaL-2FZDlYL3xs-2BJ4D7gloBahdeDZU-2B=
+HOhGpLH-2BF7yah989wmhrr50d3dGGslJ2cqaEcFjTIQfhDt-2FW1FN-2BCzCegKbxzA56UvIf0=
+Ht5ufB5lPw5gNnN5Wm_yX8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3NxkC76UhtYinH=
+Joo8zWnEW50dKxY5ftTcZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-2F5opaxIve42=
+vFJ-2BrfaZxd7sHwprvKsIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh12Y4qS6tYNsq5=
+6l8WTfs5Uo00RhR87-2BlamVN3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0sukqx4usTnD-2B=
+bAhWG6AEbxpP6uLMvFIllpIRdczlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmbmU65KCbqH5QB=
+K8pQmKWx-2B2-2FvraolgQgf2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bdYqZnb8uyn-2B=
+FBE3OP-2BOPetzt1-2Fn8KCljinVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9JZtf3-2FUS5M=
+v7ReX2ZYyUAK8jUxte4LhX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshjViPxadidDn58=
+mjnbfvciMVx0vOluV9X-2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU8qxjwNxclWoC=
+TKI7nzx327faKw8LfDCz5-2FH5DGIZKBpMi91sWpjXS0nQ80-2BJVV54c-2FqmndnIV5Dwx5o6S=
+DCdp3kTyZ-2F7st0nXTwQUtnQgrZK1FI-2B-2BkyzM7EpvZwCSQ48vIFPNV1puP2oaPH5sElIYl=
+E-3D" target=3D"_blank" style=3D"text-decoration: none; border-collapse: co=
+llapse; mso-line-height-rule: exactly;"><img src=3D"https://appboy-images.c=
+om/appboy/communication/assets/image_assets/images/5e8ce2fd36e9d9052b68d7ca=
+/original.gif?1586291453" width=3D"300" height=3D"" alt=3D"" border=3D"" al=
+ign=3D"center" style=3D"width: 99%; max-width: 300px; background-color: #dd=
+dddd; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #=
+555555; outline: none !important; border: 0;"></a>
+                                            </td>
+                                        </tr>
+                             =20
+                                    </table>
+                                </td>
+                                <td align=3D"center" valign=3D"top" width=
+=3D"50%" bgcolor=3D"000000" style=3D"border-collapse: collapse; mso-line-he=
+ight-rule: exactly;">
+                                    <table role=3D"presentation" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" style=3D"font-size: 1=
+4px; text-align: left; border-collapse: collapse; mso-table-lspace: 0px; ms=
+o-table-rspace: 0px;">
+                                        <tr>
+                                            <td style=3D"border-left-style:=
+ solid; border-bottom-style: solid; border-collapse: collapse; mso-line-hei=
+ght-rule: exactly; padding: 0 0px; border: black;" align=3D"center">
+                                                <a href=3D"https://links.ma=
+il.crunchyroll.com/ls/click?upn=3D2SUa3reo277uXu924h7OHbRb6hBmo33N0LbsTT7ac=
+LawacI633PP0Pc-2FPe95gZVPvYSLloMuATLIYhywpE1byIm7MJFn7L0jTe9Dyj5HmX06GMN-2B=
+mAD06nRwGviRZhd6mX5cWr6iweNGg7nKKHhWUJtanrIMGaDm83ZzbjjwPb-2Bv4AfdUBjsbaiCj=
+SD1pBGl6rmfVNV-2F1porLJ7mKX2cY2c2MSnvlQ8aGJMAASIKtXlWlHsnQAhJlfA83cep57blu7=
+lYOiifcriwxZj1Q6ds7Q-3D-3DmfDL_yX8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3N=
+xkC76UhtYinHJoo8zWnEW50dKxY5ftTcZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-=
+2F5opaxIve42vFJ-2BrfaZxd7sHwprvKsIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh1=
+2Y4qS6tYNsq56l8WTfs5Uo00RhR87-2BlamVN3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0su=
+kqx4usTnD-2BbAhWG6AEbxpP6uLMvFIllpIRdczlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmb=
+mU65KCbqH5QBK8pQmKWx-2B2-2FvraolgQgf2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bd=
+YqZnb8uyn-2BFBE3OP-2BOPetzt1-2Fn8KCljinVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9=
+JZtf3-2FUS5Mv7ReX2ZYyUAK8jUxte4LhX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshj=
+ViPxadidDn58mjnbfvciMVx0vOluV9X-2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU=
+8kavYPCUERxT3YeuIJkYhWb-2B4ywQCxWXsSaizbRjd0U8ObOD2E6TAkTFnmKh-2FueVJ5oKb7A=
+-2FrJ3JID-2F2BclS2XELsrDah-2B-2BjM6-2FTD6Laop7g4otNKlqF8NH1VNO7O82hhd-2BiC2=
+n6UoH0xyZCO5XhjeE-3D" target=3D"_blank" style=3D"text-decoration: none; bor=
+der-collapse: collapse; mso-line-height-rule: exactly;"><img src=3D"https:/=
+/appboy-images.com/appboy/communication/assets/image_assets/images/5e8b624a=
+0f5a7f37e63bf4b1/original.gif?1586192970" width=3D"300" height=3D"" alt=3D"=
+" border=3D"0" align=3D"center" style=3D"width: 99%; max-width: 300px; back=
+ground-color: #000000; font-family: sans-serif; font-size: 15px; line-heigh=
+t: 140%; color: #555555; outline: none !important; border: 0;"></a>
+                                            </td>
+                                        </tr>
+                                      =20
+                                    </table>
+                                </td>
+                            </tr>
+<tr>
+                                <td align=3D"center" valign=3D"top" width=
+=3D"50%" bgcolor=3D"#000000" style=3D"border-collapse: collapse; mso-line-h=
+eight-rule: exactly;">
+                                    <table role=3D"presentation" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" style=3D"font-size: 1=
+4px; text-align: left; border-collapse: collapse; mso-table-lspace: 0px; ms=
+o-table-rspace: 0px;">
+                                      =20
+                             =20
+                                    </table>
+                                </td>
+                                <td align=3D"center" valign=3D"top" width=
+=3D"50%" bgcolor=3D"000000" style=3D"border-collapse: collapse; mso-line-he=
+ight-rule: exactly;">
+                                    <table role=3D"presentation" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" style=3D"font-size: 1=
+4px; text-align: left; border-collapse: collapse; mso-table-lspace: 0px; ms=
+o-table-rspace: 0px;">
+                                       =20
+                                      =20
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+<table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" align=3D"center" width=3D"100%" style=3D"max-width: 600px; border-collap=
+se: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                            <tr>
+                                <td align=3D"center" valign=3D"top" width=
+=3D"50%" bgcolor=3D"#000000" style=3D"border-collapse: collapse; mso-line-h=
+eight-rule: exactly;">
+                                    <table role=3D"presentation" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" style=3D"font-size: 1=
+4px; text-align: left; border-collapse: collapse; mso-table-lspace: 0px; ms=
+o-table-rspace: 0px;">
+                                       =20
+                             =20
+                                    </table>
+                                </td>
+                                <td align=3D"center" valign=3D"top" width=
+=3D"50%" bgcolor=3D"000000" style=3D"border-collapse: collapse; mso-line-he=
+ight-rule: exactly;">
+                                    <table role=3D"presentation" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" style=3D"font-size: 1=
+4px; text-align: left; border-collapse: collapse; mso-table-lspace: 0px; ms=
+o-table-rspace: 0px;">
+                                     =20
+                                      =20
+                                    </table>
+                                </td>
+                            </tr>
+<tr>
+                                <td align=3D"center" valign=3D"top" width=
+=3D"50%" bgcolor=3D"#000000" style=3D"border-collapse: collapse; mso-line-h=
+eight-rule: exactly;">
+                                    <table role=3D"presentation" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" style=3D"font-size: 1=
+4px; text-align: left; border-collapse: collapse; mso-table-lspace: 0px; ms=
+o-table-rspace: 0px;">
+                                        <tr>
+                                            <td style=3D"border-right-style=
+: solid; border-bottom-style: solid; border-collapse: collapse; mso-line-he=
+ight-rule: exactly; padding: 0 0px; border: black;" align=3D"center">
+                                                <a href=3D"https://links.ma=
+il.crunchyroll.com/ls/click?upn=3D2SUa3reo277uXu924h7OHbRb6hBmo33N0LbsTT7ac=
+LaBu8T5PrsFr54ICvkoefsvdDAp2looRYaszlh0eQfPQyOgFUpIfeAGzDNYHLo4jDcz37t2mAAd=
+bQtUThVPEJplbYmlfWmCedk3wXvzjYr6UTzNYQIfvF2cH9txJT-2BJpH-2FrZ0HZVofHCSCMvEG=
+aN0bP-2FvluTsZguJxuKLOUUMgurC0nS08aZPTYAmk0MpCmy6FF9v1ZXHCAE9Ia53w3M0ngJ4BV=
+_yX8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3NxkC76UhtYinHJoo8zWnEW50dKxY5ft=
+TcZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-2F5opaxIve42vFJ-2BrfaZxd7sHwpr=
+vKsIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh12Y4qS6tYNsq56l8WTfs5Uo00RhR87-=
+2BlamVN3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0sukqx4usTnD-2BbAhWG6AEbxpP6uLMvF=
+IllpIRdczlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmbmU65KCbqH5QBK8pQmKWx-2B2-2Fvra=
+olgQgf2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bdYqZnb8uyn-2BFBE3OP-2BOPetzt1-2=
+Fn8KCljinVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9JZtf3-2FUS5Mv7ReX2ZYyUAK8jUxte=
+4LhX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshjViPxadidDn58mjnbfvciMVx0vOluV9=
+X-2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU8lgxzr1lwRH3V7bXJ2MqYCWdfAUwaH=
+qyoLa3pHman9t8Cok0Frz0rBlxxzzH15Pc1rvM6ilYrVDg69oOaypjQBroq7xJWTyWfvDe7eaDO=
+X4vav4h6E-2Bv1ipTR-2BsEqh5LUsXQiUcEDGzCfTeiMz951F4-3D" target=3D"_blank" st=
+yle=3D"text-decoration: none; border-collapse: collapse; mso-line-height-ru=
+le: exactly;"><img src=3D"https://appboy-images.com/appboy/communication/as=
+sets/image_assets/images/5e8b622c4c720360d1e4623d/original.gif?1586192940" =
+width=3D"300" height=3D"" alt=3D"" border=3D"" align=3D"center" style=3D"wi=
+dth: 99%; max-width: 300px; background-color: #dddddd; font-family: sans-se=
+rif; font-size: 15px; line-height: 140%; color: #555555; outline: none !imp=
+ortant; border: 0;"></a>
+                                            </td>
+                                        </tr>
+                             =20
+                                    </table>
+                                </td>
+                                <td align=3D"center" valign=3D"top" width=
+=3D"50%" bgcolor=3D"000000" style=3D"border-collapse: collapse; mso-line-he=
+ight-rule: exactly;">
+                                    <table role=3D"presentation" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" style=3D"font-size: 1=
+4px; text-align: left; border-collapse: collapse; mso-table-lspace: 0px; ms=
+o-table-rspace: 0px;">
+                                        <tr>
+                                            <td style=3D"border-left-style:=
+ solid; border-bottom-style: solid; border-collapse: collapse; mso-line-hei=
+ght-rule: exactly; padding: 0 0px; border: black;" align=3D"center">
+                                                <a href=3D"https://links.ma=
+il.crunchyroll.com/ls/click?upn=3D2SUa3reo277uXu924h7OHbRb6hBmo33N0LbsTT7ac=
+LYmrEqytyR8RxjnhjmW0isOdje8Q4-2FV-2FAbGKbWK5HAAQcyu5t99lyzMJYyxeALO5z7qOKbr=
+EQHPRHxfTd3Q0wvdEP-2FtvTCedTNEA9wCQIu2m7C1IXB6zOJd1etDcXaFyHRAwIShaikO-2FPt=
+PyoQDdB0a5aLrwHaD98tzhPStU9aVu6-2BwSx9uGrhWmewwAe8m8QtiY-2FxW47-2FBzcpyDzYf=
+QGtNO8Mw_yX8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3NxkC76UhtYinHJoo8zWnEW5=
+0dKxY5ftTcZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-2F5opaxIve42vFJ-2BrfaZ=
+xd7sHwprvKsIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh12Y4qS6tYNsq56l8WTfs5Uo=
+00RhR87-2BlamVN3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0sukqx4usTnD-2BbAhWG6AEbx=
+pP6uLMvFIllpIRdczlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmbmU65KCbqH5QBK8pQmKWx-2=
+B2-2FvraolgQgf2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bdYqZnb8uyn-2BFBE3OP-2BO=
+Petzt1-2Fn8KCljinVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9JZtf3-2FUS5Mv7ReX2ZYyU=
+AK8jUxte4LhX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshjViPxadidDn58mjnbfvciMV=
+x0vOluV9X-2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU8u-2BrwAv9O8Lih0T1z5Bb=
+dbDhnWvmHLMSYYdn4-2F6pJvAS5YaGZQuS92e-2FuSlL-2BpPx8DF5IjGn5aQWYKnLH8nv0qhce=
+P5ca0aNElmRT0hc24qdX97ImFTjG1-2B4HoMfGjQnBtpxtyDrszSBmUsTDt0cg1k-3D" target=
+=3D"_blank" style=3D"text-decoration: none; border-collapse: collapse; mso-=
+line-height-rule: exactly;"><img src=3D"https://appboy-images.com/appboy/co=
+mmunication/assets/image_assets/images/5e8b61bed21f79574214fdd0/original.gi=
+f?1586192830" width=3D"300" height=3D"" alt=3D"" border=3D"0" align=3D"cent=
+er" style=3D"width: 99%; max-width: 300px; background-color: #000000; font-=
+family: sans-serif; font-size: 15px; line-height: 140%; color: #555555; out=
+line: none !important; border: 0;"></a>
+                                            </td>
+                                        </tr>
+                                      =20
+                                    </table>
+                                </td>
+                            </tr>
+<tr>
+                                <td align=3D"center" valign=3D"top" width=
+=3D"50%" bgcolor=3D"#000000" style=3D"border-collapse: collapse; mso-line-h=
+eight-rule: exactly;">
+                                    <table role=3D"presentation" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" style=3D"font-size: 1=
+4px; text-align: left; border-collapse: collapse; mso-table-lspace: 0px; ms=
+o-table-rspace: 0px;">
+                                      =20
+                             =20
+                                    </table>
+                                </td>
+                                <td align=3D"center" valign=3D"top" width=
+=3D"50%" bgcolor=3D"000000" style=3D"border-collapse: collapse; mso-line-he=
+ight-rule: exactly;">
+                                    <table role=3D"presentation" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" style=3D"font-size: 1=
+4px; text-align: left; border-collapse: collapse; mso-table-lspace: 0px; ms=
+o-table-rspace: 0px;">
+                                       =20
+                                      =20
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+<table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" align=3D"center" width=3D"100%" style=3D"max-width: 600px; border-collap=
+se: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                           =20
+                        </table>
+<table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" align=3D"center" width=3D"100%" style=3D"max-width: 600px; border-collap=
+se: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px;">
+                           =20
+                        </table>
+                    </td>
+                </tr>=20
+                        </table>
+                    </td>
+      </tr>
+                <!-- 1 Column Text + Button : END -->
+
+                <!-- 2 Even Columns : BEGIN -->
+               =20
+                <!-- Two Even Columns : END -->
+
+                <!-- Clear Spacer : BEGIN -->
+           =20
+  =20
+  =20
+    =20
+                <!-- Clear Spacer : END -->
+
+                <!-- 1 Column Text : BEGIN -->
+         =20
+   =20
+    <tr>
+                    <td height=3D"25" class=3D"em_h15" style=3D"font-size: =
+0px; line-height: 0px; height: 40px; border-collapse: collapse; mso-line-he=
+ight-rule: exactly;" bgcolor=3D"#000000">&nbsp;</td>
+        </tr>
+
+    <tr>
+                    <td valign=3D"top" align=3D"center" bgcolor=3D"#000000"=
+ style=3D"border-collapse: collapse; mso-line-height-rule: exactly;">
+                      <table align=3D"center" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0=
+px; mso-table-rspace: 0px;">
+                        <tr>
+                          <td valign=3D"middle" align=3D"center" style=3D"b=
+order-collapse: collapse; mso-line-height-rule: exactly;"><a href=3D"https:=
+//links.mail.crunchyroll.com/ls/click?upn=3D2SUa3reo277uXu924h7OHUoYBdHJxsz=
+XUdcs1WaeYkICmkTDUh4bdIAWzQR7RWB8GFnwjCkoI9bQc2PgXnTZ6dwE43tDcQwbhT0JrhtSyt=
+1DxTHtDEYP4pjqqmuFwfbKMUOTI1NFAu-2Br1J0h-2Fy9FLr-2BwYsLQCPiBpcnRiGUDwQb5XV8=
+BcIPSILrWRKPmDBsM9Y4zqJlBBKDnlk1GUQQCqi6gEgR9LOInarnFkxZ6FGU-3D-CqU_yX8ThNw=
+B4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3NxkC76UhtYinHJoo8zWnEW50dKxY5ftTcZYZO-2=
+FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-2F5opaxIve42vFJ-2BrfaZxd7sHwprvKsIeMAq=
+C5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh12Y4qS6tYNsq56l8WTfs5Uo00RhR87-2BlamVN3=
+XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0sukqx4usTnD-2BbAhWG6AEbxpP6uLMvFIllpIRdc=
+zlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmbmU65KCbqH5QBK8pQmKWx-2B2-2FvraolgQgf2s=
+hwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bdYqZnb8uyn-2BFBE3OP-2BOPetzt1-2Fn8KClji=
+nVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9JZtf3-2FUS5Mv7ReX2ZYyUAK8jUxte4LhX5saF=
+cZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshjViPxadidDn58mjnbfvciMVx0vOluV9X-2FqeVP=
+gioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU8sJmFDoXNe7c1D3T4YK15ySk4uqegIt0tRC1hf=
+ZhEwCn4E-2FCzb9j9kevwjuhXV7de3GPUsTx3FHxyaBSjvsGv4WGsAvgi6UE3KlhKikp-2BaqaV=
+iFzbzZT3HhQWb7GQya0ma9zNXQ0dc6keotKsDmDcfE-3D" target=3D"_blank" style=3D"t=
+ext-decoration: none; border-collapse: collapse; mso-line-height-rule: exac=
+tly;"><img src=3D"https://appboy-images.com/appboy/communication/assets/ima=
+ge_assets/images/5ca3c89ed5b6820f91ed2e86/original.png?1554237598" alt=3D"f=
+b" style=3D"display: block; font-family: Arial, sans-serif; font-size: 15px=
+; line-height: 18px; color: #000000; outline: none !important; border: 0;" =
+border=3D"0" width=3D"65" height=3D"65"></a></td>
+                          <td width=3D"9" style=3D"width: 25px; border-coll=
+apse: collapse; mso-line-height-rule: exactly;">&nbsp;</td>
+                          <td valign=3D"middle" align=3D"center" style=3D"b=
+order-collapse: collapse; mso-line-height-rule: exactly;"><a href=3D"https:=
+//links.mail.crunchyroll.com/ls/click?upn=3D2SUa3reo277uXu924h7OHdXM9On6x6m=
+AC0beKZ8E-2F6PvTJOtroNCBt1NuLtJiONUhOxPBq2z3oYn0JxZ465YCE5bG6RPF6z1FUEh-2BV=
+4BK67C9sWGblVGgkD72KcBUa58T3L4jbXhVfjHX2tEQ6J1Uy712MLYu16x1Kq4RznuVASIEiyq7=
+RFSxvgHSfYJ6JKrueXgWZnE6NVGLA3nQI-2BPU9mJuKN-2FLw2TUu99i0gUrS4-3DIbQ4_yX8Th=
+NwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3NxkC76UhtYinHJoo8zWnEW50dKxY5ftTcZYZO=
+-2FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-2F5opaxIve42vFJ-2BrfaZxd7sHwprvKsIeM=
+AqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh12Y4qS6tYNsq56l8WTfs5Uo00RhR87-2BlamV=
+N3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0sukqx4usTnD-2BbAhWG6AEbxpP6uLMvFIllpIR=
+dczlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmbmU65KCbqH5QBK8pQmKWx-2B2-2FvraolgQgf=
+2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bdYqZnb8uyn-2BFBE3OP-2BOPetzt1-2Fn8KCl=
+jinVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9JZtf3-2FUS5Mv7ReX2ZYyUAK8jUxte4LhX5s=
+aFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshjViPxadidDn58mjnbfvciMVx0vOluV9X-2Fqe=
+VPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU8vtAO-2BXshOnVuv0t9E57BQB5zZHQ3crTbX=
+kSNJ7vKDSKfxcO2xb-2FjSDb9JwumJECLhBOArKEgoA3a4GeqqPPxwXJUA4S9zqcrhclJWj5XQM=
+1GgXDZa8AoYidhQ0xLx-2BhJkS1ofYjyDVf8CLNWgKxmWU-3D" target=3D"_blank" style=
+=3D"text-decoration: none; border-collapse: collapse; mso-line-height-rule:=
+ exactly;"><img src=3D"https://appboy-images.com/appboy/communication/asset=
+s/image_assets/images/5ca3c8a0a12f745db9631632/original.png?1554237600" alt=
+=3D"tw" style=3D"display: block; font-family: Arial, sans-serif; font-size:=
+ 15px; line-height: 18px; color: #000000; outline: none !important; border:=
+ 0;" border=3D"0" width=3D"65" height=3D"65"></a></td>
+                          <td width=3D"9" style=3D"width: 25px; border-coll=
+apse: collapse; mso-line-height-rule: exactly;">&nbsp;</td>
+                          <td valign=3D"middle" align=3D"center" style=3D"b=
+order-collapse: collapse; mso-line-height-rule: exactly;"><a href=3D"https:=
+//links.mail.crunchyroll.com/ls/click?upn=3D2SUa3reo277uXu924h7OHU1jDVPUZWN=
+dL7KtfUjvfWzYWRreboQOYtCB943dXMXlwRV658Q0NSYJOnMSJikiyEXObBRYelqU9a9HqbF497=
+5tRhsQ6Lj6rorn5Ey9E2-2BVxP4Yeb64vHn-2B3eS2IVtqojQgEGOcaPoUAprKjo-2ByDKW-2FY=
+EDs6n4ubPz-2FYoieBzVmEKO4ze7N9-2FatrFKhJ494xTxhE2-2BUrKn8qecdvMD4Tp4-3DyWGU=
+_yX8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3NxkC76UhtYinHJoo8zWnEW50dKxY5ft=
+TcZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-2F5opaxIve42vFJ-2BrfaZxd7sHwpr=
+vKsIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh12Y4qS6tYNsq56l8WTfs5Uo00RhR87-=
+2BlamVN3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0sukqx4usTnD-2BbAhWG6AEbxpP6uLMvF=
+IllpIRdczlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmbmU65KCbqH5QBK8pQmKWx-2B2-2Fvra=
+olgQgf2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bdYqZnb8uyn-2BFBE3OP-2BOPetzt1-2=
+Fn8KCljinVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9JZtf3-2FUS5Mv7ReX2ZYyUAK8jUxte=
+4LhX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshjViPxadidDn58mjnbfvciMVx0vOluV9=
+X-2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU8sXx0PEOQTu1AAgTa-2F694e-2F9jk=
+c6pCO96nIkzR-2FJOcjlZkguYiLIVnjBK2bwTq8ddw6vdMMZ8HEe3994nemQRJBgobin-2BmNZ4=
+dzpnT2WZpOSzQWf0zBv2f0SWOYtmZjY1KSDOUTwZK5GrjbNy0YnFZw-3D" target=3D"_blank=
+" style=3D"text-decoration: none; border-collapse: collapse; mso-line-heigh=
+t-rule: exactly;"><img src=3D"https://appboy-images.com/appboy/communicatio=
+n/assets/image_assets/images/5ca3c8a17dea0d630097c374/original.png?15542376=
+01" alt=3D"yt" style=3D"display: block; font-family: Arial, sans-serif; fon=
+t-size: 15px; line-height: 18px; color: #000000; outline: none !important; =
+border: 0;" border=3D"0" width=3D"65" height=3D"65"></a></td>
+                          <td width=3D"9" style=3D"width: 25px; border-coll=
+apse: collapse; mso-line-height-rule: exactly;">&nbsp;</td>
+                          <td valign=3D"middle" align=3D"center" style=3D"b=
+order-collapse: collapse; mso-line-height-rule: exactly;"><a href=3D"https:=
+//links.mail.crunchyroll.com/ls/click?upn=3D2SUa3reo277uXu924h7OHYLR6V-2Ff1=
+VYZ6ibVypUTeyqsLShQhCls53YES-2BzgWXNtVCMshql-2BWsUmEcWCTOO1MGXH9lYEvPnL6UZJ=
+1D7jcnQPhEwZJo2yrjfi46Yra3Up6FiFWuCuB5hY-2B8ZYoDTrTIBK-2BY-2FnRr0IcwTTgTSw4=
+VATMz3PoNO05p3gLecgnTjP5DdhuNjO9vbrV1cwlXhU66e0hIc5K8ApYI1e3sOqUzQ-3D46wC_y=
+X8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3NxkC76UhtYinHJoo8zWnEW50dKxY5ftTc=
+ZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-2F5opaxIve42vFJ-2BrfaZxd7sHwprvK=
+sIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh12Y4qS6tYNsq56l8WTfs5Uo00RhR87-2B=
+lamVN3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0sukqx4usTnD-2BbAhWG6AEbxpP6uLMvFIl=
+lpIRdczlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmbmU65KCbqH5QBK8pQmKWx-2B2-2Fvraol=
+gQgf2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bdYqZnb8uyn-2BFBE3OP-2BOPetzt1-2Fn=
+8KCljinVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9JZtf3-2FUS5Mv7ReX2ZYyUAK8jUxte4L=
+hX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshjViPxadidDn58mjnbfvciMVx0vOluV9X-=
+2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU8v5WXUeEOrS4IeI-2BJBqO84NkxjWJZ1=
+fdEHgsdWcbmWk2xXQoNaHcA2j8qpF1kXJ5WZAZeOoSBiQ46jntFzbohnsviPPQfvCvJarVU0941=
+t7-2Bp68uRtg1wM-2Bti6kHHhA0oToJ6MFIjkHLSSoH5z8Z9Qs-3D" target=3D"_blank" st=
+yle=3D"text-decoration: none; border-collapse: collapse; mso-line-height-ru=
+le: exactly;"><img src=3D"https://appboy-images.com/appboy/communication/as=
+sets/image_assets/images/5ca3c8a3a12f745db9631639/original.png?1554237603" =
+alt=3D"insta" style=3D"display: block; font-family: Arial, sans-serif; font=
+-size: 15px; line-height: 18px; color: #000000; outline: none !important; b=
+order: 0;" border=3D"0" width=3D"65" height=3D"65"></a></td>
+                        </tr>
+                      </table>
+                    </td>
+        </tr>
+        <tr>
+                    <td height=3D"30" class=3D"em_h10" style=3D"font-size: =
+0px; line-height: 0px; height: 30px; border-collapse: collapse; mso-line-he=
+ight-rule: exactly;" bgcolor=3D"#000000">&nbsp;</td>
+        </tr>
+    <tr>
+                    <td valign=3D"top" align=3D"center" style=3D"padding-bo=
+ttom: 10px; border-collapse: collapse; mso-line-height-rule: exactly;" bgco=
+lor=3D"#000000"><a href=3D"https://links.mail.crunchyroll.com/ls/click?upn=
+=3D2SUa3reo277uXu924h7OHbRb6hBmo33N0LbsTT7acLZPo5T3CYnqQR8hqkCqX0byzBmapWwv=
+EgWZ2mOvHgFzTqgajgy34zrs8DwmAoMbwv8gYTOOPPtqsIhs4e4OBfwAvPzW3-2FOAyh1C32d0q=
+9PUbaM-2B9ViUh9RZxJObsXP5XItNmYiqYvh8kWbVQsW6UWp1SpjBOBtwd4N5nCUj0GICn7-2BQ=
+yqofqnEpH1MqBCXFjeo-3DoETu_yX8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3NxkC7=
+6UhtYinHJoo8zWnEW50dKxY5ftTcZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-2F5o=
+paxIve42vFJ-2BrfaZxd7sHwprvKsIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh12Y4q=
+S6tYNsq56l8WTfs5Uo00RhR87-2BlamVN3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0sukqx4=
+usTnD-2BbAhWG6AEbxpP6uLMvFIllpIRdczlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmbmU65=
+KCbqH5QBK8pQmKWx-2B2-2FvraolgQgf2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bdYqZn=
+b8uyn-2BFBE3OP-2BOPetzt1-2Fn8KCljinVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9JZtf=
+3-2FUS5Mv7ReX2ZYyUAK8jUxte4LhX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshjViPx=
+adidDn58mjnbfvciMVx0vOluV9X-2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU8rYL=
+9EDRtzn9VROBKFhXNzNazx4t-2FjDDMnbm08GF5sK7CDgi0NcgK2nd7tLm7Mrj-2BaPLkFLu2CZ=
+D5Y3CUDlIOhh38bCmk1pCPCF2SqFVMnld-2FN3t0e7FibaYPtw-2Fw6AQv56Cj3accTuaJG3vvM=
+cFdj8-3D" target=3D"_blank" style=3D"text-decoration: none; border-collapse=
+: collapse; mso-line-height-rule: exactly;"><img src=3D"https://appboy-imag=
+es.com/appboy/communication/assets/image_assets/images/5f220ea9afcaf239dbde=
+9d13/original.png?1596067497" alt=3D"crunchyroll" style=3D"display: block; =
+font-family: Arial, sans-serif; font-size: 15px; line-height: 18px; color: =
+#ffffff; max-width: 190px; outline: none !important; border: 0;" border=3D"=
+0" width=3D"190" height=3D""></a></td>
+        </tr>
+<tr>
+                    <td align=3D"center" valign=3D"top" class=3D"em_ftr_tex=
+t2" style=3D"font-family: 'Lato', Arial, sans-serif; font-size: 13px; line-=
+height: 18px; color: #8b8b8b; border-collapse: collapse; mso-line-height-ru=
+le: exactly; padding: 20px 25px 25px;" bgcolor=3D"#000000">
+<a target=3D"_blank" style=3D"text-decoration: none; color: #8b8b8b; border=
+-collapse: collapse; mso-line-height-rule: exactly;">Crunchyroll<br>PO BOX =
+405<br> San Francisco, CA 94104-0405</a>&nbsp;<br><br><font style=3D"text-d=
+ecoration: none; color: #8b8b8b;"> This email was sent to</font> <a href=3D=
+"mailto:ciel@binc.pw" style=3D"color: #8b8b8b; text-decoration: none; borde=
+r-collapse: collapse; mso-line-height-rule: exactly;">ciel@binc.pw</a><br>
+                      <a href=3D"https://links.mail.crunchyroll.com/ls/clic=
+k?upn=3DPX0Yv1ewwpkKwozoIPlC5REGPLh5NKExa-2B0ShX7Vo34vc3Bsg6pCbjr5fjRyW9ob-=
+2BV3pUwAhj4tODqLJ6mTMzr-2BA2xtc3W4wtifI75ngwfFQkQUzlY9Mr2eMSeMI8IC7AEY1BzBG=
+IK4Dgo2uLsK79PvpPGRvnEepyvDp-2BNjYQybQlba979AwIBLd8jlIVXDA0MUQDxGs4Zru7nSxn=
+muWx-2FqdQlifiq9JILjFqqzqPRI-3DnZQz_yX8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-=
+2Fs3NxkC76UhtYinHJoo8zWnEW50dKxY5ftTcZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381L-2F=
+JjG1-2F5opaxIve42vFJ-2BrfaZxd7sHwprvKsIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2=
+FwBh12Y4qS6tYNsq56l8WTfs5Uo00RhR87-2BlamVN3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2=
+Be0sukqx4usTnD-2BbAhWG6AEbxpP6uLMvFIllpIRdczlwQd2-2FYf96gWD7bjRcU7-2BtkEOec=
+VhRmbmU65KCbqH5QBK8pQmKWx-2B2-2FvraolgQgf2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4T=
+yb9bdYqZnb8uyn-2BFBE3OP-2BOPetzt1-2Fn8KCljinVh2AAoZHcy0oUBjM81NATfRwagdJAeQ=
+Jj9H9JZtf3-2FUS5Mv7ReX2ZYyUAK8jUxte4LhX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJa=
+mRshjViPxadidDn58mjnbfvciMVx0vOluV9X-2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm=
+-2FJU8n0HMCAtb78vhaS9OajZVCreIvPa1SYhvM4FsLuZvjB0K95xw7p3lk5stn6nH0vDfS1vjU=
+CcPYqULnBff0oRhRe7meB2hx9kALGsizy88WvTd7MnIZ-2FxMMUOTKCnU1eC3fVavBJFpR0lkwA=
+5H-2BlLyS4-3D" target=3D"_blank" style=3D"text-decoration: underline; color=
+: #8b8b8b; white-space: nowrap; border-collapse: collapse; mso-line-height-=
+rule: exactly;">PRIVACY POLICY</a>  |&nbsp;=20
+=20
+                        <a href=3D"https://links.mail.crunchyroll.com/ls/cl=
+ick?upn=3D2SUa3reo277uXu924h7OHbRb6hBmo33N0LbsTT7acLYwrLUnmttE7h4d1BYkVDrtE=
+Ll8HdXmLr34F0rheTJcyg-3D-3D5CJ4_yX8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3=
+NxkC76UhtYinHJoo8zWnEW50dKxY5ftTcZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1=
+-2F5opaxIve42vFJ-2BrfaZxd7sHwprvKsIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh=
+12Y4qS6tYNsq56l8WTfs5Uo00RhR87-2BlamVN3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0s=
+ukqx4usTnD-2BbAhWG6AEbxpP6uLMvFIllpIRdczlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRm=
+bmU65KCbqH5QBK8pQmKWx-2B2-2FvraolgQgf2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9b=
+dYqZnb8uyn-2BFBE3OP-2BOPetzt1-2Fn8KCljinVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H=
+9JZtf3-2FUS5Mv7ReX2ZYyUAK8jUxte4LhX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRsh=
+jViPxadidDn58mjnbfvciMVx0vOluV9X-2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJ=
+U8u43Xv-2BM53axCn-2B6QcWbqhs6sodWnCJg3-2Bx9m6B-2BTMSUfAxX3Cf1nTelQ-2FHtmj-2=
+FAtsiRTwJ38bd1Nhgu4vAEiMQAhtOMx4ug3wN-2B-2BfnWfUbGNoEfewwPRarYHInDvFwYVFwFZ=
+gO9GNorc-2FY4GxBrO2Y-3D" target=3D"_blank" style=3D"color: #8b8b8b; text-de=
+coration: underline; border-collapse: collapse; mso-line-height-rule: exact=
+ly;">UNSUBSCRIBE</a>  |&nbsp; <a href=3D"https://links.mail.crunchyroll.com=
+/ls/click?upn=3DPX0Yv1ewwpkKwozoIPlC5REGPLh5NKExa-2B0ShX7Vo35xLXtRSJy-2FsPJ=
+fiZ6QalCkUYDjeJQCb3h61L0IXvdXAhuqFmbamqOhMmNl-2BVnnB-2FX2pI0qDFg5sTA7BvGjkC=
+FQZx4AE8avSRKYOpIzaH11fZWJiHtLvB8YX5CoEKUPk-2Bb6PLRIkdxILRoOPDz-2BR53-2Fczx=
+3RWQ4hnx8TCYoP1aBpQ-3D-3DUgWx_yX8ThNwB4BpsG7wB4PTRBYJ61WfwxcJ7PuQO86-2Fs3Nx=
+kC76UhtYinHJoo8zWnEW50dKxY5ftTcZYZO-2FU5DonKF-2BtdTEI5BIcfvnka381L-2FJjG1-2=
+F5opaxIve42vFJ-2BrfaZxd7sHwprvKsIeMAqC5RE75gjXSJF9Q3P7LB3cOom2HwY1g-2FwBh12=
+Y4qS6tYNsq56l8WTfs5Uo00RhR87-2BlamVN3XKSezJmdof-2BNSjF4ffak7-2BPeTH-2Be0suk=
+qx4usTnD-2BbAhWG6AEbxpP6uLMvFIllpIRdczlwQd2-2FYf96gWD7bjRcU7-2BtkEOecVhRmbm=
+U65KCbqH5QBK8pQmKWx-2B2-2FvraolgQgf2shwwyttnRwNjDFNPfgEUHPXP9HfxlDB4Tyb9bdY=
+qZnb8uyn-2BFBE3OP-2BOPetzt1-2Fn8KCljinVh2AAoZHcy0oUBjM81NATfRwagdJAeQJj9H9J=
+Ztf3-2FUS5Mv7ReX2ZYyUAK8jUxte4LhX5saFcZ8q7oXD7wznbenWXu-2F6HkNXVSnGJamRshjV=
+iPxadidDn58mjnbfvciMVx0vOluV9X-2FqeVPgioCZ3mxkUNsfy4Can1VtBmYPH8M-2Fm-2FJU8=
+oT6YVm4Adc5-2BrJB7KhXMjZfUX0m5mMYL-2BrWw03-2BjX-2FD6sqoOWIPhr4BqsNnLbXjtgiz=
+bnWZvYJX5uRuh7u5VxGg97-2F5WM7yXrBF4cIE-2BCse5AIWiy0BC-2BN-2BLuLt6-2FSoL6jQ9=
+bC172lpV9Z-2F9zpKkq0-3D" target=3D"_blank" style=3D"text-decoration: underl=
+ine; color: #8b8b8b; white-space: nowrap; border-collapse: collapse; mso-li=
+ne-height-rule: exactly;">TERMS OF SERVICE</a><img src=3D"https://pixel.app=
+.returnpath.net/pixel.gif?r=3Dcca65063723ade2d824be993cc7166a6e51f9b52" wid=
+th=3D"1" height=3D"1" style=3D"outline: none !important; border: 0;">
+                    </td>
+                  </tr>
+          =20
+                <!-- 1 Column Text : END -->
+
+   </table>
+</div>
+</center>
+</table>
+            <!-- Email Body : END -->
+
+            <!-- Email Footer : BEGIN -->
+           =20
+            <!-- Email Footer : END -->
+
+            <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+       =20
+
+        <!-- Full Bleed Background Section : BEGIN -->
+       =20
+  =20
+  <!-- try to load custom font -->
+<!-- end custom font --><!-- Full Bleed Background Section : END -->
+
+   =20
+
+ </td>
+</tr>
+</table>
+         =20
+       =20
+        <tr>
+          <td height=3D"20" class=3D"em_h10" style=3D"border-collapse: coll=
+apse; mso-line-height-rule: exactly;">&nbsp;</td>
+        </tr>
+ <tr>
+          <td align=3D"center" valign=3D"top" style=3D"border-collapse: col=
+lapse; mso-line-height-rule: exactly;">
+           =20
+</td>
+</tr>
+<img src=3D"https://links.mail.crunchyroll.com/wf/open?upn=3DRiao7ViE58U10Y=
+zxpf-2FL8yWCWJPB2XXleZhDLIapgRiVrC257eUTrDawr66IKbn5jqrkc4o-2FKFqDO1Ig8gyiP=
+3GWqLPcP2fm1Wih-2FGGxJyUR3tzXiBBqfS311R62Ga4r5ugMh9cz9JLviSvUm5pb2qtuVDPEfN=
+OliSh26qX-2BKwTErahiU3j-2BpvUWEZvmmVzwML3Kb6HeigQGEPO9N6dWOE067IOaQmiGORWyP=
+Q0hp-2Febv5gcx-2FiuofonG3Oc7ZmIJVQ2195rDOaig9uyENByiSsaCwKqubCcxEu8ILRRY0vn=
+7PeYQraSP5bYOo-2BTMGq5-2BxEp5XWyRnPz7oJfEDv01s28aKaz6a7gMWmCXb4gS0ptLy7q8B6=
+f4r789roEQK4LeurUeb1Cak4kjMvp1BaWh8AJoNlT-2BmrLwbnEQy48D-2F8dFbopKYoRAkPIKR=
+CXh7T1R1o78Yf-2F3IrXmCUSA7IFOgHFRdKqZYVBrnIqlX2Zdxd-2FEN-2BLh1AfSeC95EqIgel=
+tlO7S78Y-2FGawE0S50bTdpj4UldzlVkmbMyfi-2FfjOT-2FcHxM0U54IS6xLH0-2BItdW8SvWk=
+a5UTylMheTAU-2B2WzTuZJWK7bMfltFeJuaVAvd7yBIChKTbh3lKg-2Be6OccapJ4Soh9nVf4QH=
+NkP0F2s1h5FWoFo319LMN39-2F1qMSxpOeAGUsxiJHlnxNTWet99JHEywFBvtj2YkIVEbwiwiAP=
+-2BS1tcXKeFztAqYzVe6Fp0fwmo-3D" alt=3D"" width=3D"1" height=3D"1" border=3D=
+"0" style=3D"height:1px !important;width:1px !important;border-width:0 !imp=
+ortant;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !i=
+mportant;margin-left:0 !important;padding-top:0 !important;padding-bottom:0=
+ !important;padding-right:0 !important;padding-left:0 !important;"/></body>
+</html>
+
+--3efb7d2dca86792bbe195c037b0d0d43804ab954ca8d4e8f46b1de7b1bc2--

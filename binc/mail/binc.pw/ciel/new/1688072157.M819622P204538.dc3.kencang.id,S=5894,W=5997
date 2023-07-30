@@ -1,0 +1,103 @@
+Return-Path: <floridaproudllc@host.360serverhost.com>
+Delivered-To: ciel@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id kLNQL93vnWT6HgMAMUeTPA
+	(envelope-from <floridaproudllc@host.360serverhost.com>)
+	for <ciel@binc.pw>; Fri, 30 Jun 2023 03:55:57 +0700
+Return-path: <floridaproudllc@host.360serverhost.com>
+Envelope-to: ciel@binc.pw
+Delivery-date: Fri, 30 Jun 2023 03:55:57 +0700
+Received: from host.360serverhost.com ([128.127.106.147]:34880)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <floridaproudllc@host.360serverhost.com>)
+	id 1qEygE-001kzA-13
+	for ciel@binc.pw;
+	Fri, 30 Jun 2023 03:55:57 +0700
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=floridaproudllc.com; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:From:Date:Subject:To:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=ZQKLjUbZJZLz2ZaiCVnOS/DMdFzADkUwUO0Yq0/5Bpk=; b=mqqRcBzopJHK7j9hMTmIkQAQdu
+	UrVVjgAfX/MidJhdxJXRZ1IT6OVgDeOdKDr8Ugjq61MtvN3LtPwStLFn7g4jkFq0tJl3F9FrkWMaq
+	TA4C+VIpdOr3du1+0SB7QqsYLRLmw4TI9MDejPcR/Y0KocLqcvU07L5MEnIIy5M7dq0D+Inf4ZVIn
+	z86Ms/TyQH0buFCVSzfca8Zhx2vUPjrTujpngvzp6T9kPENHkVuPvBAGTM2l7tWS0nomdE9qg5Me3
+	kGb3xMl//Sj5oEXFf78tvxaN7QcH5LfDcG4Z4RP2Q4LLUVkVExPTJ8bjPkjxciGrLF01vkYhP8Uaw
+	+NFlD7NA==;
+Received: from floridaproudllc by host.360serverhost.com with local (Exim 4.96)
+	(envelope-from <floridaproudllc@host.360serverhost.com>)
+	id 1qEyfW-000BCC-14
+	for ciel@binc.pw;
+	Thu, 29 Jun 2023 16:55:10 -0400
+To: ciel@binc.pw
+Subject: =?us-ascii?Q?[Florida_Proud_LLC]_Please_moderate:_"ProPublic?=  =?us-ascii?Q?a_icon._Utah_Advocate_Offers_Costs_to_prevent_P?=  =?us-ascii?Q?ay_Day_Lenders_From_Getting_Bail_Funds_From_Bor?=  =?us-ascii?Q?rowers"?=
+X-PHP-Script: floridaproudllc.com/wp-comments-post.php for 124.227.132.117
+X-PHP-Originating-Script: 1800:PHPMailer.php
+Date: Thu, 29 Jun 2023 20:55:10 +0000
+From: WordPress <wordpress@floridaproudllc.com>
+Message-ID: <SB6ehf1ZsGGNBd473G53NWQHh1BwZ3jaRNMwZqYeY@floridaproudllc.com>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - host.360serverhost.com
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [1800 993] / [47 12]
+X-AntiAbuse: Sender Address Domain - host.360serverhost.com
+X-Get-Message-Sender-Via: host.360serverhost.com: authenticated_id: floridaproudllc/from_h
+X-Authenticated-Sender: host.360serverhost.com: wordpress@floridaproudllc.com
+X-Source: 
+X-Source-Args: php-fpm: pool floridaproudllc_com                        
+X-Source-Dir: floridaproudllc.com:/public_html
+X-Spam-Status: No, score=4.3
+X-Spam-Score: 43
+X-Spam-Bar: ++++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "ProPublica icon. Utah Advocate
+   Offers Costs to prevent Pay Day Lenders From Getting Bail Funds From Borrowers"
+    is waiting for your approval https://floridaproudllc.com/propu [...] 
+ Content analysis details:   (4.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: floridaproudllc.com]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  1.7 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
+  2.4 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
+                             [cf: 100]
+X-Spam-Flag: NO
+
+A new comment on the post "ProPublica icon. Utah Advocate Offers Costs to prevent Pay Day Lenders From Getting Bail Funds From Borrowers" is waiting for your approval
+https://floridaproudllc.com/propublica-icon-utah-advocate-offers-costs-to/
+
+Author: Регистрация на www.binance.com (IP address: 124.227.132.117, 124.227.132.117)
+Email: 82811616@outlook.com
+URL: https://www.binance.com/ru-UA/register?ref=P9L9FQKY
+Comment: 
+Thanks for sharing. I read many of your blog posts, cool, your blog is very good. https://www.binance.com/ru-UA/register?ref=P9L9FQKY
+
+Approve it: https://floridaproudllc.com/wp-admin/comment.php?action=approve&c=133#wpbody-content
+Trash it: https://floridaproudllc.com/wp-admin/comment.php?action=trash&c=133#wpbody-content
+Spam it: https://floridaproudllc.com/wp-admin/comment.php?action=spam&c=133#wpbody-content
+Currently 20 comments are waiting for approval. Please visit the moderation panel:
+https://floridaproudllc.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

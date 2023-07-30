@@ -1,0 +1,53 @@
+[12-Apr-2023 15:12:42 UTC] PHP Parse error:  syntax error, unexpected '|', expecting '{' in /home/bincpw/public_html/inc/plugins/medals.php on line 672
+[12-Apr-2023 15:12:49 UTC] PHP Parse error:  syntax error, unexpected '|', expecting '{' in /home/bincpw/public_html/inc/plugins/medals.php on line 672
+[12-Apr-2023 15:16:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_function() in /home/bincpw/public_html/inc/plugins/ougc_awards.php:36
+Stack trace:
+#0 /home/bincpw/public_html/inc/class_plugins.php(38): require_once()
+#1 /home/bincpw/public_html/inc/init.php(235): pluginSystem->load()
+#2 /home/bincpw/public_html/admin/index.php(18): require_once('/home/bincpw/pu...')
+#3 {main}
+  thrown in /home/bincpw/public_html/inc/plugins/ougc_awards.php on line 36
+[12-Apr-2023 15:16:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_function() in /home/bincpw/public_html/inc/plugins/ougc_awards.php:36
+Stack trace:
+#0 /home/bincpw/public_html/inc/class_plugins.php(38): require_once()
+#1 /home/bincpw/public_html/inc/init.php(235): pluginSystem->load()
+#2 /home/bincpw/public_html/admin/index.php(18): require_once('/home/bincpw/pu...')
+#3 {main}
+  thrown in /home/bincpw/public_html/inc/plugins/ougc_awards.php on line 36
+[12-Apr-2023 15:16:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_function() in /home/bincpw/public_html/inc/plugins/ougc_awards.php:36
+Stack trace:
+#0 /home/bincpw/public_html/inc/class_plugins.php(38): require_once()
+#1 /home/bincpw/public_html/inc/init.php(235): pluginSystem->load()
+#2 /home/bincpw/public_html/admin/index.php(18): require_once('/home/bincpw/pu...')
+#3 {main}
+  thrown in /home/bincpw/public_html/inc/plugins/ougc_awards.php on line 36
+[12-Apr-2023 15:16:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_function() in /home/bincpw/public_html/inc/plugins/ougc_awards.php:36
+Stack trace:
+#0 /home/bincpw/public_html/inc/class_plugins.php(38): require_once()
+#1 /home/bincpw/public_html/inc/init.php(235): pluginSystem->load()
+#2 /home/bincpw/public_html/admin/index.php(18): require_once('/home/bincpw/pu...')
+#3 {main}
+  thrown in /home/bincpw/public_html/inc/plugins/ougc_awards.php on line 36
+[12-Apr-2023 15:17:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_function() in /home/bincpw/public_html/inc/plugins/ougc_awards.php:36
+Stack trace:
+#0 /home/bincpw/public_html/inc/class_plugins.php(38): require_once()
+#1 /home/bincpw/public_html/inc/init.php(235): pluginSystem->load()
+#2 /home/bincpw/public_html/admin/index.php(18): require_once('/home/bincpw/pu...')
+#3 {main}
+  thrown in /home/bincpw/public_html/inc/plugins/ougc_awards.php on line 36
+[12-Apr-2023 15:18:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_function() in /home/bincpw/public_html/inc/plugins/ougc_awards.php:36
+Stack trace:
+#0 /home/bincpw/public_html/inc/class_plugins.php(38): require_once()
+#1 /home/bincpw/public_html/inc/init.php(235): pluginSystem->load()
+#2 /home/bincpw/public_html/admin/index.php(18): require_once('/home/bincpw/pu...')
+#3 {main}
+  thrown in /home/bincpw/public_html/inc/plugins/ougc_awards.php on line 36
+[12-Apr-2023 15:18:47 UTC] PHP Parse error:  syntax error, unexpected '|', expecting '{' in /home/bincpw/public_html/inc/plugins/medals.php on line 672
+[12-Apr-2023 15:19:43 UTC] PHP Parse error:  syntax error, unexpected '|', expecting '{' in /home/bincpw/public_html/inc/plugins/medals.php on line 672
+[14-Jul-2023 01:16:47 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'bincpw_forum'@'localhost' (using password: YES) in /home/binc/public_html/inc/db_mysqli.php:232
+Stack trace:
+#0 /home/binc/public_html/inc/db_mysqli.php(232): mysqli_connect('localhost', 'bincpw_forum', 'cdaaptnia16')
+#1 /home/binc/public_html/inc/init.php(172): DB_MySQLi->connect(Array)
+#2 /home/binc/public_html/admin/index.php(18): require_once('/home/binc/publ...')
+#3 {main}
+  thrown in /home/binc/public_html/inc/db_mysqli.php on line 232

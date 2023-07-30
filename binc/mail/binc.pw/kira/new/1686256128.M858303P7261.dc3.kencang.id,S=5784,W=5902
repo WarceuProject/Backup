@@ -1,0 +1,118 @@
+Return-Path: <u431674835@srv736.main-hosting.eu>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id 4NrVMgA6gmRdHAAAMUeTPA
+	(envelope-from <u431674835@srv736.main-hosting.eu>)
+	for <kira@binc.pw>; Fri, 09 Jun 2023 03:28:48 +0700
+Return-path: <u431674835@srv736.main-hosting.eu>
+Envelope-to: kira@binc.pw
+Delivery-date: Fri, 09 Jun 2023 03:28:48 +0700
+Received: from barb.elm.relay.mailchannels.net ([23.83.212.10]:60070)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <u431674835@srv736.main-hosting.eu>)
+	id 1q7MFQ-000M3b-2o
+	for kira@binc.pw;
+	Fri, 09 Jun 2023 03:28:48 +0700
+X-Sender-Id: hostingershared|x-authuser|u431674835@srv736.main-hosting.eu
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 7B8C49220EC;
+	Thu,  8 Jun 2023 17:15:57 +0000 (UTC)
+Received: from srv736.main-hosting.eu (unknown [127.0.0.6])
+	(Authenticated sender: hostingershared)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 07837921AF4
+	for <kira@binc.pw>; Thu,  8 Jun 2023 17:15:56 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1686244557; a=rsa-sha256;
+	cv=none;
+	b=kSEY+7ceIh04eVX/KWs9mkr7fekVrkBgHIveObKRqjUb0W734vcu30dHC8zb2Y8iMeQjn3
+	zmEJOW1Yp9k0zu8HyL8rdmQ/AhBslH+k66IC3R1/+pOKMgl8Q9X+4Hp/iSjyvaRIC/EF5A
+	NekyI+m6d4RC9V8RTN1SDogam/DXiEiFi36P1pAvPN1LT4Es9HAai37UjXO7lJcBWoyagY
+	DZhcSROQwHCReiFbuEsSWRX9jsGTTQljnmKQg72OWwCbkFqkOuDHtB9ju6KBLRG+KW73kn
+	bJ7MeibhBmgnZufUZECw2x4c5n19KmlcXxBmMoSz61JKFx2fnvA9Pq8GUbfWmA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1686244557;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type; bh=os+lhauCXoGwVustTmY2v+VcGqADYBe+53tV9IFou5U=;
+	b=mtunp9T7ylLG9KDMczifSiTxS3oUVjMwCuhZSHYDGt/8hXEGt5P4iGif2Y2uzhqgUKNbe9
+	kWXFx8mHwE5d+l9XUPtlgMukc7CwBbnZPLEkvQKETL+O/IL3QFa3wVXM0PZxjyfrEz1iTx
+	V5YAeQQ9Z0+3Ig1teqD3tpma5MwzO0lTUv43NpygSnnYQywR5AMgZHsIn2B/7PbrL2bQkY
+	wu0M+qqMZvL/y3r29tUAdWtuJrP6WxaG/z41KtGawDoB+zDY/uJsz+UTHEohgS/4Mfymwu
+	ZnJf6B/ex6XS+1Hsa2xOT5rDpm3U+WeRgEFqjGJ620rUR2ooYlWGsrTQ8ihC7Q==
+ARC-Authentication-Results: i=1;
+	rspamd-fcb9f4dcf-gg558;
+	auth=pass smtp.auth=hostingershared
+ smtp.mailfrom=u431674835@srv736.main-hosting.eu
+X-Sender-Id: hostingershared|x-authuser|u431674835@srv736.main-hosting.eu
+X-MC-Relay: Junk
+X-MC-Copy: stored-urls
+X-MailChannels-SenderId:
+ hostingershared|x-authuser|u431674835@srv736.main-hosting.eu
+X-MailChannels-Auth-Id: hostingershared
+X-Irritate-Slimy: 54e954006635a31a_1686244557134_2998327257
+X-MC-Loop-Signature: 1686244557134:814362166
+X-MC-Ingress-Time: 1686244557134
+Received: from srv736.main-hosting.eu ([UNAVAILABLE]. [194.195.84.52])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.107.49.247 (trex/6.8.1);
+	Thu, 08 Jun 2023 17:15:57 +0000
+Received: from u431674835 by srv736.main-hosting.eu with local (Exim 4.96)
+	(envelope-from <u431674835@srv736.main-hosting.eu>)
+	id 1q7JEq-00AvN4-0t
+	for kira@binc.pw;
+	Thu, 08 Jun 2023 17:15:56 +0000
+To: kira@binc.pw
+Subject: Email Verification
+X-PHP-Script: safetyinsurances.com/wp-admin/admin-ajax.php for 36.72.60.79, 36.72.60.79
+X-PHP-Filename: /home/u431674835/domains/safetyinsurances.com/public_html/wp-admin/admin-ajax.php REMOTE_ADDR: 36.72.60.79
+X-PHP-Originating-Script: 431674835:file_folder_manager.php
+MIME-Version: 1.0
+Content-type:text/html;charset=UTF-8
+From: noreply@filemanagerpro.io
+Message-Id: <E1q7JEq-00AvN4-0t@srv736.main-hosting.eu>
+Sender:  <u431674835@srv736.main-hosting.eu>
+Date: Thu, 08 Jun 2023 17:15:56 +0000
+X-AuthUser: u431674835@srv736.main-hosting.eu
+X-Spam-Status: No, score=2.9
+X-Spam-Score: 29
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Email Verification Thanks for signing up! Just click the link
+    below to verify your email and we’ll keep you up-to-date with the latest
+    and greatest brewing in our dev labs! Click Here to Verify 
+ Content analysis details:   (2.9 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: safetyinsurances.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  2.5 PHP_SCRIPT             Sent by PHP script
+X-Spam-Flag: NO
+
+
+					<html>
+					<head>
+					<title>Email Verification</title>
+					</head>
+					<body>
+					<p>Thanks for signing up! Just click the link below to verify your email and we’ll keep you up-to-date with the latest and greatest brewing in our dev labs!</p>	
+					<p><a href='https://safetyinsurances.com/wp-admin/admin-ajax.php?action=verify_filemanager_email&token=8fba2b6baae6787bb4c9adb950adcd34'>Click Here to Verify
+</a></p>				
+					</body>
+					</html>
+					

@@ -1,0 +1,162 @@
+Return-Path: <ingeocon@webhosting2033.is.cc>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id KH5ZAM05ZGRzaysAMUeTPA
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	for <kira@binc.pw>; Wed, 17 May 2023 09:19:57 +0700
+Return-path: <ingeocon@webhosting2033.is.cc>
+Envelope-to: kira@binc.pw
+Delivery-date: Wed, 17 May 2023 09:19:57 +0700
+Received: from toucan.birch.relay.mailchannels.net ([23.83.209.254]:37813)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1pz6lg-00BwLj-0d
+	for kira@binc.pw;
+	Wed, 17 May 2023 09:19:56 +0700
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id AE881260E33
+	for <kira@binc.pw>; Wed, 17 May 2023 02:19:08 +0000 (UTC)
+Received: from offloadmongo2.mailbaby.net (unknown [127.0.0.6])
+	(Authenticated sender: interserver)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 08C5D260C2A
+	for <kira@binc.pw>; Wed, 17 May 2023 02:19:07 +0000 (UTC)
+ARC-Seal: i=2; s=arc-2022; d=mailchannels.net; t=1684289948; a=rsa-sha256;
+	cv=pass;
+	b=9LRT8ba4p+2Y6dqidaj75pIq6Jjn1aQl4v/anDi+ElSRcMXo3Phf397MzCE1TdnI80kTOf
+	Lz/NRpdwcK9exlFxRyGBcOvU7gmfe1o6VhZb0iQS/t4qU9Xyj2RuzOdbAoNHymkhj4CnU+
+	nQOZcsZRGun3+UBPUlnhAamAbr6LMLAA9CLsx4szN4U4Jmcv9F19xQL+mZAqc5rJoTQSnK
+	q0NePEFVPifBO4+JctC2J5kCi1db/NcvkR6A8I3njpDJJWRWX1HIzMY4QR3W4WCPOtm1Fz
+	MXVmO1ZgICJsv/HjCh32K4V3L/STeJ67W/+3qpZVeTnrNiHAIonXR6qoNREuRQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1684289948;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=nlzpvVm4RsQEvZd2kVWekgd8w4HFlkU4qfCTWXUIJk8=;
+	b=Wwk1JAhIglisgS/Op6Wixc9coxf+1poj2EspOn2P19XV7fXVRHHVBWbjgS/Z32VsmTPThX
+	7+rgBMCN8vQ806/I8JSxdPqhMauv2kQLVCR4pgfKSO7fFp7X5wW4PNfPKqrGSL6SnbjERT
+	g7ByvI3PU2YS/1ykkUZcrTDE/n1+PdaFUIyrS1muKDOxnzi4AJUynNwB/dJF2XPHG8QHGt
+	97jxYzWtn/Y35Uo31zKE4ALaUsc1NlUA+Ai5I+dNmGFCubK8Gzos9NXFNP8aZ+4oTHdb5f
+	CL7tiuBmp6pIzf8nzuWl1Jb09OrwTbiXuEQRhmorH/JeKowD1fRvmBVncy6Xjw==
+ARC-Authentication-Results: i=2;
+	rspamd-5cdf8fd7d9-tmgd9;
+	arc=pass ("mailbaby.net:s=detka:i=1");
+	auth=pass smtp.auth=interserver smtp.mailfrom=ingeocon@webhosting2033.is.cc
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MC-Relay: Bad
+X-MailChannels-SenderId: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MailChannels-Auth-Id: interserver
+X-Army-Abiding: 5976042d72b8520f_1684289948454_2299647463
+X-MC-Loop-Signature: 1684289948453:2437653939
+X-MC-Ingress-Time: 1684289948453
+Received: from offloadmongo2.mailbaby.net (offloadmongo2.mailbaby.net
+ [64.20.57.30])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.127.59.19 (trex/6.8.1);
+	Wed, 17 May 2023 02:19:08 +0000
+Received: from webhosting2033.is.cc ([68.168.213.91] webhosting2033.is.cc)
+ (Authenticated sender: webhosting2033)
+ by offloadmongo2.mailbaby.net (InterServerMTA) with ESMTPSA id 1882780f6ef00051cc.001
+ for <kira@binc.pw>
+ (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256);
+ Wed, 17 May 2023 02:19:03 +0000
+X-Zone-Loop: 35181e4707a83cb587cb0d976b6b749b8abc069ef493
+ARC-Authentication-Results: i=1;	relay1.mailbaby.net;	auth=pass
+ smtp.auth=webhosting2033 smtp.mailfrom=ingeocon@webhosting2033.is.cc
+ARC-Seal: i=1; s=detka; d=mailbaby.net; t=1684289943; a=rsa-sha256;
+	cv=none;
+	b=kWY+ytqAr2Z1LlS9JEABzUfaqss1qPIjy37gXLgDk2AzOc+CRIIngv+MIZfZEh/5uTx7O/
+	tHRg8pDAgjq1BtWConVn9QfKAQScxW3liglQ+ujosubjqV4HW6JjsRYS2JjjCy2AoHlE1h
+	Vqno/LZxPJB09p0+CKK1E1RARv3M/MQFMtcZ8JrMpjqqkU3jiNvvtVmGRUKwnvjHJTnL2g
+	bRdpFoYIgnBHcxPmv3RR/Ip5p/47+/VJW4kjT4k8/V8CoOqP8XYYqC+qTOAyHFL+ek9atM
+	Yidhw9WHckFOFP15V3RuJY0JZfiOUvuzSv06SJSwGLunaGhxTlJO1Hb+d6VF9g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailbaby.net;	s=detka; t=1684289943;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=nlzpvVm4RsQEvZd2kVWekgd8w4HFlkU4qfCTWXUIJk8=;
+	b=MSvCiyr/8rsag3aE0CPggZzkyoKZycDSihMYnFRJZV0lBhdTSHTTxRr/j2zqGvuuPPG32d
+	iMNxFHDpZlGQWF33+jAZjeJXgGFZxGiMkpbueV5gWaDtYNdWxUJPWnLyC1AeGGBNSVem/O
+	/HbRo9GueZawOB8Ly2K9ftYqrBWSB82Gt8h478CB+dVpWN24aoSzbKOwmYd8GxcbE+6+W5
+	Kblng0JZXsK2Ra1+wlmBd12/8l8o8YokSsydzsCngok1LTHcsx1aRm476qQD4TLNeXpWhv
+	6pqiyBKDFttxRiXcsBmcSGYPCygBtrBLy9HS/bxawAhFDiNpW+ott7K/J9LXqA==
+X-SPF: pass
+X-Originating-IP: [68.168.213.91]
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=webhosting2033.is.cc; s=default; h=Sender:Content-Type:MIME-Version:
+	Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=nlzpvVm4RsQEvZd2kVWekgd8w4HFlkU4qfCTWXUIJk8=; b=C1aL5fL5ZcORE1XKw8GZhPiiW7
+	XX1sPIGkwScB16bR8weFaWzC378Rb4Sv40uWpMzg+2oAkh1XQftIXN+/hkwDMYvLNjNL2bIXnuBD/
+	uwmmRo3ASq+L475oGBLMmdE520iLgEuLAe4P3sq/vS6hrfwRjSREg23XXjYjEPxpY52uS7QYSdVqs
+	KccTfSFBHlCzF5D+iqXE2XQ59jgfvY6KwvbrYGOvGwfdG7pqt+IxJEIBy42BdNqjnTqCkFDjRXRHo
+	oapDv1j7jkfhR5d4MkT4ohZn4kXPGI69fdTfCWu5/9qJZtt9ESE32ZXIGpxN/SnWz1UtQ5VzA4udb
+	gOZbnyRw==;
+Received: from ingeocon by webhosting2033.is.cc with local (Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1pz6kn-002D71-2J
+	for kira@binc.pw;
+	Tue, 16 May 2023 22:19:03 -0400
+To: kira@binc.pw
+Subject: [InGEO consulting] Your site has updated to WordPress 5.4.13
+X-PHP-Script: ingeoconsulting.com/wp-cron.php for 68.168.213.91
+X-PHP-Originating-Script: 1159:class-phpmailer.php
+Date: Wed, 17 May 2023 02:19:01 +0000
+From: WordPress <wordpress@ingeoconsulting.com>
+Message-ID: <7d13c28220cdb58538aefb2eb5c00a62@ingeoconsulting.com>
+X-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <ingeocon@webhosting2033.is.cc>
+X-AuthUser: ingeocon@webhosting2033.is.cc
+X-Spam-Status: No, score=3.2
+X-Spam-Score: 32
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Howdy! Your site at https://ingeoconsulting.com has been updated
+    automatically to WordPress 5.4.13. For more on version 5.4.13, see the About
+    WordPress screen: https://ingeoconsulting.com/wp-admin/about.php 
+ Content analysis details:   (3.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: is.cc]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+  2.5 PHP_SCRIPT             Sent by PHP script
+X-Spam-Flag: NO
+
+Howdy! Your site at https://ingeoconsulting.com has been updated automatically to WordPress 5.4.13.
+
+For more on version 5.4.13, see the About WordPress screen:
+https://ingeoconsulting.com/wp-admin/about.php
+
+WordPress 6.2.1 is also now available. Updating is easy and only takes a few moments:
+https://ingeoconsulting.com/wp-admin/update-core.php
+
+If you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help.
+https://wordpress.org/support/forums/
+
+Keeping your site updated is important for security. It also makes the internet a safer place for you and your readers.
+
+The WordPress Team
+

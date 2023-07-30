@@ -1,0 +1,25 @@
+/* #Media Queries
+================================================== */
+/* END__ */
+
+@media only screen and (max-width: 1199px){
+.w1 .media{ font-size:12px;}
+.w1 .media span{ font-size:13px;}
+.w1 img{ width:40px;}
+.calculator label{ font-size:13px;}
+.w3 .media img{ width:100px;}
+.w3 .media p{ font-size:13px;}
+.account-menu li a{ font-size:11px;}
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+body, .form-control, .btn , .dropdown-menu, .input-group-text, .popover-header{ font-size:15px;}
+.container{width:100%;}
+} 
+/* END__ */
+
+@media (max-width: 480px) {
+} 
+/* END__ */
+

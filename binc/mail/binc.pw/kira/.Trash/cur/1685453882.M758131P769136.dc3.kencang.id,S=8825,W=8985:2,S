@@ -1,0 +1,160 @@
+Return-Path: <ingeocon@webhosting2033.is.cc>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id QJJHLDr8dWRwvAsAMUeTPA
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	for <kira@binc.pw>; Tue, 30 May 2023 20:38:02 +0700
+Return-path: <ingeocon@webhosting2033.is.cc>
+Envelope-to: kira@binc.pw
+Delivery-date: Tue, 30 May 2023 20:38:02 +0700
+Received: from black.elm.relay.mailchannels.net ([23.83.212.19]:59277)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q3zXq-003IyW-02
+	for kira@binc.pw;
+	Tue, 30 May 2023 20:38:02 +0700
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 6DA633E1773
+	for <kira@binc.pw>; Tue, 30 May 2023 13:37:06 +0000 (UTC)
+Received: from relay0-fwd-d.mailbaby.net (unknown [127.0.0.6])
+	(Authenticated sender: interserver)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 977BC3E27F7
+	for <kira@binc.pw>; Tue, 30 May 2023 13:37:05 +0000 (UTC)
+ARC-Seal: i=2; s=arc-2022; d=mailchannels.net; t=1685453825; a=rsa-sha256;
+	cv=pass;
+	b=0p5UsswZVmn2CkHTMUw17bfED+LGIx8SkKck2Kz+wF5BWAfh3nHwaGjGH1KJWxYP5jm1hW
+	VW8Q8Png+ZTmxnf/6BVZ5T+otybnlVWdZ+FOY2VjX6cSR2GAIbWXAsJN2pq/sinT7nnUW2
+	lQ/KTjteRXX3Bsb+AbkS6LjAc7gLmZ1cBexYx3RerVeYjt+ehZnWgt6IrFWI+P3USJFV/O
+	rUGtT2Oxh3Anfej5ISU6Sj91Nh3JXMHZ4cFmwL8AsT1HpFXJ2xrO2YOGslnxhI8pD8xQdE
+	T0wcXDrKgo6wXjLooVl1o2mj+TOKnaqhoS2HZUgcx3lB9wgaOfKr+rN9uY8izw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1685453825;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=9fZHdwwrIK3nL45TitcklZQ5LnvnAcSIGwPZPHIRJ4A=;
+	b=c62daUQGSzllNBiSsGgoUkHR+JnKvJ0P/XcncTrKKsKx8DdjJciPf+WFdeQQ74yhJE95j5
+	LtbUyjSA4hh4IiWVoFulb6293mVaQRPup2HkFpDgknj5O4GPNg9hBDLvBAo/JHiibq+9mO
+	h4IC9Ov7VlIL5V0bjmSRNh/4uJ8TZsvzA93qIZyrHrQdsEg+pqt7xE+JcgSUcdek7YBjx3
+	4vZnDyb3a/NNUdtEc3MJGwFCVAEmnO/TOH1rvzi3OKrFmBD5VXXQYMDIXgw+vbie9dpVec
+	3SHZziIMTyNmcyqHF8Aa9/S8rtrRHmrVeOUQTVyO042m+hnz0/uO09osqvF+VA==
+ARC-Authentication-Results: i=2;
+	rspamd-859c7bff78-qw2w8;
+	arc=pass ("mailbaby.net:s=detka:i=1");
+	auth=pass smtp.auth=interserver smtp.mailfrom=ingeocon@webhosting2033.is.cc
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MC-Relay: Neutral
+X-MailChannels-SenderId: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MailChannels-Auth-Id: interserver
+X-Obese-Turn: 2b9d374a1d1c369c_1685453826242_3742996286
+X-MC-Loop-Signature: 1685453826242:1090727284
+X-MC-Ingress-Time: 1685453826242
+Received: from relay0-fwd-d.mailbaby.net (relay0-fwd-d.mailbaby.net
+ [174.138.180.156])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.107.49.254 (trex/6.8.1);
+	Tue, 30 May 2023 13:37:06 +0000
+Received: from webhosting2033.is.cc ([68.168.213.91] webhosting2033.is.cc)
+ (Authenticated sender: webhosting2033)
+ by relay0-fwd-d.mailbaby.net (InterServerMTA) with ESMTPSA id 1886ce0369200086d5.001
+ for <kira@binc.pw>
+ (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256);
+ Tue, 30 May 2023 13:36:53 +0000
+X-Zone-Loop: 431f787f5bfd79db06ac7f5ab89ef4a7525e5c5d0a12
+ARC-Authentication-Results: i=1;	rspamd3.mailbaby.net;	auth=pass
+ smtp.auth=webhosting2033 smtp.mailfrom=ingeocon@webhosting2033.is.cc
+ARC-Seal: i=1; s=detka; d=mailbaby.net; t=1685453813; a=rsa-sha256;
+	cv=none;
+	b=0KkUHvw11eo1ElxSvGwbOT5qM2nRD+5bFFm8hTr+lMRDLrFY9DLqkQkOkuXA82DNSwClqv
+	NK4B0IR3WbHo+PcUxxRbgvcMaOOTugMwG2RYpEGDCpCSRF4sZASX1tV57E3vWi6lo801zA
+	Hr29sH51I10apSqYNhGJZvskUyKgxnOjqXV0qh8Uih0PMg99yjx65xvM+Nzui3oN+uap7V
+	ZFFuC9dO6+U8PefJBQ+zSH2/hpVJGQQSPBtKh60PBd4hozp3/nUFc3O4GezN6opg2LbjcK
+	0+Se5xggIYpJ/uiHAfHLCdAiyR21K1IY62UOBtHXWyNZDuYLSJq1FuLlJmTFlQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailbaby.net;	s=detka; t=1685453813;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=9fZHdwwrIK3nL45TitcklZQ5LnvnAcSIGwPZPHIRJ4A=;
+	b=nNYeeWoVMKpmYylP5PbxZjO5AoACUDoYzbvelIRc5E1xZ99ceu3sPIz3Sh1hd1Q/XqnNiB
+	SVEfdmnxRdXQu5i0i2dL0qQQ3BIn2KnJoq+WnT+9Lg8QhGtffHrEsEPLqbKf59V0jWtiNX
+	psHxHbY65Dcv6RoKHnF0qc3w/VV3nqhmjrEthBnRidMk8815DbHLe8cKYRkkoQhA0gKk7n
+	XdBb3cwK4imEp23R+KizfSLKO/YoHvm0MP64T7kQWQ1EICmmMQFCqr44miEZqanq9dQEXA
+	Lmqg3R558zI2sDlObU/HsNg4qZnrLM8Bx0XjoY9klD02TzIl/fix9m8EDFbAXA==
+X-SPF: pass
+X-Originating-IP: [68.168.213.91]
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=webhosting2033.is.cc; s=default; h=Sender:Content-Type:MIME-Version:
+	Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=9fZHdwwrIK3nL45TitcklZQ5LnvnAcSIGwPZPHIRJ4A=; b=g0nMw2arGpZwHqN3PC9GPOfSqr
+	ZPdCd5L2G/v+dGBzJ3UPLEYt9mu4dIkuZykf7U26yQywb0DLnq7mipAYjqIsqyyoeYIhCwSCK02Hw
+	6ytDr+VlTT9t29Ps9JBeFA2XnCkpRAhrT5Riv6usC8jiZH4H4G0rm0LsHXtoC+f9ArPxFRwRnoOou
+	vYnx5sDlALKip83oxv06bbgXaAlSjporggntiFXY4OnZy641s+XfS9z8tHJVi8FGyF514gGpgvhrq
+	+vkBlYLBCp9PGIM2IvBkkstBEW74Z3VtSNeKNGgBGMiJz+CfuZEJa9nUZUWi7MHPC1yh5pwVfj4EM
+	XwLSF/0Q==;
+Received: from ingeocon by webhosting2033.is.cc with local (Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q3zWu-000QW5-0D
+	for kira@binc.pw;
+	Tue, 30 May 2023 09:36:53 -0400
+To: kira@binc.pw
+Subject: [InGEO consulting] Please moderate: "Your own advice is biased and you will dislike occupied, how will you imagine you can now bring your blog post big"
+X-PHP-Script: ingeoconsulting.com/wp-comments-post.php for 218.21.88.11
+X-PHP-Originating-Script: 1159:class-phpmailer.php
+Date: Tue, 30 May 2023 13:36:51 +0000
+From: WordPress <wordpress@ingeoconsulting.com>
+Message-ID: <df1759f1a07a5a36ef0a30b435bac617@ingeoconsulting.com>
+X-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <ingeocon@webhosting2033.is.cc>
+X-AuthUser: ingeocon@webhosting2033.is.cc
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "Your own advice is biased and you
+    will dislike occupied, how will you imagine you can now bring your blog post
+    big" is waiting for your approval https://ingeoconsulting.com/ [...] 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: binance.com]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.0 T_SPF_TEMPERROR        SPF: test of record failed (temperror)
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+X-Spam-Flag: NO
+
+A new comment on the post "Your own advice is biased and you will dislike occupied, how will you imagine you can now bring your blog post big" is waiting for your approval
+https://ingeoconsulting.com/2023/01/01/your-own-advice-is-biased-and-you-will-dislike/
+
+Author: binance sign up (IP address: 218.21.88.11, 218.21.88.11)
+Email: 98074465@outlook.com
+URL: https://accounts.binance.com/en/register?ref=P9L9FQKY
+Comment: 
+Thanks for shening. I read many of your blog posts, cool, your blog is very good. https://accounts.binance.com/en/register?ref=P9L9FQKY
+
+Approve it: https://ingeoconsulting.com/wp-admin/comment.php?action=approve&c=140#wpbody-content
+Trash it: https://ingeoconsulting.com/wp-admin/comment.php?action=trash&c=140#wpbody-content
+Spam it: https://ingeoconsulting.com/wp-admin/comment.php?action=spam&c=140#wpbody-content
+Currently 35 comments are waiting for approval. Please visit the moderation panel:
+https://ingeoconsulting.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

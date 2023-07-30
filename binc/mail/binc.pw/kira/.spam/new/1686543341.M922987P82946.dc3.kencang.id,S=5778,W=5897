@@ -1,0 +1,119 @@
+Return-Path: <u431674835@srv736.main-hosting.eu>
+Delivered-To: kira+spam@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id QAG1Nu2bhmQCRAEAMUeTPA
+	(envelope-from <u431674835@srv736.main-hosting.eu>)
+	for <kira+spam@binc.pw>; Mon, 12 Jun 2023 11:15:41 +0700
+Return-path: <u431674835@srv736.main-hosting.eu>
+Envelope-to: kira@binc.pw
+Delivery-date: Mon, 12 Jun 2023 11:15:41 +0700
+Received: from hedgehog.birch.relay.mailchannels.net ([23.83.209.81]:44773)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <u431674835@srv736.main-hosting.eu>)
+	id 1q8Yxu-000NeM-0f
+	for kira@binc.pw;
+	Mon, 12 Jun 2023 11:15:41 +0700
+X-Sender-Id: hostingershared|x-authuser|u431674835@srv736.main-hosting.eu
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id EC951881709;
+	Mon, 12 Jun 2023 04:14:50 +0000 (UTC)
+Received: from srv736.main-hosting.eu (unknown [127.0.0.6])
+	(Authenticated sender: hostingershared)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 6DE6A880BAF
+	for <kira@binc.pw>; Mon, 12 Jun 2023 04:14:50 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1686543290; a=rsa-sha256;
+	cv=none;
+	b=7iBn0vSUcGKy4O/3s0Mn2xGF9KpOkyWI/RxDmnXuue9hJtDqlQIfvV1F7IkJ91IJTwNtRT
+	09hAnGCgpSrthgp2JUEwy7AR3a/tEDJx/lEnVvg/KIef1u5W9X10ERNjgy49Px6Al8RCEx
+	tKO4Py4Tkwnma/dc2SNS63DdR2OnMx7Z8cVaFXaxYnrElie/zlV/wkWw7yyqaBr3tLrQlz
+	Nqhu8JaGUXZCqnXhPQ/Zm+1Rr5bCu1o9GYFCF0pAwN/LCbzZfWgNZGzJ0Yi2q5nBFx7h3c
+	l1Yk3D3CG0m239JinG0tEVflrGxZ7kkEaL1IixLKbeqPkw3icoV3s0jPn6F3Lg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1686543290;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type; bh=U45V2a5wMsHcJtXseGJkZatgJBjlQsZnPb9o7lEQtSA=;
+	b=Me9nziqfogCLRG+0YRvBdmgvvCa32e4ZREP2xPP7oORTS200eiHaZk5x7aDUn7DkBVa78G
+	lirMvXvFFPCVzswcIbVoFDSyQ/V0iYG2um/CDlzxiQ350Q3F6hdiKP9CIKEE+zJgp688gQ
+	0dTg1GBzaOH0l7x8xICVePri+vZFFyLd4NoNFMlGcjncgiPXXSNkDpQ/Y/Bgq9ASETqhG+
+	D5nR0EbKckuy3njXBUlYzB/js4TNceIcVVL/8tkZ8plrMBPfThGxoLGBy9gXpA9HZtvemD
+	VfaTiLi3Bp3iNJ0Vbi5+W/HbdX9pzOwnf56Uw9LXVCR9keXTvfNtHi5ZVJDnyg==
+ARC-Authentication-Results: i=1;
+	rspamd-6c69b8658d-p8dcm;
+	auth=pass smtp.auth=hostingershared
+ smtp.mailfrom=u431674835@srv736.main-hosting.eu
+X-Sender-Id: hostingershared|x-authuser|u431674835@srv736.main-hosting.eu
+X-MC-Relay: Neutral
+X-MC-Copy: stored-urls
+X-MailChannels-SenderId:
+ hostingershared|x-authuser|u431674835@srv736.main-hosting.eu
+X-MailChannels-Auth-Id: hostingershared
+X-Belong-Cure: 06c3aa9c1643afee_1686543290745_3940809774
+X-MC-Loop-Signature: 1686543290745:839465536
+X-MC-Ingress-Time: 1686543290744
+Received: from srv736.main-hosting.eu ([UNAVAILABLE]. [194.195.84.52])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.126.30.17 (trex/6.8.1);
+	Mon, 12 Jun 2023 04:14:50 +0000
+Received: from u431674835 by srv736.main-hosting.eu with local (Exim 4.96)
+	(envelope-from <u431674835@srv736.main-hosting.eu>)
+	id 1q8Yx7-00H2f7-2J
+	for kira@binc.pw;
+	Mon, 12 Jun 2023 04:14:49 +0000
+To: kira@binc.pw
+X-PHP-Script: safetyinsurances.com/wp-admin/profile.php for 42.105.78.191, 42.105.78.191
+X-PHP-Filename: /home/u431674835/domains/safetyinsurances.com/public_html/wp-admin/profile.php REMOTE_ADDR: 42.105.78.191
+X-PHP-Originating-Script: 431674835:PHPMailer.php
+Date: Mon, 12 Jun 2023 04:14:49 +0000
+From: WordPress <wordpress@safetyinsurances.com>
+Message-ID: <VmgMTL7MAVCXbIgx2vuXKKVOcGEvPvlAiwoB83jmFvU@safetyinsurances.com>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <u431674835@srv736.main-hosting.eu>
+X-AuthUser: u431674835@srv736.main-hosting.eu
+X-Spam-Status: Yes, score=5.3
+X-Spam-Score: 53
+X-Spam-Bar: +++++
+X-Spam-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hi kira, This notice confirms that your email address on safetyinsurances.com
+    was changed to lyricalgiron369@gmail.com. If you did not change your email,
+    please contact the Site Administrator at lyricalgiron369@gmail.com 
+ Content analysis details:   (5.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: safetyinsurances.com]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  5.0 KAM_SOMETLD_ARE_BAD_TLD .stream, .trade, .pw, .top, .press,
+                             .guru, .casa & .date TLD Abuse
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+X-Spam-Flag: YES
+Subject:  ***SPAM***  [safetyinsurances.com] Email Changed
+
+Hi kira,
+
+This notice confirms that your email address on safetyinsurances.com was changed to lyricalgiron369@gmail.com.
+
+If you did not change your email, please contact the Site Administrator at
+lyricalgiron369@gmail.com
+
+This email has been sent to kira@binc.pw
+
+Regards,
+All at safetyinsurances.com
+https://safetyinsurances.com
+

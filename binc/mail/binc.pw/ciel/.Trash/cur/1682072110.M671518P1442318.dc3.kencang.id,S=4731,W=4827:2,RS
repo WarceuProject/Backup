@@ -1,0 +1,96 @@
+Return-Path: <angelsaviralim@gmail.com>
+Delivered-To: ciel@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id cEnkJS5iQmQOAhYAMUeTPA
+	(envelope-from <angelsaviralim@gmail.com>)
+	for <ciel@binc.pw>; Fri, 21 Apr 2023 17:15:10 +0700
+Return-path: <angelsaviralim@gmail.com>
+Envelope-to: ciel@binc.pw
+Delivery-date: Fri, 21 Apr 2023 17:15:10 +0700
+Received: from mail-yb1-f172.google.com ([209.85.219.172]:45101)
+	by dc3.kencang.id with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <angelsaviralim@gmail.com>)
+	id 1ppnnM-0062zp-2S
+	for ciel@binc.pw;
+	Fri, 21 Apr 2023 17:15:10 +0700
+Received: by mail-yb1-f172.google.com with SMTP id 3f1490d57ef6-b8f51500a82so1854351276.2
+        for <ciel@binc.pw>; Fri, 21 Apr 2023 03:14:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1682072067; x=1684664067;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=lOPztnilM87EVO9XyBXdcyCLOBALpcIA3LGcatxK9BA=;
+        b=Li9irYgpJaeKqwUmEFa4UtqSy1thPGjv0rmh8wzgPIk+A5HjACHniJB1MiKnW+pT5p
+         zprLdx10ArQZwddT9mrD+yU2n0boPy2ceagqJrL4mqGSpVplrH7LWThba9YGj7B/CPih
+         3aqfOZGWFTyseCFLv8hN4og4QnXW1asMLWDWBTvU0J4J0LqfuUS2S/3GnG3YG6Cqx/G6
+         ARupJfKzvuUc7bJ4QlBYq1L4HBf/bCbhSI1lvvMvaCWZNkLWddiiM/lVNacxRCImgSOY
+         Tb0A6td5B24LU5eWRKC7Sh/9CIjWMM258O8C2au33L+qw9bPuXR9QE4VuxCyakIfPNJV
+         RljQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1682072067; x=1684664067;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=lOPztnilM87EVO9XyBXdcyCLOBALpcIA3LGcatxK9BA=;
+        b=dEc9Hxcin3fZF6ccNzHczLJMCFYoG+HALP+w9IqBcv66fStkTANRg/yGDTwEmLGTn/
+         OuCOYnd2fLbngum/C0nSW6u68UtIWgF8gEtDztl/SqsxY6xDpSKMP7A98+MI6SmJIfax
+         HjoTF2UYOpU9gR6PTz/IUr6h8SlSBGLilJQ5/AGkwjKRNiXN8w115ceeAOIr+eFGyCOf
+         K8R2KFe7hwjAUJkAetIu3LM5rEw9JoOVd1um2lO0u0tM5NPo6BjW7OsG32qhwVi975Fm
+         DMes8KZNtDvp2bte426T11sTg5aUcjWSxtJCYnvsddc2GdiKz4xX/Iei1PiO7wYDGPj0
+         vU/Q==
+X-Gm-Message-State: AAQBX9ddCR39a+0zYke2uDR0WhAFbxKYAnU8XC1jaG5FArwvORi+VHE/
+	LRmVVjEyJQvVRiGJEj8WE+ug2sD5d72gOK96IrwCv60u
+X-Google-Smtp-Source: AKy350YB7m9Dvrs3L972N/E34mvxajFdiB2Kyeui12YUGfKZtQRw9a8n/ep9QENEIRnDOcEg4Mv3MoZ5rU1+L522FbQ=
+X-Received: by 2002:a0d:d0c5:0:b0:551:213:9c24 with SMTP id
+ s188-20020a0dd0c5000000b0055102139c24mr1506283ywd.41.1682072067110; Fri, 21
+ Apr 2023 03:14:27 -0700 (PDT)
+MIME-Version: 1.0
+From: Angel Savira lim <angelsaviralim@gmail.com>
+Date: Fri, 21 Apr 2023 17:14:12 +0700
+Message-ID: <CAA=bFL3dATzSO4kW6+3qTwDNuHJ0mcyJLK0sxMuJsSNDs5H3WQ@mail.gmail.com>
+Subject: 
+To: ciel@binc.pw
+Content-Type: multipart/alternative; boundary="0000000000000bfc0e05f9d5ec95"
+X-Spam-Status: No, score=2.0
+X-Spam-Score: 20
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  🐣 🐣 
+ Content analysis details:   (2.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.2 KAM_BLANKSUBJECT       Message has a blank Subject
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [angelsaviralim[at]gmail.com]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  2.0 PYZOR_CHECK            Listed in Pyzor
+                             (https://pyzor.readthedocs.io/en/latest/)
+  0.0 FSL_BULK_SIG           Bulk signature with no Unsubscribe
+X-Spam-Flag: NO
+
+--0000000000000bfc0e05f9d5ec95
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+8J+Qow0K
+--0000000000000bfc0e05f9d5ec95
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">=F0=9F=90=A3</div>
+
+--0000000000000bfc0e05f9d5ec95--

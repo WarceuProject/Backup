@@ -1,0 +1,108 @@
+Return-Path: <u809792283@srv690.main-hosting.eu>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id 0OmqDqsXg2Sk3yUAMUeTPA
+	(envelope-from <u809792283@srv690.main-hosting.eu>)
+	for <kira@binc.pw>; Fri, 09 Jun 2023 19:14:35 +0700
+Return-path: <u809792283@srv690.main-hosting.eu>
+Envelope-to: kira@binc.pw
+Delivery-date: Fri, 09 Jun 2023 19:14:35 +0700
+Received: from crocodile.elm.relay.mailchannels.net ([23.83.212.45]:55148)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <u809792283@srv690.main-hosting.eu>)
+	id 1q7b0g-00Afrd-1m
+	for kira@binc.pw;
+	Fri, 09 Jun 2023 19:14:35 +0700
+X-Sender-Id: hostingershared|x-authuser|u809792283@srv690.main-hosting.eu
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 3722C880E8C;
+	Fri,  9 Jun 2023 12:13:41 +0000 (UTC)
+Received: from srv690.main-hosting.eu (unknown [127.0.0.6])
+	(Authenticated sender: hostingershared)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 75A6E880C34
+	for <kira@binc.pw>; Fri,  9 Jun 2023 12:13:40 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1686312820; a=rsa-sha256;
+	cv=none;
+	b=Ih7yWUx6tCrEizBFczCpVAEO9auUDVlM2GGfSxejdXx7oZUpxQJM5lDKbw9ER7VFPm59i1
+	bkviXmM/Epzw33mhOjffbYn5F/O6ggmyfbunZkUl9BTZpgGmHkGRBz2oZWAgXeC0oK6mfF
+	mw1gtbn0HptK33bak8UudtUOtCnnBSRajfUDXKacdj/c1kHVrmD6sU9dJR3eqBUwtcXHo3
+	75WYvTsSXkkTBy8A292cvp+6GDE93h0If7kr78CNakqPA21ELRYJwRkQXo01j6OY0bJct9
+	axAVyyNQPpYrD6OhJNfd4eGZ1UPw9b+HXnsqvllx3v6mdhll2L1ZFb3l38cFCQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1686312820;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding;
+	bh=k47A+uIDpY20YZfs7rTU0I3SU9EPfAA7b/TnAlS39B0=;
+	b=tyCfEe5Y4vzGLCmPYIfOoV5YkvPRqGAFrFp343ZA61r90RGVqRmzBZUkS4yUz5Yc1QfSzH
+	oWhbi01UoSoxjJwp48LTKm/rhVC+XFuybxa/Nlo35LKAAO0Ygco2kDoh4HEcJPKW6hQLIm
+	SUgOywj8uE1vPuFNwQMZbXdSjBDv2/hFfqgufzxuZU4uP+OB4Mprm+84nQPzCQg9c8x42i
+	dsEgdUyW0fh/aSbZ1ODy7mnPTDS21y534tbMfKNrl5De8yDG3enM0tAisxSfaVhmdJetDS
+	peh1KrU14GkYcJHKd4Q5akHINnrIH9X9rVayie5YL0heuC45ZUTCvqQlOB3HxA==
+ARC-Authentication-Results: i=1;
+	rspamd-6f5cfd578c-lcvt2;
+	auth=pass smtp.auth=hostingershared
+ smtp.mailfrom=u809792283@srv690.main-hosting.eu
+X-Sender-Id: hostingershared|x-authuser|u809792283@srv690.main-hosting.eu
+X-MC-Relay: Neutral
+X-MC-Copy: stored-urls
+X-MailChannels-SenderId:
+ hostingershared|x-authuser|u809792283@srv690.main-hosting.eu
+X-MailChannels-Auth-Id: hostingershared
+X-Rock-Left: 785f15914c493123_1686312820887_520756908
+X-MC-Loop-Signature: 1686312820887:1946019149
+X-MC-Ingress-Time: 1686312820887
+Received: from srv690.main-hosting.eu ([UNAVAILABLE]. [212.1.211.201])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384)
+	by 100.103.24.122 (trex/6.8.1);
+	Fri, 09 Jun 2023 12:13:40 +0000
+Received: from u809792283 by srv690.main-hosting.eu with local (Exim 4.96)
+	(envelope-from <u809792283@srv690.main-hosting.eu>)
+	id 1q7azr-0004tI-0p
+	for kira@binc.pw;
+	Fri, 09 Jun 2023 12:13:39 +0000
+To: kira@binc.pw
+Subject: =?UTF-8?Q?[MAQUINA_EXTRUSORA_DE_CANALETA_EM_CONCRETO_M3700_M?=  =?UTF-8?Q?AK_MAQUINAS]_Registro_de_novo_usu=C3=A1rio?=
+X-PHP-Script: m3700.mak-maquinas.com/wp-admin/user-new.php for 177.21.32.174
+X-PHP-Filename: /home/u809792283/domains/mak-maquinas.com/public_html/m3700/wp-admin/user-new.php REMOTE_ADDR: 177.21.32.174
+X-PHP-Originating-Script: 809792283:PHPMailer.php
+Date: Fri, 9 Jun 2023 12:13:39 +0000
+From: WordPress <wordpress@m3700.mak-maquinas.com>
+Message-ID: <Jq6ls4HoRGh3qvSg0Wola1oRaDsuHCLS31uRb2YWM@m3700.mak-maquinas.com>
+X-Mailer: PHPMailer 6.6.5 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Sender:  <u809792283@srv690.main-hosting.eu>
+X-AuthUser: u809792283@srv690.main-hosting.eu
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Novo usuário registrado em seu site MAQUINA EXTRUSORA DE
+   CANALETA EM CONCRETO M3700 MAK MAQUINAS: Nome de usuário: mak maquinas marketing
+    E-mail: marketing@mak-maquinas.com 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+X-Spam-Flag: NO
+
+Novo usuário registrado em seu site MAQUINA EXTRUSORA DE CANALETA EM CONCRETO M3700 MAK MAQUINAS:
+
+Nome de usuário: mak maquinas marketing
+
+E-mail: marketing@mak-maquinas.com
+

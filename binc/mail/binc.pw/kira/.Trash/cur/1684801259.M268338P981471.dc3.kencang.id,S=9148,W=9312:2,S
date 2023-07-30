@@ -1,0 +1,164 @@
+Return-Path: <ingeocon@webhosting2033.is.cc>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id cJb5DusGbGTf+Q4AMUeTPA
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	for <kira@binc.pw>; Tue, 23 May 2023 07:20:59 +0700
+Return-path: <ingeocon@webhosting2033.is.cc>
+Envelope-to: kira@binc.pw
+Delivery-date: Tue, 23 May 2023 07:20:59 +0700
+Received: from antelope.ash.relay.mailchannels.net ([23.83.222.4]:53053)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q1Flo-0047QK-38
+	for kira@binc.pw;
+	Tue, 23 May 2023 07:20:59 +0700
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 1CF036C0DBD
+	for <kira@binc.pw>; Tue, 23 May 2023 00:20:09 +0000 (UTC)
+Received: from rspamd6.mailbaby.net (unknown [127.0.0.6])
+	(Authenticated sender: interserver)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 6E4CA6C0B96
+	for <kira@binc.pw>; Tue, 23 May 2023 00:20:08 +0000 (UTC)
+ARC-Seal: i=2; s=arc-2022; d=mailchannels.net; t=1684801208; a=rsa-sha256;
+	cv=pass;
+	b=cKXyqkxtEs9JUGVdYJUs12X3NI4hYlxhGeytu9nWlA/xVgEQyH4sPUAL0La1x71wU6lJlH
+	4oYdjK7v9NSq4YuJjOGVRMU1j5qMWmUaW8D/AZ4asIt5wDAY3w36Dy/PCzCRCvRAPFXJWK
+	02q/ePtGFRYQM4SzGB4ZCqNM1eTrBpiBuxgQ+RXT2CpzQPlMS0ryC94mZ2+0OUKgR1DmCG
+	daAv/Y8b8643ev8RzdWLkaOoPxSE3Q36ro63p7vGfhcWD2vE1+8+05IQ+qjT5ohoKBucR9
+	AAAmoec+P+zgUbkjJ2af43Yh/oGmFahzhnliJx/q7ZVf6l4eP/7Wq8/gQMxUiQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1684801208;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:dkim-signature;
+	bh=fPWqZ17q8gA4ViXJJqWsT+nHxksltqQmWMJNpe5KRug=;
+	b=SnZaO+OVAp2+7Wql+ZVSRPaQOQUCdTzBSh4NxWmRbTMu4tYBxt0H/PfDeey61AS29fDedc
+	0Pb6sjQ8E001fBuuuuvsMBvwQ7ReTBcWf6zrqnrJKXqfdLbd7xorOK/7PTbk4OZ/ay6ja9
+	6QV2Jy/w3uNMtQkiEw1TLhMjHq1IzEyVHwtc/yH1ktlzfOxo4g8hZU2l0/KCfxLUDQ12Jz
+	8Qo8TWda72dDLpaG0OJsx9Z697XetKJ3SRYxh/2amY3cCFIJ/3/rlk1wL9i1Uf66l713DG
+	kt6WJtfwEQSsdBmFEk7aPCBMuHxdn/HXEkxIUs7Q9u5jF5qoYSBpcJMeDjBB4A==
+ARC-Authentication-Results: i=2;
+	rspamd-5cdf8fd7d9-zsblk;
+	arc=pass ("mailbaby.net:s=detka:i=1");
+	auth=pass smtp.auth=interserver smtp.mailfrom=ingeocon@webhosting2033.is.cc
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MC-Relay: Neutral
+X-MailChannels-SenderId: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MailChannels-Auth-Id: interserver
+X-Hysterical-Bored: 233209d64e259cf5_1684801208866_526713788
+X-MC-Loop-Signature: 1684801208866:971374057
+X-MC-Ingress-Time: 1684801208866
+Received: from rspamd6.mailbaby.net (rspamd6.mailbaby.net [74.50.73.82])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.120.163.35 (trex/6.8.1);
+	Tue, 23 May 2023 00:20:08 +0000
+Received: from webhosting2033.is.cc ([68.168.213.91] webhosting2033.is.cc)
+ (Authenticated sender: webhosting2033)
+ by rspamd6.mailbaby.net (InterServerMTA) with ESMTPSA id 18845fa28e9000886c.001
+ for <kira@binc.pw>
+ (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256);
+ Tue, 23 May 2023 00:20:02 +0000
+X-Zone-Loop: 54a037fa8a2222d7729988d0e292a73fc02169593fe1
+ARC-Authentication-Results: i=1;	rspamd6.mailbaby.net;	auth=pass
+ smtp.auth=webhosting2033 smtp.mailfrom=ingeocon@webhosting2033.is.cc
+ARC-Seal: i=1; s=detka; d=mailbaby.net; t=1684801202; a=rsa-sha256;
+	cv=none;
+	b=kS7HFTt9n/Wwm8Qu/73KRqsBoZ0OBwTKG/7skjD0GLbsMeFc0ntiDAlVadq1GzCxHAaaFE
+	djJmgmtSPi2tlkKUhaKg2Kqip/Nw9h3yWUqQlPMF6glPy1ZNqMK8Ltdvb5xCFEQnijt+Ky
+	ju35usDQZzy/slRi1zwHmSvEuy15N0P3CTHKqUnfJp0RNYOiGc0HOEHcEXjFq0xiePRCQx
+	+rp/4BxjjmDegHYh/PcAp/oyKc4VJDV3R5lJ1XeJVojg8LXiKXdoB2JPju3CcKhcDqmRrk
+	bD1k0SQVmAjwvldHZ5QXWhLf1mxVoxFiZ2dDNe8i4c5exTCz1ISK6Hi++Ez8pA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailbaby.net;	s=detka; t=1684801202;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:dkim-signature;
+	bh=fPWqZ17q8gA4ViXJJqWsT+nHxksltqQmWMJNpe5KRug=;
+	b=0CsZ3K8hdu/Yt3bHQ9k48W+BtrARtaVQxxLTUdDvUltAwm7MJ4brfM6rgOQfRhZKptvjeE
+	d4FDAg865a10lK3PyhevXZuhHEP6iZBOoCo+7Nt7sbVCkN2T6JwRdlP7KM2KcpGGWf9cde
+	ejSZLjq/6ezKYAg3IHgs7OpJA899XRWXm14sfrrtA+fyUO2gR98gqe5v2UvLYZ6WqVhmLN
+	Xd14cDQ0NPCtuYpAkW1/9IUb8sJ5RtzvqUoBI5gijHQ55TtdMKy5M4yAEt6GH0Oa/2KlIn
+	q8yuoanhuLcoh13G9FO5so48HoV1PNoIh1VkO4F4h21DTqX9agnS/w/LS2DYgQ==
+X-SPF: pass
+X-Originating-IP: [68.168.213.91]
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=webhosting2033.is.cc; s=default; h=Sender:Content-Transfer-Encoding:
+	Content-Type:MIME-Version:Message-ID:From:Date:Subject:To:Reply-To:Cc:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=fPWqZ17q8gA4ViXJJqWsT+nHxksltqQmWMJNpe5KRug=; b=wxNOocf0k4udvuc7p5EWEpvUg9
+	bcdGKjrLxja8Ci5NMN6w7shDInsZ9+d1Jjxd9Um9RfckKn7/PIntHPMiROhGsG50CXgsh8m83uV0v
+	BYyzkSEB8DzrXxJ//M1rs9w8anwsp5zCjpW0/arsQWbqy1NCrWFWJ8vGe3c1wwyBMMWCq5NdM+BD6
+	2Xic5R09xYThldPAdHqyN5etFXBbUvTL/thYuL1oglwmDURXeGZOt6fJNWbjE8qKbmwiW9gvtSxvo
+	DV7EkUvBYQo8dyfUAm4YuWDyq7GcHxhEwlj4O4oWZ6r1XrOoolX2a6pem/UG8Cd1P7OHFp/eX3tmH
+	1CwTf5Lw==;
+Received: from ingeocon by webhosting2033.is.cc with local (Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q1Fkt-000SQ1-1g
+	for kira@binc.pw;
+	Mon, 22 May 2023 20:20:02 -0400
+To: kira@binc.pw
+Subject: [InGEO consulting] Please moderate: "Almost every other organization traps in order to digitization unnecessarily increase the IRSs workload"
+X-PHP-Script: ingeoconsulting.com/wp-comments-post.php for 45.64.246.153
+X-PHP-Originating-Script: 1159:class-phpmailer.php
+Date: Tue, 23 May 2023 00:19:59 +0000
+From: WordPress <wordpress@ingeoconsulting.com>
+Message-ID: <03eb8c792b5fa866f312e24bd281623a@ingeoconsulting.com>
+X-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Sender:  <ingeocon@webhosting2033.is.cc>
+X-AuthUser: ingeocon@webhosting2033.is.cc
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "Almost every other organization
+    traps in order to digitization unnecessarily increase the IRSs workload"
+   is waiting for your approval https://ingeoconsulting.com/2023/01/04/ [...]
+    
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: is.cc]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+X-Spam-Flag: NO
+
+A new comment on the post "Almost every other organization traps in order to digitization unnecessarily increase the IRSs workload" is waiting for your approval
+https://ingeoconsulting.com/2023/01/04/almost-every-other-organization-traps-in-order-to/
+
+Author: gateio alım satım nasıl yapılır (IP address: 45.64.246.153, 45.64.246.153)
+Email: 18010439@outlook.com
+URL: https://www.gate.io/tr/signup/XlQVXVo
+Comment: 
+I am a student of BAK College. The recent paper competition gave me a lot of headaches, and I checked a lot of information. Finally, after reading your article, it suddenly dawned on me that I can still have such an idea. grateful. But I still have some questions, hope you can help me.
+
+Approve it: https://ingeoconsulting.com/wp-admin/comment.php?action=approve&c=118#wpbody-content
+Trash it: https://ingeoconsulting.com/wp-admin/comment.php?action=trash&c=118#wpbody-content
+Spam it: https://ingeoconsulting.com/wp-admin/comment.php?action=spam&c=118#wpbody-content
+Currently 13 comments are waiting for approval. Please visit the moderation panel:
+https://ingeoconsulting.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

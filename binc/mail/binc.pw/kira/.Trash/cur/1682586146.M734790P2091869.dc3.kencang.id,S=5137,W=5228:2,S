@@ -1,0 +1,91 @@
+Return-Path: <noreply@p3plzcpnl449078.prod.phx3.secureserver.net>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id kHyGKyI6SmRd6x8AMUeTPA
+	(envelope-from <noreply@p3plzcpnl449078.prod.phx3.secureserver.net>)
+	for <kira@binc.pw>; Thu, 27 Apr 2023 16:02:26 +0700
+Return-path: <noreply@p3plzcpnl449078.prod.phx3.secureserver.net>
+Envelope-to: kira@binc.pw
+Delivery-date: Thu, 27 Apr 2023 16:02:26 +0700
+Received: from p3nlsmtpcp01-02.prod.phx3.secureserver.net ([184.168.200.140]:39244)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <noreply@p3plzcpnl449078.prod.phx3.secureserver.net>)
+	id 1prxWG-008ovL-26
+	for kira@binc.pw;
+	Thu, 27 Apr 2023 16:02:26 +0700
+Received: from 20.28.109.208.host.secureserver.net ([10.199.64.97])
+	by : HOSTING RELAY : with ESMTP
+	id rxUYpWF0VYckQrxUYpAOyC; Thu, 27 Apr 2023 02:00:42 -0700
+X-CMAE-Analysis: v=2.4 cv=LtVUiFRc c=1 sm=1 tr=0 ts=644a39ba
+ a=5p2kn+TdgGlJEV5v7/uc8g==:117 a=9+rZDBEiDlHhcck0kWbJtElFXBc=:19
+ a=gQX1269ULFhLm4Thdby34LUHVW0=:19 a=dHlgu/J3N0dIE80XNg8v0esTehs=:19
+ a=IkcTkHD0fZMA:10 a=dKHAf1wccvYA:10 a=j_TqLQkSAAAA:8 a=xaGVosXYXy0JQ-StGdwA:9
+ a=QEXdDO2ut3YA:10 a=ZXulRonScM0A:10 a=zZCYzV9kfG8A:10
+ a=tVnlFFVpDHK22XYTItHq:22
+X-SECURESERVER-ACCT: UNKNOWN
+Received: from root by p3plzcpnl449078.prod.phx3.secureserver.net with local (Exim 4.95)
+	(envelope-from <noreply@p3plzcpnl449078.prod.phx3.secureserver.net>)
+	id 1prxUY-007EKL-LU
+	for kira@binc.pw;
+	Thu, 27 Apr 2023 02:00:42 -0700
+To: kira@binc.pw
+Subject: [Installatron] WordPress plugin Limit Login Attempts Reloaded 2.25.15 now available
+Date: Thu, 27 Apr 2023 02:00:42 -0700
+From: noreply@p3plzcpnl449078.prod.phx3.secureserver.net
+Message-ID: <f7ec401a0d405e2cc3b72f4fd2f93f2b@p3plzcpnl449078.prod.phx3.secureserver.net>
+X-Mailer: Installatron Plugin 9.1.58 (265)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - p3plzcpnl449078.prod.phx3.secureserver.net
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [0 0] / [47 12]
+X-AntiAbuse: Sender Address Domain - p3plzcpnl449078.prod.phx3.secureserver.net
+X-Get-Message-Sender-Via: p3plzcpnl449078.prod.phx3.secureserver.net: sender_ident via received_protocol == local: root/primary_hostname/system user
+X-Authenticated-Sender: p3plzcpnl449078.prod.phx3.secureserver.net: root
+X-Source: /usr/local/cpanel/3rdparty/php/74/bin/php
+X-Source-Args: /usr/local/cpanel/3rdparty/bin/php -n -c /usr/local/installatron/etc/php.ini -f /usr/local/installatron/lib/boot.php -- --send-update-report a56676c89c734828a87fcb30c8004673 --full 
+X-Source-Dir: /var/installatron/cache
+X-CMAE-Envelope: MS4xfFjIh17eqlW0I8cKIXMxpEpgU9r3ogKNOVduHDjAlc3gToqBVSUin3M1IL6ZFkQei/Ikk3GFDUh/QJkDIF4V3iD817aXMnGtm87gR2gD9xy9N0Y5HSSW
+ mO7R1FIKUIJq+cVjnZ3qX0JDFAFpPYvFx4cgSGcmwP1MpTAL/c/JIuE03HtHPAHNPhsBJ5SfZmkNlBPemTqELpgdBq8fjT2/dfgXRy13s73B5c2F1oZDSAJu
+ nG1xB9qxwnv7fa0/JQW/AQ==
+X-Spam-Status: No, score=1.5
+X-Spam-Score: 15
+X-Spam-Bar: +
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  This is an automated email from Installatron. To unsubscribe
+    from these emails or to change notification settings, login to your web hosting
+    control panel, navigate to the Installatron tool, and selec [...] 
+ Content analysis details:   (1.5 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: ddscircle.com]
+  0.5 FROM_DOMAIN_NOVOWEL    From: domain has series of non-vowel letters
+  1.0 KAM_LAZY_DOMAIN_SECURITY Sending domain does not have any
+                             anti-forgery methods
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.0 SPOOF_COM2COM          URI contains ".com" in middle and end
+X-Spam-Flag: NO
+
+This is an automated email from Installatron. To unsubscribe from these emails or to change notification settings, login to your web hosting control panel, navigate to the Installatron tool, and select the installed applications you wish to modify.
+
+An update to Limit Login Attempts Reloaded 2.25.15 is now available for the WordPress installations you are managing using Installatron. The following can be updated:
+
+- http://www.eiegroup.com.ddscircle.com/support
+
+
+Login to your web hosting control panel and navigate to the Installatron tool to update your installed applications.
+
+End of report.
+

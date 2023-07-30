@@ -1,0 +1,105 @@
+Return-Path: <bzird@stack10.ethii.com>
+Delivered-To: ciel@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id KIuNMhS6VWQhKhUAMUeTPA
+	(envelope-from <bzird@stack10.ethii.com>)
+	for <ciel@binc.pw>; Sat, 06 May 2023 09:23:16 +0700
+Return-path: <bzird@stack10.ethii.com>
+Envelope-to: ciel@binc.pw
+Delivery-date: Sat, 06 May 2023 09:23:16 +0700
+Received: from [148.163.69.98] (port=48036 helo=jack98.bispeliden.info)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <bzird@stack10.ethii.com>)
+	id 1pv7Zt-005tvv-1e
+	for ciel@binc.pw;
+	Sat, 06 May 2023 09:23:16 +0700
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=bzird.com;
+	s=default; h=Sender:Content-Transfer-Encoding:Content-Type:MIME-Version:
+	Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=tWj0LhlqpUpWZybKEDso4exePHeuuc3n8Vld3MystEU=; b=GixjBCOFgY37awLnDN/aBqlrrW
+	fcPZN4d3GM9cwd799LZwHu1/hxOQ/ri+kifkw+Rwn1VcsO45+F8OxC1vSErlR4rek1mt13IlCaOPT
+	twiht4SFQ8DYEMMZkmwH8zKN4S9CDs6kcBOi0ffTWj40stsZNqPOBBOpNaGZ4FNK4dDoNOwKuY38N
+	lH9QxdTBPFJXufhttEHPIgSWA1u+UJSwreIe2eVlS6F80KdgogjM2uYOYAG1yQ3eLP2KJKv+MXPl6
+	NEaERluocuUFScC8AFJ4Ez90mw1IlbYPIhATSLZlGpAtNfmQP5NYASvx1f+PfuT3MvLE4/eAIi+Rq
+	rqJY2Ffg==;
+Received: from bzird by stack10.ethii.com with local (Exim 4.96)
+	(envelope-from <bzird@stack10.ethii.com>)
+	id 1pv7Z8-00FBnM-2p
+	for ciel@binc.pw;
+	Fri, 05 May 2023 22:22:30 -0400
+To: ciel@binc.pw
+Subject: =?us-ascii?Q?[biaxecoder]_Please_moderate:_"Redes_boutiques_?=  =?us-ascii?Q?con_el_fin_de_conocer_a_personas_trans_en_Madri?=  =?us-ascii?Q?d"?=
+X-PHP-Script: bzird.com/wp-comments-post.php for 171.38.97.130
+X-PHP-Originating-Script: 1112:PHPMailer.php
+Date: Sat, 6 May 2023 02:22:30 +0000
+From: WordPress <wordpress@bzird.com>
+Message-ID: <W4XrjlGikE91JNQbJrZW30XngsEUku8Csew2ZD2WkMs@bzird.com>
+X-Mailer: PHPMailer 6.6.0 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Sender:  <bzird@stack10.ethii.com>
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - stack10.ethii.com
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [1112 980] / [47 12]
+X-AntiAbuse: Sender Address Domain - stack10.ethii.com
+X-Get-Message-Sender-Via: stack10.ethii.com: authenticated_id: bzird/from_h
+X-Authenticated-Sender: stack10.ethii.com: wordpress@bzird.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: bzird.com:/public_html
+X-Spam-Status: No, score=3.2
+X-Spam-Score: 32
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "Redes boutiques con el fin de conocer
+    a personas trans en Madrid" is waiting for your approval https://bzird.com/redes-boutiques-con-el-fin-de-conocer-a-personas/
+    Author: gate borsası (IP address: 171.38.97.130, 171.38.97.130) Email: 25428655@outlook.com
+    URL: https://www.gate.io/tr/signup/XlQVXVo Comment: After reading your article,
+    it reminded me of some thin [...] 
+ Content analysis details:   (3.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: gate.io]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  1.0 KAM_MXINFO             MX Record and dot info domains associated with
+                             FAKERBL Spammers
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+  2.0 RDNS_NONE              Delivered to internal network by a host with no rDNS
+X-Spam-Flag: NO
+
+A new comment on the post "Redes boutiques con el fin de conocer a personas trans en Madrid" is waiting for your approval
+https://bzird.com/redes-boutiques-con-el-fin-de-conocer-a-personas/
+
+Author: gate borsası (IP address: 171.38.97.130, 171.38.97.130)
+Email: 25428655@outlook.com
+URL: https://www.gate.io/tr/signup/XlQVXVo
+Comment: 
+After reading your article, it reminded me of some things about gate io that I studied before. The content is similar to yours, but your thinking is very special, which gave me a different idea. Thank you. But I still have some questions I want to ask you, I will always pay attention. Thanks.
+
+Approve it: https://bzird.com/wp-admin/comment.php?action=approve&c=307#wpbody-content
+Trash it: https://bzird.com/wp-admin/comment.php?action=trash&c=307#wpbody-content
+Spam it: https://bzird.com/wp-admin/comment.php?action=spam&c=307#wpbody-content
+Currently 44 comments are waiting for approval. Please visit the moderation panel:
+https://bzird.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

@@ -1,0 +1,137 @@
+Return-Path: <shannonbrachehai@cpanel-552-syd.hostingww.com>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id eI2fI86HsGTiChQAMUeTPA
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	for <kira@binc.pw>; Fri, 14 Jul 2023 06:25:02 +0700
+Return-path: <shannonbrachehai@cpanel-552-syd.hostingww.com>
+Envelope-to: kira@binc.pw
+Delivery-date: Fri, 14 Jul 2023 06:25:02 +0700
+Received: from dog.ash.relay.mailchannels.net ([23.83.222.48]:9891)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	id 1qK5gA-005XES-3D
+	for kira@binc.pw;
+	Fri, 14 Jul 2023 06:25:02 +0700
+X-Sender-Id:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 5F76F5C17A9;
+	Thu, 13 Jul 2023 23:24:13 +0000 (UTC)
+Received: from cpanel-552-syd.hostingww.com (unknown [127.0.0.6])
+	(Authenticated sender: instrampxe0y3a)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 606315C15B7
+	for <kira@binc.pw>; Thu, 13 Jul 2023 23:24:12 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1689290652; a=rsa-sha256;
+	cv=none;
+	b=cKdjz8fXCOfsXzNf88rd23i6njtr22f+OBEpsdge6xN/tVKs3xyymLm2/yWcDIWX3Ell8p
+	+ymyUyImDvrcbu6U04Nudq+p8A5s1b0GvtwuhuKPhPcPvQx9qGk6UjZSlYi3HZGL01G4z1
+	kzKBHaYzm1QW9wPj+izImMgiOe3pNb9IqKMf1OAFCSMrLW8ipblb/852qjSm+m+XYhp+cT
+	Ufh9BlVVe8lLa24OKS/vVlr9NiK9LhCve0mp68LorpVpW8V2Rb4d0VvZXWqaV2fX6hn1l/
+	r2Nc2CO6P5hrciEj7XE9+7lOc8vyfPViw6I0G9rw7dboWZ8Z/ZmcFfeyoNpe2Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1689290652;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:dkim-signature;
+	bh=W6i44g27ax+bu5RoZUXxmYJjYxSESpYsXzqOY1lbMZQ=;
+	b=meW034tR8BnwWBuP+V80nrKWYwFCw/8ErZtbODwBO5CmUU+5FWpu/AYj0L1xYde714bmNp
+	RLcgCaXUu/HFJwxtXARYmzlA6TERC1w5HMuzbPE35mphnbmDwTLiBsTECldN070CRCTqDJ
+	QMPap77uNu8YAHp4VZ6LpWGqroXkJyYrESHa/Cbob9KVN397YWH3oh7P2g/kmvdRObWUwa
+	UPkVdxz7hdw1EgifdSZq/dIDMpyi7UtyYJO2ojX2m5LR3qA205wrSTcdCm+tBtc8PBASa/
+	PjFMFOt5d5u8klBw8DHfG+WjitY4hpHXAadxqWYQKxvnH8LwnLT2/9WysRYHBw==
+ARC-Authentication-Results: i=1;
+	rspamd-7d9c4d5c9b-l8p8j;
+	auth=pass smtp.auth=instrampxe0y3a
+ smtp.mailfrom=shannonbrachehai@cpanel-552-syd.hostingww.com
+X-Sender-Id:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+X-MC-Relay: Neutral
+X-MC-Copy: stored-urls
+X-MailChannels-SenderId:
+ instrampxe0y3a|x-authuser|shannonbrachehai@cpanel-552-syd.hostingww.com
+X-MailChannels-Auth-Id: instrampxe0y3a
+X-Illegal-Harmony: 601e93c24980eee9_1689290652871_3298356178
+X-MC-Loop-Signature: 1689290652870:3930611129
+X-MC-Ingress-Time: 1689290652870
+Received: from cpanel-552-syd.hostingww.com (cpanel-552-syd.hostingww.com
+ [103.152.248.20])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384)
+	by 100.116.217.196 (trex/6.9.1);
+	Thu, 13 Jul 2023 23:24:12 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=cpanel-552-syd.hostingww.com; s=default; h=Sender:Content-Type:MIME-Version
+	:Message-ID:From:Date:Subject:To:Reply-To:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=W6i44g27ax+bu5RoZUXxmYJjYxSESpYsXzqOY1lbMZQ=; b=MtOIoUNjTDEMHZ4yOa8okr9V3w
+	74qCxpDDMmoZCtnfYjHGEFwcgGyrnedPmUp7pOL2pRk5Ae3hlIc8vpMfwbKklRdmagn2+MEJvApJG
+	GwFgITAEaC0+glNDc7vGAABS3gNLJCIkFr9/7KphhJN4SBOJRsXKodPXUkj5nxIPk54oKamUE7/rI
+	B78UoqWvE+TPrO/TeveQ5wLVwk0+epLlZ+VXvN3AtWrPYZFnRdTKSGlSS0Lt0VKyg1Qa0WSYEg+VM
+	9wWyKAmDaQ5sAWqOZP+1K8bcncPc1AhYr/28i64ld95mJm+OXbm1SrbD0CsxKFm9smDuXFwxt9U03
+	jgQCRPXA==;
+Received: from shannonbrachehai by cpanel-552-syd.hostingww.com with local (Exim 4.96)
+	(envelope-from <shannonbrachehai@cpanel-552-syd.hostingww.com>)
+	id 1qK5fJ-001CVX-1b
+	for kira@binc.pw;
+	Fri, 14 Jul 2023 09:24:10 +1000
+To: kira@binc.pw
+Subject: =?us-ascii?Q?Sucuri_Alert,_shannonbrachehair.com.au,_Post_Up?=  =?us-ascii?Q?date,_106.70.201.139?=
+X-PHP-Script: shannonbrachehair.com.au/index.php for 106.70.201.139
+X-PHP-Filename: /home/shannonbrachehai/public_html/index.php REMOTE_ADDR: 106.70.201.139
+Date: Thu, 13 Jul 2023 23:24:05 +0000
+From: WordPress <wordpress@shannonbrachehair.com.au>
+Message-ID: <2LiTMa031fRNNYI9UAhzKcTdgxms9bGsw3l7ET3csxI@shannonbrachehair.com.au>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <shannonbrachehai@cpanel-552-syd.hostingww.com>
+X-AuthUser: shannonbrachehai@cpanel-552-syd.hostingww.com
+X-Spam-Status: No, score=3.7
+X-Spam-Score: 37
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Event: Post Update Website: http://shannonbrachehair.com.au
+    IP Address: 106.70.201.139 Reverse IP: n106-70-201-139.meb21.vic.optusnet.com.au
+    Date/Time: July 13, 2023 11:24 pm Message: Flamingo_inbound status has been
+    changed; details: ID: 1949,Old status: new,New status: publish,Title: [your-subject]
+    
+ Content analysis details:   (3.7 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: hostingww.com]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.5 KAM_NUMSUBJECT         Subject ends in numbers excluding current years
+  2.5 PHP_SCRIPT             Sent by PHP script
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  0.2 KAM_DMARC_NONE         DKIM has Failed or SPF has failed on the message
+                             and the domain has no DMARC policy
+X-Spam-Flag: NO
+
+
+Event: Post Update
+Website: http://shannonbrachehair.com.au
+IP Address: 106.70.201.139
+Reverse IP: n106-70-201-139.meb21.vic.optusnet.com.au
+Date/Time: July 13, 2023 11:24 pm
+
+
+Message: Flamingo_inbound status has been changed; details: ID: 1949,Old status: new,New status: publish,Title: [your-subject]
+

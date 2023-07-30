@@ -1,0 +1,88 @@
+Return-Path: <noreply@p3plzcpnl449078.prod.phx3.secureserver.net>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id GLhEJ44/ZGRX5isAMUeTPA
+	(envelope-from <noreply@p3plzcpnl449078.prod.phx3.secureserver.net>)
+	for <kira@binc.pw>; Wed, 17 May 2023 09:44:30 +0700
+Return-path: <noreply@p3plzcpnl449078.prod.phx3.secureserver.net>
+Envelope-to: kira@binc.pw
+Delivery-date: Wed, 17 May 2023 09:44:30 +0700
+Received: from p3nlsmtpcp01-03.prod.phx3.secureserver.net ([184.168.200.142]:45688)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <noreply@p3plzcpnl449078.prod.phx3.secureserver.net>)
+	id 1pz79S-00CCo2-1m
+	for kira@binc.pw;
+	Wed, 17 May 2023 09:44:30 +0700
+Received: from 20.28.109.208.host.secureserver.net ([10.199.64.97])
+	by : HOSTING RELAY : with ESMTP
+	id z77kpzDptS3faz77kpzYdE; Tue, 16 May 2023 19:42:44 -0700
+X-CMAE-Analysis: v=2.4 cv=KNWcTnJo c=1 sm=1 tr=0 ts=64643f24
+ a=5p2kn+TdgGlJEV5v7/uc8g==:117 a=9+rZDBEiDlHhcck0kWbJtElFXBc=:19
+ a=gQX1269ULFhLm4Thdby34LUHVW0=:19 a=dHlgu/J3N0dIE80XNg8v0esTehs=:19
+ a=IkcTkHD0fZMA:10 a=P0xRbXHiH_UA:10 a=BUmI0CJaAAAA:8 a=xaGVosXYXy0JQ-StGdwA:9
+ a=QEXdDO2ut3YA:10 a=ZXulRonScM0A:10 a=JCt4afnC8Fml4rHp02vV:22
+X-SECURESERVER-ACCT: UNKNOWN
+Received: from root by p3plzcpnl449078.prod.phx3.secureserver.net with local (Exim 4.95)
+	(envelope-from <noreply@p3plzcpnl449078.prod.phx3.secureserver.net>)
+	id 1pz77k-00GE4o-JG
+	for kira@binc.pw;
+	Tue, 16 May 2023 19:42:44 -0700
+To: kira@binc.pw
+Subject: [Installatron] My blog updated
+Date: Tue, 16 May 2023 19:42:44 -0700
+From: noreply@p3plzcpnl449078.prod.phx3.secureserver.net
+Message-ID: <2235d7751c26496f9c1f9123646949dc@p3plzcpnl449078.prod.phx3.secureserver.net>
+X-Mailer: Installatron Plugin 9.1.59 (278)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - p3plzcpnl449078.prod.phx3.secureserver.net
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [0 0] / [47 12]
+X-AntiAbuse: Sender Address Domain - p3plzcpnl449078.prod.phx3.secureserver.net
+X-Get-Message-Sender-Via: p3plzcpnl449078.prod.phx3.secureserver.net: sender_ident via received_protocol == local: root/primary_hostname/system user
+X-Authenticated-Sender: p3plzcpnl449078.prod.phx3.secureserver.net: root
+X-Source: /usr/local/cpanel/3rdparty/php/74/bin/php
+X-Source-Args: /usr/local/installatron/bin/run -n -c /usr/local/installatron/etc/php.ini -f /var/installatron/tasks/task_1168429108546785200 
+X-Source-Dir: /var/installatron/cache
+X-CMAE-Envelope: MS4xfC0BmYCVW4rNqdj+ixMLPpBc8n/bjv1oQrO/mEn6oNjjmd0th5bo11eVnLZPKNlFtKBnb0IjcPyInjeLqTCg2Yn9U1OuQUvC8/94fzoVAzevpnGhpIXL
+ kFd7yoEzZXdN0QzpTnkPVb6R1jJt52Grbd99v683urDUsl0tTABVcNid61kBXHmTAfdZ7PGj25l/ayd0om9s2y1xDXgM0TAUcO3A3vFs85+WdGe6bF4rauFP
+ aQZMYSNXC/JFII+bKkwb/A==
+X-Spam-Status: No, score=4.0
+X-Spam-Score: 40
+X-Spam-Bar: ++++
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  This is an automated email from Installatron. To unsubscribe
+    from these emails or to change notification settings, login to your web hosting
+    control panel, navigate to the Installatron tool, and selec [...] 
+ Content analysis details:   (4.0 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.5 FROM_DOMAIN_NOVOWEL    From: domain has series of non-vowel letters
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: cableamos.com]
+  0.0 KAM_DMARC_STATUS       Test Rule for DKIM or SPF Failure with Strict
+                             Alignment
+  1.0 KAM_LAZY_DOMAIN_SECURITY Sending domain does not have any
+                             anti-forgery methods
+  2.5 KAM_LINKBAIT           Short messages containing little more than a link,
+                             from a domain with no security in place
+X-Spam-Flag: NO
+
+This is an automated email from Installatron. To unsubscribe from these emails or to change notification settings, login to your web hosting control panel, navigate to the Installatron tool, and select the installed applications you wish to modify.
+
+The update process for My blog located at http://cableamos.com has succeeded.
+
+New installed version: WordPress 6.2.1
+
+End of report.
+

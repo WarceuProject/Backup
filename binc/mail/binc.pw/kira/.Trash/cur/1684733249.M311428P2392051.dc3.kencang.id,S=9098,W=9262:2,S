@@ -1,0 +1,164 @@
+Return-Path: <ingeocon@webhosting2033.is.cc>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id mE5hEkH9amTzfyQAMUeTPA
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	for <kira@binc.pw>; Mon, 22 May 2023 12:27:29 +0700
+Return-path: <ingeocon@webhosting2033.is.cc>
+Envelope-to: kira@binc.pw
+Delivery-date: Mon, 22 May 2023 12:27:29 +0700
+Received: from bird.elm.relay.mailchannels.net ([23.83.212.17]:52218)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q0y4t-00A5tW-2W
+	for kira@binc.pw;
+	Mon, 22 May 2023 12:27:29 +0700
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 4449B500D46
+	for <kira@binc.pw>; Mon, 22 May 2023 05:26:44 +0000 (UTC)
+Received: from relay0-fwd-f.mailbaby.net (unknown [127.0.0.6])
+	(Authenticated sender: interserver)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 7CDBF500F35
+	for <kira@binc.pw>; Mon, 22 May 2023 05:26:43 +0000 (UTC)
+ARC-Seal: i=2; s=arc-2022; d=mailchannels.net; t=1684733203; a=rsa-sha256;
+	cv=pass;
+	b=TKP3PCeH2Mtxt9TCBqYTXQxdcWQ21YxIThc88L9hg8Ubeu9BTnJVNcTqsK6qIgM7vhzplM
+	1ll8uax/Sg74BHmgRANps79W1liroHAs/mS788HmEMK4ICWJxux86YOXa7xRlLiv35L/u9
+	utWHI3XiKF8MK5f9q9iDYFCCONpJCJmFu7J8eR6Qdj3UUq+CqGnMlWCGSFJZNrfvtb9sHB
+	Hfp+ZLcb1wswtjXSU1PQiITm+zHiFqVp83dQej8YRVBKE20/IuF9Eh/fIi6AyQvQKVhoyC
+	puH3NdikztExqAgyOvsHGeBCtxCH+NAZrQZaxEFl0sM0/pGALfi9GXgBwS7a3Q==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1684733203;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:dkim-signature;
+	bh=Jz/E3GdU7tK22q+26YseqW58zq/E2HRF+DzDtU3VIGs=;
+	b=Sc41OFLIoMabOapR6fdIEoD7ssAZEUBZRd3lR9yK7edT+O9Dsqf2qfkmZIxuy/9h0VpIA9
+	mwGHjcJG4LT32rvNf6s37WWhDzKd6+Zhq5wC9aF7ICLgIhZa+lN4ijFeqPktFUvmQQcBJc
+	+tV+E5twCGF9Np8maEFgt+02bPQl2CMbUJM0XHSjjMgxFdAcp9G5RUnZswH2R9bGOVo/aG
+	xrbaQEZm0I0A8yvj4zckxk4P97vvOZk49jC/uhpbiXf+wkStjmjyscjoSWvwsit28/w34N
+	ZjN9FX7veYSOb2DDTk25+lyGubine/LuhaGWWrRz5B3eE2kicc0eUopRcBdlrQ==
+ARC-Authentication-Results: i=2;
+	rspamd-79bb5575d7-m656l;
+	arc=pass ("mailbaby.net:s=detka:i=1");
+	auth=pass smtp.auth=interserver smtp.mailfrom=ingeocon@webhosting2033.is.cc
+X-Sender-Id: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MC-Relay: Neutral
+X-MailChannels-SenderId: interserver|x-authuser|ingeocon@webhosting2033.is.cc
+X-MailChannels-Auth-Id: interserver
+X-Unite-Minister: 1c27bad45d8b17c2_1684733204026_3474183245
+X-MC-Loop-Signature: 1684733204026:3175565742
+X-MC-Ingress-Time: 1684733204025
+Received: from relay0-fwd-f.mailbaby.net (relay0-fwd-f.mailbaby.net
+ [174.138.180.158])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.107.49.218 (trex/6.8.1);
+	Mon, 22 May 2023 05:26:43 +0000
+Received: from webhosting2033.is.cc ([68.168.213.91] webhosting2033.is.cc)
+ (Authenticated sender: webhosting2033)
+ by relay0-fwd-f.mailbaby.net (InterServerMTA) with ESMTPSA id 18841ec8c2e0007198.001
+ for <kira@binc.pw>
+ (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256);
+ Mon, 22 May 2023 05:26:41 +0000
+X-Zone-Loop: c4bf66cc6aeb64c8d5dd8fafc496a31fe298ae31001b
+ARC-Authentication-Results: i=1;	offloadmongo3b.mailbaby.net;	auth=pass
+ smtp.auth=webhosting2033 smtp.mailfrom=ingeocon@webhosting2033.is.cc
+ARC-Seal: i=1; s=detka; d=mailbaby.net; t=1684733201; a=rsa-sha256;
+	cv=none;
+	b=W2mGFtnYLY78XlQsuopNkuFwM0WfDYwSm/tCEreeMQrDZUXs3x34WSGCmLrEqIxBDpara1
+	WWJn+9q64PHAkGmpJYt6Vg/uCvXy6/UCqlhK2mMIbh5SGxMa3epO6hBPXBArRCPNMGXwUF
+	Bl5jAJZMrdXwX14MfIMENNrXe7+sAiNT4TN+ulLkrOUPwH3K17qE/dxPCw2fDltGxt1nIP
+	s+y8coGFRto83hEWuQnzHeXESP/TMCBYUziBrgIWUk5/H7CSlWVq7ScOTlMinwAowB0mU1
+	dfyLXaja6B17dNusTDX5n59bGa/Gg6jkNdvLbGg/1zVPs2yEagyUAhnVQn3lVw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailbaby.net;	s=detka; t=1684733201;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:dkim-signature;
+	bh=Jz/E3GdU7tK22q+26YseqW58zq/E2HRF+DzDtU3VIGs=;
+	b=Wt3W+JEucqZsLHqAGdgGDRpxNZjvf6PdnzxkX5BM9eFL07LA8AfUpxPvVIq3ShiaWa1b5M
+	Bbf4jgJOVaal6ksZhOVXhy40MmAOFJsNRpALShh/yZ1/1cPWaalEMQX+yGnGU7JvuEuanJ
+	9nkfnN027osv+DpfbY2wRcj76GFwWkRznOr8B7lDZpHiSbjPwOnOc0S6JLUjkunlinqGjh
+	YdU9uhhZ1VCpooJCE+fCdJ47tL17rkpyFbkJpo2uMMPvIZM112AXwoX47hWGumGvj7dVQm
+	dxsxj3YT2aLild1jkJus3lC37gZtnfcQNz+XyJ3lWREvOQxDPgLPSjy44Ut2sQ==
+X-SPF: pass
+X-Originating-IP: [68.168.213.91]
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=webhosting2033.is.cc; s=default; h=Sender:Content-Transfer-Encoding:
+	Content-Type:MIME-Version:Message-ID:From:Date:Subject:To:Reply-To:Cc:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=Jz/E3GdU7tK22q+26YseqW58zq/E2HRF+DzDtU3VIGs=; b=bt6FUXe28XZm9YvFMEK7LDng3D
+	o6qtpUG7Q3AAuOHT1IkmYOulJdl1xSePBlLEVuNCYnE9CsnXPUFGkFc+2gKo35tfwccbi/0BS9BhP
+	OyjDzju7TxDnKLT6a6Ypu579gXNvjEYpvT5FX6p6A7sOJqIEwyX5JQeZB0LH2URmxvbRWnbjziRyw
+	dTVfNYuLCFb5IzHPTJIqyf9amUxJ8sHRBm4r18mc6qOb9uoOqRzX0uJiYmgZDz/GDDxa6Q4xLl1qZ
+	IOYhUg8aUQAsfArCS9cMdhIjvVGjq0+amS+9vrrVQaSC0NJBuDZ5PQDZ2KozcnuS8oc6rj8ci1YcA
+	x5myVf/Q==;
+Received: from ingeocon by webhosting2033.is.cc with local (Exim 4.96)
+	(envelope-from <ingeocon@webhosting2033.is.cc>)
+	id 1q0y48-002E3o-06
+	for kira@binc.pw;
+	Mon, 22 May 2023 01:26:41 -0400
+To: kira@binc.pw
+Subject: [InGEO consulting] Please moderate: "How-To: Recording, Saving, and you may Discussing Zoom Meetings"
+X-PHP-Script: ingeoconsulting.com/wp-comments-post.php for 45.64.246.153
+X-PHP-Originating-Script: 1159:class-phpmailer.php
+Date: Mon, 22 May 2023 05:26:39 +0000
+From: WordPress <wordpress@ingeoconsulting.com>
+Message-ID: <a9b227eff91bb77e0482e23b90789fe2@ingeoconsulting.com>
+X-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Sender:  <ingeocon@webhosting2033.is.cc>
+X-AuthUser: ingeocon@webhosting2033.is.cc
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "How-To: Recording, Saving, and
+   you may Discussing Zoom Meetings" is waiting for your approval https://ingeoconsulting.com/2022/12/30/how-to-recording-saving-and-you-may-disc
+    [...] 
+ Content analysis details:   (0.3 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: ingeoconsulting.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  0.0 KAM_SHORT              Use of a URL Shortener for very short URL
+X-Spam-Flag: NO
+
+A new comment on the post "How-To: Recording, Saving, and you may Discussing Zoom Meetings" is waiting for your approval
+https://ingeoconsulting.com/2022/12/30/how-to-recording-saving-and-you-may-discussing/
+
+Author: gate.io borsası hangi ülkenin (IP address: 45.64.246.153, 45.64.246.153)
+Email: 50325546@outlook.com
+URL: https://www.gate.io/tr/signup/XlQVXVo
+Comment: 
+I am a student of BAK College. The recent paper competition gave me a lot of headaches, and I checked a lot of information. Finally, after reading your article, it suddenly dawned on me that I can still have such an idea. grateful. But I still have some questions, hope you can help me.
+
+Approve it: https://ingeoconsulting.com/wp-admin/comment.php?action=approve&c=114#wpbody-content
+Trash it: https://ingeoconsulting.com/wp-admin/comment.php?action=trash&c=114#wpbody-content
+Spam it: https://ingeoconsulting.com/wp-admin/comment.php?action=spam&c=114#wpbody-content
+Currently 9 comments are waiting for approval. Please visit the moderation panel:
+https://ingeoconsulting.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

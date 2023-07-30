@@ -1,0 +1,131 @@
+Return-Path: <wordpress=qa-login-seconnecter.ca@mail1.wpengine.com>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id aLmyITbGXGRx4ScAMUeTPA
+	(envelope-from <wordpress=qa-login-seconnecter.ca@mail1.wpengine.com>)
+	for <kira@binc.pw>; Thu, 11 May 2023 17:40:54 +0700
+Return-path: <wordpress=qa-login-seconnecter.ca@mail1.wpengine.com>
+Envelope-to: kira@binc.pw
+Delivery-date: Thu, 11 May 2023 17:40:54 +0700
+Received: from eastern.birch.relay.mailchannels.net ([23.83.209.55]:28964)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <wordpress=qa-login-seconnecter.ca@mail1.wpengine.com>)
+	id 1px3jA-00Aypr-2j
+	for kira@binc.pw;
+	Thu, 11 May 2023 17:40:54 +0700
+X-Sender-Id: wpengine|x-authuser|e156ba5601872cfc3be6594d1880dcfc4ce1dbe9
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 335AE6C1858
+	for <kira@binc.pw>; Thu, 11 May 2023 10:40:09 +0000 (UTC)
+Received: from pod-112690 (unknown [127.0.0.6])
+	(Authenticated sender: wpengine)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 64AF06C0F88
+	for <kira@binc.pw>; Thu, 11 May 2023 10:40:08 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1683801608; a=rsa-sha256;
+	cv=none;
+	b=wsOLPRYDSYNfCBNPbpNmHKQKA2VJp/C9M9S83D3BL54p7apNxcJa/bN3EbfI58OBe5GAEv
+	FN0Wig0MLcpOlH6b2/GPuqdF8w0+iynbyaNkfPPpfY+0N99uhoWNB+B0wbNvjdCEN/jBdl
+	dQ1wmXUgg4/ruZxxgrSpulAD2OJbzJA06gL8U8TIIhPwp5m2uRJj8kME83flmvWVLSvMMj
+	l2l0xJvtmHYOJB1Pm9cNh9GXvMzqb4IgROeRzt22yf/fkhoePcYMtpyolezWEDumTvM5J2
+	YJcrA6GVBFrFolHajd2Rb5SP6eGVOaJiCRiSoUMrENF4AfbD5reFM8/Bi99mdw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1683801608;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 dkim-signature; bh=V+RULP+Z3SK53ybt37WobE5Tj2dUGEV0kJI6vg2+aQY=;
+	b=UYpS2SApqv/5H623uDgbVOm5wQr7LHBsNOtFn90ZGdg5VRaDzfFvglv9CT76n+gRT+u5lI
+	r0Kv++v9KetRAxwRSxkJtPKR6YzDC6L+VE1FYwlNBBxVtDoHzC2jnFoFnxV+yuLJ9hnPdZ
+	8WNRjMxq6/Wy6//Wa39HcXy9DM+BUhGdebL5IuDyJeXT/b0bqidkx9+KT0ZURN9wFBvprG
+	DW7YREWTOTqAI/S7OLwJbmwzJ6yEPOI19mYReZ/+MOQTtGZlfnIsMLiWwX2cXRYcEH/JJ+
+	1FciGbGCDLKuSlId/M1UcREiq0kf+PBBVEIo1ZB9VLQt5t1gwT33rpm7IgfUcA==
+ARC-Authentication-Results: i=1;
+	rspamd-5cdf8fd7d9-wp6hn;
+	auth=pass smtp.auth=wpengine
+ smtp.mailfrom="wordpress=qa-login-seconnecter.ca@mail1.wpengine.com"
+X-Sender-Id: wpengine|x-authuser|e156ba5601872cfc3be6594d1880dcfc4ce1dbe9
+X-MC-Relay: Neutral
+X-MailChannels-SenderId:
+ wpengine|x-authuser|e156ba5601872cfc3be6594d1880dcfc4ce1dbe9
+X-MailChannels-Auth-Id: wpengine
+X-Vacuous-Sponge: 1eea3a8b0a4de7ee_1683801608761_3694967290
+X-MC-Loop-Signature: 1683801608761:1396842586
+X-MC-Ingress-Time: 1683801608760
+Received: from pod-112690 (204.110.197.104.bc.googleusercontent.com
+ [104.197.110.204])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.127.59.49 (trex/6.8.1);
+	Thu, 11 May 2023 10:40:08 +0000
+Received: from pod-112690 (localhost [127.0.0.1])
+	by pod-112690 (Postfix) with ESMTP id 8F74342E72
+	for <kira@binc.pw>; Thu, 11 May 2023 10:40:07 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=mail1.wpengine.com;
+	s=mx; t=1683801607; bh=RHeWu2xCQ7KZfrJgoaaTlJttuUpTGxfOe74deW2pUNQ=;
+	h=To:Subject:Date:From:From;
+	b=kLYkqOpX0B0tBQGE+le6OUOPMMtdNWJsEXta7scWlM8bKQpAmVY9DrAJ5ikWrAk+w
+	 kEvCjSgv/ujo0+yjhsBzd1g0cSHbjx++8RcmPHcfv6C1HpaAj3Yz9JTz0ARwdCqLfb
+	 ldee+2m68CYv/7keeb9ZsdKY4XrALvW3IycNez58jqmO2q3k6vUCYsz71U9Pbp9TGX
+	 6EcpUWb0HYiQDQ8cs9sDp92TaUk27q035tgOiLfFMuClkRN0KOIRkJlneZso+vDW0/
+	 YUFe9bJzhDbgl5p4v9QiIwjlFqtVdTJaYrzgxFweIv5iY0vp99ZU4v7YpxhxsFRsAI
+	 LwGaHWeVnto4w==
+Received: from pod-112690:apache2_80:v0.1.12 (localhost [127.0.0.1])
+	by pod-112690 (Postfix) with SMTP id 841EB42E76
+	for <kira@binc.pw>; Thu, 11 May 2023 10:40:06 +0000 (UTC)
+Received: by pod-112690:apache2_80:v0.1.12 (sSMTP sendmail emulation); Thu, 11 May 2023 10:40:06 +0000
+X-AuthUser: e156ba5601872cfc3be6594d1880dcfc4ce1dbe9
+To: kira@binc.pw
+Subject: =?us-ascii?Q?[New_Site_Placeholder_Sobeys_Site]_Please_moder?=
+ =?us-ascii?Q?ate:_"Hello_world!"?=
+X-PHP-Originating-Script: 33:PHPMailer.php
+Date: Thu, 11 May 2023 10:40:06 +0000
+From: WordPress <wordpress@qa-login-seconnecter.ca>
+Message-ID: <HtdIdNC6HJdCgw9h4vLNCabCNW5XsAv3yvUSCMyUgg@qa-login-seconnecter.ca>
+X-Mailer: PHPMailer 6.5.3 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+X-Spam-Status: No, score=0.2
+X-Spam-Score: 2
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "dc3.kencang.id",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  A new comment on the post "Hello world!" is waiting for your
+    approval https://qa-login-seconnecter.ca/hello-world/ Author: robyn (IP address:
+    45.158.49.95, 45-158-49-95.dynamic-pool.mclaut.net) Email: 86958@gmail.com
+    URL: http://prephe.ro/8eqn Comment: Would you fuck me right when I got home
+    from work? http://prep [...] 
+ Content analysis details:   (0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: prephe.ro]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+X-Spam-Flag: NO
+
+A new comment on the post "Hello world!" is waiting for your approval
+https://qa-login-seconnecter.ca/hello-world/
+
+Author: robyn (IP address: 45.158.49.95, 45-158-49-95.dynamic-pool.mclaut.net)
+Email: 86958@gmail.com
+URL: http://prephe.ro/8eqn
+Comment: 
+Would you fuck me right when I got home from work? http://prephe.ro/8eqn
+
+Approve it: https://qa-login-seconnecter.ca/wp-admin/comment.php?action=approve&c=5#wpbody-content
+Trash it: https://qa-login-seconnecter.ca/wp-admin/comment.php?action=trash&c=5#wpbody-content
+Spam it: https://qa-login-seconnecter.ca/wp-admin/comment.php?action=spam&c=5#wpbody-content
+Currently 4 comments are waiting for approval. Please visit the moderation panel:
+https://qa-login-seconnecter.ca/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+

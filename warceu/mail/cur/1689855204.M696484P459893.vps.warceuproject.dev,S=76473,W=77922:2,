@@ -1,0 +1,1449 @@
+Return-Path: <3tSS5ZBEKBBAC47085qsu-347u51Ew44w1u.s420y7qCq7suA574zus9.tuB@scoutcamp.bounces.google.com>
+Delivered-To: warceu@vps.warceuproject.dev
+Received: from vps.warceuproject.dev
+	by vps.warceuproject.dev with LMTP
+	id LdcwKOQkuWR1BAcA0wEIKA
+	(envelope-from <3tSS5ZBEKBBAC47085qsu-347u51Ew44w1u.s420y7qCq7suA574zus9.tuB@scoutcamp.bounces.google.com>)
+	for <warceu@vps.warceuproject.dev>; Thu, 20 Jul 2023 14:13:24 +0200
+Return-path: <3tSS5ZBEKBBAC47085qsu-347u51Ew44w1u.s420y7qCq7suA574zus9.tuB@scoutcamp.bounces.google.com>
+Envelope-to: kira@warceuproject.dev
+Delivery-date: Thu, 20 Jul 2023 14:13:24 +0200
+Received: from mail-ot1-f71.google.com ([209.85.210.71]:59800)
+	by vps.warceuproject.dev with esmtps  (TLS1.3) tls TLS_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <3tSS5ZBEKBBAC47085qsu-347u51Ew44w1u.s420y7qCq7suA574zus9.tuB@scoutcamp.bounces.google.com>)
+	id 1qMSX2-001vdK-2F
+	for kira@warceuproject.dev;
+	Thu, 20 Jul 2023 14:13:24 +0200
+Received: by mail-ot1-f71.google.com with SMTP id 46e09a7af769-6b886e8c29cso1256371a34.3
+        for <kira@warceuproject.dev>; Thu, 20 Jul 2023 05:12:59 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20221208; t=1689855158; x=1690459958;
+        h=to:from:subject:message-id:list-id:feedback-id:list-unsubscribe
+         :precedence:reply-to:date:mime-version:from:to:cc:subject:date
+         :message-id:reply-to;
+        bh=lU36J/3vdQCxZ+htVtvH/CDsn7gev0YDqb7v7+7/6o4=;
+        b=Z1BkAMJkbfPhHAgmGieLzUc5hvVNTdhV6rF/4HCM+iqxhjfe0Fy8fnOeGXQt3fROqk
+         RdaPRdve1nL1dZv29cAOR5l/aq9jI4Lw3cmw/vpC43FVx9RWckGVJuK9D5m7OE3PgDq5
+         qGfC2WHigebyVSTMEgTazLNSFYcKX3Y2kpZMSGAB4JS6Ykrnf5MkivN0/0vWpUq/jbMV
+         Fw66IwgKgc5cr8/6CYIsga9MMVhnYvX60ROwKw4EcbYz/n5iklVJV5iPbydsOHRrLatG
+         3y50mX8pBZgVGs9S28PrQye6XPu2waz60BtVyKRXv0Jn8CPsp4GTLbQLpO9U6DTavMCh
+         iIog==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1689855158; x=1690459958;
+        h=to:from:subject:message-id:list-id:feedback-id:list-unsubscribe
+         :precedence:reply-to:date:mime-version:x-gm-message-state:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=lU36J/3vdQCxZ+htVtvH/CDsn7gev0YDqb7v7+7/6o4=;
+        b=K5f+OQYpYavxbiNADXQwe9rBF69ceC3e1ijumOgxFyI8Fwt3KfHSd+YtSL3Y2X5so8
+         rkK/SvJB/n9C4Gevef62klVXLHA5EkP85ub2I6G4Jy6aF4+a/lnlGn84Xd59zype+eHr
+         ENBv1u65EA59BYpYtTyCZifCD9Cgnmp3lWvb+Bzl6v483P5DXMUcuijHOk4gAsPsVwnw
+         Od5WEHDjQYH0dkl/Iabrshvi/M7dw+kRUHJRf8ZjXA02UzD38dKurSd2Vi3Tyi4zIdTK
+         HbjnxffOOmMNCbuzCeJCyZHfo5RjHLLHhgkO3fveQEuSsI+q4XVCVrOQVJa1qVkXosBX
+         cI+g==
+X-Gm-Message-State: ABy/qLaq8Y1XPd+mbAVFjQ/cXWzUMR+MOtT2enBN+GdnnZtNIr/Gj0Ig
+	+w3etKVgq8frXt9DlkMBRRWn
+X-Google-Smtp-Source: APBJJlEEwenDsoikJysIh2B8nR9YkvumtDH3HCWVCgTELj2EO/RYKF0CRrK3HF8+G9kQKvEU7UFAE7A=
+MIME-Version: 1.0
+X-Received: by 2002:a9d:6855:0:b0:6b9:9cc3:976e with SMTP id
+ c21-20020a9d6855000000b006b99cc3976emr3780719oto.0.1689855157894; Thu, 20 Jul
+ 2023 05:12:37 -0700 (PDT)
+Date: Thu, 20 Jul 2023 05:12:37 -0700
+Reply-To: The Google Workspace Team <workspace-noreply@google.com>
+X-Google-Id: 4152017
+Precedence: bulk
+List-Unsubscribe: <mailto:list-unsubscribe@google.com?subject=optout-ADa0GC83Yi6i7wbcoaO3NF0g6GvR6_Nr9qM_CXjp-YOiWvEpJMkO6fFRpFcLL8rw2yxfAYbWCAcDwndM7I7-43vGCOkuksNBSH-MEevu7lq7sNfLEYV86tgdixKZX8YMROHUL8z7MPPBBAfGKeL1o6UboEa5vTD0WPoGFvoElgdb5sxXFSLdK3R1CpfrL5JpOUL4lIpTwQWEI1lewkjk05vUrj_o7IFWyHBtfbaiKtH2LDA2V-CyK8t2P2n9Cjzpgvg0yHUpAerQp2s-token&body=optout-ADa0GC83Yi6i7wbcoaO3NF0g6GvR6_Nr9qM_CXjp-YOiWvEpJMkO6fFRpFcLL8rw2yxfAYbWCAcDwndM7I7-43vGCOkuksNBSH-MEevu7lq7sNfLEYV86tgdixKZX8YMROHUL8z7MPPBBAfGKeL1o6UboEa5vTD0WPoGFvoElgdb5sxXFSLdK3R1CpfrL5JpOUL4lIpTwQWEI1lewkjk05vUrj_o7IFWyHBtfbaiKtH2LDA2V-CyK8t2P2n9Cjzpgvg0yHUpAerQp2s-token>,
+ <https://notifications.google.com/g/optout/ADa0GC83Yi6i7wbcoaO3NF0g6GvR6_Nr9qM_CXjp-YOiWvEpJMkO6fFRpFcLL8rw2yxfAYbWCAcDwndM7I7-43vGCOkuksNBSH-MEevu7lq7sNfLEYV86tgdixKZX8YMROHUL8z7MPPBBAfGKeL1o6UboEa5vTD0WPoGFvoElgdb5sxXFSLdK3R1CpfrL5JpOUL4lIpTwQWEI1lewkjk05vUrj_o7IFWyHBtfbaiKtH2LDA2V-CyK8t2P2n9Cjzpgvg0yHUpAerQp2s?hl=id>
+Feedback-ID: P-11-802:C20139402:M110513480-id:gamma
+List-Id: <4b5323da7a4c0018c821b19102d7f6bc97de0ed9.google.com>
+X-Notifications: ce2f21ee01c40000
+X-Notifications-Bounce-Info: AayBb5OolPaMn3RhDSiDpvSaNFVKLgB1CDhxC0Pki7Qf8guRH1hyKmVU7Xx7aqWJGs0pV-Erhigm8sRPtYB70w3nkjaVuhTTJh1CxLqTabc2STjX8KCSlsbtomxQeV2droAgmeqodZlTVWfzIYytyon9yM5UteCnFiODHRUqYsfIoccDqPu9m5kE_Py2yoP-diqB1Nb4z3iCnv0HZnmdmpQiGH_UAMj7asVsDIxYF3rB-Rh7MyXay70ZclkCOWdAVbJGsj4-bvsp71EsTvB0GoiMLxzjHc7fkIq4VYOslu4-8QGaGgntKLd4oVxHqCCCk8qIJwDbpu74R-mxawKLENuBbifiBHEJc3bIdTb-HC5YUdoaMZP_KnpOhileo2XF3Ey8uXtManWynXdYHF9hPnF_AF3R4Y84mgNjAwNjA0MDQxNTM1NTk2OTMzMg
+Message-ID: <999361ced7a0f2281798de586f6d42d4f72bb8c2-20139402-110857848@google.com>
+Subject: warceuproject, kembangkan bisnis Anda dengan Google Ads
+From: The Google Workspace Team <workspace-noreply@google.com>
+To: kira@warceuproject.dev
+Content-Type: multipart/alternative; boundary="000000000000687fdd0600ea100a"
+X-Spam-Status: No, score=-8.7
+X-Spam-Score: -86
+X-Spam-Bar: --------
+X-Ham-Report: Spam detection software, running on the system "vps.warceuproject.dev",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Capai sasaran pemasaran Anda dengan kehadiran yang lebih besar
+    di internet Setelah menggunakan Google Workspace, dapatkan hasil maksimal
+    dari akun Google Cloud Anda dengan Google Ads. Dengan bantuan alat pembuatan
+    dan penempatan iklan cerdas kami, produk Anda dapat ditampilk [...] 
+ Content analysis details:   (-8.7 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 RCVD_IN_ZEN_BLOCKED_OPENDNS RBL: ADMINISTRATOR NOTICE: The query
+                              to zen.spamhaus.org was blocked due to
+                             usage of an open resolver. See
+                             https://www.spamhaus.org/returnc/pub/
+                             [209.85.210.71 listed in zen.spamhaus.org]
+ -7.5 USER_IN_DEF_DKIM_WL    From: address is in the default DKIM
+                             welcome-list
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+ -1.0 MAILING_LIST_MULTI     Multiple indicators imply a widely-seen list
+                             manager
+ -0.0 DKIMWL_WL_MED          DKIMwl.org - Medium trust sender
+X-Spam-Flag: NO
+
+--000000000000687fdd0600ea100a
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+Q2FwYWkgc2FzYXJhbiBwZW1hc2FyYW4gQW5kYSBkZW5nYW4ga2VoYWRpcmFuIHlhbmcgbGViaWgg
+YmVzYXIgZGkgaW50ZXJuZXQNCg0KU2V0ZWxhaCBtZW5nZ3VuYWthbiBHb29nbGUgV29ya3NwYWNl
+LCBkYXBhdGthbiBoYXNpbCBtYWtzaW1hbCBkYXJpIGFrdW4gIA0KR29vZ2xlIENsb3VkIEFuZGEg
+ZGVuZ2FuIEdvb2dsZSBBZHMuIERlbmdhbiBiYW50dWFuIGFsYXQgcGVtYnVhdGFuIGRhbiAgDQpw
+ZW5lbXBhdGFuIGlrbGFuIGNlcmRhcyBrYW1pLCBwcm9kdWsgQW5kYSBkYXBhdCBkaXRhbXBpbGth
+biBkaSBQZW5lbHVzdXJhbiwgIA0KWW91VHViZSwgZGFuIEphcmluZ2FuIERpc3BsYXkgR29vZ2xl
+IOKAkyB0ZXBhdCBzYWF0IHBlbGFuZ2dhbiBtZW5lbHVzdXJpbnlhLg0KDQpDb2JhIEdvb2dsZSAg
+DQpBZHM8aHR0cHM6Ly9ub3RpZmljYXRpb25zLmdvb2dsZS5jb20vZy9wL0FEYTBHQzlISWhmOExX
+WnpCeGgzY1FKQWdVU2xjb3VoNjFXTUY0Tm5IcTVPZWI1R0NKUDFGdEYzYXBMQk83Sk1zTlpGTmF5
+NEpBakZUWEZERV9VN3paLXF0NjlEVGZZZGhYNFI2NkJUb1JVMEotc1Fseks0OHI0OE9sdHNoQks1
+R1NsbDlvbEFMUno2MmkxV1d6ZUpiNmR6Q3VsSURJMHBEZno1UWZ3ZnFfMi0xbXAxajFQX21uVjV6
+OU14cGo5RWI3d2lrd0N5TUN2QnlZYjdMTHBVSkxjd2hRLV9uVWpsNDNNbXBfUEVkQmtfaTZ0YThk
+VTJOWmhyT2xBOWJVVnFyTDJ0bUZPWWtTTC11TzhkOGVDMmE1ampiaFlLaXc+DQoNCktJU0FIIFNV
+S1NFUw0KDQpXLkIuIE1hc29uIG1lbXBlcm9sZWggcGVuaW5na2F0YW4gcGVuZ3VuanVuZyBkYW4g
+cGVzYW5hbiBkZW5nYW4gR29vZ2xlIEFkcw0KDQpwZW5pbmdrYXRhbiBwZXNhbmFuDQpTYWF0IHBl
+cnVzYWhhYW4gQVRLLCBXLkIuIE1hc29uLCBtZW5nZ3VuYWthbiBHb29nbGUgQWRzLCBtZXJla2Eg
+bWVtcGVyb2xlaCAgDQpwZW5pbmdrYXRhbiBwZW5ndW5qdW5nIGthbGkgcGVydGFtYSBkYXJpIEdv
+b2dsZSBzZWJlc2FyIDEyMCUgZGFuICANCnBlbmluZ2thdGFuIHBlc2FuYW4gc2ViZXNhciA1MCUu
+DQoNClRvbnRvbiAgDQp2aWRlbzxodHRwczovL25vdGlmaWNhdGlvbnMuZ29vZ2xlLmNvbS9nL3Av
+QURhMEdDX3BLXzZpOXA3QkRRdmxCZzQxZFluVndva3djQ3M4Z3B3b0liUG5GVFJ0WGZlVHp0WFNG
+TkhOX2FKeVBQcTZHdkhpWnlKa0wwQ2Fic1doSVR4bkJFekhWcFdIM3RqMUJzMm5Bb0VIUzJmSVZr
+TVFFUUJ6UkQydlNPbnQ3dWwxLW0tYWMtSjFzM3hxcXpDUVVsUi0yTXdoNm9LZ1ZTTVI2YVJzbXd3
+TlJiS1g3Ykl4SFJZbzgwWlBZYjlydU04Z2RNTEVyWWRFZVA2c2QyX3Q3RTdZMUdwYm1IYkJqako4
+Z0xwYnNTVFdUWTIxeTJHVm1fTEY+DQoNCk11bGFpIGRlbmdhbiBScDMwMDAwMDANCg0KRGFwYXRr
+YW4ga3JlZGl0IEdvb2dsZSBBZHMgc2VuaWxhaSBScDMwMDAwMDAgc2FhdCBBbmRhIG1lbWJlbGFu
+amFrYW4gIA0KUnAzMDAwMDAwLiogQ3VrdXAgdGVyYXBrYW4ga29kZSA5TlJUVi1KN05HNi1HTUpO
+Lg0KDQpUdWthcmthbiBrcmVkaXQgIA0KQW5kYTxodHRwczovL25vdGlmaWNhdGlvbnMuZ29vZ2xl
+LmNvbS9nL3AvQURhMEdDODNBS0toRnNpU2swX3R0QTc0NTE3d1VNWGpqbnVCdEpXb1dpbkMxUXc5
+TlpZdXFRRFY0QVJpMV83QjRvb0VFQzVXeUhFVGIwR1RXVUZYTHBDYmNDS29FY2tDSDRNNmthRkdY
+SV9LeU5WRDVwMFJETFRRS0VNM2RKTHhwckxqZXFPSWwyb00yc0FQSDFNcDlHUHRIU3FYTjRtUUhF
+TFVmU2JUcGxwdjF2bXc0eUNMMjJTNUs4ZmVDbEFIdDBxUUpSNzZNVFZ2ZEFxWFpMNERUQ0lNTmE5
+QllELVRxTUdZRGNJeTVSYk0tVjJ3OXFWVzhkclBFQXkwWUhIYTJFLUY2aVBXdHFZM3dLODlOQ3kx
+Zmh0UF9wUEdOMldveWZFVThtOENnQVVUTzhrPg0KDQpScDMwMDAwMDANCg0Ka3JlZGl0IGlrbGFu
+DQoNCndhcmNldXByb2plY3QNCg0KS2VtYmFuZ2thbiBiaXNuaXMgQW5kYSBkZW5nYW4gR29vZ2xl
+IEFkcw0KDQpUYW1waWwgZGkgc2VtdWEgdGVtcGF0IHlhbmcgdGVwYXQNClRhbXBpbGthbiBiaXNu
+aXMgQW5kYSBkaSB0ZW1wYXQgcGVsYW5nZ2FuIGJlcmJlbGFuamEsIG1lbGFrdWthbiAgDQpwZW5l
+bHVzdXJhbiwgZGFuIG1lbm9udG9uIHZpZGVvLg0KDQpDYXBhaSBzYXNhcmFuIHBlbWFzYXJhbiBB
+bmRhDQpUaW5na2F0a2FuIHBlbmp1YWxhbiwgZGFwYXRrYW4gbGViaWggYmFueWFrIHRyYWZmaWMs
+IGRhbiB0dW1idWhrYW4gYnJhbmQgIA0KYXdhcmVuZXNzLg0KDQpLb250cm9sIGFuZ2dhcmFuDQpE
+YXBhdGthbiByZWtvbWVuZGFzaSBhbmdnYXJhbiB5YW5nIGRpcGVyc29uYWxpc2FzaSwgZGFuIGpl
+ZGEgYXRhdSBzZXN1YWlrYW4gIA0KcGVtYmVsYW5qYWFuIEFuZGEga2FwYW4gc2FqYS4NCg0KSGFu
+eWEgYmF5YXIgc2VzdWFpIGhhc2lsDQpBbmRhIGhhbnlhIGFrYW4gZGlrZW5haSBiaWF5YSBzYWF0
+IG9yYW5nIGJlcmludGVyYWtzaSBkZW5nYW4gaWtsYW4gbWVsYWx1aSAgDQprbGlrIGF0YXUgcGFu
+Z2dpbGFuIHRlbGVwb24uDQoNCkFkYSBwZXJ0YW55YWFuPw0KDQpLdW5qdW5naSBQdXNhdCAgDQpC
+YW50dWFuPGh0dHBzOi8vbm90aWZpY2F0aW9ucy5nb29nbGUuY29tL2cvcC9BRGEwR0NfQ0M1cEJ1
+cElxdVdVa1lSMFJzSUxQYVhmcXEtS252VDdBWmkwcXFKdHhoYmR4S0NRenhTY0h2ZTdYY1NNV2pq
+MTF6VmhBbWNnYi1HeHN5eEthcE1vaHNvSDhOcWVVeVpZZWI1SVk5VldMTTFqUm5mSVdRMU82alBh
+SjlCS2lva0xxTVcxWVgxbVRGV2NDNTdRMl9wMFRBeEdCU1dpb2hWWmZxa0RZb1F0SF9BcVZoTnFE
+WmhUR2tpM0ZhWGx3d1F4NU5FQXlaOFNraGtTX1RaMzBOYmg5T09TZnZ5NWs+DQoNCkh1YnVuZ2kg
+IA0Ka2FtaTxodHRwczovL25vdGlmaWNhdGlvbnMuZ29vZ2xlLmNvbS9nL3AvQURhMEdDOTA3Y25C
+b2MyMFNsZTZOUnFOb0t0T09GTjVmVm55UGU1RGkzcWI2NVZOTXM0Umh4eGR4NF9fWUROMUJHel9W
+Y3RCUzVkb0p5VWg1YW1nVmQxOXY0djVTQ0VNREt2UGNxMTR1Skl1OEl6NDdaUzJuOUt4Sm9xajFl
+S09pNUdOMnc5aUM4Sm9Rd2tOc3U2ci16RjNMY0NTN2xzRE9Sa0NxYWM5b0VYWDNGbFVBWllDaXcy
+UUtneWpFU0JCbmlSYzRKSUx0WUpVOGRjMGp1MWtrLVJPVTVCcWFXd2VkUHU0YzdfMFNvWTA+DQoN
+CsKpIDIwMjMgR29vZ2xlIExMQyAxNjAwIEFtcGhpdGhlYXRyZSBQYXJrd2F5LCBNb3VudGFpbiBW
+aWV3LCBDQSA5NDA0Mw0KDQpFbWFpbCBpbmkgZGlraXJpbSBrZSBraXJhQHdhcmNldXByb2plY3Qu
+ZGV2IGthcmVuYSBBbmRhIHRlbGFoIG1lbnlhdGFrYW4gIA0KYmVyc2VkaWEgbWVuZXJpbWEgdGF3
+YXJhbiBkYXJpIEdvb2dsZS4gSmlrYSBBbmRhIHRpZGFrIGJlcnNlZGlhIG1lbmVyaW1hICANCmVt
+YWlsIHNlbWFjYW0gaW5pIGRpIG1hc2EgbWVuZGF0YW5nLCBzaWxha2FuIGJlcmhlbnRpIGJlcmxh
+bmdnYW5hbiBkaSBzaW5pOiAgDQo8aHR0cHM6Ly9ub3RpZmljYXRpb25zLmdvb2dsZS5jb20vZy9v
+cHRvdXQvQURhMEdDLUpGekd4ZXJoN2wtdVBPSVIwN29lR29YZTMxZXFNcUIzWWZob1IwdXdnRXIy
+Rk0xcVBiMHNGV0FMNUZsdXExdGNQQXRGMFU0S2d4aTh0bFg4UU5YdjJxUkhUVjU0UlZTYnBwSjhF
+d0ZYQnZBaHdBdlJOM2hNMHR0OHBwMWVXVmtoQ1N5SlpWN2ZlZzRCaGJVZ0p5a19GUlpSUWNrU1R0
+OVRIUk5PNjJGelhaZkNBSmpIR19QZ2Fvbjlsd1NRUF9fa2hHcXlrcEFOYlhZSDFjN2JBVlI4QUVx
+UDlKcXZmd3pCdE1tUEZCOVp6NUs2b1lWUkxTTWxLM2NLTjQyaWxFQnExLWxyaT9obD1pZD4gIA0K
+QW5kYSBqdWdhIGRhcGF0IG1lbmd1YmFoIHByZWZlcmVuc2kgZGkgbGFtYW4gcHJvZmlsIGFrdW4g
+ZGVuZ2FuIG1hc3VrIGtlICANCmFkbWluLmdvb2dsZS5jb20NCg0KKlRlcm1hIGRhbiBzeWFyYXQg
+dW50dWsgdGF3YXJhbiBpbmk6DQoxLiBUYXdhcmFuIGhhbnlhIHRlcnNlZGlhIHNlbWVudGFyYSBi
+ZWthbGFuIG1hc2loIGFkYS4NCjIuIFRhd2FyYW4gaGFueWEgdGVyc2VkaWEga2VwYWRhIHBlbmdp
+a2xhbiB5YW5nIGJhaGFydSBrZXBhZGEgR29vZ2xlIEFkcywgIA0KZGVuZ2FuIGFsYW1hdCBwZW5n
+ZWJpbGFuIGRpIEluZG9uZXNpYS4gU2F0dSBrb2QgcHJvbW9zaSB1bnR1ayBzZXRpYXAgIA0KcGVu
+Z2lrbGFuLg0KMy4gVW50dWsgbWVuZ2FrdGlma2FuIHRhd2FyYW4gaW5pOiBNYXN1a2thbiBrb2Qg
+cHJvbW9zaSBkYWxhbSBha2F1biBHb29nbGUgIA0KQWRzIHBlcnRhbWEgYW5kYS4gQW5kYSBtZXN0
+aSBtZW1hc3Vra2FuIGtvZCBkYWxhbSBtYXNhIDE0IGhhcmkgZGFyaSB0YXJpa2ggIA0KdGVyYSBp
+a2xhbiBwZXJ0YW1hIGFuZGEgZGlzaWFya2FuIGRhcmlwYWRhIGFrYXVuIEdvb2dsZSBBZHMgcGVy
+dGFtYSBhbmRhLg0KNC4gVGF3YXJhbiBwcm9tb3NpIGhhbnlhIGFrYW4gZGlndW5ha2FuIHBhZGEg
+YWthdW4gYW5kYSBqaWthIHByb2ZpbCAgDQpwZW1iYXlhcmFuIGRhbiBrYWVkYWggcGVtYmF5YXJh
+biB5YW5nIHNhaCBkaXRhbWJhaGthbiBzZW1hc2EgcHJvc2VzICANCnBlbmRhZnRhcmFuIGF3YWwu
+DQo1LiBVbnR1ayBtZW1wZXJvbGVoIGtyZWRpdCBHb29nbGUgQWRzOiBTZWxlcGFzIG1lbWFzdWtr
+YW4ga29kIHByb21vc2kgZGFsYW0gIA0KYWthdW4gR29vZ2xlIEFkcyBhbmRhLCBrZW1wZW4gcGVu
+Z2lrbGFuYW4gYW5kYSBtZXN0aSBtZW5nYWtydSBrb3MgIA0Kc2VrdXJhbmcta3VyYW5nbnlhIHNl
+YmFueWFrIFJwIDMsMDAwLDAwMCAoa2VjdWFsaSBzZWJhcmFuZyB0ZWtzIGF0YXUgeXVyYW4gIA0K
+eWFuZyBkaWtlbmFrYW4pIGRhbGFtIG1hc2EgNjAgaGFyaS4gUGVtYmF5YXJhbiB5YW5nIGRpYnVh
+dCBzZWJhbnlhayBScCAgDQozLDAwMCwwMDAgYWRhbGFoIHRpZGFrIG1lbmN1a3VwaS4gUGVuamVq
+YWthbiBrb3MgcGVuZ2lrbGFuYW4gdGVyaGFkYXAgUnAgIA0KMywwMDAsMDAwIGJlcm11bGEgc2Vs
+ZXBhcyBhbmRhIHRlbGFoIG1lbWFzdWtrYW4ga29kIHByb21vc2kuDQo2LiBTZXRlbGFoIGxhbmdr
+YWggNSBzZWxlc2FpLCBkZW5nYW4gc3lhcmF0IHNlbXVhIHNlbWFrYW4ga2VsYXlha2FuICANCmRp
+cGVudWhpLCBrcmVkaXQgbGF6aW1ueWEgYWthbiBkaWd1bmFrYW4gZGFsYW0gbWFzYSAzNSBoYXJp
+IHBhZGEgUmluZ2thc2FuICANClBlbmdlYmlsYW4gZGFsYW0gYWthdW4gR29vZ2xlIEFkcyBhbmRh
+Lg0KNy4gS3JlZGl0IHRlcnNlYnV0IHRhbWF0IHRlbXBvaCA2MCBoYXJpIHNlbGVwYXMgZGlndW5h
+a2FuIHBhZGEgYWthdW4gYW5kYS4NCjguIEtyZWRpdCBkaWd1bmFrYW4gdW50dWsga29zIHBlbmdp
+a2xhbmFuIHBhZGEgbWFzYSBoYWRhcGFuIHNhaGFqYS4gS3JlZGl0ICANCnRpZGFrIGJvbGVoIGRp
+Z3VuYWthbiBwYWRhIGtvcyB5YW5nIGRpYWtydSBzZWJlbHVtIGtvZCBwcm9tb3NpIGRpbWFzdWtr
+YW4gIA0KZGFsYW0gYWthdW4gR29vZ2xlIEFkcyBhbmRhLg0KOS4gQW5kYSB0aWRhayBha2FuIG1l
+bmVyaW1hIHBlbWJlcml0YWh1YW4gc2V0ZWxhaCBrcmVkaXQgZGFsYW0gYWthdW4gR29vZ2xlICAN
+CkFkcyBhbmRhIGhhYmlzIGRpZ3VuYWthbiBkYW4gc2ViYXJhbmcga29zIHBlbmdpa2xhbmFuIHRh
+bWJhaGFuIGFrYW4gZGljYWogIA0KcGFkYSBiZW50dWsgcGVtYmF5YXJhbiBhbmRhLiBKaWthIGFu
+ZGEgdGlkYWsgbWFodSBtZW5lcnVza2FuIHBlbmdpa2xhbmFuLCAgDQphbmRhIGJvbGVoIG1lbmpl
+ZGEgYXRhdSBtZW1hZGFta2FuIGtlbXBlbiBhbmRhIHBhZGEgYmlsYS1iaWxhIG1hc2EuDQoxMC4g
+QWthdW4gYW5kYSBtZXN0aWxhaCBiZXJqYXlhIGRpYmlsa2FuIG9sZWggR29vZ2xlIEFkcyBkYW4g
+a2VrYWwgZGFsYW0gIA0Ka2VkdWR1a2FuIHlhbmcgYmFpayBhZ2FyIHRlcnVzIGxheWFrIG1lbmdn
+dW5ha2FuIGtyZWRpdC4NCjExLiBHb29nbGUgQWRzIGJlcmhhayBtZW5nYWxpaCBrZWx1YXIgdGF3
+YXJhbiBwcm9tb3NpIGRhcmlwYWRhIGFrYXVuIGFuZGEgIA0KamlrYSBwZW1iYXlhcmFuIGdhZ2Fs
+LCB0YXdhcmFuIHRlbGFoIHRlcnNpbGFwIGRpZ3VuYWthbiwgYW5kYSBtZWxhbmdnYXIgIA0Kc3lh
+cmF0IGluaSBhdGF1IGFrYXVuIGFuZGEganVnYSBidWthbiBkYWxhbSBrZWR1ZHVrYW4geWFuZyBi
+YWlrLiBEYWxhbSBrZXMgIA0Kc2VkZW1pa2lhbiwgamlrYSBrcmVkaXQgcHJvbW9zaSB0ZWxhaCBk
+aWJlcmlrYW4sIEdvb2dsZSBBZHMgYmVyaGFrIHVudHVrICANCm1lbWJhdGFsa2FuIGtyZWRpdCB0
+ZXJzZWJ1dC4NCjEyLiBUZXJtYSBkYW4gc3lhcmF0IGxlbmdrYXAgYm9sZWggZGlkYXBhdGkgZGkg
+c2luaTogIA0KaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9pbnRsL2lkX2lkL2Fkcy9jb3Vwb25zL3Rl
+cm1zLyAgDQo8aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9pbnRsL2lkX2lkL2Fkcy9jb3Vwb25zL3Rl
+cm1zLz4NCg==
+--000000000000687fdd0600ea100a
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html public "- / /w3c / /dtd xhtml 1.0 transitional / /en" "http:=
+ / /www.w3.org /tr /xhtml1 /dtd /xhtml1-transitional.dtd">
+<html xmlns=3Dhttp://www.w3.org/1999/xhtml xmlns:v=3Durn:schemas-microsoft-=
+com:vml style=3D"-webkit-text-size-adjust: 100%;" lang=3Did>
+<title>Jangkau pelanggan baru</title>
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3DUTF-8">
+<meta name=3Dcolor-scheme content=3D"light dark">
+<meta name=3Dsupported-color-schemes content=3D"light dark">
+<style>
+@font-face {
+font-family: Noto Naskh Arabic;
+font-style: normal;
+font-weight: 400;
+src: url(https://fonts.gstatic.com/ea/notonaskharabic/v4/NotoNaskhArabic-Re=
+gular.eot);
+src: url(https://fonts.gstatic.com/ea/notonaskharabic/v4/NotoNaskhArabic-Re=
+gular.eot?#iefix) format('embedded-opentype'),
+url(https://fonts.gstatic.com/ea/notonaskharabic/v4/NotoNaskhArabic-Regular=
+.woff2) format('woff2'),
+url(https://fonts.gstatic.com/ea/notonaskharabic/v4/NotoNaskhArabic-Regular=
+.woff) format('woff'),
+url(https://fonts.gstatic.com/ea/notonaskharabic/v4/NotoNaskhArabic-Regular=
+.ttf) format('truetype');
+}
+</style>
+<style>
+:root {
+color-scheme: light dark;
+supported-color-schemes: light dark;
+}
+@media (prefers-color-scheme: dark ) {
+/* Custom Dark Mode Font Colors */
+td, h1, h2, h3, h4, h5, h6, h7, p, div {
+color: #cbd0d4 !important;}
+div, td { background-color: transparent !important; }
+table{ background-color: transparent !important;}
+body { background-color: #272623 !important; }
+.container_table{background-color: #121212 !important;}
+.dark_light_border{border:0px !important; }
+.dark_light{background-color: #121212 !important; }
+.table_back{background-color: transparent !important;}
+.cta_table_class{background-color: #1967D2 !important;}
+.footer_anchor_text, .link_class_2{color: #1A73E8 !important;}
+.link_class_3{color:#1C6EF2!important;}
+.text-white {color: #ffffff !important;}
+.dark_mob,text-gray,.text-light {color: #cbd0d4 !important;}
+.link_class {color: #1967D2 !important;}
+.green_text {color:#298541!important;}
+.ads_background {background-color:#233346!important;}
+.footer_table_class {background-color:#1f2021!important;}
+.blue_dsa {background-color:#202732!important;}
+.dark_pre {border-color:#202732!important;}
+}
+</style>
+<style>
+.forApple_footer a {
+color: #026621 !important;
+text-decoration: none !important;
+}
+.forApple_footer {
+cursor: text;
+color: #026621 !important;
+text-decoration: none !important;
+}
+@media screen and (max-width:900px){
+.desktop_only {
+display:none !important;
+font-size:0px !important;
+line-height:0 !important;
+height:0px !important;
+max-height:0px !important;
+overflow:hidden !important;
+}
+.mobile_only {
+height: auto !important;
+overflow: visible !important;
+display: block !important;
+max-height: inherit !important;
+width: 100% !important;
+font-size:inherit !important;
+line-height:inherit !important;
+}
+.margin-auto{ margin-left:auto !important; margin-right:auto !important;}
+.width-100{width:100% !important;}
+.inline{ display:inline !important;}
+.inline_block{display:inline-block !important;}
+.block{ display:block !important; }
+.d-table-row{display: table-row !important;}
+.fullWidth{width:100% !important; max-width:600px !important;}
+.mobile-spacing{padding-left:28px !important; padding-right:28px !important=
+; }
+.footer_text{padding-left:45px !important; padding-right:45px !important;}
+.module_pd_ryt{padding-right:0px !important; padding-bottom:20px !important=
+;}
+.module_pd_lft{padding-left:0px !important; padding-right:35px !important;}
+.d-table-cell{ display: table-cell !important; }
+.coupn_pd{padding-bottom:5px !important;}
+.width375{width:335px !important;}
+.d-table-row{display:table-row !important;}
+.d-table-cell{display:table-cell !important;}
+.ad_td{padding-top:11px !important;}
+.phone_img{width:230px !important;}
+.preheader_sz{font-size:14px !important; line-height: normal !important; pa=
+dding-right:10px !important; padding-left: 12px !important;}
+.bannerSec {padding-bottom:78px !important;}
+.d-table{display: table !important;}
+.align_txt{
+text-align:center !important;
+}
+.right_neeraj {
+display: table !important;
+width: 100% !important;
+padding-left: 0px !important;
+border-left: 0px !important;
+}
+.coupon_font_new{
+text-align:left;
+padding-left : 20px !important;
+padding-right : 20px !important;
+border-top: 1px dashed #F1F3F4 !important;
+border-left: 0px !important;
+}
+.width3751{width:335px !important;}
+.keywrd_pd{padding-left:22px !important;}
+.coup {
+padding: 0px 20px 0px 20px !important;
+}
+.mob{
+font-weight:bold !important;
+}
+.pad30{padding-left:30px!important;padding-right:30px!important;}
+.footer_common {padding-left:28px!important; padding-right:28px!important;}
+.para_1_promo {padding-bottom:18px!important;}
+.para2-class {padding-bottom:22px!important;}
+.bullets_para{ padding-left:32px!important;padding-right:32px!important;}
+.help_center_img{padding-left:28px!important;}
+.help_center{width:100%!important;}
+.main_td_help_img{padding-bottom:15px!important;padding-top:5px!important;}
+.hero_head {font-size:24px!important; line-height:36px!important;}
+.coupon_box_td{padding-top:37px!important;}
+.cta_arrow_main_td_class{padding-bottom:37px!important;}
+.img_3p_class{width:100px!important;}
+.bullet_head {padding-top:30px!important;}
+.left_right_cta_spacing {padding-bottom:40px!important;}
+}
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+}
+/*For Pixal 3*/
+@media screen and (min-device-width: 786px) and (orientation: landscape) {
+}
+@media screen and (min-width: 320px) and (max-width: 420px) {
+.p-t-2{padding-top:2px!important;}
+}
+.mobile_only { display:none; font-size:0px; line-height:0; height:0px; max-=
+height:0px; overflow:hidden; }
+@media screen and (min-width: 812px) and (max-width: 812px),
+screen and (min-width: 736px) and (max-width: 736px),
+screen and (min-width: 667px) and (max-width: 667px),
+screen and (min-width: 568px) and (max-width: 568px),
+screen and (min-width: 414px) and (max-width: 414px),
+screen and (min-width: 375px) and (max-width: 375px),
+screen and (min-width: 320px) and (max-width: 320px) {
+.body {
+min-width: 100vw !important;
+}
+}
+</style>
+<style>
+@media screen and (max-width: 767px){
+.ad_text{font-size:7px !important; line-height:8px !important;vertical-alig=
+n:middle !important;}
+.ad_img{vertical-align:middle !important;}
+.ad_url{font-size:8px !important; line-height:10px !important;vertical-alig=
+n:top !important; margin-top:2px !important;}
+}
+@media screen
+and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: portrait) {
+.ad_url{font-size:8px !important; line-height:10px !important;vertical-alig=
+n:top !important; margin-top:2px !important;}
+.paddingZero{
+padding: 0px !important;
+}
+}
+@media only screen and (device-width: 390px) and (orientation:landscape){
+.help_center_img {padding-top:10px!important;}
+.forum_img{padding-top:10px!important;}
+.iphone_fix{padding-top:5px!important;}
+}
+@media only screen and (device-width: 375px) and (orientation:landscape){
+.help_center_img {padding-top:10px!important;}
+.forum_img{padding-top:10px!important;}
+.iphone_fix{padding-top:5px!important;}
+}
+</style>
+<!--[if mso]>
+<style>span, td, table, div,a ,p{font-family: Arial, serif !important; }</s=
+tyle>
+<![endif]-->
+<!--[if gte mso 9]>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+</head>
+<body style=3Dmargin:0;padding:0;width:100%; bgcolor=3D"" class=3Dbody>
+<table role=3Dpresentation align=3Dcenter cellpadding=3D0 cellspacing=3D0 s=
+tyle=3D"width:602px; margin:0 auto; padding:0;" width=3D602 class=3D"contai=
+ner_table fullWidth">
+<tr>
+<td style=3D"padding-left:24px;padding-right:20px;padding-top:10px;padding-=
+bottom:10px;font-size: 16px;font-family:Roboto, Open Sans, arial,sans-serif=
+;line-height: 24px; color:#5F6368;direction:ltr;text-align:left;display:non=
+e;" class=3Dpreheader_sz>Dapatkan <span style=3D"white-space:nowrap; word-b=
+reak: break-word; " class=3D"span " dir=3Dltr>Rp3000000</span> untuk memula=
+i.
+</td>
+</tr>
+<tr>
+<td class=3Ddark_light_border style=3D"border:1px solid #f1f3f4;" bgcolor=
+=3D#ffffff>
+<table dir=3Dltr role=3Dpresentation align=3Dcenter cellpadding=3D0 cellspa=
+cing=3D0 style=3D"background: #ffffff; width:100%;">
+<tr>
+<td class=3D"desktop_only pad_logo" dir=3Dltr bgcolor=3D#ffffff style=3D"di=
+rection:ltr; background-color:#ffffff; padding-left:0px;padding-right:0px; =
+padding-bottom: 29px; padding-top: 28px; width:100%; ">
+<table role=3Dpresentation dir=3Dltr style=3D"border-spacing:0; border-coll=
+apse:collapse; width:100%;">
+<tr>
+<td dir=3Dltr align=3Dleft style=3D"padding-left:40px; padding-top:0;paddin=
+g-bottom:0; padding-right:20px; width:50%; text-align:left;line-height:0px;=
+" class=3Dpad30><img class=3Dfirst_logo alt=3D"" height=3D"" src=3Dhttps://=
+www.gstatic.com/gumdrop/files/google-apps-google-workspace-transparent-w644=
+px-h84px-2x.png width=3D161 style=3Dheight:auto;></td>
+<td dir=3Dltr align=3Dright style=3D"padding-left:20px; padding-top:0; padd=
+ing-bottom:0; padding-right:40px; width:50%; text-align:right;line-height:0=
+px;" class=3Dpad30><img class=3Dsecond_logo alt=3D"" width=3D137 height=3D"=
+" src=3Dhttps://www.gstatic.com/gumdrop/files/google-apps-google-ads-logo-t=
+ransparent-w548px-h100px-2x.png style=3Dheight:auto;></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--[if !mso]><!-- --> <tr>
+<td class=3D"mobile_only pad_logo" dir=3Dltr bgcolor=3D#ffffff style=3D"dis=
+play:none; direction:ltr; background-color:#ffffff; padding-left:0px;paddin=
+g-right:0px; padding-bottom: 29px; padding-top: 28px; width:100%; ">
+<table role=3Dpresentation dir=3Dltr style=3D"border-spacing:0; border-coll=
+apse:collapse; width:100%;">
+<tr>
+<td align=3Dleft style=3D"padding-left:40px; padding-top:0;padding-bottom:0=
+; padding-right:20px; width:50%; text-align:left;line-height:0px;" class=3D=
+pad30><img class=3Dfirst_logo alt=3D"" height=3D"" src=3Dhttps://www.gstati=
+c.com/gumdrop/files/google-apps-google-workspace-transparent-w644px-h84px-2=
+x.png width=3D161 style=3Dheight:auto;></td>
+<td align=3Dright style=3D"padding-left:20px; padding-top:0; padding-bottom=
+:0; padding-right:40px; width:50%; text-align:right;line-height:0px;" class=
+=3Dpad30><img class=3Dsecond_logo alt=3D"" width=3D26 src=3Dhttps://www.gst=
+atic.com/gumdrop/files/self-identified-merchant-google-ads-transparent-w191=
+px-h174px-2x.png style=3Dheight:auto;></td>
+</tr>
+</table>
+</td>
+</tr><![endif]-->
+</table>
+<table class=3Ddark_light role=3Dpresentation align=3Dcenter cellpadding=3D=
+0 cellspacing=3D0 style=3D"" width=3D100%><tr><td class=3Ddark_light style=
+=3D"">
+<table dir=3Dltr cellspacing=3D0 cellpadding=3D0 border=3D0 width=3D100% ro=
+le=3Dpresentation style=3D"width:100%; border:0; border-spacing:0; border-c=
+ollapse:collapse;" class=3Dbg-white bgcolor=3D#ffffff>
+<tr>
+<td class=3Dmain_td_class width=3D800 valign=3Dtop style=3Dline-height:0px;=
+>
+<table dir=3Dltr role=3Dpresentation width=3D100% cellpadding=3D0 cellspaci=
+ng=3D0 border=3D0 style=3D"border-spacing:0; border-collapse:collapse; bord=
+er:0; width:100%;" class=3D"margin-auto width-100 text-center table-transpa=
+rent">
+<tr>
+<td align=3Dleft dir=3Dltr style=3D"font-family:Google sans, Roboto, Open S=
+ans, arial,sans-serif; font-size:32px; line-height:40px; color:#3C4043; mso=
+-line-height-rule:exactly; padding-bottom:12px; padding-top:29px; padding-l=
+eft:49px; padding-right:44px; word-break:normal; direction:ltr;" class=3D"m=
+obile-spacing text-light mob_pad_headline hero_head">Capai sasaran pemasara=
+n Anda dengan <span style=3D"white-space:nowrap; word-break: break-word; wo=
+rd-break:normal; word-break:break-word; color:#298541; white-space:normal;"=
+ class=3D"span green_text" dir=3Dltr>kehadiran yang lebih besar di internet=
+</span></td>
+</tr>
+<tr>
+<td align=3Dleft dir=3Dltr style=3D"font-family:Google sans, Roboto, Open S=
+ans, arial,sans-serif; mso-line-height-rule:exactly; font-size:16px; line-h=
+eight:24px; color:#3C4043; padding-left:49px; padding-right:49px; word-brea=
+k:normal; direction:ltr; " class=3D"mobile-spacing text-light hero_subhead"=
+>Setelah menggunakan <span style=3D"white-space:nowrap; word-break: break-w=
+ord; " class=3D"span " dir=3D"">Google Workspace</span>, dapatkan hasil mak=
+simal dari akun Google Cloud Anda dengan <span style=3D"white-space:nowrap;=
+ word-break: break-word; " class=3D"span " dir=3D"">Google Ads</span>. Deng=
+an bantuan alat pembuatan dan penempatan iklan cerdas kami, produk Anda dap=
+at ditampilkan di Penelusuran, YouTube, dan <span style=3D"white-space:nowr=
+ap; word-break: break-word; " class=3D"span " dir=3D"">Jaringan Display Goo=
+gle</span> =E2=80=93 tepat saat pelanggan menelusurinya.</td>
+</tr>
+<tr>
+<td align=3Dleft dir=3Dltr style=3D"padding-top:23px; padding-bottom:38px; =
+padding-left:49px; padding-right:49px; " dir=3Dltr class=3D"mobile-spacing =
+cta_spacing hero_cta_spacing">
+<table role=3Dpresentation align=3Dcenter cellpadding=3D0 cellspacing=3D0 s=
+tyle=3D"background: #ffffff;" width=3D100% dir=3Dltr>
+<tr>
+<td style=3Dwidth:100%;line-height:0px; width=3D100% dir=3Dltr align=3Dleft=
+>
+<table dir=3Dltr role=3Dpresentation align=3Dleft cellpadding=3D0 cellspaci=
+ng=3D0 border=3D0 class=3Dcta_table_class style=3D"border-radius:3px; backg=
+round-color: #1967D2; direction:ltr; ">
+<tr>
+<td class=3Dcta_td_class style=3D"text-align: center; font-family:Google sa=
+ns, Roboto, Open Sans, arial,sans-serif;font-size:14px; line-height:24px; m=
+so-line-height-rule:exactly; mso-padding-alt: 8px 17px 16px 17px; direction=
+:ltr; word-break:normal; ">
+<a class=3D"cta-a-pad cta_anchor_class" style=3D"display: block; font-weigh=
+t: bold; color: #ffffff; text-decoration: none; padding: 8px 17px; " href=
+=3Dhttps://notifications.google.com/g/p/ADa0GC9PoCUXXZ2iAAF5lH26rPo2KAeUaqZ=
+IpJ7Na77fnqG6-8eDNOi13gncR74hxhzm_TrAkkSxi3v01m8ruFV8sz206PiSeFxScq7F5iYNnO=
+BDeN__7BEhmFl7_LfHfIBMPZNANnkAd-mRpmPS5KY3VaL5CTE_fk0T34PMKMoZelqMkbi350DTN=
+Lk-_M9jJ6Krr1NGcKLWHB2tAaHXIYM8SpNYXsOfRCvAnbe4TbEM_ILHZhAnw6LhlP4ANx8ieo_A=
+WjrKcBfQmo0c0UqRjNpFR9NSJcDN target=3D_blank>Coba Google Ads</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3Dleft class=3D"text-light mobile-spacing hero_para " dir=3Dltr s=
+tyle=3D"mso-line-height-rule:exactly; line-height:0px;padding-left:49px; pa=
+dding-right:49px; padding-top:0px;" width=3D100%></td>
+</tr>
+<tr>
+<td align=3Dleft dir=3Dltr style=3D"mso-line-height-rule:exactly; font-fami=
+ly:Google sans, Roboto, Open Sans, arial,sans-serif; font-size:14px; line-h=
+eight:21px; color:#3C4043; padding-left:49px; padding-right:49px; word-brea=
+k:normal; padding-bottom:18px; direction:ltr; color:#667385; text-align:cen=
+ter; font-weight:bold; text-transform:uppercase; padding-top:21px; padding-=
+bottom:7px;" class=3D"mobile-spacing text-light hero_para">KISAH SUKSES</td=
+>
+</tr>
+<tr>
+<td align=3Dleft dir=3Dltr style=3D"mso-line-height-rule:exactly; font-fami=
+ly:Google sans, Roboto, Open Sans, arial,sans-serif; font-size:14px; line-h=
+eight:21px; padding-left:49px; padding-right:49px; color:#3C4043; word-brea=
+k:normal; padding-bottom:41px; direction:ltr; text-align:center;font-size:2=
+4px; line-height:36px;padding-bottom:15px;" class=3D"mobile-spacing text-li=
+ght hero_para">W.B. Mason memperoleh peningkatan pengunjung dan <br class=
+=3Ddesktop_only>pesanan dengan <span style=3D"white-space:nowrap; word-brea=
+k: break-word; " class=3D"span " dir=3D"">Google Ads</span></td>
+</tr>
+<tr>
+<td dir=3Dltr align=3Dcenter class=3D"img_bot_class desktop_only" style=3D"=
+width:504px; text-align:center; font-size:0px; line-height:0px; "><img src=
+=3Dhttps://www.gstatic.com/gumdrop/files/google-apps-gws-rem1-hero-transpar=
+ent-w1008px-h625px-2x.png alt=3D"" width=3D504 height=3D"">
+</td>
+</tr>
+<!--[if !mso]><!-- --><tr>
+<td dir=3Dltr align=3Dcenter class=3D"img_bot_class mobile_only" style=3D"t=
+ext-align:center; display:none; font-size:0px; line-height:0px; "><img src=
+=3Dhttps://www.gstatic.com/gumdrop/files/google-apps-gws-rem1-hero-transpar=
+ent-w1008px-h625px-2x.png alt=3D"" width=3D85% style=3D"width:85%; max-widt=
+h:504px;">
+</td>
+</tr><![endif]-->
+</table>
+</td></tr>
+</table>
+<table align=3Dleft dir=3Dltr cellspacing=3D0 cellpadding=3D0 border=3D0 wi=
+dth=3D100% role=3Dpresentation style=3D"width:100%; border:0; border-spacin=
+g:0; border-collapse:collapse;" class=3Dbg-white bgcolor=3D#ffffff>
+<tr>
+<td align=3Dleft dir=3Dltr class=3Ddesktop_only width=3D600 valign=3Dtop st=
+yle=3D"line-height:0px; padding-top:47px;padding-bottom:33px;">
+<table cellspacing=3D0 cellpadding=3D0 border=3D0 width=3D600 role=3Dpresen=
+tation style=3D"width:600px; border:0; border-spacing:0; border-collapse:co=
+llapse; direction:ltr;" align=3Dleft dir=3Dltr>
+<tr>
+<td dir=3Dltr width=3D213 valign=3Dtop align=3Dleft style=3D"font-size:0px;=
+ line-height:0px; text-align:left; ">
+<table align=3Dleft dir=3Dltr cellspacing=3D0 cellpadding=3D0 border=3D0 wi=
+dth=3D100% role=3Dpresentation>
+<tr>
+<td align=3Dleft dir=3Dltr style=3D"padding-left:48px; line-height:0px; tex=
+t-align:left; padding-bottom:5px; padding-top:39px;">
+<img src=3Dhttps://www.gstatic.com/gumdrop/files/google-apps-stat2-transpar=
+ent-w425px-h135px-2x.png alt=3D"" width=3D213 height=3D"" style=3D"">
+</td>
+</tr>
+<tr>
+<td align=3Dleft dir=3Dltr style=3D"mso-line-height-rule:exactly; font-fami=
+ly:Roboto, Open Sans, arial,sans-serif; font-size:16px; line-height:24px; c=
+olor:#3C4043; padding-bottom:22px; word-break:normal; direction:ltr; text-a=
+lign:center; padding-left:28px; " class=3D"text-gray mobile-spacing mob_sid=
+e_pad ">peningkatan pesanan</td>
+</tr>
+</table>
+</td>
+<td dir=3Dltr align=3Dright width=3D253 valign=3Dtop style=3D"width:253px; =
+padding-right:41px;line-height:0px;"><table dir=3Dltr role=3Dpresentation a=
+lign=3Dright width=3D253 cellpadding=3D0 cellspacing=3D0 border=3D0 style=
+=3D"border-spacing:0; border-collapse:collapse; border:0; width:253px;" cla=
+ss=3D"margin-auto width-100 text-center table-transparent">
+<tbody>
+<!--[if !mso]><!-- --> <tr>
+<td dir=3Dltr class=3D"mobile_only img_mob_2" style=3D"display:none; width:=
+213px; text-align:center; font-size:0px; line-height:0px;mso-hide:all; padd=
+ing-bottom:5px; padding-top:37px;"><img class=3Dimg_mob_inner_class src=3Dh=
+ttps://www.gstatic.com/gumdrop/files/google-apps-stat2-transparent-w425px-h=
+135px-2x.png alt=3D"" width=3D213 height=3D"" style=3D""></td>
+</tr>
+<tr>
+<td dir=3Dltr style=3D"display:none; font-family:Roboto, Open Sans, arial,s=
+ans-serif; font-size:16px; line-height:24px; color:#3C4043; padding-bottom:=
+29px; word-break:normal; direction:ltr; text-align:center; " class=3D"mobil=
+e_only text-gray ">peningkatan pesanan</td>
+</tr>
+<![endif]--> <tr>
+<td dir=3Dltr style=3D"mso-line-height-rule:exactly; font-family:Roboto, Op=
+en Sans, arial,sans-serif; font-size:14px; line-height:24px; color:#3C4043;=
+ padding-bottom:22px; word-break:normal; direction:ltr; padding-bottom:8px;=
+ font-family:Google sans, Roboto, Open Sans, arial,sans-serif;" class=3D"te=
+xt-gray mobile-spacing mob_side_pad subhead_class">Saat perusahaan ATK, W.B=
+. Mason, menggunakan <span style=3D"white-space:nowrap; word-break: break-w=
+ord; " class=3D"span " dir=3D"">Google Ads</span>, mereka memperoleh pening=
+katan pengunjung kali pertama dari Google sebesar 120% dan peningkatan pesa=
+nan sebesar 50%.</td>
+</tr>
+<tr>
+<td style=3D"padding-top:15px; padding-bottom:16px; " dir=3Dltr class=3D"mo=
+bile-spacing mob_side_pad cta_spacing left_right_cta_spacing">
+<table role=3Dpresentation align=3Dcenter cellpadding=3D0 cellspacing=3D0 s=
+tyle=3D"background: #ffffff;" width=3D100% dir=3Dltr>
+<tr>
+<td style=3Dwidth:100%;line-height:0px; width=3D100% dir=3Dltr align=3Dleft=
+>
+<table dir=3Dltr role=3Dpresentation align=3Dleft cellpadding=3D0 cellspaci=
+ng=3D0 border=3D0 class=3Dcta_table_class style=3D"border-radius:3px; backg=
+round-color: #1967D2; direction:ltr; ">
+<tr>
+<td class=3Dcta_td_class style=3D"text-align: center; font-family:Google sa=
+ns, Roboto, Open Sans, arial,sans-serif;font-size:14px; line-height:24px; m=
+so-line-height-rule:exactly; mso-padding-alt: 8px 17px 16px 17px; direction=
+:ltr; word-break:normal; ">
+<a class=3D"cta-a-pad cta_anchor_class" style=3D"display: block; font-weigh=
+t: bold; color: #ffffff; text-decoration: none; padding: 8px 17px; " href=
+=3Dhttps://notifications.google.com/g/p/ADa0GC8IoGBDV2uGzO0JWSr3nQiAhVMWw7X=
+riTG56fjVgI6EFwmiiMLMZSM33DuXKCyZcbfpcML0RMWAxmszUPLmtdoXHuOML6Gzo0rjaqi923=
+qTXex77nd57hR_n1vQc5AVHiGyjDmp76Tj7zZdqJZh4F4jxOSpUIuobUxdN1cMttlgBBvyNrXzo=
+Y9x5_r_mifqhN77ZqHUIdC-qCY0fmxFqtB72jkz0U-aD9eOAZyGNEE3jwCy9QOJVIo target=
+=3D_blank>Tonton video</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<!--[if !mso]><!-- --> <tr>
+<td dir=3Dltr class=3Dmobile_only style=3D"display:none; line-height:0px;">=
+<table dir=3Dltr role=3Dpresentation align=3Dright width=3D253 cellpadding=
+=3D0 cellspacing=3D0 border=3D0 style=3D"border-spacing:0; border-collapse:=
+collapse; border:0; width:253px;" class=3D"margin-auto width-100 text-cente=
+r table-transparent">
+<tbody>
+<!--[if !mso]><!-- --> <tr>
+<td dir=3Dltr class=3D"mobile_only img_mob_2" style=3D"display:none; width:=
+213px; text-align:center; font-size:0px; line-height:0px;mso-hide:all; padd=
+ing-bottom:5px; padding-top:37px;"><img class=3Dimg_mob_inner_class src=3Dh=
+ttps://www.gstatic.com/gumdrop/files/google-apps-stat2-transparent-w425px-h=
+135px-2x.png alt=3D"" width=3D213 height=3D"" style=3D""></td>
+</tr>
+<tr>
+<td dir=3Dltr style=3D"display:none; font-family:Roboto, Open Sans, arial,s=
+ans-serif; font-size:16px; line-height:24px; color:#3C4043; padding-bottom:=
+29px; word-break:normal; direction:ltr; text-align:center; " class=3D"mobil=
+e_only text-gray ">peningkatan pesanan</td>
+</tr>
+<![endif]--> <tr>
+<td dir=3Dltr style=3D"mso-line-height-rule:exactly; font-family:Roboto, Op=
+en Sans, arial,sans-serif; font-size:14px; line-height:24px; color:#3C4043;=
+ padding-bottom:22px; word-break:normal; direction:ltr; padding-bottom:8px;=
+ font-family:Google sans, Roboto, Open Sans, arial,sans-serif;" class=3D"te=
+xt-gray mobile-spacing mob_side_pad subhead_class">Saat perusahaan ATK, W.B=
+. Mason, menggunakan <span style=3D"white-space:nowrap; word-break: break-w=
+ord; " class=3D"span " dir=3D"">Google Ads</span>, mereka memperoleh pening=
+katan pengunjung kali pertama dari Google sebesar 120% dan peningkatan pesa=
+nan sebesar 50%.</td>
+</tr>
+<tr>
+<td style=3D"padding-top:15px; padding-bottom:16px; " dir=3Dltr class=3D"mo=
+bile-spacing mob_side_pad cta_spacing left_right_cta_spacing">
+<table role=3Dpresentation align=3Dcenter cellpadding=3D0 cellspacing=3D0 s=
+tyle=3D"background: #ffffff;" width=3D100% dir=3Dltr>
+<tr>
+<td style=3Dwidth:100%;line-height:0px; width=3D100% dir=3Dltr align=3Dleft=
+>
+<table dir=3Dltr role=3Dpresentation align=3Dleft cellpadding=3D0 cellspaci=
+ng=3D0 border=3D0 class=3Dcta_table_class style=3D"border-radius:3px; backg=
+round-color: #1967D2; direction:ltr; ">
+<tr>
+<td class=3Dcta_td_class style=3D"text-align: center; font-family:Google sa=
+ns, Roboto, Open Sans, arial,sans-serif;font-size:14px; line-height:24px; m=
+so-line-height-rule:exactly; mso-padding-alt: 8px 17px 16px 17px; direction=
+:ltr; word-break:normal; ">
+<a class=3D"cta-a-pad cta_anchor_class" style=3D"display: block; font-weigh=
+t: bold; color: #ffffff; text-decoration: none; padding: 8px 17px; " href=
+=3Dhttps://notifications.google.com/g/p/ADa0GC8IoGBDV2uGzO0JWSr3nQiAhVMWw7X=
+riTG56fjVgI6EFwmiiMLMZSM33DuXKCyZcbfpcML0RMWAxmszUPLmtdoXHuOML6Gzo0rjaqi923=
+qTXex77nd57hR_n1vQc5AVHiGyjDmp76Tj7zZdqJZh4F4jxOSpUIuobUxdN1cMttlgBBvyNrXzo=
+Y9x5_r_mifqhN77ZqHUIdC-qCY0fmxFqtB72jkz0U-aD9eOAZyGNEE3jwCy9QOJVIo target=
+=3D_blank>Tonton video</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<![endif]--></table>
+<table bgcolor=3D#D2E3FC cellspacing=3D0 cellpadding=3D0 dir=3Dltr border=
+=3D0 width=3D100% role=3Dpresentation style=3D"border:0; border-spacing:0; =
+border-collapse:collapse; background-color:#D2E3FC;" class=3Dads_background=
+>
+<tr>
+<td dir=3Dltr class=3D"desktop_only dt-darkblue-bg" style=3D"line-height:0p=
+x; direction:ltr;">
+<table dir=3Dltr role=3Dpresentation width=3D100% align=3Dcenter cellpaddin=
+g=3D0 cellspacing=3D0 border=3D0 style=3D"border-spacing:0; border-collapse=
+:collapse; border:0;" class=3D"margin-auto width-100 text-center table-tran=
+sparent">
+<tr>
+<td dir=3Dltr valign=3Dtop style=3D"padding-left:49px; padding-top:31px;">
+<table role=3Dpresentation width=3D257 cellpadding=3D0 cellspacing=3D0 bord=
+er=3D0 style=3D"border-spacing:0; border-collapse:collapse; border:0;" clas=
+s=3D"margin-auto width-100 text-center" dir=3Dltr>
+<tr>
+<td dir=3Dltr style=3D"mso-line-height-rule:exactly; font-family:Google san=
+s, Roboto, Open Sans, arial,sans-serif; font-size:22px; line-height:33px; c=
+olor:#3C4043; padding-top:18px; padding-bottom:9px; word-break:normal; dire=
+ction:ltr; padding-right:5px;text-align:left;" class=3D"text-light p-t-20">=
+Mulai dengan <span style=3D"white-space:nowrap; word-break: break-word; " c=
+lass=3D"span " dir=3Dltr>Rp3000000</span></td>
+</tr>
+<tr>
+<td dir=3Dltr style=3D"mso-line-height-rule:exactly; font-family:Roboto, Op=
+en Sans, arial,sans-serif; font-size:14px; line-height:24px; color:#3C4043;=
+ word-break:normal; padding-bottom:10px; padding-right:10px; direction:ltr;=
+text-align:left;" class=3Dtext-light>Dapatkan kredit <span style=3D"white-s=
+pace:nowrap; word-break: break-word; " class=3D"span " dir=3D"">Google Ads<=
+/span> senilai <span style=3D"white-space:nowrap; word-break: break-word; "=
+ class=3D"span " dir=3Dltr>Rp3000000</span> saat Anda membelanjakan <span s=
+tyle=3D"white-space:nowrap; word-break: break-word; " class=3D"span " dir=
+=3Dltr>Rp3000000</span>.* Cukup terapkan kode <span style=3D"white-space:no=
+wrap; word-break: break-word; color:#3C4043; white-space:nowrap; font-weigh=
+t:bold; direction:ltr; " class=3D"span text-light" dir=3D"">9NRTV=E2=80=91J=
+7NG6=E2=80=91GMJN</span>.</td>
+</tr>
+<tr>
+<td class=3Dcta_arrow_main_td_class style=3Dpadding:0;margin:0;vertical-ali=
+gn:top;line-height:0;padding-top:2px;padding-bottom:25px;>
+<table role=3Dpresentation align=3D"" cellpadding=3D0 cellspacing=3D0 borde=
+r=3D0 class=3D"cta_arrow_text_class text-gray" dir=3Dltr>
+<tbody><tr>
+<td class=3Dcta_arrow_td_class style=3D"font-size:14px;font-family:Google s=
+ans, Roboto, Open Sans, arial,sans-serif;line-height:21px;text-align:left;d=
+irection:ltr;word-break:normal; color:#0D5BD9; "><a href=3Dhttps://notifica=
+tions.google.com/g/p/ADa0GC8a2PWYi92NXUC3CfMHVfg8JSz-XForjSo8TD4H316KOl82fB=
+5r_UMnwW8r8JN-BuPbOQKah_aXS4GyJsohehneNVrXHpIuS-8thft8yh42Ibe1V691UWnBS8zKL=
+0r_sWoo42v51eNNl24WeefP7DvHdHFzzxr0Y-qnc3adcquMxF-cu2LGOylX8v1FR0Sj3OPI_awn=
+bhPcdEh9CaeY9cgjtQBr5PNrFCTfQe4GOZhbB1-vGVrkXzeO1Z8mIQTOWAVp1wUsn8Hmtnj5RmA=
+Q-wa2MtofeOZxydi0GRepekZACg style=3D"color:#0D5BD9;text-decoration:none; fo=
+nt-weight:bold; " target=3D_blank class=3Dlink_class_3>Tukarkan kredit Anda=
+</a></td>
+<td style=3D"padding:0;margin:0;text-align:left;padding-left:10px;line-heig=
+ht:0px;mso-line-height-alt: 21px;" dir=3Dltr width=3D18 class=3Dcta_arrow_i=
+mg_td_class>
+<a href=3Dhttps://notifications.google.com/g/p/ADa0GC8a2PWYi92NXUC3CfMHVfg8=
+JSz-XForjSo8TD4H316KOl82fB5r_UMnwW8r8JN-BuPbOQKah_aXS4GyJsohehneNVrXHpIuS-8=
+thft8yh42Ibe1V691UWnBS8zKL0r_sWoo42v51eNNl24WeefP7DvHdHFzzxr0Y-qnc3adcquMxF=
+-cu2LGOylX8v1FR0Sj3OPI_awnbhPcdEh9CaeY9cgjtQBr5PNrFCTfQe4GOZhbB1-vGVrkXzeO1=
+Z8mIQTOWAVp1wUsn8Hmtnj5RmAQ-wa2MtofeOZxydi0GRepekZACg style=3Dtext-decorati=
+on:none target=3D_blank>
+<img src=3Dhttps://www.gstatic.com/gumdrop/files/merchant-center-arrow-ssc-=
+transparent-w36px-h36px-2x.png width=3D18 style=3Dborder:0;outline:none cla=
+ss=3Dcta_arrow_img_class>
+</a>
+</td> </tr>
+</tbody></table></td>
+</tr>
+</table>
+</td>
+<td dir=3Dltr valign=3Dbottom width=3D293 height=3D218 style=3D"line-height=
+:0px; vertical-align:bottom; padding-top:31px; mso-padding-top-alt:0px; ">
+<table dir=3Dltr cellspacing=3D0 cellpadding=3D0 border=3D0 role=3Dpresenta=
+tion style=3D"border:0; border-spacing:0; border-collapse:collapse;" class=
+=3Dtable-transparent>
+<tr>
+<td dir=3Dltr background=3Dhttps://services.google.com/fh/files/emails/gws_=
+wave_bg_hero.png style=3D"background-size:270px; background-repeat:no-repea=
+t; vertical-align:middle;" width=3D270 valign=3Dcenter>
+<!--[if gte mso 9]>
+<v:rect xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"true" stroke=3D"f=
+alse" style=3D"width:270px;height:218px;">
+<v:fill type=3D"frame" src=3D"https://services.google.com/fh/files/emails/g=
+ws_wave_bg_hero.png" color=3D"#D2E3FC" />
+<v:textbox inset=3D"0,0,0,0">
+<![endif]-->
+<div>
+<table dir=3Dltr role=3DPresentation cellspacing=3D0 cellpadding=3D0 border=
+=3D0 width=3D293 class=3Dtable-transparent>
+<tr>
+<td valign=3Dtop height=3D218 style=3Dline-height:0px;>
+<table dir=3D"ltr " cellspacing=3D0 cellpadding=3D0 border=3D0 width=3D293 =
+role=3Dpresentation style=3D"border:0; border-spacing:0; border-collapse:co=
+llapse; text-align:left;" class=3D"coupon_box table-transparent 22">
+<tr>
+<td style=3D"line-height:0px; vertical-align:top;">
+<table dir=3Dltr role=3Dpresentation width=3D92 align=3Dcenter cellpadding=
+=3D0 cellspacing=3D0 border=3D0 style=3D"border-spacing:0; border-collapse:=
+collapse; border:0;" class=3D"coupon_box table-transparent 23">
+<tr>
+<td style=3D"font-family:Google sans, Roboto, Open Sans, arial,sans-serif; =
+font-size:14px; line-height:28px; color:#ffffff; padding-top:38px;mso-paddi=
+ng-alt: 0 0 0 17px; padding-bottom:2px;font-weight:bold; padding-left:7px; =
+text-align:center; mso-padding-top-alt:32px;" class=3D"text-white coupon_bo=
+x_td 11" dir=3Dltr><span style=3D"white-space:nowrap; word-break: break-wor=
+d; " class=3D"span " dir=3Dltr>Rp3000000</span></td>
+</tr>
+<tr>
+<td dir=3Dltr style=3D"mso-line-height-rule:exactly; color:#ffffff; font-si=
+ze:16px; line-height:16px; font-family:Google sans, Roboto, Open Sans, aria=
+l,sans-serif; padding-top:0px; padding-left:17px; ;mso-padding-alt: 0 0 0 1=
+7px; direction:ltr; word-break:break-all; font-weight: bold; text-align:cen=
+ter;" class=3D"text-white text-white-rtl">
+kredit <br>iklan
+</td>
+</tr>
+</table>
+</td>
+<td style=3D"line-height:0px; vertical-align:top;">
+<table dir=3Dltr role=3Dpresentation width=3D178 align=3Dleft cellpadding=
+=3D0 cellspacing=3D0 border=3D0 style=3D"border-spacing:0; border-collapse:=
+collapse; border:0;" class=3D"coupon_box table-transparent 2">
+<tr>
+<td dir=3Dltr style=3D"mso-line-height-rule:exactly; color:#1a73e8; font-si=
+ze:8px; line-height:12px; font-family:Google sans, Roboto, Open Sans, arial=
+,sans-serif; padding-top:111px; padding-right:40px; direction:ltr; font-wei=
+ght: normal;" class=3Dlink_class_2>
+<a href=3D# style=3D"text-decoration:none;color:#1a73e8; border:none;">warc=
+euproject</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if gte mso 9]>
+</v:textbox>
+</v:rect>
+<![endif]-->
+</td>
+</tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+<!--[if !mso]><!-- --> <tr>
+<td dir=3Dltr class=3D"mobile_only dt-darkblue-bg" style=3D"display:none; b=
+order-radius:10px; padding-top:20px; padding-bottom:0px;">
+<table dir=3Dltr cellspacing=3D0 cellpadding=3D0 border=3D0 width=3D100% ro=
+le=3Dpresentation style=3D"width:100%; border:0; border-spacing:0; border-c=
+ollapse:collapse;" class=3Dtable-transparent>
+<tr>
+<td dir=3Dltr class=3Dmobile-spacing><table role=3Dpresentation width=3D257=
+ cellpadding=3D0 cellspacing=3D0 border=3D0 style=3D"border-spacing:0; bord=
+er-collapse:collapse; border:0;" class=3D"margin-auto width-100 text-center=
+" dir=3Dltr>
+<tr>
+<td dir=3Dltr style=3D"mso-line-height-rule:exactly; font-family:Google san=
+s, Roboto, Open Sans, arial,sans-serif; font-size:22px; line-height:33px; c=
+olor:#3C4043; padding-top:18px; padding-bottom:9px; word-break:normal; dire=
+ction:ltr; padding-right:5px;text-align:left;" class=3D"text-light p-t-20">=
+Mulai dengan <span style=3D"white-space:nowrap; word-break: break-word; " c=
+lass=3D"span " dir=3Dltr>Rp3000000</span></td>
+</tr>
+<tr>
+<td dir=3Dltr style=3D"mso-line-height-rule:exactly; font-family:Roboto, Op=
+en Sans, arial,sans-serif; font-size:14px; line-height:24px; color:#3C4043;=
+ word-break:normal; padding-bottom:10px; padding-right:10px; direction:ltr;=
+text-align:left;" class=3Dtext-light>Dapatkan kredit <span style=3D"white-s=
+pace:nowrap; word-break: break-word; " class=3D"span " dir=3D"">Google Ads<=
+/span> senilai <span style=3D"white-space:nowrap; word-break: break-word; "=
+ class=3D"span " dir=3Dltr>Rp3000000</span> saat Anda membelanjakan <span s=
+tyle=3D"white-space:nowrap; word-break: break-word; " class=3D"span " dir=
+=3Dltr>Rp3000000</span>.* Cukup terapkan kode <span style=3D"white-space:no=
+wrap; word-break: break-word; color:#3C4043; white-space:nowrap; font-weigh=
+t:bold; direction:ltr; " class=3D"span text-light" dir=3D"">9NRTV=E2=80=91J=
+7NG6=E2=80=91GMJN</span>.</td>
+</tr>
+<tr>
+<td class=3Dcta_arrow_main_td_class style=3Dpadding:0;margin:0;vertical-ali=
+gn:top;line-height:0;padding-top:2px;padding-bottom:25px;>
+<table role=3Dpresentation align=3D"" cellpadding=3D0 cellspacing=3D0 borde=
+r=3D0 class=3D"cta_arrow_text_class text-gray" dir=3Dltr>
+<tbody><tr>
+<td class=3Dcta_arrow_td_class style=3D"font-size:14px;font-family:Google s=
+ans, Roboto, Open Sans, arial,sans-serif;line-height:21px;text-align:left;d=
+irection:ltr;word-break:normal; color:#0D5BD9; "><a href=3Dhttps://notifica=
+tions.google.com/g/p/ADa0GC8a2PWYi92NXUC3CfMHVfg8JSz-XForjSo8TD4H316KOl82fB=
+5r_UMnwW8r8JN-BuPbOQKah_aXS4GyJsohehneNVrXHpIuS-8thft8yh42Ibe1V691UWnBS8zKL=
+0r_sWoo42v51eNNl24WeefP7DvHdHFzzxr0Y-qnc3adcquMxF-cu2LGOylX8v1FR0Sj3OPI_awn=
+bhPcdEh9CaeY9cgjtQBr5PNrFCTfQe4GOZhbB1-vGVrkXzeO1Z8mIQTOWAVp1wUsn8Hmtnj5RmA=
+Q-wa2MtofeOZxydi0GRepekZACg style=3D"color:#0D5BD9;text-decoration:none; fo=
+nt-weight:bold; " target=3D_blank class=3Dlink_class_3>Tukarkan kredit Anda=
+</a></td>
+<td style=3D"padding:0;margin:0;text-align:left;padding-left:10px;line-heig=
+ht:0px;mso-line-height-alt: 21px;" dir=3Dltr width=3D18 class=3Dcta_arrow_i=
+mg_td_class>
+<a href=3Dhttps://notifications.google.com/g/p/ADa0GC8a2PWYi92NXUC3CfMHVfg8=
+JSz-XForjSo8TD4H316KOl82fB5r_UMnwW8r8JN-BuPbOQKah_aXS4GyJsohehneNVrXHpIuS-8=
+thft8yh42Ibe1V691UWnBS8zKL0r_sWoo42v51eNNl24WeefP7DvHdHFzzxr0Y-qnc3adcquMxF=
+-cu2LGOylX8v1FR0Sj3OPI_awnbhPcdEh9CaeY9cgjtQBr5PNrFCTfQe4GOZhbB1-vGVrkXzeO1=
+Z8mIQTOWAVp1wUsn8Hmtnj5RmAQ-wa2MtofeOZxydi0GRepekZACg style=3Dtext-decorati=
+on:none target=3D_blank>
+<img src=3Dhttps://www.gstatic.com/gumdrop/files/merchant-center-arrow-ssc-=
+transparent-w36px-h36px-2x.png width=3D18 style=3Dborder:0;outline:none cla=
+ss=3Dcta_arrow_img_class>
+</a>
+</td> </tr>
+</tbody></table></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"line-height:0px;padding-left:20px; ">
+<table dir=3Dltr cellspacing=3D0 cellpadding=3D0 border=3D0 role=3Dpresenta=
+tion style=3D"border:0; border-spacing:0; border-collapse:collapse;" class=
+=3D"margin-auto table-transparent">
+<tr>
+<td dir=3Dltr background=3Dhttps://services.google.com/fh/files/emails/gws_=
+wave_bg_hero.png style=3D"background-size:270px; background-repeat:no-repea=
+t; vertical-align:top" width=3D270 height=3D218 valign=3Dcenter><table dir=
+=3D"ltr " cellspacing=3D0 cellpadding=3D0 border=3D0 width=3D293 role=3Dpre=
+sentation style=3D"border:0; border-spacing:0; border-collapse:collapse; te=
+xt-align:left;" class=3D"coupon_box table-transparent 22">
+<tr>
+<td style=3D"line-height:0px; vertical-align:top;">
+<table dir=3Dltr role=3Dpresentation width=3D92 align=3Dcenter cellpadding=
+=3D0 cellspacing=3D0 border=3D0 style=3D"border-spacing:0; border-collapse:=
+collapse; border:0;" class=3D"coupon_box table-transparent 23">
+<tr>
+<td style=3D"font-family:Google sans, Roboto, Open Sans, arial,sans-serif; =
+font-size:14px; line-height:28px; color:#ffffff; padding-top:38px;mso-paddi=
+ng-alt: 0 0 0 17px; padding-bottom:2px;font-weight:bold; padding-left:7px; =
+text-align:center; mso-padding-top-alt:32px;" class=3D"text-white coupon_bo=
+x_td 11" dir=3Dltr><span style=3D"white-space:nowrap; word-break: break-wor=
+d; " class=3D"span " dir=3Dltr>Rp3000000</span></td>
+</tr>
+<tr>
+<td dir=3Dltr style=3D"mso-line-height-rule:exactly; color:#ffffff; font-si=
+ze:16px; line-height:16px; font-family:Google sans, Roboto, Open Sans, aria=
+l,sans-serif; padding-top:0px; padding-left:17px; ;mso-padding-alt: 0 0 0 1=
+7px; direction:ltr; word-break:break-all; font-weight: bold; text-align:cen=
+ter;" class=3D"text-white text-white-rtl">
+kredit <br>iklan
+</td>
+</tr>
+</table>
+</td>
+<td style=3D"line-height:0px; vertical-align:top;">
+<table dir=3Dltr role=3Dpresentation width=3D178 align=3Dleft cellpadding=
+=3D0 cellspacing=3D0 border=3D0 style=3D"border-spacing:0; border-collapse:=
+collapse; border:0;" class=3D"coupon_box table-transparent 2">
+<tr>
+<td dir=3Dltr style=3D"mso-line-height-rule:exactly; color:#1a73e8; font-si=
+ze:8px; line-height:12px; font-family:Google sans, Roboto, Open Sans, arial=
+,sans-serif; padding-top:111px; padding-right:40px; direction:ltr; font-wei=
+ght: normal;" class=3Dlink_class_2>
+<a href=3D# style=3D"text-decoration:none;color:#1a73e8; border:none;">warc=
+euproject</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr><![endif]-->
+</table>
+<table dir=3Dltr role=3Dpresentation cellpadding=3D0 cellspacing=3D0 width=
+=3D100% bgcolor=3D#ffffff>
+<tr>
+<td align=3Dleft dir=3Dltr style=3D"mso-line-height-rule:exactly; font-fami=
+ly:Google sans, Roboto, Open Sans, arial,sans-serif; font-size:22px; line-h=
+eight:33px; color:#3C4043; padding-bottom:20px; padding-top:50px; padding-l=
+eft:49px; padding-right:49px; word-break:normal; direction:ltr;padding-top:=
+35px;" class=3D"mobile-spacing text-light bullet_head">Kembangkan bisnis An=
+da dengan <span style=3D"white-space:nowrap; word-break: break-word; " clas=
+s=3D"span " dir=3D"">Google Ads</span></td>
+</tr>
+<tr>
+<td dir=3Dltr class=3D"text-light mobile-spacing bullet_list" dir=3Dltr sty=
+le=3D"line-height:0px;padding-left:54px; padding-right:54px; padding-top:0p=
+x;" width=3D100%>
+<table role=3Dpresentation dir=3Dltr cellpadding=3D0 cellspacing=3D0 bgcolo=
+r=3D#ffffff style=3D"background: #ffffff;width:100%;direction:ltr;">
+<tr><td width=3D50 style=3D"padding:0px; margin:0px; line-height:0px;vertic=
+al-align: top; mso-line-height-rule:exactly; "><table width=3D50 role=3Dpre=
+sentation dir=3Dltr cellpadding=3D0 cellspacing=3D0>
+<tr>
+<td align=3Dleft dir=3Dltr valign=3Dtop style=3D"padding-right:26px; direct=
+ion:ltr; font-size:0px;line-height:0px; width:22px;mso-line-height-rule:exa=
+ctly;mso-padding-top-alt:5px;" width=3D24 class=3D"bullet-mobile-spacing ip=
+hone_fix">
+<img alt=3D"" src=3Dhttps://www.gstatic.com/gumdrop/files/google-apps-peopl=
+e-transparent-w96px-h96px-2x.png width=3D24 style=3Dborder:0;>
+</td></tr>
+</table></td>
+<td align=3Dleft style=3D"padding:0px; margin:0px; line-height:0px;vertical=
+-align: top;mso-line-height-rule:exactly;"><table role=3Dpresentation dir=
+=3Dltr cellpadding=3D0 cellspacing=3D0>
+<tr>
+<td align=3Dleft style=3D"mso-line-height-rule:exactly; font-size: 14px;fon=
+t-family:Roboto, Open Sans, arial,sans-serif;line-height: 24px; padding-top=
+: 0px; color: #3C4043;direction:ltr;word-break:normal; padding-bottom:13px;=
+ mso-line-height-rule:exactly;" valign=3Dmiddle dir=3Dltr class=3D"text-lig=
+ht bullet_text"><strong style=3Dcolor:#3C4043; class=3Dtext-light>Tampil di=
+ semua tempat yang tepat</strong><br>Tampilkan bisnis Anda di tempat pelang=
+gan berbelanja, melakukan penelusuran, dan menonton video.</td></tr>
+</table></td>
+</tr>
+<tr><td width=3D50 style=3D"padding:0px; margin:0px; line-height:0px;vertic=
+al-align: top; mso-line-height-rule:exactly; "><table width=3D50 role=3Dpre=
+sentation dir=3Dltr cellpadding=3D0 cellspacing=3D0>
+<tr>
+<td align=3Dleft dir=3Dltr valign=3Dtop style=3D"padding-right:26px; direct=
+ion:ltr; font-size:0px;line-height:0px; width:22px;mso-line-height-rule:exa=
+ctly;mso-padding-top-alt:5px;" width=3D24 class=3D"bullet-mobile-spacing ip=
+hone_fix">
+<img alt=3D"" src=3Dhttps://www.gstatic.com/gumdrop/files/google-apps-trend=
+ing-transparent-w96px-h96px-2x.png width=3D24 style=3Dborder:0;>
+</td></tr>
+</table></td>
+<td align=3Dleft style=3D"padding:0px; margin:0px; line-height:0px;vertical=
+-align: top;mso-line-height-rule:exactly;"><table role=3Dpresentation dir=
+=3Dltr cellpadding=3D0 cellspacing=3D0>
+<tr>
+<td align=3Dleft style=3D"mso-line-height-rule:exactly; font-size: 14px;fon=
+t-family:Roboto, Open Sans, arial,sans-serif;line-height: 24px; padding-top=
+: 0px; color: #3C4043;direction:ltr;word-break:normal; padding-bottom:13px;=
+ mso-line-height-rule:exactly;" valign=3Dmiddle dir=3Dltr class=3D"text-lig=
+ht bullet_text"><strong style=3Dcolor:#3C4043; class=3Dtext-light>Capai sas=
+aran pemasaran Anda</strong><br>Tingkatkan penjualan, dapatkan lebih banyak=
+ traffic, dan tumbuhkan brand awareness.</td></tr>
+</table></td>
+</tr>
+<tr><td width=3D50 style=3D"padding:0px; margin:0px; line-height:0px;vertic=
+al-align: top; mso-line-height-rule:exactly; "><table width=3D50 role=3Dpre=
+sentation dir=3Dltr cellpadding=3D0 cellspacing=3D0>
+<tr>
+<td align=3Dleft dir=3Dltr valign=3Dtop style=3D"padding-right:26px; direct=
+ion:ltr; font-size:0px;line-height:0px; width:22px;mso-line-height-rule:exa=
+ctly;mso-padding-top-alt:5px;" width=3D24 class=3D"bullet-mobile-spacing ip=
+hone_fix">
+<img alt=3D"" src=3Dhttps://www.gstatic.com/gumdrop/files/google-apps-tune-=
+transparent-w96px-h96px-2x.png width=3D24 style=3Dborder:0;>
+</td></tr>
+</table></td>
+<td align=3Dleft style=3D"padding:0px; margin:0px; line-height:0px;vertical=
+-align: top;mso-line-height-rule:exactly;"><table role=3Dpresentation dir=
+=3Dltr cellpadding=3D0 cellspacing=3D0>
+<tr>
+<td align=3Dleft style=3D"mso-line-height-rule:exactly; font-size: 14px;fon=
+t-family:Roboto, Open Sans, arial,sans-serif;line-height: 24px; padding-top=
+: 0px; color: #3C4043;direction:ltr;word-break:normal; padding-bottom:13px;=
+ mso-line-height-rule:exactly;" valign=3Dmiddle dir=3Dltr class=3D"text-lig=
+ht bullet_text"><strong style=3Dcolor:#3C4043; class=3Dtext-light>Kontrol a=
+nggaran</strong><br>Dapatkan rekomendasi anggaran yang dipersonalisasi, dan=
+ jeda atau sesuaikan pembelanjaan Anda kapan saja.</td></tr>
+</table></td>
+</tr>
+<tr><td width=3D50 style=3D"padding:0px; margin:0px; line-height:0px;vertic=
+al-align: top; mso-line-height-rule:exactly; "><table width=3D50 role=3Dpre=
+sentation dir=3Dltr cellpadding=3D0 cellspacing=3D0>
+<tr>
+<td align=3Dleft dir=3Dltr valign=3Dtop style=3D"padding-right:26px; direct=
+ion:ltr; font-size:0px;line-height:0px; width:22px;mso-line-height-rule:exa=
+ctly;mso-padding-top-alt:5px;" width=3D24 class=3D"bullet-mobile-spacing ip=
+hone_fix">
+<img alt=3D"" src=3Dhttps://www.gstatic.com/gumdrop/files/google-apps-click=
+-transparent-w96px-h96px-2x.png width=3D24 style=3Dborder:0;>
+</td></tr>
+</table></td>
+<td align=3Dleft style=3D"padding:0px; margin:0px; line-height:0px;vertical=
+-align: top;mso-line-height-rule:exactly;"><table role=3Dpresentation dir=
+=3Dltr cellpadding=3D0 cellspacing=3D0>
+<tr>
+<td align=3Dleft style=3D"mso-line-height-rule:exactly; font-size: 14px;fon=
+t-family:Roboto, Open Sans, arial,sans-serif;line-height: 24px; padding-top=
+: 0px; color: #3C4043;direction:ltr;word-break:normal; padding-bottom:13px;=
+ mso-line-height-rule:exactly;" valign=3Dmiddle dir=3Dltr class=3D"text-lig=
+ht bullet_text"><strong style=3Dcolor:#3C4043; class=3Dtext-light>Hanya bay=
+ar sesuai hasil</strong><br>Anda hanya akan dikenai biaya saat orang berint=
+eraksi dengan iklan melalui klik atau panggilan telepon.</td></tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<table dir=3Dltr role=3Dpresentation bgcolor=3D#ffffff align=3Dcenter cellp=
+adding=3D0 cellspacing=3D0 style=3D"width:100%; margin:0 auto;padding:0;dir=
+ection:ltr;">
+<tr>
+<td class=3Dmobile-spacing style=3D"mso-line-height-rule:exactly; font-size=
+: 22px; font-family: Google sans, Roboto, Open Sans, arial,sans-serif; colo=
+r: #3C4043; line-height: 33px;margin: 0;text-align: left; padding-top:42px;=
+ padding-bottom:10px; padding-left: 50px; padding-right: 50px; " dir=3Dltr>=
+Ada pertanyaan?</td>
+</tr>
+<tr>
+<td class=3D"mobile-spacing border_line" align=3Dcenter dir=3Dltr style=3D"=
+padding-left:50px; padding-right:50px; line-height:0px; direction:ltr;">
+<table role=3Dpresentation bgcolor=3D#ffffff align=3Dcenter cellpadding=3D0=
+ cellspacing=3D0 style=3D"width:100%; margin:0 auto;padding:0;direction:ltr=
+;">
+<tr>
+<td class=3Dmobile-spacing style=3D" border-top:1px solid #DEDEDE; width:10=
+0%; table-layout:fixed;font-family: Google sans, Roboto, Open Sans, arial,s=
+ans-serif;font-size:0px; line-height:0px; font-weight:normal; padding-top:1=
+1px;text-align:center;word-break:normal;" dir=3Dltr>=C2=A0
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3Dmain_td_help_img align=3Dcenter dir=3Dltr style=3D"vertical-ali=
+gn:top; padding-bottom:34px; direction:ltr">
+<table width=3D100% role=3Dpresentation align=3Dleft cellpadding=3D0 cellsp=
+acing=3D0 style=3D"margin: 0 auto;">
+<tr>
+<td class=3Dhelp_center_img width=3D17 style=3D"vertical-align:top; padding=
+-top:5px; mso-line-height-alt:21px; padding-bottom:0; border: 0; text-align=
+:left; padding-left: 49px; padding-right: 8px;" dir=3Dltr><a href=3Dhttps:/=
+/notifications.google.com/g/p/ADa0GC_JRmVPe3V0KNCD-OnSowYyljaGZlNjHYjw3NpvY=
+T_k07dq8fAYXjOVOYdR_Z7kA64J5nyn1DE_Qk5mLEkCXGgEHXaxBkSixnLXuTLKysq1epmKjNee=
+ZEQkMqAhoudxU3oE_AIBE-0gnd4OaWP3iAtvdo-gpX5SKifu5MG_TX4jKzIFhExnEmGxjBmpsuy=
+dvrPXJ2t4n-CqA3AAxR-bWBrGvQfaQXpV-r8 target=3D_blank style=3D"text-decorati=
+on:none; border:none;"><img class=3Dimg_help_center border=3D0 height=3D"" =
+src=3Dhttps://www.gstatic.com/gumdrop/files/google-apps-gws-help-center-tra=
+nsparent-w68px-h68px-2x.png alt=3D"" style=3Dborder:none;height:auto; width=
+=3D17 class=3Dfooter_icon_1></a></td>
+<td class=3Dhelp_center width=3D200 class=3Dhelp_text dir=3Dltr style=3D"ve=
+rtical-align:top; padding-right:10px;padding-top:3px; table-layout:fixed;fo=
+nt-family: Google sans, Roboto, Open Sans, arial,sans-serif;font-size:14px;=
+ line-height:21px; font-weight:bold; word-break:normal; color:#1A73E8;paddi=
+ng-bottom:0; text-align:left; "><a href=3Dhttps://notifications.google.com/=
+g/p/ADa0GC_JRmVPe3V0KNCD-OnSowYyljaGZlNjHYjw3NpvYT_k07dq8fAYXjOVOYdR_Z7kA64=
+J5nyn1DE_Qk5mLEkCXGgEHXaxBkSixnLXuTLKysq1epmKjNeeZEQkMqAhoudxU3oE_AIBE-0gnd=
+4OaWP3iAtvdo-gpX5SKifu5MG_TX4jKzIFhExnEmGxjBmpsuydvrPXJ2t4n-CqA3AAxR-bWBrGv=
+QfaQXpV-r8 target=3D_blank class=3Dfooter_anchor_text style=3D"text-decorat=
+ion:none; border:none;color:#1A73E8;">Kunjungi Pusat Bantuan</a></td>
+<td class=3D"desktop_only forum_img" style=3D"vertical-align:top; padding-l=
+eft:0px; padding-right:8px; padding-top:5px; mso-line-height-alt:21px; padd=
+ing-bottom:0; border: 0; text-align:left;" dir=3Dltr width=3D17><a href=3Dh=
+ttps://notifications.google.com/g/p/ADa0GC_9_AuAvpBDTizFym-XpI36-9YzWtrPhzU=
+adQdUWijYFtsp-0CrjD-pTYK33XbtlQPnYhthWclxfun1v2e5C7RCmfh2nqrHAX7U4lGEkrY0XF=
+AhXqxDS1AEKGlDj1qd99zJ2DJz-xh_be2jqyN0gSbhwLkTWEgQQbzN-ansJANeIExAfyAZuAHoG=
+JqwQUsmsxgaA-pmMc_buARXipu213k5iCxbP7Zc7Douiq4PoHo target=3D_blank style=3D=
+"text-decoration:none; border:none;"><img class=3Dimg_forum border=3D0 heig=
+ht=3D"" src=3Dhttps://www.gstatic.com/gumdrop/files/google-apps-gws-ads-bg-=
+transparent-w68px-h68px-2x.png alt=3D"" style=3Dborder:none;height:auto; wi=
+dth=3D17 class=3Dfooter_icon_2></a></td>
+<td class=3D"desktop_only forum_text" class=3Dmessage_text dir=3Dltr style=
+=3D"vertical-align:top; padding-top:3px; table-layout:fixed;font-family: Go=
+ogle sans, Roboto, Open Sans, arial,sans-serif;font-size:14px; line-height:=
+21px; font-weight:bold; word-break:normal; color:#1A73E8;padding-bottom:0; =
+text-align:left; padding-right: 50px; "><a href=3Dhttps://notifications.goo=
+gle.com/g/p/ADa0GC_9_AuAvpBDTizFym-XpI36-9YzWtrPhzUadQdUWijYFtsp-0CrjD-pTYK=
+33XbtlQPnYhthWclxfun1v2e5C7RCmfh2nqrHAX7U4lGEkrY0XFAhXqxDS1AEKGlDj1qd99zJ2D=
+Jz-xh_be2jqyN0gSbhwLkTWEgQQbzN-ansJANeIExAfyAZuAHoGJqwQUsmsxgaA-pmMc_buARXi=
+pu213k5iCxbP7Zc7Douiq4PoHo target=3D_blank class=3Dfooter_anchor_text style=
+=3D"text-decoration:none; border:none;color:#1A73E8;">Hubungi kami</a></td>
+</tr>
+</table>
+</td>
+</tr><!--[if !mso]><!-- -->
+<tr><td class=3Dmobile_only align=3Dcenter dir=3Dltr style=3D"line-height:0=
+px; display:none; direction:ltr">
+<table width=3D100% role=3Dpresentation align=3Dleft cellpadding=3D0 cellsp=
+acing=3D0 style=3D"margin: 0 auto;">
+<tr><td class=3Dforum_img style=3D"vertical-align:top; padding-left:0px; pa=
+dding-right:8px; padding-left:28px; padding-top:5px; padding-bottom:40px; b=
+order: 0; text-align:left;" dir=3Dltr width=3D17><a href=3Dhttps://notifica=
+tions.google.com/g/p/ADa0GC_9_AuAvpBDTizFym-XpI36-9YzWtrPhzUadQdUWijYFtsp-0=
+CrjD-pTYK33XbtlQPnYhthWclxfun1v2e5C7RCmfh2nqrHAX7U4lGEkrY0XFAhXqxDS1AEKGlDj=
+1qd99zJ2DJz-xh_be2jqyN0gSbhwLkTWEgQQbzN-ansJANeIExAfyAZuAHoGJqwQUsmsxgaA-pm=
+Mc_buARXipu213k5iCxbP7Zc7Douiq4PoHo target=3D_blank style=3D"text-decoratio=
+n:none; border:none;"><img class=3Dimg_forum border=3D0 height=3D"" src=3Dh=
+ttps://www.gstatic.com/gumdrop/files/google-apps-gws-ads-bg-transparent-w68=
+px-h68px-2x.png alt=3D"" style=3Dborder:none;height:auto; width=3D17 class=
+=3Dfooter_icon_2></a></td>
+<td class=3Dforum_text class=3Dmessage_text dir=3Dltr style=3D"vertical-ali=
+gn:top; padding-top:3px; table-layout:fixed;font-family: Google sans, Robot=
+o, Open Sans, arial,sans-serif;font-size:14px; line-height:21px; font-weigh=
+t:bold; word-break:normal; color:#1A73E8;padding-bottom:40px; text-align:le=
+ft; padding-right: 50px; "><a href=3Dhttps://notifications.google.com/g/p/A=
+Da0GC_9_AuAvpBDTizFym-XpI36-9YzWtrPhzUadQdUWijYFtsp-0CrjD-pTYK33XbtlQPnYhth=
+Wclxfun1v2e5C7RCmfh2nqrHAX7U4lGEkrY0XFAhXqxDS1AEKGlDj1qd99zJ2DJz-xh_be2jqyN=
+0gSbhwLkTWEgQQbzN-ansJANeIExAfyAZuAHoGJqwQUsmsxgaA-pmMc_buARXipu213k5iCxbP7=
+Zc7Douiq4PoHo target=3D_blank class=3Dfooter_anchor_text style=3D"text-deco=
+ration:none; border:none;color:#1A73E8;">Hubungi kami</a></td></tr></table>=
+</td></tr><![endif]-->
+</table>
+</td></tr></table>
+<table dir=3Dltr class=3Dfooter_table_class bgcolor=3D#F8F9FA role=3Dpresen=
+tation cellspacing=3D0 cellpadding=3D0 border=3D0 width=3D100% style=3D"wid=
+th:100%; border:0; border-spacing:0; border-collapse:collapse; background-c=
+olor:#F8F9FA; word-break:break-all;">
+<tr>
+<td dir=3Dltr style=3D"padding:22px 50px 24px;line-height:0px; word-break:b=
+reak-all;" class=3Dmobile-spacing>
+<table role=3Dpresentation cellspacing=3D0 cellpadding=3D0 border=3D0 width=
+=3D100% style=3D"width:100%; border:0; border-spacing:0; border-collapse:co=
+llapse;" dir=3Dltr>
+<tr>
+<td dir=3Dltr align=3Dleft style=3D"font-size:1px;padding-top:2px; line-hei=
+ght:0px;"><img src=3Dhttps://www.gstatic.com/gumdrop/files/merchant-center-=
+footer-google-transparent-w151px-h48px-2x.png width=3D85></td>
+<td dir=3Dltr align=3Dright style=3Dfont-size:1px;padding-right:8px;line-he=
+ight:0px;><img src=3Dhttps://www.gstatic.com/gumdrop/files/gmb-gws-icons-fi=
+ve-transparent-w490px-h72px-2x.png width=3D123></td>
+</tr>
+</table>
+<table dir=3Dltr role=3Dpresentation cellspacing=3D0 cellpadding=3D0 border=
+=3D0 width=3D100% style=3D"width:100%; border:0; border-spacing:0; border-c=
+ollapse:collapse; word-break:break-all;">
+<tr>
+<td align=3Dleft dir=3Dltr style=3D"mso-line-height-rule:exactly; padding-t=
+op:19px; font-family:Roboto, Open Sans, arial,sans-serif; font-weight:norma=
+l;font-size:12px;line-height:18px; word-break : normal; color: #5F6368; dir=
+ection:ltr; text-align:left">=C2=A9 2023
+<span style=3D"font-size:inherit; color:inherit; font-weight:inherit; line-=
+height:inherit; font-family:inherit;">Google LLC 1600 Amphitheatre Parkway,=
+ Mountain View, CA 94043</span>
+</td>
+</tr>
+<tr>
+<td dir=3Dltr style=3D"padding-top:14px; font-family:Roboto, Open Sans, ari=
+al,sans-serif; font-weight:normal;font-size:12px;line-height:18px;color: #5=
+F6368; direction:ltr; word-break:break-all;">
+<table dir=3Dltr role=3Dpresentation cellspacing=3D0 cellpadding=3D0 border=
+=3D0 width=3D100% style=3D"width:100%; border:0; border-spacing:0; border-c=
+ollapse:collapse; word-break:break-all;">
+<tr><td align=3Dleft style=3D"mso-line-height-rule:exactly; font-family:Rob=
+oto, Open Sans, arial,sans-serif; font-weight:normal; font-size:12px; line-=
+height:18px; color:#5F6368; direction:ltr; word-break : break-all;">
+<div class=3Dwidth-100 style=3D"width:500px; overflow:hidden; word-break : =
+break-word;">
+<span style=3D"font-size:inherit; color:inherit;font-weight:inherit;">Email=
+ ini dikirim ke kira@warceuproject.dev karena Anda telah menyatakan bersedi=
+a menerima tawaran dari <span style=3Dwhite-space:nowrap;>Google</span>. Ji=
+ka Anda tidak bersedia menerima email semacam ini di masa mendatang, silaka=
+n berhenti berlangganan di sini: <a style=3D"word-break:break-all; color:#1=
+16ADF;" href=3Dhttps://notifications.google.com/g/optout/ADa0GC83Yi6i7wbcoa=
+O3NF0g6GvR6_Nr9qM_CXjp-YOiWvEpJMkO6fFRpFcLL8rw2yxfAYbWCAcDwndM7I7-43vGCOkuk=
+sNBSH-MEevu7lq7sNfLEYV86tgdixKZX8YMROHUL8z7MPPBBAfGKeL1o6UboEa5vTD0WPoGFvoE=
+lgdb5sxXFSLdK3R1CpfrL5JpOUL4lIpTwQWEI1lewkjk05vUrj_o7IFWyHBtfbaiKtH2LDA2V-C=
+yK8t2P2n9Cjzpgvg0yHUpAerQp2s?hl=3Did>https://notifications.google.com/g/opt=
+out/ADa0GC83Yi6i7wbcoaO3NF0g6GvR6_Nr9qM_CXjp-YOiWvEpJMkO6fFRpFcLL8rw2yxfAYb=
+WCAcDwndM7I7-43vGCOkuksNBSH-MEevu7lq7sNfLEYV86tgdixKZX8YMROHUL8z7MPPBBAfGKe=
+L1o6UboEa5vTD0WPoGFvoElgdb5sxXFSLdK3R1CpfrL5JpOUL4lIpTwQWEI1lewkjk05vUrj_o7=
+IFWyHBtfbaiKtH2LDA2V-CyK8t2P2n9Cjzpgvg0yHUpAerQp2s?hl=3Did</a> Anda juga da=
+pat mengubah preferensi di laman profil akun dengan masuk ke admin.google.c=
+om</span>
+</div></td></tr></table>
+</td>
+</tr>
+<tr>
+<td align=3Dleft dir=3Dltr style=3D"padding-top:32px; font-family:Roboto, O=
+pen Sans, arial,sans-serif; mso-line-height-rule:exactly; font-style:normal=
+;font-weight:normal;font-size:12px;line-height:18px;color: #5F6368; directi=
+on:ltr;word-break:normal; ">
+<div class=3Dwidth-100 style=3D"width:500px; overflow:hidden; word-break : =
+break-word;">
+<strong style=3D"" class=3Dtext-light dir=3D""><sup style=3D"white-space:no=
+wrap; " class=3D"">*</sup><strong style=3D"" class=3Dtext-light dir=3D"">Te=
+rma dan syarat untuk tawaran ini:</strong></strong><br>
+<br>
+1. Tawaran hanya tersedia sementara bekalan masih ada.<br>
+2. Tawaran hanya tersedia kepada pengiklan yang baharu kepada <span style=
+=3D"white-space:nowrap; word-break: break-word; " class=3D"span " dir=3D"">=
+<span style=3D"white-space:nowrap; font-size:inherit; font-family:inherit; =
+line-height:inherit;">Google Ads</span></span>, dengan alamat pengebilan di=
+ Indonesia. Satu kod promosi untuk setiap pengiklan.<br>
+3. <strong style=3D"" class=3Dtext-light dir=3D"">Untuk mengaktifkan tawara=
+n ini:</strong> Masukkan kod promosi dalam akaun <span style=3D"white-space=
+:nowrap; word-break: break-word; " class=3D"span " dir=3D""><span style=3D"=
+white-space:nowrap; font-size:inherit; font-family:inherit; line-height:inh=
+erit;">Google Ads</span></span> pertama anda. Anda mesti memasukkan kod dal=
+am masa <span style=3D"white-space:nowrap; font-size:inherit; font-family:i=
+nherit; line-height:inherit;">14</span> hari dari tarikh tera iklan pertama=
+ anda disiarkan daripada akaun <span style=3D"white-space:nowrap; word-brea=
+k: break-word; " class=3D"span " dir=3D""><span style=3D"white-space:nowrap=
+; font-size:inherit; font-family:inherit; line-height:inherit;">Google Ads<=
+/span></span> pertama anda.<br>
+4. Tawaran promosi hanya akan digunakan pada akaun anda jika profil pembaya=
+ran dan kaedah pembayaran yang sah ditambahkan semasa proses pendaftaran aw=
+al.<br>
+5. <strong style=3D"" class=3Dtext-light dir=3D"">Untuk memperoleh kredit <=
+span style=3D"white-space:nowrap; word-break: break-word; " class=3D"span "=
+ dir=3D""><span style=3D"white-space:nowrap; font-size:inherit; font-family=
+:inherit; line-height:inherit;">Google Ads</span></span>:</strong> Selepas =
+memasukkan kod promosi dalam akaun <span style=3D"white-space:nowrap; word-=
+break: break-word; " class=3D"span " dir=3D""><span style=3D"white-space:no=
+wrap; font-size:inherit; font-family:inherit; line-height:inherit;">Google =
+Ads</span></span> anda, kempen pengiklanan anda mesti mengakru kos sekurang=
+-kurangnya sebanyak <span style=3D"white-space:nowrap; word-break: break-wo=
+rd; " class=3D"span " dir=3D"">Rp 3,000,000</span> (kecuali sebarang teks a=
+tau yuran yang dikenakan) dalam masa 60 hari. Pembayaran yang dibuat sebany=
+ak <span style=3D"white-space:nowrap; word-break: break-word; " class=3D"sp=
+an " dir=3D"">Rp 3,000,000</span> adalah tidak mencukupi. Penjejakan kos pe=
+ngiklanan terhadap <span style=3D"white-space:nowrap; word-break: break-wor=
+d; " class=3D"span " dir=3D"">Rp 3,000,000</span> bermula selepas anda tela=
+h memasukkan kod promosi.<br>
+6. Setelah langkah 5 selesai, dengan syarat semua semakan kelayakan dipenuh=
+i, kredit lazimnya akan digunakan dalam masa 35 hari pada Ringkasan Pengebi=
+lan dalam akaun <span style=3D"white-space:nowrap; word-break: break-word; =
+" class=3D"span " dir=3D""><span style=3D"white-space:nowrap; font-size:inh=
+erit; font-family:inherit; line-height:inherit;">Google Ads</span></span> a=
+nda.<br>
+7. Kredit tersebut tamat tempoh 60 hari selepas digunakan pada akaun anda.<=
+br>
+8. Kredit digunakan untuk kos pengiklanan pada masa hadapan sahaja. Kredit =
+tidak boleh digunakan pada kos yang diakru sebelum kod promosi dimasukkan d=
+alam akaun <span style=3D"white-space:nowrap; word-break: break-word; " cla=
+ss=3D"span " dir=3D""><span style=3D"white-space:nowrap; font-size:inherit;=
+ font-family:inherit; line-height:inherit;">Google Ads</span></span> anda.<=
+br>
+9. Anda tidak akan menerima pemberitahuan setelah kredit dalam akaun <span =
+style=3D"white-space:nowrap; word-break: break-word; " class=3D"span " dir=
+=3D""><span style=3D"white-space:nowrap; font-size:inherit; font-family:inh=
+erit; line-height:inherit;">Google Ads</span></span> anda habis digunakan d=
+an sebarang kos pengiklanan tambahan akan dicaj pada bentuk pembayaran anda=
+. Jika anda tidak mahu meneruskan pengiklanan, anda boleh menjeda atau mema=
+damkan kempen anda pada bila-bila masa.<br>
+10. Akaun anda mestilah berjaya dibilkan oleh <span style=3D"white-space:no=
+wrap; word-break: break-word; " class=3D"span " dir=3D""><span style=3D"whi=
+te-space:nowrap; font-size:inherit; font-family:inherit; line-height:inheri=
+t;">Google Ads</span></span> dan kekal dalam kedudukan yang baik agar terus=
+ layak menggunakan kredit.<br>
+11. <span style=3D"white-space:nowrap; word-break: break-word; " class=3D"s=
+pan " dir=3D""><span style=3D"white-space:nowrap; font-size:inherit; font-f=
+amily:inherit; line-height:inherit;">Google Ads</span></span> berhak mengal=
+ih keluar tawaran promosi daripada akaun anda jika pembayaran gagal, tawara=
+n telah tersilap digunakan, anda melanggar syarat ini atau akaun anda juga =
+bukan dalam kedudukan yang baik. Dalam kes sedemikian, jika kredit promosi =
+telah diberikan, <span style=3D"white-space:nowrap; word-break: break-word;=
+ " class=3D"span " dir=3D""><span style=3D"white-space:nowrap; font-size:in=
+herit; font-family:inherit; line-height:inherit;">Google Ads</span></span> =
+berhak untuk membatalkan kredit tersebut.<br>
+12. Terma dan syarat lengkap boleh didapati di sini: <a href=3Dhttps://noti=
+fications.google.com/g/p/ADa0GC88sS3IlzSkNXcZc4c81ZaIzum8MrPanXNxY_ki-poC5z=
+p08A3ACKzh9creh7ITZ6HRtwxRV6mOCF2ILpeoeBvX3eL9KyMqAVkh9IUU4rebf4lhwRwJtmv8Y=
+IOYbaZQq6m83zh-bI3ZGR_Eiw8nafVvpB_K0DkkWDsA7O3rd1Pmbr0S7iQcfkHVfl5oWxXFvAHF=
+8rOy1cjt1W7S6EdBNmVz target=3D_blank style=3D"text-decoration:none; color:#=
+1A73E8; word-break:break-all; " class=3D"">https://www.google.com/intl/id_i=
+d/ads/coupons/terms/</a><br>
+</div></td>
+</tr>
+<tr>
+<td dir=3Dltr align=3Dleft style=3D"font-size:1px; padding-bottom:0px; padd=
+ing-top:36px; "><img src=3Dhttps://www.gstatic.com/gumdrop/files/google-app=
+s-social-icons-transparent-w504px-h81px-2x.png width=3D125></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<img alt=3D"" height=3D1 src=3Dhttps://notifications.google.com/g/img/ADa0G=
+C-Z8H_CjTjxh28FA1MpupkGjxUphNTnWbX0TPDARIXF07zL2mlXBw6WKFwC4oTq8zBZur87n_qT=
+wymVULPMHzg-9Obiz_tlipW5Wl4Sy1WWbJ23TTpBWZCdUlsp29xz1m5u5tLn7pXYNMzU.gif wi=
+dth=3D3>
+</body></html>
+--000000000000687fdd0600ea100a--

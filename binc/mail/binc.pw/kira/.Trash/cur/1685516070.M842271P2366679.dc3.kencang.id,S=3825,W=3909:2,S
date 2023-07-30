@@ -1,0 +1,84 @@
+Return-Path: <igstud5w@cs3003.bigrock.com>
+Delivered-To: kira@binc.pw
+Received: from dc3.kencang.id
+	by dc3.kencang.id with LMTP
+	id kJPwMSbvdmTXHCQAMUeTPA
+	(envelope-from <igstud5w@cs3003.bigrock.com>)
+	for <kira@binc.pw>; Wed, 31 May 2023 13:54:30 +0700
+Return-path: <igstud5w@cs3003.bigrock.com>
+Envelope-to: kira@binc.pw
+Delivery-date: Wed, 31 May 2023 13:54:30 +0700
+Received: from gateway30.websitewelcome.com ([192.185.152.11]:48303)
+	by dc3.kencang.id with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <igstud5w@cs3003.bigrock.com>)
+	id 1q4BqI-007F73-25
+	for kira@binc.pw;
+	Wed, 31 May 2023 09:45:42 +0700
+Received: from atl1wswcm01.websitewelcome.com (unknown [50.6.129.162])
+	by atl3wswob01.websitewelcome.com (Postfix) with ESMTP id D0BF1B67C
+	for <kira@binc.pw>; Wed, 31 May 2023 02:44:59 +0000 (UTC)
+Received: from cs3003.bigrock.com ([119.18.54.142])
+	by cmsmtp with ESMTP
+	id 4BpZqxBj1INRk4BpaqMj6a; Wed, 31 May 2023 02:44:59 +0000
+X-Authority-Reason: nr=8
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=igstudio.in
+	; s=default; h=Content-Type:MIME-Version:Message-ID:From:Date:Subject:To:
+	Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=hOL8fBWMm1iASG8RuJ2lWf/GDF83xRxuVZ+23sN9hIo=; b=QpGPW09FCDe4t0GQX+1N/SYOWG
+	2NVmXlpp710NVHc2lbyox9KKNsGN5frnTe+Sg2iY6EHwe2u9ZFvR3q3xdHQJqBUFZke0s/IDxgZYI
+	VHYgIJVdzQ+90IB8CaeO3EqIkPLVATrEWvTVOThb6tOd/Z6ORn+6ehnucbTYa0XnawURflyOM+lxy
+	1920rMkPo7mmkzzIMA/F/QNGJ7N8wff8CBs5x5/ziQskE/z3mhu0fpaVm7sVfz1sccQC/se5Kf5hZ
+	FVvfGS99YMATZ7ADr3LqOvudvt2aZvVZ/kuHz1St724jlcgFSlMe/tZbK7/rJt1abG1/kjy9zVgMx
+	niThrK8Q==;
+Received: from igstud5w by cs3003.bigrock.com with local (Exim 4.95)
+	(envelope-from <igstud5w@cs3003.bigrock.com>)
+	id 1q4BpY-0021B0-R7
+	for kira@binc.pw;
+	Wed, 31 May 2023 08:14:56 +0530
+To: kira@binc.pw
+Subject: =?us-ascii?Q?[Sakshi_Art_Gallery]_Some_plugins_were_automati?=
+ =?us-ascii?Q?cally_updated?=
+X-PHP-Script: igstudio.in/developer3/wp-cron.php for 119.18.54.146
+ X-PHP-Originating-Script: 1353:PHPMailer.php
+Date: Wed, 31 May 2023 02:44:56 +0000
+From: WordPress <wordpress@igstudio.in>
+Message-ID: <BIpsXgQfQyQNUB1LqSGyMqRuSOvcnU9SpXueEnkbg@igstudio.in>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - cs3003.bigrock.com
+X-AntiAbuse: Original Domain - binc.pw
+X-AntiAbuse: Originator/Caller UID/GID - [1353 993] / [47 12]
+X-AntiAbuse: Sender Address Domain - cs3003.bigrock.com
+X-BWhitelist: no
+X-Source-IP: 
+X-Source-L: No
+X-Exim-ID: 1q4BpY-0021B0-R7
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: igstudio.in:/public_html/developer3
+X-Source-Sender: 
+X-Source-Auth: igstud5w
+X-Email-Count: 1
+X-Source-Cap: aWdzdHVkNXc7aWdzdHVkNXc7Y3MzMDAzLmJpZ3JvY2suY29t
+X-Local-Domain: yes
+X-CMAE-Envelope: MS4xfBJyflmH3hQOFQ+ohg9yPGOraOO6NfFQ7+KkfyosvgIhv4CHXUkFENV6xkXpYe42+Ve+Pf5U3Ug2MmdvnSOP3WIoUGET8DPsKGym2AL8Lm8/ov13VDQX
+ Q8ITKa2Thg2sxOhvotwKXaepTG1QNinBNleXev2rCUFPOQUA8kxii2VJpKBk1HBmS+pU8/SDuRPCXwH+Fq7NYz6i8OK/sBtPK4I=
+
+Howdy! Some plugins have automatically updated to their latest versions on your site at https://igstudio.in/developer3. No further action is needed on your part.
+
+
+These plugins are now up to date:
+- Jetpack (from version 10.7 to 10.7.1) : https://wordpress.org/plugins/jetpack/
+
+
+If you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help.
+https://wordpress.org/support/forums/
+
+The WordPress Team
+
